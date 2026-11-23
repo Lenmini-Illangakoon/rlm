@@ -1,0 +1,1126 @@
+{
+  "schema_version": 2,
+  "archive_date": "2026-11-23",
+  "archive_path": "research/rootcheck/m2",
+  "decision": "CONDITIONAL GO",
+  "baseline": {
+    "repository": "official RLM fork",
+    "upstream": "https://github.com/alexzhang13/rlm",
+    "branch": "research/m2-runtime-feasibility",
+    "commit": "e11f1a8f8ee4490686e16dd6463233abe08a07eb",
+    "head_at_archive": "e11f1a8f8ee4490686e16dd6463233abe08a07eb",
+    "protected_paths": [
+      "rlm/",
+      "tests/",
+      "pyproject.toml",
+      "uv.lock"
+    ]
+  },
+  "provenance": {
+    "recovery_source": "Accessible preceding conversation tool inputs and tool outputs, transcribed as decoded command bodies; not an independent session export",
+    "original_execution_timestamp": "not separately recovered",
+    "original_command_bodies": 4,
+    "original_probe_cases": 30,
+    "original_probe_passes": 30,
+    "original_tool_exit_codes": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "exact_original_stdin_bytes_or_execution_time_hashes": "not available",
+    "command_record": "test-results/original-tool-inputs.txt",
+    "tool_result_record": "test-results/original-probe-runs.json",
+    "transformation_record": "M2_REPRODUCIBILITY.md",
+    "extraction": "Substring after @' plus LF and before final LF plus '@ |; strip PowerShell envelope only; append one LF; UTF-8; no probe logic edits",
+    "new_code": "At archive creation: reproduce.ps1 only. Later verification adds a separately authored supplementary script; no reconstructed original probes.",
+    "digest_timing": "SHA-256 digests calculated from saved files after writing; none are represented as original execution-time hashes",
+    "supplementary_source": "probes/supplementary_repeated_readiness.py; new deterministic test, not one of the original 30"
+  },
+  "execution_status": {
+    "original_probe_execution": "PASS for 30 cases in four retained exit-0 results",
+    "recovered_original_source": "4 of 4 available",
+    "newly_extracted_scripts": "All four original saved scripts executed unchanged; 30 original diagnostic assertions/cases PASS",
+    "saved_script_reproduction": "PASS — 30 cases, four Python exit codes 0",
+    "reproduction_runner_dynamic_verification": "PASS with process-local forward-slash safe.directory override; original bare invocation failed at preflight before any probe",
+    "repeated_readiness": {
+      "id": "P-CP4-REPEATED-READY",
+      "status": "PASS — new supplementary test",
+      "expected_candidate_from_source": "B",
+      "observed_candidate": "B",
+      "observed_returned": "B",
+      "observed_capture_events": [
+        "A",
+        "B"
+      ],
+      "extra_capture_spy_required_for_event_assertion": true,
+      "capture_spy_used": true,
+      "not_part_of_original_30": true,
+      "result_record": "test-results/supplementary-repeated-readiness-2026-11-23.json"
+    },
+    "natural_official_runtime_failures_H2_H5_H6": "NOT ESTABLISHED",
+    "real_model_recovery": "NOT ESTABLISHED",
+    "new_experiments_during_archiving": false,
+    "paid_model_calls_during_archiving": false
+  },
+  "upstream_test_evidence": {
+    "original_selected_passes": 155,
+    "original_run_counts": [
+      134,
+      21
+    ],
+    "subsequent_overlapping_rerun_passes": 32,
+    "subsequent_rerun_counts": [
+      28,
+      4
+    ],
+    "unique_test_count": 155,
+    "rerun_nodeids_verified_subset": true,
+    "selection_nodeids_record": "test-results/upstream-nodeids.txt",
+    "execution_record": "test-results/original-offline-runs.txt",
+    "retention_limits": [
+      "First 134-test raw output chunk not included",
+      "21-test raw stdout not included; transcript-reported summary and command segment retained",
+      "4-test tool output retained in full but enclosing multi-action command not fully recovered; pytest segment retained"
+    ],
+    "no_tests_executed_to_create_archive": true
+  },
+  "probe_runs": [
+    {
+      "run_id": "cp4",
+      "script": "probes/cp4.py",
+      "original_output_chunk": "bba6c6",
+      "original_exit_code": 0,
+      "original_case_identifiers": [
+        "F1_ready_then_exception",
+        "F2_content_changed_after_ready",
+        "F3_two_final_blocks",
+        "F4_iteration_exhaustion",
+        "F5_error_limit_beats_final",
+        "F6_token_limit_beats_final",
+        "F7_cost_limit_beats_final",
+        "F8_timeout_overrun_with_final",
+        "F9_timeout_on_next_turn"
+      ],
+      "cases": [
+        {
+          "archival_id": "F1",
+          "original_identifier": "F1_ready_then_exception",
+          "original_status": "PASS",
+          "recovered_source": "available",
+          "saved_script_reproduction": "PASS",
+          "exact_decoded_observation_match": true,
+          "behavioral_discrepancy": false
+        },
+        {
+          "archival_id": "F2",
+          "original_identifier": "F2_content_changed_after_ready",
+          "original_status": "PASS",
+          "recovered_source": "available",
+          "saved_script_reproduction": "PASS",
+          "exact_decoded_observation_match": true,
+          "behavioral_discrepancy": false
+        },
+        {
+          "archival_id": "F3",
+          "original_identifier": "F3_two_final_blocks",
+          "original_status": "PASS",
+          "recovered_source": "available",
+          "saved_script_reproduction": "PASS",
+          "exact_decoded_observation_match": true,
+          "behavioral_discrepancy": false
+        },
+        {
+          "archival_id": "F4",
+          "original_identifier": "F4_iteration_exhaustion",
+          "original_status": "PASS",
+          "recovered_source": "available",
+          "saved_script_reproduction": "PASS",
+          "exact_decoded_observation_match": true,
+          "behavioral_discrepancy": false
+        },
+        {
+          "archival_id": "F5",
+          "original_identifier": "F5_error_limit_beats_final",
+          "original_status": "PASS",
+          "recovered_source": "available",
+          "saved_script_reproduction": "PASS",
+          "exact_decoded_observation_match": true,
+          "behavioral_discrepancy": false
+        },
+        {
+          "archival_id": "F6",
+          "original_identifier": "F6_token_limit_beats_final",
+          "original_status": "PASS",
+          "recovered_source": "available",
+          "saved_script_reproduction": "PASS",
+          "exact_decoded_observation_match": true,
+          "behavioral_discrepancy": false
+        },
+        {
+          "archival_id": "F7",
+          "original_identifier": "F7_cost_limit_beats_final",
+          "original_status": "PASS",
+          "recovered_source": "available",
+          "saved_script_reproduction": "PASS",
+          "exact_decoded_observation_match": true,
+          "behavioral_discrepancy": false
+        },
+        {
+          "archival_id": "F8",
+          "original_identifier": "F8_timeout_overrun_with_final",
+          "original_status": "PASS",
+          "recovered_source": "available",
+          "saved_script_reproduction": "PASS",
+          "exact_decoded_observation_match": true,
+          "behavioral_discrepancy": false
+        },
+        {
+          "archival_id": "F9",
+          "original_identifier": "F9_timeout_on_next_turn",
+          "original_status": "PASS",
+          "recovered_source": "available",
+          "saved_script_reproduction": "PASS",
+          "exact_decoded_observation_match": true,
+          "behavioral_discrepancy": false
+        }
+      ],
+      "original_assert_statement_count": 17,
+      "assertion_details": "M2_PROBE_INVENTORY.md and unchanged recovered script",
+      "output_payload": "test-results/original-probe-runs.json",
+      "saved_script_reproduction": "PASS",
+      "reproduction_record": "test-results/reproduction-verification-2026-11-23.json",
+      "reproduced_exit_code": 0
+    },
+    {
+      "run_id": "cp2",
+      "script": "probes/cp2.py",
+      "original_output_chunk": "5832be",
+      "original_exit_code": 0,
+      "original_case_identifiers": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5",
+        "I6",
+        "I7",
+        "I8",
+        "I9_rejection_text_is_normal_completion",
+        "I10_wrapper_uncaught",
+        "I10_wrapper_caught",
+        "I11_interrupt_one_block_not_iteration"
+      ],
+      "cases": [
+        {
+          "archival_id": "I1",
+          "original_identifier": "I1",
+          "original_status": "PASS",
+          "recovered_source": "available",
+          "saved_script_reproduction": "PASS",
+          "exact_decoded_observation_match": true,
+          "behavioral_discrepancy": false
+        },
+        {
+          "archival_id": "I2",
+          "original_identifier": "I2",
+          "original_status": "PASS",
+          "recovered_source": "available",
+          "saved_script_reproduction": "PASS",
+          "exact_decoded_observation_match": true,
+          "behavioral_discrepancy": false
+        },
+        {
+          "archival_id": "I3",
+          "original_identifier": "I3",
+          "original_status": "PASS",
+          "recovered_source": "available",
+          "saved_script_reproduction": "PASS",
+          "exact_decoded_observation_match": true,
+          "behavioral_discrepancy": false
+        },
+        {
+          "archival_id": "I4",
+          "original_identifier": "I4",
+          "original_status": "PASS",
+          "recovered_source": "available",
+          "saved_script_reproduction": "PASS",
+          "exact_decoded_observation_match": true,
+          "behavioral_discrepancy": false
+        },
+        {
+          "archival_id": "I5",
+          "original_identifier": "I5",
+          "original_status": "PASS",
+          "recovered_source": "available",
+          "saved_script_reproduction": "PASS",
+          "exact_decoded_observation_match": true,
+          "behavioral_discrepancy": false
+        },
+        {
+          "archival_id": "I6",
+          "original_identifier": "I6",
+          "original_status": "PASS",
+          "recovered_source": "available",
+          "saved_script_reproduction": "PASS",
+          "exact_decoded_observation_match": true,
+          "behavioral_discrepancy": false
+        },
+        {
+          "archival_id": "I7",
+          "original_identifier": "I7",
+          "original_status": "PASS",
+          "recovered_source": "available",
+          "saved_script_reproduction": "PASS",
+          "exact_decoded_observation_match": true,
+          "behavioral_discrepancy": false
+        },
+        {
+          "archival_id": "I8",
+          "original_identifier": "I8",
+          "original_status": "PASS",
+          "recovered_source": "available",
+          "saved_script_reproduction": "PASS",
+          "exact_decoded_observation_match": true,
+          "behavioral_discrepancy": false
+        },
+        {
+          "archival_id": "I9",
+          "original_identifier": "I9_rejection_text_is_normal_completion",
+          "original_status": "PASS",
+          "recovered_source": "available",
+          "saved_script_reproduction": "PASS",
+          "exact_decoded_observation_match": true,
+          "behavioral_discrepancy": false
+        },
+        {
+          "archival_id": "I10a",
+          "original_identifier": "I10_wrapper_uncaught",
+          "original_status": "PASS",
+          "recovered_source": "available",
+          "saved_script_reproduction": "PASS",
+          "exact_decoded_observation_match": true,
+          "behavioral_discrepancy": false
+        },
+        {
+          "archival_id": "I10b",
+          "original_identifier": "I10_wrapper_caught",
+          "original_status": "PASS",
+          "recovered_source": "available",
+          "saved_script_reproduction": "PASS",
+          "exact_decoded_observation_match": true,
+          "behavioral_discrepancy": false
+        },
+        {
+          "archival_id": "I11",
+          "original_identifier": "I11_interrupt_one_block_not_iteration",
+          "original_status": "PASS",
+          "recovered_source": "available",
+          "saved_script_reproduction": "PASS",
+          "exact_decoded_observation_match": true,
+          "behavioral_discrepancy": false
+        }
+      ],
+      "original_assert_statement_count": 12,
+      "assertion_details": "M2_PROBE_INVENTORY.md and unchanged recovered script",
+      "output_payload": "test-results/original-probe-runs.json",
+      "saved_script_reproduction": "PASS",
+      "reproduction_record": "test-results/reproduction-verification-2026-11-23.json",
+      "reproduced_exit_code": 0
+    },
+    {
+      "run_id": "delivery_identity_accounting",
+      "script": "probes/delivery_identity_accounting.py",
+      "original_output_chunk": "67f722",
+      "original_exit_code": 0,
+      "original_case_identifiers": [
+        "D1_exact_next_request",
+        "D2_in_memory_history_alias",
+        "D3_locals_alias_and_partial_effects",
+        "D4_recursive_usage_ownership",
+        "D5_default_latency",
+        "D6_actual_child_single_order",
+        "D7_actual_child_batch_order"
+      ],
+      "cases": [
+        {
+          "archival_id": "D1",
+          "original_identifier": "D1_exact_next_request",
+          "original_status": "PASS",
+          "recovered_source": "available",
+          "saved_script_reproduction": "PASS",
+          "exact_decoded_observation_match": true,
+          "behavioral_discrepancy": false
+        },
+        {
+          "archival_id": "D2",
+          "original_identifier": "D2_in_memory_history_alias",
+          "original_status": "PASS",
+          "recovered_source": "available",
+          "saved_script_reproduction": "PASS",
+          "exact_decoded_observation_match": true,
+          "behavioral_discrepancy": false
+        },
+        {
+          "archival_id": "D3",
+          "original_identifier": "D3_locals_alias_and_partial_effects",
+          "original_status": "PASS",
+          "recovered_source": "available",
+          "saved_script_reproduction": "PASS",
+          "exact_decoded_observation_match": true,
+          "behavioral_discrepancy": false
+        },
+        {
+          "archival_id": "D4",
+          "original_identifier": "D4_recursive_usage_ownership",
+          "original_status": "PASS",
+          "recovered_source": "available",
+          "saved_script_reproduction": "PASS",
+          "exact_decoded_observation_match": true,
+          "behavioral_discrepancy": false
+        },
+        {
+          "archival_id": "D5",
+          "original_identifier": "D5_default_latency",
+          "original_status": "PASS",
+          "recovered_source": "available",
+          "saved_script_reproduction": "PASS",
+          "exact_decoded_observation_match": true,
+          "behavioral_discrepancy": false
+        },
+        {
+          "archival_id": "D6",
+          "original_identifier": "D6_actual_child_single_order",
+          "original_status": "PASS",
+          "recovered_source": "available",
+          "saved_script_reproduction": "PASS",
+          "exact_decoded_observation_match": true,
+          "behavioral_discrepancy": false
+        },
+        {
+          "archival_id": "D7",
+          "original_identifier": "D7_actual_child_batch_order",
+          "original_status": "PASS",
+          "recovered_source": "available",
+          "saved_script_reproduction": "PASS",
+          "exact_decoded_observation_match": false,
+          "behavioral_discrepancy": false,
+          "scheduling_deviation": "Cross-child availability order changed; original per-child partial-order assertions and final A|B still pass"
+        }
+      ],
+      "original_assert_statement_count": 19,
+      "assertion_details": "M2_PROBE_INVENTORY.md and unchanged recovered script",
+      "output_payload": "test-results/original-probe-runs.json",
+      "saved_script_reproduction": "PASS",
+      "reproduction_record": "test-results/reproduction-verification-2026-11-23.json",
+      "reproduced_exit_code": 0
+    },
+    {
+      "run_id": "accounting_extra",
+      "script": "probes/accounting_extra.py",
+      "original_output_chunk": "a7fcf1",
+      "original_exit_code": 0,
+      "original_case_identifiers": [
+        "D8_recursive_budget_overshoot",
+        "D9_batch_metrics"
+      ],
+      "cases": [
+        {
+          "archival_id": "D8",
+          "original_identifier": "D8_recursive_budget_overshoot",
+          "original_status": "PASS",
+          "recovered_source": "available",
+          "saved_script_reproduction": "PASS",
+          "exact_decoded_observation_match": true,
+          "behavioral_discrepancy": false
+        },
+        {
+          "archival_id": "D9",
+          "original_identifier": "D9_batch_metrics",
+          "original_status": "PASS",
+          "recovered_source": "available",
+          "saved_script_reproduction": "PASS",
+          "exact_decoded_observation_match": true,
+          "behavioral_discrepancy": false
+        }
+      ],
+      "original_assert_statement_count": 5,
+      "assertion_details": "M2_PROBE_INVENTORY.md and unchanged recovered script",
+      "output_payload": "test-results/original-probe-runs.json",
+      "saved_script_reproduction": "PASS",
+      "reproduction_record": "test-results/reproduction-verification-2026-11-23.json",
+      "reproduced_exit_code": 0
+    }
+  ],
+  "pre_manifest_static_verification": {
+    "kind": "static archive verification; no probe or runner execution",
+    "extracted_scripts_equal_recovered_command_python": 4,
+    "unique_archival_case_ids": 30,
+    "python_scripts_ast_parsed": 4,
+    "embedded_runner_bootstrap_ast_parsed": true,
+    "powershell_parser": "PASS (syntax only); rechecked after runner edit in final verification",
+    "protected_source_files_verified": 64,
+    "protected_git_diff": "empty against pinned baseline",
+    "secret_scan": {
+      "scope": "15 archive artifacts before manifest creation; final manifest is scanned during completion verification",
+      "pattern_findings": [],
+      "redactions_required": false,
+      "credentials_or_dotenv_files_read": false
+    },
+    "not_execution_or_reproduction": true
+  },
+  "protected_source_files": [
+    {
+      "path": "pyproject.toml",
+      "baseline_git_blob_oid": "de32216c2273675846d928a226dd499a3703c754",
+      "archive_time_working_sha256": "a8c7ec9740739e4cbb29b51a8c99d77a8cf15621053b9f5c4abbb4d73099bbb3",
+      "bytes": 2134
+    },
+    {
+      "path": "rlm/__init__.py",
+      "baseline_git_blob_oid": "b29d3cb0baab107eb6beccaa9cd0564a7115da7e",
+      "archive_time_working_sha256": "bbcf03835c623c6b00c38bdf6692d43af164f1d6a2df00c8c1044c409cf95f52",
+      "bytes": 391
+    },
+    {
+      "path": "rlm/clients/__init__.py",
+      "baseline_git_blob_oid": "a57c8e8df581de0d15922fd00594896dc3e2ff42",
+      "archive_time_working_sha256": "8c3b4320ef3acd6c1069d52b51cf973d076143b61de53b799284ba30d31a6ca6",
+      "bytes": 2032
+    },
+    {
+      "path": "rlm/clients/anthropic.py",
+      "baseline_git_blob_oid": "d3ddadb0718d481599b0c8bfb7f598a15c5490a3",
+      "archive_time_working_sha256": "87dc5f2c0726d9f2abd42c528087e831e0937c80f966a2b2feb2e7d5470ee0bc",
+      "bytes": 5278
+    },
+    {
+      "path": "rlm/clients/azure_openai.py",
+      "baseline_git_blob_oid": "06e02562a750325d48457251d3f5a84e04028ba4",
+      "archive_time_working_sha256": "9696433c582b9d38e87d5c93987a037ba9e8eaaa323234382c423e2ae26b37f5",
+      "bytes": 6941
+    },
+    {
+      "path": "rlm/clients/base_lm.py",
+      "baseline_git_blob_oid": "7d748a98afbaf0e4f936d73ec72600f0b7bd7c99",
+      "archive_time_working_sha256": "e79ba1d2e459619631a991b37d594660fd80025c34f8212409b44f6b7197aa05",
+      "bytes": 2128
+    },
+    {
+      "path": "rlm/clients/gemini.py",
+      "baseline_git_blob_oid": "74af837f9f7c5c21668c640053da301cd3c75083",
+      "archive_time_working_sha256": "c517bd9fa2b3a9de5bd56e2b594e3345ea2fb870f4557e93cbb58a6a6eb8cd42",
+      "bytes": 7436
+    },
+    {
+      "path": "rlm/clients/openai.py",
+      "baseline_git_blob_oid": "997da81ba2a38a1e27b296a45a15389c461ae01e",
+      "archive_time_working_sha256": "2763e4b427f3c154ec2cfd906da91832c416f84851c5d6dc1d9c868477aec7c2",
+      "bytes": 10113
+    },
+    {
+      "path": "rlm/clients/portkey.py",
+      "baseline_git_blob_oid": "b8a310e29ea839248abc3dddf45bd5dd495c9541",
+      "archive_time_working_sha256": "f0738a52a5c4ac7efa4daebb7c5f467b3f9adcbe7d5d67072565fc89651e4dfd",
+      "bytes": 3927
+    },
+    {
+      "path": "rlm/core/__init__.py",
+      "baseline_git_blob_oid": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "archive_time_working_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "rlm/core/comms_utils.py",
+      "baseline_git_blob_oid": "63a8108ba08445a3dd6ed48dd90d87e130c97d3e",
+      "archive_time_working_sha256": "bfbe1bea99139dea4300ff0e6f3a3d210d2590af9a99b0346a45e24023fbcce5",
+      "bytes": 9052
+    },
+    {
+      "path": "rlm/core/lm_handler.py",
+      "baseline_git_blob_oid": "ba9c4f1329acc740b0466e663bf095b185afe0e4",
+      "archive_time_working_sha256": "f1c973aaac6ea7c67f6c05962b713ead30729a9f0b605a9d0851f5336475bb8f",
+      "bytes": 10710
+    },
+    {
+      "path": "rlm/core/rlm.py",
+      "baseline_git_blob_oid": "4963075ac081aa60333a168dc9422385fe489d37",
+      "archive_time_working_sha256": "1ccec592077d7d00a079c396d3382cd8d4bd84e5ce5bbc4674cca30cdf7cdd34",
+      "bytes": 48954
+    },
+    {
+      "path": "rlm/core/types.py",
+      "baseline_git_blob_oid": "2a5c0766c7fe4e8e1a849ceb5e1af09c67fa8283",
+      "archive_time_working_sha256": "123d47312d80d317f5bbc1e1002870683bb4592208889a1f47904ed3ce493fbf",
+      "bytes": 10395
+    },
+    {
+      "path": "rlm/environments/__init__.py",
+      "baseline_git_blob_oid": "db76ec2cdcd0c870f21e02b016b54aad96a74bd0",
+      "archive_time_working_sha256": "9e38801a1428ef19856492bd9176f4938c57d3e206520905bfc314062c2b6cf9",
+      "bytes": 2835
+    },
+    {
+      "path": "rlm/environments/base_env.py",
+      "baseline_git_blob_oid": "c7e85a188cc7a4b8475d348ece0e4229c9303b6a",
+      "archive_time_working_sha256": "1854046bf09eafe09d005ef4ab243a6e3953b032e1cbd6d6f59fc1078bceacff",
+      "bytes": 12904
+    },
+    {
+      "path": "rlm/environments/constants.py",
+      "baseline_git_blob_oid": "4982b384f9b927b3ed863781564a43a866e185f7",
+      "archive_time_working_sha256": "40131e4857a699b02d54b374e7ccf1c63c32d424d0203d5149e13a769838f9f4",
+      "bytes": 670
+    },
+    {
+      "path": "rlm/environments/daytona_repl.py",
+      "baseline_git_blob_oid": "b54faf3a71ca0c53656b68e44b29c71fbd6e10b6",
+      "archive_time_working_sha256": "ec94e39d1fd9a440420bba013c929a00e93cc6ce9bbd1ca3218f25281f12bea9",
+      "bytes": 23994
+    },
+    {
+      "path": "rlm/environments/docker_repl.py",
+      "baseline_git_blob_oid": "850ffd7fcb2e0f5bf215a4f61bed1af4226c87c3",
+      "archive_time_working_sha256": "8cc6a9ccb25f191b6d90a45d0e59b1132448091f5f717dffa93ba78a579fb76d",
+      "bytes": 30948
+    },
+    {
+      "path": "rlm/environments/e2b_repl.py",
+      "baseline_git_blob_oid": "5ed9a22b6a1fb41adcd2132f9e5e745204ad38a2",
+      "archive_time_working_sha256": "ae7b168793f6265198cc833303151e45ffbe3d633a05b4110f217be0759c53a1",
+      "bytes": 16794
+    },
+    {
+      "path": "rlm/environments/ipython_repl.py",
+      "baseline_git_blob_oid": "a19972de12fcd066d765d011468238c66b657c72",
+      "archive_time_working_sha256": "e7db72a28d5b26fe976e73ea8ffc03c0230e4c7f5bfec20be98c479fd7c87343",
+      "bytes": 68250
+    },
+    {
+      "path": "rlm/environments/local_execution.py",
+      "baseline_git_blob_oid": "41f118a643376351f35c9090c4bcaff60fe48781",
+      "archive_time_working_sha256": "09e1a948d71ed7fd42ba580c0cfcd9c7a3936b6c6693a13aabdf46175e5608c5",
+      "bytes": 2228
+    },
+    {
+      "path": "rlm/environments/local_repl.py",
+      "baseline_git_blob_oid": "11bf98798fed3b7aaf9c809d7c7dde7e52039cae",
+      "archive_time_working_sha256": "ec15a16e83e5913c430324eb648fb1b558ae8e5c2c3e36787e38743a0887d524",
+      "bytes": 23606
+    },
+    {
+      "path": "rlm/environments/modal_repl.py",
+      "baseline_git_blob_oid": "00a4cc7d90b43f936a7e07583c46f04d17135295",
+      "archive_time_working_sha256": "b5196ada65523153b6de8c9953e3b7ef6db64076cd19bc0ba0a89b5b383ab53a",
+      "bytes": 16633
+    },
+    {
+      "path": "rlm/environments/prime_repl.py",
+      "baseline_git_blob_oid": "c7d14e052a5ef1fd4fc68ba3ba92165f9932e15c",
+      "archive_time_working_sha256": "644f0314f15e3fb104bb3a82be48924212768b4a3aa906f151c0f7abfaaf3ef9",
+      "bytes": 20415
+    },
+    {
+      "path": "rlm/environments/speculative_repl.py",
+      "baseline_git_blob_oid": "5551e50ab07c47e33e9d4d5720e31838c5e6c0a2",
+      "archive_time_working_sha256": "e82c475d5fc817b8a410ab1e9097118da6a764b28036731e366d52b91f1c78aa",
+      "bytes": 10590
+    },
+    {
+      "path": "rlm/logger/__init__.py",
+      "baseline_git_blob_oid": "6f4d1cc029b8e7aca72d43d2a067fa6d29a8b672",
+      "archive_time_working_sha256": "b9976ec2bd77f5b0e2252afa80a7be4f992d25ac69eab832c3544a8799cc6f1f",
+      "bytes": 137
+    },
+    {
+      "path": "rlm/logger/rlm_logger.py",
+      "baseline_git_blob_oid": "418e679cee3583e0b2224cb69cdcad82412d6c3f",
+      "archive_time_working_sha256": "ab92f346766fc2e9b0c48c92fbc8a05d1b43dbd6535beb6ea0da70c31fe2c374",
+      "bytes": 3263
+    },
+    {
+      "path": "rlm/logger/verbose.py",
+      "baseline_git_blob_oid": "7a9d75715f102303950ca35202ff2998416d07e8",
+      "archive_time_working_sha256": "d7e155400d02ed5a73086a0b7d6982cb6eb7d06256d0e11cbfe24c566e06040d",
+      "bytes": 18808
+    },
+    {
+      "path": "rlm/utils/__init__.py",
+      "baseline_git_blob_oid": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "archive_time_working_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "rlm/utils/exceptions.py",
+      "baseline_git_blob_oid": "809944c6eb00d00f8bb5fa24819fc5e0673cbb41",
+      "archive_time_working_sha256": "1f38776b8ded958db854f8692902564b3f36b1b98a6e2f0f33e703efa18a7cde",
+      "bytes": 2444
+    },
+    {
+      "path": "rlm/utils/parsing.py",
+      "baseline_git_blob_oid": "2a9aa09652027f37ed3bef91f4b7a3e7e8b632f3",
+      "archive_time_working_sha256": "16754fdc801d8d2fbf98246e1a8f489fd3622bc77dfc4779f58445414b3ea351",
+      "bytes": 4497
+    },
+    {
+      "path": "rlm/utils/prompts.py",
+      "baseline_git_blob_oid": "2eef4d5bdd11a4b8b599de37908aa4906800f87d",
+      "archive_time_working_sha256": "35729c0849f7f15d0279c7bfe50cd9d560e9ea3d576767fcfd063f40b4e45406",
+      "bytes": 21618
+    },
+    {
+      "path": "rlm/utils/rlm_utils.py",
+      "baseline_git_blob_oid": "4c11ed39af91e5dc0e47fe051036e0c765212d1f",
+      "archive_time_working_sha256": "fdacd27add192703d7ad86d2d0847b98abf59e81ca3b09738f4c7ff73e605ae9",
+      "bytes": 382
+    },
+    {
+      "path": "rlm/utils/token_utils.py",
+      "baseline_git_blob_oid": "44772ce935fc2f4749e621aef6f006d818afca84",
+      "archive_time_working_sha256": "41ee6244b2dab737ed53a4143ff93a07f4e00db166eded92f16d33cfb7fb8628",
+      "bytes": 4725
+    },
+    {
+      "path": "rlm/utils/usage.py",
+      "baseline_git_blob_oid": "89aed053a8c1307e6f3b259eeb0db3ab977bec82",
+      "archive_time_working_sha256": "e683a359f170b7d92d44dfa7cadf0238f596ab9de79e77413d6b8259cf0f282b",
+      "bytes": 934
+    },
+    {
+      "path": "tests/README.md",
+      "baseline_git_blob_oid": "a38fce6dcbf01d15afe787e3f03105e4888ef2a0",
+      "archive_time_working_sha256": "a79466446a5ebb308be7e737949dc76d74897e7efa7eb79457f59d8df4d4041a",
+      "bytes": 116
+    },
+    {
+      "path": "tests/__init__.py",
+      "baseline_git_blob_oid": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "archive_time_working_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "tests/clients/portkey.py",
+      "baseline_git_blob_oid": "6281feefedb35a1ba9c4f6d4ebfd82294fdb4032",
+      "archive_time_working_sha256": "3bbd253ce60cf571d720de611d7d7bcdee70d587a91814351752cb1c341793a7",
+      "bytes": 649
+    },
+    {
+      "path": "tests/clients/test_gemini.py",
+      "baseline_git_blob_oid": "181a3ee8d8b4747aff9f87783185eac7ad371a9e",
+      "archive_time_working_sha256": "12d789999ba1fd48eb745cbc6584af86107b482107c820b3e4e2b6af9f4ca3f3",
+      "bytes": 8122
+    },
+    {
+      "path": "tests/clients/test_timeout.py",
+      "baseline_git_blob_oid": "425efcce47577255ae5fb7631a37ac68154a4fb0",
+      "archive_time_working_sha256": "eae1f074acf448e1dc6cffeb38001aa4fc5d90ec305c5a3441bc9d62036c86aa",
+      "bytes": 6279
+    },
+    {
+      "path": "tests/mock_lm.py",
+      "baseline_git_blob_oid": "882249fd0f6aa9137b0ed8611b351b7c1c004cd1",
+      "archive_time_working_sha256": "db1d03fc67f8ac9a1422602f62bf9f3fe115ff3263dfe54116cda97d9b221e91",
+      "bytes": 2767
+    },
+    {
+      "path": "tests/repl/test_custom_tools.py",
+      "baseline_git_blob_oid": "4aedc709557abac43b3ac5572ab5f4c54a52d60d",
+      "archive_time_working_sha256": "42985093063294ab9207dd61a1e0a6020a7946e739d844b26131b79b8add9010",
+      "bytes": 21350
+    },
+    {
+      "path": "tests/repl/test_local_repl.py",
+      "baseline_git_blob_oid": "e96d162884df5b2dcbbc7cb9211a31d16eead377",
+      "archive_time_working_sha256": "37d0cc918df94b440d1d912e76642a57bbfdd0f0d99e2234eeb9c1c1b94d84da",
+      "bytes": 647
+    },
+    {
+      "path": "tests/test_depth_metadata.py",
+      "baseline_git_blob_oid": "c4b174dde8611aecef23d18c4d703ecab36c2470",
+      "archive_time_working_sha256": "e2b3d670772fb286c568d389258fa0b604b7563957e5dd2912ccf1b5aad3bcd9",
+      "bytes": 21532
+    },
+    {
+      "path": "tests/test_docker_repl_persistent.py",
+      "baseline_git_blob_oid": "716200f40a25865956a872785936f37e44e9b6a6",
+      "archive_time_working_sha256": "b4c6698eed0ccac8522d088319556938087e5ae6bceabee3938b7f89a5c2e5f9",
+      "bytes": 5193
+    },
+    {
+      "path": "tests/test_docker_repl_robustness.py",
+      "baseline_git_blob_oid": "a6e5bf4bc2d041ea7f3c0726c571f6d56140318f",
+      "archive_time_working_sha256": "2304aa3297739f688902a70d3cbd2d97f73b6a6c75a6f435e8b1bf79312f5a9b",
+      "bytes": 25548
+    },
+    {
+      "path": "tests/test_e2e_depth.py",
+      "baseline_git_blob_oid": "f951218d8f76f71bbf974381b191186119a1e9d1",
+      "archive_time_working_sha256": "a24e1d226d6a3c8081d7e548c492c445434a4feafe82b10669fff7b4ae1c6b76",
+      "bytes": 699
+    },
+    {
+      "path": "tests/test_imports.py",
+      "baseline_git_blob_oid": "5edb68d0e7a7dd8b09706c822744d2101c0745bd",
+      "archive_time_working_sha256": "abeea539916ff7d0c0707a151f1eb84f2ea7d7f3dbcc3d2434f1ced731e9a33f",
+      "bytes": 16136
+    },
+    {
+      "path": "tests/test_ipython_repl.py",
+      "baseline_git_blob_oid": "93c963477f03df1016512b463ca6ac80458f8e43",
+      "archive_time_working_sha256": "3adcf73504e09b3559e3095f97659bb6fa057a64a5636afe872cf0bbbb9e602f",
+      "bytes": 39037
+    },
+    {
+      "path": "tests/test_lm_handler.py",
+      "baseline_git_blob_oid": "a1084cf349130d94daea9aaf7bc7bc50d4f606cc",
+      "archive_time_working_sha256": "d06a7df8719e9853d8b4a19cbc9f8d9a23f1fd3a6385a6ddc0f734b76bcd22a9",
+      "bytes": 2772
+    },
+    {
+      "path": "tests/test_local_execution.py",
+      "baseline_git_blob_oid": "60d453bc74712b568e82848d65561ec3270a811f",
+      "archive_time_working_sha256": "e6f5a478f1a3eea3ff4d9c67d4fc846ef51786fb32c1edc9f6508249fd2aeef0",
+      "bytes": 2057
+    },
+    {
+      "path": "tests/test_local_repl.py",
+      "baseline_git_blob_oid": "f9ce2a45bb4a8fdc47d092d56b7482d958196cb5",
+      "archive_time_working_sha256": "7a6fab32b2da7a6d55ef84fa7c3ee0ff1f7b8f77ebd09576ea912f45537c8761",
+      "bytes": 10639
+    },
+    {
+      "path": "tests/test_local_repl_persistent.py",
+      "baseline_git_blob_oid": "f654679dd0b6d0d22628a81c369117eeef138cf7",
+      "archive_time_working_sha256": "a7c6088e8430671819a737d5b4142b47ff0e7e164610dc73a3c9703d511b1560",
+      "bytes": 7671
+    },
+    {
+      "path": "tests/test_multi_turn_integration.py",
+      "baseline_git_blob_oid": "15e4653c474dca101b18eb140e663a3e64f4d2cc",
+      "archive_time_working_sha256": "c18adccd6ae984cc12f977e0eaee0ec812958fd414ff8b3d8183d99b88dca059",
+      "bytes": 16169
+    },
+    {
+      "path": "tests/test_parsing.py",
+      "baseline_git_blob_oid": "12e79df09eb9a411c83cb2cf0df2a43f943b9af5",
+      "archive_time_working_sha256": "8456faa6ef8ffb67d97ab009cc7f05c33c8db0db2e85a4e97f07938c61259200",
+      "bytes": 7218
+    },
+    {
+      "path": "tests/test_recursive_depth.py",
+      "baseline_git_blob_oid": "05c037fda43acfda3d7ea87e90650abb4ebac3b0",
+      "archive_time_working_sha256": "cef27c1a4afce569ae63c667a2b4f3a938fcaf0a4067646c1f0bf7ca8ab0ffae",
+      "bytes": 5305
+    },
+    {
+      "path": "tests/test_rlm_query.py",
+      "baseline_git_blob_oid": "9d1e7650cf58dbb3ba538e9c9b4536a193070a71",
+      "archive_time_working_sha256": "8a35a063932a4179222e76540acdcd2f1f91392671888beb991759c9cef8e485",
+      "bytes": 22043
+    },
+    {
+      "path": "tests/test_rlm_query_context.py",
+      "baseline_git_blob_oid": "c6409b14b753a83bc027712eb61377147e678bf4",
+      "archive_time_working_sha256": "53fc65fd3b6641e172a4f1a42a81feaa71c6c285ca20d7d1291978e24a4c9084",
+      "bytes": 10546
+    },
+    {
+      "path": "tests/test_spec_ptc.py",
+      "baseline_git_blob_oid": "75363467d3538229c59ac6da2179ee07cf870a68",
+      "archive_time_working_sha256": "0cb96be659f40fec729c5dd0fc2da4429201825742d0d2a6a28e27af7d1b544e",
+      "bytes": 22387
+    },
+    {
+      "path": "tests/test_streaming.py",
+      "baseline_git_blob_oid": "4eff663d7ccce6ab4d7f5da730ef11f834afa1b1",
+      "archive_time_working_sha256": "9297d1d63cf5405a9b79c028cfa370445f2142be7f699d97621da0b973be81e7",
+      "bytes": 10712
+    },
+    {
+      "path": "tests/test_subcall.py",
+      "baseline_git_blob_oid": "674679b26b019bb41c4ac4f8d02821c5b6c6201e",
+      "archive_time_working_sha256": "9c674f91b737c4e88e9aef2f68bd5e58a2034f02f5e8c83d556333df4dfba6b4",
+      "bytes": 18550
+    },
+    {
+      "path": "tests/test_types.py",
+      "baseline_git_blob_oid": "104f95300a35d871637849a03eea92df71d8d30d",
+      "archive_time_working_sha256": "5a5b07c31a9b7323270be299a401ba4963343a740e0323e3195ee6ed2aba69d5",
+      "bytes": 6684
+    },
+    {
+      "path": "uv.lock",
+      "baseline_git_blob_oid": "0f35589204b87b31bd3a485e15c81d16cab1236b",
+      "archive_time_working_sha256": "e07d5b6bf4184381979af55c033b32bffa43b101b193b609cba1e184cdec1d82",
+      "bytes": 532442
+    }
+  ],
+  "artifacts": [
+    {
+      "path": ".gitignore",
+      "bytes": 21,
+      "sha256": "3d91fef320442146bec26447dd6278e5e50c98502a7e0c1ef6c2aa6a9c5c2d37",
+      "role": "Scoped rule for later local reproduction results only"
+    },
+    {
+      "path": "environment-current.json",
+      "bytes": 17512,
+      "sha256": "1297166ea54c4231f0affd348b019a1c3525fea7af7fe04d31cffcf3c04372d9",
+      "role": "Archive-time environment metadata and protected-source identity; not original environment snapshot"
+    },
+    {
+      "path": "M2_CP_FEASIBILITY_MATRIX.md",
+      "bytes": 13803,
+      "sha256": "9921f876e13f83b627ba5b352c10b2b8a630a6a68be38dbe164ecc20cfa09f52",
+      "role": "Pinned-source checkpoint evidence, historical crosswalk and implementation limitations"
+    },
+    {
+      "path": "M2_DECISION_RECORD.md",
+      "bytes": 6962,
+      "sha256": "2f1e29eac45c4ee2a7f788f24b4a26057b37e91c032a763dbfc89fded62f3b1e",
+      "role": "CONDITIONAL GO decision and bounded MVP/research scope"
+    },
+    {
+      "path": "M2_PROBE_INVENTORY.md",
+      "bytes": 12206,
+      "sha256": "caf857ff8f7951b77162690bc1fc0d7f8155f8ef4ca80b9897137c4f92c65858",
+      "role": "Archive-creation 30-case inventory and then-pending protocol; later status is in M2_REPRODUCTION_VERIFICATION.md"
+    },
+    {
+      "path": "M2_REPRODUCIBILITY.md",
+      "bytes": 13200,
+      "sha256": "d47999c66326d9ac42aeb782ba9d7143ac61c575e35a99965b2efaf3cfc3cdfc",
+      "role": "Current reproduction status plus clearly labelled archive-creation provenance record"
+    },
+    {
+      "path": "M2_REPRODUCTION_VERIFICATION.md",
+      "bytes": 13958,
+      "sha256": "3c190e284eb6d5e84df0b8f7f8f488f514ceeadb4533538237338eeedf531d61",
+      "role": "Later verification report; 30-case comparisons, supplementary evidence and remaining limits"
+    },
+    {
+      "path": "probes/accounting_extra.py",
+      "bytes": 3099,
+      "sha256": "3b8460483068b1874f397a8882a20f12018e521c65350ccb854c1bbb7c0dcf24",
+      "role": "Mechanically extracted original Python probe source; executed unchanged with passing diagnostic assertions during later reproduction"
+    },
+    {
+      "path": "probes/cp2.py",
+      "bytes": 6558,
+      "sha256": "25ebc1f8378b41f91e32051c1687f0cc90ef011d3510dc05c2ec75f904b2405b",
+      "role": "Mechanically extracted original Python probe source; executed unchanged with passing diagnostic assertions during later reproduction"
+    },
+    {
+      "path": "probes/cp4.py",
+      "bytes": 6775,
+      "sha256": "eb5edd6919f6cec80e5302101f330d532e6259baf41e1b54d23ed1dc5f4469c3",
+      "role": "Mechanically extracted original Python probe source; executed unchanged with passing diagnostic assertions during later reproduction"
+    },
+    {
+      "path": "probes/delivery_identity_accounting.py",
+      "bytes": 8551,
+      "sha256": "2cfa9a0812df13acd1211316070212d32e2eef6362abd2b2e9fa9e75b57f19ac",
+      "role": "Mechanically extracted original Python probe source; executed unchanged with passing diagnostic assertions during later reproduction"
+    },
+    {
+      "path": "probes/supplementary_repeated_readiness.py",
+      "bytes": 2845,
+      "sha256": "306ccf8e987d0a2f6b0039bd7a810bae470e60c2a60c4bb8e823ebd16f17fd41",
+      "role": "New supplementary test source; not a recovered original probe"
+    },
+    {
+      "path": "reproduce.ps1",
+      "bytes": 8618,
+      "sha256": "b6de5c1a45e956a72871119659d739e85e411e2a7132263cf797346197d4a054",
+      "role": "Unchanged offline reproduction wrapper; executed successfully with documented process-local Git setting"
+    },
+    {
+      "path": "test-results/original-offline-runs.txt",
+      "bytes": 22888,
+      "sha256": "546bc2a2790154175496bcdd2cd99f5bb70c44d6a18d53e1a707ed5d4cf9fab5",
+      "role": "Recovered upstream command segments, retained outputs and explicit retention gaps"
+    },
+    {
+      "path": "test-results/original-probe-runs.json",
+      "bytes": 13617,
+      "sha256": "3a10029a5163045dd6d0cf9e5d4bb1fc0f7328fb44dc138f14bf1b2cc54af3e1",
+      "role": "Recovered original tool result objects and archival case mapping"
+    },
+    {
+      "path": "test-results/original-tool-inputs.txt",
+      "bytes": 26587,
+      "sha256": "324d8d25c3c10de2cb132247f8c8b9474eec1f70da82f8e1cc7610f550ac01ac",
+      "role": "Recovered original decoded PowerShell probe command bodies"
+    },
+    {
+      "path": "test-results/reproduction-commands.txt",
+      "bytes": 2674,
+      "sha256": "2644d2e8ae7a9a0472692efb7bb8babf30f6bbcdab752669d500e6f1ecf440bf",
+      "role": "Exact executed commands including initial preflight failure and process-local Git workaround"
+    },
+    {
+      "path": "test-results/reproduction-verification-2026-11-23.json",
+      "bytes": 55268,
+      "sha256": "502e780837c8f226c6509f24ae1850d16e8f5a46c1020c6821213ffb678e00b0",
+      "role": "Later reproduction records, original/new observations, process exits and pre/post integrity evidence"
+    },
+    {
+      "path": "test-results/supplementary-repeated-readiness-2026-11-23.json",
+      "bytes": 3143,
+      "sha256": "6507619ae8b55520e579a814fbcc3c3622c185cd64a134e56a96a821917a73e2",
+      "role": "Separate new supplementary test command, stdout, exit and observed results"
+    },
+    {
+      "path": "test-results/upstream-nodeids.txt",
+      "bytes": 17099,
+      "sha256": "ad4feaf615cd6969ae7e106755e5d76611e07313388366a09932c4b062aa0e25",
+      "role": "Recovered original 155 selected node identities and 32-node overlapping rerun subset"
+    }
+  ],
+  "manifest_self_hash": "Excluded to avoid self-reference; final task report can supply the separately calculated saved-manifest SHA-256.",
+  "local_output_policy": {
+    "ignored": "test-results/local/",
+    "currently_created": true,
+    "automatically_changes_original_evidence": false,
+    "preserved_in_git_eligible_record": "test-results/reproduction-verification-2026-11-23.json contains complete decoded copies of all four local runner records"
+  },
+  "scope": {
+    "December_priorities": [
+      "H2",
+      "H5"
+    ],
+    "task_family": "one reviewed structured-record family; shipment-readiness is a candidate, not finalized",
+    "H6": "equal observation priority in next baseline study; intervention implementation deferred",
+    "runtime": "bounded non-speculative LocalREPL protocol",
+    "historical_records": "unchanged",
+    "no_branches_commits_or_pushes": true
+  },
+  "verification_update_date": "2026-11-23",
+  "archive_creation_manifest_sha256": "fb84d2dc43d69bc6cd195c11d2e861641819c80c11d82cb45487699a87c303e3",
+  "reproduction_verification": {
+    "date": "2026-11-23",
+    "report": "M2_REPRODUCTION_VERIFICATION.md",
+    "commands": "test-results/reproduction-commands.txt",
+    "comparison_record": "test-results/reproduction-verification-2026-11-23.json",
+    "successful_invocation_id": "20261123T153154981Z-ba918778",
+    "attempt_exit_codes": {
+      "initial_bare_runner": 1,
+      "successful_runner": 0,
+      "supplementary_python": 0
+    },
+    "initial_attempt_probes_started": 0,
+    "original_cases_passed": 30,
+    "original_cases_failed": 0,
+    "python_run_exit_codes": [
+      {
+        "run_id": "cp4",
+        "exit_code": 0,
+        "cases": 9
+      },
+      {
+        "run_id": "cp2",
+        "exit_code": 0,
+        "cases": 12
+      },
+      {
+        "run_id": "delivery_identity_accounting",
+        "exit_code": 0,
+        "cases": 7
+      },
+      {
+        "run_id": "accounting_extra",
+        "exit_code": 0,
+        "cases": 2
+      }
+    ],
+    "exact_decoded_observation_matches": 29,
+    "behavioral_discrepancies": 0,
+    "schedule_only_difference": {
+      "archival_id": "D7",
+      "field": "events",
+      "original_availability_order": [
+        "B",
+        "A"
+      ],
+      "reproduced_availability_order": [
+        "A",
+        "B"
+      ],
+      "original_partial_order_assertions": "PASS",
+      "final_answer_both": "A|B"
+    },
+    "guard_review": "Reviewed mock-only sources; dotenv disabled, unmocked client factories blocked, numeric loopback only, child processes blocked; no negative tests attempted external connections",
+    "original_archive_files_unchanged_by_execution": 16,
+    "original_files_retained_unchanged_during_record_update": 14,
+    "authorized_existing_file_updates": [
+      "M2_REPRODUCIBILITY.md",
+      "evidence-manifest.json"
+    ],
+    "protected_upstream_files_unchanged": 64,
+    "experiments_before_after": {
+      "experiments/m2/smoke_test.py": {
+        "bytes": 958,
+        "mtime_ns": "1795414185095998800",
+        "sensitive_name_metadata_only": false,
+        "sha256": "1c96b9af4564c489bee8f97140ee6fc4f21bcbe4a1811c397c200c0ceeadf7e1"
+      }
+    },
+    "interpretation": "Diagnostic PASS reproduces baseline behavior including known hazards; it is not an H2/H5/H6 correctness or intervention-success verdict.",
+    "remaining_unverified": [
+      "Natural official-runtime H2/H5/H6 failures",
+      "Successful real-model recovery",
+      "RootCheck contracts/validators/ledger/acceptance gates",
+      "Host-enforced whole-turn abort, rollback and dependency invalidation",
+      "Strict global recursive accounting",
+      "General guard efficacy against hostile code or all optional runtime modes"
+    ],
+    "pre_manifest_secret_scan": {
+      "files": 25,
+      "pattern_findings": [],
+      "scope": "Git-eligible archive and ignored local reproduction records only; final saved manifest scanned again during completion verification"
+    },
+    "no_live_provider_calls": true,
+    "no_new_upstream_test_runs": true,
+    "no_persistent_git_configuration_changes": true,
+    "no_staging_commits_pushes_merges_or_branch_changes": true
+  },
+  "supplementary_tests": [
+    {
+      "id": "P-CP4-REPEATED-READY",
+      "evidence_class": "new supplementary deterministic test",
+      "source": "probes/supplementary_repeated_readiness.py",
+      "record": "test-results/supplementary-repeated-readiness-2026-11-23.json",
+      "exit_code": 0,
+      "status": "PASS",
+      "captured_candidate": "B",
+      "returned": "B",
+      "capture_events": [
+        "A",
+        "B"
+      ],
+      "counts_toward_original_30": false
+    }
+  ],
+  "local_reproduction_artifacts": [
+    {
+      "path": "test-results/local/20261123T153154981Z-ba918778/accounting_extra.json",
+      "bytes": 1495,
+      "sha256": "23076658ad0280d2359a90d434039c8c2bf57afefe01d16555da95f3f16fbd00"
+    },
+    {
+      "path": "test-results/local/20261123T153154981Z-ba918778/cp2.json",
+      "bytes": 4943,
+      "sha256": "8fb04f830313c72df8a7e254df6460377e18565341e52e15c00f3704eacf7607"
+    },
+    {
+      "path": "test-results/local/20261123T153154981Z-ba918778/cp4.json",
+      "bytes": 2910,
+      "sha256": "c7687f49d866aed4cc1cb7492b8aef7737906f514c3143a7600ef7496f82b1d5"
+    },
+    {
+      "path": "test-results/local/20261123T153154981Z-ba918778/delivery_identity_accounting.json",
+      "bytes": 2832,
+      "sha256": "ef40352e6b7e568912a87b461f9956bb8b62697a04de7c301c5ca6cc64c878ef"
+    }
+  ]
+}

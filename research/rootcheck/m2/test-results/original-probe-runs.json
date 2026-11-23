@@ -1,0 +1,202 @@
+{
+  "record_kind": "Recovered original executed tool results; not a new reproduction",
+  "recovered_from": "Prior conversation tool-call inputs and tool results",
+  "baseline": "e11f1a8f8ee4490686e16dd6463233abe08a07eb",
+  "transcription_date": "2026-11-23",
+  "original_execution_timestamp": "not separately recovered",
+  "source_byte_identity_limit": "Command text recovered from visible conversation. Original stdin bytes/hashes and independent session-export attestation are unavailable.",
+  "runs": [
+    {
+      "run_id": "cp4",
+      "extracted_script": "probes/cp4.py",
+      "command_body_record": "test-results/original-tool-inputs.txt",
+      "original_tool_result": {
+        "chunk_id": "bba6c6",
+        "wall_time_seconds": 5.210785,
+        "exit_code": 0,
+        "original_token_count": 367,
+        "output": "{\"captured\": \"A\", \"next_request\": false, \"probe\": \"F1_ready_then_exception\", \"returned\": \"A\", \"status\": \"PASS\", \"stderr\": \"\\nValueError: after-ready\"}\r\n{\"captured\": \"A\", \"dictionary_content\": \"B\", \"probe\": \"F2_content_changed_after_ready\", \"returned\": \"A\", \"status\": \"PASS\"}\r\n{\"block_candidates\": [\"A\", \"B\"], \"earlier_locals_now\": \"B\", \"probe\": \"F3_two_final_blocks\", \"returned\": \"A\", \"status\": \"PASS\"}\r\n{\"calls\": 2, \"default_candidate\": \"```repl\\nraise RuntimeError('DEFAULT_CODE_MUST_NOT_RUN')\\n```\", \"default_code_executed\": false, \"normal_candidate\": null, \"probe\": \"F4_iteration_exhaustion\", \"returned\": \"```repl\\nraise RuntimeError('DEFAULT_CODE_MUST_NOT_RUN')\\n```\", \"status\": \"PASS\"}\r\n{\"captured\": \"A\", \"iteration_logged\": false, \"probe\": \"F5_error_limit_beats_final\", \"returned\": null, \"status\": \"PASS\", \"termination\": \"ErrorThresholdExceededError\"}\r\n{\"captured\": \"A\", \"probe\": \"F6_token_limit_beats_final\", \"returned\": null, \"status\": \"PASS\", \"termination\": \"TokenLimitExceededError\", \"tokens_used\": 20}\r\n{\"captured\": \"A\", \"probe\": \"F7_cost_limit_beats_final\", \"returned\": null, \"status\": \"PASS\", \"termination\": \"BudgetExceededError\"}\r\n{\"captured\": \"A\", \"elapsed\": 2.0, \"probe\": \"F8_timeout_overrun_with_final\", \"returned\": \"A\", \"status\": \"PASS\", \"termination\": \"normal\", \"timeout\": 1.0}\r\n{\"captured\": null, \"probe\": \"F9_timeout_on_next_turn\", \"returned\": null, \"status\": \"PASS\", \"termination\": \"TimeoutExceededError\"}\r\nCP4 deterministic probes: 9 passed\r\n"
+      },
+      "archival_case_mapping": [
+        {
+          "archival_id": "F1",
+          "original_identifier": "F1_ready_then_exception"
+        },
+        {
+          "archival_id": "F2",
+          "original_identifier": "F2_content_changed_after_ready"
+        },
+        {
+          "archival_id": "F3",
+          "original_identifier": "F3_two_final_blocks"
+        },
+        {
+          "archival_id": "F4",
+          "original_identifier": "F4_iteration_exhaustion"
+        },
+        {
+          "archival_id": "F5",
+          "original_identifier": "F5_error_limit_beats_final"
+        },
+        {
+          "archival_id": "F6",
+          "original_identifier": "F6_token_limit_beats_final"
+        },
+        {
+          "archival_id": "F7",
+          "original_identifier": "F7_cost_limit_beats_final"
+        },
+        {
+          "archival_id": "F8",
+          "original_identifier": "F8_timeout_overrun_with_final"
+        },
+        {
+          "archival_id": "F9",
+          "original_identifier": "F9_timeout_on_next_turn"
+        }
+      ],
+      "original_executed_status": "PASS",
+      "recovered_original_source": "available",
+      "extracted_script_status": "new mechanical extraction, not executed",
+      "archived_script_reproduction": "PENDING"
+    },
+    {
+      "run_id": "cp2",
+      "extracted_script": "probes/cp2.py",
+      "command_body_record": "test-results/original-tool-inputs.txt",
+      "original_tool_result": {
+        "chunk_id": "5832be",
+        "wall_time_seconds": 5.3869426,
+        "exit_code": 0,
+        "original_token_count": 814,
+        "output": "{\"bad_path_events\": [\"dispatch:bad\", \"candidate:REJECTED_PAYLOAD\", \"reject:bad\", \"consume\"], \"bad_return\": \"Error: REJECTED\", \"batched\": false, \"downstream_ran\": true, \"mode\": \"llm\", \"original_withheld\": true, \"probe\": \"I1\", \"ready_final_present\": true, \"recorded_calls\": 0, \"status\": \"PASS\"}\r\n{\"bad_path_events\": [\"dispatch:bad\", \"candidate:REJECTED_PAYLOAD\", \"reject:bad\", \"consume\"], \"bad_return\": \"Error: llm() call failed - REJECTED\", \"batched\": true, \"downstream_ran\": true, \"mode\": \"llm\", \"original_withheld\": true, \"probe\": \"I2\", \"ready_final_present\": true, \"recorded_calls\": 1, \"status\": \"PASS\"}\r\n{\"bad_path_events\": [\"dispatch:bad\", \"candidate:REJECTED_PAYLOAD\", \"reject:bad\", \"consume\"], \"bad_return\": \"Error: RLM query failed - REJECTED\", \"batched\": false, \"downstream_ran\": true, \"mode\": \"rlm_callback\", \"original_withheld\": true, \"probe\": \"I3\", \"ready_final_present\": true, \"recorded_calls\": 0, \"status\": \"PASS\"}\r\n{\"bad_path_events\": [\"dispatch:bad\", \"candidate:REJECTED_PAYLOAD\", \"reject:bad\", \"consume\"], \"bad_return\": \"Error: RLM query failed - REJECTED\", \"batched\": true, \"downstream_ran\": true, \"mode\": \"rlm_callback\", \"original_withheld\": true, \"probe\": \"I4\", \"ready_final_present\": true, \"recorded_calls\": 1, \"status\": \"PASS\"}\r\n{\"bad_path_events\": [\"dispatch:bad\", \"candidate:REJECTED_PAYLOAD\", \"reject:bad\", \"consume\"], \"bad_return\": \"Error: REJECTED\", \"batched\": false, \"downstream_ran\": true, \"mode\": \"rlm_no_callback\", \"original_withheld\": true, \"probe\": \"I5\", \"ready_final_present\": true, \"recorded_calls\": 0, \"status\": \"PASS\"}\r\n{\"bad_path_events\": [\"dispatch:bad\", \"candidate:REJECTED_PAYLOAD\", \"reject:bad\", \"consume\"], \"bad_return\": \"Error: llm() call failed - REJECTED\", \"batched\": true, \"downstream_ran\": true, \"mode\": \"rlm_no_callback\", \"original_withheld\": true, \"probe\": \"I6\", \"ready_final_present\": true, \"recorded_calls\": 1, \"status\": \"PASS\"}\r\n{\"bad_path_events\": [\"dispatch:bad\", \"candidate:REJECTED_PAYLOAD\", \"reject:bad\", \"consume\"], \"bad_return\": \"Error: LM query failed at max depth - REJECTED\", \"batched\": false, \"downstream_ran\": true, \"mode\": \"rlm_core_leaf\", \"original_withheld\": true, \"probe\": \"I7\", \"ready_final_present\": true, \"recorded_calls\": 1, \"status\": \"PASS\"}\r\n{\"bad_path_events\": [\"dispatch:bad\", \"candidate:REJECTED_PAYLOAD\", \"reject:bad\", \"consume\"], \"bad_return\": \"Error: LM query failed at max depth - REJECTED\", \"batched\": true, \"downstream_ran\": true, \"mode\": \"rlm_core_leaf\", \"original_withheld\": true, \"probe\": \"I8\", \"ready_final_present\": true, \"recorded_calls\": 2, \"status\": \"PASS\"}\r\n{\"probe\": \"I9_rejection_text_is_normal_completion\", \"recorded_error\": null, \"returned\": \"REJECTED: explanation\", \"status\": \"PASS\"}\r\n{\"caught\": false, \"downstream_ran\": false, \"events\": [\"candidate_available\", \"reject\"], \"final\": null, \"original_withheld\": true, \"probe\": \"I10_wrapper_uncaught\", \"status\": \"PASS\"}\r\n{\"caught\": true, \"downstream_ran\": true, \"events\": [\"candidate_available\", \"reject\", \"caught\", \"downstream\"], \"final\": \"AFTER\", \"original_withheld\": true, \"probe\": \"I10_wrapper_caught\", \"status\": \"PASS\"}\r\n{\"first_candidate\": null, \"probe\": \"I11_interrupt_one_block_not_iteration\", \"returned\": \"SECOND\", \"second_candidate\": \"SECOND\", \"status\": \"PASS\"}\r\nCP2 deterministic probes: 12 passed\r\n"
+      },
+      "archival_case_mapping": [
+        {
+          "archival_id": "I1",
+          "original_identifier": "I1"
+        },
+        {
+          "archival_id": "I2",
+          "original_identifier": "I2"
+        },
+        {
+          "archival_id": "I3",
+          "original_identifier": "I3"
+        },
+        {
+          "archival_id": "I4",
+          "original_identifier": "I4"
+        },
+        {
+          "archival_id": "I5",
+          "original_identifier": "I5"
+        },
+        {
+          "archival_id": "I6",
+          "original_identifier": "I6"
+        },
+        {
+          "archival_id": "I7",
+          "original_identifier": "I7"
+        },
+        {
+          "archival_id": "I8",
+          "original_identifier": "I8"
+        },
+        {
+          "archival_id": "I9",
+          "original_identifier": "I9_rejection_text_is_normal_completion"
+        },
+        {
+          "archival_id": "I10a",
+          "original_identifier": "I10_wrapper_uncaught"
+        },
+        {
+          "archival_id": "I10b",
+          "original_identifier": "I10_wrapper_caught"
+        },
+        {
+          "archival_id": "I11",
+          "original_identifier": "I11_interrupt_one_block_not_iteration"
+        }
+      ],
+      "original_executed_status": "PASS",
+      "recovered_original_source": "available",
+      "extracted_script_status": "new mechanical extraction, not executed",
+      "archived_script_reproduction": "PENDING"
+    },
+    {
+      "run_id": "delivery_identity_accounting",
+      "extracted_script": "probes/delivery_identity_accounting.py",
+      "command_body_record": "test-results/original-tool-inputs.txt",
+      "original_tool_result": {
+        "chunk_id": "67f722",
+        "wall_time_seconds": 4.8141975,
+        "exit_code": 0,
+        "original_token_count": 370,
+        "output": "{\"acted_upon\": \"scripted mock branch only\", \"blocks\": 2, \"error_in_next_feedback\": false, \"error_in_raw_result\": true, \"exact_feedback_match\": true, \"per_block_cap\": 20000, \"probe\": \"D1_exact_next_request\", \"returned\": \"SCRIPTED_REPAIR\", \"second_block_delivered\": true, \"status\": \"PASS\"}\r\n{\"earlier_memory_entry_changed\": true, \"probe\": \"D2_in_memory_history_alias\", \"serialized_snapshot_changed\": false, \"shared_reference\": true, \"status\": \"PASS\"}\r\n{\"earlier_value\": [1, 2, 3], \"frozen_value\": [1], \"later_rebinding\": [99], \"new_binding_after_error\": false, \"probe\": \"D3_locals_alias_and_partial_effects\", \"status\": \"PASS\"}\r\n{\"child_cost_before_check\": 0.03, \"distinct_client_cost_sum\": 0.04, \"distinct_client_input_sum\": 40, \"parent_cost_after_check\": 0.01, \"probe\": \"D4_recursive_usage_ownership\", \"returned_cost\": 0.01, \"returned_input_tokens\": 10, \"status\": \"PASS\"}\r\n{\"fake_outer_elapsed\": 9.0, \"omitted_default_call\": 7.0, \"probe\": \"D5_default_latency\", \"reported\": 2.0, \"status\": \"PASS\"}\r\n{\"actual_child_repl\": true, \"events\": [\"dispatch:A\", \"child_body:A\", \"available:A\", \"consume:A\", \"ready:A\"], \"probe\": \"D6_actual_child_single_order\", \"returned\": \"A\", \"status\": \"PASS\"}\r\n{\"actual_child_repl\": true, \"events\": [\"dispatch:A\", \"dispatch:B\", \"child_body:A\", \"child_body:B\", \"available:B\", \"available:A\", \"consume:A|B\", \"ready:A|B\"], \"probe\": \"D7_actual_child_batch_order\", \"returned\": \"A|B\", \"status\": \"PASS\"}\r\nCP3 / identity / accounting / child-order probes: 7 passed\r\n"
+      },
+      "archival_case_mapping": [
+        {
+          "archival_id": "D1",
+          "original_identifier": "D1_exact_next_request"
+        },
+        {
+          "archival_id": "D2",
+          "original_identifier": "D2_in_memory_history_alias"
+        },
+        {
+          "archival_id": "D3",
+          "original_identifier": "D3_locals_alias_and_partial_effects"
+        },
+        {
+          "archival_id": "D4",
+          "original_identifier": "D4_recursive_usage_ownership"
+        },
+        {
+          "archival_id": "D5",
+          "original_identifier": "D5_default_latency"
+        },
+        {
+          "archival_id": "D6",
+          "original_identifier": "D6_actual_child_single_order"
+        },
+        {
+          "archival_id": "D7",
+          "original_identifier": "D7_actual_child_batch_order"
+        }
+      ],
+      "original_executed_status": "PASS",
+      "recovered_original_source": "available",
+      "extracted_script_status": "new mechanical extraction, not executed",
+      "archived_script_reproduction": "PENDING"
+    },
+    {
+      "run_id": "accounting_extra",
+      "extracted_script": "probes/accounting_extra.py",
+      "command_body_record": "test-results/original-tool-inputs.txt",
+      "original_tool_result": {
+        "chunk_id": "a7fcf1",
+        "wall_time_seconds": 2.1735851,
+        "exit_code": 0,
+        "original_token_count": 102,
+        "output": "{\"probe\": \"D8_recursive_budget_overshoot\", \"status\": \"PASS\", \"synthetic_total\": 0.04, \"configured_budget\": 0.035, \"reported_total\": 0.01, \"termination\": \"normal\", \"returned\": \"A\"}\r\n{\"probe\": \"D9_batch_metrics\", \"status\": \"PASS\", \"slot_input_tokens\": [40, 40], \"handler_input_total\": 55, \"slot_duration_estimates\": [5.0, 5.0], \"fixture_call_durations\": [2.0, 8.0]}\r\nAdditional accounting probes: 2 passed\r\n"
+      },
+      "archival_case_mapping": [
+        {
+          "archival_id": "D8",
+          "original_identifier": "D8_recursive_budget_overshoot"
+        },
+        {
+          "archival_id": "D9",
+          "original_identifier": "D9_batch_metrics"
+        }
+      ],
+      "original_executed_status": "PASS",
+      "recovered_original_source": "available",
+      "extracted_script_status": "new mechanical extraction, not executed",
+      "archived_script_reproduction": "PENDING"
+    }
+  ]
+}

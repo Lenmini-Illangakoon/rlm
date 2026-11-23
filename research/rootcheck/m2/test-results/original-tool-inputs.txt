@@ -1,0 +1,511 @@
+M2 recovered original probe tool-call command bodies
+Archive transcription date: 2026-11-23
+Source: accessible prior M2 conversation tool-call inputs; not a session-export file.
+These are decoded PowerShell command bodies, not the enclosing JavaScript calls.
+Original cwd: D:\iit\4th Year\FYP\RLM\rlm
+Original baseline: e11f1a8f8ee4490686e16dd6463233abe08a07eb
+Original stdout/exit records: original-probe-runs.json
+Hashes and standalone files were created during archiving, not original execution.
+No secret redactions or logic rewrites were required by the scoped archive scan.
+
+===== BEGIN ORIGINAL COMMAND: cp4; result chunk bba6c6 =====
+$env:PYTHON_DOTENV_DISABLED='1'
+$env:PYTHONDONTWRITEBYTECODE='1'
+$env:PYTEST_DISABLE_PLUGIN_AUTOLOAD='1'
+@'
+import copy
+import json
+from unittest.mock import patch
+
+import rlm.core.rlm as core
+from rlm import RLM
+from rlm.logger import RLMLogger
+from rlm.utils.exceptions import BudgetExceededError, ErrorThresholdExceededError, TokenLimitExceededError, TimeoutExceededError
+from tests.mock_lm import MockLM
+from rlm.core.types import ModelUsageSummary, UsageSummary
+
+def block(code):
+    return "```repl\n" + code + "\n```"
+
+def ready(value):
+    return block("answer['content'] = " + repr(value) + "\nanswer['ready'] = True")
+
+def run(responses, **kwargs):
+    client = MockLM(responses=responses)
+    logger = RLMLogger()
+    captured = []
+    requests = []
+    original_completion = client.completion
+    def respond(prompt):
+        requests.append(copy.deepcopy(prompt))
+        return original_completion(prompt)
+    client.completion = respond
+    original_get_env = core.get_environment
+    def get_env(kind, env_kwargs):
+        env = original_get_env(kind, env_kwargs)
+        original_execute = env.execute_code
+        def execute(code):
+            result = original_execute(code)
+            captured.append((code, result))
+            return result
+        env.execute_code = execute
+        return env
+    with patch.object(core, "get_client", return_value=client), patch.object(core, "get_environment", side_effect=get_env):
+        with RLM(backend_kwargs={"model_name": "mock"}, logger=logger, max_iterations=kwargs.pop("max_iterations", 1), **kwargs) as root:
+            try:
+                result = root.completion({"items": [1]}, root_prompt="Return a result")
+                error = None
+            except (BudgetExceededError, ErrorThresholdExceededError, TokenLimitExceededError, TimeoutExceededError) as exc:
+                result, error = None, exc
+    return result, error, captured, requests, logger
+
+def emit(name, **fields):
+    print(json.dumps({"probe": name, "status": "PASS", **fields}, sort_keys=True))
+
+response = block("answer['content'] = 'A'\nanswer['ready'] = True\nraise ValueError('after-ready')")
+result, error, captured, requests, logger = run([response])
+assert error is None and result.response == "A"
+assert captured[0][1].final_answer == "A" and "ValueError: after-ready" in captured[0][1].stderr
+assert len(requests) == 1
+emit("F1_ready_then_exception", captured="A", stderr=captured[0][1].stderr, returned=result.response, next_request=False)
+
+result, error, captured, requests, logger = run([block("answer['content'] = 'A'\nanswer['ready'] = True\nanswer['content'] = 'B'")])
+assert error is None and result.response == "A"
+assert captured[0][1].locals["answer"]["content"] == "B"
+emit("F2_content_changed_after_ready", captured=captured[0][1].final_answer, dictionary_content="B", returned=result.response)
+
+result, error, captured, requests, logger = run([ready("A") + "\n" + ready("B")])
+assert error is None and [r.final_answer for _,r in captured] == ["A", "B"] and result.response == "A"
+assert captured[0][1].locals["answer"]["content"] == "B"
+emit("F3_two_final_blocks", block_candidates=[r.final_answer for _,r in captured], returned=result.response, earlier_locals_now="B")
+
+raw_default = block("raise RuntimeError('DEFAULT_CODE_MUST_NOT_RUN')")
+result, error, captured, requests, logger = run([block("print('INSPECT')"), raw_default])
+assert error is None and result.response == raw_default and len(requests) == 2
+assert len(captured) == 1 and captured[0][1].final_answer is None
+assert logger._iterations[-1]["code_blocks"] == [] and logger._iterations[-1]["final_answer"] == raw_default
+emit("F4_iteration_exhaustion", normal_candidate=None, default_candidate=raw_default, calls=2, default_code_executed=False, returned=result.response)
+
+result, error, captured, requests, logger = run([response], max_errors=1)
+assert result is None and isinstance(error, ErrorThresholdExceededError)
+assert captured[0][1].final_answer == "A" and len(logger._iterations) == 0
+emit("F5_error_limit_beats_final", captured="A", termination=type(error).__name__, returned=None, iteration_logged=False)
+
+result, error, captured, requests, logger = run([ready("A")], max_tokens=1)
+assert result is None and isinstance(error, TokenLimitExceededError)
+assert captured[0][1].final_answer == "A" and len(logger._iterations) == 0
+emit("F6_token_limit_beats_final", captured="A", termination=type(error).__name__, tokens_used=error.tokens_used, returned=None)
+
+class CostLM(MockLM):
+    def get_usage_summary(self):
+        return UsageSummary({self.model_name: ModelUsageSummary(1, 10, 10, 0.02)})
+
+cost_client = CostLM(responses=[ready("A")])
+captured_cost = []
+original_get_env = core.get_environment
+def cost_env(kind, kwargs):
+    env = original_get_env(kind, kwargs)
+    original_execute = env.execute_code
+    def execute(code):
+        result = original_execute(code)
+        captured_cost.append(result.final_answer)
+        return result
+    env.execute_code = execute
+    return env
+with patch.object(core, "get_client", return_value=cost_client), patch.object(core, "get_environment", side_effect=cost_env):
+    with RLM(backend_kwargs={"model_name":"mock"}, max_budget=0.01, max_iterations=1) as root:
+        try:
+            root.completion({})
+            raise AssertionError("expected budget error")
+        except BudgetExceededError as exc:
+            assert captured_cost[-1] == "A" and exc.spent == 0.02
+            emit("F7_cost_limit_beats_final", captured="A", termination=type(exc).__name__, returned=None)
+
+clock = {"now": 0.0}
+def overlong_final(prompt):
+    clock["now"] = 2.0
+    return ready("A")
+client = MockLM(response_fn=overlong_final)
+with patch.object(core, "get_client", return_value=client), patch.object(core.time, "perf_counter", side_effect=lambda: clock["now"]):
+    with RLM(backend_kwargs={"model_name":"mock"}, max_timeout=1.0, max_iterations=1) as root:
+        result = root.completion({})
+        assert result.response == "A" and result.execution_time == 2.0
+emit("F8_timeout_overrun_with_final", captured="A", timeout=1.0, elapsed=2.0, returned="A", termination="normal")
+
+clock["now"] = 0.0
+def overlong_nonfinal(prompt):
+    clock["now"] = 2.0
+    return block("print('WORK')")
+client = MockLM(response_fn=overlong_nonfinal)
+with patch.object(core, "get_client", return_value=client), patch.object(core.time, "perf_counter", side_effect=lambda: clock["now"]):
+    with RLM(backend_kwargs={"model_name":"mock"}, max_timeout=1.0, max_iterations=2) as root:
+        try:
+            root.completion({})
+            raise AssertionError("expected timeout")
+        except TimeoutExceededError as exc:
+            assert exc.elapsed == 2.0
+            emit("F9_timeout_on_next_turn", captured=None, termination=type(exc).__name__, returned=None)
+print("CP4 deterministic probes: 9 passed")
+'@ | & '.venv\Scripts\python.exe' -B -
+===== END ORIGINAL COMMAND: cp4 =====
+
+===== BEGIN ORIGINAL COMMAND: cp2; result chunk 5832be =====
+$env:PYTHON_DOTENV_DISABLED='1'
+$env:PYTHONDONTWRITEBYTECODE='1'
+$env:PYTEST_DISABLE_PLUGIN_AUTOLOAD='1'
+@'
+import json
+from unittest.mock import patch
+import rlm.core.rlm as core
+from rlm import RLM
+from rlm.core.lm_handler import LMHandler
+from rlm.core.types import RLMChatCompletion, UsageSummary
+from rlm.environments.local_repl import LocalREPL
+from tests.mock_lm import MockLM
+
+class ProbeReject(Exception):
+    pass
+
+def completion(text):
+    return RLMChatCompletion("mock", "request", text, UsageSummary({}), 0)
+
+def emit(name, **fields):
+    print(json.dumps({"probe":name, "status":"PASS", **fields}, sort_keys=True))
+
+passed = 0
+for mode in ("llm", "rlm_callback", "rlm_no_callback", "rlm_core_leaf"):
+    for batched in (False, True):
+        events = []
+        def produce(prompt):
+            tag = "bad" if str(prompt).startswith("bad") else "good"
+            events.append("dispatch:" + tag)
+            if tag == "bad":
+                events.extend(["candidate:REJECTED_PAYLOAD", "reject:bad"])
+                raise ProbeReject("REJECTED")
+            events.append("return:good")
+            return "OK"
+        def callback(instruction, context, model):
+            return completion(produce(instruction))
+        fake_client = MockLM(response_fn=produce)
+        with patch.object(core, "get_client", return_value=fake_client):
+            with RLM(backend_kwargs={"model_name":"mock"}, max_depth=1) as leaf_parent:
+                cb = callback if mode == "rlm_callback" else leaf_parent._subcall if mode == "rlm_core_leaf" else None
+                with LMHandler(fake_client) as handler:
+                    with LocalREPL(lm_handler_address=handler.address, subcall_fn=cb, custom_tools={"note": lambda value: events.append(value)}) as env:
+                        if mode == "llm":
+                            expr = "llm_query_batched(['bad', 'good'])" if batched else "llm_query('bad')"
+                        else:
+                            expr = "rlm_query_batched([('bad', {}), ('good', {})])" if batched else "rlm_query('bad', {})"
+                        code = "value = " + expr + "\nnote('consume')\nanswer['content'] = str(value)\nanswer['ready'] = True"
+                        result = env.execute_code(code)
+                        value = env.locals["value"]
+                        bad_value = value[0] if batched else value
+                        assert "REJECTED_PAYLOAD" not in bad_value and "Error:" in bad_value and "REJECTED" in bad_value
+                        assert result.stderr == "" and result.final_answer == str(value)
+                        assert events.index("dispatch:bad") < events.index("candidate:REJECTED_PAYLOAD") < events.index("reject:bad") < events.index("consume")
+                        expected_records = (2 if batched else 1) if mode == "rlm_core_leaf" else (1 if batched else 0)
+                        assert len(result.rlm_calls) == expected_records
+                        if batched:
+                            assert value[1] == "OK" and "return:good" in events
+                        output = {"mode":mode, "batched":batched, "original_withheld":True, "downstream_ran":True,
+                                  "ready_final_present":result.final_answer is not None, "recorded_calls":len(result.rlm_calls),
+                                  "bad_return":bad_value, "bad_path_events":[e for e in events if "good" not in e]}
+        passed += 1
+        emit("I" + str(passed), **output)
+
+with LocalREPL(subcall_fn=lambda *args: completion("REJECTED: explanation")) as env:
+    result = env.execute_code("value = rlm_query('task', {})\nanswer['content'] = value\nanswer['ready'] = True")
+    assert result.final_answer == "REJECTED: explanation" and len(result.rlm_calls) == 1
+    assert result.rlm_calls[0].error is None
+emit("I9_rejection_text_is_normal_completion", returned="REJECTED: explanation", recorded_error=None)
+
+for caught in (False, True):
+    events = []
+    with LocalREPL(subcall_fn=lambda *args: completion("REJECTED_PAYLOAD"), custom_tools={"note":lambda value:events.append(value)}) as env:
+        original = env._rlm_query
+        def wrapper(*args, **kwargs):
+            value = original(*args, **kwargs)
+            events.extend(["candidate_available", "reject"])
+            raise ProbeReject("REJECTED")
+        with patch.dict(env.globals, {"rlm_query":wrapper}):
+            query = "value = rlm_query('task', {})"
+            code = ("try:\n    " + query + "\nexcept Exception:\n    note('caught')\n") if caught else query + "\n"
+            code += "note('downstream')\nanswer['content'] = 'AFTER'\nanswer['ready'] = True"
+            result = env.execute_code(code)
+            assert len(result.rlm_calls) == 1 and "value" not in env.locals
+            if caught:
+                assert result.stderr == "" and result.final_answer == "AFTER" and "downstream" in events
+            else:
+                assert "ProbeReject: REJECTED" in result.stderr and result.final_answer is None and "downstream" not in events
+    emit("I10_wrapper_caught" if caught else "I10_wrapper_uncaught", original_withheld=True, caught=caught,
+         downstream_ran="downstream" in events, final=result.final_answer, events=events)
+    passed += 1
+
+def block(code):
+    return "```repl\n" + code + "\n```"
+first = block("value = rlm_query('task', {})\nanswer['content'] = 'FIRST'\nanswer['ready'] = True")
+second = block("answer['content'] = 'SECOND'\nanswer['ready'] = True")
+client = MockLM(responses=[first + "\n" + second])
+recorded = []
+original_get_env = core.get_environment
+def get_env(kind, kwargs):
+    env = original_get_env(kind, kwargs)
+    env.subcall_fn = lambda *args: completion("REJECTED_PAYLOAD")
+    original = env._rlm_query
+    def wrapper(*args, **kw):
+        original(*args, **kw)
+        raise ProbeReject("REJECTED")
+    env.globals["rlm_query"] = wrapper
+    original_execute = env.execute_code
+    def execute(code):
+        result = original_execute(code)
+        recorded.append(result)
+        return result
+    env.execute_code = execute
+    return env
+with patch.object(core, "get_client", return_value=client), patch.object(core, "get_environment", side_effect=get_env):
+    with RLM(backend_kwargs={"model_name":"mock"}, max_iterations=1) as root:
+        result = root.completion({})
+assert len(recorded) == 2 and "ProbeReject" in recorded[0].stderr and recorded[0].final_answer is None
+assert recorded[1].final_answer == "SECOND" and result.response == "SECOND"
+emit("I11_interrupt_one_block_not_iteration", first_candidate=None, second_candidate="SECOND", returned=result.response)
+print("CP2 deterministic probes: 12 passed")
+'@ | & '.venv\Scripts\python.exe' -B -
+===== END ORIGINAL COMMAND: cp2 =====
+
+===== BEGIN ORIGINAL COMMAND: delivery_identity_accounting; result chunk 67f722 =====
+$env:PYTHON_DOTENV_DISABLED='1'
+$env:PYTHONDONTWRITEBYTECODE='1'
+$env:PYTEST_DISABLE_PLUGIN_AUTOLOAD='1'
+@'
+import copy
+import json
+from unittest.mock import patch
+
+import rlm.core.rlm as core
+from rlm import RLM
+from rlm.core.types import ModelUsageSummary, RLMIteration, UsageSummary
+from rlm.environments.local_repl import LocalREPL
+from rlm.logger import RLMLogger
+from tests.mock_lm import MockLM
+
+def block(code):
+    return "```repl\n" + code + "\n```"
+
+def ready(value):
+    return block("answer['content'] = " + repr(value) + "\nanswer['ready'] = True")
+
+def emit(name, **fields):
+    print(json.dumps({"probe":name, "status":"PASS", **fields}, sort_keys=True))
+
+response = block("print('x' * 20005)\nraise ValueError('HIDDEN_STDERR')") + "\n" + block("print('SECOND')")
+requests = []
+captured = []
+vars_line = "REPL variables: ['answer', 'context_0', 'context']\n"
+raw_first = "\n" + "x" * 20005 + "\n" + "\n\n" + "\n\nValueError: HIDDEN_STDERR" + "\n\n" + vars_line
+expected_first = raw_first[:20000] + "... + [" + str(len(raw_first)-20000) + " chars...]"
+expected_second = "\nSECOND\n" + "\n\n" + vars_line
+expected_feedback = "REPL output (block 1):\n" + expected_first + "\n\nREPL output (block 2):\n" + expected_second
+def respond(prompt):
+    requests.append(copy.deepcopy(prompt))
+    if len(requests) == 1:
+        return response
+    assert prompt[-3] == {"role":"assistant", "content":response}
+    assert prompt[-2] == {"role":"user", "content":expected_feedback}
+    assert prompt[-1] == {"role":"user", "content":"Turn 2/2:"}
+    assert "HIDDEN_STDERR" not in prompt[-2]["content"] and "SECOND" in prompt[-2]["content"]
+    return ready("SCRIPTED_REPAIR")
+client = MockLM(response_fn=respond)
+original_get_env = core.get_environment
+def capture_env(kind, kwargs):
+    env = original_get_env(kind, kwargs)
+    original = env.execute_code
+    def execute(code):
+        result = original(code)
+        captured.append(result)
+        return result
+    env.execute_code = execute
+    return env
+with patch.object(core,"get_client",return_value=client), patch.object(core,"get_environment",side_effect=capture_env):
+    with RLM(backend_kwargs={"model_name":"mock"}, max_iterations=2) as root:
+        result = root.completion({})
+assert result.response == "SCRIPTED_REPAIR" and len(requests) == 2
+assert "HIDDEN_STDERR" in captured[0].stderr
+emit("D1_exact_next_request", blocks=2, per_block_cap=20000, exact_feedback_match=True,
+     error_in_raw_result=True, error_in_next_feedback=False, second_block_delivered=True,
+     returned=result.response, acted_upon="scripted mock branch only")
+
+history = [{"role":"user","content":"BEFORE"}]
+logger = RLMLogger()
+logger.log(RLMIteration(history, "response", []))
+entry = logger._iterations[0]
+serialized_before = json.dumps(entry)
+assert entry["prompt"] is history
+history.append({"role":"user","content":"LATER"})
+assert entry["prompt"][-1]["content"] == "LATER" and "LATER" not in serialized_before
+emit("D2_in_memory_history_alias", shared_reference=True, earlier_memory_entry_changed=True,
+     serialized_snapshot_changed=False)
+
+with LocalREPL() as env:
+    earlier = env.execute_code("items = [1]")
+    frozen = copy.deepcopy(earlier.locals["items"])
+    env.execute_code("items.append(2)")
+    assert earlier.locals["items"] == [1,2] and frozen == [1]
+    failed = env.execute_code("items.append(3)\nnew_binding = 5\nraise ValueError('STOP')")
+    assert "ValueError" in failed.stderr and earlier.locals["items"] == [1,2,3]
+    assert "new_binding" not in env.locals
+    env.execute_code("items = [99]")
+    assert env.locals["items"] == [99] and earlier.locals["items"] == [1,2,3]
+emit("D3_locals_alias_and_partial_effects", earlier_value=[1,2,3], frozen_value=[1],
+     new_binding_after_error=False, later_rebinding=[99])
+
+class MeterLM(MockLM):
+    def __init__(self, model_name, response):
+        super().__init__(model_name=model_name, responses=[response])
+    def get_usage_summary(self):
+        tokens, out, cost = (10,5,0.01) if self.model_name == "root" else (30,7,0.03)
+        return UsageSummary({self.model_name:ModelUsageSummary(self._call_count,tokens*self._call_count,out*self._call_count,cost*self._call_count)})
+made = []
+parent_code = block("value = rlm_query('extract', {'v':'A'}, model='child')\nanswer['content'] = value\nanswer['ready'] = True")
+def create_meter(backend, kwargs):
+    client = MeterLM(kwargs["model_name"], parent_code if kwargs["model_name"] == "root" else ready("A"))
+    made.append(client)
+    return client
+observed = {}
+with patch.object(core,"get_client",side_effect=create_meter):
+    with RLM(backend_kwargs={"model_name":"root"}, max_depth=2,max_iterations=1,max_budget=1.0,logger=RLMLogger()) as root:
+        original_check = root._check_iteration_limits
+        def check(iteration, number, handler):
+            observed["before"] = root._cumulative_cost
+            original_check(iteration, number, handler)
+            observed["after"] = root._cumulative_cost
+        root._check_iteration_limits = check
+        result = root.completion({})
+        recorded_child = result.metadata["iterations"][0]["code_blocks"][0]["result"]["rlm_calls"][0]
+assert len(made) == 2 and all(client._call_count == 1 for client in made)
+assert observed == {"before":0.03, "after":0.01}
+assert result.usage_summary.total_cost == 0.01 and result.usage_summary.total_input_tokens == 10
+assert recorded_child["usage_summary"]["total_cost"] == 0.03
+emit("D4_recursive_usage_ownership", child_cost_before_check=observed["before"], parent_cost_after_check=observed["after"],
+     returned_cost=0.01, distinct_client_cost_sum=0.04, returned_input_tokens=10, distinct_client_input_sum=40)
+
+clock = {"now":0.0, "calls":0}
+def timed_response(prompt):
+    clock["calls"] += 1
+    clock["now"] += 2.0 if clock["calls"] == 1 else 7.0
+    return block("print('WORK')") if clock["calls"] == 1 else "RAW_FINAL"
+client = MockLM(response_fn=timed_response)
+with patch.object(core,"get_client",return_value=client), patch.object(core.time,"perf_counter",side_effect=lambda:clock["now"]):
+    with RLM(backend_kwargs={"model_name":"mock"},max_iterations=1) as root:
+        result = root.completion({})
+assert result.response == "RAW_FINAL" and result.execution_time == 2.0 and clock["now"] == 9.0
+emit("D5_default_latency", reported=2.0, fake_outer_elapsed=9.0, omitted_default_call=7.0)
+
+for batched in (False,True):
+    events = []
+    root_code = ("values = rlm_query_batched([('extract', {'v':'A'}), ('extract', {'v':'B'})], model='child')\nvalue = '|'.join(values)\n"
+                 if batched else "value = rlm_query('extract', {'v':'A'}, model='child')\n")
+    root_code += "note('consume:' + value)\nanswer['content'] = value\nanswer['ready'] = True"
+    child_code = "note('child_body:' + context['v'])\nanswer['content'] = context['v']\nanswer['ready'] = True"
+    def create_client(backend, kwargs):
+        return MockLM(model_name=kwargs["model_name"], responses=[block(root_code if kwargs["model_name"] == "root" else child_code)])
+    def observe_env(kind, kwargs):
+        env = original_get_env(kind, kwargs)
+        if kwargs["depth"] == 1:
+            original_subcall = env.subcall_fn
+            def subcall(instruction, context, model):
+                events.append("dispatch:" + context["v"])
+                answer = original_subcall(instruction, context, model)
+                events.append("available:" + answer.response)
+                return answer
+            env.subcall_fn = subcall
+            answer_dict = env.locals["answer"]
+            original_ready = answer_dict._on_ready
+            def on_ready(content):
+                events.append("ready:" + str(content))
+                original_ready(content)
+            answer_dict._on_ready = on_ready
+        return env
+    with patch.object(core,"get_client",side_effect=create_client), patch.object(core,"get_environment",side_effect=observe_env):
+        with RLM(backend_kwargs={"model_name":"root"},max_depth=2,max_iterations=1,custom_tools={"note":events.append}) as root:
+            result = root.completion({})
+    expected = "A|B" if batched else "A"
+    assert result.response == expected
+    for value in (["A","B"] if batched else ["A"]):
+        assert events.index("dispatch:"+value) < events.index("child_body:"+value) < events.index("available:"+value) < events.index("consume:"+expected) < events.index("ready:"+expected)
+    emit("D7_actual_child_batch_order" if batched else "D6_actual_child_single_order",
+         events=events, actual_child_repl=True, returned=result.response)
+
+print("CP3 / identity / accounting / child-order probes: 7 passed")
+'@ | & '.venv\Scripts\python.exe' -B -
+===== END ORIGINAL COMMAND: delivery_identity_accounting =====
+
+===== BEGIN ORIGINAL COMMAND: accounting_extra; result chunk a7fcf1 =====
+$env:PYTHON_DOTENV_DISABLED='1'
+$env:PYTHONDONTWRITEBYTECODE='1'
+@'
+import json
+from unittest.mock import patch
+import rlm.core.rlm as core
+from rlm import RLM
+from rlm.core.comms_utils import send_lm_request_batched
+from rlm.core.lm_handler import LMHandler
+from rlm.core.types import ModelUsageSummary, UsageSummary
+from tests.mock_lm import MockLM
+
+def block(code):
+    return "```repl\n" + code + "\n```"
+def ready(value):
+    return block("answer['content'] = " + repr(value) + "\nanswer['ready'] = True")
+
+class Meter(MockLM):
+    def get_usage_summary(self):
+        cost = 0.01 if self.model_name == "root" else 0.03
+        return UsageSummary({self.model_name:ModelUsageSummary(self._call_count,10,10,cost*self._call_count)})
+clients = []
+def factory(backend, kwargs):
+    response = block("answer['content'] = rlm_query('extract', {}, model='child')\nanswer['ready'] = True") if kwargs["model_name"] == "root" else ready("A")
+    client = Meter(model_name=kwargs["model_name"],responses=[response])
+    clients.append(client)
+    return client
+with patch.object(core,"get_client",side_effect=factory):
+    with RLM(backend_kwargs={"model_name":"root"},max_depth=2,max_iterations=1,max_budget=0.035) as root:
+        result = root.completion({})
+assert len(clients) == 2 and result.response == "A"
+actual_cost = sum(client.get_usage_summary().total_cost for client in clients)
+assert actual_cost == 0.04 and actual_cost > 0.035 and result.usage_summary.total_cost == 0.01
+print(json.dumps({"probe":"D8_recursive_budget_overshoot","status":"PASS","synthetic_total":actual_cost,
+                  "configured_budget":0.035,"reported_total":0.01,"termination":"normal","returned":"A"}))
+
+clock = {"now":0.0}
+class BatchMeter(MockLM):
+    def __init__(self):
+        super().__init__(model_name="mock")
+        self.inputs = []
+        self.last = None
+    def completion(self,prompt):
+        tokens, duration = (15,2.0) if prompt == "first" else (40,8.0)
+        self.inputs.append(tokens)
+        self.last = ModelUsageSummary(1,tokens,0,tokens/1000)
+        clock["now"] += duration
+        return "OK:"+prompt
+    def get_last_usage(self):
+        return self.last
+    def get_usage_summary(self):
+        return UsageSummary({"mock":ModelUsageSummary(len(self.inputs),sum(self.inputs),0,sum(self.inputs)/1000)})
+client = BatchMeter()
+with patch.object(core.time,"perf_counter",side_effect=lambda:clock["now"]):
+    with LMHandler(client) as handler:
+        slots = send_lm_request_batched(handler.address,["first","second"])
+        summary = handler.get_usage_summary()
+assert [s.chat_completion.response for s in slots] == ["OK:first","OK:second"]
+inputs = [s.chat_completion.usage_summary.total_input_tokens for s in slots]
+durations = [s.chat_completion.execution_time for s in slots]
+assert inputs == [40,40] and summary.total_input_tokens == 55
+assert durations == [5.0,5.0]
+print(json.dumps({"probe":"D9_batch_metrics","status":"PASS","slot_input_tokens":inputs,
+                  "handler_input_total":55,"slot_duration_estimates":durations,
+                  "fixture_call_durations":[2.0,8.0]}))
+print("Additional accounting probes: 2 passed")
+'@ | & '.venv\Scripts\python.exe' -B -
+===== END ORIGINAL COMMAND: accounting_extra =====

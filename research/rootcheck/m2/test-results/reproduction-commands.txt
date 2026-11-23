@@ -1,0 +1,48 @@
+M2 reproduction commands — executed 2026-11-23
+Working directory: D:\iit\4th Year\FYP\RLM\rlm
+Shell: existing PowerShell; login profile disabled.
+Pinned baseline: e11f1a8f8ee4490686e16dd6463233abe08a07eb
+
+R1 — initial runner invocation; shell exit 1; zero probes started.
+The runner stopped at Git dubious-ownership preflight. No model/test process ran.
+The account/SID details in raw Git stderr are omitted from tracked evidence.
+BEGIN EXECUTED COMMAND
+& '.\research\rootcheck\m2\reproduce.ps1'
+END EXECUTED COMMAND
+
+R2 — process-local Git ownership override; shell exit 0.
+Four Python processes exited 0: cp4 (9), cp2 (12),
+delivery_identity_accounting (7), accounting_extra (2).
+No persistent Git configuration or runner source was changed.
+BEGIN EXECUTED COMMAND
+$env:GIT_CONFIG_COUNT='1'
+$env:GIT_CONFIG_KEY_0='safe.directory'
+$env:GIT_CONFIG_VALUE_0='D:/iit/4th Year/FYP/RLM/rlm'
+& '.\research\rootcheck\m2\reproduce.ps1'
+END EXECUTED COMMAND
+
+For each original script the unmodified runner invoked the existing interpreter as:
+.venv\Scripts\python.exe -I -B - <absolute-repo-root> <absolute-script-path> <saved-script-SHA256>
+The '-' stdin payload is the Python bootstrap in reproduce.ps1 (SHA-256 of the
+entire unmodified runner: b6de5c1a45e956a72871119659d739e85e411e2a7132263cf797346197d4a054).
+Exact per-script digests and execution records are in reproduction-verification-2026-11-23.json.
+The four original script bodies were neither extracted again nor rewritten.
+
+S1 — new supplementary repeated-readiness test; Python and shell exit 0.
+This extracts the same guarded bootstrap and runs the new script separately.
+BEGIN EXECUTED COMMAND
+$runnerSource = Get-Content -LiteralPath 'research\rootcheck\m2\reproduce.ps1' -Raw -Encoding UTF8
+$bootstrapMatch = [regex]::Match($runnerSource, "(?ms)^\`$bootstrap = @'\r?\n(.*?)\r?\n'@")
+if (-not $bootstrapMatch.Success) { throw 'Offline bootstrap not found' }
+$guardedBootstrap = $bootstrapMatch.Groups[1].Value
+$repoRoot = (Get-Location).Path
+$scriptPath = (Resolve-Path -LiteralPath 'research\rootcheck\m2\probes\supplementary_repeated_readiness.py').Path
+$expectedHash = (Get-FileHash -LiteralPath $scriptPath -Algorithm SHA256).Hash.ToLowerInvariant()
+$guardedBootstrap | & '.venv\Scripts\python.exe' -I -B - $repoRoot $scriptPath $expectedHash
+if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+END EXECUTED COMMAND
+
+Expected safe rerun of the original 30: use the R2 command above.
+Expected safe rerun of the supplementary test: use S1 above.
+Do not use this record as an executable script. The original first invocation
+failed on this sandbox account, and no guard is disabled by the successful override.

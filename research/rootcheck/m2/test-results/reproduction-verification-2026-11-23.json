@@ -1,0 +1,1364 @@
+{
+  "schema_version": 1,
+  "record_kind": "Later archived-script reproduction and comparison; not original execution evidence",
+  "verification_date": "2026-11-23",
+  "baseline": "e11f1a8f8ee4490686e16dd6463233abe08a07eb",
+  "branch": "research/m2-runtime-feasibility",
+  "original_evidence": "test-results/original-probe-runs.json",
+  "original_command_bodies": "test-results/original-tool-inputs.txt",
+  "commands_record": "test-results/reproduction-commands.txt",
+  "attempts": [
+    {
+      "attempt_id": "R1-preflight-blocked",
+      "command": "& '.\\research\\rootcheck\\m2\\reproduce.ps1'",
+      "shell_exit_code": 1,
+      "probe_processes_started": 0,
+      "stage": "Git branch preflight",
+      "diagnostic_excerpt": "fatal: detected dubious ownership in repository at 'D:/iit/4th Year/FYP/RLM/rlm'",
+      "diagnostic_summary": "Runner passes a backslash-form safe.directory. Under the sandbox account this did not satisfy Git ownership validation.",
+      "evidence_note": "This is an excerpt/summary, not the complete raw stderr. Windows account names and SIDs are omitted from tracked evidence.",
+      "tool_chunk_id": "03ca99",
+      "resolved_by": "process-local GIT_CONFIG_COUNT/KEY_0/VALUE_0 with forward-slash safe.directory; no file or persistent Git configuration change"
+    },
+    {
+      "attempt_id": "R2-original-30",
+      "command": "$env:GIT_CONFIG_COUNT='1'\n$env:GIT_CONFIG_KEY_0='safe.directory'\n$env:GIT_CONFIG_VALUE_0='D:/iit/4th Year/FYP/RLM/rlm'\n& '.\\research\\rootcheck\\m2\\reproduce.ps1'",
+      "shell_exit_code": 0,
+      "probe_processes_started": 4,
+      "python_exit_codes": [
+        {
+          "run_id": "cp4",
+          "exit_code": 0,
+          "cases": 9
+        },
+        {
+          "run_id": "cp2",
+          "exit_code": 0,
+          "cases": 12
+        },
+        {
+          "run_id": "delivery_identity_accounting",
+          "exit_code": 0,
+          "cases": 7
+        },
+        {
+          "run_id": "accounting_extra",
+          "exit_code": 0,
+          "cases": 2
+        }
+      ],
+      "tool_output_chunks": [
+        "e83b31",
+        "981425"
+      ],
+      "result": "30 original diagnostic cases PASS; no failed case",
+      "environment_warning": "Git warned that the user-global ignore file was unreadable (Permission denied). Execution continued successfully; the repository-scoped ignore rule is checked separately."
+    }
+  ],
+  "runner_unmodified_sha256": "b6de5c1a45e956a72871119659d739e85e411e2a7132263cf797346197d4a054",
+  "pre_verification_archive_files": {
+    "research/rootcheck/m2/.gitignore": {
+      "sha256": "3d91fef320442146bec26447dd6278e5e50c98502a7e0c1ef6c2aa6a9c5c2d37",
+      "bytes": 21
+    },
+    "research/rootcheck/m2/environment-current.json": {
+      "sha256": "1297166ea54c4231f0affd348b019a1c3525fea7af7fe04d31cffcf3c04372d9",
+      "bytes": 17512
+    },
+    "research/rootcheck/m2/evidence-manifest.json": {
+      "sha256": "fb84d2dc43d69bc6cd195c11d2e861641819c80c11d82cb45487699a87c303e3",
+      "bytes": 34660
+    },
+    "research/rootcheck/m2/M2_CP_FEASIBILITY_MATRIX.md": {
+      "sha256": "9921f876e13f83b627ba5b352c10b2b8a630a6a68be38dbe164ecc20cfa09f52",
+      "bytes": 13803
+    },
+    "research/rootcheck/m2/M2_DECISION_RECORD.md": {
+      "sha256": "2f1e29eac45c4ee2a7f788f24b4a26057b37e91c032a763dbfc89fded62f3b1e",
+      "bytes": 6962
+    },
+    "research/rootcheck/m2/M2_PROBE_INVENTORY.md": {
+      "sha256": "caf857ff8f7951b77162690bc1fc0d7f8155f8ef4ca80b9897137c4f92c65858",
+      "bytes": 12206
+    },
+    "research/rootcheck/m2/M2_REPRODUCIBILITY.md": {
+      "sha256": "4b75399fe99623d404b2a625eb2760fa4758ac5457e1e930282d7f1317f160ef",
+      "bytes": 10977
+    },
+    "research/rootcheck/m2/probes/accounting_extra.py": {
+      "sha256": "3b8460483068b1874f397a8882a20f12018e521c65350ccb854c1bbb7c0dcf24",
+      "bytes": 3099
+    },
+    "research/rootcheck/m2/probes/cp2.py": {
+      "sha256": "25ebc1f8378b41f91e32051c1687f0cc90ef011d3510dc05c2ec75f904b2405b",
+      "bytes": 6558
+    },
+    "research/rootcheck/m2/probes/cp4.py": {
+      "sha256": "eb5edd6919f6cec80e5302101f330d532e6259baf41e1b54d23ed1dc5f4469c3",
+      "bytes": 6775
+    },
+    "research/rootcheck/m2/probes/delivery_identity_accounting.py": {
+      "sha256": "2cfa9a0812df13acd1211316070212d32e2eef6362abd2b2e9fa9e75b57f19ac",
+      "bytes": 8551
+    },
+    "research/rootcheck/m2/reproduce.ps1": {
+      "sha256": "b6de5c1a45e956a72871119659d739e85e411e2a7132263cf797346197d4a054",
+      "bytes": 8618
+    },
+    "research/rootcheck/m2/test-results/original-offline-runs.txt": {
+      "sha256": "546bc2a2790154175496bcdd2cd99f5bb70c44d6a18d53e1a707ed5d4cf9fab5",
+      "bytes": 22888
+    },
+    "research/rootcheck/m2/test-results/original-probe-runs.json": {
+      "sha256": "3a10029a5163045dd6d0cf9e5d4bb1fc0f7328fb44dc138f14bf1b2cc54af3e1",
+      "bytes": 13617
+    },
+    "research/rootcheck/m2/test-results/original-tool-inputs.txt": {
+      "sha256": "324d8d25c3c10de2cb132247f8c8b9474eec1f70da82f8e1cc7610f550ac01ac",
+      "bytes": 26587
+    },
+    "research/rootcheck/m2/test-results/upstream-nodeids.txt": {
+      "sha256": "ad4feaf615cd6969ae7e106755e5d76611e07313388366a09932c4b062aa0e25",
+      "bytes": 17099
+    }
+  },
+  "experiments_before": {
+    "experiments/m2/smoke_test.py": {
+      "bytes": 958,
+      "mtime_ns": "1795414185095998800",
+      "sensitive_name_metadata_only": false,
+      "sha256": "1c96b9af4564c489bee8f97140ee6fc4f21bcbe4a1811c397c200c0ceeadf7e1"
+    }
+  },
+  "package_versions_at_reproduction": {
+    "rlms": "0.1.3",
+    "pytest": "9.2.0",
+    "pluggy": "1.7.0",
+    "python-dotenv": "1.2.4",
+    "rich": "15.0.0",
+    "openai": "3.57.0",
+    "requests": "2.34.2",
+    "anthropic": "2.12.0",
+    "google-genai": "3.6.1",
+    "portkey-ai": "2.3.4"
+  },
+  "reproduction_invocation_id": "20261123T153154981Z-ba918778",
+  "runner_process_results": [
+    {
+      "run_id": "cp4",
+      "local_record_path": "test-results/local/20261123T153154981Z-ba918778/cp4.json",
+      "local_record_sha256": "c7687f49d866aed4cc1cb7492b8aef7737906f514c3143a7600ef7496f82b1d5",
+      "local_record_bytes": 2910,
+      "record": {
+        "record_kind": "later saved-script reproduction; never original evidence",
+        "invocation_id": "20261123T153154981Z-ba918778",
+        "started_utc": "2026-11-23T15:31:55.0275812Z",
+        "completed_utc": "2026-11-23T15:32:01.2124383Z",
+        "baseline": "e11f1a8f8ee4490686e16dd6463233abe08a07eb",
+        "probe_run": "cp4",
+        "script_sha256": "eb5edd6919f6cec80e5302101f330d532e6259baf41e1b54d23ed1dc5f4469c3",
+        "exit_code": 0,
+        "verified_by_runner": true,
+        "case_count": 9,
+        "output_lines": [
+          "M2_ARCHIVE_REPRO_ENV {\"assertions_enabled\": true, \"dotenv_disabled\": true, \"guard\": \"mock factory required; numeric loopback only; no child processes\", \"platform\": \"win32\", \"python\": \"3.12.4 (tags/v3.12.4:8e8a4ba, Jun  6 2024, 19:30:16) [MSC v.1940 64 bit (AMD64)]\", \"script_sha256\": \"eb5edd6919f6cec80e5302101f330d532e6259baf41e1b54d23ed1dc5f4469c3\"}",
+          "{\"captured\": \"A\", \"next_request\": false, \"probe\": \"F1_ready_then_exception\", \"returned\": \"A\", \"status\": \"PASS\", \"stderr\": \"\\nValueError: after-ready\"}",
+          "{\"captured\": \"A\", \"dictionary_content\": \"B\", \"probe\": \"F2_content_changed_after_ready\", \"returned\": \"A\", \"status\": \"PASS\"}",
+          "{\"block_candidates\": [\"A\", \"B\"], \"earlier_locals_now\": \"B\", \"probe\": \"F3_two_final_blocks\", \"returned\": \"A\", \"status\": \"PASS\"}",
+          "{\"calls\": 2, \"default_candidate\": \"```repl\\nraise RuntimeError('DEFAULT_CODE_MUST_NOT_RUN')\\n```\", \"default_code_executed\": false, \"normal_candidate\": null, \"probe\": \"F4_iteration_exhaustion\", \"returned\": \"```repl\\nraise RuntimeError('DEFAULT_CODE_MUST_NOT_RUN')\\n```\", \"status\": \"PASS\"}",
+          "{\"captured\": \"A\", \"iteration_logged\": false, \"probe\": \"F5_error_limit_beats_final\", \"returned\": null, \"status\": \"PASS\", \"termination\": \"ErrorThresholdExceededError\"}",
+          "{\"captured\": \"A\", \"probe\": \"F6_token_limit_beats_final\", \"returned\": null, \"status\": \"PASS\", \"termination\": \"TokenLimitExceededError\", \"tokens_used\": 20}",
+          "{\"captured\": \"A\", \"probe\": \"F7_cost_limit_beats_final\", \"returned\": null, \"status\": \"PASS\", \"termination\": \"BudgetExceededError\"}",
+          "{\"captured\": \"A\", \"elapsed\": 2.0, \"probe\": \"F8_timeout_overrun_with_final\", \"returned\": \"A\", \"status\": \"PASS\", \"termination\": \"normal\", \"timeout\": 1.0}",
+          "{\"captured\": null, \"probe\": \"F9_timeout_on_next_turn\", \"returned\": null, \"status\": \"PASS\", \"termination\": \"TimeoutExceededError\"}",
+          "CP4 deterministic probes: 9 passed"
+        ]
+      }
+    },
+    {
+      "run_id": "cp2",
+      "local_record_path": "test-results/local/20261123T153154981Z-ba918778/cp2.json",
+      "local_record_sha256": "8fb04f830313c72df8a7e254df6460377e18565341e52e15c00f3704eacf7607",
+      "local_record_bytes": 4943,
+      "record": {
+        "record_kind": "later saved-script reproduction; never original evidence",
+        "invocation_id": "20261123T153154981Z-ba918778",
+        "started_utc": "2026-11-23T15:32:01.2577197Z",
+        "completed_utc": "2026-11-23T15:32:06.3311111Z",
+        "baseline": "e11f1a8f8ee4490686e16dd6463233abe08a07eb",
+        "probe_run": "cp2",
+        "script_sha256": "25ebc1f8378b41f91e32051c1687f0cc90ef011d3510dc05c2ec75f904b2405b",
+        "exit_code": 0,
+        "verified_by_runner": true,
+        "case_count": 12,
+        "output_lines": [
+          "M2_ARCHIVE_REPRO_ENV {\"assertions_enabled\": true, \"dotenv_disabled\": true, \"guard\": \"mock factory required; numeric loopback only; no child processes\", \"platform\": \"win32\", \"python\": \"3.12.4 (tags/v3.12.4:8e8a4ba, Jun  6 2024, 19:30:16) [MSC v.1940 64 bit (AMD64)]\", \"script_sha256\": \"25ebc1f8378b41f91e32051c1687f0cc90ef011d3510dc05c2ec75f904b2405b\"}",
+          "{\"bad_path_events\": [\"dispatch:bad\", \"candidate:REJECTED_PAYLOAD\", \"reject:bad\", \"consume\"], \"bad_return\": \"Error: REJECTED\", \"batched\": false, \"downstream_ran\": true, \"mode\": \"llm\", \"original_withheld\": true, \"probe\": \"I1\", \"ready_final_present\": true, \"recorded_calls\": 0, \"status\": \"PASS\"}",
+          "{\"bad_path_events\": [\"dispatch:bad\", \"candidate:REJECTED_PAYLOAD\", \"reject:bad\", \"consume\"], \"bad_return\": \"Error: llm() call failed - REJECTED\", \"batched\": true, \"downstream_ran\": true, \"mode\": \"llm\", \"original_withheld\": true, \"probe\": \"I2\", \"ready_final_present\": true, \"recorded_calls\": 1, \"status\": \"PASS\"}",
+          "{\"bad_path_events\": [\"dispatch:bad\", \"candidate:REJECTED_PAYLOAD\", \"reject:bad\", \"consume\"], \"bad_return\": \"Error: RLM query failed - REJECTED\", \"batched\": false, \"downstream_ran\": true, \"mode\": \"rlm_callback\", \"original_withheld\": true, \"probe\": \"I3\", \"ready_final_present\": true, \"recorded_calls\": 0, \"status\": \"PASS\"}",
+          "{\"bad_path_events\": [\"dispatch:bad\", \"candidate:REJECTED_PAYLOAD\", \"reject:bad\", \"consume\"], \"bad_return\": \"Error: RLM query failed - REJECTED\", \"batched\": true, \"downstream_ran\": true, \"mode\": \"rlm_callback\", \"original_withheld\": true, \"probe\": \"I4\", \"ready_final_present\": true, \"recorded_calls\": 1, \"status\": \"PASS\"}",
+          "{\"bad_path_events\": [\"dispatch:bad\", \"candidate:REJECTED_PAYLOAD\", \"reject:bad\", \"consume\"], \"bad_return\": \"Error: REJECTED\", \"batched\": false, \"downstream_ran\": true, \"mode\": \"rlm_no_callback\", \"original_withheld\": true, \"probe\": \"I5\", \"ready_final_present\": true, \"recorded_calls\": 0, \"status\": \"PASS\"}",
+          "{\"bad_path_events\": [\"dispatch:bad\", \"candidate:REJECTED_PAYLOAD\", \"reject:bad\", \"consume\"], \"bad_return\": \"Error: llm() call failed - REJECTED\", \"batched\": true, \"downstream_ran\": true, \"mode\": \"rlm_no_callback\", \"original_withheld\": true, \"probe\": \"I6\", \"ready_final_present\": true, \"recorded_calls\": 1, \"status\": \"PASS\"}",
+          "{\"bad_path_events\": [\"dispatch:bad\", \"candidate:REJECTED_PAYLOAD\", \"reject:bad\", \"consume\"], \"bad_return\": \"Error: LM query failed at max depth - REJECTED\", \"batched\": false, \"downstream_ran\": true, \"mode\": \"rlm_core_leaf\", \"original_withheld\": true, \"probe\": \"I7\", \"ready_final_present\": true, \"recorded_calls\": 1, \"status\": \"PASS\"}",
+          "{\"bad_path_events\": [\"dispatch:bad\", \"candidate:REJECTED_PAYLOAD\", \"reject:bad\", \"consume\"], \"bad_return\": \"Error: LM query failed at max depth - REJECTED\", \"batched\": true, \"downstream_ran\": true, \"mode\": \"rlm_core_leaf\", \"original_withheld\": true, \"probe\": \"I8\", \"ready_final_present\": true, \"recorded_calls\": 2, \"status\": \"PASS\"}",
+          "{\"probe\": \"I9_rejection_text_is_normal_completion\", \"recorded_error\": null, \"returned\": \"REJECTED: explanation\", \"status\": \"PASS\"}",
+          "{\"caught\": false, \"downstream_ran\": false, \"events\": [\"candidate_available\", \"reject\"], \"final\": null, \"original_withheld\": true, \"probe\": \"I10_wrapper_uncaught\", \"status\": \"PASS\"}",
+          "{\"caught\": true, \"downstream_ran\": true, \"events\": [\"candidate_available\", \"reject\", \"caught\", \"downstream\"], \"final\": \"AFTER\", \"original_withheld\": true, \"probe\": \"I10_wrapper_caught\", \"status\": \"PASS\"}",
+          "{\"first_candidate\": null, \"probe\": \"I11_interrupt_one_block_not_iteration\", \"returned\": \"SECOND\", \"second_candidate\": \"SECOND\", \"status\": \"PASS\"}",
+          "CP2 deterministic probes: 12 passed"
+        ]
+      }
+    },
+    {
+      "run_id": "delivery_identity_accounting",
+      "local_record_path": "test-results/local/20261123T153154981Z-ba918778/delivery_identity_accounting.json",
+      "local_record_sha256": "ef40352e6b7e568912a87b461f9956bb8b62697a04de7c301c5ca6cc64c878ef",
+      "local_record_bytes": 2832,
+      "record": {
+        "record_kind": "later saved-script reproduction; never original evidence",
+        "invocation_id": "20261123T153154981Z-ba918778",
+        "started_utc": "2026-11-23T15:32:06.4423605Z",
+        "completed_utc": "2026-11-23T15:32:11.0243810Z",
+        "baseline": "e11f1a8f8ee4490686e16dd6463233abe08a07eb",
+        "probe_run": "delivery_identity_accounting",
+        "script_sha256": "2cfa9a0812df13acd1211316070212d32e2eef6362abd2b2e9fa9e75b57f19ac",
+        "exit_code": 0,
+        "verified_by_runner": true,
+        "case_count": 7,
+        "output_lines": [
+          "M2_ARCHIVE_REPRO_ENV {\"assertions_enabled\": true, \"dotenv_disabled\": true, \"guard\": \"mock factory required; numeric loopback only; no child processes\", \"platform\": \"win32\", \"python\": \"3.12.4 (tags/v3.12.4:8e8a4ba, Jun  6 2024, 19:30:16) [MSC v.1940 64 bit (AMD64)]\", \"script_sha256\": \"2cfa9a0812df13acd1211316070212d32e2eef6362abd2b2e9fa9e75b57f19ac\"}",
+          "{\"acted_upon\": \"scripted mock branch only\", \"blocks\": 2, \"error_in_next_feedback\": false, \"error_in_raw_result\": true, \"exact_feedback_match\": true, \"per_block_cap\": 20000, \"probe\": \"D1_exact_next_request\", \"returned\": \"SCRIPTED_REPAIR\", \"second_block_delivered\": true, \"status\": \"PASS\"}",
+          "{\"earlier_memory_entry_changed\": true, \"probe\": \"D2_in_memory_history_alias\", \"serialized_snapshot_changed\": false, \"shared_reference\": true, \"status\": \"PASS\"}",
+          "{\"earlier_value\": [1, 2, 3], \"frozen_value\": [1], \"later_rebinding\": [99], \"new_binding_after_error\": false, \"probe\": \"D3_locals_alias_and_partial_effects\", \"status\": \"PASS\"}",
+          "{\"child_cost_before_check\": 0.03, \"distinct_client_cost_sum\": 0.04, \"distinct_client_input_sum\": 40, \"parent_cost_after_check\": 0.01, \"probe\": \"D4_recursive_usage_ownership\", \"returned_cost\": 0.01, \"returned_input_tokens\": 10, \"status\": \"PASS\"}",
+          "{\"fake_outer_elapsed\": 9.0, \"omitted_default_call\": 7.0, \"probe\": \"D5_default_latency\", \"reported\": 2.0, \"status\": \"PASS\"}",
+          "{\"actual_child_repl\": true, \"events\": [\"dispatch:A\", \"child_body:A\", \"available:A\", \"consume:A\", \"ready:A\"], \"probe\": \"D6_actual_child_single_order\", \"returned\": \"A\", \"status\": \"PASS\"}",
+          "{\"actual_child_repl\": true, \"events\": [\"dispatch:A\", \"dispatch:B\", \"child_body:A\", \"child_body:B\", \"available:A\", \"available:B\", \"consume:A|B\", \"ready:A|B\"], \"probe\": \"D7_actual_child_batch_order\", \"returned\": \"A|B\", \"status\": \"PASS\"}",
+          "CP3 / identity / accounting / child-order probes: 7 passed"
+        ]
+      }
+    },
+    {
+      "run_id": "accounting_extra",
+      "local_record_path": "test-results/local/20261123T153154981Z-ba918778/accounting_extra.json",
+      "local_record_sha256": "23076658ad0280d2359a90d434039c8c2bf57afefe01d16555da95f3f16fbd00",
+      "local_record_bytes": 1495,
+      "record": {
+        "record_kind": "later saved-script reproduction; never original evidence",
+        "invocation_id": "20261123T153154981Z-ba918778",
+        "started_utc": "2026-11-23T15:32:11.0352454Z",
+        "completed_utc": "2026-11-23T15:32:12.9869075Z",
+        "baseline": "e11f1a8f8ee4490686e16dd6463233abe08a07eb",
+        "probe_run": "accounting_extra",
+        "script_sha256": "3b8460483068b1874f397a8882a20f12018e521c65350ccb854c1bbb7c0dcf24",
+        "exit_code": 0,
+        "verified_by_runner": true,
+        "case_count": 2,
+        "output_lines": [
+          "M2_ARCHIVE_REPRO_ENV {\"assertions_enabled\": true, \"dotenv_disabled\": true, \"guard\": \"mock factory required; numeric loopback only; no child processes\", \"platform\": \"win32\", \"python\": \"3.12.4 (tags/v3.12.4:8e8a4ba, Jun  6 2024, 19:30:16) [MSC v.1940 64 bit (AMD64)]\", \"script_sha256\": \"3b8460483068b1874f397a8882a20f12018e521c65350ccb854c1bbb7c0dcf24\"}",
+          "{\"probe\": \"D8_recursive_budget_overshoot\", \"status\": \"PASS\", \"synthetic_total\": 0.04, \"configured_budget\": 0.035, \"reported_total\": 0.01, \"termination\": \"normal\", \"returned\": \"A\"}",
+          "{\"probe\": \"D9_batch_metrics\", \"status\": \"PASS\", \"slot_input_tokens\": [40, 40], \"handler_input_total\": 55, \"slot_duration_estimates\": [5.0, 5.0], \"fixture_call_durations\": [2.0, 8.0]}",
+          "Additional accounting probes: 2 passed"
+        ]
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "archival_id": "F1",
+      "original_identifier": "F1_ready_then_exception",
+      "script": "probes/cp4.py",
+      "original_observed": {
+        "captured": "A",
+        "next_request": false,
+        "probe": "F1_ready_then_exception",
+        "returned": "A",
+        "status": "PASS",
+        "stderr": "\nValueError: after-ready"
+      },
+      "reproduced_observed": {
+        "captured": "A",
+        "next_request": false,
+        "probe": "F1_ready_then_exception",
+        "returned": "A",
+        "status": "PASS",
+        "stderr": "\nValueError: after-ready"
+      },
+      "original_assertion_status": "PASS",
+      "reproduced_assertion_status": "PASS",
+      "exact_decoded_payload_match": true,
+      "different_fields": [],
+      "behavioral_discrepancy": false,
+      "deviation": null,
+      "assertion_interpretation": "Confirms the diagnostic's expected baseline behavior; not an H2/H5/H6 correctness or validation-success verdict"
+    },
+    {
+      "archival_id": "F2",
+      "original_identifier": "F2_content_changed_after_ready",
+      "script": "probes/cp4.py",
+      "original_observed": {
+        "captured": "A",
+        "dictionary_content": "B",
+        "probe": "F2_content_changed_after_ready",
+        "returned": "A",
+        "status": "PASS"
+      },
+      "reproduced_observed": {
+        "captured": "A",
+        "dictionary_content": "B",
+        "probe": "F2_content_changed_after_ready",
+        "returned": "A",
+        "status": "PASS"
+      },
+      "original_assertion_status": "PASS",
+      "reproduced_assertion_status": "PASS",
+      "exact_decoded_payload_match": true,
+      "different_fields": [],
+      "behavioral_discrepancy": false,
+      "deviation": null,
+      "assertion_interpretation": "Confirms the diagnostic's expected baseline behavior; not an H2/H5/H6 correctness or validation-success verdict"
+    },
+    {
+      "archival_id": "F3",
+      "original_identifier": "F3_two_final_blocks",
+      "script": "probes/cp4.py",
+      "original_observed": {
+        "block_candidates": [
+          "A",
+          "B"
+        ],
+        "earlier_locals_now": "B",
+        "probe": "F3_two_final_blocks",
+        "returned": "A",
+        "status": "PASS"
+      },
+      "reproduced_observed": {
+        "block_candidates": [
+          "A",
+          "B"
+        ],
+        "earlier_locals_now": "B",
+        "probe": "F3_two_final_blocks",
+        "returned": "A",
+        "status": "PASS"
+      },
+      "original_assertion_status": "PASS",
+      "reproduced_assertion_status": "PASS",
+      "exact_decoded_payload_match": true,
+      "different_fields": [],
+      "behavioral_discrepancy": false,
+      "deviation": null,
+      "assertion_interpretation": "Confirms the diagnostic's expected baseline behavior; not an H2/H5/H6 correctness or validation-success verdict"
+    },
+    {
+      "archival_id": "F4",
+      "original_identifier": "F4_iteration_exhaustion",
+      "script": "probes/cp4.py",
+      "original_observed": {
+        "calls": 2,
+        "default_candidate": "```repl\nraise RuntimeError('DEFAULT_CODE_MUST_NOT_RUN')\n```",
+        "default_code_executed": false,
+        "normal_candidate": null,
+        "probe": "F4_iteration_exhaustion",
+        "returned": "```repl\nraise RuntimeError('DEFAULT_CODE_MUST_NOT_RUN')\n```",
+        "status": "PASS"
+      },
+      "reproduced_observed": {
+        "calls": 2,
+        "default_candidate": "```repl\nraise RuntimeError('DEFAULT_CODE_MUST_NOT_RUN')\n```",
+        "default_code_executed": false,
+        "normal_candidate": null,
+        "probe": "F4_iteration_exhaustion",
+        "returned": "```repl\nraise RuntimeError('DEFAULT_CODE_MUST_NOT_RUN')\n```",
+        "status": "PASS"
+      },
+      "original_assertion_status": "PASS",
+      "reproduced_assertion_status": "PASS",
+      "exact_decoded_payload_match": true,
+      "different_fields": [],
+      "behavioral_discrepancy": false,
+      "deviation": null,
+      "assertion_interpretation": "Confirms the diagnostic's expected baseline behavior; not an H2/H5/H6 correctness or validation-success verdict"
+    },
+    {
+      "archival_id": "F5",
+      "original_identifier": "F5_error_limit_beats_final",
+      "script": "probes/cp4.py",
+      "original_observed": {
+        "captured": "A",
+        "iteration_logged": false,
+        "probe": "F5_error_limit_beats_final",
+        "returned": null,
+        "status": "PASS",
+        "termination": "ErrorThresholdExceededError"
+      },
+      "reproduced_observed": {
+        "captured": "A",
+        "iteration_logged": false,
+        "probe": "F5_error_limit_beats_final",
+        "returned": null,
+        "status": "PASS",
+        "termination": "ErrorThresholdExceededError"
+      },
+      "original_assertion_status": "PASS",
+      "reproduced_assertion_status": "PASS",
+      "exact_decoded_payload_match": true,
+      "different_fields": [],
+      "behavioral_discrepancy": false,
+      "deviation": null,
+      "assertion_interpretation": "Confirms the diagnostic's expected baseline behavior; not an H2/H5/H6 correctness or validation-success verdict"
+    },
+    {
+      "archival_id": "F6",
+      "original_identifier": "F6_token_limit_beats_final",
+      "script": "probes/cp4.py",
+      "original_observed": {
+        "captured": "A",
+        "probe": "F6_token_limit_beats_final",
+        "returned": null,
+        "status": "PASS",
+        "termination": "TokenLimitExceededError",
+        "tokens_used": 20
+      },
+      "reproduced_observed": {
+        "captured": "A",
+        "probe": "F6_token_limit_beats_final",
+        "returned": null,
+        "status": "PASS",
+        "termination": "TokenLimitExceededError",
+        "tokens_used": 20
+      },
+      "original_assertion_status": "PASS",
+      "reproduced_assertion_status": "PASS",
+      "exact_decoded_payload_match": true,
+      "different_fields": [],
+      "behavioral_discrepancy": false,
+      "deviation": null,
+      "assertion_interpretation": "Confirms the diagnostic's expected baseline behavior; not an H2/H5/H6 correctness or validation-success verdict"
+    },
+    {
+      "archival_id": "F7",
+      "original_identifier": "F7_cost_limit_beats_final",
+      "script": "probes/cp4.py",
+      "original_observed": {
+        "captured": "A",
+        "probe": "F7_cost_limit_beats_final",
+        "returned": null,
+        "status": "PASS",
+        "termination": "BudgetExceededError"
+      },
+      "reproduced_observed": {
+        "captured": "A",
+        "probe": "F7_cost_limit_beats_final",
+        "returned": null,
+        "status": "PASS",
+        "termination": "BudgetExceededError"
+      },
+      "original_assertion_status": "PASS",
+      "reproduced_assertion_status": "PASS",
+      "exact_decoded_payload_match": true,
+      "different_fields": [],
+      "behavioral_discrepancy": false,
+      "deviation": null,
+      "assertion_interpretation": "Confirms the diagnostic's expected baseline behavior; not an H2/H5/H6 correctness or validation-success verdict"
+    },
+    {
+      "archival_id": "F8",
+      "original_identifier": "F8_timeout_overrun_with_final",
+      "script": "probes/cp4.py",
+      "original_observed": {
+        "captured": "A",
+        "elapsed": 2,
+        "probe": "F8_timeout_overrun_with_final",
+        "returned": "A",
+        "status": "PASS",
+        "termination": "normal",
+        "timeout": 1
+      },
+      "reproduced_observed": {
+        "captured": "A",
+        "elapsed": 2,
+        "probe": "F8_timeout_overrun_with_final",
+        "returned": "A",
+        "status": "PASS",
+        "termination": "normal",
+        "timeout": 1
+      },
+      "original_assertion_status": "PASS",
+      "reproduced_assertion_status": "PASS",
+      "exact_decoded_payload_match": true,
+      "different_fields": [],
+      "behavioral_discrepancy": false,
+      "deviation": null,
+      "assertion_interpretation": "Confirms the diagnostic's expected baseline behavior; not an H2/H5/H6 correctness or validation-success verdict"
+    },
+    {
+      "archival_id": "F9",
+      "original_identifier": "F9_timeout_on_next_turn",
+      "script": "probes/cp4.py",
+      "original_observed": {
+        "captured": null,
+        "probe": "F9_timeout_on_next_turn",
+        "returned": null,
+        "status": "PASS",
+        "termination": "TimeoutExceededError"
+      },
+      "reproduced_observed": {
+        "captured": null,
+        "probe": "F9_timeout_on_next_turn",
+        "returned": null,
+        "status": "PASS",
+        "termination": "TimeoutExceededError"
+      },
+      "original_assertion_status": "PASS",
+      "reproduced_assertion_status": "PASS",
+      "exact_decoded_payload_match": true,
+      "different_fields": [],
+      "behavioral_discrepancy": false,
+      "deviation": null,
+      "assertion_interpretation": "Confirms the diagnostic's expected baseline behavior; not an H2/H5/H6 correctness or validation-success verdict"
+    },
+    {
+      "archival_id": "I1",
+      "original_identifier": "I1",
+      "script": "probes/cp2.py",
+      "original_observed": {
+        "bad_path_events": [
+          "dispatch:bad",
+          "candidate:REJECTED_PAYLOAD",
+          "reject:bad",
+          "consume"
+        ],
+        "bad_return": "Error: REJECTED",
+        "batched": false,
+        "downstream_ran": true,
+        "mode": "llm",
+        "original_withheld": true,
+        "probe": "I1",
+        "ready_final_present": true,
+        "recorded_calls": 0,
+        "status": "PASS"
+      },
+      "reproduced_observed": {
+        "bad_path_events": [
+          "dispatch:bad",
+          "candidate:REJECTED_PAYLOAD",
+          "reject:bad",
+          "consume"
+        ],
+        "bad_return": "Error: REJECTED",
+        "batched": false,
+        "downstream_ran": true,
+        "mode": "llm",
+        "original_withheld": true,
+        "probe": "I1",
+        "ready_final_present": true,
+        "recorded_calls": 0,
+        "status": "PASS"
+      },
+      "original_assertion_status": "PASS",
+      "reproduced_assertion_status": "PASS",
+      "exact_decoded_payload_match": true,
+      "different_fields": [],
+      "behavioral_discrepancy": false,
+      "deviation": null,
+      "assertion_interpretation": "Confirms the diagnostic's expected baseline behavior; not an H2/H5/H6 correctness or validation-success verdict"
+    },
+    {
+      "archival_id": "I2",
+      "original_identifier": "I2",
+      "script": "probes/cp2.py",
+      "original_observed": {
+        "bad_path_events": [
+          "dispatch:bad",
+          "candidate:REJECTED_PAYLOAD",
+          "reject:bad",
+          "consume"
+        ],
+        "bad_return": "Error: llm() call failed - REJECTED",
+        "batched": true,
+        "downstream_ran": true,
+        "mode": "llm",
+        "original_withheld": true,
+        "probe": "I2",
+        "ready_final_present": true,
+        "recorded_calls": 1,
+        "status": "PASS"
+      },
+      "reproduced_observed": {
+        "bad_path_events": [
+          "dispatch:bad",
+          "candidate:REJECTED_PAYLOAD",
+          "reject:bad",
+          "consume"
+        ],
+        "bad_return": "Error: llm() call failed - REJECTED",
+        "batched": true,
+        "downstream_ran": true,
+        "mode": "llm",
+        "original_withheld": true,
+        "probe": "I2",
+        "ready_final_present": true,
+        "recorded_calls": 1,
+        "status": "PASS"
+      },
+      "original_assertion_status": "PASS",
+      "reproduced_assertion_status": "PASS",
+      "exact_decoded_payload_match": true,
+      "different_fields": [],
+      "behavioral_discrepancy": false,
+      "deviation": null,
+      "assertion_interpretation": "Confirms the diagnostic's expected baseline behavior; not an H2/H5/H6 correctness or validation-success verdict"
+    },
+    {
+      "archival_id": "I3",
+      "original_identifier": "I3",
+      "script": "probes/cp2.py",
+      "original_observed": {
+        "bad_path_events": [
+          "dispatch:bad",
+          "candidate:REJECTED_PAYLOAD",
+          "reject:bad",
+          "consume"
+        ],
+        "bad_return": "Error: RLM query failed - REJECTED",
+        "batched": false,
+        "downstream_ran": true,
+        "mode": "rlm_callback",
+        "original_withheld": true,
+        "probe": "I3",
+        "ready_final_present": true,
+        "recorded_calls": 0,
+        "status": "PASS"
+      },
+      "reproduced_observed": {
+        "bad_path_events": [
+          "dispatch:bad",
+          "candidate:REJECTED_PAYLOAD",
+          "reject:bad",
+          "consume"
+        ],
+        "bad_return": "Error: RLM query failed - REJECTED",
+        "batched": false,
+        "downstream_ran": true,
+        "mode": "rlm_callback",
+        "original_withheld": true,
+        "probe": "I3",
+        "ready_final_present": true,
+        "recorded_calls": 0,
+        "status": "PASS"
+      },
+      "original_assertion_status": "PASS",
+      "reproduced_assertion_status": "PASS",
+      "exact_decoded_payload_match": true,
+      "different_fields": [],
+      "behavioral_discrepancy": false,
+      "deviation": null,
+      "assertion_interpretation": "Confirms the diagnostic's expected baseline behavior; not an H2/H5/H6 correctness or validation-success verdict"
+    },
+    {
+      "archival_id": "I4",
+      "original_identifier": "I4",
+      "script": "probes/cp2.py",
+      "original_observed": {
+        "bad_path_events": [
+          "dispatch:bad",
+          "candidate:REJECTED_PAYLOAD",
+          "reject:bad",
+          "consume"
+        ],
+        "bad_return": "Error: RLM query failed - REJECTED",
+        "batched": true,
+        "downstream_ran": true,
+        "mode": "rlm_callback",
+        "original_withheld": true,
+        "probe": "I4",
+        "ready_final_present": true,
+        "recorded_calls": 1,
+        "status": "PASS"
+      },
+      "reproduced_observed": {
+        "bad_path_events": [
+          "dispatch:bad",
+          "candidate:REJECTED_PAYLOAD",
+          "reject:bad",
+          "consume"
+        ],
+        "bad_return": "Error: RLM query failed - REJECTED",
+        "batched": true,
+        "downstream_ran": true,
+        "mode": "rlm_callback",
+        "original_withheld": true,
+        "probe": "I4",
+        "ready_final_present": true,
+        "recorded_calls": 1,
+        "status": "PASS"
+      },
+      "original_assertion_status": "PASS",
+      "reproduced_assertion_status": "PASS",
+      "exact_decoded_payload_match": true,
+      "different_fields": [],
+      "behavioral_discrepancy": false,
+      "deviation": null,
+      "assertion_interpretation": "Confirms the diagnostic's expected baseline behavior; not an H2/H5/H6 correctness or validation-success verdict"
+    },
+    {
+      "archival_id": "I5",
+      "original_identifier": "I5",
+      "script": "probes/cp2.py",
+      "original_observed": {
+        "bad_path_events": [
+          "dispatch:bad",
+          "candidate:REJECTED_PAYLOAD",
+          "reject:bad",
+          "consume"
+        ],
+        "bad_return": "Error: REJECTED",
+        "batched": false,
+        "downstream_ran": true,
+        "mode": "rlm_no_callback",
+        "original_withheld": true,
+        "probe": "I5",
+        "ready_final_present": true,
+        "recorded_calls": 0,
+        "status": "PASS"
+      },
+      "reproduced_observed": {
+        "bad_path_events": [
+          "dispatch:bad",
+          "candidate:REJECTED_PAYLOAD",
+          "reject:bad",
+          "consume"
+        ],
+        "bad_return": "Error: REJECTED",
+        "batched": false,
+        "downstream_ran": true,
+        "mode": "rlm_no_callback",
+        "original_withheld": true,
+        "probe": "I5",
+        "ready_final_present": true,
+        "recorded_calls": 0,
+        "status": "PASS"
+      },
+      "original_assertion_status": "PASS",
+      "reproduced_assertion_status": "PASS",
+      "exact_decoded_payload_match": true,
+      "different_fields": [],
+      "behavioral_discrepancy": false,
+      "deviation": null,
+      "assertion_interpretation": "Confirms the diagnostic's expected baseline behavior; not an H2/H5/H6 correctness or validation-success verdict"
+    },
+    {
+      "archival_id": "I6",
+      "original_identifier": "I6",
+      "script": "probes/cp2.py",
+      "original_observed": {
+        "bad_path_events": [
+          "dispatch:bad",
+          "candidate:REJECTED_PAYLOAD",
+          "reject:bad",
+          "consume"
+        ],
+        "bad_return": "Error: llm() call failed - REJECTED",
+        "batched": true,
+        "downstream_ran": true,
+        "mode": "rlm_no_callback",
+        "original_withheld": true,
+        "probe": "I6",
+        "ready_final_present": true,
+        "recorded_calls": 1,
+        "status": "PASS"
+      },
+      "reproduced_observed": {
+        "bad_path_events": [
+          "dispatch:bad",
+          "candidate:REJECTED_PAYLOAD",
+          "reject:bad",
+          "consume"
+        ],
+        "bad_return": "Error: llm() call failed - REJECTED",
+        "batched": true,
+        "downstream_ran": true,
+        "mode": "rlm_no_callback",
+        "original_withheld": true,
+        "probe": "I6",
+        "ready_final_present": true,
+        "recorded_calls": 1,
+        "status": "PASS"
+      },
+      "original_assertion_status": "PASS",
+      "reproduced_assertion_status": "PASS",
+      "exact_decoded_payload_match": true,
+      "different_fields": [],
+      "behavioral_discrepancy": false,
+      "deviation": null,
+      "assertion_interpretation": "Confirms the diagnostic's expected baseline behavior; not an H2/H5/H6 correctness or validation-success verdict"
+    },
+    {
+      "archival_id": "I7",
+      "original_identifier": "I7",
+      "script": "probes/cp2.py",
+      "original_observed": {
+        "bad_path_events": [
+          "dispatch:bad",
+          "candidate:REJECTED_PAYLOAD",
+          "reject:bad",
+          "consume"
+        ],
+        "bad_return": "Error: LM query failed at max depth - REJECTED",
+        "batched": false,
+        "downstream_ran": true,
+        "mode": "rlm_core_leaf",
+        "original_withheld": true,
+        "probe": "I7",
+        "ready_final_present": true,
+        "recorded_calls": 1,
+        "status": "PASS"
+      },
+      "reproduced_observed": {
+        "bad_path_events": [
+          "dispatch:bad",
+          "candidate:REJECTED_PAYLOAD",
+          "reject:bad",
+          "consume"
+        ],
+        "bad_return": "Error: LM query failed at max depth - REJECTED",
+        "batched": false,
+        "downstream_ran": true,
+        "mode": "rlm_core_leaf",
+        "original_withheld": true,
+        "probe": "I7",
+        "ready_final_present": true,
+        "recorded_calls": 1,
+        "status": "PASS"
+      },
+      "original_assertion_status": "PASS",
+      "reproduced_assertion_status": "PASS",
+      "exact_decoded_payload_match": true,
+      "different_fields": [],
+      "behavioral_discrepancy": false,
+      "deviation": null,
+      "assertion_interpretation": "Confirms the diagnostic's expected baseline behavior; not an H2/H5/H6 correctness or validation-success verdict"
+    },
+    {
+      "archival_id": "I8",
+      "original_identifier": "I8",
+      "script": "probes/cp2.py",
+      "original_observed": {
+        "bad_path_events": [
+          "dispatch:bad",
+          "candidate:REJECTED_PAYLOAD",
+          "reject:bad",
+          "consume"
+        ],
+        "bad_return": "Error: LM query failed at max depth - REJECTED",
+        "batched": true,
+        "downstream_ran": true,
+        "mode": "rlm_core_leaf",
+        "original_withheld": true,
+        "probe": "I8",
+        "ready_final_present": true,
+        "recorded_calls": 2,
+        "status": "PASS"
+      },
+      "reproduced_observed": {
+        "bad_path_events": [
+          "dispatch:bad",
+          "candidate:REJECTED_PAYLOAD",
+          "reject:bad",
+          "consume"
+        ],
+        "bad_return": "Error: LM query failed at max depth - REJECTED",
+        "batched": true,
+        "downstream_ran": true,
+        "mode": "rlm_core_leaf",
+        "original_withheld": true,
+        "probe": "I8",
+        "ready_final_present": true,
+        "recorded_calls": 2,
+        "status": "PASS"
+      },
+      "original_assertion_status": "PASS",
+      "reproduced_assertion_status": "PASS",
+      "exact_decoded_payload_match": true,
+      "different_fields": [],
+      "behavioral_discrepancy": false,
+      "deviation": null,
+      "assertion_interpretation": "Confirms the diagnostic's expected baseline behavior; not an H2/H5/H6 correctness or validation-success verdict"
+    },
+    {
+      "archival_id": "I9",
+      "original_identifier": "I9_rejection_text_is_normal_completion",
+      "script": "probes/cp2.py",
+      "original_observed": {
+        "probe": "I9_rejection_text_is_normal_completion",
+        "recorded_error": null,
+        "returned": "REJECTED: explanation",
+        "status": "PASS"
+      },
+      "reproduced_observed": {
+        "probe": "I9_rejection_text_is_normal_completion",
+        "recorded_error": null,
+        "returned": "REJECTED: explanation",
+        "status": "PASS"
+      },
+      "original_assertion_status": "PASS",
+      "reproduced_assertion_status": "PASS",
+      "exact_decoded_payload_match": true,
+      "different_fields": [],
+      "behavioral_discrepancy": false,
+      "deviation": null,
+      "assertion_interpretation": "Confirms the diagnostic's expected baseline behavior; not an H2/H5/H6 correctness or validation-success verdict"
+    },
+    {
+      "archival_id": "I10a",
+      "original_identifier": "I10_wrapper_uncaught",
+      "script": "probes/cp2.py",
+      "original_observed": {
+        "caught": false,
+        "downstream_ran": false,
+        "events": [
+          "candidate_available",
+          "reject"
+        ],
+        "final": null,
+        "original_withheld": true,
+        "probe": "I10_wrapper_uncaught",
+        "status": "PASS"
+      },
+      "reproduced_observed": {
+        "caught": false,
+        "downstream_ran": false,
+        "events": [
+          "candidate_available",
+          "reject"
+        ],
+        "final": null,
+        "original_withheld": true,
+        "probe": "I10_wrapper_uncaught",
+        "status": "PASS"
+      },
+      "original_assertion_status": "PASS",
+      "reproduced_assertion_status": "PASS",
+      "exact_decoded_payload_match": true,
+      "different_fields": [],
+      "behavioral_discrepancy": false,
+      "deviation": null,
+      "assertion_interpretation": "Confirms the diagnostic's expected baseline behavior; not an H2/H5/H6 correctness or validation-success verdict"
+    },
+    {
+      "archival_id": "I10b",
+      "original_identifier": "I10_wrapper_caught",
+      "script": "probes/cp2.py",
+      "original_observed": {
+        "caught": true,
+        "downstream_ran": true,
+        "events": [
+          "candidate_available",
+          "reject",
+          "caught",
+          "downstream"
+        ],
+        "final": "AFTER",
+        "original_withheld": true,
+        "probe": "I10_wrapper_caught",
+        "status": "PASS"
+      },
+      "reproduced_observed": {
+        "caught": true,
+        "downstream_ran": true,
+        "events": [
+          "candidate_available",
+          "reject",
+          "caught",
+          "downstream"
+        ],
+        "final": "AFTER",
+        "original_withheld": true,
+        "probe": "I10_wrapper_caught",
+        "status": "PASS"
+      },
+      "original_assertion_status": "PASS",
+      "reproduced_assertion_status": "PASS",
+      "exact_decoded_payload_match": true,
+      "different_fields": [],
+      "behavioral_discrepancy": false,
+      "deviation": null,
+      "assertion_interpretation": "Confirms the diagnostic's expected baseline behavior; not an H2/H5/H6 correctness or validation-success verdict"
+    },
+    {
+      "archival_id": "I11",
+      "original_identifier": "I11_interrupt_one_block_not_iteration",
+      "script": "probes/cp2.py",
+      "original_observed": {
+        "first_candidate": null,
+        "probe": "I11_interrupt_one_block_not_iteration",
+        "returned": "SECOND",
+        "second_candidate": "SECOND",
+        "status": "PASS"
+      },
+      "reproduced_observed": {
+        "first_candidate": null,
+        "probe": "I11_interrupt_one_block_not_iteration",
+        "returned": "SECOND",
+        "second_candidate": "SECOND",
+        "status": "PASS"
+      },
+      "original_assertion_status": "PASS",
+      "reproduced_assertion_status": "PASS",
+      "exact_decoded_payload_match": true,
+      "different_fields": [],
+      "behavioral_discrepancy": false,
+      "deviation": null,
+      "assertion_interpretation": "Confirms the diagnostic's expected baseline behavior; not an H2/H5/H6 correctness or validation-success verdict"
+    },
+    {
+      "archival_id": "D1",
+      "original_identifier": "D1_exact_next_request",
+      "script": "probes/delivery_identity_accounting.py",
+      "original_observed": {
+        "acted_upon": "scripted mock branch only",
+        "blocks": 2,
+        "error_in_next_feedback": false,
+        "error_in_raw_result": true,
+        "exact_feedback_match": true,
+        "per_block_cap": 20000,
+        "probe": "D1_exact_next_request",
+        "returned": "SCRIPTED_REPAIR",
+        "second_block_delivered": true,
+        "status": "PASS"
+      },
+      "reproduced_observed": {
+        "acted_upon": "scripted mock branch only",
+        "blocks": 2,
+        "error_in_next_feedback": false,
+        "error_in_raw_result": true,
+        "exact_feedback_match": true,
+        "per_block_cap": 20000,
+        "probe": "D1_exact_next_request",
+        "returned": "SCRIPTED_REPAIR",
+        "second_block_delivered": true,
+        "status": "PASS"
+      },
+      "original_assertion_status": "PASS",
+      "reproduced_assertion_status": "PASS",
+      "exact_decoded_payload_match": true,
+      "different_fields": [],
+      "behavioral_discrepancy": false,
+      "deviation": null,
+      "assertion_interpretation": "Confirms the diagnostic's expected baseline behavior; not an H2/H5/H6 correctness or validation-success verdict"
+    },
+    {
+      "archival_id": "D2",
+      "original_identifier": "D2_in_memory_history_alias",
+      "script": "probes/delivery_identity_accounting.py",
+      "original_observed": {
+        "earlier_memory_entry_changed": true,
+        "probe": "D2_in_memory_history_alias",
+        "serialized_snapshot_changed": false,
+        "shared_reference": true,
+        "status": "PASS"
+      },
+      "reproduced_observed": {
+        "earlier_memory_entry_changed": true,
+        "probe": "D2_in_memory_history_alias",
+        "serialized_snapshot_changed": false,
+        "shared_reference": true,
+        "status": "PASS"
+      },
+      "original_assertion_status": "PASS",
+      "reproduced_assertion_status": "PASS",
+      "exact_decoded_payload_match": true,
+      "different_fields": [],
+      "behavioral_discrepancy": false,
+      "deviation": null,
+      "assertion_interpretation": "Confirms the diagnostic's expected baseline behavior; not an H2/H5/H6 correctness or validation-success verdict"
+    },
+    {
+      "archival_id": "D3",
+      "original_identifier": "D3_locals_alias_and_partial_effects",
+      "script": "probes/delivery_identity_accounting.py",
+      "original_observed": {
+        "earlier_value": [
+          1,
+          2,
+          3
+        ],
+        "frozen_value": [
+          1
+        ],
+        "later_rebinding": [
+          99
+        ],
+        "new_binding_after_error": false,
+        "probe": "D3_locals_alias_and_partial_effects",
+        "status": "PASS"
+      },
+      "reproduced_observed": {
+        "earlier_value": [
+          1,
+          2,
+          3
+        ],
+        "frozen_value": [
+          1
+        ],
+        "later_rebinding": [
+          99
+        ],
+        "new_binding_after_error": false,
+        "probe": "D3_locals_alias_and_partial_effects",
+        "status": "PASS"
+      },
+      "original_assertion_status": "PASS",
+      "reproduced_assertion_status": "PASS",
+      "exact_decoded_payload_match": true,
+      "different_fields": [],
+      "behavioral_discrepancy": false,
+      "deviation": null,
+      "assertion_interpretation": "Confirms the diagnostic's expected baseline behavior; not an H2/H5/H6 correctness or validation-success verdict"
+    },
+    {
+      "archival_id": "D4",
+      "original_identifier": "D4_recursive_usage_ownership",
+      "script": "probes/delivery_identity_accounting.py",
+      "original_observed": {
+        "child_cost_before_check": 0.03,
+        "distinct_client_cost_sum": 0.04,
+        "distinct_client_input_sum": 40,
+        "parent_cost_after_check": 0.01,
+        "probe": "D4_recursive_usage_ownership",
+        "returned_cost": 0.01,
+        "returned_input_tokens": 10,
+        "status": "PASS"
+      },
+      "reproduced_observed": {
+        "child_cost_before_check": 0.03,
+        "distinct_client_cost_sum": 0.04,
+        "distinct_client_input_sum": 40,
+        "parent_cost_after_check": 0.01,
+        "probe": "D4_recursive_usage_ownership",
+        "returned_cost": 0.01,
+        "returned_input_tokens": 10,
+        "status": "PASS"
+      },
+      "original_assertion_status": "PASS",
+      "reproduced_assertion_status": "PASS",
+      "exact_decoded_payload_match": true,
+      "different_fields": [],
+      "behavioral_discrepancy": false,
+      "deviation": null,
+      "assertion_interpretation": "Confirms the diagnostic's expected baseline behavior; not an H2/H5/H6 correctness or validation-success verdict"
+    },
+    {
+      "archival_id": "D5",
+      "original_identifier": "D5_default_latency",
+      "script": "probes/delivery_identity_accounting.py",
+      "original_observed": {
+        "fake_outer_elapsed": 9,
+        "omitted_default_call": 7,
+        "probe": "D5_default_latency",
+        "reported": 2,
+        "status": "PASS"
+      },
+      "reproduced_observed": {
+        "fake_outer_elapsed": 9,
+        "omitted_default_call": 7,
+        "probe": "D5_default_latency",
+        "reported": 2,
+        "status": "PASS"
+      },
+      "original_assertion_status": "PASS",
+      "reproduced_assertion_status": "PASS",
+      "exact_decoded_payload_match": true,
+      "different_fields": [],
+      "behavioral_discrepancy": false,
+      "deviation": null,
+      "assertion_interpretation": "Confirms the diagnostic's expected baseline behavior; not an H2/H5/H6 correctness or validation-success verdict"
+    },
+    {
+      "archival_id": "D6",
+      "original_identifier": "D6_actual_child_single_order",
+      "script": "probes/delivery_identity_accounting.py",
+      "original_observed": {
+        "actual_child_repl": true,
+        "events": [
+          "dispatch:A",
+          "child_body:A",
+          "available:A",
+          "consume:A",
+          "ready:A"
+        ],
+        "probe": "D6_actual_child_single_order",
+        "returned": "A",
+        "status": "PASS"
+      },
+      "reproduced_observed": {
+        "actual_child_repl": true,
+        "events": [
+          "dispatch:A",
+          "child_body:A",
+          "available:A",
+          "consume:A",
+          "ready:A"
+        ],
+        "probe": "D6_actual_child_single_order",
+        "returned": "A",
+        "status": "PASS"
+      },
+      "original_assertion_status": "PASS",
+      "reproduced_assertion_status": "PASS",
+      "exact_decoded_payload_match": true,
+      "different_fields": [],
+      "behavioral_discrepancy": false,
+      "deviation": null,
+      "assertion_interpretation": "Confirms the diagnostic's expected baseline behavior; not an H2/H5/H6 correctness or validation-success verdict"
+    },
+    {
+      "archival_id": "D7",
+      "original_identifier": "D7_actual_child_batch_order",
+      "script": "probes/delivery_identity_accounting.py",
+      "original_observed": {
+        "actual_child_repl": true,
+        "events": [
+          "dispatch:A",
+          "dispatch:B",
+          "child_body:A",
+          "child_body:B",
+          "available:B",
+          "available:A",
+          "consume:A|B",
+          "ready:A|B"
+        ],
+        "probe": "D7_actual_child_batch_order",
+        "returned": "A|B",
+        "status": "PASS"
+      },
+      "reproduced_observed": {
+        "actual_child_repl": true,
+        "events": [
+          "dispatch:A",
+          "dispatch:B",
+          "child_body:A",
+          "child_body:B",
+          "available:A",
+          "available:B",
+          "consume:A|B",
+          "ready:A|B"
+        ],
+        "probe": "D7_actual_child_batch_order",
+        "returned": "A|B",
+        "status": "PASS"
+      },
+      "original_assertion_status": "PASS",
+      "reproduced_assertion_status": "PASS",
+      "exact_decoded_payload_match": false,
+      "different_fields": [
+        "events"
+      ],
+      "behavioral_discrepancy": false,
+      "deviation": "Cross-child availability order changed; original per-child partial-order assertions and final A|B still pass",
+      "assertion_interpretation": "Confirms the diagnostic's expected baseline behavior; not an H2/H5/H6 correctness or validation-success verdict"
+    },
+    {
+      "archival_id": "D8",
+      "original_identifier": "D8_recursive_budget_overshoot",
+      "script": "probes/accounting_extra.py",
+      "original_observed": {
+        "probe": "D8_recursive_budget_overshoot",
+        "status": "PASS",
+        "synthetic_total": 0.04,
+        "configured_budget": 0.035,
+        "reported_total": 0.01,
+        "termination": "normal",
+        "returned": "A"
+      },
+      "reproduced_observed": {
+        "probe": "D8_recursive_budget_overshoot",
+        "status": "PASS",
+        "synthetic_total": 0.04,
+        "configured_budget": 0.035,
+        "reported_total": 0.01,
+        "termination": "normal",
+        "returned": "A"
+      },
+      "original_assertion_status": "PASS",
+      "reproduced_assertion_status": "PASS",
+      "exact_decoded_payload_match": true,
+      "different_fields": [],
+      "behavioral_discrepancy": false,
+      "deviation": null,
+      "assertion_interpretation": "Confirms the diagnostic's expected baseline behavior; not an H2/H5/H6 correctness or validation-success verdict"
+    },
+    {
+      "archival_id": "D9",
+      "original_identifier": "D9_batch_metrics",
+      "script": "probes/accounting_extra.py",
+      "original_observed": {
+        "probe": "D9_batch_metrics",
+        "status": "PASS",
+        "slot_input_tokens": [
+          40,
+          40
+        ],
+        "handler_input_total": 55,
+        "slot_duration_estimates": [
+          5,
+          5
+        ],
+        "fixture_call_durations": [
+          2,
+          8
+        ]
+      },
+      "reproduced_observed": {
+        "probe": "D9_batch_metrics",
+        "status": "PASS",
+        "slot_input_tokens": [
+          40,
+          40
+        ],
+        "handler_input_total": 55,
+        "slot_duration_estimates": [
+          5,
+          5
+        ],
+        "fixture_call_durations": [
+          2,
+          8
+        ]
+      },
+      "original_assertion_status": "PASS",
+      "reproduced_assertion_status": "PASS",
+      "exact_decoded_payload_match": true,
+      "different_fields": [],
+      "behavioral_discrepancy": false,
+      "deviation": null,
+      "assertion_interpretation": "Confirms the diagnostic's expected baseline behavior; not an H2/H5/H6 correctness or validation-success verdict"
+    }
+  ],
+  "summary": {
+    "original_diagnostic_cases": 30,
+    "reproduced_passes": 30,
+    "reproduced_failures": 0,
+    "exact_decoded_payload_matches": 29,
+    "behavioral_discrepancies": 0,
+    "schedule_only_trace_differences": 1,
+    "supplementary_cases_not_in_original_count": 1
+  },
+  "comparison_policy": "Compare decoded JSON fields; numeric spelling/whitespace is not byte identity. D7 permits cross-child scheduling variation while its original partial-order assertions must pass.",
+  "caveats": [
+    "A PASS does not mean runtime results were validated or RootCheck exists",
+    "Scripted repair is not real-model recovery",
+    "No natural official-runtime H2/H5/H6 occurrence established",
+    "Runner guard failure branches were not tested by attempting external connections",
+    "Upstream 155/32 test runs were not rerun in this verification"
+  ],
+  "integrity_result": {
+    "archive_creation_files_unchanged_after_execution": 16,
+    "protected_source_files_unchanged": 64,
+    "experiments_files_unchanged": 1,
+    "experiments_comparison": "same file set, byte hashes, sizes and exact mtimes; nanosecond values stored as decimal strings",
+    "stage": "after all 30 plus supplementary execution, before authorized reproduction-record edits"
+  }
+}

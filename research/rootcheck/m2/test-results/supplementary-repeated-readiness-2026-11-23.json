@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "record_kind": "New supplementary deterministic test; separate from the original 30",
+  "verification_date": "2026-11-23",
+  "baseline": "e11f1a8f8ee4490686e16dd6463233abe08a07eb",
+  "branch": "research/m2-runtime-feasibility",
+  "script": "probes/supplementary_repeated_readiness.py",
+  "script_sha256": "306ccf8e987d0a2f6b0039bd7a810bae470e60c2a60c4bb8e823ebd16f17fd41",
+  "evidence_origin": "New script created and executed after the original 30-probe reproduction",
+  "command": "$runnerSource = Get-Content -LiteralPath 'research\\rootcheck\\m2\\reproduce.ps1' -Raw -Encoding UTF8\n$bootstrapMatch = [regex]::Match($runnerSource, \"(?ms)^\\`$bootstrap = @'\\r?\\n(.*?)\\r?\\n'@\")\nif (-not $bootstrapMatch.Success) { throw 'Offline bootstrap not found' }\n$guardedBootstrap = $bootstrapMatch.Groups[1].Value\n$repoRoot = (Get-Location).Path\n$scriptPath = (Resolve-Path -LiteralPath 'research\\rootcheck\\m2\\probes\\supplementary_repeated_readiness.py').Path\n$expectedHash = (Get-FileHash -LiteralPath $scriptPath -Algorithm SHA256).Hash.ToLowerInvariant()\n$guardedBootstrap | & '.venv\\Scripts\\python.exe' -I -B - $repoRoot $scriptPath $expectedHash\nif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }",
+  "shell_exit_code": 0,
+  "python_exit_code": 0,
+  "guarded_bootstrap_source": "Unmodified reproduce.ps1 Python here-string; extracted without executing the original runner again",
+  "tool_result": {
+    "chunk_id": "ffd9cd",
+    "wall_time_seconds": 1.419489,
+    "exit_code": 0,
+    "original_token_count": 174,
+    "output": "M2_ARCHIVE_REPRO_ENV {\"assertions_enabled\": true, \"dotenv_disabled\": true, \"guard\": \"mock factory required; numeric loopback only; no child processes\", \"platform\": \"win32\", \"python\": \"3.12.4 (tags/v3.12.4:8e8a4ba, Jun  6 2024, 19:30:16) [MSC v.1940 64 bit (AMD64)]\", \"script_sha256\": \"306ccf8e987d0a2f6b0039bd7a810bae470e60c2a60c4bb8e823ebd16f17fd41\"}\r\n{\"capture_events\": [\"A\", \"B\"], \"capture_spy\": \"delegates to baseline _on_ready; observes both events\", \"captured_candidate\": \"B\", \"dictionary_content\": \"B\", \"evidence_class\": \"new supplementary deterministic test\", \"executed_blocks\": 1, \"probe\": \"P-CP4-REPEATED-READY\", \"returned\": \"B\", \"root_model_calls\": 1, \"status\": \"PASS\", \"stderr\": \"\"}\r\n"
+  },
+  "observed": {
+    "capture_events": [
+      "A",
+      "B"
+    ],
+    "capture_spy": "delegates to baseline _on_ready; observes both events",
+    "captured_candidate": "B",
+    "dictionary_content": "B",
+    "evidence_class": "new supplementary deterministic test",
+    "executed_blocks": 1,
+    "probe": "P-CP4-REPEATED-READY",
+    "returned": "B",
+    "root_model_calls": 1,
+    "status": "PASS",
+    "stderr": ""
+  },
+  "expected_before_execution": {
+    "retained_candidate": "B",
+    "returned": "B",
+    "capture_events": [
+      "A",
+      "B"
+    ]
+  },
+  "interpretation": "Both truthy ready assignments invoke capture. The baseline retains the latest candidate. The delegating spy supplies event-history evidence that baseline storage alone does not retain.",
+  "not_original_evidence": true
+}
