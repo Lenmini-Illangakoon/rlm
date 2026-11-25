@@ -1,0 +1,13 @@
+{
+  "status": "AUTHORIZED_AWAITING_SECURE_CREDENTIAL_HANDOFF",
+  "approval_scope": "At most one GPT-5 request followed by one GPT-5-nano request, conditional on existing verification gates; combined inference ceiling USD 0.50",
+  "no_retries_or_extra_requests": true,
+  "pilot_authorized": false,
+  "credential_source": "not yet selected; clarification pending",
+  "account_billing_confirmation": "pending",
+  "source_sha256_before_activation": "eb6ff2221f67c11b2ef7c0bc6d8916b82c17c6ffc0d93e5dcfa20bc8920c81cc",
+  "source_sha256_after_activation": "66676605140563dfaf011a40e83867e0dd3299bba3e7d7ed591526248ef76c0f",
+  "proposal_sha256": "b44ae48f87dbf0b15c20718b6a3f08da3c246f5f22055b5d6012de2f704c8325",
+  "provider_requests_so_far": 0,
+  "credential_access_so_far": false
+}

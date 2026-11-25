@@ -1,0 +1,570 @@
+{
+  "attempted_runs": 9,
+  "attempts_by_requested_model": {
+    "openai/gpt-5": 35,
+    "openai/gpt-5-nano": 2
+  },
+  "blocker": null,
+  "campaign_policy_hash": "42889b13f955bc304b39eee8535ae182bde422324c815b7945fb953eefd9e459",
+  "campaign_protected_exposure_usd": "1.12034040",
+  "campaign_snapshot_sha256": "f3f9390b4674221ac48e3076ffb5d1636b02cb12886ce89b2173818c56a98cc1",
+  "censoring": {
+    "explanation": "All nine frozen slots retained; cumulative resource-censoring count is 0, below stop threshold 2. S1-R03 remains operationally interrupted despite verified provider completion and reconciled billing. S2-R01 capped subcall is an action-level confound, not run-level censoring.",
+    "resource_censored_runs": 0,
+    "round_three_boundary_reached": true,
+    "threshold": 2,
+    "triggered_so_far": false
+  },
+  "closure": {
+    "additional_inference_authorized_or_sent": false,
+    "all_pilot_usage_reconciled": true,
+    "billing_known_for_all_37_pilot_requests": true,
+    "formal_hypothesis_review_pending": true,
+    "immutable_evidence_hash_references_checked": 65,
+    "latency_limitation": "S1-R03 final official/job elapsed is unavailable; successful-duration sums exclude it and are not full campaign elapsed time.",
+    "latency_sum_successful_jobs_seconds": 823.0630000000237,
+    "latency_sum_successful_official_seconds": 801.9566431999847,
+    "missing_provider_content_count": 1,
+    "next_progression": "complete",
+    "original_preflight_reservation_remains_unresolved": true,
+    "stop_after_campaign_a": true
+  },
+  "completed_iterations_including_failed_run_prefix": 34,
+  "completed_run_root_iterations": 33,
+  "completed_runs": 8,
+  "correct_completed_runs": 8,
+  "decision": "CAMPAIGN_A_CLOSED_NINE_SLOTS_RETAINED_EIGHT_CORRECT_COMPLETIONS_ONE_OPERATIONAL_INTERRUPTION",
+  "delivered_provider_responses": 36,
+  "dispatched_provider_attempts": 37,
+  "evidence_completeness": {
+    "all_available_raw_prompts_responses_and_prefixes_preserved": true,
+    "all_cleanup_passed": true,
+    "all_journals_finalized": true,
+    "all_runtime_35_hashes_and_protected_90_files_match": true,
+    "failed_request_complete_or_partial_http_body_available": false,
+    "failed_request_usage_billing_available_via_separate_metadata": true,
+    "failed_run_final_answer_or_total_elapsed_available": false,
+    "failed_run_worker_response_available": false,
+    "frozen_implementation_and_policy_unchanged": true,
+    "missing_information_explicitly_documented": true,
+    "prior_evidence_and_preliminary_observations_preserved": true,
+    "unique_provider_generation_and_request_ids": true
+  },
+  "formal_hypothesis_classifications_finalized": false,
+  "genuine_recursive_rlm_calls": 0,
+  "known_conservative_pilot_debit_usd": "0.67151130",
+  "known_reported_charges_including_preflight_usd": "0.58045240",
+  "known_reported_pilot_cost_usd": "0.58007130",
+  "known_tokens_only": {
+    "completion_tokens": 108380,
+    "prompt_tokens": 156650,
+    "total_tokens": 265030
+  },
+  "new_unresolved_pilot_reservation_usd": "0",
+  "no_retries_replacements_preflight_requests_source_changes_or_commits": true,
+  "not_executed_runs": 0,
+  "operational_failure_runs": 1,
+  "original_unresolved_preflight_reservation_usd": "0.4484480",
+  "plain_sub_llm_calls": 2,
+  "planned_slots": 9,
+  "preflight_known_charges_usd": "0.00038110",
+  "raw_events": 289,
+  "remaining_protected_headroom_usd": "18.87965960",
+  "rootcheck": false,
+  "round_three_known_conservative_debit_usd": "0.14693125",
+  "round_three_known_reported_cost_usd": "0.13353925",
+  "runs": [
+    {
+      "actual_return": "Order-ID set (ascending): ['ORD-0001', 'ORD-0002', 'ORD-0005', 'ORD-0006', 'ORD-0007', 'ORD-0008', 'ORD-0009', 'ORD-0010', 'ORD-0011', 'ORD-0013', 'ORD-0014', 'ORD-0016', 'ORD-0018', 'ORD-0019', 'ORD-0020', 'ORD-0021', 'ORD-0023', 'ORD-0024', 'ORD-0025', 'ORD-0027', 'ORD-0028', 'ORD-0031', 'ORD-0032', 'ORD-0033', 'ORD-0036', 'ORD-0037', 'ORD-0042', 'ORD-0043', 'ORD-0048', 'ORD-0050', 'ORD-0051', 'ORD-0052', 'ORD-0053', 'ORD-0057', 'ORD-0059', 'ORD-0060', 'ORD-0061', 'ORD-0062', 'ORD-0064', 'ORD-0066', 'ORD-0067', 'ORD-0068', 'ORD-0071', 'ORD-0072', 'ORD-0075', 'ORD-0076', 'ORD-0077', 'ORD-0079', 'ORD-0081', 'ORD-0085', 'ORD-0087', 'ORD-0088', 'ORD-0089', 'ORD-0091', 'ORD-0092', 'ORD-0093', 'ORD-0094', 'ORD-0095', 'ORD-0096', 'ORD-0100']\nTotal outstanding units: 1361",
+      "appcontainer_job_seconds": 79.57799999999406,
+      "cleanup": {
+        "payload_grant_removed": true,
+        "profile_deleted": true,
+        "scratch_deleted": true
+      },
+      "correctness": "correct",
+      "evidence": {
+        "hashes": {
+          "evaluators/S1-R01-preliminary-observations.md": "659a116124bac7422a26024ef3fbb11088d6d2c01e535edc11c395cdb1d5c9b7",
+          "results/S1-R01-summary.json": "6f0f0906f92ef7ad8e342555bda349eb03b08b629c5dc4657a092f18e8e6e4a1",
+          "results/broker/broker-eaa4d3f974474c0e807569e72ddf4432.events.jsonl": "2bbac214ff6bb19781fdc21745b11465819ea4613e65c7a6d262fd77b3d2e40b",
+          "results/broker/broker-eaa4d3f974474c0e807569e72ddf4432.journal.json": "6f13f44bf35f8ed6087653c949a49c7d0ac1a23fe89c2f4bd1337d15d55851e8",
+          "results/broker/broker-eaa4d3f974474c0e807569e72ddf4432.json": "45af322a32a7e4e6e0aeb447730786abd3553e0be393a4382876e8aa16b226fb",
+          "results/broker/broker-eaa4d3f974474c0e807569e72ddf4432.worker-response.json": "7d599cff8a0cec1b61ce15f883e60c9e20a61ece2939583f8660dd2681826775"
+        },
+        "notes": "evaluators/S1-R01-preliminary-observations.md",
+        "report": "S1_R01_EXECUTION_RESULT.md",
+        "summary": "results/S1-R01-summary.json"
+      },
+      "formal_assessment": "not finalized; retrospective preliminary notes only",
+      "full_run_iteration_total": 4,
+      "genuine_recursive_rlm_calls": 0,
+      "known_conservative_debit_usd": "0.09902875",
+      "known_provider_reported_cost_usd": "0.08246875",
+      "known_tokens": {
+        "completion_tokens": 6938,
+        "prompt_tokens": 23719,
+        "total_tokens": 30657
+      },
+      "official_seconds": 76.40380520001054,
+      "pilot_id": "S1-R01",
+      "plain_sub_llm_calls": 0,
+      "preliminary_hypotheses": {
+        "H2": "no material mismatch demonstrated",
+        "H5": "provisionally not observed",
+        "H6": "no redundant continuation demonstrated"
+      },
+      "provider_attempts": 4,
+      "provider_responses_delivered": 4,
+      "raw_events": 33,
+      "reason": null,
+      "recursive_child_nodes": 0,
+      "root_iterations_completed_observed": 4,
+      "root_requests_dispatched": 4,
+      "run_id": "broker-eaa4d3f974474c0e807569e72ddf4432",
+      "status": "completed",
+      "strategy_and_recovery": "Explore; JSONL exact-ID/status reconciliation; recompute/check and expose full set; finalize.",
+      "unresolved_reservation_usd": "0",
+      "usage_complete": true
+    },
+    {
+      "actual_return": "Top 3 eligible shipments by requested quantity (ties by numeric Shipment ID ascending):\n1) SH-10106 — requested_qty: 6883\n   Sources: request=R-106, inventory=W-106, quality=Q-106, hold=H-106\n2) SH-10068 — requested_qty: 6846\n   Sources: request=R-068, inventory=W-068, quality=Q-068, hold=H-068\n3) SH-10097 — requested_qty: 6809\n   Sources: request=R-097, inventory=W-097, quality=Q-097, hold=H-097\n\nCombined requested quantity: 20538\n",
+      "appcontainer_job_seconds": 447.1100000000006,
+      "cleanup": {
+        "payload_grant_removed": true,
+        "profile_deleted": true,
+        "scratch_deleted": true
+      },
+      "correctness": "correct",
+      "evidence": {
+        "hashes": {
+          "evaluators/S2-R01-preliminary-observations.md": "604c4cabccce8fba14e1e8ca7b814d17c6ca3c489a88e3861f478613928b7280",
+          "results/S2-R01-summary.json": "28d4e8a8a337e93a70bbfae5e0244e31ea749c0685f6923ab34567dd7842d75a",
+          "results/broker/broker-b3dd0f8ebee74e40a5d794cabbdcec4a.events.jsonl": "ee1e67a5f910b5b30b50ef2ee7709e42b31a43aef43ad852cf9ea509c7f2ad67",
+          "results/broker/broker-b3dd0f8ebee74e40a5d794cabbdcec4a.journal.json": "c9661e19046511c305f699b3331baf9ac92dffb0a061742d95045cf443c1ef50",
+          "results/broker/broker-b3dd0f8ebee74e40a5d794cabbdcec4a.json": "f3ab00fe23fcddaf60e24167bb1f84fe69b4f2f9278565b421628b5151482be5",
+          "results/broker/broker-b3dd0f8ebee74e40a5d794cabbdcec4a.worker-response.json": "89a7aeb42744cbaf14f08a9e21bf6d17f274ec022f8476bd52655d6b2d34023d"
+        },
+        "notes": "evaluators/S2-R01-preliminary-observations.md",
+        "report": "S2_R01_EXECUTION_RESULT.md",
+        "summary": "results/S2-R01-summary.json"
+      },
+      "formal_assessment": "not finalized; retrospective preliminary notes only",
+      "full_run_iteration_total": 8,
+      "genuine_recursive_rlm_calls": 0,
+      "known_conservative_debit_usd": "0.20135005",
+      "known_provider_reported_cost_usd": "0.17427805",
+      "known_tokens": {
+        "completion_tokens": 73608,
+        "prompt_tokens": 58697,
+        "total_tokens": 132305
+      },
+      "official_seconds": 444.48062149999896,
+      "pilot_id": "S2-R01",
+      "plain_sub_llm_calls": 2,
+      "preliminary_hypotheses": {
+        "H2": "strong prose-for-JSON mismatch candidate; not formally classified",
+        "H5": "provisionally not observed",
+        "H6": "potential avoidable prose-only continuation; redundant computation unestablished"
+      },
+      "provider_attempts": 10,
+      "provider_responses_delivered": 10,
+      "raw_events": 65,
+      "reason": null,
+      "recursive_child_nodes": 0,
+      "root_iterations_completed_observed": 8,
+      "root_requests_dispatched": 8,
+      "run_id": "broker-b3dd0f8ebee74e40a5d794cabbdcec4a",
+      "status": "completed",
+      "strategy_and_recovery": "Generated SyntaxError; plain nano returns prose; revised extraction reaches output cap; recover with deterministic regex parsing; prose-only planning turn; finalize.",
+      "unresolved_reservation_usd": "0",
+      "usage_complete": true
+    },
+    {
+      "actual_return": "Product IDs: 3731, 4637; Product: 17300647",
+      "appcontainer_job_seconds": 40.54700000002049,
+      "cleanup": {
+        "payload_grant_removed": true,
+        "profile_deleted": true,
+        "scratch_deleted": true
+      },
+      "correctness": "correct",
+      "evidence": {
+        "hashes": {
+          "evaluators/S3-R01-preliminary-observations.md": "fd9d2343489512046b4c9db66e2dc8b1a7305faae349d3a557eca3d436977e7f",
+          "results/S3-R01-summary.json": "63405bc7a2ced1e6f9ed4a6c6b81ad924c8bf0f84d154f1e8d1d8449ca361f05",
+          "results/broker/broker-deb1b866c6344031816958a484472db8.events.jsonl": "1c39a695bb0de291c29c31c7fe96ceb895c6a650e8efd148506a7a8921e1936e",
+          "results/broker/broker-deb1b866c6344031816958a484472db8.journal.json": "2444d704fbb5ea09b43d72a6b2e32acf581722bf7c2d95b8203a26f5b8def602",
+          "results/broker/broker-deb1b866c6344031816958a484472db8.json": "d276d5a872ce024765cc258d9149a7f2609a89a8497b429547b753ab48a9d4a6",
+          "results/broker/broker-deb1b866c6344031816958a484472db8.worker-response.json": "91dd462434e458a64fa8475bd58257f737c7ec536137c1757bc2329e4526bf4e"
+        },
+        "notes": "evaluators/S3-R01-preliminary-observations.md",
+        "report": "S3_R01_EXECUTION_RESULT.md",
+        "summary": "results/S3-R01-summary.json"
+      },
+      "formal_assessment": "not finalized; retrospective preliminary notes only",
+      "full_run_iteration_total": 3,
+      "genuine_recursive_rlm_calls": 0,
+      "known_conservative_debit_usd": "0.03873750",
+      "known_provider_reported_cost_usd": "0.03427350",
+      "known_tokens": {
+        "completion_tokens": 2956,
+        "prompt_tokens": 7342,
+        "total_tokens": 10298
+      },
+      "official_seconds": 38.11165470001288,
+      "pilot_id": "S3-R01",
+      "plain_sub_llm_calls": 0,
+      "preliminary_hypotheses": {
+        "H2": "no material mismatch demonstrated",
+        "H5": "provisionally not observed",
+        "H6": "no redundant continuation demonstrated"
+      },
+      "provider_attempts": 3,
+      "provider_responses_delivered": 3,
+      "raw_events": 27,
+      "reason": null,
+      "recursive_child_nodes": 0,
+      "root_iterations_completed_observed": 3,
+      "root_requests_dispatched": 3,
+      "run_id": "broker-deb1b866c6344031816958a484472db8",
+      "status": "completed",
+      "strategy_and_recovery": "Inspect section counts; parse/filter/sort/multiply; verify selected rows and finalize.",
+      "unresolved_reservation_usd": "0",
+      "usage_complete": true
+    },
+    {
+      "actual_return": "Top 3 eligible shipments by requested quantity (desc), tie-break by Shipment ID (asc):\n1) SH-10106 — requested quantity: 6883 — request: R-106; inventory: W-106; quality: Q-106; hold: H-106\n2) SH-10068 — requested quantity: 6846 — request: R-068; inventory: W-068; quality: Q-068; hold: H-068\n3) SH-10097 — requested quantity: 6809 — request: R-097; inventory: W-097; quality: Q-097; hold: H-097\nCombined requested quantity: 20538",
+      "appcontainer_job_seconds": 77.5,
+      "cleanup": {
+        "payload_grant_removed": true,
+        "profile_deleted": true,
+        "scratch_deleted": true
+      },
+      "correctness": "correct",
+      "evidence": {
+        "hashes": {
+          "evaluators/S2-R02-preliminary-observations.md": "17a7f561f987c1ebedd593888ba7a34e14734d3a416e4cd61e4b426b61ef9442",
+          "results/S2-R02-summary.json": "43a5b9600fe894240d96b71bbe31c93a3f22829c4e206f91cf0c5427f383c42d",
+          "results/broker/broker-0c0113ea621747e2ace2fa3de8d4bbcb.events.jsonl": "2ea62902609016e554dda219da8b3bb7dc93cc2a4212c12d1f7040f52884666d",
+          "results/broker/broker-0c0113ea621747e2ace2fa3de8d4bbcb.journal.json": "1e9af0d8c9e9cfa27c0779095d250b2f6092cebc14770329122969a4e6280e3a",
+          "results/broker/broker-0c0113ea621747e2ace2fa3de8d4bbcb.json": "ee4721afce45de585c486bb56df346aacbdd1b1f2af8b4b9e781f51a8716a8a9",
+          "results/broker/broker-0c0113ea621747e2ace2fa3de8d4bbcb.worker-response.json": "ba55df2d2968d3ac7746270ac8ac013c613bb7076e33cbe5375a03167f6b1eb4"
+        },
+        "notes": "evaluators/S2-R02-preliminary-observations.md",
+        "report": "S2_R02_EXECUTION_RESULT.md",
+        "summary": "results/S2-R02-summary.json"
+      },
+      "formal_assessment": "not finalized; retrospective preliminary notes only",
+      "full_run_iteration_total": 5,
+      "genuine_recursive_rlm_calls": 0,
+      "known_conservative_debit_usd": "0.09485500",
+      "known_provider_reported_cost_usd": "0.07901500",
+      "known_tokens": {
+        "completion_tokens": 6931,
+        "prompt_tokens": 20436,
+        "total_tokens": 27367
+      },
+      "official_seconds": 75.12477579998085,
+      "pilot_id": "S2-R02",
+      "plain_sub_llm_calls": 0,
+      "preliminary_hypotheses": {
+        "H2": "no material mismatch demonstrated",
+        "H5": "provisionally not observed",
+        "H6": "no redundant continuation demonstrated"
+      },
+      "provider_attempts": 5,
+      "provider_responses_delivered": 5,
+      "raw_events": 39,
+      "reason": null,
+      "recursive_child_nodes": 0,
+      "root_iterations_completed_observed": 5,
+      "root_requests_dispatched": 5,
+      "run_id": "broker-0c0113ea621747e2ace2fa3de8d4bbcb",
+      "status": "completed",
+      "strategy_and_recovery": "Inspect; parse four sections; exact-ID join/filter/rank; expose source/total payload; verify and finalize.",
+      "unresolved_reservation_usd": "0",
+      "usage_complete": true
+    },
+    {
+      "actual_return": "Product IDs (ascending): 3731, 4637; Product: 17300647",
+      "appcontainer_job_seconds": 35.5,
+      "cleanup": {
+        "payload_grant_removed": true,
+        "profile_deleted": true,
+        "scratch_deleted": true
+      },
+      "correctness": "correct",
+      "evidence": {
+        "hashes": {
+          "evaluators/S3-R02-preliminary-observations.md": "babbbf5d003595e43a0161feb52721f069a4b72e7620d899ced1cf21aa2fb9ac",
+          "results/S3-R02-summary.json": "ea5817a850d8a1b6178c526174534722ac4cdc56fb3baa6ae0a4e15b4bee7aaf",
+          "results/broker/broker-6f457d2d60914ee6b68d8366892facfb.events.jsonl": "ea6566164ee5d941b03da353014465f454efb72dfa9272fcec727ad7caa7938e",
+          "results/broker/broker-6f457d2d60914ee6b68d8366892facfb.journal.json": "d2d202841d219fda0f5a46b0fde71f7f7660cce475b4d4436e976f3041f33bb4",
+          "results/broker/broker-6f457d2d60914ee6b68d8366892facfb.json": "a9910757ccc650ea1d8a9be898877c42d0fe6f396330fe33f332a9ef7a762779",
+          "results/broker/broker-6f457d2d60914ee6b68d8366892facfb.worker-response.json": "d0e5cbdd3152c4504d8e348c466ee64b29a1a790b18d213286327d10b01ce7c7"
+        },
+        "notes": "evaluators/S3-R02-preliminary-observations.md",
+        "report": "S3_R02_EXECUTION_RESULT.md",
+        "summary": "results/S3-R02-summary.json"
+      },
+      "formal_assessment": "not finalized; retrospective preliminary notes only",
+      "full_run_iteration_total": 3,
+      "genuine_recursive_rlm_calls": 0,
+      "known_conservative_debit_usd": "0.03713000",
+      "known_provider_reported_cost_usd": "0.03122600",
+      "known_tokens": {
+        "completion_tokens": 2782,
+        "prompt_tokens": 7448,
+        "total_tokens": 10230
+      },
+      "official_seconds": 32.86964320001425,
+      "pilot_id": "S3-R02",
+      "plain_sub_llm_calls": 0,
+      "preliminary_hypotheses": {
+        "H2": "no material mismatch demonstrated",
+        "H5": "provisionally not observed",
+        "H6": "no redundant continuation demonstrated"
+      },
+      "provider_attempts": 3,
+      "provider_responses_delivered": 3,
+      "raw_events": 27,
+      "reason": null,
+      "recursive_child_nodes": 0,
+      "root_iterations_completed_observed": 3,
+      "root_requests_dispatched": 3,
+      "run_id": "broker-6f457d2d60914ee6b68d8366892facfb",
+      "status": "completed",
+      "strategy_and_recovery": "Inspect sections; parse/filter/sort/multiply; submit computed answer.",
+      "unresolved_reservation_usd": "0",
+      "usage_complete": true
+    },
+    {
+      "actual_return": "Order IDs (ascending): ORD-0001, ORD-0002, ORD-0005, ORD-0006, ORD-0007, ORD-0008, ORD-0009, ORD-0010, ORD-0011, ORD-0013, ORD-0014, ORD-0016, ORD-0018, ORD-0019, ORD-0020, ORD-0021, ORD-0023, ORD-0024, ORD-0025, ORD-0027, ORD-0028, ORD-0031, ORD-0032, ORD-0033, ORD-0036, ORD-0037, ORD-0042, ORD-0043, ORD-0048, ORD-0050, ORD-0051, ORD-0052, ORD-0053, ORD-0057, ORD-0059, ORD-0060, ORD-0061, ORD-0062, ORD-0064, ORD-0066, ORD-0067, ORD-0068, ORD-0071, ORD-0072, ORD-0075, ORD-0076, ORD-0077, ORD-0079, ORD-0081, ORD-0085, ORD-0087, ORD-0088, ORD-0089, ORD-0091, ORD-0092, ORD-0093, ORD-0094, ORD-0095, ORD-0096, ORD-0100\nTotal Outstanding Units: 1361",
+      "appcontainer_job_seconds": 45.76600000000326,
+      "cleanup": {
+        "payload_grant_removed": true,
+        "profile_deleted": true,
+        "scratch_deleted": true
+      },
+      "correctness": "correct",
+      "evidence": {
+        "hashes": {
+          "evaluators/S1-R02-preliminary-observations.md": "b9c20ab1f0889ad726825ebda6160351a4fc03caf9fe5072850270b5bddf8031",
+          "results/S1-R02-summary.json": "5c5947cc6a4cb0ecbdc39ff729755ff5875aaacc2bad96bce09a51b647c835ed",
+          "results/broker/broker-4628dc30b5d64041842e5ae24ee1bfe5.events.jsonl": "cad381bf2622e1d17bfe9fd03a62699d34215cd83f49541b4c13120480cab7f8",
+          "results/broker/broker-4628dc30b5d64041842e5ae24ee1bfe5.journal.json": "73f9a30898a0ea7233d3d34c2400704ac38d255545c315b87bcf1940cd74e58b",
+          "results/broker/broker-4628dc30b5d64041842e5ae24ee1bfe5.json": "f11fcdca6c61995c7da727ec8eca473722e76c739c3199b19d527bfd7ac2d029",
+          "results/broker/broker-4628dc30b5d64041842e5ae24ee1bfe5.worker-response.json": "10e87768f5bdbf244056fb3cd7bf68d346ae43af9cfa727e4ea103ed7fb284ee"
+        },
+        "notes": "evaluators/S1-R02-preliminary-observations.md",
+        "report": "S1_R02_EXECUTION_RESULT.md",
+        "summary": "results/S1-R02-summary.json"
+      },
+      "formal_assessment": "not finalized; retrospective preliminary notes only",
+      "full_run_iteration_total": 3,
+      "genuine_recursive_rlm_calls": 0,
+      "known_conservative_debit_usd": "0.05347875",
+      "known_provider_reported_cost_usd": "0.04527075",
+      "known_tokens": {
+        "completion_tokens": 3867,
+        "prompt_tokens": 11847,
+        "total_tokens": 15714
+      },
+      "official_seconds": 43.422575899981894,
+      "pilot_id": "S1-R02",
+      "plain_sub_llm_calls": 0,
+      "preliminary_hypotheses": {
+        "H2": "no material mismatch demonstrated",
+        "H5": "provisionally not observed",
+        "H6": "no redundant continuation demonstrated"
+      },
+      "provider_attempts": 3,
+      "provider_responses_delivered": 3,
+      "raw_events": 27,
+      "reason": null,
+      "recursive_child_nodes": 0,
+      "root_iterations_completed_observed": 3,
+      "root_requests_dispatched": 3,
+      "run_id": "broker-4628dc30b5d64041842e5ae24ee1bfe5",
+      "status": "completed",
+      "strategy_and_recovery": "Inspect sections; exact-ID/status reconciliation; sanity checks and direct same-block complete-set formatting/submission.",
+      "unresolved_reservation_usd": "0",
+      "usage_complete": true
+    },
+    {
+      "actual_return": "3731, 4637, 17300647",
+      "appcontainer_job_seconds": 44.34299999999348,
+      "cleanup": {
+        "payload_grant_removed": true,
+        "profile_deleted": true,
+        "scratch_deleted": true
+      },
+      "correctness": "correct",
+      "evidence": {
+        "hashes": {
+          "evaluators/S3-R03-preliminary-observations.md": "d69634a3aad60f09dcdb86a0c42eecf13aa2fd778b187bf859072c1708660efe",
+          "results/S3-R03-summary.json": "bd5403450c94c7a164c525584ebfc78cda6c5dc94dac5d7c5071c14246949151",
+          "results/broker/broker-76d885d665ce467080f1010c58532595.events.jsonl": "827701bfdc7305d0605bae878da3735e0d74fd3ac757e3dbd132efdd08530784",
+          "results/broker/broker-76d885d665ce467080f1010c58532595.journal.json": "bab7accffbb0166fa25927d7da2069bba8e33faa0523464a049676a7a0ed93f5",
+          "results/broker/broker-76d885d665ce467080f1010c58532595.json": "bfeaca9207352c756ff117f2819d846dd90d5fd56c9f4d9c5ae84d0dc4146711",
+          "results/broker/broker-76d885d665ce467080f1010c58532595.worker-response.json": "edaf7aefbfb504dbff36d6f607dc5de7ab685dffcfbdc3a719975fe61006dfa4"
+        },
+        "notes": "evaluators/S3-R03-preliminary-observations.md",
+        "report": "S3_R03_EXECUTION_RESULT.md",
+        "summary": "results/S3-R03-summary.json"
+      },
+      "formal_assessment": "not finalized; retrospective preliminary notes only",
+      "full_run_iteration_total": 4,
+      "genuine_recursive_rlm_calls": 0,
+      "known_conservative_debit_usd": "0.04303500",
+      "known_provider_reported_cost_usd": "0.03900300",
+      "known_tokens": {
+        "completion_tokens": 3247,
+        "prompt_tokens": 8452,
+        "total_tokens": 11699
+      },
+      "official_seconds": 41.66937869999674,
+      "pilot_id": "S3-R03",
+      "plain_sub_llm_calls": 0,
+      "preliminary_hypotheses": {
+        "H2": "no material mismatch demonstrated",
+        "H5": "provisionally not observed",
+        "H6": "no redundant continuation demonstrated"
+      },
+      "provider_attempts": 4,
+      "provider_responses_delivered": 4,
+      "raw_events": 31,
+      "reason": null,
+      "recursive_child_nodes": 0,
+      "root_iterations_completed_observed": 4,
+      "root_requests_dispatched": 4,
+      "run_id": "broker-76d885d665ce467080f1010c58532595",
+      "status": "completed",
+      "strategy_and_recovery": "Initial prose-only plan; explore; parse/filter/sort/multiply; direct final formatting/submission.",
+      "unresolved_reservation_usd": "0",
+      "usage_complete": true
+    },
+    {
+      "actual_return": null,
+      "appcontainer_job_seconds": null,
+      "cleanup": {
+        "payload_grant_removed": true,
+        "profile_deleted": true,
+        "scratch_deleted": true
+      },
+      "correctness": "unassessable: no actual return",
+      "evidence": {
+        "hashes": {
+          "evaluators/S1-R03-preliminary-observations.md": "15f624f84e49a9966f35d666c13ed16e087fa1e7a8a8707a3a862fbd1eaaadd8",
+          "results/S1-R03-summary.json": "13231c688fc704fed100b9f4cbef260eafab5f0634c72c2bf78385260f7a5a2e",
+          "results/broker/broker-333c608172b94305888a87ea9adf6402.events.jsonl": "5c4ae458a260bc315439294a0c13501c916d33c1cf486c2ecc9c3d9f4e8c8f7d",
+          "results/broker/broker-333c608172b94305888a87ea9adf6402.journal.json": "ea69eecf4ac90c2ac64801bc856ce3516c25460663d15f2b5e2279893d0c6b2c",
+          "results/broker/broker-333c608172b94305888a87ea9adf6402.json": "5217d19dde111a1bf539887c909ea64b72dd723b3c3654d410db3a79237e7cd8",
+          "results/reconciliation/S1-R03/RECONCILIATION_REPORT.md": "4de2adaaf4a5c11ed725e94e6e0ade7c5f5e15bfc3163b8046aa13e235daa2c6",
+          "results/reconciliation/S1-R03/artifact-manifest-before.json": "74da2cb806d1d50a6f452b9e58f5406958ec162c3aa1545faca4ecdb50c5d0bb",
+          "results/reconciliation/S1-R03/campaign-before.json": "d27c73943a735e128dfaf3dbd57dd59978c1457b83c38f9ff4e261a0edb0c9a0",
+          "results/reconciliation/S1-R03/generation-lookup.json": "593450baf0c0e4941e6c920b9f598552f04477ae4d9b2841a250f71b3d0b553b",
+          "results/reconciliation/S1-R03/generation-response.raw.json": "f082151436f31e6dce9a151ac154a5f3779b46367a69a1d9ba8121dd973561e8",
+          "results/reconciliation/S1-R03/lookup-once.lock": "ba87b2f9031162861d3715358fa7fd2b687191923ed45be98e8adfac3b844e41",
+          "results/reconciliation/S1-R03/nine-run-status-before.md": "db9559d6013ad1f68de814c12a00f93bc923210db4d8d87c65c7429dffd3d7e4",
+          "results/reconciliation/S1-R03/reconciliation.json": "f33a2a73cd830285b250389a2aeb4fdb78c64f8369d825306f37434baaf36086"
+        },
+        "notes": "evaluators/S1-R03-preliminary-observations.md",
+        "reconciliation": "results/reconciliation/S1-R03/RECONCILIATION_REPORT.md",
+        "report": "S1_R03_EXECUTION_RESULT.md",
+        "summary": "results/S1-R03-summary.json"
+      },
+      "formal_assessment": "not finalized; retrospective preliminary notes only",
+      "full_run_iteration_total": null,
+      "genuine_recursive_rlm_calls": 0,
+      "known_conservative_debit_usd": "0.04412000",
+      "known_provider_reported_cost_usd": "0.04080800",
+      "known_tokens": {
+        "completion_tokens": 3450,
+        "prompt_tokens": 7696,
+        "total_tokens": 11146
+      },
+      "official_seconds": null,
+      "pilot_id": "S1-R03",
+      "plain_sub_llm_calls": 0,
+      "preliminary_hypotheses": {
+        "H2": "completed exploration shows no material mismatch; interrupted remainder inconclusive",
+        "H5": "not assessable: no actual return / no-return stratum",
+        "H6": "not assessable over incomplete trajectory; no sufficient candidate established"
+      },
+      "provider_attempts": 2,
+      "provider_responses_delivered": 1,
+      "raw_events": 13,
+      "reason": "IncompleteRead during second response; historical stop reason usage_unknown retained; billing subsequently reconciled",
+      "recursive_child_nodes": 0,
+      "root_iterations_completed_observed": 1,
+      "root_requests_dispatched": 2,
+      "run_id": "broker-333c608172b94305888a87ea9adf6402",
+      "status": "operational_failure",
+      "strategy_and_recovery": "Explore sections successfully; second response read fails with IncompleteRead before further code or final answer. Later metadata confirms provider completion and reconciles billing only; no replay or replacement.",
+      "unresolved_reservation_usd": "0",
+      "usage_complete": true
+    },
+    {
+      "actual_return": "Top 3 eligible shipments by requested quantity (desc; ties by numeric Shipment ID asc):\n1. SH-10106 — requested 6883 — sources: request R-106, inventory W-106, quality Q-106, hold H-106\n2. SH-10068 — requested 6846 — sources: request R-068, inventory W-068, quality Q-068, hold H-068\n3. SH-10097 — requested 6809 — sources: request R-097, inventory W-097, quality Q-097, hold H-097\nCombined requested quantity: 20538",
+      "appcontainer_job_seconds": 52.719000000011874,
+      "cleanup": {
+        "payload_grant_removed": true,
+        "profile_deleted": true,
+        "scratch_deleted": true
+      },
+      "correctness": "correct",
+      "evidence": {
+        "hashes": {
+          "S2_R03_EXECUTION_RESULT.md": "d610ef031cbca2bf0abf949b7fe2a16168251953e0a33b89f6916dbdeae93229",
+          "evaluators/S2-R03-preliminary-observations.md": "b610b45caf58c16c0523352bc1e6dd84f56d3a8c9f04582e80ddf9ccb28757ad",
+          "evaluators/oracle_results/S2-v2.json": "7646638b5157739991b1a3594903b4f89e9a9fa19b1d3ccdd3c52a5ebfbfc5c4",
+          "results/S2-R03-summary.json": "32942071dbb5b8e8c0b9b6106253bbfddb2576966d7cf331568f5f71ba996ee2",
+          "results/broker/broker-c473538e26a441fdb32395f07a6451ee.events.jsonl": "0eda3cc04b0cb2b42b60ab9d4cbba33f65c259a1e0be121808939153d54ad31d",
+          "results/broker/broker-c473538e26a441fdb32395f07a6451ee.journal.json": "4720bff6a137b8f3a611c9a94f17e9116def51777c82d37ed97ea97f5a12ff0b",
+          "results/broker/broker-c473538e26a441fdb32395f07a6451ee.json": "ce1e277f20fae787822df5f3160820ad5d33662cb007e3506fbf08a8fe987984",
+          "results/broker/broker-c473538e26a441fdb32395f07a6451ee.worker-response.json": "5566218ea7a3315fc4acd92a26d3d05013848ebe9499a12f09254f378d07b701",
+          "results/campaigns/official-baseline-v1.json": "f3f9390b4674221ac48e3076ffb5d1636b02cb12886ce89b2173818c56a98cc1",
+          "tasks/data/S2-v2/context.txt": "2910a820abaa38032ab01ffd07eb603e06b53a3f683b3f8210808bdd58c44069",
+          "tasks/data/S2-v2/query.txt": "bfcf433d53cbfa8e808d51140ad485b59d6f9392a968819ef2be74a3c1461627"
+        },
+        "notes": "evaluators/S2-R03-preliminary-observations.md",
+        "report": "S2_R03_EXECUTION_RESULT.md",
+        "summary": "results/S2-R03-summary.json"
+      },
+      "formal_assessment": "not finalized; retrospective preliminary notes only",
+      "full_run_iteration_total": 3,
+      "genuine_recursive_rlm_calls": 0,
+      "known_conservative_debit_usd": "0.05977625",
+      "known_provider_reported_cost_usd": "0.05372825",
+      "known_tokens": {
+        "completion_tokens": 4601,
+        "prompt_tokens": 11013,
+        "total_tokens": 15614
+      },
+      "official_seconds": 49.874188199988566,
+      "pilot_id": "S2-R03",
+      "plain_sub_llm_calls": 0,
+      "preliminary_hypotheses": {
+        "H2": "No material mismatch demonstrated; formal contract review pending",
+        "H5": "Provisionally not observed; complete computed payload visible before finalization; human review pending",
+        "H6": "No redundant continuation demonstrated; final action formats and delivers existing result; formal prefix review pending"
+      },
+      "provider_attempts": 3,
+      "provider_responses_delivered": 3,
+      "raw_events": 27,
+      "reason": null,
+      "recursive_child_nodes": 0,
+      "root_iterations_completed_observed": 3,
+      "root_requests_dispatched": 3,
+      "run_id": "broker-c473538e26a441fdb32395f07a6451ee",
+      "status": "completed",
+      "strategy_and_recovery": "Inspect; deterministic parse of four current sections; join/filter/rank and expose full source/total evidence; format and submit. No errors or actual delegation.",
+      "unresolved_reservation_usd": "0",
+      "usage_complete": true
+    }
+  ],
+  "upstream_pin": "e11f1a8f8ee4490686e16dd6463233abe08a07eb",
+  "usage_incomplete_for": []
+}

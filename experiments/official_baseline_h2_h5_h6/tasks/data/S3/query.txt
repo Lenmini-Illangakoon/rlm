@@ -1,0 +1,6 @@
+In the section labeled === Product Inventory ===, consider only records whose Status is exactly ACTIVE and whose Region is exactly APAC. Find the two smallest numeric Product IDs among those records and multiply them. Return the two Product IDs in ascending numeric order and their product. Ignore records in every other section.
+
+Input specification: Product Inventory contains exactly 320 records,
+Archived Products contains exactly 4 records, and Planned Products contains
+exactly 4 records. Each record occupies one valid JSON line between its
+section markers. Product IDs are unique across the supplied records.

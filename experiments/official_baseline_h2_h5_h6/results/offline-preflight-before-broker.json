@@ -1,0 +1,173 @@
+{
+  "api_requests_made": 0,
+  "blockers": [
+    "AppContainer uses synthetic transport only; external provider/budget broker integration and per-run scratch/profile lifecycle hardening remain required before live execution.",
+    "Live transport adapter, verified provider prices/token bounds/retry accounting, sampling compatibility and separate live authorization remain required. No live SDK adapter was enabled or tested."
+  ],
+  "checkpoints": {
+    "A": "passed: frozen benchmarks and independent oracles",
+    "B": "passed: deterministic annotation rules; semantic judgments remain human review",
+    "C": "passed for tested mock boundaries; general dependency tracing is not claimed",
+    "D": "synthetic resource controls passed; Windows AppContainer isolation passed for tested paths",
+    "E": "offline evidence complete; live gate BLOCKED"
+  },
+  "decision": "OFFLINE PREPARATION PARTIALLY COMPLETE — BLOCKERS REMAIN",
+  "equivalence_fixture_count": 21,
+  "full_suite_repeated": false,
+  "generated_utc": "2026-11-24T14:15:32.820637+00:00",
+  "integrity_pass": true,
+  "limitations": [
+    "Provider usage is synthetic; a 10% reservation margin is not proof of billing safety.",
+    "Snapshots omit arbitrary objects and cannot establish arbitrary computation-to-claim dependencies.",
+    "Arbitrary transient in-block proposals or mutations bypassing answer callbacks are not all observable; actual captures and returned answers are the assessed boundaries.",
+    "The original same-account supervisor is not a filesystem boundary. AppContainer is separately tested; neither local termination nor synthetic accounting proves remote billing cancellation.",
+    "Ruff and pre-commit are unavailable in the current environment; no dependencies were installed."
+  ],
+  "live_enabled": false,
+  "offline_isolation_ready": true,
+  "oracle_isolation_pass": true,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.4",
+  "test_command": [
+    "D:\\iit\\4th Year\\FYP\\RLM\\rlm\\.venv\\Scripts\\python.exe",
+    "-I",
+    "-B",
+    "D:\\iit\\4th Year\\FYP\\RLM\\rlm\\experiments\\official_baseline_h2_h5_h6\\offline.py",
+    "test"
+  ],
+  "test_evidence_reused": true,
+  "test_exit_code": 0,
+  "test_summary": {
+    "elapsed_seconds": 30.714232499998616,
+    "error_count": 0,
+    "failure_count": 0,
+    "failures": [],
+    "pattern": "test_*.py",
+    "skip_count": 0,
+    "success": true,
+    "synthetic_only": true,
+    "test_methods": 30
+  },
+  "windows_isolation_evidence": "results\\windows-isolation\\summary.json",
+  "windows_isolation_summary": {
+    "access_probe_refreshed_without_repeating_equivalence": true,
+    "baseline_suite_repeated": false,
+    "boundary": "AppContainer, zero capabilities, clean environment, no inherited handles, one-process kill-on-close Job",
+    "comparisons": [
+      {
+        "elapsed_seconds": 2.0469999999986612,
+        "fixture": "same_block",
+        "passed": true
+      },
+      {
+        "elapsed_seconds": 2.0310000000026776,
+        "fixture": "plain_consumption",
+        "passed": true
+      },
+      {
+        "elapsed_seconds": 2.5309999999954016,
+        "fixture": "recursive",
+        "passed": true
+      },
+      {
+        "elapsed_seconds": 2.125,
+        "fixture": "plain_batch",
+        "passed": true
+      },
+      {
+        "elapsed_seconds": 2.5160000000032596,
+        "fixture": "recursive_batch",
+        "passed": true
+      },
+      {
+        "elapsed_seconds": 2.0469999999986612,
+        "fixture": "multiple_blocks",
+        "passed": true
+      },
+      {
+        "elapsed_seconds": 2.061999999998079,
+        "fixture": "repeated_capture",
+        "passed": true
+      },
+      {
+        "elapsed_seconds": 2.0940000000045984,
+        "fixture": "capture_then_error",
+        "passed": true
+      },
+      {
+        "elapsed_seconds": 1.985000000000582,
+        "fixture": "caught_exception",
+        "passed": true
+      },
+      {
+        "elapsed_seconds": 2.0310000000026776,
+        "fixture": "uncaught_recovery",
+        "passed": true
+      },
+      {
+        "elapsed_seconds": 2.0460000000020955,
+        "fixture": "mutable_snapshot",
+        "passed": true
+      },
+      {
+        "elapsed_seconds": 2.0,
+        "fixture": "truncated_feedback",
+        "passed": true
+      },
+      {
+        "elapsed_seconds": 2.0,
+        "fixture": "iteration_default",
+        "passed": true
+      },
+      {
+        "elapsed_seconds": 2.5319999999992433,
+        "fixture": "depth_fallback",
+        "passed": true
+      },
+      {
+        "elapsed_seconds": 2.0780000000013388,
+        "fixture": "provider_error",
+        "passed": true
+      },
+      {
+        "elapsed_seconds": 2.0310000000026776,
+        "fixture": "cancel",
+        "passed": true
+      },
+      {
+        "elapsed_seconds": 2.063000000001921,
+        "fixture": "duplicate_plain_slots",
+        "passed": true
+      },
+      {
+        "elapsed_seconds": 2.1409999999959837,
+        "fixture": "reordered_plain_slots",
+        "passed": true
+      },
+      {
+        "elapsed_seconds": 2.5160000000032596,
+        "fixture": "duplicate_recursive_slots",
+        "passed": true
+      },
+      {
+        "elapsed_seconds": 2.0469999999986612,
+        "fixture": "capture_then_mutate",
+        "passed": true
+      },
+      {
+        "elapsed_seconds": 2.0469999999986612,
+        "fixture": "rebound_answer",
+        "passed": true
+      }
+    ],
+    "credentials_tested": "synthetic canaries and strict environment allowlist; no real credential opened",
+    "equivalence_fail_count": 0,
+    "equivalence_pass_count": 21,
+    "external_timeout_pass": true,
+    "isolation_pass": true,
+    "no_live_requests": true,
+    "parent_host_service_denied": true,
+    "protected_hashes_unchanged": true,
+    "protected_path_count": 9
+  }
+}

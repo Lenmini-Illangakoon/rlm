@@ -1,0 +1,11 @@
+{
+  "completed_suites_repeated": false,
+  "credential_access": false,
+  "failures": [
+    "test_actual_appcontainer_identity_and_research_evidence (__main__.RuntimeEvidenceCheck.test_actual_appcontainer_identity_and_research_evidence)"
+  ],
+  "protected_files_unchanged": true,
+  "provider_api_requests": 0,
+  "success": false,
+  "tests_run": 1
+}

@@ -1,0 +1,48 @@
+{
+  "api_requests_made": 0,
+  "blockers": [
+    "Current Windows LocalREPL can read researcher-only canary by absolute path; no verified OS filesystem boundary.",
+    "Live transport adapter, verified provider prices/token bounds/retry accounting, sampling compatibility and separate live authorization remain required. No live SDK adapter was enabled or tested."
+  ],
+  "checkpoints": {
+    "A": "passed: frozen benchmarks and independent oracles",
+    "B": "passed: deterministic annotation rules; semantic judgments remain human review",
+    "C": "passed for tested mock boundaries; general dependency tracing is not claimed",
+    "D": "synthetic resource controls passed; OS oracle isolation FAILED",
+    "E": "offline evidence complete; live gate BLOCKED"
+  },
+  "decision": "OFFLINE PREPARATION PARTIALLY COMPLETE — BLOCKERS REMAIN",
+  "equivalence_fixture_count": 21,
+  "generated_utc": "2026-11-24T03:30:30.818376+00:00",
+  "integrity_pass": true,
+  "limitations": [
+    "Provider usage is synthetic; a 10% reservation margin is not proof of billing safety.",
+    "Snapshots omit arbitrary objects and cannot establish arbitrary computation-to-claim dependencies.",
+    "Arbitrary transient in-block proposals or mutations bypassing answer callbacks are not all observable; actual captures and returned answers are the assessed boundaries.",
+    "Process termination controls mock resource use; it is not an OS filesystem sandbox and does not cancel remotely billed work.",
+    "Ruff and pre-commit are unavailable in the current environment; no dependencies were installed."
+  ],
+  "live_enabled": false,
+  "oracle_isolation_pass": false,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.4",
+  "test_command": [
+    "D:\\iit\\4th Year\\FYP\\RLM\\rlm\\.venv\\Scripts\\python.exe",
+    "-I",
+    "-B",
+    "D:\\iit\\4th Year\\FYP\\RLM\\rlm\\experiments\\official_baseline_h2_h5_h6\\offline.py",
+    "test"
+  ],
+  "test_exit_code": 0,
+  "test_summary": {
+    "elapsed_seconds": 30.714232499998616,
+    "error_count": 0,
+    "failure_count": 0,
+    "failures": [],
+    "pattern": "test_*.py",
+    "skip_count": 0,
+    "success": true,
+    "synthetic_only": true,
+    "test_methods": 30
+  }
+}

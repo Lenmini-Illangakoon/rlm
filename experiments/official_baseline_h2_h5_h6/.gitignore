@@ -1,0 +1,11 @@
+# Rebuildable local runtime copies. Hashes are retained in results/windows-stage.json.
+/isolation-staging/
+# Researcher-only isolation fixtures and synthetic credential canaries.
+/isolation-private/
+# Exclude credential filenames, including local variants, at every depth.
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx

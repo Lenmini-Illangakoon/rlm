@@ -1,0 +1,208 @@
+{
+  "date_local": "2026-11-25",
+  "kind": "targeted offline reproduction, not a fix or success certification",
+  "method": "Actual Broker.settle and Ledger; completed Futures; synthetic=False marker exercises live-cost branch without constructing HTTP transport. Socket and HTTPS constructors forbidden. Only checkpoint/outbox filesystem writes mocked.",
+  "provider_api_requests": 0,
+  "credential_access": false,
+  "runtime_source_changed": false,
+  "cases": [
+    {
+      "case": "normal_control",
+      "fixture": {
+        "id": "offline-fixture-only",
+        "model": "openai/gpt-5",
+        "provider": "OpenAI",
+        "choices": [
+          {
+            "message": {
+              "role": "assistant",
+              "content": "323"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10,
+          "completion_tokens": 5,
+          "total_tokens": 15,
+          "cost": 6.25e-05,
+          "is_byok": false
+        }
+      },
+      "delivered_payload": {
+        "content": "323",
+        "usage": {
+          "prompt_tokens": 10,
+          "completion_tokens": 5,
+          "total_tokens": 15,
+          "cost": 6.25e-05,
+          "is_byok": false
+        }
+      },
+      "stop_reason": null,
+      "ledger": {
+        "rates_kind": "offline_response_fixture",
+        "campaign_exposure_usd": "0.0000625",
+        "runs": {
+          "normal_control": {
+            "deadline": 88046.968,
+            "attempts": 1,
+            "stop_reason": null
+          }
+        },
+        "tickets": {
+          "attempt-00001": {
+            "run_id": "normal_control",
+            "model": "openai/gpt-5",
+            "input_bound": 64000,
+            "output_bound": 32768,
+            "reserved": "0",
+            "spent": "0.0000625",
+            "state": "reconciled",
+            "reported_cost_usd": "0.0000625",
+            "rate_cost_usd": "0.0000625"
+          }
+        }
+      },
+      "observed": "normal control delivered"
+    },
+    {
+      "case": "top_level_error",
+      "fixture": {
+        "id": "offline-fixture-only",
+        "model": "openai/gpt-5",
+        "provider": "OpenAI",
+        "choices": [
+          {
+            "message": {
+              "role": "assistant",
+              "content": "partial output"
+            },
+            "finish_reason": "error"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10,
+          "completion_tokens": 5,
+          "total_tokens": 15,
+          "cost": 6.25e-05,
+          "is_byok": false
+        },
+        "error": {
+          "code": 502,
+          "message": "Synthetic provider interruption",
+          "metadata": {
+            "error_type": "provider_unavailable"
+          }
+        }
+      },
+      "delivered_payload": {
+        "content": "partial output",
+        "usage": {
+          "prompt_tokens": 10,
+          "completion_tokens": 5,
+          "total_tokens": 15,
+          "cost": 6.25e-05,
+          "is_byok": false
+        }
+      },
+      "stop_reason": null,
+      "ledger": {
+        "rates_kind": "offline_response_fixture",
+        "campaign_exposure_usd": "0.0000625",
+        "runs": {
+          "top_level_error": {
+            "deadline": 88046.968,
+            "attempts": 1,
+            "stop_reason": null
+          }
+        },
+        "tickets": {
+          "attempt-00001": {
+            "run_id": "top_level_error",
+            "model": "openai/gpt-5",
+            "input_bound": 64000,
+            "output_bound": 32768,
+            "reserved": "0",
+            "spent": "0.0000625",
+            "state": "reconciled",
+            "reported_cost_usd": "0.0000625",
+            "rate_cost_usd": "0.0000625"
+          }
+        }
+      },
+      "observed": "BUG CONFIRMED: provider error delivered as ordinary content"
+    },
+    {
+      "case": "choice_error",
+      "fixture": {
+        "id": "offline-fixture-only",
+        "model": "openai/gpt-5",
+        "provider": "OpenAI",
+        "choices": [
+          {
+            "message": {
+              "role": "assistant",
+              "content": "partial output"
+            },
+            "finish_reason": "error",
+            "error": {
+              "code": 502,
+              "message": "Synthetic provider interruption",
+              "metadata": {
+                "error_type": "provider_unavailable"
+              }
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10,
+          "completion_tokens": 5,
+          "total_tokens": 15,
+          "cost": 6.25e-05,
+          "is_byok": false
+        }
+      },
+      "delivered_payload": {
+        "content": "partial output",
+        "usage": {
+          "prompt_tokens": 10,
+          "completion_tokens": 5,
+          "total_tokens": 15,
+          "cost": 6.25e-05,
+          "is_byok": false
+        }
+      },
+      "stop_reason": null,
+      "ledger": {
+        "rates_kind": "offline_response_fixture",
+        "campaign_exposure_usd": "0.0000625",
+        "runs": {
+          "choice_error": {
+            "deadline": 88046.968,
+            "attempts": 1,
+            "stop_reason": null
+          }
+        },
+        "tickets": {
+          "attempt-00001": {
+            "run_id": "choice_error",
+            "model": "openai/gpt-5",
+            "input_bound": 64000,
+            "output_bound": 32768,
+            "reserved": "0",
+            "spent": "0.0000625",
+            "state": "reconciled",
+            "reported_cost_usd": "0.0000625",
+            "rate_cost_usd": "0.0000625"
+          }
+        }
+      },
+      "observed": "BUG CONFIRMED: provider error delivered as ordinary content"
+    }
+  ],
+  "confirmed_error_delivery_cases": 2,
+  "healthy_control_passed": true,
+  "broker_sha256": "eae437d60a92ed2aa3989f7129cb9d46f86ca4a3cb96d0f6bdc3502cba947c1c",
+  "required_fix": "Reconcile known usage, then reject top-level/choice errors and finish_reason error before delivery; retain evidence and stop. Do not broadly reject normal length-limited pilot text."
+}

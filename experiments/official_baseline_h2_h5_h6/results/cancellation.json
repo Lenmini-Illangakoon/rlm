@@ -1,0 +1,345 @@
+{
+  "cancelled": {
+    "ledger": {
+      "campaign_exposure_usd": "0.000330",
+      "rates_kind": "synthetic_only",
+      "runs": {
+        "supervised-mock-1cf16c684d974e39abb79b652bae448c": {
+          "attempts": 1,
+          "deadline": 11978.64,
+          "stop_reason": "cancelled"
+        }
+      },
+      "tickets": {
+        "attempt-00001": {
+          "input_bound": 100,
+          "model": "openai/gpt-5",
+          "output_bound": 100,
+          "reserved": "0.000330",
+          "run_id": "supervised-mock-1cf16c684d974e39abb79b652bae448c",
+          "spent": "0",
+          "state": "cancelled_usage_unknown"
+        }
+      }
+    },
+    "observed_prefix": [
+      {
+        "action": null,
+        "depth": 0,
+        "event_id": "mock-7ad6dc80e9bb4a4282eb8e4f5a2dcb3a:e00001",
+        "inputs": {
+          "args": [
+            "fixture context"
+          ],
+          "kwargs": {
+            "root_prompt": "fixture root"
+          }
+        },
+        "kind": "node_start",
+        "monotonic_ns": 11079049349300,
+        "node": null,
+        "parent_node": null,
+        "run_id": "mock-7ad6dc80e9bb4a4282eb8e4f5a2dcb3a",
+        "seq": 1,
+        "slot": null
+      },
+      {
+        "action": null,
+        "code": "with open(r'C:\\Users\\ASUS\\AppData\\Local\\Temp\\repl_env_721b3d25-d9ad-4a66-bb96-061325f339e6_irmc3pgh\\context_0.txt', 'r') as f:\n    context_0 = f.read()",
+        "event_id": "mock-7ad6dc80e9bb4a4282eb8e4f5a2dcb3a:e00002",
+        "kind": "python_start",
+        "monotonic_ns": 11079054404700,
+        "node": "mock-7ad6dc80e9bb4a4282eb8e4f5a2dcb3a:e00001",
+        "phase": "environment_setup",
+        "run_id": "mock-7ad6dc80e9bb4a4282eb8e4f5a2dcb3a",
+        "seq": 2,
+        "slot": null
+      },
+      {
+        "action": "mock-7ad6dc80e9bb4a4282eb8e4f5a2dcb3a:e00002",
+        "event_id": "mock-7ad6dc80e9bb4a4282eb8e4f5a2dcb3a:e00003",
+        "exception_detail": "stderr is observed; exception object is not exposed",
+        "final_answer": null,
+        "kind": "python_result",
+        "locals": {
+          "answer": {
+            "unobserved": "non-builtin value"
+          },
+          "context": "fixture context",
+          "context_0": "fixture context",
+          "f": {
+            "unobserved": "non-builtin value"
+          }
+        },
+        "monotonic_ns": 11079056556500,
+        "node": "mock-7ad6dc80e9bb4a4282eb8e4f5a2dcb3a:e00001",
+        "phase": "environment_setup",
+        "run_id": "mock-7ad6dc80e9bb4a4282eb8e4f5a2dcb3a",
+        "seq": 3,
+        "slot": null,
+        "stderr": "",
+        "stdout": ""
+      },
+      {
+        "action": null,
+        "code": "context = context_0",
+        "event_id": "mock-7ad6dc80e9bb4a4282eb8e4f5a2dcb3a:e00004",
+        "kind": "python_start",
+        "monotonic_ns": 11079056633200,
+        "node": "mock-7ad6dc80e9bb4a4282eb8e4f5a2dcb3a:e00001",
+        "phase": "environment_setup",
+        "run_id": "mock-7ad6dc80e9bb4a4282eb8e4f5a2dcb3a",
+        "seq": 4,
+        "slot": null
+      },
+      {
+        "action": "mock-7ad6dc80e9bb4a4282eb8e4f5a2dcb3a:e00004",
+        "event_id": "mock-7ad6dc80e9bb4a4282eb8e4f5a2dcb3a:e00005",
+        "exception_detail": "stderr is observed; exception object is not exposed",
+        "final_answer": null,
+        "kind": "python_result",
+        "locals": {
+          "answer": {
+            "unobserved": "non-builtin value"
+          },
+          "context": "fixture context",
+          "context_0": "fixture context",
+          "f": {
+            "unobserved": "non-builtin value"
+          }
+        },
+        "monotonic_ns": 11079057123100,
+        "node": "mock-7ad6dc80e9bb4a4282eb8e4f5a2dcb3a:e00001",
+        "phase": "environment_setup",
+        "run_id": "mock-7ad6dc80e9bb4a4282eb8e4f5a2dcb3a",
+        "seq": 5,
+        "slot": null,
+        "stderr": "",
+        "stdout": ""
+      },
+      {
+        "action": null,
+        "attempt": 1,
+        "causal_action": null,
+        "event_id": "mock-7ad6dc80e9bb4a4282eb8e4f5a2dcb3a:e00006",
+        "kind": "provider_dispatch",
+        "model": "openai/gpt-5",
+        "monotonic_ns": 11079058062800,
+        "node": "mock-7ad6dc80e9bb4a4282eb8e4f5a2dcb3a:e00001",
+        "owner_node": "mock-7ad6dc80e9bb4a4282eb8e4f5a2dcb3a:e00001",
+        "provider": "synthetic",
+        "request": [
+          {
+            "content": "You are a Recursive Language Model (RLM): a language model with a prompt, and a very important context stored in a Python REPL related to that prompt.\nYou can iteratively interact with the a Python REPL, which has access to LLM calls as a function. You will be queried turn-by-turn until you have an answer to the query.\n\nTo use the REPL, you need to write code in ```repl``` blocks; the REPL persists across turns. Available in the REPL:\n- `context`: the important, potentially very long information related to the prompt (typically `str` or `list[str]`).\n- `llm_query(prompt: str, model: str | None = None) -> str`: a single sub-LLM completion. Use for extraction, summarization, or Q&A over a chunk of text. Sub-LLM context window ≈ 500K chars.\n- `llm_query_batched(prompts: list[str], model=None) -> list[str]`: concurrently call several LLM calls in parallel over a list of prompts; same order out as in.\n- `rlm_query(instruction, context, model=None) -> str`: recursive RLM sub-call with its own REPL and iteration. The instruction goes directly into the child's model messages; context is stored in its REPL as `context`. Pass a focused instruction and the relevant data separately, e.g. `rlm_query(\"Identify the trend; return up, down, or stable\", context=data)`.\n- `rlm_query_batched(queries, model=None) -> list[str]`: `queries` is a list of `(instruction, context)` pairs, e.g. `[(\"Summarize\", doc_a), (\"Extract dates\", doc_b)]`. Run these concurrently, each with its own child REPL; results preserve input order. Both recursive helpers fall back to plain LM calls containing the instruction and context at the depth limit.\n- `SHOW_VARS() -> str`: list every variable currently in the REPL.\n- `answer`: dict initialized to `{\"content\": \"\", \"ready\": False}`. To submit, set `answer[\"content\"]` to the final answer and `answer[\"ready\"] = True` inside a ```repl``` block.\n\n\nREPL outputs over ~20K characters are truncated, so for longer payloads slice `context` and pass slices through `llm_query` rather than `print`-ing them whole. The REPL is NOT a Jupyter cell — only `print(...)` output (stdout) is shown back to you between turns; a bare expression on the last line is silently discarded. Always wrap inspections in `print(...)`.\n\nAs a general strategy, you should start by probing your context to understand it better (e.g. print a few lines, count them, etc.). Then, use the REPL to build up an answer to the query.\n\nPlan in prose, then execute one ```repl``` block every turn, get feedback from the output, then continue on the next turn. Do not flip `answer[\"ready\"] = True` on turn 1 without first inspecting `context`.\n\n\nAs an RLM, you should act as an orchestrator, not a solver.\n\nDirectly after you probe the `context` and understand your task, pause and plan: state explicitly how the task decomposes into sub-LLM / REPL steps, and sketch the concrete sequence of turns — what each turn computes and which sub-LLM call (if any) it issues — like a condensed trajectory, before you execute them. Then execute one turn at a time: after each step `print` a small sample of the result, verify it looks right, and only flip `answer[\"ready\"] = True` once you have actually printed the candidate answer. If you are running out of turns without a confirmed answer, submit your best inference rather than letting the rollout terminate unsubmitted.\n\nYour own context window is small. Push every long-context operation that would not fit comfortably in your own working window — reading, summarizing, classifying, verifying, answering sub-questions, even recapping your own progress — into `llm_query` / `llm_query_batched` calls instead of pulling that text into your own message stream. (Conversely: if a Python keyword / regex search over `context` would already pin the answer, or if a single visible passage already contains it, just read it directly — sub-LMs are for when the raw text won't fit or the question needs semantic interpretation.) Long REPL stdout pollutes history the same way raw `context` does: if you want a recap, ask `llm_query` for a 1–2 sentence summary and `print` only that. Aggregate the small results back in the REPL.\n\nPlain sub-LLMs called via `llm_query` have no REPL; they only see the prompt and the `context` slice you pass them. Hand them clean, focused inputs and ask for terse, structured outputs you can manipulate programmatically.\n\nSub-call budget is finite on two independent axes, and `llm_query_batched` only parallelizes — it does not relax either. (1) Per-prompt capacity: a single sub-call answers well only when its input stays modestly sized — a useful rough ceiling is ~100K characters per prompt, less when the text is dense. Pack each prompt close to that capacity (a chunk of many items, a whole document) so one call accomplishes a lot of work. (2) Per-batch fan-out: `llm_query_batched` concurrency is bounded too — a useful rough ceiling is ~20 prompts per batch. Tiny-prompt mega-batches (hundreds or thousands of single-item prompts) are the anti-pattern; fat-prompt small batches are correct. For many independent units, use several ~20-wide batches of full-capacity prompts in sequence, not one mega-batch of tiny prompts. When the work can be expressed either as a sequential loop of `llm_query`s or as one comparably-sized batched call, prefer batched — same total work, far fewer turns burned. After Python-side filtering has narrowed the candidate set, batch-extract the survivors rather than reading them by hand. If the raw workload exceeds both budgets at once (e.g. a context far larger than ~20 × 100K chars), don't brute-force it: filter aggressively in Python first to a tractable subset, or stage the task — a cheap coarse pass narrows candidates, then a targeted second pass extracts from the survivors.\n\nReserve your own tokens for high-level decisions: what to ask next, how to combine sub-LM outputs, when to finalize. Delegate everything else.",
+            "role": "system"
+          },
+          {
+            "content": "Answer the following: fixture root\n\nYour context is a str of 15 total characters. Each sub-LLM call can handle roughly ~100k tokens at once.",
+            "role": "user"
+          },
+          {
+            "content": "You have not interacted with the REPL environment or seen your prompt / context yet. Look at the context first; do not provide a final answer yet.\n\nTurn 1/10:",
+            "role": "user"
+          }
+        ],
+        "run_id": "mock-7ad6dc80e9bb4a4282eb8e4f5a2dcb3a",
+        "seq": 6,
+        "slot": null,
+        "usage_is_synthetic": true
+      }
+    ],
+    "reason": "cancelled",
+    "recorded_at_unix": 1795491028.457757,
+    "result": null,
+    "run_id": "supervised-mock-1cf16c684d974e39abb79b652bae448c",
+    "status": "cancelled",
+    "synthetic_only": true,
+    "worker_terminated": true
+  },
+  "timeout": {
+    "ledger": {
+      "campaign_exposure_usd": "0.00004",
+      "rates_kind": "synthetic_only",
+      "runs": {
+        "supervised-mock-d0c4f0664e494fae994041116cdccdfe": {
+          "attempts": 1,
+          "deadline": 11078.64,
+          "stop_reason": "wall_clock"
+        }
+      },
+      "tickets": {
+        "attempt-00001": {
+          "input_bound": 100,
+          "model": "openai/gpt-5",
+          "output_bound": 100,
+          "reserved": "0",
+          "run_id": "supervised-mock-d0c4f0664e494fae994041116cdccdfe",
+          "spent": "0.00004",
+          "state": "reconciled"
+        }
+      }
+    },
+    "observed_prefix": [
+      {
+        "action": null,
+        "depth": 0,
+        "event_id": "mock-8cb8cbebfb0d457bb185e55a50e5d18b:e00001",
+        "inputs": {
+          "args": [
+            "fixture context"
+          ],
+          "kwargs": {
+            "root_prompt": "fixture root"
+          }
+        },
+        "kind": "node_start",
+        "monotonic_ns": 11077098164700,
+        "node": null,
+        "parent_node": null,
+        "run_id": "mock-8cb8cbebfb0d457bb185e55a50e5d18b",
+        "seq": 1,
+        "slot": null
+      },
+      {
+        "action": null,
+        "code": "with open(r'C:\\Users\\ASUS\\AppData\\Local\\Temp\\repl_env_91e0a784-85e1-4e15-a1ec-01af366de249_2gtdcaie\\context_0.txt', 'r') as f:\n    context_0 = f.read()",
+        "event_id": "mock-8cb8cbebfb0d457bb185e55a50e5d18b:e00002",
+        "kind": "python_start",
+        "monotonic_ns": 11077101885900,
+        "node": "mock-8cb8cbebfb0d457bb185e55a50e5d18b:e00001",
+        "phase": "environment_setup",
+        "run_id": "mock-8cb8cbebfb0d457bb185e55a50e5d18b",
+        "seq": 2,
+        "slot": null
+      },
+      {
+        "action": "mock-8cb8cbebfb0d457bb185e55a50e5d18b:e00002",
+        "event_id": "mock-8cb8cbebfb0d457bb185e55a50e5d18b:e00003",
+        "exception_detail": "stderr is observed; exception object is not exposed",
+        "final_answer": null,
+        "kind": "python_result",
+        "locals": {
+          "answer": {
+            "unobserved": "non-builtin value"
+          },
+          "context": "fixture context",
+          "context_0": "fixture context",
+          "f": {
+            "unobserved": "non-builtin value"
+          }
+        },
+        "monotonic_ns": 11077103521100,
+        "node": "mock-8cb8cbebfb0d457bb185e55a50e5d18b:e00001",
+        "phase": "environment_setup",
+        "run_id": "mock-8cb8cbebfb0d457bb185e55a50e5d18b",
+        "seq": 3,
+        "slot": null,
+        "stderr": "",
+        "stdout": ""
+      },
+      {
+        "action": null,
+        "code": "context = context_0",
+        "event_id": "mock-8cb8cbebfb0d457bb185e55a50e5d18b:e00004",
+        "kind": "python_start",
+        "monotonic_ns": 11077103614600,
+        "node": "mock-8cb8cbebfb0d457bb185e55a50e5d18b:e00001",
+        "phase": "environment_setup",
+        "run_id": "mock-8cb8cbebfb0d457bb185e55a50e5d18b",
+        "seq": 4,
+        "slot": null
+      },
+      {
+        "action": "mock-8cb8cbebfb0d457bb185e55a50e5d18b:e00004",
+        "event_id": "mock-8cb8cbebfb0d457bb185e55a50e5d18b:e00005",
+        "exception_detail": "stderr is observed; exception object is not exposed",
+        "final_answer": null,
+        "kind": "python_result",
+        "locals": {
+          "answer": {
+            "unobserved": "non-builtin value"
+          },
+          "context": "fixture context",
+          "context_0": "fixture context",
+          "f": {
+            "unobserved": "non-builtin value"
+          }
+        },
+        "monotonic_ns": 11077103861600,
+        "node": "mock-8cb8cbebfb0d457bb185e55a50e5d18b:e00001",
+        "phase": "environment_setup",
+        "run_id": "mock-8cb8cbebfb0d457bb185e55a50e5d18b",
+        "seq": 5,
+        "slot": null,
+        "stderr": "",
+        "stdout": ""
+      },
+      {
+        "action": null,
+        "attempt": 1,
+        "causal_action": null,
+        "event_id": "mock-8cb8cbebfb0d457bb185e55a50e5d18b:e00006",
+        "kind": "provider_dispatch",
+        "model": "openai/gpt-5",
+        "monotonic_ns": 11077104321000,
+        "node": "mock-8cb8cbebfb0d457bb185e55a50e5d18b:e00001",
+        "owner_node": "mock-8cb8cbebfb0d457bb185e55a50e5d18b:e00001",
+        "provider": "synthetic",
+        "request": [
+          {
+            "content": "You are a Recursive Language Model (RLM): a language model with a prompt, and a very important context stored in a Python REPL related to that prompt.\nYou can iteratively interact with the a Python REPL, which has access to LLM calls as a function. You will be queried turn-by-turn until you have an answer to the query.\n\nTo use the REPL, you need to write code in ```repl``` blocks; the REPL persists across turns. Available in the REPL:\n- `context`: the important, potentially very long information related to the prompt (typically `str` or `list[str]`).\n- `llm_query(prompt: str, model: str | None = None) -> str`: a single sub-LLM completion. Use for extraction, summarization, or Q&A over a chunk of text. Sub-LLM context window ≈ 500K chars.\n- `llm_query_batched(prompts: list[str], model=None) -> list[str]`: concurrently call several LLM calls in parallel over a list of prompts; same order out as in.\n- `rlm_query(instruction, context, model=None) -> str`: recursive RLM sub-call with its own REPL and iteration. The instruction goes directly into the child's model messages; context is stored in its REPL as `context`. Pass a focused instruction and the relevant data separately, e.g. `rlm_query(\"Identify the trend; return up, down, or stable\", context=data)`.\n- `rlm_query_batched(queries, model=None) -> list[str]`: `queries` is a list of `(instruction, context)` pairs, e.g. `[(\"Summarize\", doc_a), (\"Extract dates\", doc_b)]`. Run these concurrently, each with its own child REPL; results preserve input order. Both recursive helpers fall back to plain LM calls containing the instruction and context at the depth limit.\n- `SHOW_VARS() -> str`: list every variable currently in the REPL.\n- `answer`: dict initialized to `{\"content\": \"\", \"ready\": False}`. To submit, set `answer[\"content\"]` to the final answer and `answer[\"ready\"] = True` inside a ```repl``` block.\n\n\nREPL outputs over ~20K characters are truncated, so for longer payloads slice `context` and pass slices through `llm_query` rather than `print`-ing them whole. The REPL is NOT a Jupyter cell — only `print(...)` output (stdout) is shown back to you between turns; a bare expression on the last line is silently discarded. Always wrap inspections in `print(...)`.\n\nAs a general strategy, you should start by probing your context to understand it better (e.g. print a few lines, count them, etc.). Then, use the REPL to build up an answer to the query.\n\nPlan in prose, then execute one ```repl``` block every turn, get feedback from the output, then continue on the next turn. Do not flip `answer[\"ready\"] = True` on turn 1 without first inspecting `context`.\n\n\nAs an RLM, you should act as an orchestrator, not a solver.\n\nDirectly after you probe the `context` and understand your task, pause and plan: state explicitly how the task decomposes into sub-LLM / REPL steps, and sketch the concrete sequence of turns — what each turn computes and which sub-LLM call (if any) it issues — like a condensed trajectory, before you execute them. Then execute one turn at a time: after each step `print` a small sample of the result, verify it looks right, and only flip `answer[\"ready\"] = True` once you have actually printed the candidate answer. If you are running out of turns without a confirmed answer, submit your best inference rather than letting the rollout terminate unsubmitted.\n\nYour own context window is small. Push every long-context operation that would not fit comfortably in your own working window — reading, summarizing, classifying, verifying, answering sub-questions, even recapping your own progress — into `llm_query` / `llm_query_batched` calls instead of pulling that text into your own message stream. (Conversely: if a Python keyword / regex search over `context` would already pin the answer, or if a single visible passage already contains it, just read it directly — sub-LMs are for when the raw text won't fit or the question needs semantic interpretation.) Long REPL stdout pollutes history the same way raw `context` does: if you want a recap, ask `llm_query` for a 1–2 sentence summary and `print` only that. Aggregate the small results back in the REPL.\n\nPlain sub-LLMs called via `llm_query` have no REPL; they only see the prompt and the `context` slice you pass them. Hand them clean, focused inputs and ask for terse, structured outputs you can manipulate programmatically.\n\nSub-call budget is finite on two independent axes, and `llm_query_batched` only parallelizes — it does not relax either. (1) Per-prompt capacity: a single sub-call answers well only when its input stays modestly sized — a useful rough ceiling is ~100K characters per prompt, less when the text is dense. Pack each prompt close to that capacity (a chunk of many items, a whole document) so one call accomplishes a lot of work. (2) Per-batch fan-out: `llm_query_batched` concurrency is bounded too — a useful rough ceiling is ~20 prompts per batch. Tiny-prompt mega-batches (hundreds or thousands of single-item prompts) are the anti-pattern; fat-prompt small batches are correct. For many independent units, use several ~20-wide batches of full-capacity prompts in sequence, not one mega-batch of tiny prompts. When the work can be expressed either as a sequential loop of `llm_query`s or as one comparably-sized batched call, prefer batched — same total work, far fewer turns burned. After Python-side filtering has narrowed the candidate set, batch-extract the survivors rather than reading them by hand. If the raw workload exceeds both budgets at once (e.g. a context far larger than ~20 × 100K chars), don't brute-force it: filter aggressively in Python first to a tractable subset, or stage the task — a cheap coarse pass narrows candidates, then a targeted second pass extracts from the survivors.\n\nReserve your own tokens for high-level decisions: what to ask next, how to combine sub-LM outputs, when to finalize. Delegate everything else.",
+            "role": "system"
+          },
+          {
+            "content": "Answer the following: fixture root\n\nYour context is a str of 15 total characters. Each sub-LLM call can handle roughly ~100k tokens at once.",
+            "role": "user"
+          },
+          {
+            "content": "You have not interacted with the REPL environment or seen your prompt / context yet. Look at the context first; do not provide a final answer yet.\n\nTurn 1/10:",
+            "role": "user"
+          }
+        ],
+        "run_id": "mock-8cb8cbebfb0d457bb185e55a50e5d18b",
+        "seq": 6,
+        "slot": null,
+        "usage_is_synthetic": true
+      },
+      {
+        "action": null,
+        "content": "```repl\nwhile True:\n    pass\n```",
+        "dispatch": "mock-8cb8cbebfb0d457bb185e55a50e5d18b:e00006",
+        "elapsed_ns": 573200,
+        "event_id": "mock-8cb8cbebfb0d457bb185e55a50e5d18b:e00007",
+        "kind": "provider_return",
+        "monotonic_ns": 11077104561300,
+        "node": "mock-8cb8cbebfb0d457bb185e55a50e5d18b:e00001",
+        "run_id": "mock-8cb8cbebfb0d457bb185e55a50e5d18b",
+        "seq": 7,
+        "slot": null,
+        "usage": {
+          "input_tokens": 20,
+          "output_tokens": 10
+        }
+      },
+      {
+        "action": null,
+        "code": "while True:\n    pass",
+        "event_id": "mock-8cb8cbebfb0d457bb185e55a50e5d18b:e00008",
+        "kind": "python_start",
+        "monotonic_ns": 11077104713600,
+        "node": "mock-8cb8cbebfb0d457bb185e55a50e5d18b:e00001",
+        "phase": "execution",
+        "run_id": "mock-8cb8cbebfb0d457bb185e55a50e5d18b",
+        "seq": 8,
+        "slot": null
+      }
+    ],
+    "reason": "wall_clock",
+    "recorded_at_unix": 1795491028.0674918,
+    "result": null,
+    "run_id": "supervised-mock-d0c4f0664e494fae994041116cdccdfe",
+    "status": "resource_censored",
+    "synthetic_only": true,
+    "worker_terminated": true
+  }
+}

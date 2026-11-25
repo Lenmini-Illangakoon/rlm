@@ -1,0 +1,8 @@
+{
+  "expired_before_dispatch_refused": true,
+  "fake_connection_only": true,
+  "live_requests": 0,
+  "malformed_identity_and_nonfinite_json_rejected": true,
+  "success": true,
+  "test_methods": 1
+}

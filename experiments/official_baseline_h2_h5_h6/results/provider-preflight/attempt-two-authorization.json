@@ -1,0 +1,17 @@
+{
+  "authorization": "User explicitly approved fresh GPT-5 then gated GPT-5-nano",
+  "combined_ceiling_usd": "1.00",
+  "carried_unresolved_usd": "0.448448",
+  "maximum_fresh_requests": 2,
+  "retries": 0,
+  "pilot_authorized": false,
+  "credential_source": "Project .env OPENROUTER_API_KEY; parent adapter only",
+  "prior_live_sha256": "14617a6857166881072a2ebd0a23bd7d5689bf2f60dec256fc448a893f2e6053",
+  "source_hashes": {
+    "preflight_attempt_two.py": "e2c8fc0165489fc329faf087ccafc6e7ab522f328061d4867d02ee54344a7d25",
+    "runners/provider_preflight.py": "5c286e7c7d805d80bb48e950b69405e249f7dbd8276e9ca9ff6482af4e340905",
+    "runners/broker.py": "611d609c78134a09577e61e1ea4c60f5c0861574497760b657aa77b7d768c97a",
+    "runners/budget.py": "dd23ba927526c697cb16a6cf30b99177b460587d2289549680f5b6fdba0fb585",
+    "preflight_key_entry.py": "960c8224137edf6d87a2b29aac04a1ac29bfdfccc12cb2d1629ff3d268dcbfd3"
+  }
+}

@@ -1,0 +1,3191 @@
+{
+  "eligible_count": 100,
+  "excluded_archives": [
+    "SH-90001",
+    "SH-90002",
+    "SH-90003",
+    "SH-90004",
+    "SH-90005",
+    "SH-90006",
+    "SH-90007",
+    "SH-90008"
+  ],
+  "joined": {
+    "SH-10001": {
+      "available": 3714,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 3664,
+      "source_lines": [
+        30,
+        294,
+        473,
+        549
+      ],
+      "sources": [
+        "R-001",
+        "W-001",
+        "Q-001",
+        "H-001"
+      ]
+    },
+    "SH-10002": {
+      "available": 1494,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 1444,
+      "source_lines": [
+        114,
+        288,
+        406,
+        594
+      ],
+      "sources": [
+        "R-002",
+        "W-002",
+        "Q-002",
+        "H-002"
+      ]
+    },
+    "SH-10003": {
+      "available": 4232,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 4182,
+      "source_lines": [
+        121,
+        307,
+        331,
+        571
+      ],
+      "sources": [
+        "R-003",
+        "W-003",
+        "Q-003",
+        "H-003"
+      ]
+    },
+    "SH-10004": {
+      "available": 3959,
+      "eligible": false,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 3960,
+      "source_lines": [
+        120,
+        280,
+        356,
+        640
+      ],
+      "sources": [
+        "R-004",
+        "W-004",
+        "Q-004",
+        "H-004"
+      ]
+    },
+    "SH-10005": {
+      "available": 1309,
+      "eligible": false,
+      "hold": "NONE",
+      "quality": "PENDING",
+      "requested": 1259,
+      "source_lines": [
+        150,
+        184,
+        423,
+        595
+      ],
+      "sources": [
+        "R-005",
+        "W-005",
+        "Q-005",
+        "H-005"
+      ]
+    },
+    "SH-10006": {
+      "available": 1124,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 1074,
+      "source_lines": [
+        124,
+        169,
+        368,
+        556
+      ],
+      "sources": [
+        "R-006",
+        "W-006",
+        "Q-006",
+        "H-006"
+      ]
+    },
+    "SH-10007": {
+      "available": 1901,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 1851,
+      "source_lines": [
+        48,
+        289,
+        465,
+        599
+      ],
+      "sources": [
+        "R-007",
+        "W-007",
+        "Q-007",
+        "H-007"
+      ]
+    },
+    "SH-10008": {
+      "available": 5809,
+      "eligible": false,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 5810,
+      "source_lines": [
+        6,
+        297,
+        380,
+        520
+      ],
+      "sources": [
+        "R-008",
+        "W-008",
+        "Q-008",
+        "H-008"
+      ]
+    },
+    "SH-10009": {
+      "available": 3404,
+      "eligible": false,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 3405,
+      "source_lines": [
+        127,
+        180,
+        442,
+        558
+      ],
+      "sources": [
+        "R-009",
+        "W-009",
+        "Q-009",
+        "H-009"
+      ]
+    },
+    "SH-10010": {
+      "available": 5712,
+      "eligible": false,
+      "hold": "NONE",
+      "quality": "PENDING",
+      "requested": 5662,
+      "source_lines": [
+        42,
+        240,
+        449,
+        504
+      ],
+      "sources": [
+        "R-010",
+        "W-010",
+        "Q-010",
+        "H-010"
+      ]
+    },
+    "SH-10011": {
+      "available": 2604,
+      "eligible": false,
+      "hold": "NONE",
+      "quality": "PENDING",
+      "requested": 2554,
+      "source_lines": [
+        81,
+        277,
+        388,
+        605
+      ],
+      "sources": [
+        "R-011",
+        "W-011",
+        "Q-011",
+        "H-011"
+      ]
+    },
+    "SH-10012": {
+      "available": 4824,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 4774,
+      "source_lines": [
+        40,
+        295,
+        425,
+        523
+      ],
+      "sources": [
+        "R-012",
+        "W-012",
+        "Q-012",
+        "H-012"
+      ]
+    },
+    "SH-10013": {
+      "available": 4676,
+      "eligible": false,
+      "hold": "NONE",
+      "quality": "PENDING",
+      "requested": 4626,
+      "source_lines": [
+        133,
+        211,
+        336,
+        496
+      ],
+      "sources": [
+        "R-013",
+        "W-013",
+        "Q-013",
+        "H-013"
+      ]
+    },
+    "SH-10014": {
+      "available": 5786,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 5736,
+      "source_lines": [
+        110,
+        201,
+        409,
+        550
+      ],
+      "sources": [
+        "R-014",
+        "W-014",
+        "Q-014",
+        "H-014"
+      ]
+    },
+    "SH-10015": {
+      "available": 6193,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 6143,
+      "source_lines": [
+        123,
+        263,
+        432,
+        637
+      ],
+      "sources": [
+        "R-015",
+        "W-015",
+        "Q-015",
+        "H-015"
+      ]
+    },
+    "SH-10016": {
+      "available": 6156,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 6106,
+      "source_lines": [
+        130,
+        214,
+        468,
+        593
+      ],
+      "sources": [
+        "R-016",
+        "W-016",
+        "Q-016",
+        "H-016"
+      ]
+    },
+    "SH-10017": {
+      "available": 4121,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 4071,
+      "source_lines": [
+        82,
+        227,
+        459,
+        517
+      ],
+      "sources": [
+        "R-017",
+        "W-017",
+        "Q-017",
+        "H-017"
+      ]
+    },
+    "SH-10018": {
+      "available": 6082,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 6032,
+      "source_lines": [
+        99,
+        185,
+        326,
+        559
+      ],
+      "sources": [
+        "R-018",
+        "W-018",
+        "Q-018",
+        "H-018"
+      ]
+    },
+    "SH-10019": {
+      "available": 5527,
+      "eligible": false,
+      "hold": "ACTIVE",
+      "quality": "APPROVED",
+      "requested": 5477,
+      "source_lines": [
+        57,
+        296,
+        472,
+        612
+      ],
+      "sources": [
+        "R-019",
+        "W-019",
+        "Q-019",
+        "H-019"
+      ]
+    },
+    "SH-10020": {
+      "available": 1739,
+      "eligible": false,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 1740,
+      "source_lines": [
+        140,
+        252,
+        364,
+        492
+      ],
+      "sources": [
+        "R-020",
+        "W-020",
+        "Q-020",
+        "H-020"
+      ]
+    },
+    "SH-10021": {
+      "available": 2641,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 2591,
+      "source_lines": [
+        84,
+        229,
+        383,
+        620
+      ],
+      "sources": [
+        "R-021",
+        "W-021",
+        "Q-021",
+        "H-021"
+      ]
+    },
+    "SH-10022": {
+      "available": 2382,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 2332,
+      "source_lines": [
+        24,
+        230,
+        378,
+        494
+      ],
+      "sources": [
+        "R-022",
+        "W-022",
+        "Q-022",
+        "H-022"
+      ]
+    },
+    "SH-10023": {
+      "available": 1716,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 1666,
+      "source_lines": [
+        128,
+        262,
+        340,
+        543
+      ],
+      "sources": [
+        "R-023",
+        "W-023",
+        "Q-023",
+        "H-023"
+      ]
+    },
+    "SH-10024": {
+      "available": 1087,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 1037,
+      "source_lines": [
+        159,
+        179,
+        348,
+        502
+      ],
+      "sources": [
+        "R-024",
+        "W-024",
+        "Q-024",
+        "H-024"
+      ]
+    },
+    "SH-10025": {
+      "available": 2479,
+      "eligible": false,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 2480,
+      "source_lines": [
+        58,
+        272,
+        433,
+        638
+      ],
+      "sources": [
+        "R-025",
+        "W-025",
+        "Q-025",
+        "H-025"
+      ]
+    },
+    "SH-10026": {
+      "available": 3774,
+      "eligible": false,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 3775,
+      "source_lines": [
+        101,
+        236,
+        405,
+        508
+      ],
+      "sources": [
+        "R-026",
+        "W-026",
+        "Q-026",
+        "H-026"
+      ]
+    },
+    "SH-10027": {
+      "available": 1827,
+      "eligible": false,
+      "hold": "NONE",
+      "quality": "PENDING",
+      "requested": 1777,
+      "source_lines": [
+        20,
+        316,
+        479,
+        510
+      ],
+      "sources": [
+        "R-027",
+        "W-027",
+        "Q-027",
+        "H-027"
+      ]
+    },
+    "SH-10028": {
+      "available": 1642,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 1592,
+      "source_lines": [
+        39,
+        323,
+        343,
+        633
+      ],
+      "sources": [
+        "R-028",
+        "W-028",
+        "Q-028",
+        "H-028"
+      ]
+    },
+    "SH-10029": {
+      "available": 5897,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 5847,
+      "source_lines": [
+        37,
+        253,
+        382,
+        555
+      ],
+      "sources": [
+        "R-029",
+        "W-029",
+        "Q-029",
+        "H-029"
+      ]
+    },
+    "SH-10030": {
+      "available": 2294,
+      "eligible": false,
+      "hold": "NONE",
+      "quality": "PENDING",
+      "requested": 2295,
+      "source_lines": [
+        129,
+        315,
+        400,
+        527
+      ],
+      "sources": [
+        "R-030",
+        "W-030",
+        "Q-030",
+        "H-030"
+      ]
+    },
+    "SH-10031": {
+      "available": 4343,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 4293,
+      "source_lines": [
+        153,
+        274,
+        450,
+        610
+      ],
+      "sources": [
+        "R-031",
+        "W-031",
+        "Q-031",
+        "H-031"
+      ]
+    },
+    "SH-10032": {
+      "available": 3603,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 3553,
+      "source_lines": [
+        95,
+        165,
+        463,
+        573
+      ],
+      "sources": [
+        "R-032",
+        "W-032",
+        "Q-032",
+        "H-032"
+      ]
+    },
+    "SH-10033": {
+      "available": 3862,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 3812,
+      "source_lines": [
+        158,
+        171,
+        342,
+        577
+      ],
+      "sources": [
+        "R-033",
+        "W-033",
+        "Q-033",
+        "H-033"
+      ]
+    },
+    "SH-10034": {
+      "available": 6734,
+      "eligible": false,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 6735,
+      "source_lines": [
+        94,
+        192,
+        461,
+        489
+      ],
+      "sources": [
+        "R-034",
+        "W-034",
+        "Q-034",
+        "H-034"
+      ]
+    },
+    "SH-10035": {
+      "available": 4861,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 4811,
+      "source_lines": [
+        107,
+        202,
+        440,
+        530
+      ],
+      "sources": [
+        "R-035",
+        "W-035",
+        "Q-035",
+        "H-035"
+      ]
+    },
+    "SH-10036": {
+      "available": 3034,
+      "eligible": false,
+      "hold": "ACTIVE",
+      "quality": "APPROVED",
+      "requested": 3035,
+      "source_lines": [
+        23,
+        322,
+        419,
+        625
+      ],
+      "sources": [
+        "R-036",
+        "W-036",
+        "Q-036",
+        "H-036"
+      ]
+    },
+    "SH-10037": {
+      "available": 2123,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 2073,
+      "source_lines": [
+        70,
+        216,
+        444,
+        540
+      ],
+      "sources": [
+        "R-037",
+        "W-037",
+        "Q-037",
+        "H-037"
+      ]
+    },
+    "SH-10038": {
+      "available": 5157,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 5107,
+      "source_lines": [
+        154,
+        217,
+        393,
+        600
+      ],
+      "sources": [
+        "R-038",
+        "W-038",
+        "Q-038",
+        "H-038"
+      ]
+    },
+    "SH-10039": {
+      "available": 1369,
+      "eligible": false,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 1370,
+      "source_lines": [
+        33,
+        305,
+        404,
+        581
+      ],
+      "sources": [
+        "R-039",
+        "W-039",
+        "Q-039",
+        "H-039"
+      ]
+    },
+    "SH-10040": {
+      "available": 4454,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 4404,
+      "source_lines": [
+        79,
+        285,
+        389,
+        493
+      ],
+      "sources": [
+        "R-040",
+        "W-040",
+        "Q-040",
+        "H-040"
+      ]
+    },
+    "SH-10041": {
+      "available": 3418,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 3368,
+      "source_lines": [
+        160,
+        321,
+        350,
+        544
+      ],
+      "sources": [
+        "R-041",
+        "W-041",
+        "Q-041",
+        "H-041"
+      ]
+    },
+    "SH-10042": {
+      "available": 1198,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 1148,
+      "source_lines": [
+        45,
+        282,
+        345,
+        589
+      ],
+      "sources": [
+        "R-042",
+        "W-042",
+        "Q-042",
+        "H-042"
+      ]
+    },
+    "SH-10043": {
+      "available": 4514,
+      "eligible": false,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 4515,
+      "source_lines": [
+        151,
+        266,
+        439,
+        507
+      ],
+      "sources": [
+        "R-043",
+        "W-043",
+        "Q-043",
+        "H-043"
+      ]
+    },
+    "SH-10044": {
+      "available": 4491,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 4441,
+      "source_lines": [
+        85,
+        260,
+        377,
+        524
+      ],
+      "sources": [
+        "R-044",
+        "W-044",
+        "Q-044",
+        "H-044"
+      ]
+    },
+    "SH-10045": {
+      "available": 3307,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 3257,
+      "source_lines": [
+        11,
+        311,
+        427,
+        578
+      ],
+      "sources": [
+        "R-045",
+        "W-045",
+        "Q-045",
+        "H-045"
+      ]
+    },
+    "SH-10046": {
+      "available": 4306,
+      "eligible": false,
+      "hold": "ACTIVE",
+      "quality": "APPROVED",
+      "requested": 4256,
+      "source_lines": [
+        18,
+        269,
+        437,
+        639
+      ],
+      "sources": [
+        "R-046",
+        "W-046",
+        "Q-046",
+        "H-046"
+      ]
+    },
+    "SH-10047": {
+      "available": 5254,
+      "eligible": false,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 5255,
+      "source_lines": [
+        111,
+        312,
+        360,
+        607
+      ],
+      "sources": [
+        "R-047",
+        "W-047",
+        "Q-047",
+        "H-047"
+      ]
+    },
+    "SH-10048": {
+      "available": 4713,
+      "eligible": false,
+      "hold": "ACTIVE",
+      "quality": "APPROVED",
+      "requested": 4663,
+      "source_lines": [
+        10,
+        170,
+        469,
+        616
+      ],
+      "sources": [
+        "R-048",
+        "W-048",
+        "Q-048",
+        "H-048"
+      ]
+    },
+    "SH-10049": {
+      "available": 1457,
+      "eligible": false,
+      "hold": "ACTIVE",
+      "quality": "APPROVED",
+      "requested": 1407,
+      "source_lines": [
+        56,
+        193,
+        387,
+        646
+      ],
+      "sources": [
+        "R-049",
+        "W-049",
+        "Q-049",
+        "H-049"
+      ]
+    },
+    "SH-10050": {
+      "available": 2086,
+      "eligible": false,
+      "hold": "NONE",
+      "quality": "PENDING",
+      "requested": 2036,
+      "source_lines": [
+        35,
+        302,
+        329,
+        615
+      ],
+      "sources": [
+        "R-050",
+        "W-050",
+        "Q-050",
+        "H-050"
+      ]
+    },
+    "SH-10051": {
+      "available": 1938,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 1888,
+      "source_lines": [
+        73,
+        200,
+        375,
+        582
+      ],
+      "sources": [
+        "R-051",
+        "W-051",
+        "Q-051",
+        "H-051"
+      ]
+    },
+    "SH-10052": {
+      "available": 2012,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 1962,
+      "source_lines": [
+        13,
+        254,
+        374,
+        583
+      ],
+      "sources": [
+        "R-052",
+        "W-052",
+        "Q-052",
+        "H-052"
+      ]
+    },
+    "SH-10053": {
+      "available": 1184,
+      "eligible": false,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 1185,
+      "source_lines": [
+        51,
+        233,
+        330,
+        618
+      ],
+      "sources": [
+        "R-053",
+        "W-053",
+        "Q-053",
+        "H-053"
+      ]
+    },
+    "SH-10054": {
+      "available": 5069,
+      "eligible": false,
+      "hold": "ACTIVE",
+      "quality": "APPROVED",
+      "requested": 5070,
+      "source_lines": [
+        67,
+        189,
+        358,
+        579
+      ],
+      "sources": [
+        "R-054",
+        "W-054",
+        "Q-054",
+        "H-054"
+      ]
+    },
+    "SH-10055": {
+      "available": 2664,
+      "eligible": false,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 2665,
+      "source_lines": [
+        149,
+        208,
+        399,
+        647
+      ],
+      "sources": [
+        "R-055",
+        "W-055",
+        "Q-055",
+        "H-055"
+      ]
+    },
+    "SH-10056": {
+      "available": 4144,
+      "eligible": false,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 4145,
+      "source_lines": [
+        52,
+        167,
+        428,
+        576
+      ],
+      "sources": [
+        "R-056",
+        "W-056",
+        "Q-056",
+        "H-056"
+      ]
+    },
+    "SH-10057": {
+      "available": 4898,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 4848,
+      "source_lines": [
+        27,
+        218,
+        402,
+        624
+      ],
+      "sources": [
+        "R-057",
+        "W-057",
+        "Q-057",
+        "H-057"
+      ]
+    },
+    "SH-10058": {
+      "available": 2456,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 2406,
+      "source_lines": [
+        65,
+        232,
+        396,
+        511
+      ],
+      "sources": [
+        "R-058",
+        "W-058",
+        "Q-058",
+        "H-058"
+      ]
+    },
+    "SH-10059": {
+      "available": 2678,
+      "eligible": false,
+      "hold": "ACTIVE",
+      "quality": "APPROVED",
+      "requested": 2628,
+      "source_lines": [
+        78,
+        257,
+        410,
+        587
+      ],
+      "sources": [
+        "R-059",
+        "W-059",
+        "Q-059",
+        "H-059"
+      ]
+    },
+    "SH-10060": {
+      "available": 1924,
+      "eligible": false,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 1925,
+      "source_lines": [
+        102,
+        318,
+        411,
+        519
+      ],
+      "sources": [
+        "R-060",
+        "W-060",
+        "Q-060",
+        "H-060"
+      ]
+    },
+    "SH-10061": {
+      "available": 1864,
+      "eligible": false,
+      "hold": "ACTIVE",
+      "quality": "APPROVED",
+      "requested": 1814,
+      "source_lines": [
+        26,
+        199,
+        462,
+        632
+      ],
+      "sources": [
+        "R-061",
+        "W-061",
+        "Q-061",
+        "H-061"
+      ]
+    },
+    "SH-10062": {
+      "available": 3233,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 3183,
+      "source_lines": [
+        113,
+        212,
+        379,
+        580
+      ],
+      "sources": [
+        "R-062",
+        "W-062",
+        "Q-062",
+        "H-062"
+      ]
+    },
+    "SH-10063": {
+      "available": 2863,
+      "eligible": false,
+      "hold": "NONE",
+      "quality": "PENDING",
+      "requested": 2813,
+      "source_lines": [
+        19,
+        261,
+        443,
+        552
+      ],
+      "sources": [
+        "R-063",
+        "W-063",
+        "Q-063",
+        "H-063"
+      ]
+    },
+    "SH-10064": {
+      "available": 4639,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 4589,
+      "source_lines": [
+        69,
+        206,
+        474,
+        506
+      ],
+      "sources": [
+        "R-064",
+        "W-064",
+        "Q-064",
+        "H-064"
+      ]
+    },
+    "SH-10065": {
+      "available": 5046,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 4996,
+      "source_lines": [
+        106,
+        256,
+        455,
+        561
+      ],
+      "sources": [
+        "R-065",
+        "W-065",
+        "Q-065",
+        "H-065"
+      ]
+    },
+    "SH-10066": {
+      "available": 2567,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 2517,
+      "source_lines": [
+        63,
+        251,
+        470,
+        623
+      ],
+      "sources": [
+        "R-066",
+        "W-066",
+        "Q-066",
+        "H-066"
+      ]
+    },
+    "SH-10067": {
+      "available": 5601,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 5551,
+      "source_lines": [
+        43,
+        164,
+        395,
+        505
+      ],
+      "sources": [
+        "R-067",
+        "W-067",
+        "Q-067",
+        "H-067"
+      ]
+    },
+    "SH-10068": {
+      "available": 6896,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 6846,
+      "source_lines": [
+        109,
+        244,
+        359,
+        608
+      ],
+      "sources": [
+        "R-068",
+        "W-068",
+        "Q-068",
+        "H-068"
+      ]
+    },
+    "SH-10069": {
+      "available": 5971,
+      "eligible": false,
+      "hold": "NONE",
+      "quality": "PENDING",
+      "requested": 5921,
+      "source_lines": [
+        47,
+        196,
+        420,
+        574
+      ],
+      "sources": [
+        "R-069",
+        "W-069",
+        "Q-069",
+        "H-069"
+      ]
+    },
+    "SH-10070": {
+      "available": 6748,
+      "eligible": false,
+      "hold": "ACTIVE",
+      "quality": "PENDING",
+      "requested": 6698,
+      "source_lines": [
+        143,
+        246,
+        422,
+        534
+      ],
+      "sources": [
+        "R-070",
+        "W-070",
+        "Q-070",
+        "H-070"
+      ]
+    },
+    "SH-10071": {
+      "available": 6563,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 6513,
+      "source_lines": [
+        41,
+        293,
+        471,
+        542
+      ],
+      "sources": [
+        "R-071",
+        "W-071",
+        "Q-071",
+        "H-071"
+      ]
+    },
+    "SH-10072": {
+      "available": 1554,
+      "eligible": false,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 1555,
+      "source_lines": [
+        7,
+        248,
+        407,
+        590
+      ],
+      "sources": [
+        "R-072",
+        "W-072",
+        "Q-072",
+        "H-072"
+      ]
+    },
+    "SH-10073": {
+      "available": 6452,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 6402,
+      "source_lines": [
+        38,
+        178,
+        451,
+        630
+      ],
+      "sources": [
+        "R-073",
+        "W-073",
+        "Q-073",
+        "H-073"
+      ]
+    },
+    "SH-10074": {
+      "available": 5268,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 5218,
+      "source_lines": [
+        131,
+        172,
+        431,
+        522
+      ],
+      "sources": [
+        "R-074",
+        "W-074",
+        "Q-074",
+        "H-074"
+      ]
+    },
+    "SH-10075": {
+      "available": 2308,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 2258,
+      "source_lines": [
+        147,
+        175,
+        447,
+        634
+      ],
+      "sources": [
+        "R-075",
+        "W-075",
+        "Q-075",
+        "H-075"
+      ]
+    },
+    "SH-10076": {
+      "available": 6637,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 6587,
+      "source_lines": [
+        132,
+        271,
+        483,
+        512
+      ],
+      "sources": [
+        "R-076",
+        "W-076",
+        "Q-076",
+        "H-076"
+      ]
+    },
+    "SH-10077": {
+      "available": 3381,
+      "eligible": false,
+      "hold": "NONE",
+      "quality": "PENDING",
+      "requested": 3331,
+      "source_lines": [
+        49,
+        220,
+        381,
+        645
+      ],
+      "sources": [
+        "R-077",
+        "W-077",
+        "Q-077",
+        "H-077"
+      ]
+    },
+    "SH-10078": {
+      "available": 5416,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 5366,
+      "source_lines": [
+        152,
+        231,
+        478,
+        499
+      ],
+      "sources": [
+        "R-078",
+        "W-078",
+        "Q-078",
+        "H-078"
+      ]
+    },
+    "SH-10079": {
+      "available": 2974,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 2924,
+      "source_lines": [
+        68,
+        249,
+        460,
+        636
+      ],
+      "sources": [
+        "R-079",
+        "W-079",
+        "Q-079",
+        "H-079"
+      ]
+    },
+    "SH-10080": {
+      "available": 5009,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 4959,
+      "source_lines": [
+        122,
+        228,
+        436,
+        541
+      ],
+      "sources": [
+        "R-080",
+        "W-080",
+        "Q-080",
+        "H-080"
+      ]
+    },
+    "SH-10081": {
+      "available": 5638,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 5588,
+      "source_lines": [
+        144,
+        224,
+        434,
+        516
+      ],
+      "sources": [
+        "R-081",
+        "W-081",
+        "Q-081",
+        "H-081"
+      ]
+    },
+    "SH-10082": {
+      "available": 2752,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 2702,
+      "source_lines": [
+        148,
+        177,
+        415,
+        488
+      ],
+      "sources": [
+        "R-082",
+        "W-082",
+        "Q-082",
+        "H-082"
+      ]
+    },
+    "SH-10083": {
+      "available": 1383,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 1333,
+      "source_lines": [
+        145,
+        219,
+        333,
+        570
+      ],
+      "sources": [
+        "R-083",
+        "W-083",
+        "Q-083",
+        "H-083"
+      ]
+    },
+    "SH-10084": {
+      "available": 3936,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 3886,
+      "source_lines": [
+        83,
+        242,
+        421,
+        629
+      ],
+      "sources": [
+        "R-084",
+        "W-084",
+        "Q-084",
+        "H-084"
+      ]
+    },
+    "SH-10085": {
+      "available": 6674,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 6624,
+      "source_lines": [
+        98,
+        303,
+        398,
+        628
+      ],
+      "sources": [
+        "R-085",
+        "W-085",
+        "Q-085",
+        "H-085"
+      ]
+    },
+    "SH-10086": {
+      "available": 3788,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 3738,
+      "source_lines": [
+        146,
+        320,
+        475,
+        642
+      ],
+      "sources": [
+        "R-086",
+        "W-086",
+        "Q-086",
+        "H-086"
+      ]
+    },
+    "SH-10087": {
+      "available": 2789,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 2739,
+      "source_lines": [
+        117,
+        182,
+        337,
+        567
+      ],
+      "sources": [
+        "R-087",
+        "W-087",
+        "Q-087",
+        "H-087"
+      ]
+    },
+    "SH-10088": {
+      "available": 6179,
+      "eligible": false,
+      "hold": "NONE",
+      "quality": "PENDING",
+      "requested": 6180,
+      "source_lines": [
+        90,
+        275,
+        476,
+        588
+      ],
+      "sources": [
+        "R-088",
+        "W-088",
+        "Q-088",
+        "H-088"
+      ]
+    },
+    "SH-10089": {
+      "available": 6119,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 6069,
+      "source_lines": [
+        138,
+        235,
+        390,
+        621
+      ],
+      "sources": [
+        "R-089",
+        "W-089",
+        "Q-089",
+        "H-089"
+      ]
+    },
+    "SH-10090": {
+      "available": 1753,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 1703,
+      "source_lines": [
+        8,
+        258,
+        480,
+        546
+      ],
+      "sources": [
+        "R-090",
+        "W-090",
+        "Q-090",
+        "H-090"
+      ]
+    },
+    "SH-10091": {
+      "available": 3011,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 2961,
+      "source_lines": [
+        92,
+        176,
+        453,
+        536
+      ],
+      "sources": [
+        "R-091",
+        "W-091",
+        "Q-091",
+        "H-091"
+      ]
+    },
+    "SH-10092": {
+      "available": 5379,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 5329,
+      "source_lines": [
+        61,
+        264,
+        347,
+        622
+      ],
+      "sources": [
+        "R-092",
+        "W-092",
+        "Q-092",
+        "H-092"
+      ]
+    },
+    "SH-10093": {
+      "available": 2937,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 2887,
+      "source_lines": [
+        86,
+        194,
+        484,
+        539
+      ],
+      "sources": [
+        "R-093",
+        "W-093",
+        "Q-093",
+        "H-093"
+      ]
+    },
+    "SH-10094": {
+      "available": 3048,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 2998,
+      "source_lines": [
+        4,
+        298,
+        370,
+        526
+      ],
+      "sources": [
+        "R-094",
+        "W-094",
+        "Q-094",
+        "H-094"
+      ]
+    },
+    "SH-10095": {
+      "available": 3219,
+      "eligible": false,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 3220,
+      "source_lines": [
+        142,
+        310,
+        355,
+        538
+      ],
+      "sources": [
+        "R-095",
+        "W-095",
+        "Q-095",
+        "H-095"
+      ]
+    },
+    "SH-10096": {
+      "available": 4158,
+      "eligible": false,
+      "hold": "NONE",
+      "quality": "PENDING",
+      "requested": 4108,
+      "source_lines": [
+        91,
+        223,
+        435,
+        535
+      ],
+      "sources": [
+        "R-096",
+        "W-096",
+        "Q-096",
+        "H-096"
+      ]
+    },
+    "SH-10097": {
+      "available": 6859,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 6809,
+      "source_lines": [
+        136,
+        278,
+        456,
+        606
+      ],
+      "sources": [
+        "R-097",
+        "W-097",
+        "Q-097",
+        "H-097"
+      ]
+    },
+    "SH-10098": {
+      "available": 2197,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 2147,
+      "source_lines": [
+        76,
+        283,
+        438,
+        551
+      ],
+      "sources": [
+        "R-098",
+        "W-098",
+        "Q-098",
+        "H-098"
+      ]
+    },
+    "SH-10099": {
+      "available": 2109,
+      "eligible": false,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 2110,
+      "source_lines": [
+        29,
+        222,
+        417,
+        627
+      ],
+      "sources": [
+        "R-099",
+        "W-099",
+        "Q-099",
+        "H-099"
+      ]
+    },
+    "SH-10100": {
+      "available": 3751,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 3701,
+      "source_lines": [
+        55,
+        287,
+        335,
+        619
+      ],
+      "sources": [
+        "R-100",
+        "W-100",
+        "Q-100",
+        "H-100"
+      ]
+    },
+    "SH-10101": {
+      "available": 6304,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 6254,
+      "source_lines": [
+        50,
+        306,
+        369,
+        635
+      ],
+      "sources": [
+        "R-101",
+        "W-101",
+        "Q-101",
+        "H-101"
+      ]
+    },
+    "SH-10102": {
+      "available": 5453,
+      "eligible": false,
+      "hold": "NONE",
+      "quality": "PENDING",
+      "requested": 5403,
+      "source_lines": [
+        5,
+        300,
+        401,
+        602
+      ],
+      "sources": [
+        "R-102",
+        "W-102",
+        "Q-102",
+        "H-102"
+      ]
+    },
+    "SH-10103": {
+      "available": 3122,
+      "eligible": false,
+      "hold": "NONE",
+      "quality": "PENDING",
+      "requested": 3072,
+      "source_lines": [
+        88,
+        291,
+        429,
+        518
+      ],
+      "sources": [
+        "R-103",
+        "W-103",
+        "Q-103",
+        "H-103"
+      ]
+    },
+    "SH-10104": {
+      "available": 3677,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 3627,
+      "source_lines": [
+        14,
+        215,
+        464,
+        529
+      ],
+      "sources": [
+        "R-104",
+        "W-104",
+        "Q-104",
+        "H-104"
+      ]
+    },
+    "SH-10105": {
+      "available": 3492,
+      "eligible": false,
+      "hold": "ACTIVE",
+      "quality": "APPROVED",
+      "requested": 3442,
+      "source_lines": [
+        103,
+        213,
+        426,
+        537
+      ],
+      "sources": [
+        "R-105",
+        "W-105",
+        "Q-105",
+        "H-105"
+      ]
+    },
+    "SH-10106": {
+      "available": 6933,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 6883,
+      "source_lines": [
+        46,
+        166,
+        371,
+        501
+      ],
+      "sources": [
+        "R-106",
+        "W-106",
+        "Q-106",
+        "H-106"
+      ]
+    },
+    "SH-10107": {
+      "available": 5749,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 5699,
+      "source_lines": [
+        97,
+        238,
+        448,
+        596
+      ],
+      "sources": [
+        "R-107",
+        "W-107",
+        "Q-107",
+        "H-107"
+      ]
+    },
+    "SH-10108": {
+      "available": 6364,
+      "eligible": false,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 6365,
+      "source_lines": [
+        118,
+        299,
+        466,
+        631
+      ],
+      "sources": [
+        "R-108",
+        "W-108",
+        "Q-108",
+        "H-108"
+      ]
+    },
+    "SH-10109": {
+      "available": 1568,
+      "eligible": false,
+      "hold": "NONE",
+      "quality": "PENDING",
+      "requested": 1518,
+      "source_lines": [
+        31,
+        183,
+        339,
+        498
+      ],
+      "sources": [
+        "R-109",
+        "W-109",
+        "Q-109",
+        "H-109"
+      ]
+    },
+    "SH-10110": {
+      "available": 5231,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 5181,
+      "source_lines": [
+        15,
+        226,
+        482,
+        509
+      ],
+      "sources": [
+        "R-110",
+        "W-110",
+        "Q-110",
+        "H-110"
+      ]
+    },
+    "SH-10111": {
+      "available": 5342,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 5292,
+      "source_lines": [
+        12,
+        279,
+        481,
+        575
+      ],
+      "sources": [
+        "R-111",
+        "W-111",
+        "Q-111",
+        "H-111"
+      ]
+    },
+    "SH-10112": {
+      "available": 4269,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 4219,
+      "source_lines": [
+        108,
+        221,
+        376,
+        491
+      ],
+      "sources": [
+        "R-112",
+        "W-112",
+        "Q-112",
+        "H-112"
+      ]
+    },
+    "SH-10113": {
+      "available": 6489,
+      "eligible": false,
+      "hold": "NONE",
+      "quality": "PENDING",
+      "requested": 6439,
+      "source_lines": [
+        115,
+        317,
+        357,
+        545
+      ],
+      "sources": [
+        "R-113",
+        "W-113",
+        "Q-113",
+        "H-113"
+      ]
+    },
+    "SH-10114": {
+      "available": 1679,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 1629,
+      "source_lines": [
+        105,
+        304,
+        408,
+        617
+      ],
+      "sources": [
+        "R-114",
+        "W-114",
+        "Q-114",
+        "H-114"
+      ]
+    },
+    "SH-10115": {
+      "available": 2849,
+      "eligible": false,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 2850,
+      "source_lines": [
+        62,
+        168,
+        418,
+        644
+      ],
+      "sources": [
+        "R-115",
+        "W-115",
+        "Q-115",
+        "H-115"
+      ]
+    },
+    "SH-10116": {
+      "available": 5194,
+      "eligible": false,
+      "hold": "NONE",
+      "quality": "PENDING",
+      "requested": 5144,
+      "source_lines": [
+        71,
+        197,
+        384,
+        592
+      ],
+      "sources": [
+        "R-116",
+        "W-116",
+        "Q-116",
+        "H-116"
+      ]
+    },
+    "SH-10117": {
+      "available": 3899,
+      "eligible": false,
+      "hold": "ACTIVE",
+      "quality": "PENDING",
+      "requested": 3849,
+      "source_lines": [
+        25,
+        267,
+        361,
+        562
+      ],
+      "sources": [
+        "R-117",
+        "W-117",
+        "Q-117",
+        "H-117"
+      ]
+    },
+    "SH-10118": {
+      "available": 3973,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 3923,
+      "source_lines": [
+        28,
+        292,
+        365,
+        609
+      ],
+      "sources": [
+        "R-118",
+        "W-118",
+        "Q-118",
+        "H-118"
+      ]
+    },
+    "SH-10119": {
+      "available": 6711,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 6661,
+      "source_lines": [
+        32,
+        255,
+        403,
+        584
+      ],
+      "sources": [
+        "R-119",
+        "W-119",
+        "Q-119",
+        "H-119"
+      ]
+    },
+    "SH-10120": {
+      "available": 6008,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 5958,
+      "source_lines": [
+        116,
+        205,
+        341,
+        525
+      ],
+      "sources": [
+        "R-120",
+        "W-120",
+        "Q-120",
+        "H-120"
+      ]
+    },
+    "SH-10121": {
+      "available": 1346,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 1296,
+      "source_lines": [
+        34,
+        308,
+        446,
+        548
+      ],
+      "sources": [
+        "R-121",
+        "W-121",
+        "Q-121",
+        "H-121"
+      ]
+    },
+    "SH-10122": {
+      "available": 2049,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 1999,
+      "source_lines": [
+        100,
+        188,
+        441,
+        572
+      ],
+      "sources": [
+        "R-122",
+        "W-122",
+        "Q-122",
+        "H-122"
+      ]
+    },
+    "SH-10123": {
+      "available": 4602,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 4552,
+      "source_lines": [
+        22,
+        225,
+        392,
+        565
+      ],
+      "sources": [
+        "R-123",
+        "W-123",
+        "Q-123",
+        "H-123"
+      ]
+    },
+    "SH-10124": {
+      "available": 3196,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 3146,
+      "source_lines": [
+        74,
+        245,
+        458,
+        566
+      ],
+      "sources": [
+        "R-124",
+        "W-124",
+        "Q-124",
+        "H-124"
+      ]
+    },
+    "SH-10125": {
+      "available": 5083,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 5033,
+      "source_lines": [
+        59,
+        247,
+        430,
+        604
+      ],
+      "sources": [
+        "R-125",
+        "W-125",
+        "Q-125",
+        "H-125"
+      ]
+    },
+    "SH-10126": {
+      "available": 5439,
+      "eligible": false,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 5440,
+      "source_lines": [
+        54,
+        198,
+        349,
+        514
+      ],
+      "sources": [
+        "R-126",
+        "W-126",
+        "Q-126",
+        "H-126"
+      ]
+    },
+    "SH-10127": {
+      "available": 4699,
+      "eligible": false,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 4700,
+      "source_lines": [
+        157,
+        195,
+        457,
+        554
+      ],
+      "sources": [
+        "R-127",
+        "W-127",
+        "Q-127",
+        "H-127"
+      ]
+    },
+    "SH-10128": {
+      "available": 6919,
+      "eligible": false,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 6920,
+      "source_lines": [
+        80,
+        187,
+        424,
+        553
+      ],
+      "sources": [
+        "R-128",
+        "W-128",
+        "Q-128",
+        "H-128"
+      ]
+    },
+    "SH-10129": {
+      "available": 4528,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 4478,
+      "source_lines": [
+        93,
+        314,
+        386,
+        564
+      ],
+      "sources": [
+        "R-129",
+        "W-129",
+        "Q-129",
+        "H-129"
+      ]
+    },
+    "SH-10130": {
+      "available": 4972,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 4922,
+      "source_lines": [
+        44,
+        243,
+        477,
+        557
+      ],
+      "sources": [
+        "R-130",
+        "W-130",
+        "Q-130",
+        "H-130"
+      ]
+    },
+    "SH-10131": {
+      "available": 4047,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 3997,
+      "source_lines": [
+        135,
+        241,
+        416,
+        598
+      ],
+      "sources": [
+        "R-131",
+        "W-131",
+        "Q-131",
+        "H-131"
+      ]
+    },
+    "SH-10132": {
+      "available": 2826,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 2776,
+      "source_lines": [
+        112,
+        237,
+        351,
+        597
+      ],
+      "sources": [
+        "R-132",
+        "W-132",
+        "Q-132",
+        "H-132"
+      ]
+    },
+    "SH-10133": {
+      "available": 5994,
+      "eligible": false,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 5995,
+      "source_lines": [
+        64,
+        270,
+        327,
+        531
+      ],
+      "sources": [
+        "R-133",
+        "W-133",
+        "Q-133",
+        "H-133"
+      ]
+    },
+    "SH-10134": {
+      "available": 4084,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 4034,
+      "source_lines": [
+        21,
+        284,
+        485,
+        513
+      ],
+      "sources": [
+        "R-134",
+        "W-134",
+        "Q-134",
+        "H-134"
+      ]
+    },
+    "SH-10135": {
+      "available": 4329,
+      "eligible": false,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 4330,
+      "source_lines": [
+        125,
+        204,
+        367,
+        495
+      ],
+      "sources": [
+        "R-135",
+        "W-135",
+        "Q-135",
+        "H-135"
+      ]
+    },
+    "SH-10136": {
+      "available": 6526,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 6476,
+      "source_lines": [
+        134,
+        273,
+        413,
+        500
+      ],
+      "sources": [
+        "R-136",
+        "W-136",
+        "Q-136",
+        "H-136"
+      ]
+    },
+    "SH-10137": {
+      "available": 5564,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 5514,
+      "source_lines": [
+        60,
+        190,
+        354,
+        613
+      ],
+      "sources": [
+        "R-137",
+        "W-137",
+        "Q-137",
+        "H-137"
+      ]
+    },
+    "SH-10138": {
+      "available": 6859,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 6809,
+      "source_lines": [
+        87,
+        313,
+        372,
+        611
+      ],
+      "sources": [
+        "R-138",
+        "W-138",
+        "Q-138",
+        "H-138"
+      ]
+    },
+    "SH-10139": {
+      "available": 6378,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 6328,
+      "source_lines": [
+        155,
+        301,
+        344,
+        532
+      ],
+      "sources": [
+        "R-139",
+        "W-139",
+        "Q-139",
+        "H-139"
+      ]
+    },
+    "SH-10140": {
+      "available": 3529,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 3479,
+      "source_lines": [
+        141,
+        239,
+        352,
+        533
+      ],
+      "sources": [
+        "R-140",
+        "W-140",
+        "Q-140",
+        "H-140"
+      ]
+    },
+    "SH-10141": {
+      "available": 4417,
+      "eligible": false,
+      "hold": "NONE",
+      "quality": "PENDING",
+      "requested": 4367,
+      "source_lines": [
+        66,
+        209,
+        373,
+        547
+      ],
+      "sources": [
+        "R-141",
+        "W-141",
+        "Q-141",
+        "H-141"
+      ]
+    },
+    "SH-10142": {
+      "available": 5823,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 5773,
+      "source_lines": [
+        137,
+        286,
+        346,
+        490
+      ],
+      "sources": [
+        "R-142",
+        "W-142",
+        "Q-142",
+        "H-142"
+      ]
+    },
+    "SH-10143": {
+      "available": 2419,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 2369,
+      "source_lines": [
+        119,
+        309,
+        467,
+        614
+      ],
+      "sources": [
+        "R-143",
+        "W-143",
+        "Q-143",
+        "H-143"
+      ]
+    },
+    "SH-10144": {
+      "available": 3566,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 3516,
+      "source_lines": [
+        75,
+        259,
+        363,
+        560
+      ],
+      "sources": [
+        "R-144",
+        "W-144",
+        "Q-144",
+        "H-144"
+      ]
+    },
+    "SH-10145": {
+      "available": 1161,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 1111,
+      "source_lines": [
+        156,
+        210,
+        454,
+        503
+      ],
+      "sources": [
+        "R-145",
+        "W-145",
+        "Q-145",
+        "H-145"
+      ]
+    },
+    "SH-10146": {
+      "available": 5934,
+      "eligible": false,
+      "hold": "ACTIVE",
+      "quality": "APPROVED",
+      "requested": 5884,
+      "source_lines": [
+        161,
+        234,
+        452,
+        626
+      ],
+      "sources": [
+        "R-146",
+        "W-146",
+        "Q-146",
+        "H-146"
+      ]
+    },
+    "SH-10147": {
+      "available": 3159,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 3109,
+      "source_lines": [
+        36,
+        191,
+        394,
+        568
+      ],
+      "sources": [
+        "R-147",
+        "W-147",
+        "Q-147",
+        "H-147"
+      ]
+    },
+    "SH-10148": {
+      "available": 1531,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 1481,
+      "source_lines": [
+        16,
+        173,
+        385,
+        641
+      ],
+      "sources": [
+        "R-148",
+        "W-148",
+        "Q-148",
+        "H-148"
+      ]
+    },
+    "SH-10149": {
+      "available": 4884,
+      "eligible": false,
+      "hold": "NONE",
+      "quality": "PENDING",
+      "requested": 4885,
+      "source_lines": [
+        17,
+        174,
+        332,
+        497
+      ],
+      "sources": [
+        "R-149",
+        "W-149",
+        "Q-149",
+        "H-149"
+      ]
+    },
+    "SH-10150": {
+      "available": 6549,
+      "eligible": false,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 6550,
+      "source_lines": [
+        139,
+        281,
+        328,
+        569
+      ],
+      "sources": [
+        "R-150",
+        "W-150",
+        "Q-150",
+        "H-150"
+      ]
+    },
+    "SH-10151": {
+      "available": 3589,
+      "eligible": false,
+      "hold": "NONE",
+      "quality": "PENDING",
+      "requested": 3590,
+      "source_lines": [
+        53,
+        181,
+        353,
+        585
+      ],
+      "sources": [
+        "R-151",
+        "W-151",
+        "Q-151",
+        "H-151"
+      ]
+    },
+    "SH-10152": {
+      "available": 5624,
+      "eligible": false,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 5625,
+      "source_lines": [
+        126,
+        186,
+        334,
+        643
+      ],
+      "sources": [
+        "R-152",
+        "W-152",
+        "Q-152",
+        "H-152"
+      ]
+    },
+    "SH-10153": {
+      "available": 4787,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 4737,
+      "source_lines": [
+        77,
+        319,
+        445,
+        603
+      ],
+      "sources": [
+        "R-153",
+        "W-153",
+        "Q-153",
+        "H-153"
+      ]
+    },
+    "SH-10154": {
+      "available": 6267,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 6217,
+      "source_lines": [
+        72,
+        276,
+        397,
+        591
+      ],
+      "sources": [
+        "R-154",
+        "W-154",
+        "Q-154",
+        "H-154"
+      ]
+    },
+    "SH-10155": {
+      "available": 2271,
+      "eligible": false,
+      "hold": "ACTIVE",
+      "quality": "APPROVED",
+      "requested": 2221,
+      "source_lines": [
+        9,
+        207,
+        362,
+        515
+      ],
+      "sources": [
+        "R-155",
+        "W-155",
+        "Q-155",
+        "H-155"
+      ]
+    },
+    "SH-10156": {
+      "available": 1272,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 1222,
+      "source_lines": [
+        2,
+        268,
+        412,
+        563
+      ],
+      "sources": [
+        "R-156",
+        "W-156",
+        "Q-156",
+        "H-156"
+      ]
+    },
+    "SH-10157": {
+      "available": 3344,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 3294,
+      "source_lines": [
+        89,
+        290,
+        366,
+        528
+      ],
+      "sources": [
+        "R-157",
+        "W-157",
+        "Q-157",
+        "H-157"
+      ]
+    },
+    "SH-10158": {
+      "available": 6341,
+      "eligible": false,
+      "hold": "ACTIVE",
+      "quality": "APPROVED",
+      "requested": 6291,
+      "source_lines": [
+        104,
+        250,
+        338,
+        586
+      ],
+      "sources": [
+        "R-158",
+        "W-158",
+        "Q-158",
+        "H-158"
+      ]
+    },
+    "SH-10159": {
+      "available": 2493,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 2443,
+      "source_lines": [
+        3,
+        265,
+        414,
+        521
+      ],
+      "sources": [
+        "R-159",
+        "W-159",
+        "Q-159",
+        "H-159"
+      ]
+    },
+    "SH-10160": {
+      "available": 2234,
+      "eligible": true,
+      "hold": "NONE",
+      "quality": "APPROVED",
+      "requested": 2184,
+      "source_lines": [
+        96,
+        203,
+        391,
+        601
+      ],
+      "sources": [
+        "R-160",
+        "W-160",
+        "Q-160",
+        "H-160"
+      ]
+    }
+  },
+  "ranked_ids": [
+    "SH-10106",
+    "SH-10068",
+    "SH-10097",
+    "SH-10138",
+    "SH-10119",
+    "SH-10085",
+    "SH-10076",
+    "SH-10071",
+    "SH-10136",
+    "SH-10073",
+    "SH-10139",
+    "SH-10101",
+    "SH-10154",
+    "SH-10015",
+    "SH-10016",
+    "SH-10089",
+    "SH-10018",
+    "SH-10120",
+    "SH-10029",
+    "SH-10142",
+    "SH-10014",
+    "SH-10107",
+    "SH-10081",
+    "SH-10067",
+    "SH-10137",
+    "SH-10078",
+    "SH-10092",
+    "SH-10111",
+    "SH-10074",
+    "SH-10110",
+    "SH-10038",
+    "SH-10125",
+    "SH-10065",
+    "SH-10080",
+    "SH-10130",
+    "SH-10057",
+    "SH-10035",
+    "SH-10012",
+    "SH-10153",
+    "SH-10064",
+    "SH-10123",
+    "SH-10129",
+    "SH-10044",
+    "SH-10040",
+    "SH-10031",
+    "SH-10112",
+    "SH-10003",
+    "SH-10017",
+    "SH-10134",
+    "SH-10131",
+    "SH-10118",
+    "SH-10084",
+    "SH-10033",
+    "SH-10086",
+    "SH-10100",
+    "SH-10001",
+    "SH-10104",
+    "SH-10032",
+    "SH-10144",
+    "SH-10140",
+    "SH-10041",
+    "SH-10157",
+    "SH-10045",
+    "SH-10062",
+    "SH-10124",
+    "SH-10147",
+    "SH-10094",
+    "SH-10091",
+    "SH-10079",
+    "SH-10093",
+    "SH-10132",
+    "SH-10087",
+    "SH-10082",
+    "SH-10021",
+    "SH-10066",
+    "SH-10159",
+    "SH-10058",
+    "SH-10143",
+    "SH-10022",
+    "SH-10075",
+    "SH-10160",
+    "SH-10098",
+    "SH-10037",
+    "SH-10122",
+    "SH-10052",
+    "SH-10051",
+    "SH-10007",
+    "SH-10090",
+    "SH-10023",
+    "SH-10114",
+    "SH-10028",
+    "SH-10148",
+    "SH-10002",
+    "SH-10083",
+    "SH-10121",
+    "SH-10156",
+    "SH-10042",
+    "SH-10145",
+    "SH-10006",
+    "SH-10024"
+  ],
+  "scenario": "S2-v2",
+  "selected": [
+    {
+      "id": "SH-10106",
+      "requested": 6883,
+      "sources": [
+        "R-106",
+        "W-106",
+        "Q-106",
+        "H-106"
+      ]
+    },
+    {
+      "id": "SH-10068",
+      "requested": 6846,
+      "sources": [
+        "R-068",
+        "W-068",
+        "Q-068",
+        "H-068"
+      ]
+    },
+    {
+      "id": "SH-10097",
+      "requested": 6809,
+      "sources": [
+        "R-097",
+        "W-097",
+        "Q-097",
+        "H-097"
+      ]
+    }
+  ],
+  "total": 20538
+}

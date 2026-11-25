@@ -1,0 +1,38 @@
+[
+    {
+        "name":  "account-confirmation.json",
+        "sha256":  "558E8FC462E52ADAFDBA65F0CA0A2DCDCA942B70688445E92947B793D090A07C"
+    },
+    {
+        "name":  "authorization.json",
+        "sha256":  "96E15CBE2063184E76EACC81C273D074825CAC22A9DE8B388C055F98FB24600F"
+    },
+    {
+        "name":  "credential-entry-before-input-failure.json",
+        "sha256":  "F31623FD8F65BA61EE728C774AB2EE81EE5A82FCA5BFD02AE8807DB46FB7A65F"
+    },
+    {
+        "name":  "credential-entry-before-input-failure.lock",
+        "sha256":  "9627F60D6C450DEB55784F2928C96E15A11644B7BA18342A70BC16826D789D09"
+    },
+    {
+        "name":  "credential-entry.lock",
+        "sha256":  "9627F60D6C450DEB55784F2928C96E15A11644B7BA18342A70BC16826D789D09"
+    },
+    {
+        "name":  "credential-handoff.json",
+        "sha256":  "786B4C997AC56E1DE68D399704E43A6DB53D25E9583F32B1964C68FBA81732D7"
+    },
+    {
+        "name":  "handoff-offline-check.json",
+        "sha256":  "A1494BEF98D416EE7CDEB81FF9D46551A8A2DA83E4D48A04C90E5C7BE1FE3E9E"
+    },
+    {
+        "name":  "live-outcome.json",
+        "sha256":  "52ABE73FCB7BDB379974D7E872240360BAC7CA704B7F57E0BF1F4BCB03502F91"
+    },
+    {
+        "name":  "live.json",
+        "sha256":  "14617A6857166881072A2EBD0A23BD7D5689BF2F60DEC256FC448A893F2E6053"
+    }
+]

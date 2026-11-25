@@ -1,0 +1,17 @@
+{
+  "finalized": true,
+  "ledger": {
+    "campaign_exposure_usd": "0",
+    "rates_kind": "synthetic_only",
+    "runs": {
+      "broker-659f137ed64b418985f03df3f21a9347": {
+        "attempts": 0,
+        "deadline": 52764.375,
+        "stop_reason": "run_budget"
+      }
+    },
+    "tickets": {}
+  },
+  "provider_records": [],
+  "run_id": "broker-659f137ed64b418985f03df3f21a9347"
+}

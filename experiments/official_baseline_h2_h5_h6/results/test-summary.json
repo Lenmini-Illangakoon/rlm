@@ -1,0 +1,11 @@
+{
+  "elapsed_seconds": 30.714232499998616,
+  "error_count": 0,
+  "failure_count": 0,
+  "failures": [],
+  "pattern": "test_*.py",
+  "skip_count": 0,
+  "success": true,
+  "synthetic_only": true,
+  "test_methods": 30
+}

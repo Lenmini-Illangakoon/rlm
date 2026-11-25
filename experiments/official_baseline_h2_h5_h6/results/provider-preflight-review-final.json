@@ -1,0 +1,40 @@
+{
+  "date_local": "2026-11-25",
+  "decision": "PROPOSAL_READY_FOR_REVIEW_NOT_READY_FOR_DISPATCH",
+  "proposal_revision": "openrouter-preflight-proposal-1",
+  "arithmetic_configuration": "Previously passed; saved validation reused, not rerun",
+  "proposal_sha256_unchanged": "b44ae48f87dbf0b15c20718b6a3f08da3c246f5f22055b5d6012de2f704c8325",
+  "spending_cap_usd": "0.50",
+  "reservation_usd": "0.466385920",
+  "new_targeted_check": {
+    "error_delivery_variants_confirmed": 2,
+    "healthy_control_passed": true,
+    "defect_fixed": false,
+    "source": "results/provider-response-review.json"
+  },
+  "protected_files_unchanged": 90,
+  "implementation_files_unchanged": 33,
+  "prior_test_suites_repeated": false,
+  "official_source_diff_empty": true,
+  "staged_changes_empty": true,
+  "live_enabled": false,
+  "credential_access": false,
+  "provider_api_requests": 0,
+  "changed_since_previous_review_manifest": [
+    "IMPLEMENTATION_REPORT.md",
+    "PROVIDER_PREFLIGHT_REVIEW.md"
+  ],
+  "review_document_sha256": "99f8d3f4f0a41e0412b98e4898678002fc1b437f8bfff6e12cfb5f95dc30ae97",
+  "implementation_report_sha256": "30ef88f49f882474d3e67444de5ecad9e3fe8efb21c1a8f16c2f436288f8d03a",
+  "remaining_dispatch_blockers": [
+    "Host-owned provider and price restrictions with routing metadata",
+    "Reject provider error envelopes/choices before delivering output, preserving known usage",
+    "Literal-only input-bound review and bounded two-request driver",
+    "Separate credential and request approval"
+  ],
+  "additional_pilot_blockers": [
+    "Conservative full-message input bound",
+    "Reviewed live campaign policy identity and carried preflight exposure",
+    "Separate pilot readiness and authorization"
+  ]
+}

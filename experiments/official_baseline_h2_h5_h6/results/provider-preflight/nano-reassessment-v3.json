@@ -1,0 +1,19 @@
+{
+  "additional_api_calls": 0,
+  "live_journal_sha256": "e63ef54608a31aec964af6fdab24423400a9b3b8e01a61ac028049c5e1003cb6",
+  "original_live_journal_modified": false,
+  "status": "passed",
+  "verification": {
+    "billing_basis": "native_completion_count_once",
+    "cached_tokens": 0,
+    "conservative_output_count": 91,
+    "expected_cost_usd": "0.00003735",
+    "nonzero_reasoning_observed": true,
+    "reasoning_detail_conflict": false,
+    "reasoning_semantics": "included_in_completion",
+    "reasoning_tokens": 64,
+    "resolved_endpoint": "openai/gpt-5-nano-2025-08-07",
+    "service_tier_reported": "default",
+    "verification_revision": "preflight-snapshot-billing-review-3"
+  }
+}

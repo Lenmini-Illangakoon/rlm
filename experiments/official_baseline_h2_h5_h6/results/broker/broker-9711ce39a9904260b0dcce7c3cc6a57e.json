@@ -1,0 +1,141 @@
+{
+  "cleanup": {
+    "payload_grant_removed": true,
+    "profile_deleted": true,
+    "scratch_deleted": true
+  },
+  "ledger": {
+    "campaign_exposure_usd": "0.07",
+    "rates_kind": "synthetic_only",
+    "runs": {
+      "broker-9711ce39a9904260b0dcce7c3cc6a57e": {
+        "attempts": 0,
+        "deadline": 52841.64,
+        "stop_reason": "campaign_budget"
+      },
+      "broker-cb82dbda14c842ffb4b3153bbea1b9cc": {
+        "attempts": 1,
+        "deadline": 52802.671,
+        "stop_reason": null
+      }
+    },
+    "tickets": {
+      "attempt-00001": {
+        "input_bound": 100,
+        "model": "openai/gpt-5",
+        "output_bound": 32768,
+        "rate_cost_usd": "0.00002",
+        "reported_cost_usd": "0.07",
+        "reserved": "0",
+        "run_id": "broker-cb82dbda14c842ffb4b3153bbea1b9cc",
+        "spent": "0.07",
+        "state": "reconciled"
+      }
+    }
+  },
+  "observed_prefix": [
+    {
+      "action": null,
+      "depth": 0,
+      "event_id": "mock-58913df2cbac4c35aba8d50fe3b7a2d5:e00001",
+      "inputs": {
+        "args": [
+          "public broker context"
+        ],
+        "kwargs": {
+          "root_prompt": "broker integration root"
+        }
+      },
+      "kind": "node_start",
+      "monotonic_ns": 51972627106200,
+      "node": null,
+      "parent_node": null,
+      "run_id": "mock-58913df2cbac4c35aba8d50fe3b7a2d5",
+      "seq": 1,
+      "slot": null
+    },
+    {
+      "action": null,
+      "code": "with open(r'D:\\iit\\4th Year\\FYP\\RLM\\rlm\\experiments\\official_baseline_h2_h5_h6\\isolation-staging\\c6ed1074140b457b818118023c0a94eb\\run-5ce7cc7e40974b2598ebdf53e88f7038\\work\\repl_env_4c36a470-9275-44dd-82e0-2ebd92a02290_qmmqlw37\\context_0.txt', 'r') as f:\n    context_0 = f.read()",
+      "event_id": "mock-58913df2cbac4c35aba8d50fe3b7a2d5:e00002",
+      "kind": "python_start",
+      "monotonic_ns": 51972820128700,
+      "node": "mock-58913df2cbac4c35aba8d50fe3b7a2d5:e00001",
+      "phase": "environment_setup",
+      "run_id": "mock-58913df2cbac4c35aba8d50fe3b7a2d5",
+      "seq": 2,
+      "slot": null
+    },
+    {
+      "action": "mock-58913df2cbac4c35aba8d50fe3b7a2d5:e00002",
+      "event_id": "mock-58913df2cbac4c35aba8d50fe3b7a2d5:e00003",
+      "exception_detail": "stderr is observed; exception object is not exposed",
+      "final_answer": null,
+      "kind": "python_result",
+      "locals": {
+        "answer": {
+          "unobserved": "non-builtin value"
+        },
+        "context": "public broker context",
+        "context_0": "public broker context",
+        "f": {
+          "unobserved": "non-builtin value"
+        }
+      },
+      "monotonic_ns": 51974419999400,
+      "node": "mock-58913df2cbac4c35aba8d50fe3b7a2d5:e00001",
+      "phase": "environment_setup",
+      "run_id": "mock-58913df2cbac4c35aba8d50fe3b7a2d5",
+      "seq": 3,
+      "slot": null,
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "action": null,
+      "code": "context = context_0",
+      "event_id": "mock-58913df2cbac4c35aba8d50fe3b7a2d5:e00004",
+      "kind": "python_start",
+      "monotonic_ns": 51974420383900,
+      "node": "mock-58913df2cbac4c35aba8d50fe3b7a2d5:e00001",
+      "phase": "environment_setup",
+      "run_id": "mock-58913df2cbac4c35aba8d50fe3b7a2d5",
+      "seq": 4,
+      "slot": null
+    },
+    {
+      "action": "mock-58913df2cbac4c35aba8d50fe3b7a2d5:e00004",
+      "event_id": "mock-58913df2cbac4c35aba8d50fe3b7a2d5:e00005",
+      "exception_detail": "stderr is observed; exception object is not exposed",
+      "final_answer": null,
+      "kind": "python_result",
+      "locals": {
+        "answer": {
+          "unobserved": "non-builtin value"
+        },
+        "context": "public broker context",
+        "context_0": "public broker context",
+        "f": {
+          "unobserved": "non-builtin value"
+        }
+      },
+      "monotonic_ns": 51974421619800,
+      "node": "mock-58913df2cbac4c35aba8d50fe3b7a2d5:e00001",
+      "phase": "environment_setup",
+      "run_id": "mock-58913df2cbac4c35aba8d50fe3b7a2d5",
+      "seq": 5,
+      "slot": null,
+      "stderr": "",
+      "stdout": ""
+    }
+  ],
+  "profile_name": "RootCheck.Pilot.run-5ce7cc7e40974b2598ebdf53e88f7038",
+  "protocol_version": "broker-integration-1",
+  "provider_records": [],
+  "reason": "campaign_budget",
+  "result": null,
+  "run_id": "broker-9711ce39a9904260b0dcce7c3cc6a57e",
+  "scratch_path": "D:\\iit\\4th Year\\FYP\\RLM\\rlm\\experiments\\official_baseline_h2_h5_h6\\isolation-staging\\c6ed1074140b457b818118023c0a94eb\\run-5ce7cc7e40974b2598ebdf53e88f7038",
+  "status": "resource_censored",
+  "synthetic_only": true
+}

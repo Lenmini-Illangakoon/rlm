@@ -1,0 +1,18 @@
+{
+  "original_journal_modified": false,
+  "repeated_gpt5_inference": false,
+  "status": "accepted_with_reasoning_telemetry_caveat",
+  "verification": {
+    "billing_basis": "native_completion_count_once",
+    "cached_tokens": 0,
+    "conservative_output_count": 126,
+    "expected_cost_usd": "0.00034375",
+    "nonzero_reasoning_observed": true,
+    "reasoning_detail_conflict": true,
+    "reasoning_semantics": "unresolved_detail_preserved",
+    "reasoning_tokens": 94,
+    "resolved_endpoint": "openai/gpt-5-2025-08-07",
+    "service_tier_reported": "default",
+    "verification_revision": "preflight-snapshot-billing-review-2"
+  }
+}

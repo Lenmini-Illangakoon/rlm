@@ -1,0 +1,14 @@
+{
+  "authorization": "User approved one nano request after GPT-5 reassessment; no repeated GPT-5",
+  "combined_ceiling_usd": "1.00",
+  "maximum_requests": 1,
+  "retries": 0,
+  "verification_revision": "preflight-snapshot-billing-review-2",
+  "source_hashes": {
+    "preflight_nano_followup.py": "35565b764c724c58d26f087d0d6782e14e1c57fdf3a0deb2ba79bd891adb9a89",
+    "runners/provider_preflight.py": "c82060bf96a684fab7ba9cd4d9d68ff191d6d8d82a51701377ee2c01ad766324",
+    "runners/broker.py": "611d609c78134a09577e61e1ea4c60f5c0861574497760b657aa77b7d768c97a",
+    "runners/budget.py": "dd23ba927526c697cb16a6cf30b99177b460587d2289549680f5b6fdba0fb585",
+    "preflight_attempt_two.py": "e2c8fc0165489fc329faf087ccafc6e7ab522f328061d4867d02ee54344a7d25"
+  }
+}

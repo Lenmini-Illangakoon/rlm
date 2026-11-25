@@ -1,0 +1,27 @@
+{
+  "api_requests": 0,
+  "benchmark_repeated": false,
+  "scenarios": [
+    {
+      "boundary": "appcontainer-job",
+      "exit_code": 0,
+      "passed": true,
+      "path": "results\\mock\\isolated-mock-3ef2151b56c64e629377f83f3dd02025.json",
+      "scenario": "S1"
+    },
+    {
+      "boundary": "appcontainer-job",
+      "exit_code": 0,
+      "passed": true,
+      "path": "results\\mock\\isolated-mock-b25de69d453c4d24a1bfca4702011e49.json",
+      "scenario": "S2-v2"
+    },
+    {
+      "boundary": "appcontainer-job",
+      "exit_code": 0,
+      "passed": true,
+      "path": "results\\mock\\isolated-mock-f082573d6ff6402293a360de4ac0a573.json",
+      "scenario": "S3"
+    }
+  ]
+}

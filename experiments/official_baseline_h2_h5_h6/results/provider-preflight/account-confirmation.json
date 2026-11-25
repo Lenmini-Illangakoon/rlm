@@ -1,0 +1,16 @@
+{
+  "source": "user-confirmed account settings; no account API queries",
+  "byok_only_routing_disabled": true,
+  "openai_byok_configured": false,
+  "presets_configured": false,
+  "user_reported_payg_credit_usd": "2.92",
+  "credential_handoff": "user-requested local hidden-entry prompt",
+  "approved_combined_inference_usd": "0.50",
+  "approved_models_in_order": [
+    "openai/gpt-5",
+    "openai/gpt-5-nano"
+  ],
+  "retry_authorized": false,
+  "additional_requests_authorized": false,
+  "pilot_authorized": false
+}

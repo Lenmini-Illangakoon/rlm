@@ -1,0 +1,10 @@
+{
+  "success": true,
+  "kind": "offline hidden-entry wrapper check; provider driver and key entry mocked",
+  "provider_api_requests": 0,
+  "real_credential_access": false,
+  "prompt_count": 1,
+  "driver_invocations": 1,
+  "secret_not_serialized": true,
+  "adapter_key_reference_cleared": true
+}

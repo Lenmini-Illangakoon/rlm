@@ -1,0 +1,29 @@
+{
+  "cleanup": {
+    "payload_grant_removed": false,
+    "profile_deleted": true,
+    "scratch_deleted": true
+  },
+  "ledger": {
+    "campaign_exposure_usd": "0",
+    "rates_kind": "synthetic_only",
+    "runs": {
+      "broker-2cd880a35d3b48a28738db39cb88c2fc": {
+        "attempts": 0,
+        "deadline": 52397.328,
+        "stop_reason": "infrastructure_failed"
+      }
+    },
+    "tickets": {}
+  },
+  "observed_prefix": [],
+  "profile_name": "RootCheck.Pilot.run-aff7a1823e534adeaad2267318aa9375",
+  "protocol_version": "broker-integration-1",
+  "provider_records": [],
+  "reason": "PermissionError: [WinError 5] Access is denied.",
+  "result": null,
+  "run_id": "broker-2cd880a35d3b48a28738db39cb88c2fc",
+  "scratch_path": "D:\\iit\\4th Year\\FYP\\RLM\\rlm\\experiments\\official_baseline_h2_h5_h6\\isolation-staging\\c6ed1074140b457b818118023c0a94eb\\run-aff7a1823e534adeaad2267318aa9375",
+  "status": "infrastructure_failed",
+  "synthetic_only": true
+}

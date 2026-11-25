@@ -1,0 +1,652 @@
+{
+  "pilot_id": "S2-R01",
+  "run_id": "broker-b3dd0f8ebee74e40a5d794cabbdcec4a",
+  "status": "completed",
+  "synthetic_only": false,
+  "campaign_policy_hash": "42889b13f955bc304b39eee8535ae182bde422324c815b7945fb953eefd9e459",
+  "upstream_pin": "e11f1a8f8ee4490686e16dd6463233abe08a07eb",
+  "runtime_identity": {
+    "run_id": "mock-c8e323160034414aad74da367774c18e",
+    "event_id": "mock-c8e323160034414aad74da367774c18e:e00001",
+    "seq": 1,
+    "monotonic_ns": 124459187227600,
+    "kind": "runtime_identity",
+    "node": null,
+    "action": null,
+    "slot": null,
+    "class_module": "rlm.core.rlm",
+    "class_name": "RLM",
+    "source_file": "D:\\iit\\4th Year\\FYP\\RLM\\rlm\\experiments\\official_baseline_h2_h5_h6\\isolation-staging\\c6ed1074140b457b818118023c0a94eb\\run-58a536cafb7b45abbb7062f2fe311401\\payload\\repo\\rlm\\core\\rlm.py",
+    "source_hashes": {
+      "rlm/__init__.py": "bbcf03835c623c6b00c38bdf6692d43af164f1d6a2df00c8c1044c409cf95f52",
+      "rlm/clients/__init__.py": "8c3b4320ef3acd6c1069d52b51cf973d076143b61de53b799284ba30d31a6ca6",
+      "rlm/clients/anthropic.py": "87dc5f2c0726d9f2abd42c528087e831e0937c80f966a2b2feb2e7d5470ee0bc",
+      "rlm/clients/azure_openai.py": "9696433c582b9d38e87d5c93987a037ba9e8eaaa323234382c423e2ae26b37f5",
+      "rlm/clients/base_lm.py": "e79ba1d2e459619631a991b37d594660fd80025c34f8212409b44f6b7197aa05",
+      "rlm/clients/gemini.py": "c517bd9fa2b3a9de5bd56e2b594e3345ea2fb870f4557e93cbb58a6a6eb8cd42",
+      "rlm/clients/openai.py": "2763e4b427f3c154ec2cfd906da91832c416f84851c5d6dc1d9c868477aec7c2",
+      "rlm/clients/portkey.py": "f0738a52a5c4ac7efa4daebb7c5f467b3f9adcbe7d5d67072565fc89651e4dfd",
+      "rlm/core/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rlm/core/comms_utils.py": "bfbe1bea99139dea4300ff0e6f3a3d210d2590af9a99b0346a45e24023fbcce5",
+      "rlm/core/lm_handler.py": "f1c973aaac6ea7c67f6c05962b713ead30729a9f0b605a9d0851f5336475bb8f",
+      "rlm/core/rlm.py": "1ccec592077d7d00a079c396d3382cd8d4bd84e5ce5bbc4674cca30cdf7cdd34",
+      "rlm/core/types.py": "123d47312d80d317f5bbc1e1002870683bb4592208889a1f47904ed3ce493fbf",
+      "rlm/environments/__init__.py": "9e38801a1428ef19856492bd9176f4938c57d3e206520905bfc314062c2b6cf9",
+      "rlm/environments/base_env.py": "1854046bf09eafe09d005ef4ab243a6e3953b032e1cbd6d6f59fc1078bceacff",
+      "rlm/environments/constants.py": "40131e4857a699b02d54b374e7ccf1c63c32d424d0203d5149e13a769838f9f4",
+      "rlm/environments/daytona_repl.py": "ec94e39d1fd9a440420bba013c929a00e93cc6ce9bbd1ca3218f25281f12bea9",
+      "rlm/environments/docker_repl.py": "8cc6a9ccb25f191b6d90a45d0e59b1132448091f5f717dffa93ba78a579fb76d",
+      "rlm/environments/e2b_repl.py": "ae7b168793f6265198cc833303151e45ffbe3d633a05b4110f217be0759c53a1",
+      "rlm/environments/ipython_repl.py": "e7db72a28d5b26fe976e73ea8ffc03c0230e4c7f5bfec20be98c479fd7c87343",
+      "rlm/environments/local_execution.py": "09e1a948d71ed7fd42ba580c0cfcd9c7a3936b6c6693a13aabdf46175e5608c5",
+      "rlm/environments/local_repl.py": "ec15a16e83e5913c430324eb648fb1b558ae8e5c2c3e36787e38743a0887d524",
+      "rlm/environments/modal_repl.py": "b5196ada65523153b6de8c9953e3b7ef6db64076cd19bc0ba0a89b5b383ab53a",
+      "rlm/environments/prime_repl.py": "644f0314f15e3fb104bb3a82be48924212768b4a3aa906f151c0f7abfaaf3ef9",
+      "rlm/environments/speculative_repl.py": "e82c475d5fc817b8a410ab1e9097118da6a764b28036731e366d52b91f1c78aa",
+      "rlm/logger/__init__.py": "b9976ec2bd77f5b0e2252afa80a7be4f992d25ac69eab832c3544a8799cc6f1f",
+      "rlm/logger/rlm_logger.py": "ab92f346766fc2e9b0c48c92fbc8a05d1b43dbd6535beb6ea0da70c31fe2c374",
+      "rlm/logger/verbose.py": "d7e155400d02ed5a73086a0b7d6982cb6eb7d06256d0e11cbfe24c566e06040d",
+      "rlm/utils/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rlm/utils/exceptions.py": "1f38776b8ded958db854f8692902564b3f36b1b98a6e2f0f33e703efa18a7cde",
+      "rlm/utils/parsing.py": "16754fdc801d8d2fbf98246e1a8f489fd3622bc77dfc4779f58445414b3ea351",
+      "rlm/utils/prompts.py": "35729c0849f7f15d0279c7bfe50cd9d560e9ea3d576767fcfd063f40b4e45406",
+      "rlm/utils/rlm_utils.py": "fdacd27add192703d7ad86d2d0847b98abf59e81ca3b09738f4c7ff73e605ae9",
+      "rlm/utils/token_utils.py": "41ee6244b2dab737ed53a4143ff93a07f4e00db166eded92f16d33cfb7fb8628",
+      "rlm/utils/usage.py": "e683a359f170b7d92d44dfa7cadf0238f596ab9de79e77413d6b8259cf0f282b"
+    },
+    "rootcheck": false,
+    "boundary": "appcontainer-job"
+  },
+  "rootcheck": false,
+  "cleanup": {
+    "profile_deleted": true,
+    "scratch_deleted": true,
+    "payload_grant_removed": true
+  },
+  "actual_return_event": "mock-c8e323160034414aad74da367774c18e:e00065",
+  "actual_return": "Top 3 eligible shipments by requested quantity (ties by numeric Shipment ID ascending):\n1) SH-10106 — requested_qty: 6883\n   Sources: request=R-106, inventory=W-106, quality=Q-106, hold=H-106\n2) SH-10068 — requested_qty: 6846\n   Sources: request=R-068, inventory=W-068, quality=Q-068, hold=H-068\n3) SH-10097 — requested_qty: 6809\n   Sources: request=R-097, inventory=W-097, quality=Q-097, hold=H-097\n\nCombined requested quantity: 20538\n",
+  "answer_extraction": {
+    "method": "Anchored full-response regex matching three numbered rows, quantities, twelve source IDs in request/inventory/quality/hold order and final total. Integers parsed; no sorting, correction or inferred missing values.",
+    "extracted": {
+      "selected": [
+        {
+          "id": "SH-10106",
+          "requested": 6883,
+          "sources": [
+            "R-106",
+            "W-106",
+            "Q-106",
+            "H-106"
+          ]
+        },
+        {
+          "id": "SH-10068",
+          "requested": 6846,
+          "sources": [
+            "R-068",
+            "W-068",
+            "Q-068",
+            "H-068"
+          ]
+        },
+        {
+          "id": "SH-10097",
+          "requested": 6809,
+          "sources": [
+            "R-097",
+            "W-097",
+            "Q-097",
+            "H-097"
+          ]
+        }
+      ],
+      "total": 20538
+    }
+  },
+  "correctness": {
+    "correctness": "correct",
+    "output_coverage": "complete",
+    "missing": [],
+    "field_matches": {
+      "selected": true,
+      "total": true
+    },
+    "support": "human_review_required",
+    "visibility": "human_review_required",
+    "raw_return_reference_required": true
+  },
+  "root_iterations": 8,
+  "provider_calls": 10,
+  "latency_seconds": {
+    "official_completion": 444.48062149999896,
+    "appcontainer_job": 447.1100000000006
+  },
+  "provider_reported_cost_usd": "0.17427805",
+  "conservative_run_accounting_usd": "0.20135005",
+  "accounting_explanation": "Ledger retains max(reported cost, uncached-rate cost). Cache discounts reduce reported charges. Native completion tokens include reasoning and are charged once.",
+  "campaign_exposure_usd": "0.74920790",
+  "carried_preflight_exposure_usd": "0.44882910",
+  "unresolved_prior_reservation_usd": "0.4484480",
+  "new_unresolved_pilot_reservations": false,
+  "tokens": {
+    "prompt_tokens": 58697,
+    "completion_tokens": 73608,
+    "total_tokens": 132305
+  },
+  "reasoning_tokens_included_in_completion": 57472,
+  "cached_prompt_tokens": 24064,
+  "telemetry_conflicts": 0,
+  "delegation": {
+    "plain_sub_llm_calls": 2,
+    "recursive_child_nodes": 0,
+    "recursive_dispatch_events": 0,
+    "provider_calls_by_model": {
+      "openai/gpt-5": 8,
+      "openai/gpt-5-nano": 2
+    }
+  },
+  "python_execution_blocks": 7,
+  "python_stderr_nonempty_blocks": 1,
+  "exception_observation": "One generated SyntaxError at e00016. JSON parse errors caught within Python at e00027 and e00038. Constant exception_detail text is not an exception.",
+  "provider_length_limited_calls": [
+    "attempt-00013"
+  ],
+  "event_counts": {
+    "runtime_identity": 1,
+    "node_start": 1,
+    "python_start": 9,
+    "python_result": 9,
+    "provider_dispatch": 10,
+    "provider_return": 10,
+    "iteration_selection": 8,
+    "formatted_results": 7,
+    "helper_start": 2,
+    "socket_request": 2,
+    "helper_return": 2,
+    "answer_write_attempt": 2,
+    "candidate_capture": 1,
+    "actual_return": 1
+  },
+  "provider_calls_detail": [
+    {
+      "ticket": "attempt-00008",
+      "generation_id": "gen-1795604403-6ayyHl1yz6B8ygywcDet",
+      "provider": "OpenAI",
+      "resolved_endpoint": "openai/gpt-5-2025-08-07",
+      "finish_reason": "stop",
+      "latency_seconds": 18.57257843017578,
+      "usage": {
+        "prompt_tokens": 1643,
+        "completion_tokens": 1197,
+        "total_tokens": 2840,
+        "cost": 0.01402375,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.01402375,
+          "upstream_inference_prompt_cost": 0.00205375,
+          "upstream_inference_completions_cost": 0.01197
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 960,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "verification": {
+        "revision": "native-cost-once-conservative-detail-bound-v1",
+        "resolved_endpoint": "openai/gpt-5-2025-08-07",
+        "reasoning_detail_conflict": false,
+        "reasoning_tokens": 960,
+        "conservative_output_count": 1197,
+        "native_completion_tokens": 1197,
+        "billing_basis": "native_completion_once",
+        "reported_cost_usd": "0.01402375",
+        "expected_cost_usd": "0.01402375"
+      }
+    },
+    {
+      "ticket": "attempt-00009",
+      "generation_id": "gen-1795604421-xjRCGc1GTFEM40cEOXjR",
+      "provider": "OpenAI",
+      "resolved_endpoint": "openai/gpt-5-2025-08-07",
+      "finish_reason": "stop",
+      "latency_seconds": 19.01378631591797,
+      "usage": {
+        "prompt_tokens": 2176,
+        "completion_tokens": 2161,
+        "total_tokens": 4337,
+        "cost": 0.02433,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.02433,
+          "upstream_inference_prompt_cost": 0.00272,
+          "upstream_inference_completions_cost": 0.02161
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1280,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "verification": {
+        "revision": "native-cost-once-conservative-detail-bound-v1",
+        "resolved_endpoint": "openai/gpt-5-2025-08-07",
+        "reasoning_detail_conflict": false,
+        "reasoning_tokens": 1280,
+        "conservative_output_count": 2161,
+        "native_completion_tokens": 2161,
+        "billing_basis": "native_completion_once",
+        "reported_cost_usd": "0.02433",
+        "expected_cost_usd": "0.02433"
+      }
+    },
+    {
+      "ticket": "attempt-00010",
+      "generation_id": "gen-1795604440-DxHarU0kDTGjHVJOYvty",
+      "provider": "OpenAI",
+      "resolved_endpoint": "openai/gpt-5-2025-08-07",
+      "finish_reason": "stop",
+      "latency_seconds": 21.00520133972168,
+      "usage": {
+        "prompt_tokens": 3050,
+        "completion_tokens": 1900,
+        "total_tokens": 4950,
+        "cost": 0.0205085,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 2048,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0205085,
+          "upstream_inference_prompt_cost": 0.0015085,
+          "upstream_inference_completions_cost": 0.019
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1088,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "verification": {
+        "revision": "native-cost-once-conservative-detail-bound-v1",
+        "resolved_endpoint": "openai/gpt-5-2025-08-07",
+        "reasoning_detail_conflict": false,
+        "reasoning_tokens": 1088,
+        "conservative_output_count": 1900,
+        "native_completion_tokens": 1900,
+        "billing_basis": "native_completion_once",
+        "reported_cost_usd": "0.0205085",
+        "expected_cost_usd": "0.0205085"
+      }
+    },
+    {
+      "ticket": "attempt-00011",
+      "generation_id": "gen-1795604461-3IRWg7L4RTK5BhzJQqfK",
+      "provider": "OpenAI",
+      "resolved_endpoint": "openai/gpt-5-nano-2025-08-07",
+      "finish_reason": "stop",
+      "latency_seconds": 149.07192826271057,
+      "usage": {
+        "prompt_tokens": 10771,
+        "completion_tokens": 27890,
+        "total_tokens": 38661,
+        "cost": 0.01169455,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.01169455,
+          "upstream_inference_prompt_cost": 0.00053855,
+          "upstream_inference_completions_cost": 0.011156
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 27776,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "verification": {
+        "revision": "native-cost-once-conservative-detail-bound-v1",
+        "resolved_endpoint": "openai/gpt-5-nano-2025-08-07",
+        "reasoning_detail_conflict": false,
+        "reasoning_tokens": 27776,
+        "conservative_output_count": 27890,
+        "native_completion_tokens": 27890,
+        "billing_basis": "native_completion_once",
+        "reported_cost_usd": "0.01169455",
+        "expected_cost_usd": "0.01169455"
+      }
+    },
+    {
+      "ticket": "attempt-00012",
+      "generation_id": "gen-1795604611-yeUqqbvrVXO9TxiGyub2",
+      "provider": "OpenAI",
+      "resolved_endpoint": "openai/gpt-5-2025-08-07",
+      "finish_reason": "stop",
+      "latency_seconds": 11.521805763244629,
+      "usage": {
+        "prompt_tokens": 3939,
+        "completion_tokens": 1153,
+        "total_tokens": 5092,
+        "cost": 0.01645375,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.01645375,
+          "upstream_inference_prompt_cost": 0.00492375,
+          "upstream_inference_completions_cost": 0.01153
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 384,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "verification": {
+        "revision": "native-cost-once-conservative-detail-bound-v1",
+        "resolved_endpoint": "openai/gpt-5-2025-08-07",
+        "reasoning_detail_conflict": false,
+        "reasoning_tokens": 384,
+        "conservative_output_count": 1153,
+        "native_completion_tokens": 1153,
+        "billing_basis": "native_completion_once",
+        "reported_cost_usd": "0.01645375",
+        "expected_cost_usd": "0.01645375"
+      }
+    },
+    {
+      "ticket": "attempt-00013",
+      "generation_id": "gen-1795604623-vyvMm1nDfjnnXmpaKZGw",
+      "provider": "OpenAI",
+      "resolved_endpoint": "openai/gpt-5-nano-2025-08-07",
+      "finish_reason": "length",
+      "latency_seconds": 152.93905997276306,
+      "usage": {
+        "prompt_tokens": 10716,
+        "completion_tokens": 32768,
+        "total_tokens": 43484,
+        "cost": 0.013643,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.013643,
+          "upstream_inference_prompt_cost": 0.0005358,
+          "upstream_inference_completions_cost": 0.0131072
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 21696,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "verification": {
+        "revision": "native-cost-once-conservative-detail-bound-v1",
+        "resolved_endpoint": "openai/gpt-5-nano-2025-08-07",
+        "reasoning_detail_conflict": false,
+        "reasoning_tokens": 21696,
+        "conservative_output_count": 32768,
+        "native_completion_tokens": 32768,
+        "billing_basis": "native_completion_once",
+        "reported_cost_usd": "0.013643",
+        "expected_cost_usd": "0.013643"
+      }
+    },
+    {
+      "ticket": "attempt-00014",
+      "generation_id": "gen-1795604777-DJkwjYwEwOV7m3HjYAGP",
+      "provider": "OpenAI",
+      "resolved_endpoint": "openai/gpt-5-2025-08-07",
+      "finish_reason": "stop",
+      "latency_seconds": 14.964754343032837,
+      "usage": {
+        "prompt_tokens": 4790,
+        "completion_tokens": 1371,
+        "total_tokens": 6161,
+        "cost": 0.0153775,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 3840,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0153775,
+          "upstream_inference_prompt_cost": 0.0016675,
+          "upstream_inference_completions_cost": 0.01371
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 896,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "verification": {
+        "revision": "native-cost-once-conservative-detail-bound-v1",
+        "resolved_endpoint": "openai/gpt-5-2025-08-07",
+        "reasoning_detail_conflict": false,
+        "reasoning_tokens": 896,
+        "conservative_output_count": 1371,
+        "native_completion_tokens": 1371,
+        "billing_basis": "native_completion_once",
+        "reported_cost_usd": "0.0153775",
+        "expected_cost_usd": "0.0153775"
+      }
+    },
+    {
+      "ticket": "attempt-00015",
+      "generation_id": "gen-1795604794-Lk1wKEN8hvBqagV8naRX",
+      "provider": "OpenAI",
+      "resolved_endpoint": "openai/gpt-5-2025-08-07",
+      "finish_reason": "stop",
+      "latency_seconds": 21.52951455116272,
+      "usage": {
+        "prompt_tokens": 5889,
+        "completion_tokens": 2582,
+        "total_tokens": 8471,
+        "cost": 0.02785325,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 4736,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.02785325,
+          "upstream_inference_prompt_cost": 0.00203325,
+          "upstream_inference_completions_cost": 0.02582
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1088,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "verification": {
+        "revision": "native-cost-once-conservative-detail-bound-v1",
+        "resolved_endpoint": "openai/gpt-5-2025-08-07",
+        "reasoning_detail_conflict": false,
+        "reasoning_tokens": 1088,
+        "conservative_output_count": 2582,
+        "native_completion_tokens": 2582,
+        "billing_basis": "native_completion_once",
+        "reported_cost_usd": "0.02785325",
+        "expected_cost_usd": "0.02785325"
+      }
+    },
+    {
+      "ticket": "attempt-00016",
+      "generation_id": "gen-1795604815-sNJE6plyrXhM2iJ874uy",
+      "provider": "OpenAI",
+      "resolved_endpoint": "openai/gpt-5-2025-08-07",
+      "finish_reason": "stop",
+      "latency_seconds": 17.379178524017334,
+      "usage": {
+        "prompt_tokens": 7813,
+        "completion_tokens": 1566,
+        "total_tokens": 9379,
+        "cost": 0.01894625,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 5760,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.01894625,
+          "upstream_inference_prompt_cost": 0.00328625,
+          "upstream_inference_completions_cost": 0.01566
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1472,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "verification": {
+        "revision": "native-cost-once-conservative-detail-bound-v1",
+        "resolved_endpoint": "openai/gpt-5-2025-08-07",
+        "reasoning_detail_conflict": false,
+        "reasoning_tokens": 1472,
+        "conservative_output_count": 1566,
+        "native_completion_tokens": 1566,
+        "billing_basis": "native_completion_once",
+        "reported_cost_usd": "0.01894625",
+        "expected_cost_usd": "0.01894625"
+      }
+    },
+    {
+      "ticket": "attempt-00017",
+      "generation_id": "gen-1795604833-25BKFPKLXHsmD4qKYN7y",
+      "provider": "OpenAI",
+      "resolved_endpoint": "openai/gpt-5-2025-08-07",
+      "finish_reason": "stop",
+      "latency_seconds": 12.203720092773438,
+      "usage": {
+        "prompt_tokens": 7910,
+        "completion_tokens": 1020,
+        "total_tokens": 8930,
+        "cost": 0.0114475,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 7680,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0114475,
+          "upstream_inference_prompt_cost": 0.0012475,
+          "upstream_inference_completions_cost": 0.0102
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 832,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "verification": {
+        "revision": "native-cost-once-conservative-detail-bound-v1",
+        "resolved_endpoint": "openai/gpt-5-2025-08-07",
+        "reasoning_detail_conflict": false,
+        "reasoning_tokens": 832,
+        "conservative_output_count": 1020,
+        "native_completion_tokens": 1020,
+        "billing_basis": "native_completion_once",
+        "reported_cost_usd": "0.0114475",
+        "expected_cost_usd": "0.0114475"
+      }
+    }
+  ],
+  "evidence": {
+    "results/broker/broker-b3dd0f8ebee74e40a5d794cabbdcec4a.json": {
+      "sha256": "f3ab00fe23fcddaf60e24167bb1f84fe69b4f2f9278565b421628b5151482be5",
+      "bytes": 5508961
+    },
+    "results/broker/broker-b3dd0f8ebee74e40a5d794cabbdcec4a.journal.json": {
+      "sha256": "c9661e19046511c305f699b3331baf9ac92dffb0a061742d95045cf443c1ef50",
+      "bytes": 1023503
+    },
+    "results/broker/broker-b3dd0f8ebee74e40a5d794cabbdcec4a.events.jsonl": {
+      "sha256": "ee1e67a5f910b5b30b50ef2ee7709e42b31a43aef43ad852cf9ea509c7f2ad67",
+      "bytes": 2180874
+    },
+    "results/broker/broker-b3dd0f8ebee74e40a5d794cabbdcec4a.worker-response.json": {
+      "sha256": "89a7aeb42744cbaf14f08a9e21bf6d17f274ec022f8476bd52655d6b2d34023d",
+      "bytes": 1710519
+    },
+    "results/campaigns/official-baseline-v1.json": {
+      "sha256": "b1bd658f34baa44851a2115a2bea2f87e3921b9bf933ec770ec4d19c8ea6768e",
+      "bytes": 23312
+    },
+    "evaluators/oracle_results/S2-v2.json": {
+      "sha256": "7646638b5157739991b1a3594903b4f89e9a9fa19b1d3ccdd3c52a5ebfbfc5c4",
+      "bytes": 54794
+    },
+    "tasks/data/S2-v2/context.txt": {
+      "sha256": "2910a820abaa38032ab01ffd07eb603e06b53a3f683b3f8210808bdd58c44069",
+      "bytes": 32858
+    },
+    "tasks/data/S2-v2/query.txt": {
+      "sha256": "bfcf433d53cbfa8e808d51140ad485b59d6f9392a968819ef2be74a3c1461627",
+      "bytes": 962
+    }
+  },
+  "post_run_checks": {
+    "raw_trace_matches_record": true,
+    "actual_return_matches_worker_result": true,
+    "protected_files_verified": 90,
+    "runtime_hashes_verified": 35,
+    "frozen_implementation_unchanged": true,
+    "all_new_requests_reconciled": true,
+    "campaign_records": [
+      "S1-R01",
+      "S2-R01"
+    ]
+  },
+  "hypotheses": {
+    "H2": "awaiting_evidence_review; see separate retrospective preliminary notes",
+    "H5": "awaiting_evidence_review; see separate retrospective preliminary notes",
+    "H6": "awaiting_evidence_review; see separate retrospective preliminary notes"
+  },
+  "authorization": {
+    "scope": "S2-R01 only",
+    "run_limit_usd": "2",
+    "campaign_limit_usd": "20",
+    "credential_source": "parent-only project .env OPENROUTER_API_KEY",
+    "transport_retries": false,
+    "model_generated_revised_extraction_call": true
+  },
+  "next_run": "S3-R01 requires separate authorization; not executed"
+}

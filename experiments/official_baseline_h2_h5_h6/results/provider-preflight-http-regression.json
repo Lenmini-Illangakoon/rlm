@@ -1,0 +1,8 @@
+{
+  "failures": [],
+  "method": "Existing test_request_policy_and_bounded_read only",
+  "prior_suite_repeated": false,
+  "provider_api_requests": 0,
+  "success": true,
+  "test_methods": 1
+}

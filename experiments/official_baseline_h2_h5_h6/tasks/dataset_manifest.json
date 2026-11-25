@@ -1,0 +1,66 @@
+{
+  "accepted": true,
+  "scenarios": {
+    "S1": {
+      "context_bytes": 44970,
+      "context_sha256": "c5118358cb1320e901483b37cbdef3577d1db8188a18f6b9bcd7b873a89ceaff",
+      "evaluator_version": "serialized-oracles-1",
+      "generator_version": "frozen-historical-bytes-1",
+      "oracle_sha256": "c02c4e01e008ff68055c1891b944eebd83ccaf78d3594ddf4d6db4bf539d6dea",
+      "provenance": {
+        "context.txt": {
+          "commit": "20ea2482bdb75dd7740d48a1eb04b30389a6a3c3",
+          "frozen_sha256": "c5118358cb1320e901483b37cbdef3577d1db8188a18f6b9bcd7b873a89ceaff",
+          "path": "experiments/phase3_failure_analysis/exp3b_outcome_mismatch/instances/seed_301/context.txt",
+          "retrieval": "git_blob",
+          "working_sha256": "1ae99400b07a52ca9cbc0df8c2c6cc7b33666418f5ab09f189bf68f636b555c0"
+        },
+        "query.txt": {
+          "commit": "20ea2482bdb75dd7740d48a1eb04b30389a6a3c3",
+          "frozen_sha256": "2b2906e3bef0677692633e3f297321b87a5651230ff51dd38ff81d668ae10a65",
+          "path": "experiments/phase3_failure_analysis/exp3b_outcome_mismatch/instances/seed_301/query.txt",
+          "retrieval": "git_blob",
+          "working_sha256": "1da967f7061d09ef3c9602252413e918b8a268741e77021b56c4d8f5a34d05e6"
+        }
+      },
+      "query_bytes": 1675,
+      "query_sha256": "2b2906e3bef0677692633e3f297321b87a5651230ff51dd38ff81d668ae10a65"
+    },
+    "S2-v2": {
+      "context_bytes": 32858,
+      "context_sha256": "2910a820abaa38032ab01ffd07eb603e06b53a3f683b3f8210808bdd58c44069",
+      "evaluator_version": "serialized-oracles-1",
+      "generator_version": "S2-v2.1-renderer",
+      "oracle_sha256": "7646638b5157739991b1a3594903b4f89e9a9fa19b1d3ccdd3c52a5ebfbfc5c4",
+      "provenance": {
+        "method": "S2-v2.1-renderer"
+      },
+      "query_bytes": 962,
+      "query_sha256": "bfcf433d53cbfa8e808d51140ad485b59d6f9392a968819ef2be74a3c1461627"
+    },
+    "S3": {
+      "context_bytes": 19942,
+      "context_sha256": "55075334b0f7080a790dda9a4b5582de41cd7a7ce38f424a9af39c52f4dd9009",
+      "evaluator_version": "serialized-oracles-1",
+      "generator_version": "frozen-historical-bytes-1",
+      "oracle_sha256": "ada6c441ccaa69728ffbf0129284d88a5569c0517d1ab05671eba646897f41d8",
+      "provenance": {
+        "context.txt": {
+          "frozen_sha256": "55075334b0f7080a790dda9a4b5582de41cd7a7ce38f424a9af39c52f4dd9009",
+          "path": "experiments/phase3_failure_analysis/exp3f_over_iteration/instances/seed_701/context.txt",
+          "retrieval": "archive_file",
+          "working_sha256": "55075334b0f7080a790dda9a4b5582de41cd7a7ce38f424a9af39c52f4dd9009"
+        },
+        "query.txt": {
+          "frozen_sha256": "ea496d7451d275dd1ecf72c90c9b6f7a271c5812cfe80950194ac3b15572e4ce",
+          "path": "experiments/phase3_failure_analysis/exp3f_over_iteration/instances/seed_701/query.txt",
+          "retrieval": "archive_file",
+          "working_sha256": "ea496d7451d275dd1ecf72c90c9b6f7a271c5812cfe80950194ac3b15572e4ce"
+        }
+      },
+      "query_bytes": 617,
+      "query_sha256": "5303ebc516868daec4aaabc730cfbb04bbf28d478b38524d4403676d006ed36b"
+    }
+  },
+  "version": "approved-offline-1"
+}

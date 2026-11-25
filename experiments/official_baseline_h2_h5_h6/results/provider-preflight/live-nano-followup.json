@@ -1,0 +1,199 @@
+{
+  "status": "stopped",
+  "synthetic_only": false,
+  "policy": {
+    "proposal_sha256": "b44ae48f87dbf0b15c20718b6a3f08da3c246f5f22055b5d6012de2f704c8325",
+    "provider_revision": "openai-preflight-policy-1",
+    "literal_bound_revision": "literal-message-full-cap-v1",
+    "combined_ceiling_usd": "1.00",
+    "prior_live_sha256": "fddc40d75c8dfd4f75ae745b5bbbb796acaf36e62ad642519572577aa33b3bd2",
+    "verification_revision": "preflight-snapshot-billing-review-2",
+    "generation_lookup_sha256": "c06eb9163437a29cc177adcf8e75fc98e0f5d1e1b3b7191a8ccac955d0703bee",
+    "source_hashes": {
+      "broker.py": "611d609c78134a09577e61e1ea4c60f5c0861574497760b657aa77b7d768c97a",
+      "budget.py": "dd23ba927526c697cb16a6cf30b99177b460587d2289549680f5b6fdba0fb585",
+      "provider_preflight.py": "c82060bf96a684fab7ba9cd4d9d68ff191d6d8d82a51701377ee2c01ad766324"
+    }
+  },
+  "policy_sha256": "c5d21b1ad1763860a6b9be8917ea1b444727925b056ebe8c0acc93f6e2135c54",
+  "requests": [
+    {
+      "body": {
+        "model": "openai/gpt-5-nano",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Compute 17 * 19. Reply with only the integer."
+          }
+        ],
+        "max_completion_tokens": 32768,
+        "provider": {
+          "only": [
+            "openai"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true,
+          "max_price": {
+            "prompt": 0.05,
+            "completion": 0.4
+          }
+        }
+      },
+      "ticket": "attempt-00003",
+      "accepted": false,
+      "submitted_at": 1795586315.3161273,
+      "http_status": 200,
+      "received_at": 1795586318.3870041,
+      "provider_response": {
+        "id": "gen-1795586317-cgg8jezhf27NYaJpqhAw",
+        "object": "chat.completion",
+        "created": 1795586317,
+        "model": "openai/gpt-5-nano",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "323",
+              "refusal": null,
+              "reasoning": "**Calculating simple multiplication**\n\nThe user has asked me to compute 17 times 19 and to reply with just the integer. Okay, so I’m calculating that: 17 multiplied by 19 equals 323. I double-checked it by thinking, if 17 times 20 is 340, and subtract 17 from that, it gives me 323. So, I'll only respond with the integer: 323. No extra formatting or information, just that number!",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Calculating simple multiplication**\n\nThe user has asked me to compute 17 times 19 and to reply with just the integer. Okay, so I’m calculating that: 17 multiplied by 19 equals 323. I double-checked it by thinking, if 17 times 20 is 340, and subtract 17 from that, it gives me 323. So, I'll only respond with the integer: 323. No extra formatting or information, just that number!",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABrBnkQ0wmVfXMgV5n2vmOx-k6BHmxY0_YBTDwSAfcQx1sYk-uETgGl1l2xd62mdHnpki7N7y0tpdvQVrVEvomr-bS8rFmv6C62h58jQFLE7VYOsqoWl-gwfbQwBpW3lWCreNTkCbhpUdP32CQT-0Byj2bCYXbKzQinQUNpW3Tda0koXwOu8Ks19W1v3I6LqskWhRcNna-808eEO1T_rLXkodMCiUv2_OrVoPwXSMisFaZaxOaIcm3jj7Q23GEjGqrsa6C5YpKYLKdZN0ufgKW2i2Bvjelnv63OXPf-0KhsK5g_vCw54-wAEWGGF9V3aIJJekfkbiXZonj3Z6OfSbpXjMJYvMGk46tpNOe8pBskqC0wPd9ts1b2U4s71fUyWxlyXRruNczZbusybgrcki1TSjVf8QZj2ZWNiQbdvuVHdp8Q_Jawqo_BLXoPiAr6x5ykddYAzCRSInz-iNQ5wQWAhPmmNGoCnRz9la1SsI6E9lNfugsP7tO-BSqsBjYmAhBaWMfYmdLtpc302ixOi225FhjlsdEe2_0K6DD7tt95q742OPUTvJQNM4lATrCLq2lmgNYqLD6G-BA3rVvUzb06q6-ZXEmb-pCo5r-qDLsLm3ftqPVZ9yDSf5Tre7fD2kN3iTUYh19PNsa7qcXD1NWa0EMrXJZSfwxuTWZDaYAafmu_p2JD_DRpY2mRcASC7JIrUUBLz7wCGSCFGHnX0wT8OBzrZcn4JaoR0xjkHN2WhCLP1AWDgnBxPcPo0Z0QEShamCiVrvpMUJ7bIdML2hLgyVhIcdaqs_kW-tZ5LvMwHRzdHCp-agJJjgUFT90a9qFfg_Y9JWLz28O4JzKWG_3ALz6W4j76NDb5bzD3qlILipopv-_VyW36ZxN8m7jzvSSm2v6gVSOoB9FoklFV1yRd7DBRqNfBrEe09zrokQapndiXVdweIIvnkGjTzFFvUeONA718CLqDr-ZoVwvs48bR8vUjsrglZQUZIpYTVWTrqG0QIGor29IT6wvst1K5d1dA0m9XhdB5SJ-16ify5F5DKB0jf7H_8qf6mEaRzb6tdz0tzTKpmDP2r56dL1NqBZ4ouUvNd8eP_tw2Mb4sGGZM8qGTNlsDW5f6S3KdvQUmhMIOGeTAzq0ydc--KXfmKq5OesvqylMKcFplLp5PfHQroJ-bZCCLYMXPudZ-vnGZb2ieDZluswGi4v1Oho3v9r1aRf4jN30kubN3U-F9ZzCLwAksFhh9bSJs10K56rkTpeZXzGd-k_jyJP9V2CJ3PerSgA5aZP30kv1ELWFJASzDFiCepZvPae2ZCz7rzGv1Ov87oXgcOhlZoIxHbLmNxOkpaNf-jvnrbCi2xoFy5mvRrT5BUxogFzln1pVKInHJk4ruDD8Iga0YiDa8a6syu4KwMQDvtunayZX_-SyT5H0dHK6pi_78vac1EgbSmRBRkpNIUFlfnI9Prm4EdSxNOATIyWpUmztZM0mi8oYgKG6oHx06xMyPhtpAKlPvu8xuI3B7Wo7MBFalE8I40gQo4RGSBjLW73vgGGRr7PqT1rBsC_6XEre7Q_DEYKMUQUjAvSMEMUOe7e9EmeBl87lWmYXUW3tKY4qfYj9R09j5mmnRpVgeTDWqA8wQvJUabbeJYOFf_q-bjfr_H6v6uyJs0UKyfHdGmn2tSZrbReHeHG2GH2i4ialqFJ-gtSJVk5Jerq8kDoT3IkaIBGwlRddCn3RRCOK_zHFd_5fwQHADNoEe9Ss8NVetgj37E9-I8oueeNFqCRUtYE93p__I0beXnbuS-bLRleN_z95j1D_E29kwbq-CsTFyrfFxHmyZ95d0gHmRilA9DGFTxZ5_Mx4u0VwqDHvmEDj4xeHeaMC_bIv0ANPUe0K9Rj0AqTgAOzk3EdaorXKLw1oxHlB9REPa2XQ1Nb3KbnbX4ES5uq45WFnXalME4j5E9xZNYTT-tOgkeDYNFDuaa8rkmdjpzt7CJaIDbTo78R0rrWm19YofdS9CXKkrDlBZnZrH9Z2IGldcwfN_KJiz6dYl8E_yvPWllvkbWZ_7el38K-Q1y2hLMK5pR_yuRkIJWjgTXImqU2AvRTHuXrOiQG8jypc2__WWnasDA1G1ZzkACj_HxiVLw86TDTbn2UbpioN4e-cXKRWuTmEKiABBenFqvzl8rjHQ8fUgYo2tX8KvvSpPt_Y-BgerIKDZAPiU6OqApiIlBdYfeXHBMB3k47HNBBMnIdNsQd3524ul8JIfPVlBxK1ciKxr-VIvY4bfHXK6Lx2TqBsA0rtd2maq6cWuoLf7WL9TADbTjh-poSjpcFpFD0IBKC48Ers9vbCxCpCiDpZ5pKWfBn-EzzMgbXd5lXizYvw5ilvlm389KPfWg5q_1Gv2SbBTCptokYGT9RcumbHaa7f71x5flJwHhKydDLp9cx3O4jthKmg9jXjYGAOdPSdhHVoejDUMXCUZqn5Q7xnGUS-JSBeDiYcETQ5KoihbWWy7FJsx0wBAUCe5gyKGW4_tZGpbPMUbv48Pq7ofR-7gGR6U4aBuDLjTDxvZFNcJz-IKuTiavL_80du9Wympb3uDsQTicOSyffQkP2d5OLu7Kg2Q_v19KuOtgyRxqFIxHGN6xbQpYOeN7c30oMEPaCxoJpwr0hrjqXUlLhpxJqQu_C_USJdkmtf-y-qmr-0aAGwefZqRNkQimzocA0E228ARwJVsvizhpvacKATdBkcmjhAJaCz169oYfe1BeVTTUHxLVdQEc0ZR.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC01LW5hbm8tMjAyNS0wOC0wN3xvcGVuYWkifQ",
+                  "format": "openai-responses-v1",
+                  "id": "rs_00c681ee30126b44016b06790e875c87d1a4ad4bf5b48fdc4b",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 19,
+          "completion_tokens": 91,
+          "total_tokens": 110,
+          "cost": 3.735e-05,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 3.735e-05,
+            "upstream_inference_prompt_cost": 9.5e-07,
+            "upstream_inference_completions_cost": 3.64e-05
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 64,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "openrouter_metadata": {
+          "requested": "openai/gpt-5-nano",
+          "strategy": "direct",
+          "region": "CMB",
+          "summary": "available=1, selected=OpenAI",
+          "attempt": 1,
+          "is_byok": false,
+          "endpoints": {
+            "total": 4,
+            "available": [
+              {
+                "provider": "OpenAI",
+                "model": "openai/gpt-5-nano-2025-08-07",
+                "selected": true
+              }
+            ]
+          },
+          "generation_time": 2556
+        }
+      }
+    }
+  ],
+  "saved_gpt5_reassessment": {
+    "verification_revision": "preflight-snapshot-billing-review-2",
+    "resolved_endpoint": "openai/gpt-5-2025-08-07",
+    "reasoning_tokens": 94,
+    "cached_tokens": 0,
+    "reasoning_detail_conflict": true,
+    "reasoning_semantics": "unresolved_detail_preserved",
+    "conservative_output_count": 126,
+    "billing_basis": "native_completion_count_once",
+    "nonzero_reasoning_observed": true,
+    "service_tier_reported": "default",
+    "expected_cost_usd": "0.00034375"
+  },
+  "ledger": {
+    "rates_kind": "openrouter-public-prices-2026-11-24",
+    "campaign_exposure_usd": "0.44882910",
+    "runs": {
+      "two-request-preflight": {
+        "deadline": 91693.734,
+        "attempts": 1,
+        "stop_reason": "usage_unknown"
+      },
+      "two-request-preflight-attempt-two": {
+        "deadline": 106688.859,
+        "attempts": 1,
+        "stop_reason": "preflight_stopped"
+      },
+      "nano-followup-after-gpt5-review": {
+        "deadline": 107265.812,
+        "attempts": 1,
+        "stop_reason": "preflight_stopped"
+      }
+    },
+    "tickets": {
+      "attempt-00001": {
+        "run_id": "two-request-preflight",
+        "model": "openai/gpt-5",
+        "input_bound": 64000,
+        "output_bound": 32768,
+        "reserved": "0.4484480",
+        "spent": "0",
+        "state": "usage_unknown"
+      },
+      "attempt-00002": {
+        "run_id": "two-request-preflight-attempt-two",
+        "model": "openai/gpt-5",
+        "input_bound": 64000,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.00034375",
+        "state": "reconciled",
+        "reported_cost_usd": "0.00034375",
+        "rate_cost_usd": "0.00034375"
+      },
+      "attempt-00003": {
+        "run_id": "nano-followup-after-gpt5-review",
+        "model": "openai/gpt-5-nano",
+        "input_bound": 64000,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.00003735",
+        "state": "reconciled",
+        "reported_cost_usd": "0.00003735",
+        "rate_cost_usd": "0.00003735"
+      }
+    }
+  },
+  "carry_into_campaign_exposure_usd": "0.44882910",
+  "failure_type": "PreflightRejected",
+  "failed_check": "selected_route"
+}

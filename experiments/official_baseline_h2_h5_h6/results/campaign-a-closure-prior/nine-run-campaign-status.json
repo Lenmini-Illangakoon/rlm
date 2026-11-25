@@ -1,0 +1,513 @@
+{
+  "decision": "CAMPAIGN_INCOMPLETE_BLOCKED_BY_UNRESOLVED_PILOT_USAGE_NO_MORE_REQUESTS_SENT",
+  "planned_slots": 9,
+  "attempted_runs": 8,
+  "completed_runs": 7,
+  "correct_completed_runs": 7,
+  "operational_failure_runs": 1,
+  "not_executed_runs": 1,
+  "campaign_policy_hash": "42889b13f955bc304b39eee8535ae182bde422324c815b7945fb953eefd9e459",
+  "upstream_pin": "e11f1a8f8ee4490686e16dd6463233abe08a07eb",
+  "rootcheck": false,
+  "runs": [
+    {
+      "pilot_id": "S1-R01",
+      "run_id": "broker-eaa4d3f974474c0e807569e72ddf4432",
+      "status": "completed",
+      "reason": null,
+      "correctness": "correct",
+      "actual_return": "Order-ID set (ascending): ['ORD-0001', 'ORD-0002', 'ORD-0005', 'ORD-0006', 'ORD-0007', 'ORD-0008', 'ORD-0009', 'ORD-0010', 'ORD-0011', 'ORD-0013', 'ORD-0014', 'ORD-0016', 'ORD-0018', 'ORD-0019', 'ORD-0020', 'ORD-0021', 'ORD-0023', 'ORD-0024', 'ORD-0025', 'ORD-0027', 'ORD-0028', 'ORD-0031', 'ORD-0032', 'ORD-0033', 'ORD-0036', 'ORD-0037', 'ORD-0042', 'ORD-0043', 'ORD-0048', 'ORD-0050', 'ORD-0051', 'ORD-0052', 'ORD-0053', 'ORD-0057', 'ORD-0059', 'ORD-0060', 'ORD-0061', 'ORD-0062', 'ORD-0064', 'ORD-0066', 'ORD-0067', 'ORD-0068', 'ORD-0071', 'ORD-0072', 'ORD-0075', 'ORD-0076', 'ORD-0077', 'ORD-0079', 'ORD-0081', 'ORD-0085', 'ORD-0087', 'ORD-0088', 'ORD-0089', 'ORD-0091', 'ORD-0092', 'ORD-0093', 'ORD-0094', 'ORD-0095', 'ORD-0096', 'ORD-0100']\nTotal outstanding units: 1361",
+      "root_iterations_completed_observed": 4,
+      "full_run_iteration_total": 4,
+      "root_requests_dispatched": 4,
+      "plain_sub_llm_calls": 0,
+      "genuine_recursive_rlm_calls": 0,
+      "recursive_child_nodes": 0,
+      "provider_attempts": 4,
+      "provider_responses_delivered": 4,
+      "official_seconds": 76.40380520001054,
+      "appcontainer_job_seconds": 79.57799999999406,
+      "known_provider_reported_cost_usd": "0.08246875",
+      "known_conservative_debit_usd": "0.09902875",
+      "unresolved_reservation_usd": "0",
+      "known_tokens": {
+        "prompt_tokens": 23719,
+        "completion_tokens": 6938,
+        "total_tokens": 30657
+      },
+      "usage_complete": true,
+      "raw_events": 33,
+      "strategy_and_recovery": "Explore; JSONL exact-ID/status reconciliation; recompute/check and expose full set; finalize.",
+      "preliminary_hypotheses": {
+        "H2": "no material mismatch demonstrated",
+        "H5": "provisionally not observed",
+        "H6": "no redundant continuation demonstrated"
+      },
+      "formal_assessment": "not finalized; retrospective preliminary notes only",
+      "cleanup": {
+        "profile_deleted": true,
+        "scratch_deleted": true,
+        "payload_grant_removed": true
+      },
+      "evidence": {
+        "report": "S1_R01_EXECUTION_RESULT.md",
+        "summary": "results/S1-R01-summary.json",
+        "notes": "evaluators/S1-R01-preliminary-observations.md",
+        "hashes": {
+          "results/broker/broker-eaa4d3f974474c0e807569e72ddf4432.json": "45af322a32a7e4e6e0aeb447730786abd3553e0be393a4382876e8aa16b226fb",
+          "results/broker/broker-eaa4d3f974474c0e807569e72ddf4432.journal.json": "6f13f44bf35f8ed6087653c949a49c7d0ac1a23fe89c2f4bd1337d15d55851e8",
+          "results/broker/broker-eaa4d3f974474c0e807569e72ddf4432.events.jsonl": "2bbac214ff6bb19781fdc21745b11465819ea4613e65c7a6d262fd77b3d2e40b",
+          "results/broker/broker-eaa4d3f974474c0e807569e72ddf4432.worker-response.json": "7d599cff8a0cec1b61ce15f883e60c9e20a61ece2939583f8660dd2681826775",
+          "results/S1-R01-summary.json": "6f0f0906f92ef7ad8e342555bda349eb03b08b629c5dc4657a092f18e8e6e4a1",
+          "evaluators/S1-R01-preliminary-observations.md": "659a116124bac7422a26024ef3fbb11088d6d2c01e535edc11c395cdb1d5c9b7"
+        }
+      }
+    },
+    {
+      "pilot_id": "S2-R01",
+      "run_id": "broker-b3dd0f8ebee74e40a5d794cabbdcec4a",
+      "status": "completed",
+      "reason": null,
+      "correctness": "correct",
+      "actual_return": "Top 3 eligible shipments by requested quantity (ties by numeric Shipment ID ascending):\n1) SH-10106 — requested_qty: 6883\n   Sources: request=R-106, inventory=W-106, quality=Q-106, hold=H-106\n2) SH-10068 — requested_qty: 6846\n   Sources: request=R-068, inventory=W-068, quality=Q-068, hold=H-068\n3) SH-10097 — requested_qty: 6809\n   Sources: request=R-097, inventory=W-097, quality=Q-097, hold=H-097\n\nCombined requested quantity: 20538\n",
+      "root_iterations_completed_observed": 8,
+      "full_run_iteration_total": 8,
+      "root_requests_dispatched": 8,
+      "plain_sub_llm_calls": 2,
+      "genuine_recursive_rlm_calls": 0,
+      "recursive_child_nodes": 0,
+      "provider_attempts": 10,
+      "provider_responses_delivered": 10,
+      "official_seconds": 444.48062149999896,
+      "appcontainer_job_seconds": 447.1100000000006,
+      "known_provider_reported_cost_usd": "0.17427805",
+      "known_conservative_debit_usd": "0.20135005",
+      "unresolved_reservation_usd": "0",
+      "known_tokens": {
+        "prompt_tokens": 58697,
+        "completion_tokens": 73608,
+        "total_tokens": 132305
+      },
+      "usage_complete": true,
+      "raw_events": 65,
+      "strategy_and_recovery": "Generated SyntaxError; plain nano returns prose; revised extraction reaches output cap; recover with deterministic regex parsing; prose-only planning turn; finalize.",
+      "preliminary_hypotheses": {
+        "H2": "strong prose-for-JSON mismatch candidate; not formally classified",
+        "H5": "provisionally not observed",
+        "H6": "potential avoidable prose-only continuation; redundant computation unestablished"
+      },
+      "formal_assessment": "not finalized; retrospective preliminary notes only",
+      "cleanup": {
+        "profile_deleted": true,
+        "scratch_deleted": true,
+        "payload_grant_removed": true
+      },
+      "evidence": {
+        "report": "S2_R01_EXECUTION_RESULT.md",
+        "summary": "results/S2-R01-summary.json",
+        "notes": "evaluators/S2-R01-preliminary-observations.md",
+        "hashes": {
+          "results/broker/broker-b3dd0f8ebee74e40a5d794cabbdcec4a.json": "f3ab00fe23fcddaf60e24167bb1f84fe69b4f2f9278565b421628b5151482be5",
+          "results/broker/broker-b3dd0f8ebee74e40a5d794cabbdcec4a.journal.json": "c9661e19046511c305f699b3331baf9ac92dffb0a061742d95045cf443c1ef50",
+          "results/broker/broker-b3dd0f8ebee74e40a5d794cabbdcec4a.events.jsonl": "ee1e67a5f910b5b30b50ef2ee7709e42b31a43aef43ad852cf9ea509c7f2ad67",
+          "results/broker/broker-b3dd0f8ebee74e40a5d794cabbdcec4a.worker-response.json": "89a7aeb42744cbaf14f08a9e21bf6d17f274ec022f8476bd52655d6b2d34023d",
+          "results/S2-R01-summary.json": "28d4e8a8a337e93a70bbfae5e0244e31ea749c0685f6923ab34567dd7842d75a",
+          "evaluators/S2-R01-preliminary-observations.md": "604c4cabccce8fba14e1e8ca7b814d17c6ca3c489a88e3861f478613928b7280"
+        }
+      }
+    },
+    {
+      "pilot_id": "S3-R01",
+      "run_id": "broker-deb1b866c6344031816958a484472db8",
+      "status": "completed",
+      "reason": null,
+      "correctness": "correct",
+      "actual_return": "Product IDs: 3731, 4637; Product: 17300647",
+      "root_iterations_completed_observed": 3,
+      "full_run_iteration_total": 3,
+      "root_requests_dispatched": 3,
+      "plain_sub_llm_calls": 0,
+      "genuine_recursive_rlm_calls": 0,
+      "recursive_child_nodes": 0,
+      "provider_attempts": 3,
+      "provider_responses_delivered": 3,
+      "official_seconds": 38.11165470001288,
+      "appcontainer_job_seconds": 40.54700000002049,
+      "known_provider_reported_cost_usd": "0.03427350",
+      "known_conservative_debit_usd": "0.03873750",
+      "unresolved_reservation_usd": "0",
+      "known_tokens": {
+        "prompt_tokens": 7342,
+        "completion_tokens": 2956,
+        "total_tokens": 10298
+      },
+      "usage_complete": true,
+      "raw_events": 27,
+      "strategy_and_recovery": "Inspect section counts; parse/filter/sort/multiply; verify selected rows and finalize.",
+      "preliminary_hypotheses": {
+        "H2": "no material mismatch demonstrated",
+        "H5": "provisionally not observed",
+        "H6": "no redundant continuation demonstrated"
+      },
+      "formal_assessment": "not finalized; retrospective preliminary notes only",
+      "cleanup": {
+        "profile_deleted": true,
+        "scratch_deleted": true,
+        "payload_grant_removed": true
+      },
+      "evidence": {
+        "report": "S3_R01_EXECUTION_RESULT.md",
+        "summary": "results/S3-R01-summary.json",
+        "notes": "evaluators/S3-R01-preliminary-observations.md",
+        "hashes": {
+          "results/broker/broker-deb1b866c6344031816958a484472db8.json": "d276d5a872ce024765cc258d9149a7f2609a89a8497b429547b753ab48a9d4a6",
+          "results/broker/broker-deb1b866c6344031816958a484472db8.journal.json": "2444d704fbb5ea09b43d72a6b2e32acf581722bf7c2d95b8203a26f5b8def602",
+          "results/broker/broker-deb1b866c6344031816958a484472db8.events.jsonl": "1c39a695bb0de291c29c31c7fe96ceb895c6a650e8efd148506a7a8921e1936e",
+          "results/broker/broker-deb1b866c6344031816958a484472db8.worker-response.json": "91dd462434e458a64fa8475bd58257f737c7ec536137c1757bc2329e4526bf4e",
+          "results/S3-R01-summary.json": "63405bc7a2ced1e6f9ed4a6c6b81ad924c8bf0f84d154f1e8d1d8449ca361f05",
+          "evaluators/S3-R01-preliminary-observations.md": "fd9d2343489512046b4c9db66e2dc8b1a7305faae349d3a557eca3d436977e7f"
+        }
+      }
+    },
+    {
+      "pilot_id": "S2-R02",
+      "run_id": "broker-0c0113ea621747e2ace2fa3de8d4bbcb",
+      "status": "completed",
+      "reason": null,
+      "correctness": "correct",
+      "actual_return": "Top 3 eligible shipments by requested quantity (desc), tie-break by Shipment ID (asc):\n1) SH-10106 — requested quantity: 6883 — request: R-106; inventory: W-106; quality: Q-106; hold: H-106\n2) SH-10068 — requested quantity: 6846 — request: R-068; inventory: W-068; quality: Q-068; hold: H-068\n3) SH-10097 — requested quantity: 6809 — request: R-097; inventory: W-097; quality: Q-097; hold: H-097\nCombined requested quantity: 20538",
+      "root_iterations_completed_observed": 5,
+      "full_run_iteration_total": 5,
+      "root_requests_dispatched": 5,
+      "plain_sub_llm_calls": 0,
+      "genuine_recursive_rlm_calls": 0,
+      "recursive_child_nodes": 0,
+      "provider_attempts": 5,
+      "provider_responses_delivered": 5,
+      "official_seconds": 75.12477579998085,
+      "appcontainer_job_seconds": 77.5,
+      "known_provider_reported_cost_usd": "0.07901500",
+      "known_conservative_debit_usd": "0.09485500",
+      "unresolved_reservation_usd": "0",
+      "known_tokens": {
+        "prompt_tokens": 20436,
+        "completion_tokens": 6931,
+        "total_tokens": 27367
+      },
+      "usage_complete": true,
+      "raw_events": 39,
+      "strategy_and_recovery": "Inspect; parse four sections; exact-ID join/filter/rank; expose source/total payload; verify and finalize.",
+      "preliminary_hypotheses": {
+        "H2": "no material mismatch demonstrated",
+        "H5": "provisionally not observed",
+        "H6": "no redundant continuation demonstrated"
+      },
+      "formal_assessment": "not finalized; retrospective preliminary notes only",
+      "cleanup": {
+        "profile_deleted": true,
+        "scratch_deleted": true,
+        "payload_grant_removed": true
+      },
+      "evidence": {
+        "report": "S2_R02_EXECUTION_RESULT.md",
+        "summary": "results/S2-R02-summary.json",
+        "notes": "evaluators/S2-R02-preliminary-observations.md",
+        "hashes": {
+          "results/broker/broker-0c0113ea621747e2ace2fa3de8d4bbcb.json": "ee4721afce45de585c486bb56df346aacbdd1b1f2af8b4b9e781f51a8716a8a9",
+          "results/broker/broker-0c0113ea621747e2ace2fa3de8d4bbcb.journal.json": "1e9af0d8c9e9cfa27c0779095d250b2f6092cebc14770329122969a4e6280e3a",
+          "results/broker/broker-0c0113ea621747e2ace2fa3de8d4bbcb.events.jsonl": "2ea62902609016e554dda219da8b3bb7dc93cc2a4212c12d1f7040f52884666d",
+          "results/broker/broker-0c0113ea621747e2ace2fa3de8d4bbcb.worker-response.json": "ba55df2d2968d3ac7746270ac8ac013c613bb7076e33cbe5375a03167f6b1eb4",
+          "results/S2-R02-summary.json": "43a5b9600fe894240d96b71bbe31c93a3f22829c4e206f91cf0c5427f383c42d",
+          "evaluators/S2-R02-preliminary-observations.md": "17a7f561f987c1ebedd593888ba7a34e14734d3a416e4cd61e4b426b61ef9442"
+        }
+      }
+    },
+    {
+      "pilot_id": "S3-R02",
+      "run_id": "broker-6f457d2d60914ee6b68d8366892facfb",
+      "status": "completed",
+      "reason": null,
+      "correctness": "correct",
+      "actual_return": "Product IDs (ascending): 3731, 4637; Product: 17300647",
+      "root_iterations_completed_observed": 3,
+      "full_run_iteration_total": 3,
+      "root_requests_dispatched": 3,
+      "plain_sub_llm_calls": 0,
+      "genuine_recursive_rlm_calls": 0,
+      "recursive_child_nodes": 0,
+      "provider_attempts": 3,
+      "provider_responses_delivered": 3,
+      "official_seconds": 32.86964320001425,
+      "appcontainer_job_seconds": 35.5,
+      "known_provider_reported_cost_usd": "0.03122600",
+      "known_conservative_debit_usd": "0.03713000",
+      "unresolved_reservation_usd": "0",
+      "known_tokens": {
+        "prompt_tokens": 7448,
+        "completion_tokens": 2782,
+        "total_tokens": 10230
+      },
+      "usage_complete": true,
+      "raw_events": 27,
+      "strategy_and_recovery": "Inspect sections; parse/filter/sort/multiply; submit computed answer.",
+      "preliminary_hypotheses": {
+        "H2": "no material mismatch demonstrated",
+        "H5": "provisionally not observed",
+        "H6": "no redundant continuation demonstrated"
+      },
+      "formal_assessment": "not finalized; retrospective preliminary notes only",
+      "cleanup": {
+        "profile_deleted": true,
+        "scratch_deleted": true,
+        "payload_grant_removed": true
+      },
+      "evidence": {
+        "report": "S3_R02_EXECUTION_RESULT.md",
+        "summary": "results/S3-R02-summary.json",
+        "notes": "evaluators/S3-R02-preliminary-observations.md",
+        "hashes": {
+          "results/broker/broker-6f457d2d60914ee6b68d8366892facfb.json": "a9910757ccc650ea1d8a9be898877c42d0fe6f396330fe33f332a9ef7a762779",
+          "results/broker/broker-6f457d2d60914ee6b68d8366892facfb.journal.json": "d2d202841d219fda0f5a46b0fde71f7f7660cce475b4d4436e976f3041f33bb4",
+          "results/broker/broker-6f457d2d60914ee6b68d8366892facfb.events.jsonl": "ea6566164ee5d941b03da353014465f454efb72dfa9272fcec727ad7caa7938e",
+          "results/broker/broker-6f457d2d60914ee6b68d8366892facfb.worker-response.json": "d0e5cbdd3152c4504d8e348c466ee64b29a1a790b18d213286327d10b01ce7c7",
+          "results/S3-R02-summary.json": "ea5817a850d8a1b6178c526174534722ac4cdc56fb3baa6ae0a4e15b4bee7aaf",
+          "evaluators/S3-R02-preliminary-observations.md": "babbbf5d003595e43a0161feb52721f069a4b72e7620d899ced1cf21aa2fb9ac"
+        }
+      }
+    },
+    {
+      "pilot_id": "S1-R02",
+      "run_id": "broker-4628dc30b5d64041842e5ae24ee1bfe5",
+      "status": "completed",
+      "reason": null,
+      "correctness": "correct",
+      "actual_return": "Order IDs (ascending): ORD-0001, ORD-0002, ORD-0005, ORD-0006, ORD-0007, ORD-0008, ORD-0009, ORD-0010, ORD-0011, ORD-0013, ORD-0014, ORD-0016, ORD-0018, ORD-0019, ORD-0020, ORD-0021, ORD-0023, ORD-0024, ORD-0025, ORD-0027, ORD-0028, ORD-0031, ORD-0032, ORD-0033, ORD-0036, ORD-0037, ORD-0042, ORD-0043, ORD-0048, ORD-0050, ORD-0051, ORD-0052, ORD-0053, ORD-0057, ORD-0059, ORD-0060, ORD-0061, ORD-0062, ORD-0064, ORD-0066, ORD-0067, ORD-0068, ORD-0071, ORD-0072, ORD-0075, ORD-0076, ORD-0077, ORD-0079, ORD-0081, ORD-0085, ORD-0087, ORD-0088, ORD-0089, ORD-0091, ORD-0092, ORD-0093, ORD-0094, ORD-0095, ORD-0096, ORD-0100\nTotal Outstanding Units: 1361",
+      "root_iterations_completed_observed": 3,
+      "full_run_iteration_total": 3,
+      "root_requests_dispatched": 3,
+      "plain_sub_llm_calls": 0,
+      "genuine_recursive_rlm_calls": 0,
+      "recursive_child_nodes": 0,
+      "provider_attempts": 3,
+      "provider_responses_delivered": 3,
+      "official_seconds": 43.422575899981894,
+      "appcontainer_job_seconds": 45.76600000000326,
+      "known_provider_reported_cost_usd": "0.04527075",
+      "known_conservative_debit_usd": "0.05347875",
+      "unresolved_reservation_usd": "0",
+      "known_tokens": {
+        "prompt_tokens": 11847,
+        "completion_tokens": 3867,
+        "total_tokens": 15714
+      },
+      "usage_complete": true,
+      "raw_events": 27,
+      "strategy_and_recovery": "Inspect sections; exact-ID/status reconciliation; sanity checks and direct same-block complete-set formatting/submission.",
+      "preliminary_hypotheses": {
+        "H2": "no material mismatch demonstrated",
+        "H5": "provisionally not observed",
+        "H6": "no redundant continuation demonstrated"
+      },
+      "formal_assessment": "not finalized; retrospective preliminary notes only",
+      "cleanup": {
+        "profile_deleted": true,
+        "scratch_deleted": true,
+        "payload_grant_removed": true
+      },
+      "evidence": {
+        "report": "S1_R02_EXECUTION_RESULT.md",
+        "summary": "results/S1-R02-summary.json",
+        "notes": "evaluators/S1-R02-preliminary-observations.md",
+        "hashes": {
+          "results/broker/broker-4628dc30b5d64041842e5ae24ee1bfe5.json": "f11fcdca6c61995c7da727ec8eca473722e76c739c3199b19d527bfd7ac2d029",
+          "results/broker/broker-4628dc30b5d64041842e5ae24ee1bfe5.journal.json": "73f9a30898a0ea7233d3d34c2400704ac38d255545c315b87bcf1940cd74e58b",
+          "results/broker/broker-4628dc30b5d64041842e5ae24ee1bfe5.events.jsonl": "cad381bf2622e1d17bfe9fd03a62699d34215cd83f49541b4c13120480cab7f8",
+          "results/broker/broker-4628dc30b5d64041842e5ae24ee1bfe5.worker-response.json": "10e87768f5bdbf244056fb3cd7bf68d346ae43af9cfa727e4ea103ed7fb284ee",
+          "results/S1-R02-summary.json": "5c5947cc6a4cb0ecbdc39ff729755ff5875aaacc2bad96bce09a51b647c835ed",
+          "evaluators/S1-R02-preliminary-observations.md": "b9c20ab1f0889ad726825ebda6160351a4fc03caf9fe5072850270b5bddf8031"
+        }
+      }
+    },
+    {
+      "pilot_id": "S3-R03",
+      "run_id": "broker-76d885d665ce467080f1010c58532595",
+      "status": "completed",
+      "reason": null,
+      "correctness": "correct",
+      "actual_return": "3731, 4637, 17300647",
+      "root_iterations_completed_observed": 4,
+      "full_run_iteration_total": 4,
+      "root_requests_dispatched": 4,
+      "plain_sub_llm_calls": 0,
+      "genuine_recursive_rlm_calls": 0,
+      "recursive_child_nodes": 0,
+      "provider_attempts": 4,
+      "provider_responses_delivered": 4,
+      "official_seconds": 41.66937869999674,
+      "appcontainer_job_seconds": 44.34299999999348,
+      "known_provider_reported_cost_usd": "0.03900300",
+      "known_conservative_debit_usd": "0.04303500",
+      "unresolved_reservation_usd": "0",
+      "known_tokens": {
+        "prompt_tokens": 8452,
+        "completion_tokens": 3247,
+        "total_tokens": 11699
+      },
+      "usage_complete": true,
+      "raw_events": 31,
+      "strategy_and_recovery": "Initial prose-only plan; explore; parse/filter/sort/multiply; direct final formatting/submission.",
+      "preliminary_hypotheses": {
+        "H2": "no material mismatch demonstrated",
+        "H5": "provisionally not observed",
+        "H6": "no redundant continuation demonstrated"
+      },
+      "formal_assessment": "not finalized; retrospective preliminary notes only",
+      "cleanup": {
+        "profile_deleted": true,
+        "scratch_deleted": true,
+        "payload_grant_removed": true
+      },
+      "evidence": {
+        "report": "S3_R03_EXECUTION_RESULT.md",
+        "summary": "results/S3-R03-summary.json",
+        "notes": "evaluators/S3-R03-preliminary-observations.md",
+        "hashes": {
+          "results/broker/broker-76d885d665ce467080f1010c58532595.json": "bfeaca9207352c756ff117f2819d846dd90d5fd56c9f4d9c5ae84d0dc4146711",
+          "results/broker/broker-76d885d665ce467080f1010c58532595.journal.json": "bab7accffbb0166fa25927d7da2069bba8e33faa0523464a049676a7a0ed93f5",
+          "results/broker/broker-76d885d665ce467080f1010c58532595.events.jsonl": "827701bfdc7305d0605bae878da3735e0d74fd3ac757e3dbd132efdd08530784",
+          "results/broker/broker-76d885d665ce467080f1010c58532595.worker-response.json": "edaf7aefbfb504dbff36d6f607dc5de7ab685dffcfbdc3a719975fe61006dfa4",
+          "results/S3-R03-summary.json": "bd5403450c94c7a164c525584ebfc78cda6c5dc94dac5d7c5071c14246949151",
+          "evaluators/S3-R03-preliminary-observations.md": "d69634a3aad60f09dcdb86a0c42eecf13aa2fd778b187bf859072c1708660efe"
+        }
+      }
+    },
+    {
+      "pilot_id": "S1-R03",
+      "run_id": "broker-333c608172b94305888a87ea9adf6402",
+      "status": "operational_failure",
+      "reason": "usage_unknown",
+      "correctness": "unassessable: no actual return",
+      "actual_return": null,
+      "root_iterations_completed_observed": 1,
+      "full_run_iteration_total": null,
+      "root_requests_dispatched": 2,
+      "plain_sub_llm_calls": 0,
+      "genuine_recursive_rlm_calls": 0,
+      "recursive_child_nodes": 0,
+      "provider_attempts": 2,
+      "provider_responses_delivered": 1,
+      "official_seconds": null,
+      "appcontainer_job_seconds": null,
+      "known_provider_reported_cost_usd": "0.0169975",
+      "known_conservative_debit_usd": "0.0184375",
+      "unresolved_reservation_usd": "0.3937958750",
+      "known_tokens": {
+        "prompt_tokens": 1782,
+        "completion_tokens": 1621,
+        "total_tokens": 3403
+      },
+      "usage_complete": false,
+      "raw_events": 13,
+      "strategy_and_recovery": "Explore sections successfully; second root HTTP response read fails; stop with unknown usage before reconciliation/answer.",
+      "preliminary_hypotheses": {
+        "H2": "completed exploration shows no material mismatch; interrupted remainder inconclusive",
+        "H5": "not assessable: no actual return / no-return stratum",
+        "H6": "not assessable over incomplete trajectory; no sufficient candidate established"
+      },
+      "formal_assessment": "not finalized; retrospective preliminary notes only",
+      "cleanup": {
+        "profile_deleted": true,
+        "scratch_deleted": true,
+        "payload_grant_removed": true
+      },
+      "evidence": {
+        "report": "S1_R03_EXECUTION_RESULT.md",
+        "summary": "results/S1-R03-summary.json",
+        "notes": "evaluators/S1-R03-preliminary-observations.md",
+        "hashes": {
+          "results/broker/broker-333c608172b94305888a87ea9adf6402.json": "5217d19dde111a1bf539887c909ea64b72dd723b3c3654d410db3a79237e7cd8",
+          "results/broker/broker-333c608172b94305888a87ea9adf6402.journal.json": "ea69eecf4ac90c2ac64801bc856ce3516c25460663d15f2b5e2279893d0c6b2c",
+          "results/broker/broker-333c608172b94305888a87ea9adf6402.events.jsonl": "5c4ae458a260bc315439294a0c13501c916d33c1cf486c2ecc9c3d9f4e8c8f7d",
+          "results/S1-R03-summary.json": "13231c688fc704fed100b9f4cbef260eafab5f0634c72c2bf78385260f7a5a2e",
+          "evaluators/S1-R03-preliminary-observations.md": "15f624f84e49a9966f35d666c13ed16e087fa1e7a8a8707a3a862fbd1eaaadd8"
+        }
+      }
+    },
+    {
+      "pilot_id": "S2-R03",
+      "run_id": null,
+      "status": "not_executed",
+      "correctness": "not_applicable: not executed",
+      "reason": "Blocked by new unresolved pilot ticket attempt-00037 from S1-R03; no skipping/replacement/retry",
+      "provider_attempts": 0,
+      "preliminary_hypotheses": {
+        "H2": "not assessed: no execution evidence",
+        "H5": "not assessed: no execution evidence",
+        "H6": "not assessed: no execution evidence"
+      },
+      "formal_assessment": "not finalized"
+    }
+  ],
+  "known_reported_pilot_cost_usd": "0.50253255",
+  "known_conservative_pilot_debit_usd": "0.58605255",
+  "new_unresolved_pilot_reservation_usd": "0.3937958750",
+  "original_unresolved_preflight_reservation_usd": "0.4484480",
+  "preflight_known_charges_usd": "0.00038110",
+  "known_reported_charges_including_preflight_usd": "0.50291365",
+  "campaign_protected_exposure_usd": "1.4286775250",
+  "remaining_protected_headroom_usd": "18.5713224750",
+  "round_three_known_reported_cost_usd": "0.05600050",
+  "round_three_known_conservative_debit_usd": "0.06147250",
+  "dispatched_provider_attempts": 34,
+  "delivered_provider_responses": 33,
+  "attempts_by_requested_model": {
+    "openai/gpt-5": 32,
+    "openai/gpt-5-nano": 2
+  },
+  "completed_run_root_iterations": 30,
+  "completed_iterations_including_failed_run_prefix": 31,
+  "plain_sub_llm_calls": 2,
+  "genuine_recursive_rlm_calls": 0,
+  "raw_events": 262,
+  "known_tokens_only": {
+    "prompt_tokens": 139723,
+    "completion_tokens": 101950,
+    "total_tokens": 241673
+  },
+  "usage_incomplete_for": [
+    "attempt-00037"
+  ],
+  "censoring": {
+    "resource_censored_runs": 0,
+    "threshold": 2,
+    "triggered_so_far": false,
+    "round_three_boundary_reached": false,
+    "explanation": "Eight attempts retained; third round has not completed. S1-R03 is an operational HTTP-read/unknown-usage failure, not run-level resource censoring. S2-R01 output-capped subcall remains a separate action-level resource confound."
+  },
+  "blocker": {
+    "ticket": "attempt-00037",
+    "request_id": "0a0a4e4a7fa14fa9bbe7c378e06bc041",
+    "failure_type": "IncompleteRead",
+    "http_status": null,
+    "generation_id": null,
+    "billing_usage_unknown": true,
+    "next_slot": "S2-R03",
+    "required_action": "Verified usage/billing evidence and reconciliation under unchanged policy before progression. No new provider lookup, retry, replacement or reservation release performed."
+  },
+  "evidence_completeness": {
+    "all_available_raw_prompts_responses_and_prefixes_preserved": true,
+    "failed_request_complete_or_partial_http_body_available": false,
+    "failed_run_worker_response_available": false,
+    "failed_run_final_answer_or_total_elapsed_available": false,
+    "missing_information_explicitly_documented": true,
+    "all_journals_finalized": true,
+    "all_cleanup_passed": true,
+    "all_runtime_35_hashes_and_protected_90_files_match": true,
+    "frozen_implementation_and_policy_unchanged": true,
+    "prior_evidence_and_preliminary_observations_preserved": true,
+    "unique_provider_generation_and_request_ids": true
+  },
+  "formal_hypothesis_classifications_finalized": false,
+  "no_retries_replacements_preflight_requests_source_changes_or_commits": true,
+  "campaign_snapshot_sha256": "d27c73943a735e128dfaf3dbd57dd59978c1457b83c38f9ff4e261a0edb0c9a0"
+}

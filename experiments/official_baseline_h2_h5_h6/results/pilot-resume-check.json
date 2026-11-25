@@ -1,0 +1,10 @@
+{
+  "campaign_artifact": "results\\campaigns\\offline-resume-check-5fd1ee54e0e141c9a3ba5f7f687815bc.json",
+  "changed_policy_blocked": true,
+  "interrupted_campaign_blocked": true,
+  "live_requests": 0,
+  "pilot_runs_executed": 0,
+  "restored_exposure": "0.00002",
+  "success": true,
+  "unknown_exposure_blocks_dispatch": true
+}

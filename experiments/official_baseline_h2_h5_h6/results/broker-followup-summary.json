@@ -1,0 +1,18 @@
+{
+  "api_requests": 0,
+  "existing_suite_repeated": false,
+  "failures": [],
+  "ledger_reconciliation_regression": "passed separately",
+  "methods": [
+    "test_actual_runtime_routing_concurrency_and_accounting",
+    "test_attempt_denial_kills_instead_of_returning_helper_error",
+    "test_request_policy_and_bounded_read"
+  ],
+  "protected_files_unchanged": true,
+  "run_ids": [
+    "broker-fb94b0fa23ef456caa7097f34eadcbb3",
+    "broker-dbe74f1c6bd0481991f9e7e0b388cecd"
+  ],
+  "success": true,
+  "test_methods": 3
+}

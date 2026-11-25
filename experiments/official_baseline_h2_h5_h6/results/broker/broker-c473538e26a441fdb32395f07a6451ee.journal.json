@@ -1,0 +1,977 @@
+{
+  "run_id": "broker-c473538e26a441fdb32395f07a6451ee",
+  "finalized": true,
+  "ledger": {
+    "rates_kind": "openrouter-public-prices-2026-11-24",
+    "campaign_exposure_usd": "1.12034040",
+    "runs": {
+      "two-request-preflight": {
+        "deadline": 91693.734,
+        "attempts": 1,
+        "stop_reason": "usage_unknown"
+      },
+      "two-request-preflight-attempt-two": {
+        "deadline": 106688.859,
+        "attempts": 1,
+        "stop_reason": "preflight_stopped"
+      },
+      "nano-followup-after-gpt5-review": {
+        "deadline": 107265.812,
+        "attempts": 1,
+        "stop_reason": "preflight_stopped"
+      },
+      "broker-eaa4d3f974474c0e807569e72ddf4432": {
+        "deadline": 109365.968,
+        "attempts": 4,
+        "stop_reason": null
+      },
+      "broker-b3dd0f8ebee74e40a5d794cabbdcec4a": {
+        "deadline": 125332.875,
+        "attempts": 10,
+        "stop_reason": null
+      },
+      "broker-deb1b866c6344031816958a484472db8": {
+        "deadline": 133287.14,
+        "attempts": 3,
+        "stop_reason": null
+      },
+      "broker-0c0113ea621747e2ace2fa3de8d4bbcb": {
+        "deadline": 134399.312,
+        "attempts": 5,
+        "stop_reason": null
+      },
+      "broker-6f457d2d60914ee6b68d8366892facfb": {
+        "deadline": 134619.828,
+        "attempts": 3,
+        "stop_reason": null
+      },
+      "broker-4628dc30b5d64041842e5ae24ee1bfe5": {
+        "deadline": 134735.421,
+        "attempts": 3,
+        "stop_reason": null
+      },
+      "broker-76d885d665ce467080f1010c58532595": {
+        "deadline": 141551.531,
+        "attempts": 4,
+        "stop_reason": null
+      },
+      "broker-333c608172b94305888a87ea9adf6402": {
+        "deadline": 141689.812,
+        "attempts": 2,
+        "stop_reason": "usage_unknown"
+      },
+      "broker-c473538e26a441fdb32395f07a6451ee": {
+        "deadline": 144240.234,
+        "attempts": 3,
+        "stop_reason": null
+      }
+    },
+    "tickets": {
+      "attempt-00001": {
+        "run_id": "two-request-preflight",
+        "model": "openai/gpt-5",
+        "input_bound": 64000,
+        "output_bound": 32768,
+        "reserved": "0.4484480",
+        "spent": "0",
+        "state": "usage_unknown"
+      },
+      "attempt-00002": {
+        "run_id": "two-request-preflight-attempt-two",
+        "model": "openai/gpt-5",
+        "input_bound": 64000,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.00034375",
+        "state": "reconciled",
+        "reported_cost_usd": "0.00034375",
+        "rate_cost_usd": "0.00034375"
+      },
+      "attempt-00003": {
+        "run_id": "nano-followup-after-gpt5-review",
+        "model": "openai/gpt-5-nano",
+        "input_bound": 64000,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.00003735",
+        "state": "reconciled",
+        "reported_cost_usd": "0.00003735",
+        "rate_cost_usd": "0.00003735"
+      },
+      "attempt-00004": {
+        "run_id": "broker-eaa4d3f974474c0e807569e72ddf4432",
+        "model": "openai/gpt-5",
+        "input_bound": 9546,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.0261175",
+        "state": "reconciled",
+        "reported_cost_usd": "0.0261175",
+        "rate_cost_usd": "0.0261175"
+      },
+      "attempt-00005": {
+        "run_id": "broker-eaa4d3f974474c0e807569e72ddf4432",
+        "model": "openai/gpt-5",
+        "input_bound": 22844,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.0331575",
+        "state": "reconciled",
+        "reported_cost_usd": "0.0312855",
+        "rate_cost_usd": "0.0331575"
+      },
+      "attempt-00006": {
+        "run_id": "broker-eaa4d3f974474c0e807569e72ddf4432",
+        "model": "openai/gpt-5",
+        "input_bound": 31452,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.01947125",
+        "state": "reconciled",
+        "reported_cost_usd": "0.01327925",
+        "rate_cost_usd": "0.01947125"
+      },
+      "attempt-00007": {
+        "run_id": "broker-eaa4d3f974474c0e807569e72ddf4432",
+        "model": "openai/gpt-5",
+        "input_bound": 35335,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.0202825",
+        "state": "reconciled",
+        "reported_cost_usd": "0.0117865",
+        "rate_cost_usd": "0.0202825"
+      },
+      "attempt-00008": {
+        "run_id": "broker-b3dd0f8ebee74e40a5d794cabbdcec4a",
+        "model": "openai/gpt-5",
+        "input_bound": 8823,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.01402375",
+        "state": "reconciled",
+        "reported_cost_usd": "0.01402375",
+        "rate_cost_usd": "0.01402375"
+      },
+      "attempt-00009": {
+        "run_id": "broker-b3dd0f8ebee74e40a5d794cabbdcec4a",
+        "model": "openai/gpt-5",
+        "input_bound": 11273,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.02433",
+        "state": "reconciled",
+        "reported_cost_usd": "0.02433",
+        "rate_cost_usd": "0.02433"
+      },
+      "attempt-00010": {
+        "run_id": "broker-b3dd0f8ebee74e40a5d794cabbdcec4a",
+        "model": "openai/gpt-5",
+        "input_bound": 15463,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.0228125",
+        "state": "reconciled",
+        "reported_cost_usd": "0.0205085",
+        "rate_cost_usd": "0.0228125"
+      },
+      "attempt-00011": {
+        "run_id": "broker-b3dd0f8ebee74e40a5d794cabbdcec4a",
+        "model": "openai/gpt-5-nano",
+        "input_bound": 37202,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.01169455",
+        "state": "reconciled",
+        "reported_cost_usd": "0.01169455",
+        "rate_cost_usd": "0.01169455"
+      },
+      "attempt-00012": {
+        "run_id": "broker-b3dd0f8ebee74e40a5d794cabbdcec4a",
+        "model": "openai/gpt-5",
+        "input_bound": 19765,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.01645375",
+        "state": "reconciled",
+        "reported_cost_usd": "0.01645375",
+        "rate_cost_usd": "0.01645375"
+      },
+      "attempt-00013": {
+        "run_id": "broker-b3dd0f8ebee74e40a5d794cabbdcec4a",
+        "model": "openai/gpt-5-nano",
+        "input_bound": 36898,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.013643",
+        "state": "reconciled",
+        "reported_cost_usd": "0.013643",
+        "rate_cost_usd": "0.013643"
+      },
+      "attempt-00014": {
+        "run_id": "broker-b3dd0f8ebee74e40a5d794cabbdcec4a",
+        "model": "openai/gpt-5",
+        "input_bound": 23769,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.0196975",
+        "state": "reconciled",
+        "reported_cost_usd": "0.0153775",
+        "rate_cost_usd": "0.0196975"
+      },
+      "attempt-00015": {
+        "run_id": "broker-b3dd0f8ebee74e40a5d794cabbdcec4a",
+        "model": "openai/gpt-5",
+        "input_bound": 28216,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.03318125",
+        "state": "reconciled",
+        "reported_cost_usd": "0.02785325",
+        "rate_cost_usd": "0.03318125"
+      },
+      "attempt-00016": {
+        "run_id": "broker-b3dd0f8ebee74e40a5d794cabbdcec4a",
+        "model": "openai/gpt-5",
+        "input_bound": 35733,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.02542625",
+        "state": "reconciled",
+        "reported_cost_usd": "0.01894625",
+        "rate_cost_usd": "0.02542625"
+      },
+      "attempt-00017": {
+        "run_id": "broker-b3dd0f8ebee74e40a5d794cabbdcec4a",
+        "model": "openai/gpt-5",
+        "input_bound": 36479,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.0200875",
+        "state": "reconciled",
+        "reported_cost_usd": "0.0114475",
+        "rate_cost_usd": "0.0200875"
+      },
+      "attempt-00018": {
+        "run_id": "broker-deb1b866c6344031816958a484472db8",
+        "model": "openai/gpt-5",
+        "input_bound": 8467,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.01892625",
+        "state": "reconciled",
+        "reported_cost_usd": "0.01892625",
+        "rate_cost_usd": "0.01892625"
+      },
+      "attempt-00019": {
+        "run_id": "broker-deb1b866c6344031816958a484472db8",
+        "model": "openai/gpt-5",
+        "input_bound": 13060,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.01062125",
+        "state": "reconciled",
+        "reported_cost_usd": "0.00903725",
+        "rate_cost_usd": "0.01062125"
+      },
+      "attempt-00020": {
+        "run_id": "broker-deb1b866c6344031816958a484472db8",
+        "model": "openai/gpt-5",
+        "input_bound": 15452,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.00919",
+        "state": "reconciled",
+        "reported_cost_usd": "0.00631",
+        "rate_cost_usd": "0.00919"
+      },
+      "attempt-00021": {
+        "run_id": "broker-0c0113ea621747e2ace2fa3de8d4bbcb",
+        "model": "openai/gpt-5",
+        "input_bound": 8823,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.02254375",
+        "state": "reconciled",
+        "reported_cost_usd": "0.02254375",
+        "rate_cost_usd": "0.02254375"
+      },
+      "attempt-00022": {
+        "run_id": "broker-0c0113ea621747e2ace2fa3de8d4bbcb",
+        "model": "openai/gpt-5",
+        "input_bound": 13436,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.02927",
+        "state": "reconciled",
+        "reported_cost_usd": "0.027542",
+        "rate_cost_usd": "0.02927"
+      },
+      "attempt-00023": {
+        "run_id": "broker-0c0113ea621747e2ace2fa3de8d4bbcb",
+        "model": "openai/gpt-5",
+        "input_bound": 20363,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.01346",
+        "state": "reconciled",
+        "reported_cost_usd": "0.010436",
+        "rate_cost_usd": "0.01346"
+      },
+      "attempt-00024": {
+        "run_id": "broker-0c0113ea621747e2ace2fa3de8d4bbcb",
+        "model": "openai/gpt-5",
+        "input_bound": 23971,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.0113825",
+        "state": "reconciled",
+        "reported_cost_usd": "0.0063425",
+        "rate_cost_usd": "0.0113825"
+      },
+      "attempt-00025": {
+        "run_id": "broker-0c0113ea621747e2ace2fa3de8d4bbcb",
+        "model": "openai/gpt-5",
+        "input_bound": 26297,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.01819875",
+        "state": "reconciled",
+        "reported_cost_usd": "0.01215075",
+        "rate_cost_usd": "0.01819875"
+      },
+      "attempt-00026": {
+        "run_id": "broker-6f457d2d60914ee6b68d8366892facfb",
+        "model": "openai/gpt-5",
+        "input_bound": 8467,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.01399625",
+        "state": "reconciled",
+        "reported_cost_usd": "0.01255625",
+        "rate_cost_usd": "0.01399625"
+      },
+      "attempt-00027": {
+        "run_id": "broker-6f457d2d60914ee6b68d8366892facfb",
+        "model": "openai/gpt-5",
+        "input_bound": 12809,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.01522125",
+        "state": "reconciled",
+        "reported_cost_usd": "0.01363725",
+        "rate_cost_usd": "0.01522125"
+      },
+      "attempt-00028": {
+        "run_id": "broker-6f457d2d60914ee6b68d8366892facfb",
+        "model": "openai/gpt-5",
+        "input_bound": 15839,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.0079125",
+        "state": "reconciled",
+        "reported_cost_usd": "0.0050325",
+        "rate_cost_usd": "0.0079125"
+      },
+      "attempt-00029": {
+        "run_id": "broker-4628dc30b5d64041842e5ae24ee1bfe5",
+        "model": "openai/gpt-5",
+        "input_bound": 9546,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.0166575",
+        "state": "reconciled",
+        "reported_cost_usd": "0.0152175",
+        "rate_cost_usd": "0.0166575"
+      },
+      "attempt-00030": {
+        "run_id": "broker-4628dc30b5d64041842e5ae24ee1bfe5",
+        "model": "openai/gpt-5",
+        "input_bound": 18959,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.0193625",
+        "state": "reconciled",
+        "reported_cost_usd": "0.0174905",
+        "rate_cost_usd": "0.0193625"
+      },
+      "attempt-00031": {
+        "run_id": "broker-4628dc30b5d64041842e5ae24ee1bfe5",
+        "model": "openai/gpt-5",
+        "input_bound": 24154,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.01745875",
+        "state": "reconciled",
+        "reported_cost_usd": "0.01256275",
+        "rate_cost_usd": "0.01745875"
+      },
+      "attempt-00032": {
+        "run_id": "broker-76d885d665ce467080f1010c58532595",
+        "model": "openai/gpt-5",
+        "input_bound": 8467,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.00808625",
+        "state": "reconciled",
+        "reported_cost_usd": "0.00808625",
+        "rate_cost_usd": "0.00808625"
+      },
+      "attempt-00033": {
+        "run_id": "broker-76d885d665ce467080f1010c58532595",
+        "model": "openai/gpt-5",
+        "input_bound": 9233,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.01320875",
+        "state": "reconciled",
+        "reported_cost_usd": "0.01162475",
+        "rate_cost_usd": "0.01320875"
+      },
+      "attempt-00034": {
+        "run_id": "broker-76d885d665ce467080f1010c58532595",
+        "model": "openai/gpt-5",
+        "input_bound": 12200,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.00967625",
+        "state": "reconciled",
+        "reported_cost_usd": "0.00967625",
+        "rate_cost_usd": "0.00967625"
+      },
+      "attempt-00035": {
+        "run_id": "broker-76d885d665ce467080f1010c58532595",
+        "model": "openai/gpt-5",
+        "input_bound": 14719,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.01206375",
+        "state": "reconciled",
+        "reported_cost_usd": "0.00961575",
+        "rate_cost_usd": "0.01206375"
+      },
+      "attempt-00036": {
+        "run_id": "broker-333c608172b94305888a87ea9adf6402",
+        "model": "openai/gpt-5",
+        "input_bound": 9546,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.0184375",
+        "state": "reconciled",
+        "reported_cost_usd": "0.0169975",
+        "rate_cost_usd": "0.0184375"
+      },
+      "attempt-00037": {
+        "run_id": "broker-333c608172b94305888a87ea9adf6402",
+        "model": "openai/gpt-5",
+        "input_bound": 24253,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.0256825",
+        "state": "reconciled",
+        "reported_cost_usd": "0.0238105",
+        "rate_cost_usd": "0.0256825"
+      },
+      "attempt-00038": {
+        "run_id": "broker-c473538e26a441fdb32395f07a6451ee",
+        "model": "openai/gpt-5",
+        "input_bound": 8823,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.01225375",
+        "state": "reconciled",
+        "reported_cost_usd": "0.01225375",
+        "rate_cost_usd": "0.01225375"
+      },
+      "attempt-00039": {
+        "run_id": "broker-c473538e26a441fdb32395f07a6451ee",
+        "model": "openai/gpt-5",
+        "input_bound": 17331,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.0286025",
+        "state": "reconciled",
+        "reported_cost_usd": "0.0268745",
+        "rate_cost_usd": "0.0286025"
+      },
+      "attempt-00040": {
+        "run_id": "broker-c473538e26a441fdb32395f07a6451ee",
+        "model": "openai/gpt-5",
+        "input_bound": 23261,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.01892",
+        "state": "reconciled",
+        "reported_cost_usd": "0.0146",
+        "rate_cost_usd": "0.01892"
+      }
+    }
+  },
+  "provider_records": [
+    {
+      "request_id": "ba6b0b298a1f46b4875272e2f6440988",
+      "ticket": "attempt-00038",
+      "body": {
+        "model": "openai/gpt-5",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a Recursive Language Model (RLM): a language model with a prompt, and a very important context stored in a Python REPL related to that prompt.\nYou can iteratively interact with the a Python REPL, which has access to LLM calls as a function. You will be queried turn-by-turn until you have an answer to the query.\n\nTo use the REPL, you need to write code in ```repl``` blocks; the REPL persists across turns. Available in the REPL:\n- `context`: the important, potentially very long information related to the prompt (typically `str` or `list[str]`).\n- `llm_query(prompt: str, model: str | None = None) -> str`: a single sub-LLM completion. Use for extraction, summarization, or Q&A over a chunk of text. Sub-LLM context window ≈ 500K chars.\n- `llm_query_batched(prompts: list[str], model=None) -> list[str]`: concurrently call several LLM calls in parallel over a list of prompts; same order out as in.\n- `rlm_query(instruction, context, model=None) -> str`: recursive RLM sub-call with its own REPL and iteration. The instruction goes directly into the child's model messages; context is stored in its REPL as `context`. Pass a focused instruction and the relevant data separately, e.g. `rlm_query(\"Identify the trend; return up, down, or stable\", context=data)`.\n- `rlm_query_batched(queries, model=None) -> list[str]`: `queries` is a list of `(instruction, context)` pairs, e.g. `[(\"Summarize\", doc_a), (\"Extract dates\", doc_b)]`. Run these concurrently, each with its own child REPL; results preserve input order. Both recursive helpers fall back to plain LM calls containing the instruction and context at the depth limit.\n- `SHOW_VARS() -> str`: list every variable currently in the REPL.\n- `answer`: dict initialized to `{\"content\": \"\", \"ready\": False}`. To submit, set `answer[\"content\"]` to the final answer and `answer[\"ready\"] = True` inside a ```repl``` block.\n\n\nREPL outputs over ~20K characters are truncated, so for longer payloads slice `context` and pass slices through `llm_query` rather than `print`-ing them whole. The REPL is NOT a Jupyter cell — only `print(...)` output (stdout) is shown back to you between turns; a bare expression on the last line is silently discarded. Always wrap inspections in `print(...)`.\n\nAs a general strategy, you should start by probing your context to understand it better (e.g. print a few lines, count them, etc.). Then, use the REPL to build up an answer to the query.\n\nPlan in prose, then execute one ```repl``` block every turn, get feedback from the output, then continue on the next turn. Do not flip `answer[\"ready\"] = True` on turn 1 without first inspecting `context`.\n\n\nAs an RLM, you should act as an orchestrator, not a solver.\n\nDirectly after you probe the `context` and understand your task, pause and plan: state explicitly how the task decomposes into sub-LLM / REPL steps, and sketch the concrete sequence of turns — what each turn computes and which sub-LLM call (if any) it issues — like a condensed trajectory, before you execute them. Then execute one turn at a time: after each step `print` a small sample of the result, verify it looks right, and only flip `answer[\"ready\"] = True` once you have actually printed the candidate answer. If you are running out of turns without a confirmed answer, submit your best inference rather than letting the rollout terminate unsubmitted.\n\nYour own context window is small. Push every long-context operation that would not fit comfortably in your own working window — reading, summarizing, classifying, verifying, answering sub-questions, even recapping your own progress — into `llm_query` / `llm_query_batched` calls instead of pulling that text into your own message stream. (Conversely: if a Python keyword / regex search over `context` would already pin the answer, or if a single visible passage already contains it, just read it directly — sub-LMs are for when the raw text won't fit or the question needs semantic interpretation.) Long REPL stdout pollutes history the same way raw `context` does: if you want a recap, ask `llm_query` for a 1–2 sentence summary and `print` only that. Aggregate the small results back in the REPL.\n\nPlain sub-LLMs called via `llm_query` have no REPL; they only see the prompt and the `context` slice you pass them. Hand them clean, focused inputs and ask for terse, structured outputs you can manipulate programmatically.\n\nSub-call budget is finite on two independent axes, and `llm_query_batched` only parallelizes — it does not relax either. (1) Per-prompt capacity: a single sub-call answers well only when its input stays modestly sized — a useful rough ceiling is ~100K characters per prompt, less when the text is dense. Pack each prompt close to that capacity (a chunk of many items, a whole document) so one call accomplishes a lot of work. (2) Per-batch fan-out: `llm_query_batched` concurrency is bounded too — a useful rough ceiling is ~20 prompts per batch. Tiny-prompt mega-batches (hundreds or thousands of single-item prompts) are the anti-pattern; fat-prompt small batches are correct. For many independent units, use several ~20-wide batches of full-capacity prompts in sequence, not one mega-batch of tiny prompts. When the work can be expressed either as a sequential loop of `llm_query`s or as one comparably-sized batched call, prefer batched — same total work, far fewer turns burned. After Python-side filtering has narrowed the candidate set, batch-extract the survivors rather than reading them by hand. If the raw workload exceeds both budgets at once (e.g. a context far larger than ~20 × 100K chars), don't brute-force it: filter aggressively in Python first to a tractable subset, or stage the task — a cheap coarse pass narrows candidates, then a targeted second pass extracts from the survivors.\n\nReserve your own tokens for high-level decisions: what to ask next, how to combine sub-LM outputs, when to finalize. Delegate everything else."
+          },
+          {
+            "role": "user",
+            "content": "Answer the following: Using the current Shipment Requests, Warehouse Inventory, Quality Release,\nand Dispatch Holds sections, identify the three eligible shipments with the\nlargest requested quantities.\n\nThere are 160 current shipments, each with exactly one note in each of those\nfour sections. Match notes only by exact Shipment ID. A shipment is eligible\nwhen its requested quantity is positive, its available quantity is at least\nits requested quantity, its quality status is APPROVED, and its dispatch\nhold status is NONE. Archived Shipments are out of scope.\n\nRank eligible shipments by requested quantity descending, breaking ties by\nnumeric Shipment ID ascending. Return exactly three Shipment IDs in that\norder, each requested quantity, and the combined requested quantity.\n\nFor each selected shipment, also give the four source IDs identifying its\nrequest, inventory, quality, and hold notes. Formatting is flexible, but all\nrequested values and source IDs must be present.\n\n\nYour context is a str of 32858 total characters. Each sub-LLM call can handle roughly ~100k tokens at once."
+          },
+          {
+            "role": "user",
+            "content": "You have not interacted with the REPL environment or seen your prompt / context yet. Look at the context first; do not provide a final answer yet.\n\nTurn 1/10:"
+          }
+        ],
+        "max_completion_tokens": 32768,
+        "provider": {
+          "only": [
+            "openai"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true,
+          "max_price": {
+            "prompt": 1.25,
+            "completion": 10
+          }
+        }
+      },
+      "worker_correlation": {
+        "node": "mock-2c9c23df404b42289d56fc640273ae1a:e00002",
+        "action": null,
+        "slot": null
+      },
+      "delivered": true,
+      "dispatched_at": 1795623302.819947,
+      "received_at": 1795623317.2778392,
+      "provider_response": {
+        "id": "gen-1795623306-ENoqo8Q7hr6AMyUK85zj",
+        "object": "chat.completion",
+        "created": 1795623306,
+        "model": "openai/gpt-5",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "Plan:\n- Step 1: Inspect the context to understand its structure (section headers, note formats, field names, how source IDs are labeled).\n- Step 2: Identify clear boundaries for the four “current” sections and any “Archived” section to exclude.\n- Step 3: Use a single sub-LLM extraction pass to parse all notes into structured JSON per section, capturing for each note: Shipment ID, requested quantity, available quantity, quality status, hold status, and each note’s source ID.\n- Step 4: Join the four sections by exact Shipment ID, filter to eligible shipments (requested_qty > 0, available >= requested, quality APPROVED, hold NONE), exclude any archived shipments.\n- Step 5: Rank by requested quantity desc, tie-break by numeric Shipment ID asc; pick top 3.\n- Step 6: Prepare final result including three Shipment IDs in order, each requested quantity, combined requested quantity, and for each shipment the four source IDs (request, inventory, quality, hold). Verify by printing a compact preview.\n- Step 7: Submit final answer.\n\nNow inspecting the context structure.\n\n```repl\nprint(type(context))\nprint(len(context))\nprint(context[:1000])\nprint(\"...SECTION HEADERS PREVIEW...\")\n# Try to locate likely section headers\nimport re\nheaders = re.findall(r'(?m)^[A-Z][A-Za-z ]{2,}$', context[:10000])\nprint(headers[:20])\n\n# Show a few lines around occurrences of keywords to understand formatting\nfor kw in [\"Shipment Requests\", \"Warehouse Inventory\", \"Quality Release\", \"Dispatch Holds\", \"Archived\"]:\n    idx = context.find(kw)\n    print(f\"\\n== {kw} at {idx} ==\")\n    if idx != -1:\n        start = max(0, idx-200)\n        end = min(len(context), idx+800)\n        print(context[start:end])\n```",
+              "refusal": null,
+              "reasoning": "**Parsing shipments data**\n\nI’m planning to parse the shipments list into a dictionary, using Shipment ID as the key for attributes like requested quantity, available quantity, quality status, hold status, and an archived flag. There are currently 160 shipments, and I want to focus only on the current ones, ignoring anything archived. I'll also extract source IDs for the respective notes. While the context length is manageable, applying a sub-LLM for parsing would be a best practice. However, I could also use Python if the text is structured appropriately.**Planning shipment data extraction**\n\nI need to determine the structure before I proceed with parsing. First, I’ll inspect the content to identify section headers and count occurrences. Then, I plan to use llm_query to extract a structured JSON for four sections while including source IDs. I’ll craft a prompt for the sub-LLM to retrieve arrays of notes with required fields. Even though 32,000 characters is manageable, I could consider letting the sub-LLM compute the top three based on criteria while returning source IDs. I want to make sure I pipeline the extraction and computation.**Identifying section headings**\n\nI'm going to start by printing the first 500 characters of the content to look for section headings. This will help me identify how the information is organized. Once I spot the headings, I'll have a better idea of how to proceed with the parsing and extraction processes. This initial step should clarify the structure I need to work with going forward. Alright, let's see what those first few lines reveal!",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Parsing shipments data**\n\nI’m planning to parse the shipments list into a dictionary, using Shipment ID as the key for attributes like requested quantity, available quantity, quality status, hold status, and an archived flag. There are currently 160 shipments, and I want to focus only on the current ones, ignoring anything archived. I'll also extract source IDs for the respective notes. While the context length is manageable, applying a sub-LLM for parsing would be a best practice. However, I could also use Python if the text is structured appropriately.**Planning shipment data extraction**\n\nI need to determine the structure before I proceed with parsing. First, I’ll inspect the content to identify section headers and count occurrences. Then, I plan to use llm_query to extract a structured JSON for four sections while including source IDs. I’ll craft a prompt for the sub-LLM to retrieve arrays of notes with required fields. Even though 32,000 characters is manageable, I could consider letting the sub-LLM compute the top three based on criteria while returning source IDs. I want to make sure I pipeline the extraction and computation.**Identifying section headings**\n\nI'm going to start by printing the first 500 characters of the content to look for section headings. This will help me identify how the information is organized. Once I spot the headings, I'll have a better idea of how to proceed with the parsing and extraction processes. This initial step should clarify the structure I need to work with going forward. Alright, let's see what those first few lines reveal!",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABrBwmVMdU3USOh77cKc40qc7fI2NLNnfI5AWz4j37vbO4SrLLAqnJnYP2GEHy8wW4lcr0e23JgGC8IWrrUp0hECj3nRazkAvLfVBkSg_-tMl13UV-ZQiwHCgeGGMsSk8XDB-crcasgECqo9lTLgf_KITYdWnInFVfBgsrJBaoKKzjGN74YSDXtI_k1VdCnuQ4Yy6biaW6iTVSpqLXjibqixB6NFablGwrKhaGQuwy7oaOM6MRalt5HMmMLCg9Ctdzx_O5yqK-CwESO3QbariTGzAyAIVX08ftiFvJyAqk0kDlZsKiaQR8a7rKyukhkNNCvHup9I-hZUP8YOwb97sbdiNDo2TCsIqgHeiiuYJXtrlOcyQKM9FSXLSlyXXysHBa98qBuIN92QkB0n2VYaE9Yyeg9OmF6Qnidc4yPIEc7ek82fHGVH9VMQfLvJg1AqLDwxur6hrnkKrAd2o4eNas6r8mp6SA81iBUCc6YYcn-rjhnmoaYmWRFUWcLBm86REC2y6pYFZ5H5P5omNDOHg9JaxGQWyaqayzYai3s0f4ZlcvCOM-z3IwouCCo6ENnU9MrpXSsZFdAGWfbJwPj23ciqZHZFvyoZhfBwkQo1FSLaRXBsG4dg-WdcOr9JhMCLs4SOwq_DWqgHnDcehK8d-41SWt2Q7YAG7txN0xhf75f-xhzf8i_0sLX2eAY4wG3UlZVcbfBj3Rhy30iErA19uWdBnlr5d8bW2YwN_MB62IpigeZh-LXFqhDqPOCKIC90cpe3noZOypVLCqmkfVZ1S4r9BzLcyogEBTzMy4nwQOx_CVERpDmhUcK-int67XJz4JmU2TsN8eSISmEjlGgETLSgQviAtGsgAeXyyDJRRlUgR0gLkgfVLCSFlvsvWHLwfasNlYsnsmPmmg67xs_M9zzedhH0krvflc8EQDo6Oj-E1APt6kYydzEKyJsFRUhZtcjPh1Y1FaOiRosPtrTnY6zYohM3wycGzvCSZnBBEqwUOlpIXJv4Vq4q3zWY2ADZxXywS1wZnkm7Z8g_4e-bf4hLrX98aT0kKzalHl7JuEN_2hnlq4Kx7wAWs9q4niMw1DRxcxNXGLHV_ksdNPbnvBYEgJ9VhCVo8KAT8Ec2SihKr0wrqnZMr3Ehg6Z2BjXEpWv45KFX9hFh2e7mDd2k2Da-XJF85BpwvxTF_Uu-MRzUcq67B5AkN5tDUtP_TwnnWMi3sXbyLg716qwtUR3TxQFz9HpEBlMfQ3JfRXDq1d4t7B3aoRyIFS66UPNkF57HPYmAodl74zlOAyp8KarUR5S25GeTj62uc-XPIvlopVhn8DUX2CMmLu_yfOdlRjEMlEgPNW7GI_8V32AQYr7YaeJhC26qeWX7nJP7NTeqgPm3oh45quSDntEdKv0FfpINu82TfC1q3mf-zIhZXUGgtbNCCwOOZrUzQFHOC5AVxFQ0Nj3g8y8eoXygO4tFWW0gXGc06gij6wRYKBIZWJIH7yItNLEsSaTwjtEQyAQDTF6BwU1R947wsULz1MxeGQtHkDtJ36izRifqn-tvvH4ziRBFyebb306X1mTI0pqwQaOBJ-D0LXC5aWWRd175f7PZYe94ONkavA6u5V4wBrc9IaOE0XaUl-YW_0T2iX5g7M7y3ehc4IAQgitabpQnN2sfqHIVl0OZ_Ptrlnip8gezbSiguMEYFV-JFPUeDwIRzuDFge28VsCoVIWU3vIkFYQAG5ZeZtU_n0PbSHifOsCimcB4iU5ilLIOMeX1KjtRw0k7GFHlZbCbYed9krLKwRelGZuE7CJ1WOff5Lkm8fLFa0-_jXVruzw-2ASRACoHeYOKk6-O0tajfwvBlPL5vBJXnY_-ysvwEf2a-rkuSFXcsWF24M0uMa1y_XuWMUPB05pFEUdF9zUIfRfJs1niowm-VO7LCZQI74Jco-gWKaCJe3buTsNu6SJ52Plb7UWavuJ8FMq8lHfekg37VzQVuVZ2hah8YatVJjvO8hDHsw4AKPEGQAIEh-9wpt9scVDR-CrbX4O7_FgIVTu2F02IoqNP0sKFISvZYDghO99XHKrmEJGi4YVyFhIdiMviocWqfBtvo2sR6rBJKkdmPtCKuqDfBKkwNJt1g90gvxgc6-bbfKnYbjxeeKxK6hfTnys6n5Wzq_h_u9DuCGptRgmv9jtuETYG3XSJrVu9NPCGJ86Gxl_HZCfB7AQbHgPlDOpurU8lwkVq-0iEyfUNAlkFo7QLp1LUkwvxNnBHIYhecw5zEM7kIotoxTCoBmOq1_WBPZGAHJdTfwz8j7diOn0-OnmsoiRJcI-DkH1Y5pGg0XDYnVr-fwVycI3XRdqiN5cISiyBsc-tF8IKvgXGVi_NmcNTY5OluHuRGZYHGTBIXa7Zh0FYZwym_SbHHGmrpNt2zqBzjMKcXI1siifxBm9GHwGZksYReCNN3P9iyRIw8-V-uqd9_l8Lszo1jdO1Ku-Go0HXsyny2pGuRkVrh4FyU2t54v-bZO14xcd160DDvAasZzDrPsC06i7EOJf_Hep_z8c0yOL3nzDPFvBF_snKIUxhlvuepZ2sBLBlMyvxAFGVjYv5_Al2IkhTIwUmANfVK_pT0DRHBgDz1kQwpZPzsBD7G-KrtZOWNFm69aBuWLnArYPh_TAV_7r8L2SrWetxQN4eQ78AER8dR2l31j8vDr9TbD5mt8yIqtzy-9yj91coWg1Xc0oRL87EknG9oP7sjrzsh5fC_NV2GWt3tzM7r1IdHMiOCW52CP4Os0l6jrdzX5n_iu7RL8RQg2zRmPIpZV0M4luamm4w3LgYWkf5yR6pufxmeqMLAntsrP_Ayp1IqrMLLP8OU-e3QLS-RJjKysthyqdBmd5PeqwVzpOs783HIKFhaFdopoIgIfyZ155elTTofTdNuy1xvH1SDNHdck_Nf-wxhhce7XIeqwHxNVCySf2Z2c8vV5Tb0GmC-bERxgRc0YG3YegiBP2FmvPtV3IXaHaVZnWZbaSKm4GQQAd4HvEeutnxJyVD-14yF3kCUsalXcdcOpuCRfrQaFFu76rpXtuarArrjc3KwL3hf8FjOQ1ZixWepGSP8EFRwCCPKWU0N6c7bZsl4bdiznhsD3Ri0UO4VRQ1rkJHEIOjEcYXLX_PaUnir_gDLBk1IHn2nrX8fKGhmxdjTJnAbRV6oUeZYyw4haMwYwpVJoFOHsZLwLb4aARSvVAuyc1eVaD9Yum2HObuR0pZntr72reOCu0nOiHKN3vJR9ZwNjDmNSDyCYTgdZNRcEPIVPEiQiQXBKOBigZv3tK37XencI8v1Dl3vzYc9JSckPMYv7hp0nOVODbaHTul2TI8Lhs0z-V8Y9MRGCPszDgQosCrQZR5YAqOY8Spz21veGm75tYyg91gucMdgskXvj3eNDuS8bRjyuHnFlCajKHCjf1F8aQCOGzlzJjTK2zbuNtmrQaWtRppSNsoEoJwfu8t_JrbpRAZQMj6cHUtFQfQ00U0vlNDf59wPSiLMFsuVpskJ9BSUJeFhvfXH5FVI-nS7jlAMmIkQK85yhDhpvcr3ElvhDTcGHA3cZGwOYVox6uXRQ6NBEpPe_9BTtCbeggjlLirI5pVGtWR0DIAY8VeWh1-z6IW68cv9w_gZBKR2uT9S4YTpsSdfXHo0Tvpi-ywPBc1WZoN9X_SJL1iepgBFKYZzB2jjmeWgt6NeOo2Lw2Dob4e27ZsMxKKsZwaor4xojBEEIm76UP1U1Nu1PviKrMsRDWgsBXFgvtwnchnBkQu-6gptiq4WKTFcKoie8lRwzY05epaIa8BvaNOOpDX17LvB4_d0f6-vGoUoncEfT3eVwBnd7EletiJR0I9ra2OfPTmFTqbkMwaCcyu5gqiLtKMZDQf-ekzjywWfxfm-j6Np4KfDEPtlieCfr_vAMkrzAWpNNmi2jb8FYDP13-hsxfpDyCIy8LW8AQkvatWqE01_2c1T9NYmAiRYAE9sYFF_WVFtUzgvAMfR6OzH5stlncI0uCuvSTCZYXZtxQl_tQNjt1VV8NiBHVabKRY_rlmvATLgTdKTPxSUk2w9IdYy5P150WtbZwNEjpibMnnMm-5miJdnvERXfCNi5cgPpsGru2q0HklzAnoGkLo3xLtUXZTyHZvsynl8UlwXTcWQQGV0rOUGU5z-6OjnOvaVKaOmiHo5TiZHnmIzIetPH2ZxABkmg6rChQeB4_FbELcJTNhbJFw2DlQPPZbkxzidxmMbQWFQnhsr7tLdpKXy5_2KsiEHSngkQLOUWJ0DZwHXequqMpD7lZ3RVirJHpc9SPScikQXT_iiUg4t2whqI_O_QGK7PpSGQHyrHsEnBkux0ttLTG8ChlrNw89hGwCpEppk5ZW0RAmHp8LsS59zZrnlKvN54jey3RJAWpFlj4ULBS5O1caZ9bb11AQUqx2qp4LxYEquw7HUH0qO-ODuC8qyHr3sNSLgcVuOZbYAZxnKyekF7p3XgCnEUdvp68XTMmsOoIbBoUWU3-BXyPeKW93LJPu_hPKYYLXPr6XdIgcq4VvtJU6ZcDPR8Gvrj43s-V_Y8s4p1MPe5AWQd3MgkYoPy0RGGdqB2_Q8z7EsovJuFCXBaktk6harbbHvJTqyhyBgHFUW5BfvHvexpq1JObZLpv9abtDIoIksXYJkTHbN7hViYSTB1WedjUqS6a4xNytQNWyTcq_i9fqRGjM2aYMz6qJKxh2KBiRKsZFqRSuGHWpd3_YXLeU5jD1mtRZfVoPgxFeFPFZIBzGcFS0SncN5nGQ6UbtitF4RXsOsBSD9IkBvuwePiwAFHEyzLFVaYlj9cisB17laxhYc1fuvtMznFf7Jat2vD5Of-KjZUEj3vYdKNdsrG0NE625q4S1FhZNNF2_d3z7fyZ0MB07XZXmnVR3PVvWPn4XW3B_8MvPKqKe0zV1P0t6ZMmqZ0ne3sZtvR9vPJ4lFY5ghBJjLihlqbg2hHuvSqfMVsK73i3eHTOTdCb6dpdzIgMrOjKukpMdavV0fJ33oHw_IxDxpM6itTFWV0fjn_q1UBdxPzSNkeGUFb09v6KeOLo3n1e-P-hiGM5gVNLMZMuBWVSmholSxxyFpF_QLBeuPk8JooqAaJJzXhkA_KpvfCV7Ixd2gpuq4D-NYYkNTmEL8eBbkndaMOT6fDtWPhxyaFW5Vvz_k74llnQ6JzddKCbpZZAK5z8h-XoTQDOSDAZ_vG8u7lURCVwBrVYDpMpY_qNkelR00nb4EPY4ai_wZDHKTqON09vNdB5jGYSqWcE-NVQGOMa9LipS14zoveMGVxjJQnPqJo0ypfDR6dbIKB9QRVXDiCQEGu9QdfVStpaUQP1T1_bl2LKseYaEReVk1zPx9KMY4pHQwf-dITwMCaUt2HF7y5gpdF4ZYCuqcY1JiQKuYDsG-JTRmPb0Yz0mhR0QOx3aqD8DueTkqgklVDaq9cXYSa-ATtsg0Pvuc-yVG1NnsW77KXReYcJ9fZfQIEhplcptykic_CLjqvPEqCZ7bSlA4vV6IhU8r9WnAo47M_cXYTvZ-wvrGb1IaMYqcHbWt4qr_FGsjFgzOTd33ocMmdhKvrv8YhLBeUJWb4OcffRUhe8p4DapdhBb9DL21xV-SrCrS9hj97xQsO1khzRHGUgCAxyma9_wJav94LmQKR29HxbFBy5g1tAtuuUwIvgxArNJpHQH5ShR-OfIoq3DfAWbbHqrLjnQZ3tigTOw1n9YnNIUPmsflxmiWCtp4tpLScIrTnCVvmsIG3V5KdKeyoThVkuUDt80D4FtrGw6M9QAaaqorREokghZn0ggq44aJFkZB16f_3HZn7Rgs9bcd1QhdtRtvW0gnYuXSwIl51gAALmb1xrcp6KjsB7w2k-jFPT8KjCna5h4a50otVATS5A8ULi1rUWZ3t6tENDWLlaXE5bpsblq8rOHUMd6YMleiOjfT-WE0FPPAzEZuAQXFszSTmrTGiYQP0BIohAR3QSqYQLmc7pe6kceEyNgCScIMQlozhyNZBkENBGHSvv52Qf_cOwQhYW9BDITsMULTti--CxClorQVs-ziBVCIDfZca_6ocxBIvEYNsGWFlDGdzSDXMibY3hvPl1axA2i5Iw64RUv7wGM-dpukeRRDsCaJLfL8bY4TuTQcL_jy19fBCku914Flwo3p_W80A2QVlm47UDnhpkuUa4oHGeW291F3BZFSkwvnAz5VLSYY9xTN2f2r43xUI2M0K-YCQqMlg54m661L0UlnTIKiH9CSMh1zW_dShGMLC0_qxUaCwew8mXS9NUwoDi_S8Kq5YTtwv-wacmHom54ZfCA_fM2whFGhn_gfeb079rC_on4qSuhPJMKEFUBoPq1uMMwRp1ljJHpN3mbLMMy2olqxupZ4W4oVYltX5WnKuAxMa50SssjAEPxn-o6cJ1bS-mNcwvpt4o4N4Ja6Ag6-XuQ2_eWrHchF9mmPAk9lYVRS2EQS1nBZnmRgCSVXWqILs5gCsXCwNeYWebJf9tlNSDUis2DpJRD2yt-P7gFhR4kbCB1f5KSuzFPz3c0lbRQRAt9iyI3zfbtmTew45MGMUCCYdUJ1fe9rh4vzhaVEIDIiLf0pkxYuiwVKuqbtEnq1INoCJvoqV25YVWXGEZr8jwCBT99D8keOXCvdkzWxL-aaCBwOMoZVThPsakhxiBPvIhw7N8sr2BE1rE9gJASlngRNw_A8J7PfmSdcnvU5JkpaxUve-MSfUa-wYmTSxdjrA5gJbhYz8N5Z8Z4EHMxySpYRIYxPmzbPwfT43fPd_ik46LITIYv3xFXSMtSObxdReWhh8TZuQlg294gOzeAydeaVNdp2Ml4aw8h_WpzL3PmV3m0KHcsvrBiFuvvnFQQuW-3sDT6R10iOaQ98nM_WXZGD3l6Gvaox5UbyoAMER7aS794fNh6RQSRwL9wPcJxn9lA8Nj_-xvj9hV8jA2vyLAyEz38uZ_eAqZahs-Zr4OhVBFZOjq5v_8tLB8TJyB3f_cNl6PVgJOm5DGRAeEE5z0L1_-EBoznsxkRrAw0vFueGhT6aTOUuHWfFkDZphtlSxOMqzDbtDQZVixx0nMHOqUCmsrZdD9iSfk2tt1ZS16vGTL773y7pYPowHgUidARPrUZejVcn67rqlDNBLusVyBqL0GWNWh0yHyv-mR1-kI7U9wYeyGey7CyfIvT_OEQ7kdpHPmQUm0jgguUJ2jiAPPyWaajdwObhvzwW_SxQGtm01j2jR_7lfwlQKtDrSYMlGogDEzYVwuaGZ7xNodDPElrhNPtrsYTcUyPSGjrAyI3YSxe-lP4WNxALQJ67VbH-jY4PFQ9QqHH-mnXsa5WjzfN4KjUDsNn1V7n6UPDK7eB9oDXW8nMU6RFRVj5SR_Ea1l9UrELjM41hocq9nPQiV1CpTvoiEcbbuBZUH36nTxK3LVLH_zHYmh4vnvE7eCsyV0vVZ9WePKGkm5_wPpmh9twMcOvxR9Oinm8LdcxE6ijuDzyzABSgCLmtTuTAcLQ3WXEQ_2ZR8sF_aFLFtQZMAH-XZeQbgGECeun63jNkWmJKFuIESsI9BKUZFbShwn9gr44m5RitVoRixgeUGqSlZo9gtOHoDe6tRo7Cwn288LZDed3pzZoPcoOrl5oDeboM6z0yX_UimrvfU1EdBSN_tryaPKOg-uNMYnyS0X0T5W2DZga98YaR5fsSd8HeA__8z8awlMB-u6MNCtAE1GJLSmeg1xpbvGJvGdNIuRgZ7RDgs8J-zIX0bUXlLcifsbOFLZ05aMPzUiddD9qKcTs-1Hw9_1ofikYhuLWBFzgycrLuq9o7bayek3uf1zzV6AoeKBf0z6fY3WoYnREhDzo5yij2AmJWcs-PIaXyw81I5_Z08mre0OMTIE8WzSTJWF2YWSSo76j_8Y4bQmctNrurAtSv0M7PH8ahZfpjtFYdjq26R60dBrhy6vCgjjk-qTd6GrBNJsX3JoTliTRRfohqkrnkanGLSopVEvLXCUmRJP_UeHkYYAIlFOOAEaHaWvPqhUiPVz-C1EATyc4poDQE_klkh5RIM3q6U2c122PxSEzyGgMh9Etlzlw0fOgSFS5eMXwBHdfJQ7biO-Y6rCzGizIMlbULvu-VWVZ8ygombMV4ntKUSsMMoGxoIO48WX7fF46x4bXITUKrcgDcMtvTq5HmnFiNAYxD_AFIt6MOFc7mrFNVHfyVIkneHZS76jBanZiSBNNk9igAnOYOeg_129hut8ZXcyn27uwKZ-aA5De63fPrLAUZtHrMTffcOW1hzFJ-_NgRZMA7vYQ-_TLumcV_lySrB9sxcVW6AFF28R6Wrg9sdMcVosjjgP5Sbpg6d567c_B75HsplN50hIBQf8zQ8JB9EbGfwX8X2e-TDa-iFUu0zmJQLoSWpCeO9pkuIR7w3j6-M7jIjOZtVl4ddOSo7LQHYt7rq0DRECt-zpdVT2k6nitLorPQI7BYHwLwwuFpyTEAGZHYnW8vWidx2mGp8cOhs-K_M780KHsZUAxljCqtP4ilsc4cf9uct9zmkgF56c0TEsp5uppfjTPC0TL3zd_1Vd-0syF-y-7Wwt8q4LTdupNQ5OsFm4EBMpJ13Np_nVItHxM1228nrSB2-PYHqNV1KRKJYtjCLr66arMZZFEhiDP78YKP6V4_LVpxiSXWgKGOZe9Nd7pu-XZ93DwEXiaCxnT--efI_9O7cfvLkOY59s-HlCjaHFvChpcRd5JSduUaEo6NSB-wKJhClNi_uScwzaRlFzS4ScapLBK5hya-oMwi0j4Grm08c3PrRzpAT33qbhCUCA8osFPWSmPzz2KMefwSpx9tWNLLI7dOzQdnILwEYB93kTmGFCMzByMvfiLs_2SKHwcZGhU4gjxHpJeDdmzOsP2-NcUrVLYzIWEvfeQ3SKkScPmoorH18BK1ewBFZWeI6wPRfh3ihjCl1jKHbAI3s2z6yYiL9OEP-KXuURpalaMw7QUZZ2rTMH7P-FJvvjiUOJWF2ZVWiPmhZlVr7n3wDfzhpLGz0_1N1iqZI_pgeRVofUOBtVgSHTFNhNSn_1R3Tqu90V3aLIkZ2JZ5LLcwAUNrVsvHQTINtrCOm_W7cy1ZPC84igtKoe16BKgQq44yMwlRoPtVTgie-ywze7X5tq1td9uMVp15WtfwH_1P9aXQ2FLVkzFHH40qiugtQJCkvPwlzzDB60Sm9Ic6OAYYzyRh2hKOS-3vqzEAYNlXfcr78MkXy-eHzHs4kpPKTYobe3K3NF1i8ee7e6vWZbOmCE_hb0dr6r9LwL_-Pe46-C4cHSKf1zrJw3fnfQPCF1ExjTLllrEz9cLaRNlTaIWaJsoTfgQ7JjWNkLX1EFo9gtqz4ly8AHCusn-MQjslBURVpx1GkLtoQnhjvCwPWuDO5ABqix5-62_nNWsZohPX61TlmJgmaVPVRlK9wGi5z0jz6RPqqr8mzjmbO_Tpk8T_QU2HYfhlAlS64Nne2PQkziEIoZ3iSYkAkEEJRTnMwtddLVoRRVP872OeqIzu_XoqWcNv2_yVMP2lYzIPKDcyv-.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC01LTIwMjUtMDgtMDd8b3BlbmFpL2RlZmF1bHQifQ",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0f695caf16ed6123016b07098aef7887d19e4672c9b586ea27",
+                  "index": 1
+                },
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Planning and executing**\n\nI realize I need to create a clear plan in prose before putting it into a code block. I guess starting with a structured outline will help me organize my thoughts effectively. Then, I can execute the plan step by step within that block. Let’s see what details I should include in the plan to make it comprehensive yet straightforward. Okay, let's get to crafting that plan now!",
+                  "format": "openai-responses-v1",
+                  "index": 2
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABrBwmWU0-yOBSDvxmyAvCYtMrGBZsvS37qiCoZNsl7XFFyqOvhRHIK6W9uWjpk9mj9dyRxNaOy7uli9sYo6vxDSmzfEHiFm0ibqmmjLHH_ntBTNAO8yWc9dDxEYZ7NYUeXk5e4eklcvIUmm3gL98FsjobbQX9n1GMe5svjT39bStT1poAIp5UxcdIekIAo8shiKCdwkd_eBYt07I8CH2RRsdkKk8wsCtoXHW15Z0CJzNUOQRMx77iWF18fkjlSo2mFLw6XaYZoswaL_DLLECUNiSJbddhR6RSeqWN6zyhCJfNcWYG442QL75fyxkm73mMB7DwCRwwp4pXKoLVe0zN6V_-3TBIwF5HZKtRL-mg7deNV5sS2FfirvjaRSATE7UU4adKAagZD0Dus6rTGDz0s3zLuxWfWXKfdCAPCb7ObQYxxHz5NAQ1vP-8WqhjbEmvdpBvoZf-CZktpqqktbhL2R3uBvAZKxczAiuiHmOEZpxpHT2KrsjgOXYVlIn2QS_eHNYRZrHnpKDkqoNCqGZ8R3E5DlWM4Erw-4EmK0bgfnlYXWg2ENYOJlexmEZYGhgLXVqVvjchDnCcT15Rqp9N4K9umk3TsMadgtfzPC0_0b1rEbpVeanpZedWeLsfOTDAPKhyUnDzTS8xF5ncV-eIxDFdfB8-DAmGdOFyA6w4GR1QjvxNO5QiJxaOdxXZ1tvTwefRzRvBTyATA3LXW5IkvdJSVcyDoDcmlDzkHt6conwYZwRfldAx2GbVx4BKIGf7oFcp7LsVPQ_005iWNxz0UxoBbOq4inPtECl1TnQvcTY1kpPU8dD0GAP08n7zTnF_BFIVtdoqRAc9_gxi78oi-3jAZynfX_fkDsRNAidvyWP-EDjkr5RcxyZTf3SI9yOTaLPK7uY3yVtR9FQ9A4dTcA7Bc7ETsg_FehqKr84zs-2XSZtYsBskaJpd6ejOxemePZeQXbUgjsxhOsnsUku3PWqBTbz8oKIY8DUKxJ2ib4xQry_u5ZxxuTSOuzo9Qdu3OFfZlKmVJIJ82_Nh-1b9Da32rgmgxvx1B_KjbugCY0UnEeeFrhzcKZbCtesy1Jt_Cqvnmfl4m8r03PvYepiRMeXurbsoLiwu1ZtEkVp7Oaq8S8YyzFgO9mnWoTeu3FUvhCSOq3khpIWWNOEr6XK5NMw4srqk0roI-f9APTN8cnoNrYGK-8gHliO510If7_TG-xhXg0LgML5C_OhglztgRrmTrQTdaBuCRRGMXkTNK4zp0vXLMVhlDqeb_j24gEwkKEavqBry-mt_IsOIi7B5WHSaPJhPUJSvzgocSdNcKDBcEEDncQIcCSSKehKHgKU8l1ec9FwYo654Et38hmM4QjF1zkHpDTkGzNp9AWweSBxvhsL0-qTwpBFQqGSws2M3T-v4N1z6VHVaK7ZdUxhpE4W4nS7-S9OyCTTI6jrqIpqHkDshttEKmHl9-CeBuIxLbYenehTEF925RDipQFQx8shO3T7eHSLzMZ8zebSXYKs3p4IcjUDbk1HzKrAUtG-vEmKzk4roKMHhlJl5F2QhqsxpuoOvBxdruJXqkwhSRmC7Quru4XPbjXYDmXZ9EFeT9BZTRFq4ctNGU36AoMpe74ICtTqKgKCqw2jl16lZhYB0sygVgOMUdWS_cO7v7-SqIMKms5OEcbgK3zd5g0jYDiLUOstvyWLrhpg7I1b7_LLcy2r5GQKmdbbgLifNUTTDLZK9CaCIulxw1sTyl_qPp3ErLpM8ZCuQmHc4lm0spOkeV8QjMlnTvG2rZposrktwAIDxazYnolck-kdE-5-7vXnGEGH4zwB6JT52gRfMOOvCFtWaSKFd-uATuCg22QhEybKfD0uZTQSV151WWqBTH42AyXBLTzC7JG45_T1LGSf9veQV_OzTwkIYX5qzroxLiRU5kSy_V7iAwhuX5VphouswlGaT3pW7UjwUueTqwtoGEY5NMo50VhLUO6_-4-Vh5ykOjdy2HaPTNIWKuCugnNsp6lNnJkRToUt1ghT3oJDT38Z-1dX8-sYtp89DdGM0aKNBJudh-y2vwCH4R9qy4eQWm1DyKiUukXxn_xNpHcBs5gqe6b47ofIqB6kDVzux9aNHe9i9AjuP_nDIWCTUsHiPbLvyh0uj3ccWOrBGez_Z1yH4=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC01LTIwMjUtMDgtMDd8b3BlbmFpL2RlZmF1bHQifQ",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0f695caf16ed6123016b070995479487d18da14cbf24b0dbba",
+                  "index": 3
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 1643,
+          "completion_tokens": 1020,
+          "total_tokens": 2663,
+          "cost": 0.01225375,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.01225375,
+            "upstream_inference_prompt_cost": 0.00205375,
+            "upstream_inference_completions_cost": 0.0102
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 576,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "openrouter_metadata": {
+          "requested": "openai/gpt-5",
+          "strategy": "direct",
+          "region": "CMB",
+          "summary": "available=1, selected=OpenAI",
+          "attempt": 1,
+          "is_byok": false,
+          "endpoints": {
+            "total": 3,
+            "available": [
+              {
+                "provider": "OpenAI",
+                "model": "openai/gpt-5-2025-08-07",
+                "selected": true
+              }
+            ]
+          },
+          "generation_time": 13723
+        }
+      },
+      "verification": {
+        "revision": "native-cost-once-conservative-detail-bound-v1",
+        "resolved_endpoint": "openai/gpt-5-2025-08-07",
+        "reasoning_detail_conflict": false,
+        "reasoning_tokens": 576,
+        "conservative_output_count": 1020,
+        "native_completion_tokens": 1020,
+        "billing_basis": "native_completion_once",
+        "reported_cost_usd": "0.01225375",
+        "expected_cost_usd": "0.01225375"
+      }
+    },
+    {
+      "request_id": "f8132d872b0d4fcd99f732ee06626886",
+      "ticket": "attempt-00039",
+      "body": {
+        "model": "openai/gpt-5",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a Recursive Language Model (RLM): a language model with a prompt, and a very important context stored in a Python REPL related to that prompt.\nYou can iteratively interact with the a Python REPL, which has access to LLM calls as a function. You will be queried turn-by-turn until you have an answer to the query.\n\nTo use the REPL, you need to write code in ```repl``` blocks; the REPL persists across turns. Available in the REPL:\n- `context`: the important, potentially very long information related to the prompt (typically `str` or `list[str]`).\n- `llm_query(prompt: str, model: str | None = None) -> str`: a single sub-LLM completion. Use for extraction, summarization, or Q&A over a chunk of text. Sub-LLM context window ≈ 500K chars.\n- `llm_query_batched(prompts: list[str], model=None) -> list[str]`: concurrently call several LLM calls in parallel over a list of prompts; same order out as in.\n- `rlm_query(instruction, context, model=None) -> str`: recursive RLM sub-call with its own REPL and iteration. The instruction goes directly into the child's model messages; context is stored in its REPL as `context`. Pass a focused instruction and the relevant data separately, e.g. `rlm_query(\"Identify the trend; return up, down, or stable\", context=data)`.\n- `rlm_query_batched(queries, model=None) -> list[str]`: `queries` is a list of `(instruction, context)` pairs, e.g. `[(\"Summarize\", doc_a), (\"Extract dates\", doc_b)]`. Run these concurrently, each with its own child REPL; results preserve input order. Both recursive helpers fall back to plain LM calls containing the instruction and context at the depth limit.\n- `SHOW_VARS() -> str`: list every variable currently in the REPL.\n- `answer`: dict initialized to `{\"content\": \"\", \"ready\": False}`. To submit, set `answer[\"content\"]` to the final answer and `answer[\"ready\"] = True` inside a ```repl``` block.\n\n\nREPL outputs over ~20K characters are truncated, so for longer payloads slice `context` and pass slices through `llm_query` rather than `print`-ing them whole. The REPL is NOT a Jupyter cell — only `print(...)` output (stdout) is shown back to you between turns; a bare expression on the last line is silently discarded. Always wrap inspections in `print(...)`.\n\nAs a general strategy, you should start by probing your context to understand it better (e.g. print a few lines, count them, etc.). Then, use the REPL to build up an answer to the query.\n\nPlan in prose, then execute one ```repl``` block every turn, get feedback from the output, then continue on the next turn. Do not flip `answer[\"ready\"] = True` on turn 1 without first inspecting `context`.\n\n\nAs an RLM, you should act as an orchestrator, not a solver.\n\nDirectly after you probe the `context` and understand your task, pause and plan: state explicitly how the task decomposes into sub-LLM / REPL steps, and sketch the concrete sequence of turns — what each turn computes and which sub-LLM call (if any) it issues — like a condensed trajectory, before you execute them. Then execute one turn at a time: after each step `print` a small sample of the result, verify it looks right, and only flip `answer[\"ready\"] = True` once you have actually printed the candidate answer. If you are running out of turns without a confirmed answer, submit your best inference rather than letting the rollout terminate unsubmitted.\n\nYour own context window is small. Push every long-context operation that would not fit comfortably in your own working window — reading, summarizing, classifying, verifying, answering sub-questions, even recapping your own progress — into `llm_query` / `llm_query_batched` calls instead of pulling that text into your own message stream. (Conversely: if a Python keyword / regex search over `context` would already pin the answer, or if a single visible passage already contains it, just read it directly — sub-LMs are for when the raw text won't fit or the question needs semantic interpretation.) Long REPL stdout pollutes history the same way raw `context` does: if you want a recap, ask `llm_query` for a 1–2 sentence summary and `print` only that. Aggregate the small results back in the REPL.\n\nPlain sub-LLMs called via `llm_query` have no REPL; they only see the prompt and the `context` slice you pass them. Hand them clean, focused inputs and ask for terse, structured outputs you can manipulate programmatically.\n\nSub-call budget is finite on two independent axes, and `llm_query_batched` only parallelizes — it does not relax either. (1) Per-prompt capacity: a single sub-call answers well only when its input stays modestly sized — a useful rough ceiling is ~100K characters per prompt, less when the text is dense. Pack each prompt close to that capacity (a chunk of many items, a whole document) so one call accomplishes a lot of work. (2) Per-batch fan-out: `llm_query_batched` concurrency is bounded too — a useful rough ceiling is ~20 prompts per batch. Tiny-prompt mega-batches (hundreds or thousands of single-item prompts) are the anti-pattern; fat-prompt small batches are correct. For many independent units, use several ~20-wide batches of full-capacity prompts in sequence, not one mega-batch of tiny prompts. When the work can be expressed either as a sequential loop of `llm_query`s or as one comparably-sized batched call, prefer batched — same total work, far fewer turns burned. After Python-side filtering has narrowed the candidate set, batch-extract the survivors rather than reading them by hand. If the raw workload exceeds both budgets at once (e.g. a context far larger than ~20 × 100K chars), don't brute-force it: filter aggressively in Python first to a tractable subset, or stage the task — a cheap coarse pass narrows candidates, then a targeted second pass extracts from the survivors.\n\nReserve your own tokens for high-level decisions: what to ask next, how to combine sub-LM outputs, when to finalize. Delegate everything else."
+          },
+          {
+            "role": "user",
+            "content": "Answer the following: Using the current Shipment Requests, Warehouse Inventory, Quality Release,\nand Dispatch Holds sections, identify the three eligible shipments with the\nlargest requested quantities.\n\nThere are 160 current shipments, each with exactly one note in each of those\nfour sections. Match notes only by exact Shipment ID. A shipment is eligible\nwhen its requested quantity is positive, its available quantity is at least\nits requested quantity, its quality status is APPROVED, and its dispatch\nhold status is NONE. Archived Shipments are out of scope.\n\nRank eligible shipments by requested quantity descending, breaking ties by\nnumeric Shipment ID ascending. Return exactly three Shipment IDs in that\norder, each requested quantity, and the combined requested quantity.\n\nFor each selected shipment, also give the four source IDs identifying its\nrequest, inventory, quality, and hold notes. Formatting is flexible, but all\nrequested values and source IDs must be present.\n\n\nYour context is a str of 32858 total characters. Each sub-LLM call can handle roughly ~100k tokens at once."
+          },
+          {
+            "role": "user",
+            "content": "You have not interacted with the REPL environment or seen your prompt / context yet. Look at the context first; do not provide a final answer yet.\n\nTurn 1/10:"
+          },
+          {
+            "role": "assistant",
+            "content": "Plan:\n- Step 1: Inspect the context to understand its structure (section headers, note formats, field names, how source IDs are labeled).\n- Step 2: Identify clear boundaries for the four “current” sections and any “Archived” section to exclude.\n- Step 3: Use a single sub-LLM extraction pass to parse all notes into structured JSON per section, capturing for each note: Shipment ID, requested quantity, available quantity, quality status, hold status, and each note’s source ID.\n- Step 4: Join the four sections by exact Shipment ID, filter to eligible shipments (requested_qty > 0, available >= requested, quality APPROVED, hold NONE), exclude any archived shipments.\n- Step 5: Rank by requested quantity desc, tie-break by numeric Shipment ID asc; pick top 3.\n- Step 6: Prepare final result including three Shipment IDs in order, each requested quantity, combined requested quantity, and for each shipment the four source IDs (request, inventory, quality, hold). Verify by printing a compact preview.\n- Step 7: Submit final answer.\n\nNow inspecting the context structure.\n\n```repl\nprint(type(context))\nprint(len(context))\nprint(context[:1000])\nprint(\"...SECTION HEADERS PREVIEW...\")\n# Try to locate likely section headers\nimport re\nheaders = re.findall(r'(?m)^[A-Z][A-Za-z ]{2,}$', context[:10000])\nprint(headers[:20])\n\n# Show a few lines around occurrences of keywords to understand formatting\nfor kw in [\"Shipment Requests\", \"Warehouse Inventory\", \"Quality Release\", \"Dispatch Holds\", \"Archived\"]:\n    idx = context.find(kw)\n    print(f\"\\n== {kw} at {idx} ==\")\n    if idx != -1:\n        start = max(0, idx-200)\n        end = min(len(context), idx+800)\n        print(context[start:end])\n```"
+          },
+          {
+            "role": "user",
+            "content": "REPL output:\n\n<class 'str'>\n32858\n=== Shipment Requests ===\nR-156 | SH-10156 requires shipment of 1222 units.\nR-159 | Request SH-10159: 2443 units requested.\nR-094 | SH-10094 requires shipment of 2998 units.\nR-102 | SH-10102 requires shipment of 5403 units.\nR-008 | SH-10008 requires shipment of 5810 units.\nR-072 | SH-10072 requires shipment of 1555 units.\nR-090 | SH-10090 requires shipment of 1703 units.\nR-155 | Request SH-10155: 2221 units requested.\nR-048 | SH-10048 requires shipment of 4663 units.\nR-045 | Request SH-10045: 3257 units requested.\nR-111 | Request SH-10111: 5292 units requested.\nR-052 | SH-10052 requires shipment of 1962 units.\nR-104 | SH-10104 requires shipment of 3627 units.\nR-110 | SH-10110 requires shipment of 5181 units.\nR-148 | SH-10148 requires shipment of 1481 units.\nR-149 | Request SH-10149: 4885 units requested.\nR-046 | SH-10046 requires shipment of 4256 units.\nR-063 | Request SH-10063: 2813 units requested.\nR-027 | Request SH-10027: 1777 units requested.\nR-134 | SH-10134 requires shipment of \n...SECTION HEADERS PREVIEW...\n[]\n\n== Shipment Requests at 4 ==\n=== Shipment Requests ===\nR-156 | SH-10156 requires shipment of 1222 units.\nR-159 | Request SH-10159: 2443 units requested.\nR-094 | SH-10094 requires shipment of 2998 units.\nR-102 | SH-10102 requires shipment of 5403 units.\nR-008 | SH-10008 requires shipment of 5810 units.\nR-072 | SH-10072 requires shipment of 1555 units.\nR-090 | SH-10090 requires shipment of 1703 units.\nR-155 | Request SH-10155: 2221 units requested.\nR-048 | SH-10048 requires shipment of 4663 units.\nR-045 | Request SH-10045: 3257 units requested.\nR-111 | Request SH-10111: 5292 units requested.\nR-052 | SH-10052 requires shipment of 1962 units.\nR-104 | SH-10104 requires shipment of 3627 units.\nR-110 | SH-10110 requires shipment of 5181 units.\nR-148 | SH-10148 requires shipment of 1481 units.\nR-149 | Request SH-10149: 4885 units\n\n== Warehouse Inventory at 7900 ==\n units requested.\nR-024 | SH-10024 requires shipment of 1037 units.\nR-041 | Request SH-10041: 3368 units requested.\nR-146 | SH-10146 requires shipment of 5884 units.\n=== End Shipment Requests ===\n=== Warehouse Inventory ===\nW-067 | Warehouse stock for SH-10067: 5601 units available.\nW-032 | Available quantity for SH-10032 is 3603 units.\nW-106 | Available quantity for SH-10106 is 6933 units.\nW-056 | Available quantity for SH-10056 is 4144 units.\nW-115 | Warehouse stock for SH-10115: 2849 units available.\nW-006 | Available quantity for SH-10006 is 1124 units.\nW-048 | Available quantity for SH-10048 is 4713 units.\nW-033 | Warehouse stock for SH-10033: 3862 units available.\nW-074 | Available quantity for SH-10074 is 5268 units.\nW-148 | Available quantity for SH-10148 is 1531 units.\nW-149 | Warehouse stock for SH-10149: 4884 units available.\nW-075 | Warehouse stock for SH-10075: 2308 units available.\nW-091 | Warehouse stock for SH-10091: 3011 units available.\nW-082 | Available quantity for \n\n== Quality Release at 17160 ==\n| Warehouse stock for SH-10041: 3418 units available.\nW-036 | Available quantity for SH-10036 is 3034 units.\nW-028 | Available quantity for SH-10028 is 1642 units.\n=== End Warehouse Inventory ===\n=== Quality Release ===\nQ-018 | SH-10018 has quality status APPROVED.\nQ-133 | Quality decision for SH-10133: APPROVED.\nQ-150 | SH-10150 has quality status APPROVED.\nQ-050 | SH-10050 has quality status PENDING.\nQ-053 | Quality decision for SH-10053: APPROVED.\nQ-003 | Quality decision for SH-10003: APPROVED.\nQ-149 | Quality decision for SH-10149: PENDING.\nQ-083 | Quality decision for SH-10083: APPROVED.\nQ-152 | SH-10152 has quality status APPROVED.\nQ-100 | SH-10100 has quality status APPROVED.\nQ-013 | Quality decision for SH-10013: PENDING.\nQ-087 | Quality decision for SH-10087: APPROVED.\nQ-158 | SH-10158 has quality status APPROVED.\nQ-109 | Quality decision for SH-10109: PENDING.\nQ-023 | Quality decision for SH-10023: APPROVED.\nQ-120 | SH-10120 has quality status APPROVED.\nQ-033 | Quality decis\n\n== Dispatch Holds at 24790 ==\ns quality status APPROVED.\nQ-076 | SH-10076 has quality status APPROVED.\nQ-093 | Quality decision for SH-10093: APPROVED.\nQ-134 | SH-10134 has quality status APPROVED.\n=== End Quality Release ===\n=== Dispatch Holds ===\nH-082 | SH-10082: dispatch status NONE.\nH-034 | SH-10034: dispatch status NONE.\nH-142 | SH-10142: dispatch status NONE.\nH-112 | SH-10112: dispatch status NONE.\nH-020 | SH-10020: dispatch status NONE.\nH-040 | SH-10040: dispatch status NONE.\nH-022 | SH-10022: dispatch status NONE.\nH-135 | Dispatch hold status for SH-10135: NONE.\nH-013 | Dispatch hold status for SH-10013: NONE.\nH-149 | Dispatch hold status for SH-10149: NONE.\nH-109 | Dispatch hold status for SH-10109: NONE.\nH-078 | SH-10078: dispatch status NONE.\nH-136 | SH-10136: dispatch status NONE.\nH-106 | SH-10106: dispatch status NONE.\nH-024 | SH-10024: dispatch status NONE.\nH-145 | Dispatch hold status for SH-10145: NONE.\nH-010 | SH-10010: dispatch status NONE.\nH-067 | Dispatch hold status for SH-10067: NONE.\nH-064 |\n\n== Archived at 31988 ==\nfor SH-10115: NONE.\nH-077 | Dispatch hold status for SH-10077: NONE.\nH-049 | Dispatch hold status for SH-10049: ACTIVE.\nH-055 | Dispatch hold status for SH-10055: NONE.\n=== End Dispatch Holds ===\n=== Archived Shipments ===\nA-004 | Archived SH-90004: requested 20004 units; available 20054 units; quality APPROVED; hold NONE.\nA-002 | Archived SH-90002: requested 20002 units; available 20052 units; quality APPROVED; hold NONE.\nA-006 | Archived SH-90006: requested 20006 units; available 20056 units; quality APPROVED; hold NONE.\nA-001 | Archived SH-90001: requested 20001 units; available 20051 units; quality APPROVED; hold NONE.\nA-008 | Archived SH-90008: requested 20008 units; available 20058 units; quality APPROVED; hold NONE.\nA-007 | Archived SH-90007: requested 20007 units; available 20057 units; quality APPROVED; hold NONE.\nA-003 | Archived SH-90003: requested 20003 units; available 20053 units; quality APPROVED; hold NONE.\nA-005 | Archived SH-90005: requested 20005 units; available 200\n\n\nREPL variables: ['answer', 'context_0', 'context', 'headers', 'kw', 'idx', 'start', 'end']\n"
+          },
+          {
+            "role": "user",
+            "content": "Turn 2/10:"
+          }
+        ],
+        "max_completion_tokens": 32768,
+        "provider": {
+          "only": [
+            "openai"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true,
+          "max_price": {
+            "prompt": 1.25,
+            "completion": 10
+          }
+        }
+      },
+      "worker_correlation": {
+        "node": "mock-2c9c23df404b42289d56fc640273ae1a:e00002",
+        "action": null,
+        "slot": null
+      },
+      "delivered": true,
+      "dispatched_at": 1795623317.4393978,
+      "received_at": 1795623339.7129884,
+      "provider_response": {
+        "id": "gen-1795623320-IdNCacN1e9FZ7B8vfFS5",
+        "object": "chat.completion",
+        "created": 1795623320,
+        "model": "openai/gpt-5",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "Plan for remaining turns:\n- Step A: Extract the four “current” sections (Shipment Requests, Warehouse Inventory, Quality Release, Dispatch Holds) by header and end markers; ignore Archived Shipments.\n- Step B: Parse each section into dicts keyed by exact Shipment ID (SH-xxxxx), capturing:\n  - Requests: requested_qty, request source ID (R-xxx)\n  - Inventory: available_qty, inventory source ID (W-xxx)\n  - Quality: quality_status, quality source ID (Q-xxx)\n  - Holds: hold_status, hold source ID (H-xxx)\n- Step C: Join on Shipment ID across all four dicts; verify counts (expect 160).\n- Step D: Filter eligible: requested_qty > 0, available_qty >= requested_qty, quality APPROVED, hold NONE.\n- Step E: Rank by requested_qty desc; tiebreak by numeric Shipment ID asc; select top 3. Compute combined requested quantity.\n- Step F: Print a compact preview with the three Shipment IDs, each requested quantity, their four source IDs, and the combined requested quantity.\n- Step G: If everything looks correct, finalize answer next turn.\n\nNow implementing Step A–E and printing a preview.\n\n```repl\nimport re\n\ntxt = context\n\ndef extract_section(name):\n    start = txt.find(f\"=== {name} ===\")\n    end = txt.find(f\"=== End {name} ===\")\n    if start == -1 or end == -1:\n        return \"\"\n    return txt[start:end]\n\nsec_requests = extract_section(\"Shipment Requests\")\nsec_inventory = extract_section(\"Warehouse Inventory\")\nsec_quality = extract_section(\"Quality Release\")\nsec_holds = extract_section(\"Dispatch Holds\")\nsec_archived = extract_section(\"Archived Shipments\")\n\nprint(\"Sections lengths:\", len(sec_requests), len(sec_inventory), len(sec_quality), len(sec_holds), len(sec_archived))\n\n# Parse sections\nreq_pattern = re.compile(r'^(R-\\d+)\\s*\\|\\s*(?:Request\\s+)?(SH-\\d+).*?(\\d+)\\s+units', re.M)\ninv_pattern = re.compile(r'^(W-\\d+)\\s*\\|.*?(SH-\\d+).*?(\\d+)\\s+units', re.M)\nqual_pattern = re.compile(r'^(Q-\\d+)\\s*\\|.*?(SH-\\d+).*?\\b(APPROVED|PENDING|REJECTED)\\b', re.M)\nhold_pattern = re.compile(r'^(H-\\d+)\\s*\\|.*?(SH-\\d+).*?\\b(NONE|ACTIVE)\\b', re.M)\n\nrequests = {}\nfor sid, sh, qty in req_pattern.findall(sec_requests):\n    requests[sh] = {\"request_id\": sid, \"requested_qty\": int(qty)}\n\ninventory = {}\nfor wid, sh, qty in inv_pattern.findall(sec_inventory):\n    inventory[sh] = {\"inventory_id\": wid, \"available_qty\": int(qty)}\n\nquality = {}\nfor qid, sh, status in qual_pattern.findall(sec_quality):\n    quality[sh] = {\"quality_id\": qid, \"quality_status\": status}\n\nholds = {}\nfor hid, sh, status in hold_pattern.findall(sec_holds):\n    holds[sh] = {\"hold_id\": hid, \"hold_status\": status}\n\nprint(\"Parsed counts:\", len(requests), len(inventory), len(quality), len(holds))\n\n# Join and filter\nall_sh_ids = set(requests) & set(inventory) & set(quality) & set(holds)\nprint(\"Joined shipment IDs count:\", len(all_sh_ids))\n\neligible = []\nfor sh in all_sh_ids:\n    rq = requests[sh][\"requested_qty\"]\n    av = inventory[sh][\"available_qty\"]\n    qs = quality[sh][\"quality_status\"]\n    hs = holds[sh][\"hold_status\"]\n    if rq > 0 and av >= rq and qs == \"APPROVED\" and hs == \"NONE\":\n        eligible.append({\n            \"shipment_id\": sh,\n            \"requested_qty\": rq,\n            \"available_qty\": av,\n            \"request_id\": requests[sh][\"request_id\"],\n            \"inventory_id\": inventory[sh][\"inventory_id\"],\n            \"quality_id\": quality[sh][\"quality_id\"],\n            \"hold_id\": holds[sh][\"hold_id\"],\n        })\n\nprint(\"Eligible count:\", len(eligible))\n\ndef sh_numeric(sh):\n    # sh like SH-10156 -> 10156\n    return int(sh.split(\"-\")[1])\n\neligible_sorted = sorted(eligible, key=lambda x: (-x[\"requested_qty\"], sh_numeric(x[\"shipment_id\"])))\n\n# Preview top 5\nfor item in eligible_sorted[:5]:\n    print(item)\n\n# Compute combined for top 3\ntop3 = eligible_sorted[:3]\ncombined = sum(x[\"requested_qty\"] for x in top3)\nprint(\"Combined requested (top3):\", combined)\n```",
+              "refusal": null,
+              "reasoning": "**Following the RLM Pattern**\n\nI’m going to follow the RLM orchestrator pattern by pausing and planning my steps. I have context about the data structured into specific sections, like \"Shipment Requests,\" which indicate the number of units required. Each line contains a unique source ID. I also see sections for \"Warehouse Inventory\" and \"Quality,\" with specific statuses that need to match eligibility criteria. I need to parse current shipments carefully while ignoring archived ones. Let's dive in!**Ranking Shipments by Quantity**\n\nI need to rank shipments based on the requested quantity in descending order, using the Shipment ID as a tiebreaker. I'll return exactly three shipments, providing their IDs, requested quantities, and the total of those three quantities. For each shipment, I need to pull specific source IDs. The context is manageable at 32,858 characters, so I could use regex in Python for parsing. While it’s good to delegate to an LLM for reading, regex seems like a simpler, more effective way. I'll stick with that plan!**Planning the Extraction Process**\n\nI’m going to plan how to extract four sections from the data by identifying indexes between the headers and \"End\" markers. Each section will be parsed into dictionaries using Shipment IDs as keys. For the Requests section, I’ll capture R source IDs, SH IDs, and requested quantities using regex for any digits. The Warehouse, Quality, and Holds sections need similar parsing for availability and status. \n\nAfter parsing, I’ll verify I have 160 shipments before filtering for eligibility and selecting the top three based on requested quantity and IDs. Then, I’ll calculate the combined sum and return the outputs!**Implementing the Parsing Process**\n\nI’m starting by implementing the parsing to print counts and some samples from the data. Next, I'll gather a sorted list of eligible shipments and print the top five for review. I also need to ensure that \"Archived Shipments\" are excluded since their IDs start with SH-900xx. \n\nThe context preview shows relevant section starts, and I’ll take care to check for anomalies in the Shipment Requests section. It looks like there might be some truncation issues, but with careful parsing, I should be able to extract well-formed lines. Let’s get to it!**Implementing Robust Regex Patterns**\n\nI'm crafting robust regex patterns for parsing requests effectively. The requests need to account for variations in phrasing, like \"Request SH-\" and \"requires shipment.\" I’ll ensure the last number relating to units is correctly matched, as there's only one \"units\" phrase. For the warehouse section, I’ll use a similar pattern to accommodate variations in how stock is presented.\n\nThe quality section will focus on capturing upper-case statuses like APPROVED, PENDING, or REJECTED to ensure accuracy. Finally, I’ll build patterns for holds and merge the data across all sections, filtering for the necessary criteria before printing the top ten shipments. Let's get started!",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Following the RLM Pattern**\n\nI’m going to follow the RLM orchestrator pattern by pausing and planning my steps. I have context about the data structured into specific sections, like \"Shipment Requests,\" which indicate the number of units required. Each line contains a unique source ID. I also see sections for \"Warehouse Inventory\" and \"Quality,\" with specific statuses that need to match eligibility criteria. I need to parse current shipments carefully while ignoring archived ones. Let's dive in!**Ranking Shipments by Quantity**\n\nI need to rank shipments based on the requested quantity in descending order, using the Shipment ID as a tiebreaker. I'll return exactly three shipments, providing their IDs, requested quantities, and the total of those three quantities. For each shipment, I need to pull specific source IDs. The context is manageable at 32,858 characters, so I could use regex in Python for parsing. While it’s good to delegate to an LLM for reading, regex seems like a simpler, more effective way. I'll stick with that plan!**Planning the Extraction Process**\n\nI’m going to plan how to extract four sections from the data by identifying indexes between the headers and \"End\" markers. Each section will be parsed into dictionaries using Shipment IDs as keys. For the Requests section, I’ll capture R source IDs, SH IDs, and requested quantities using regex for any digits. The Warehouse, Quality, and Holds sections need similar parsing for availability and status. \n\nAfter parsing, I’ll verify I have 160 shipments before filtering for eligibility and selecting the top three based on requested quantity and IDs. Then, I’ll calculate the combined sum and return the outputs!**Implementing the Parsing Process**\n\nI’m starting by implementing the parsing to print counts and some samples from the data. Next, I'll gather a sorted list of eligible shipments and print the top five for review. I also need to ensure that \"Archived Shipments\" are excluded since their IDs start with SH-900xx. \n\nThe context preview shows relevant section starts, and I’ll take care to check for anomalies in the Shipment Requests section. It looks like there might be some truncation issues, but with careful parsing, I should be able to extract well-formed lines. Let’s get to it!**Implementing Robust Regex Patterns**\n\nI'm crafting robust regex patterns for parsing requests effectively. The requests need to account for variations in phrasing, like \"Request SH-\" and \"requires shipment.\" I’ll ensure the last number relating to units is correctly matched, as there's only one \"units\" phrase. For the warehouse section, I’ll use a similar pattern to accommodate variations in how stock is presented.\n\nThe quality section will focus on capturing upper-case statuses like APPROVED, PENDING, or REJECTED to ensure accuracy. Finally, I’ll build patterns for holds and merge the data across all sections, filtering for the necessary criteria before printing the top ten shipments. Let's get started!",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABrBwmoDc186Oc9Jw6kr2CFubve6BSDgHi_Os9rDLXIkf4ti3AI9dxTKq4o9za6vDY934XcE8EHxBUJdDIpLnDDrvzNrqr_a7vyER0TvpYrua6ZAQQjUdX7Qwk9vvl4acvtp7VpHx8m7Rrj1dd7hBvUstf0KSNf9d5u98_b6XBmrGWxev4qdAiQelT1QtLBImYN-Zfwjqnkbb7A445gAH2YFF3X2xf-r18X-Ax8TkZcR_bi_rFNgpMUeqR8j0qOoRKAmT6SUanKxCikWuFOZTo2I9MnqhfrSAg8bB3IlaAOn26k522zv7yKL1GR7ylosUL7LgTg0A6zrqFpma0HBj-OBlLJI7HzDaxdTDwo1pgPSYusvjMw6w6WXkVAeaVAcXz8z4YCaEZ9Ixn0QZF11IraV719tsOIylxilmtx8rfH23g3p7kTQRvfIUqFbZexpW-pSc9bAwGSQMB2DMOc1DkPvWC_Tliv54lnZL2QnLGHxicJI0gxJYesjTXnrWPiIMsbm0ORkKoBZSA7QOEBUCSw9RLQxjgXX7GhPAL69xqJcyRL7uvEdziCU2nqRtTV9ZJW6BITOmSWN6WBiaRC4BFefOcieFdqUDggtgBgkd8SnB1fLfEaUl1YQsMRXwbX5CEglSVs9F1XolcW7zpdbGt449zrz_4SKjvZFQEZj0y1T9ftAVP6LbyQsi18OH_bVZapUaMB4_wKlChkoDyQE4DSHAC78RxabM2nToUhLnd5dm74mmtwK7UW8pJxBaTc6KbsxKAElJ79bxn7KEHtehU1b60xdrPpVBhLpUK4EHKgyhSvR6wEasbaDzLz0T0q4tc0Dp7BNKNiWt7maTtb9PcAd2MtYPBrAjfifw_8FO7Kd2Qy9uS-IUGEreaQCwqFfZaWEjVS40WLnsijU6uF72ICk4gHVb_BA6PbFrPe8f57-eCBTt54elIOHlcKwKqHhaaYPa-RbXkccvMjsIj71_mI3QyjEunmum8qwZ0Kn3cGsBPcrede-9YrijtUxnbX-ebApBS0YHJoIimIP36w180hLgVNb3_hydLfvqOGHvtD-ODKecmhfBk-hbaoSU7YsjMWLYn7KdWsKyvwXbgO1fquebQWYMDY4FkWGFcWfB2JGVmGhWwEUD2Aa8sfm6hDRKv-gecR8ENp0SkSAfGCah3dM5i4Q-6LFkASW2LEAoa3-z3hLhWO2XJ8_eqUe2gaUXIvDhEZ7712COhkp7r3XUwPUHePNL3aGGVCM5OdseGZfE457Z0YaJ5etRP1BNopGStmY6z2HRDdDSe3_soPcJhKOpVK6oHHHjepa8pXCSBjJLT1SXJ1RTXzv9xNOP7_ZNlgRwSzkcXlpQ5MFlmvuiBpHBs9tLYWeJOjUaRhJly-KN1pWoH7s9fOoQuida3VjcoxcibQiIe2VEGvW9Uj2U2Qr0HIjJTQ9fkOUawNM4ulF0fK_8D38ZaGS8Yx4w9IGTxWXipNvdyO_DepvahQ2mgmYo9esJdkVZMalbES56do6PrcEs61ufAGtsJjWs36J_UkV0EWlhpAmmXTyAzYHw_779uOp9YJhu84N5CYypuuxttAJs0dwqF7VipyQ5kz7WrqjVGPAcUCE6UIFg5tRCjM4taGPn2LULcDsR3t50SFUO0eKu-DWEIKGluUQiRBoI5L0foBNWtZ6mkFHoMO5jYIhmZ60DzD9lWNYh43LaHyc4ccXd7ur16zBr9dBy9H3dVUFWmxbZTWBxBQNQ4v2bIO7xM_uB_o4hv-hNb95QVSz86sZ-n-HvyePxxSTUa0F76TSe7H_bQHhS9LMsvJE2f1JEPbX2jzUxk34gW2gQMkeRNGZ-3RhZFf4VYpIsHbJDCI_leeLWfTXiXL5juq3DlA7mNW5ThbUPxyFRBljOrLMtdbiQlmLD0XRZAQ7Iyz_n8x9zqqH5HZPtHKUifQX2clbLfu_nEerl9t7ykMp1UqHubIW9yUAkDxiwFVvBy_Uj-EbtWyAvmfSjrGvDBWgAgJ5lT562mwsibKbLd19LHMcZQiip0Xg03LxpHyA22HeDv6PFW6pqpqFOxuNFSJe7-mxV6X-5Bysu2EA6VGBI--ROa-CIsvsOeYmqueoaakBHgutGqz_e2ItLBQIHCd0NUVih3bNelGitpEvGt0rfJBvpqdu19LUkeCYwT_sfDn6T-C9fYay5FQHIE1YfC36SCJuHyXBjbYqvMz85XhsGGAlOGsANWOCFzpiaktJ9wTcF2gQ51LNjrsL7-6B6fncyu_IctNyKIcjX-qe0j6FPZ-YxWt_PwZJkTsxXwwVrZdVfO0O-tH8G-mnHhcVTdG8TeEwg4bBhzRALogc8R5Jo_8DSKE5CP0TY-fAjcwAixflb3kFQ1DylezMmWGufoLF9WqMJgjffLuXSUsIspEt7roVRxEskWcqoP_KemRc4_DWhdlD7AWno_VZIRh_XFjT2NV2IJI4eoON7E_LBy0N9OymSkWtQlrrYkM5NV3WkTd43XAuGA09N28zIL-JK88ZEm7-ExvhtX-OdPgk-gqV1zNwvFLsvl0OlD7AQwsx5A8LIKOU5vAc-rKSSOwr6HG-JIbwRN6NmWgqo8zRVl8PvKS1E7rAGiWLJRTZzehQ9holyqNfMHMLAIXRNiXRAiq9e7tM0RYMVtP0IvCGJJpFrElNTpeadc79bALeqEBHfMnlWX1ruNoXDivpKjJ3mZLy-Aqc3aJYUKkdZyEPnHf_l2uG8zBDfsQLM0FtBCte4f5jfsN4HGZgwoxmOexwr_hcU6SSrLeL6cMgdrLIN2jAQC-CPVTyRzExvla4k4_x-pizPOwb7sefVezXgduwOOPQIB0e8JSMLNqGQZ4L7LJK-LNw2JuWPgAnMuHbQOxUhzZruY5e_0VVO7shaEfT3AFPVbQ5AH-TWNpJAGg6iMjVajZ6CnvOS2FwOMGvBDTNbb-OTFAJND143Fcx7aydVJ_-VG_iS5-y1_DtCSy6Zwfi97wEy4goIZyWdCvMzfU7LQM0G41oHiev-yGXdTU_l1Yvajr8NLtazCijxvoXx0yO5rgtc1U0ulyg4QtcqxHFLj8lMN5d1zBjq-Oa2wqCWiS1yCkVpv3L8BHaeH0_pqqKt9wJxHTMRN2L6wJwWLTAU_L6sma3yfqE-9J5dCjV7-y4_aYWGHr1N2aQ2hzIu3wta-YWOUNT57TYvPmHrgjvjxvz60OLdbmS1Uyvs4wn_YUYcB67lIbpQXegWZa-UCJ__iWGSD5w8fSJ8DRUOBT0uUfzI5eJUBWJ-sK3-S3pRCQzIU6sNuRVTozEUUkEBVh2yfaS8EosV0KmGHqipdTTi1IA3tpYi1TdnUA-iVATDQepnBWSGbH_NhMo3vk5Ew8kTJkAs4IPCFgkWey4oMXk0PGIJI7jMJjwJT8yYsjJnAbKdDLOdpqYMFc5l55Fyu_LmsafO5YlDkX0UjX2bBVNW99VsNv5xfo4Oq3ttlLfkr4QoaQvX1iJzRVh-NTJGxeybXJ2OJXOQ05UNQFyAf1GiZE3lI26KZsXltTlvfDJFBZf0s-t-O0ppgnk_YcmpnUMUyY5AMmftrJQXr7HZgstBP2uEl-_SWeAvxgtNCPUYHlr8ZaR_guvyjMdg4fvPc_ZUeynCKz_6EhdCtzTjE9U3IajqwEzA52JdygY0YRhvE7wh7Kq1WJIXSd-8tb4DSa9thXcrk3WOpzesLqyUQfTDI79ez6mRSBoIZew5hEcNCEFrQFRsFyTkY6G-QwR1KagIWo3FSB70XeRXQYBDuDBTNmbL5tAWwN4qFtHV0nYpVkTrbJyKOEd2dx5pSjqVAm3vscFc3LIveM_fPWa05ztUkcaQEl2psQz1UEFpXSrf6TH1rT7Ru-UgMMmHHpTsiRqbz8wl3f0rHFtFDWsWwByStZvX-mKKiqyJiMytltfQIYODxCbLZMrGN9VkMaF3Glxz3GNzeS1-t3IkE_sCK9YgKVucMQV_lQuMQRfp1yiSBDp38NfuYXByKtu7zMOsDOmiJJ9v3ZxF11_gBjF6Mai6sMZb4SFeNgNw_xr2J-B7XfZnI-NQ3gK5-9rCmz_RIhyUPbd7UGkaX0pCVxLia78_j9vLd80fFWRXd0_FAZ1Frf_sCzq5fprhmTpvFPePepy6VVCCBV28Bdyprh1jC77bOWj9ImuSNXWN14iaMvifsvsJw7S4Cyq0w04pU2a6wG7HQmxRkCX9GH47i7n-au2d9oLOaYSIH6PqSNdDCe1y8jm8A8VOzJofPdyYM-veaojYIi_AGfg45WFST82Fq8EVEsPqS0bCAPw4SFJn1HCtnYvxx5Kmekj8exKI8I_Pvgn1kKxtdg72pfVBwrZMJxDAuf46yGtvOREKiaqKN4R3f1fKibW5A3TSyeMHMk_AivfHQdC_eRk9Rz0BbLbfPJ6fLK8-YNGj2FjoOwaEEjI2T72tqg0KtPgGxAkVYw_kkBYHQd3Nx_2rzBdJs88riMJ_F_D0I8KtR6v6qR6il9_nqtm-RTrcmlvIOqZPeO9nmNftOrJkX9hRyMo0xYivyEQUa_MSy4-vmRHP1TN339WRkcDgdjYu28TEUCfXi7LsOjZTi16Vp0Xkqj18xjRjOEXfMbkIQZszpniOdOG2gJtiM0l8Lfw1fgrKE5YBC8a_5fddk-fSaJLOEabES-lk3fOihn1DrWz-hRLVEmetpLEapSV5FQCe_3oY0aQQlTysUr9PMihvOuMPbUxQ8StVglpuCWvJ21J3Q5eK41APG-E2OoXt2qvVooxEtC2jVP7phk5jmC27MyjFVp7mpnm84TAFkPav-6tY6jSWQgR5NOziV1MpMZyZpFEd_ZL-DNbzDDiHwPOkfvYfDjpgbpfJ2kUajivHvmB6xvVWF-LJ-ynY-V9kI74IdBpPQxWjdy4hAp-nSFk0PlsIjnuhuq7Vee7vKWt0XtoDGQzHEIPI3hO7MGiifrPibpmTpK7g8eQqDCuHQztJNvhercPlOPtUT44WLBUMaxbOPQTmO2y5fcEu1nRL7uiqJ9pFLpbtW5DI2_gT3RHm6TJ4BkjN1UvCvdF4ugqurhS6laXKWJBGCbzaZFGCFKYC2BQNTq0RomF4Dje0IP1F3I_WGYqTGCQ6yfzIxjHDPjUW2guwCff87VXkU3SslfabzztxyVfrCh2-V8BGeRJGU45oVcxKxhOWQileYRtPjm4HWv6u-2QO6x_xcY7LljQom8WyhPE2Xdaz-RxCDCft7aqcLRBh4pXF2GQ9ha1RzVtwPKC3Nk_e3IGe1dund-O2af-sB0wjLCEd0ccUzlsVGrvuvJR4uhYb3cdpzdS_jzoLlFd-a4QjpxhwO7dr6tRxan_e9IabLIFllNWY8r8ae5wJoYx5A8iRFiZ4BWfidJ2Anghe7IV-3_3qgkBdWePFLoWpoqb0OULlgD8Cb-EZvb0bqJf2rsC2AQs2mXJih_lzQwGIRnk7rhnzeGGSmrr7ku4VGLGeQpS8fOndbNvg48E0aphV39UygxehuKcU8ATD2HqWIv7wfCYPMCEiw3CJeDRSt1sPHLFWLfDTSFNlTdHL-QULDZQZA3IwdhlQSkvPwo7nqwIWfCSyPrHn4NBrZ9JxJ23vhmkFXCiyz-xdHhWPh7lXHi8txcCT039jGxDUAWGA-RumSp4TgkFYjcr0CaXentxmsVB64cIlBy6XYbKi2KraBVBHKvR27kaeozpi_j8GBEL5GT0xLkZVsZSql1dHVvRncOZJE9J2CFGBVIHyUPZq2YUwd9oMiRiDtfvqakS4J1tqGPKYB4yjjhR6kuByPof30GSivZiLOtMvifOEZtR__YarmouotD9WfBGUtx9u-u396uAYaz0vSyfcCDcH3BpUyljPoAWCpmluxhzDSMUEnpOR5crFHzk4WSmU3gH5ZunpIh7eYaEEbR6LPrXUy_DcKN30A8PhlLt_Bqd1q5E9qtQOSgHJCmSVUuJ_oCifplDqfw1gBr5ryAXsDuAZ3OTiJ4AJnYSZYQO7PhzGpH7kiBdoBW56B4jErYbldczPRIqUmbzcPUODp60fH_XpnobMoftEZyXcN4AGSqIs5vV3g0Z3N-hoUYBboj_89i-RivEDcWvb8hSBIwt4c29bIyTpxPqgbX3jephMFs-kAzM6Yy2zcn1qK5pJ7F-iYMre0PeWyhE_Eh7UIE9Vu20Ucgvh_h5uixVoVCj6YM1UGU9tMfPyhhzRg2GA6CqVpsqXGoA1jbRnsiOJiZ9RWPIX9r6U345-6aTEq9q8tDAO1DmJKX9e2nFDZpzCjSc1omyAPlBtv_Vy8zssXy1gqXsJ8q5zmsz18nyR9BIp0PVx4QzR41yXuU4qosx5aAMEOeGjVw045dT9XKUIsAuMxPEaEfKLjLKRERw8I_JArvVw2xZ5H64pnMxngmIwIMJmfS5-WT0V2DIV0PQN1bpr2q3w7WHbyRvLQfy1oG2uYSpwl0vB012xWz7MEvxINQJ5DitDgMp21B3JbpP0l8y6lJnN9DSHydwPqyoENWEZv_3vnSmbnhNB2-5t8xOoXS5dMxncP-GLziTrxPIN7bfc9yYjq1zPSCUk9a20b8QTF2cR24UkAUKymZJ-fMNAEiIvB56mkebSYvhl6MyGM8ZjsUTnvls_xpfbgP6iD_eqICprTp3SkDmOBzN082I50lEQIZNwjQnQttjGTlz01TmrFFZdK-8-PGWUaEiRaavMVqUjQ4WxVZZvW5fEQdorhLdw5FlxNn_h1VxoTM4JfA0TI3TxsGgmAlTjiLMjgtMdNfXGZ4HaTOgth1d9O36Qu7HpaHKFgFnLYlv_j4xZz308qRKXIRy1xu-vL4526J5CKyI6E_RVO8Af7dzRGh2JHpu_69w3RpO4kkelb5keGVfsWuC8l8CCL_7_xbCyfAn6MAq9CujxDMnQBC14KDvGssvw-Pf2Hd4UfvmlqfHjVmI6FRBk0Qd5-g7rf9iZwLK-IRGTPGEfam_73cULYQ-iIyv4Qa6an39x-DoU38ObzB0jRNN2BBybhcSN1E0rV16thIuZYIHxTix0s05nOBdWWncfx-ubhy6gR33EEyLkdK3m11RnMi3qBJ9TLQfL3HURKkCR0EKJqLyji2EkYlGauEdrL8jtwEZk-a9lrI9MDLXsyFmZ0pyVZOEXrHPDzEjIIVUzVFYAynSbi7FBNRBE2Ri9_DigzsDgU4WDYQYBn4-e2nKMMAMqkrxOB7Ic8LLeCVI6g7a_mJlI9SagW1qBse_LYGJvmHVUiaYJQUrgHk3WUyMoBM_VG4eTiwi7DbqTW8qPNj7TXQkiUOEPpkUjbKXLMioWvqgabU0NcE1iBNqpHO27VPYsFc_YwqdoflQlQ3FTnkOQyEIMYgxlyyOXU8Q09Xxn7XIAqqFn_6nwcUgWV_7P7V3b721dqZMVfFiG23KY9pNipzEJ2NL0AiTBAh03fCaGxcawI6H4JXA1_OkDra4RcKCQuZtX1w-JLKWScdc9MSXQR1yAGpdVLoG-fMn45rZNDx-76z2iR4RRs69b8n88KidoKAztO84Lj3HZYF4F3AvxrJoQvG6n9BGucenlakHY-RPB7CKssnuBnwDuQFntN9qm-i-anq1Fr_5C6-csLhEQ07VXr5cotO5ddRC6FikuKo_yxpThORGT2oP5IsRBNld-7pwVhhXGA1ow_m6RO-s5yAeEElfyK3QAk2laIexTMYgIkKlziAxHmqCiw6avW4_bXDA--D3rIoqvzQUlGv0yGnRq8383M5g73HfMkrX82EPxKJsDcqZ2YkS9ocvkQtsGU_k-3W6sixuFzV1IxugccItfHIZZ7Vq4nYIcO3VRz_uYilxcrTEsCMbqKbjo9bU-IR3aTMvDWmPUcG3-FsUDsNG0XteLB4MZ2ZsWjKGgo7gUOOWcBDc1NBSs1nhNW7Zwzzi7SODSrhCEzX_04DY0YvyA5piGl0rXzpS98TW3rwYD7e7MeBJ0lGSSm6YcOYXvRuRuQJKv0eElWdlrbpNPrJm-S6MlOhfdHtTViO56iGBV9JO9b96BnhAxkyolAGCYLn5ROwDTA_oEPWlL7RbIBBNxJ8lYDIQA97VjezBRTJBChXjo_JQj5qDIY6Rr_T4zDSTzo0l1BiPWx_KyKkd2S8L6M7ws9_Kc4mMmNhWD7OsgS6MYOAK8GfQoM6RANS8ynNJhVURAcEdD1vENa3NAxh3RLxt_-mm0KqTCG7zmJy6jqsUuoj299mdNqmbBcsnL2WUoVo_uHA9Xy-hUMDLcAXPIaArTk2E2G5S7lCALyHl95-gOvGIdnhfRLrZ_1v3X-aRkOIiwNZE7DhaEfVRsUorOMwXS1VHL8mZGbDFtyHkF798AyOEN-GAoPD8r7i2uXmQF5py_Phj4syntw05o641NdjcCC4SLAoote6r_tEACBE9nXehPUHj2HmLGz108XsTkokZ2pvDoiQBJE2pOXhSX37HECYH7ZOekS0Nq9b6qebsXwem2OsCbRg1CuQ62anmslY4HHyi1klHwm2ne0vUqKfW4Vr-qwRdHHiqNkoedckMQyEkHSRYyUjoY07RV6vvUaS7NKZvnKkRzGCOji8OrUmWM65LmX2PjpLZvuAqK_jc1hrA8XvKUIeYDPoN4_I2TblV1N21TL4I9YLelF9tDC7O0wYOxz2-x1wiE0x1gSWXluYFzxLP_FrtZMI4Ytcb9dIVK2XAx2uFd6ffTHvnhq8tMsugcAMxyPonh-TDyOl5TDTgolakGkafyjRWR5pIQ_5bo6grEoG7a1eTZRBDvt8szFmZPVb0VXlwimj7BcoGlljagGdcp3cABLBznL12OK7mLEgvMOpUFHz4UvC8L-KUcb9_bdr47fplHKO0Lud7PUH9R9IocKoVQV9qQG6-fQtyhmPBytTgGqsTyGCyRM_m--1xZUOQI3nKk9oHkcdlVEtdzfOrrLFrqMJqLy5xhA9Hioa67v9TmvWayDSdm4Mhi0GwInWyIc6JL70O1dHeXzSWF-KfyDzVwr1ORmy9nWmmMCOWpCowiUwypWlvl7AWP-ueoulXynMgzU5Xw4t5IZnD6v7nElJJJNFudj78Pbq1HwWF16Qz7htC5VDPhsVSs0mErH37LnxpoocXlj66guWv7lxRNG5QAngnqZUX1fdX2dVhDlbWmVMPFmufTOexUu32WXoP4-oP61esl3PxcGpgrNAJR1iA1KnHMTiIiF2WNJY8YVLG3_Fx8cYTC1lrwI03htLttBA4JCci7k0RMedyrqdyJh-BLnfQHQHdsZZpAkq9QO9l0B5hIYSyyGXC5pSO18G7TZ7MBZsbtOCsKBBchPAWwbvbCxVGiSJGu774B3BGWhSffAzguyDFiD5_YU2z5c9df2uQEM_4GBsfush3h5FAnvQOtS3EpySxn-atMmT7GPj15Wn-2Tc6LmtoHAaDbwkwN3G8iGH7HEZpyulfIkl92itruy9FhHILMy_YFKFHukjVPWa3AKnhu8qK1OwCKl2fiVxWhGEjlGCMDkhkEfftcJdMzSt3fw83erDaQa12pvI__YlyLFkRUw3g6OIoGTEzCyVonpueo0RvX3Ywn1lV6yl8gf6uWkKduAGFgZ3YskVa7MsVm1vt794P1VoDLeTyFSkn8loEDXdbaKr6VRWgVOusyMcJSVMPMAz_yVIhw52ieoXoT2QQPrALZReaQDijoIf3dS0ldK7Wj_aXB9g-QEzB4ovmUYklavMBayJni4c9NrBhnXpNemCo3nrXowhIxiqaLRS5q8B3Lrlf2y7MlG4Y4OPz7a5mFxubw0c5huTZGpvBiMoBIUnDeWCIxNR8pZWUMpkiRrd7LN46KddOktbp_iMMUjBfUViz2Zov8Hr_VbIpsMGF93IdpAve92sd0JajiSvHZjJzOAAAXoEpwzzJbW-3d2YcnPcWBpz7a7LTFUpulG3Xpa5OSWxT2FwKEiQrxVAAuFlPYs6KtvbfXVdjbrBCk6bQsOyJgoKxh3AIRFpFG-kUcngeUJ32s8GtHnNmFX0p-xtox0-SzB89_HfcEhkczJ6-n7JRHcdGpAChdPuhJpw9fCdMDXrdlLmPUWWG5N7j7AqzZOg7x7Gkg5uhomiycHesnAJW5Curz8R974wwwiCAj-RADK7rO7PFGcyc_G1oC_N_HA76VwlPp_ey5Xku_bbUb1jkXFLOP6pkSTxSpFm99BZoCUzwlKryRWGnWklxJN-0YRBOywVh0lKnvQ5UKoERwOrfcrAgxM5JdnnbjFPFBjO0-xQNpsQK8lYe3PDwItraPBPYRIrdQj1cS8oTjaBr2dxlv4Wm-ROr-ffr9n6s5GlZqcSm_C3CmxaT4cmzQ2G4Ciijhp40Sip2YFr15OVhA-YAPflBJxrZCYtIR7ElviQf8jrAeiLiBnZwTWOzzIcyyRUcpF5hsh_HiEt8R7maQ21Y1Njp6RWkVK9R1Zj0k83C4w0a_Ec5_jGt3caqY25Und_VyiFJMYf6PTC9z3VmN0yDzu7_g7BCCEhq56xrZU7WK1q4fgXz_rTXYJIAW1yVkVGmO6lAUGZ1ZYrQgD_QTdc7d_ljrGFh7Lz5KxuydP9DMsn2EEKcN0XAD2m5o6bMATJwpOdq4AjaVWUptlGg3HhdW7EFIZD6xx4Xbuflj9eqM7KphjX41aP3hf9K__6-fhvF04JhGDPqaaNBStHSmt062s1fMbCmx9xNhg8DT6CCWm7r2iyzlJJVg441tzMyzHx5DuVaVcvfixBexvOeKPsrT44ceEI_w61THB51kLl5N9ej3a_3ZDHvE0HVKBFtbkhS9heZeUYA9xE9Rmt0MEeR95WdsbMF8VoqzcY_l4cPIqfj_Ud9aZeRL80y3zVY1DtQY0ZyjV1v64yvdjsZp4GWzRBgTn4F-OXZvfIyE5vJX8JP1Yc_h3DfsxL5-BzQLnYawKSoKMSNLOJ0SMkIc3f_h4BoAWkWI7rA-odSstPgAsDvcikKvdNOfIhcs-byuqabRsvyzC1T01qPbn3b1dZrehuYGZXT1lQqklK_SONrlhQwUS5jOdq2xWLZLaxgF26IQUHiWh1953Ai4w7K2deO9WM0reR8rhn44LXQH641XXWWGvcqFUJpTinGfntiMNMaZRTvxTj-gInPCFgoiXbDHpL-pAWDrRx2yTnfhCaCAF8xZRLCMP4uUbUVZckJ2xWc3JGOjtxoRqggyrOOjHzQAfT4PTCrxL2WPrhuAaIzJ0B6ZS4AQN93F-9MmtL-JHakq0JK4KOHdwo6h1x0nvLp9carR0m4BfIt7wHvA_kHrzPa7N6C4kFtSigkYkKz1e-LtmQLCdak6xguQvrkaPwa7EVrVali-YRwIz7umM4ZOTn0MN-CdR1tWLlrEbAI2Shyv25qv2NKjIB2WW08l5yk3YX28WmqJRg7hzU0e8ENrZ-Wv3YKjkA5U-tbl1qyb782y0CtRSfGUn8MFbrmQkFwx9n6yVfSLfJg3p05ZQ1BmvcuPsZzeHOhPywru3v5asAOmfd3lAjeI0FYexr0mAcvJeu3LGSpyOWMDubBr_KnhvMpkREE25ZJ4SxSJvOCeNYe4zGiFaFqs_Tjbqbq8Tx8xVxCteg_7qw2d3qcaUU3WuSuUQmaTf4T6K4yx8zImnbcUPz3pWWhPFXvfX1xcUAl1iFqfTJCjODXHHToSxuAhrp9PG0_WjzUS8S011lnErr2I2JFz5AITkU6f3DVyBmeZHgWn3PBXArLQ25fmcGTOLI1Fv3LCGlsLNiI_Qn1SXIqZSqxQsDdf74E453ANflYz1jEt8MLjJPQyvZCXQ8gkukZ9DSJjSgtIRxn9VXMmJtiYLdE-jnx68ARt1jcd3sR4fPP7P9JGSx0wX-sTmxgVB6LsqqPM1T8mk4NL8v8yhiSMa4hlOgdq7h5gqXF4ubFIt7e4wjPt26z31aOmjoCzcBac1WlH-nV25vLJ5e_bq-NQOs9E1LusUaTJLRCu4npHe2zG_6D0aV5xR6dR3vzPzRnCLvlpyimmLGuQcQQ8vjdGgLppaFW_dv3PJp4dyZRJqAV8l-03ckjP07ileJchKA7p4vRC2w5JWz36gRtMJTmwedSLMqOSfW3nqJ7-voZRGVM82J-C_dCzIMXzlXmpp03bay0QiVQTwSIHbLlHOoxB1HEojoWaHnllRvJtb3b8Frw0shtsunu6FoZBHdGv2O3DMWOceNCrK1EoqSwj-R8KG-MlLCk0X8AdryHvsbKAE7gCLWqmjK5l01Tm5Gz9F_uLZRfWRNGPYLRtj4q4nL-zgK3IlS-MuFstNSJBG9vme5IlyDrZX8y-OnCGCXBdOvjrzCfXCLA12qu2yjzs7Lg3fQOuDHQEeGr5MBd417qkhkqSui4hUX_LjOM5SKV8lFWQYEr24GRB5R1nhorlvymKXSTOArNS1b1A4UQlJZb45eZ7w_aHqv2Pt7WXobNtd6goVa9peLlMldvEcqljcPRs_sGP2m2BpWFbC2J7YpwyhSy5Fr4_4hL15XG5WwW1FTkNm_GjtPZwZsx7Yt5AAXlR8UF6dK47n6fRICbQQw1Rr3Q8ct-iXOI3Q8_Oe8QkAMq83dPlh8rFwPVdnc-422_xdKJvcT825S3hwE3BGnJHhQRcSxL-rBhnwD2GKiyz5Ng61-8crGpf4IIRYU9j3BNzVzAgqZvw2rE2fyXz__o6Co19tLIIZC9rlCyyiJQATNwhOT44EhMpdkORcdbUXTGxoN6xtpQgCTdi5zt8Pj9ppgdmylz0dYlVy-fLBdcVPP1EFZighihG7PU6monTlOi-SDeQGdUBW1MYUJ70UA_ZyieRBAwUFN7PuLa1iwDdf98iJXAeHGtCqPFjX-RYFryPt8hbwzQEe6g_V93RgMnWaT5_Q89lfd7PG1t4XsOmuoqrOfKEOnJ7X_8Gfb-BdOA4OEf71R_gMSMBRM_kcqv8l7ljhUSEDSgs9VNZkR0918bE5ffVV8H-MNo7pp-c9famvAEZASGMcsyk50EPcYLYSRQaXe-lao595v1szttnoEebXsIv31YYsj2Dix2BOiqt4WDXK3kAY6hABiM1oZWq4eklb0KUsW07E0er8UGMY8hRdjlwVfnb7ZQmgvf9Qj1zvZx3uZ_tMvvu1Jsf8CRmUE82ILnf1zvlvo-HU9rgdkLC9wf1JdpcHkwg0lxhQ4Pj_6HnJhQFh_EU4GMnDpqzjHF-hbQL8YV5JIXUhS0B-33vVWLrlthUgpQOFBNFTFIhwNAPF2QEFFfzIxulbGMwblFVHRIg9ifhFv9vIWmn7uO3FxDgYsudIX6sNu6WEKngKOrZaGcl59SCpL-FUjREJ1opCLCwMJZ_0EOwDvYzT0iP6mdZ9k0rWsYbXi-muimJaRSeSwq1AiJVChOxyvokaC5dTswpczqjdJ7KdvD03GxWN8QKcjenicLIjJFfxdaVyZ_5f1jP6vW8l6-rzTonux9waL-G6k-zUXrZytgTpRO28pwzQiD4n5KYr6RQYxUu97VRUMfdkqB9ZFAwKXFXLyRyyLNtrWGI8VuA-hP-KWWY0ME7Wa7YyYtVEM9AfR98GZjz1UEJHPePzwPbRdW2tEVrxJSNPI5A29QfTpNzKP8eCy_VCByeWchY0Chilzf_SVDj_DIzZSQYMLmpT57LY3fPWtdevhDzRbhePcJbIblkbMs4FqljZn7MKIC8wmrui-lOp1baGHmv3DgZoCxZCldPx34EVB3ya2mJ705O-lSJ__Ip8nPcMQ204xszHGQyl9Q14WlaWH_XDPybm1xD6FzAIVq4CRrrgCC7PkvffQmJ-_HJNoxJZsNeSTc0QKn4Z8Q7CBa2Fi_mtjrpr0rhfu0t5nb7WsgaBfbDBd4wBY9ZTF-ZZnNX5nZzefyBAMrfNWvvfst2FYPyAFHEFApwLKUfmCPMxCqdxlNqvbHnkSsqpkc8OKcD0eIh0q4RCcuVWRmYyYMhtkkvKSho1Ibcf1-V_p5NR3chVUQfwZLAhMi-iR2cb4ZkIpfkrPtc74-zqGi_GT0JLcHs-2kO4prP4tJVs-fuwlslJiK9PhTTN2XhrcPK8Wp2jHBTAlPgvs77147X_pohELjJWHwBBXFJptGxjgkrZGWEw_OuALT6T4VRVWyYJCGx54pfcdZYM0slg-lTQZE9eVy_RWIAHSz0T__M5Mxaup353WHEto_AFkihumNB1hFzrQzQQZfuQNK0vnXayzpFXA8SIIdrKAEv2irYU37QXrnj_b01iabPC4hsuSCS3KrzM7x9kNrQsY_LeI68GJTvLFxwlh3evpl2zr4DkG6gsg1NFXYvCgy2aTAVLfbNadKbaJrj4mI-feB7kytvM30vlX2gsrhIJ_9ptnRaOFXVP60l0A_WIX7JMs915z7Nfl1R0UROps39zDl88aJI8485sGtr1aPUYhJFrPIVdjhN6FHR5mkwV56YM-I7q6oiuS8qxJPLrUusrZOKQf2uHHPoKljInhpxaZWlsp_Z529-g-07e7pWvDqGIQBOk0WFlGiM5N9YCpuZc41j-5Sp-iYxyXS2JJtbQMyFOdVF2fMTSUOmwc4U-mziVFOyCMv5WarC-xFJdFfDmiXkddPK3suXyHfg28D3HIG9zFYoF_BA0reTtxmBuM_ap6g7IS-m9wvVE4wNIb2CLj4JbnTh-CtvU0zALUaVShuMbBXZ-amfC6yI8DiTlowmnxHMsNIQ8qY1tyAPv43ZS0o3F0gEQVZsLlO7GhNfhXJSZT61PyQpPJMwZAchNENFSMx298Y6JAII502NT1VkxZ-zOND_Vi8rC53_7tlE7T5fcAhwiyk6CuIkXKF9nMaJmueBlBrucWZiBwfcGZ6tunjr35hl3Z2qauK_-fxmUUHAEv4jwGTFfd4yS0QpM2VWCQHLmMdWu-0dX93W5JUkpCwsHRn_iTS5bChaDZqbYLW45jP2GPlbrPmQDfNZy6HgBLJx845rx67gis63MNNq7AiVfr_wwrcXXAX5we4Y3ZDgPgHqzRstR51Kyhg7bL8ZD3wn6MWMKaFJmfonQbo2iU6lEGlWiqUBtoHQTjcIH2rsALjWm6GmjafRseIf221FY2b9TJJKYG3tyjxBITZW1Fyd7Cnr1yTBDsAUHmkZnPwGomAokBdW7er95_3oRurxqCqfwLnYWO39xVQxELjaznF429r3o4z44wUxkZcpWwe7AAf3Ntax8WHhC0ekItGcZQOr6FSD4zsKbZH7U0iTGuWaVPjr5bLqHepdxPSm1HhpsZn9ODBthxkd6T5TEyoNDep3NseuQsWTi-E0it-VTj3TrCVT7JNWYQlS4TSLQxdCTJDYRwt63WngV2-cOJKK9hP2ZBkOpHplR3hMuWsTk26C2PPyc5qyi8xQei8kIQNxAJHhrzdcMjKTEyaQ75-7BQzj9IX4w-8uRlsbbLdDeOYb72ojoculO3ijb1Q8nrOXnfgmLz7OXq1yYsOdMcCoPuAvINdPVxwDzyxpaVyvOUIdjQN4wVbPllr2iYhkU1C0thfgJKmxp3nyjWxQN3eGMcGHEBUEbCunX_gPUntUWpsBs08G9NrYZfE63ugAmCgKqTXgA0QRJuJFO5JasxN6qLVymwst3ooyljys33oNP1CYWCKMAtD91zpn82Xu3yCxMcPJDmuV-_amP7WTyvJGiUjz4gScGzUdAgG1JqnImY1rIQ8PRmNXJHPTu0W1iUI74wB7gHSMbj44kjFiVSkaldyxrJgHITRsK5zIOHYG8nBzTSLRyAqHhZI19A0jTrLti344V2XDAx0dCrqt_d7Al68TrskEThD3PfNrFduH8mr-VJGDYdfaT1xR27LCnpLCobJjBKFtYE9hNXmxoKtXO0aiVEkMu5YqFvW--uKth_carq3gvjxkbtgsTrWTYKBwRYSKhogDa-TATtf3my0MWzuA-jk8XPNgA3MMAr8e85Ke42iW10vnXxmlfqaikqDQe-z280iBbefZeyCeHNjiEeYoVfoK8FsvFN2h1pOyqi2a7ZmeKSt3k2k_JpViXGWe4z4qxIrMmcORw19T0TOrXqrmZ83hGawAy1U3r7j_OQqwOWTWTnbYbZfqAsTGf1Pd2M7jpgKTIV9KFg3plPRqIMh4poaPCeo8o9gDMWJCHwG5IFVcUu7afGey1WPWGY_URtiGiVxFC50ALOEvKyARlrkbzGIneDvPCbVKPZchXqe3Qcqhci-c51spbHD-xPOJ0tWtpjGBPjY49zxKA1wdxJdM65TS5THTeu4euQbywx8HgIpPb9WnjsgVOtgYv7vAoFhc5UDqX4U8d2SCkJ8wcscF2xdPhW9LqKH_I6OOTySE37tvS-iZelzg8DM0wwi8vO1Aw4SgTq-_Wxan_543PvIqNgYA3yos45sTOlM4H8xaK04I3b8fpcU8OoTpWF1kgyiGue0Xq_dAvd858CyU8b_Ph15gEpBReuCjnWtsOoMT22bcOEu_Db7m9iuoIdZas3fw-1Muu0_HisHLjc07T_RWZxieeX13Foy551rvKCS0itsJBZ37qk-_QMZ3NSrEo9DZAT6aO_mRMKBeKWdGflwcnY1Yc6wmg8WM44hIlBO4A_6O_8e8lGjgoXEuYCqwKSBnF_r4F8evef43XGYjOQOMue55E6pLPtR2A18P1DK-d5ByCoQqQyCxxP9aG5LroD69Tm095c3JTs3RVlTSnEzx7LEN0KH8fq0Dr1VHUb__mcL7qYQgMqaHHOMlKhZa48OdCsU4Q2800TOfOgBk6JzpeNcS8vV0y_BW5lcvFNmH9B8d5mAUngEh-TwPIUIIXve0hs4w2oGJMk8KD9JEglG-VHolIG70W-ffvqccb9Y4Dj0zwGkSEme3NwT2zYDC2s0txOoxG2qjktmqrroFfvA1RikLNUInntOx8KDtHStjeHtcsyuC_xxKyN1nCodZzoIMUh0noogBl9P7RxtQZxo7SbHSlaAyAgkTb77-eAqtphY1eSxtgBTG2l32xK55Sg54heX2-jU7PbhDX0urbS5WuIPyCj.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC01LTIwMjUtMDgtMDd8b3BlbmFpL2RlZmF1bHQifQ",
+                  "format": "openai-responses-v1",
+                  "id": "rs_01947560fd5fd70b016b070998f46487d188e0de418108607d",
+                  "index": 1
+                },
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Planning the next steps**\n\nI'm noting that we need to include a planning statement upfront, as per the instructions. Since we've done some planning in earlier steps, I should clearly state our explicit plan. After that, I’ll need to execute a repl block for parsing and printing sample results but not finalize things just yet. Let’s keep moving forward with this approach. It's essential to stay organized and clear about our objectives!",
+                  "format": "openai-responses-v1",
+                  "index": 2
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABrBwmqYEjJLr9eJddaqVt4JD5IjTt9GofUEfWVWvNFd326eik44qR1kz_SAyiyi3nSEXVoybIu4wOi_3YvSQFH8EErC8F2Cpyq8r_MZsmT42_7L411O1oT74V2J1yCcjE5HE6zaI_sIkRBm4EAh8KutgEiGDCHiLgllLvLWGAlJCAXVe07le8uiexWSJfj0Pt6prdBPqHJ_xmHMGYqxEacn-7Xg6JaZvDCzanI0r0UntR2LTrWJQo_U57vPhTFZq42bw_m51p0NRQsN1zS4wf1rbJ5EVlO3ZDtMY11ysm9ZLZ0KCds9jDPuZatu7jyEaNltplo3xRNj1tj5vrQflUb8EML4Txyjl4wMKYzxE6EhWliN40IUwBKaEg6Wv98ant6y97XRz_Dkgl4dpqEmsVUnrZd_E18uWtyXTVlfuDRdqzT_a63m9bOsdeMY1JGs6yyNE5lENi8yG7CNAq-q5QlnAh-4QCjJSvjxXR_YVzSvCmV0z3fyPTdfDvxzj1JK7KmaZTfAbVkbYsp-UVPwUM7wnlervlOCIgO7Y-liteqM_8HSOq3yL8NdRuRsLUXsuXJid49xJ38ETxShrUudw1dkdnFTQhewsx9YTA9sjdn2MgUV0uSSkdyY3eDlt_b-6zANN5hbP1JrFG0VjTwOQZf5pvQfK59art_K7uwUxlFAqrs06wDBYbzz3HarT-u565JnB-Cx_ADRu7jeV_FQUZRD8LvwbU-lp7zbUOnCk7WkhOu40OCpY7G-a5R-svBHIcc0hsPm0jnTYGMkWYt_LFk2LRtnVpduJqp2YWmuj8r7weqpSryTjMrxd4x7YiMnFdwEo-CupfG-cpKJwtVUI_VNvuP2of3VVC61HmUFjCBxZy7M3gE_o1WKeLHg3VBww3kIhCMssYAkEsSB3EDKm7xf6e_Tx5iv3nYXR42MvDz4fVABxgaOrlVJgtXslLIfts2eWN6p-k8FAGaVVKW8_VibhxqIPf3i0ZtLeAMlv0LEsuCHFE2UOCZdqqlVAPnTr_bx8E__f0HkVK-G4UWOvuLz9ky4FVpwuma1Dz1GwZOMY-07nRJJMNr-KR4BTrnQTKVYSVNZbZynF2t-yiLbLLB-d401Czbr9jfZ9V0DMrhT870eE0U9It6gMSXKs9OF_M53fUkLx-gprf54aMEEXgFwL1cw06ap1LQtWGl_ntxT-NfeOoB9nIzcO4DMNQRAh1nsY0wSmK0Ilv-bg8ywhSV6jKr8hPDkndgTssMNmXspBX2AKfAXOYLdXBAVMIqb8tHSKfLC83bdaM6HqBsKPhvcrQJzsFDFFJAOGZwPV51Iv1zAUlSHqsHI7BR8bEc3IrNu7_94bktD3Q1zLXy0RYN6VhtpM3f0fdkO_mCp3E9nI6Ya9t9tz1DVLtalT2tgc_QqdWPdFvppmDo0_NwQJH1SHlHCDXiwr2lBweWHCnSk9Ylb0kCvjKxwydbbvLbUKkmI-_QOqSJ6gc8rw6uub3Uwwfn2Jfmf-VoZvmQk9-5B40jaDTnizBWugjDgGMANPPeuIr_tYjqz5fj1FzKaMpjSoKXDSiEWmwx7uf_pGn3QDUTe8h2HzIO6BmYP3babxob_xOhK3jMZwFfCOre7hT4duq8CemvHQwCPN6MQ4KaN85Abl9yJX9y08IjXYMXFOGHR4GqIFovCIkSDVRMqwSbgNPjsejI6p_3unlf7RRZvuuNpZmD-3oLF4WvA5znJw8SdKudb2Dg5mKlBxLNx6P8xnCc_S-0-pLpkfMHsgBGpdSeBjRsgMakUi_dFnAhAiIFQzokLCp-WDbhOSie8VwAjJ2K0ZRgdlXfCvlNlnXCgtLaua29UrdctvaTWX5jyLGaaBogFDAZPAGrDqYqzinT8_GIb_N5-um2KHd-XU-E9Q5AopwxKFXxauDdEQFS8gsudpk7ZrUOBGsvoIxZjtu_cw7kOCJMJzFCfCPRwNQ8bCBZfZSKheqalACX9sLmnKjw5DSTB9I1FR59oyX-kOQ_ek95JO6UU779S0G5pB9_zVauXuwzryFwCuehPbvwcq_zD20Su5vsznso1eAYZViAtplaJVNET5sPublj-1uaCT4sUqH17KSC2ih0CM21EOpXeQS_OnaiiuzkHJyPvENnKy9X1vV9P46m0_mkEcrWEoFktjy55F5V-S45IcByZ6zeSmgZrzvOA20Wc0sRj2or15fWoBS3yVG2HbcvAtgolmzuz1pmk9FTzXeO0w6RdWq7Qow7PFWCVTfP_JRd2UAwWsw3TsmN3A4A0X1Ys9nTm5pg8kFDseYYnHbwie7N_zNBvu_dyd8szdipWL3IiBUacP11UW54MjtFG5BjQdsi4r7Z5e6QlqsL4PS1N9NO5cgw0JDvennK6fAOoHxRiA_hisDEFrJDBp6QaPS6RxZqChTGnkVdPNGQvi2HVWk4UOPqZb3KsB7X_JYZXR9YR2zsDt-6T5ByhMUrv-4KhDAvzqkOXqxZ2A21g07hf42rmhJTgjg7x6rRxWBcYZjpy8y_tazGUsJBxTTo5ptEd7HY6GpR3OHFDriH9w8kK2k2eYV_mgM-z22YEts9LihVxzjWzS8pdiTiiRVihAX84uo-3ITpGVNl2onkfIDzAXf01p2ScrMM7s3rTfp8TV463INAhnTsBVBqiHq-lnEgEyMeUh-sTwHZ2GSxRZXDJB1v6DTfTkFv.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC01LTIwMjUtMDgtMDd8b3BlbmFpL2RlZmF1bHQifQ",
+                  "format": "openai-responses-v1",
+                  "id": "rs_01947560fd5fd70b016b0709a8f00087d18fb3ca220144a67e",
+                  "index": 3
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 3922,
+          "completion_tokens": 2370,
+          "total_tokens": 6292,
+          "cost": 0.0268745,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 1536,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0268745,
+            "upstream_inference_prompt_cost": 0.0031745,
+            "upstream_inference_completions_cost": 0.0237
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 1280,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "openrouter_metadata": {
+          "requested": "openai/gpt-5",
+          "strategy": "direct",
+          "region": "CMB",
+          "summary": "available=1, selected=OpenAI",
+          "attempt": 1,
+          "is_byok": false,
+          "endpoints": {
+            "total": 3,
+            "available": [
+              {
+                "provider": "OpenAI",
+                "model": "openai/gpt-5-2025-08-07",
+                "selected": true
+              }
+            ]
+          },
+          "generation_time": 22028
+        }
+      },
+      "verification": {
+        "revision": "native-cost-once-conservative-detail-bound-v1",
+        "resolved_endpoint": "openai/gpt-5-2025-08-07",
+        "reasoning_detail_conflict": false,
+        "reasoning_tokens": 1280,
+        "conservative_output_count": 2370,
+        "native_completion_tokens": 2370,
+        "billing_basis": "native_completion_once",
+        "reported_cost_usd": "0.0268745",
+        "expected_cost_usd": "0.0268745"
+      }
+    },
+    {
+      "request_id": "a2f8fd70af1943f4acdc1d634aa38b06",
+      "ticket": "attempt-00040",
+      "body": {
+        "model": "openai/gpt-5",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a Recursive Language Model (RLM): a language model with a prompt, and a very important context stored in a Python REPL related to that prompt.\nYou can iteratively interact with the a Python REPL, which has access to LLM calls as a function. You will be queried turn-by-turn until you have an answer to the query.\n\nTo use the REPL, you need to write code in ```repl``` blocks; the REPL persists across turns. Available in the REPL:\n- `context`: the important, potentially very long information related to the prompt (typically `str` or `list[str]`).\n- `llm_query(prompt: str, model: str | None = None) -> str`: a single sub-LLM completion. Use for extraction, summarization, or Q&A over a chunk of text. Sub-LLM context window ≈ 500K chars.\n- `llm_query_batched(prompts: list[str], model=None) -> list[str]`: concurrently call several LLM calls in parallel over a list of prompts; same order out as in.\n- `rlm_query(instruction, context, model=None) -> str`: recursive RLM sub-call with its own REPL and iteration. The instruction goes directly into the child's model messages; context is stored in its REPL as `context`. Pass a focused instruction and the relevant data separately, e.g. `rlm_query(\"Identify the trend; return up, down, or stable\", context=data)`.\n- `rlm_query_batched(queries, model=None) -> list[str]`: `queries` is a list of `(instruction, context)` pairs, e.g. `[(\"Summarize\", doc_a), (\"Extract dates\", doc_b)]`. Run these concurrently, each with its own child REPL; results preserve input order. Both recursive helpers fall back to plain LM calls containing the instruction and context at the depth limit.\n- `SHOW_VARS() -> str`: list every variable currently in the REPL.\n- `answer`: dict initialized to `{\"content\": \"\", \"ready\": False}`. To submit, set `answer[\"content\"]` to the final answer and `answer[\"ready\"] = True` inside a ```repl``` block.\n\n\nREPL outputs over ~20K characters are truncated, so for longer payloads slice `context` and pass slices through `llm_query` rather than `print`-ing them whole. The REPL is NOT a Jupyter cell — only `print(...)` output (stdout) is shown back to you between turns; a bare expression on the last line is silently discarded. Always wrap inspections in `print(...)`.\n\nAs a general strategy, you should start by probing your context to understand it better (e.g. print a few lines, count them, etc.). Then, use the REPL to build up an answer to the query.\n\nPlan in prose, then execute one ```repl``` block every turn, get feedback from the output, then continue on the next turn. Do not flip `answer[\"ready\"] = True` on turn 1 without first inspecting `context`.\n\n\nAs an RLM, you should act as an orchestrator, not a solver.\n\nDirectly after you probe the `context` and understand your task, pause and plan: state explicitly how the task decomposes into sub-LLM / REPL steps, and sketch the concrete sequence of turns — what each turn computes and which sub-LLM call (if any) it issues — like a condensed trajectory, before you execute them. Then execute one turn at a time: after each step `print` a small sample of the result, verify it looks right, and only flip `answer[\"ready\"] = True` once you have actually printed the candidate answer. If you are running out of turns without a confirmed answer, submit your best inference rather than letting the rollout terminate unsubmitted.\n\nYour own context window is small. Push every long-context operation that would not fit comfortably in your own working window — reading, summarizing, classifying, verifying, answering sub-questions, even recapping your own progress — into `llm_query` / `llm_query_batched` calls instead of pulling that text into your own message stream. (Conversely: if a Python keyword / regex search over `context` would already pin the answer, or if a single visible passage already contains it, just read it directly — sub-LMs are for when the raw text won't fit or the question needs semantic interpretation.) Long REPL stdout pollutes history the same way raw `context` does: if you want a recap, ask `llm_query` for a 1–2 sentence summary and `print` only that. Aggregate the small results back in the REPL.\n\nPlain sub-LLMs called via `llm_query` have no REPL; they only see the prompt and the `context` slice you pass them. Hand them clean, focused inputs and ask for terse, structured outputs you can manipulate programmatically.\n\nSub-call budget is finite on two independent axes, and `llm_query_batched` only parallelizes — it does not relax either. (1) Per-prompt capacity: a single sub-call answers well only when its input stays modestly sized — a useful rough ceiling is ~100K characters per prompt, less when the text is dense. Pack each prompt close to that capacity (a chunk of many items, a whole document) so one call accomplishes a lot of work. (2) Per-batch fan-out: `llm_query_batched` concurrency is bounded too — a useful rough ceiling is ~20 prompts per batch. Tiny-prompt mega-batches (hundreds or thousands of single-item prompts) are the anti-pattern; fat-prompt small batches are correct. For many independent units, use several ~20-wide batches of full-capacity prompts in sequence, not one mega-batch of tiny prompts. When the work can be expressed either as a sequential loop of `llm_query`s or as one comparably-sized batched call, prefer batched — same total work, far fewer turns burned. After Python-side filtering has narrowed the candidate set, batch-extract the survivors rather than reading them by hand. If the raw workload exceeds both budgets at once (e.g. a context far larger than ~20 × 100K chars), don't brute-force it: filter aggressively in Python first to a tractable subset, or stage the task — a cheap coarse pass narrows candidates, then a targeted second pass extracts from the survivors.\n\nReserve your own tokens for high-level decisions: what to ask next, how to combine sub-LM outputs, when to finalize. Delegate everything else."
+          },
+          {
+            "role": "user",
+            "content": "Answer the following: Using the current Shipment Requests, Warehouse Inventory, Quality Release,\nand Dispatch Holds sections, identify the three eligible shipments with the\nlargest requested quantities.\n\nThere are 160 current shipments, each with exactly one note in each of those\nfour sections. Match notes only by exact Shipment ID. A shipment is eligible\nwhen its requested quantity is positive, its available quantity is at least\nits requested quantity, its quality status is APPROVED, and its dispatch\nhold status is NONE. Archived Shipments are out of scope.\n\nRank eligible shipments by requested quantity descending, breaking ties by\nnumeric Shipment ID ascending. Return exactly three Shipment IDs in that\norder, each requested quantity, and the combined requested quantity.\n\nFor each selected shipment, also give the four source IDs identifying its\nrequest, inventory, quality, and hold notes. Formatting is flexible, but all\nrequested values and source IDs must be present.\n\n\nYour context is a str of 32858 total characters. Each sub-LLM call can handle roughly ~100k tokens at once."
+          },
+          {
+            "role": "user",
+            "content": "You have not interacted with the REPL environment or seen your prompt / context yet. Look at the context first; do not provide a final answer yet.\n\nTurn 1/10:"
+          },
+          {
+            "role": "assistant",
+            "content": "Plan:\n- Step 1: Inspect the context to understand its structure (section headers, note formats, field names, how source IDs are labeled).\n- Step 2: Identify clear boundaries for the four “current” sections and any “Archived” section to exclude.\n- Step 3: Use a single sub-LLM extraction pass to parse all notes into structured JSON per section, capturing for each note: Shipment ID, requested quantity, available quantity, quality status, hold status, and each note’s source ID.\n- Step 4: Join the four sections by exact Shipment ID, filter to eligible shipments (requested_qty > 0, available >= requested, quality APPROVED, hold NONE), exclude any archived shipments.\n- Step 5: Rank by requested quantity desc, tie-break by numeric Shipment ID asc; pick top 3.\n- Step 6: Prepare final result including three Shipment IDs in order, each requested quantity, combined requested quantity, and for each shipment the four source IDs (request, inventory, quality, hold). Verify by printing a compact preview.\n- Step 7: Submit final answer.\n\nNow inspecting the context structure.\n\n```repl\nprint(type(context))\nprint(len(context))\nprint(context[:1000])\nprint(\"...SECTION HEADERS PREVIEW...\")\n# Try to locate likely section headers\nimport re\nheaders = re.findall(r'(?m)^[A-Z][A-Za-z ]{2,}$', context[:10000])\nprint(headers[:20])\n\n# Show a few lines around occurrences of keywords to understand formatting\nfor kw in [\"Shipment Requests\", \"Warehouse Inventory\", \"Quality Release\", \"Dispatch Holds\", \"Archived\"]:\n    idx = context.find(kw)\n    print(f\"\\n== {kw} at {idx} ==\")\n    if idx != -1:\n        start = max(0, idx-200)\n        end = min(len(context), idx+800)\n        print(context[start:end])\n```"
+          },
+          {
+            "role": "user",
+            "content": "REPL output:\n\n<class 'str'>\n32858\n=== Shipment Requests ===\nR-156 | SH-10156 requires shipment of 1222 units.\nR-159 | Request SH-10159: 2443 units requested.\nR-094 | SH-10094 requires shipment of 2998 units.\nR-102 | SH-10102 requires shipment of 5403 units.\nR-008 | SH-10008 requires shipment of 5810 units.\nR-072 | SH-10072 requires shipment of 1555 units.\nR-090 | SH-10090 requires shipment of 1703 units.\nR-155 | Request SH-10155: 2221 units requested.\nR-048 | SH-10048 requires shipment of 4663 units.\nR-045 | Request SH-10045: 3257 units requested.\nR-111 | Request SH-10111: 5292 units requested.\nR-052 | SH-10052 requires shipment of 1962 units.\nR-104 | SH-10104 requires shipment of 3627 units.\nR-110 | SH-10110 requires shipment of 5181 units.\nR-148 | SH-10148 requires shipment of 1481 units.\nR-149 | Request SH-10149: 4885 units requested.\nR-046 | SH-10046 requires shipment of 4256 units.\nR-063 | Request SH-10063: 2813 units requested.\nR-027 | Request SH-10027: 1777 units requested.\nR-134 | SH-10134 requires shipment of \n...SECTION HEADERS PREVIEW...\n[]\n\n== Shipment Requests at 4 ==\n=== Shipment Requests ===\nR-156 | SH-10156 requires shipment of 1222 units.\nR-159 | Request SH-10159: 2443 units requested.\nR-094 | SH-10094 requires shipment of 2998 units.\nR-102 | SH-10102 requires shipment of 5403 units.\nR-008 | SH-10008 requires shipment of 5810 units.\nR-072 | SH-10072 requires shipment of 1555 units.\nR-090 | SH-10090 requires shipment of 1703 units.\nR-155 | Request SH-10155: 2221 units requested.\nR-048 | SH-10048 requires shipment of 4663 units.\nR-045 | Request SH-10045: 3257 units requested.\nR-111 | Request SH-10111: 5292 units requested.\nR-052 | SH-10052 requires shipment of 1962 units.\nR-104 | SH-10104 requires shipment of 3627 units.\nR-110 | SH-10110 requires shipment of 5181 units.\nR-148 | SH-10148 requires shipment of 1481 units.\nR-149 | Request SH-10149: 4885 units\n\n== Warehouse Inventory at 7900 ==\n units requested.\nR-024 | SH-10024 requires shipment of 1037 units.\nR-041 | Request SH-10041: 3368 units requested.\nR-146 | SH-10146 requires shipment of 5884 units.\n=== End Shipment Requests ===\n=== Warehouse Inventory ===\nW-067 | Warehouse stock for SH-10067: 5601 units available.\nW-032 | Available quantity for SH-10032 is 3603 units.\nW-106 | Available quantity for SH-10106 is 6933 units.\nW-056 | Available quantity for SH-10056 is 4144 units.\nW-115 | Warehouse stock for SH-10115: 2849 units available.\nW-006 | Available quantity for SH-10006 is 1124 units.\nW-048 | Available quantity for SH-10048 is 4713 units.\nW-033 | Warehouse stock for SH-10033: 3862 units available.\nW-074 | Available quantity for SH-10074 is 5268 units.\nW-148 | Available quantity for SH-10148 is 1531 units.\nW-149 | Warehouse stock for SH-10149: 4884 units available.\nW-075 | Warehouse stock for SH-10075: 2308 units available.\nW-091 | Warehouse stock for SH-10091: 3011 units available.\nW-082 | Available quantity for \n\n== Quality Release at 17160 ==\n| Warehouse stock for SH-10041: 3418 units available.\nW-036 | Available quantity for SH-10036 is 3034 units.\nW-028 | Available quantity for SH-10028 is 1642 units.\n=== End Warehouse Inventory ===\n=== Quality Release ===\nQ-018 | SH-10018 has quality status APPROVED.\nQ-133 | Quality decision for SH-10133: APPROVED.\nQ-150 | SH-10150 has quality status APPROVED.\nQ-050 | SH-10050 has quality status PENDING.\nQ-053 | Quality decision for SH-10053: APPROVED.\nQ-003 | Quality decision for SH-10003: APPROVED.\nQ-149 | Quality decision for SH-10149: PENDING.\nQ-083 | Quality decision for SH-10083: APPROVED.\nQ-152 | SH-10152 has quality status APPROVED.\nQ-100 | SH-10100 has quality status APPROVED.\nQ-013 | Quality decision for SH-10013: PENDING.\nQ-087 | Quality decision for SH-10087: APPROVED.\nQ-158 | SH-10158 has quality status APPROVED.\nQ-109 | Quality decision for SH-10109: PENDING.\nQ-023 | Quality decision for SH-10023: APPROVED.\nQ-120 | SH-10120 has quality status APPROVED.\nQ-033 | Quality decis\n\n== Dispatch Holds at 24790 ==\ns quality status APPROVED.\nQ-076 | SH-10076 has quality status APPROVED.\nQ-093 | Quality decision for SH-10093: APPROVED.\nQ-134 | SH-10134 has quality status APPROVED.\n=== End Quality Release ===\n=== Dispatch Holds ===\nH-082 | SH-10082: dispatch status NONE.\nH-034 | SH-10034: dispatch status NONE.\nH-142 | SH-10142: dispatch status NONE.\nH-112 | SH-10112: dispatch status NONE.\nH-020 | SH-10020: dispatch status NONE.\nH-040 | SH-10040: dispatch status NONE.\nH-022 | SH-10022: dispatch status NONE.\nH-135 | Dispatch hold status for SH-10135: NONE.\nH-013 | Dispatch hold status for SH-10013: NONE.\nH-149 | Dispatch hold status for SH-10149: NONE.\nH-109 | Dispatch hold status for SH-10109: NONE.\nH-078 | SH-10078: dispatch status NONE.\nH-136 | SH-10136: dispatch status NONE.\nH-106 | SH-10106: dispatch status NONE.\nH-024 | SH-10024: dispatch status NONE.\nH-145 | Dispatch hold status for SH-10145: NONE.\nH-010 | SH-10010: dispatch status NONE.\nH-067 | Dispatch hold status for SH-10067: NONE.\nH-064 |\n\n== Archived at 31988 ==\nfor SH-10115: NONE.\nH-077 | Dispatch hold status for SH-10077: NONE.\nH-049 | Dispatch hold status for SH-10049: ACTIVE.\nH-055 | Dispatch hold status for SH-10055: NONE.\n=== End Dispatch Holds ===\n=== Archived Shipments ===\nA-004 | Archived SH-90004: requested 20004 units; available 20054 units; quality APPROVED; hold NONE.\nA-002 | Archived SH-90002: requested 20002 units; available 20052 units; quality APPROVED; hold NONE.\nA-006 | Archived SH-90006: requested 20006 units; available 20056 units; quality APPROVED; hold NONE.\nA-001 | Archived SH-90001: requested 20001 units; available 20051 units; quality APPROVED; hold NONE.\nA-008 | Archived SH-90008: requested 20008 units; available 20058 units; quality APPROVED; hold NONE.\nA-007 | Archived SH-90007: requested 20007 units; available 20057 units; quality APPROVED; hold NONE.\nA-003 | Archived SH-90003: requested 20003 units; available 20053 units; quality APPROVED; hold NONE.\nA-005 | Archived SH-90005: requested 20005 units; available 200\n\n\nREPL variables: ['answer', 'context_0', 'context', 'headers', 'kw', 'idx', 'start', 'end']\n"
+          },
+          {
+            "role": "user",
+            "content": "Turn 2/10:"
+          },
+          {
+            "role": "assistant",
+            "content": "Plan for remaining turns:\n- Step A: Extract the four “current” sections (Shipment Requests, Warehouse Inventory, Quality Release, Dispatch Holds) by header and end markers; ignore Archived Shipments.\n- Step B: Parse each section into dicts keyed by exact Shipment ID (SH-xxxxx), capturing:\n  - Requests: requested_qty, request source ID (R-xxx)\n  - Inventory: available_qty, inventory source ID (W-xxx)\n  - Quality: quality_status, quality source ID (Q-xxx)\n  - Holds: hold_status, hold source ID (H-xxx)\n- Step C: Join on Shipment ID across all four dicts; verify counts (expect 160).\n- Step D: Filter eligible: requested_qty > 0, available_qty >= requested_qty, quality APPROVED, hold NONE.\n- Step E: Rank by requested_qty desc; tiebreak by numeric Shipment ID asc; select top 3. Compute combined requested quantity.\n- Step F: Print a compact preview with the three Shipment IDs, each requested quantity, their four source IDs, and the combined requested quantity.\n- Step G: If everything looks correct, finalize answer next turn.\n\nNow implementing Step A–E and printing a preview.\n\n```repl\nimport re\n\ntxt = context\n\ndef extract_section(name):\n    start = txt.find(f\"=== {name} ===\")\n    end = txt.find(f\"=== End {name} ===\")\n    if start == -1 or end == -1:\n        return \"\"\n    return txt[start:end]\n\nsec_requests = extract_section(\"Shipment Requests\")\nsec_inventory = extract_section(\"Warehouse Inventory\")\nsec_quality = extract_section(\"Quality Release\")\nsec_holds = extract_section(\"Dispatch Holds\")\nsec_archived = extract_section(\"Archived Shipments\")\n\nprint(\"Sections lengths:\", len(sec_requests), len(sec_inventory), len(sec_quality), len(sec_holds), len(sec_archived))\n\n# Parse sections\nreq_pattern = re.compile(r'^(R-\\d+)\\s*\\|\\s*(?:Request\\s+)?(SH-\\d+).*?(\\d+)\\s+units', re.M)\ninv_pattern = re.compile(r'^(W-\\d+)\\s*\\|.*?(SH-\\d+).*?(\\d+)\\s+units', re.M)\nqual_pattern = re.compile(r'^(Q-\\d+)\\s*\\|.*?(SH-\\d+).*?\\b(APPROVED|PENDING|REJECTED)\\b', re.M)\nhold_pattern = re.compile(r'^(H-\\d+)\\s*\\|.*?(SH-\\d+).*?\\b(NONE|ACTIVE)\\b', re.M)\n\nrequests = {}\nfor sid, sh, qty in req_pattern.findall(sec_requests):\n    requests[sh] = {\"request_id\": sid, \"requested_qty\": int(qty)}\n\ninventory = {}\nfor wid, sh, qty in inv_pattern.findall(sec_inventory):\n    inventory[sh] = {\"inventory_id\": wid, \"available_qty\": int(qty)}\n\nquality = {}\nfor qid, sh, status in qual_pattern.findall(sec_quality):\n    quality[sh] = {\"quality_id\": qid, \"quality_status\": status}\n\nholds = {}\nfor hid, sh, status in hold_pattern.findall(sec_holds):\n    holds[sh] = {\"hold_id\": hid, \"hold_status\": status}\n\nprint(\"Parsed counts:\", len(requests), len(inventory), len(quality), len(holds))\n\n# Join and filter\nall_sh_ids = set(requests) & set(inventory) & set(quality) & set(holds)\nprint(\"Joined shipment IDs count:\", len(all_sh_ids))\n\neligible = []\nfor sh in all_sh_ids:\n    rq = requests[sh][\"requested_qty\"]\n    av = inventory[sh][\"available_qty\"]\n    qs = quality[sh][\"quality_status\"]\n    hs = holds[sh][\"hold_status\"]\n    if rq > 0 and av >= rq and qs == \"APPROVED\" and hs == \"NONE\":\n        eligible.append({\n            \"shipment_id\": sh,\n            \"requested_qty\": rq,\n            \"available_qty\": av,\n            \"request_id\": requests[sh][\"request_id\"],\n            \"inventory_id\": inventory[sh][\"inventory_id\"],\n            \"quality_id\": quality[sh][\"quality_id\"],\n            \"hold_id\": holds[sh][\"hold_id\"],\n        })\n\nprint(\"Eligible count:\", len(eligible))\n\ndef sh_numeric(sh):\n    # sh like SH-10156 -> 10156\n    return int(sh.split(\"-\")[1])\n\neligible_sorted = sorted(eligible, key=lambda x: (-x[\"requested_qty\"], sh_numeric(x[\"shipment_id\"])))\n\n# Preview top 5\nfor item in eligible_sorted[:5]:\n    print(item)\n\n# Compute combined for top 3\ntop3 = eligible_sorted[:3]\ncombined = sum(x[\"requested_qty\"] for x in top3)\nprint(\"Combined requested (top3):\", combined)\n```"
+          },
+          {
+            "role": "user",
+            "content": "REPL output:\n\nSections lengths: 7866 9228 7602 7171 843\nParsed counts: 160 160 160 160\nJoined shipment IDs count: 160\nEligible count: 100\n{'shipment_id': 'SH-10106', 'requested_qty': 6883, 'available_qty': 6933, 'request_id': 'R-106', 'inventory_id': 'W-106', 'quality_id': 'Q-106', 'hold_id': 'H-106'}\n{'shipment_id': 'SH-10068', 'requested_qty': 6846, 'available_qty': 6896, 'request_id': 'R-068', 'inventory_id': 'W-068', 'quality_id': 'Q-068', 'hold_id': 'H-068'}\n{'shipment_id': 'SH-10097', 'requested_qty': 6809, 'available_qty': 6859, 'request_id': 'R-097', 'inventory_id': 'W-097', 'quality_id': 'Q-097', 'hold_id': 'H-097'}\n{'shipment_id': 'SH-10138', 'requested_qty': 6809, 'available_qty': 6859, 'request_id': 'R-138', 'inventory_id': 'W-138', 'quality_id': 'Q-138', 'hold_id': 'H-138'}\n{'shipment_id': 'SH-10119', 'requested_qty': 6661, 'available_qty': 6711, 'request_id': 'R-119', 'inventory_id': 'W-119', 'quality_id': 'Q-119', 'hold_id': 'H-119'}\nCombined requested (top3): 20538\n\n\nREPL variables: ['answer', 'context_0', 'context', 'headers', 'kw', 'idx', 'start', 'end', 'txt', 'sec_requests', 'sec_inventory', 'sec_quality', 'sec_holds', 'sec_archived', 'requests', 'sid', 'sh', 'qty', 'inventory', 'wid', 'quality', 'qid', 'status', 'holds', 'hid', 'eligible', 'rq', 'av', 'qs', 'hs', 'eligible_sorted', 'item', 'top3', 'combined']\n"
+          },
+          {
+            "role": "user",
+            "content": "Turn 3/10:"
+          }
+        ],
+        "max_completion_tokens": 32768,
+        "provider": {
+          "only": [
+            "openai"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true,
+          "max_price": {
+            "prompt": 1.25,
+            "completion": 10
+          }
+        }
+      },
+      "worker_correlation": {
+        "node": "mock-2c9c23df404b42289d56fc640273ae1a:e00002",
+        "action": null,
+        "slot": null
+      },
+      "delivered": true,
+      "dispatched_at": 1795623339.9279234,
+      "received_at": 1795623352.4690588,
+      "provider_response": {
+        "id": "gen-1795623342-B5FhrgeUZjlBe4zW21Pj",
+        "object": "chat.completion",
+        "created": 1795623342,
+        "model": "openai/gpt-5",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "```repl\n# Prepare final result text from the previously computed top3 and combined\ndef format_line(i, rec):\n    return (f\"{i}. {rec['shipment_id']} — requested {rec['requested_qty']} — \"\n            f\"sources: request {rec['request_id']}, inventory {rec['inventory_id']}, \"\n            f\"quality {rec['quality_id']}, hold {rec['hold_id']}\")\n\nlines = []\nfor i, rec in enumerate(top3, start=1):\n    lines.append(format_line(i, rec))\n\nfinal_text = (\n    \"Top 3 eligible shipments by requested quantity (desc; ties by numeric Shipment ID asc):\\n\"\n    + \"\\n\".join(lines) +\n    f\"\\nCombined requested quantity: {combined}\"\n)\nprint(final_text)\n\n# Submit\nanswer[\"content\"] = final_text\nanswer[\"ready\"] = True\n```",
+              "refusal": null,
+              "reasoning": "**Printing final results**\n\nI can definitely print the maximum requested but trust the earlier output for accuracy. I’ve already printed some, showing two requests of 6809 and 6661, and it seems the top requests include 6883 and 6846, which is promising. Next, I should create 'final_text' and set it in the answer while ensuring to print the final text for verification first. The instructions emphasize needing a small sample to check its correctness before finalizing, so I’ll make sure to do that.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Printing final results**\n\nI can definitely print the maximum requested but trust the earlier output for accuracy. I’ve already printed some, showing two requests of 6809 and 6661, and it seems the top requests include 6883 and 6846, which is promising. Next, I should create 'final_text' and set it in the answer while ensuring to print the final text for verification first. The instructions emphasize needing a small sample to check its correctness before finalizing, so I’ll make sure to do that.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABrBwm4a2m6fuwrsydOcTmwL1TubMUO9YGXfPsidvtjyu7ceWIG1-u2kFaUl7AIavy1oTMvbfVreEoUaITXktebd4sXl1kCcIKzArqr2WRVFm4-Cz8eGvmSgD4SEa1wjetXAf-UGZfTE4b3sZ76GC9O1NgotaIt6Mezp2vgsUv8d_WmYyMOJSeTDH9gGEkVsVo-7KY_PBMhJfEY9Ev3cdmJYaKfvf18FcN5kD6YvVAVlIP9_4rZi3v2w6f646sdajBBOrvBhVDpDBg4iaKxiQElg18wnFBccapCc8TYu5YKU_H6qAs0kLa9xem_2HWKRlPp3RmMHZspEbyrlxPLjLnAddAI0DI345iBxXzlhd9_zVDFif5CSuHKqwxpp7DM0KyCylVhTRxZuoRd9621ZdxPqeTIH5PoMvdB9dYjHagWnqHGHptXZBygnoutP7V_Wfc7SxWCQBJYB7HEPkQGQdyBC5eoM2nknLo_Md4MRiuxIbn8PororSxHQJCYiz5Gdm52Wb5NcHxJ-H_1axptA0LxD99k_yOmSptfkmdPJV3HTDQ3p6MxI6MYINoVo1MKAw2kzC5P9SOkbteEDgcTYm3xeh7TQaEb8wJlKiPWq--_m4RYYTlGAlbVxI59IXeX26pjKcgPzpQvQwyAF4x3XauFnhwxT1Ityel1t51fT7HGEgmPZ9TSVdP1LJEscGgiOk5Zq9n0TZOIZrvOh7l_N90obiO6eVB5HxZnWuPGi_985J1QroaFXR9g-rOL2duyxYIYbMsS3Su4pBg9HrOkT3WwA_5l-NpXNh5IzfV3ptkrzSyQaj53nrBomLc_exX6sBqObYLVA72wBCJxbHmTzcv3am1z1EA7iCmODYIFUcIVi0c9MCGTXtE4C8PJMTrvyTZ5W0XGoSuCSFO9vb_n9F2p-vsDtOSmSgyPMkqwwdeDdN8fISyQJ-in9uyRu25Bkz-u16D_Up-KnUdKhr9xtTUCq45boxSkpUzfP-k94UrfmT5XsaZJNz_17lmB1w0s-Y9Zuo8N8WyeWIiI_9wkudG22TQZisZIN8viz05atJcIZw48jmmILIWQK5ZC1lWZNPdV2gEw8I4jWHxY8EQtAdfVChxXGyctaVEWwd6oavBPytNVqgb8f38y4yUtpX23445Ic4X33AZG-eY1EnpXT94OxMcYb4iVZlDdrkPXZKNN6Ru-qmEkIsCzTqyXP8IydA3zQqLzb6bUHMvpW7HABZzqWRRQXJUEhMA53CbXugCOq16u0zDTUIiEuB-DZ8iwqG3Esmeno0_AEJ0bJAo-u6BkJ-sOMJiQow-epW2PGCDe-tCx6eS8Erpmu3PQj0hwecbdSkg3o4qTVucGfDr-kwas5xbQu0xbFvOZwVGgDLJg-8fv4aWZ6CELirne9lGeDkG31X-p2kZ7_0ZpZ67jmg9yT0GOgq4x81lPyfL9tA0E6xlA4yWyPR0CLt4aC8_GC0NEUVPGHYeShJ3nWKTJicBC-3SeyCWu1vJs9Zo-Kv4Mzxa7Bf0OuZQWPhNDX4Zs0FNW1JS8ljW92UACu8BmEq0suufC2Efb4OnD8dRCEvGQAGMWs2A79KnrONF2c4yIo7HL-lVj49n-i-55usb-NCwH_EUPBOiTf1zL4u16bFyR-wojUkio0W3P-XGTZ0USwT1MV6M0iS89N_X_EUxzYw_ljL6cB2bgUuaij1Zqe3cCrOd_c8aBXrd-uGWhsDS64Ub73sMkdB1_L-FOPLah6WRNo_7CsBpt6YKegvQqUAmxShFJ9FfEPfGPQae_Q8bUc-xgOkd4BgYg4V3zt0MVg5QGS-gXe-CZs_jsyX3wMApSG94uAcJ7twU_5nu0m8uL2hd5v0lCIF9LJL0sWq4rjqy0bmOCHv5T0QBADfFSXN84l_ZSsQ9e1m-v8R9TErCp1j6g1-DVOuaNYNjdLd7yyVXdkHG5nCWCRK-542yUMklWbE42w5tQbYnxIIojBrRTR5lvymxTh0gT9ygYlNm6Z_zZilKAj_fYnkGm0ZOPjlw37Rr_FQzyj8Devc8cqrscQRDxQx0b9AtVewmz3-6jujS-aBKblkqPbmpvTxG2Io9euZIdX9zH-exAHUDGEVCmMxHDUWwOE8c8gQ4a-dIsscHH1G9_y0XPpLTokXbhc0g7RRqoeIX2m7sSOvOyMY6NQrCNFR0xJa7Ee0pq076H1YyJB8BGltuITMBGdsIFr0SHJbs87SMQs83ba-nM7ylJ5MP0_dq0x4Zd59jtPGv2ubXWVQkgHSE1OzpTyqmJsgNJcT85fEJ47CjQAeS2kjp9FdvKMox-SAZ2f7mRGcV1h2F4TkrDvlwwPIVE4Au8H45363LE6joOr7-uL0dahP0H435xkYx1IC45XWthTsAEIfJKM274buMhTr75KlHFcn8i1rY0p_Bql1A-QDVe26mt3yy0A42-cpl2idqIEEJfIBR08jykQrRpjWHNG6dpwMkudOwgjCnjdvqQeqSi-r4qViTmqBjppGJeyQ-lAUBrFxNpQDCeUAmBN5lNykZJjcqV0j1C5gRjPj2DrcDIuiKLuFB0-_24vjyPOX2H_LhnVRquSSu4JDyh4moL3QQD374xvH-Uk-lOtmHBBl6r5C-aA4Uzm4I31WneMgd55CXgEAnEcLtvHfF8FO8nUCyNmaHFsuURiqZNd4bSa6WNHlr3ZKg2kiGDXVWGxgp5dgBcfqxbs6q9_Pqf-eNlBPVGp0nz6Q9sBkYvfFYeHJkgu234hxqCTwipCLbU3e7D0SRvLJ6CIw7bHP3jB0VIpP6GTVFYRYg3WfO1U4W1_wykA3eSmClC8vw3WxM63p-WURVEUPrzOWShvWv7CQ8u1Nf1R7eZRludGe6IwX_7kRYpV033OpryDeAho2XyVpq_oubOE9u3C4ZkbY2Tkzw3K6vFIy9jD9Sp0MEXp7WQuRdYTTl1gEZytE5IACDaIiKRnf6xcT_9SywTgjYwH0mLXwKnzmk1-1NhRKlaAnspbw354MuCyJpKtIU0bveuysuYATiyCnw5VZyQkcHolKdUARrWg5-66KXYf45tJOnlQGESHl1HHFvfESrzljJfpgbn_mTlqLwhL-Q0VhubqvCgZESkngESNmiSWZBcHgGOuEbiVvz8IiqmKY10VckyoGSeAWgadiMKnYe5Ml5x97UMz9ELC5oMDILBdWjwfdBoKF1rRoDBCMH88nBL2W3G_2KhLnVLJAIvmWW0XGcyQo92UVAiZQL0J4WpYf7vnEAZtiowGwIy1nXZaD3xeNkOTK8a3BPlYOshObbnEFgvdGs3g4aNXlvDLv-xulCuJZlZ-eFsgDDdZCr63z49VgEEgqK79pO_DZYG3K5whwSrsm2Z6RD0cfCS4oGTZaEeUCREXzjrwxJ56ILdnAUpdHDs4sJCILBkorbUsIXQr6HIYV9PC4zXhxyhAEeLNhP-gqtz-uuGLwgNba02GVNdcYSNDA1iWJMgjixzcctHc1ehLO9zyd_W1IP6dKFAvAf9fMO13PbzLfUlWguejLnM8T451ZKlMBEAjIFVTpsjuHN0-VHUoHd3eskZ_yGVBt3MRe4AtOZvUDM94LOgy7eUGbFkCRJH9eXaLUd4pslb_ZxikyxQmdu5RDFjS6koIpqG9GjPyxLEt8Z8zla-2UIjF12mnK8Fqf3LB1tzbtK1MwcduOZJqyFVHNpAx3EmSgmZwTXRVy3YPXhq_RWKzsyFPd3xvAaWsmxgUtd3uxB4XFrRGfgcIPySmmxphEGlbG6Li6ydQTo483FEl2GEmRMrwXNoJ588WGW7To1UXx9NS-axoeeEbAxMiafIGazwGN2LskC5eoBZrzrZ1fjbh7ezIMeYhLJahnGMpCT4dFmmKXijELAOqOyAc0lbeKnaP46SC7D3R2QAYja_BFdHf9xAqFOWnpX3RSU11fBJkp_mUMhIDjHc3RF8DRT7_dZCjQh4TzRRbCj2z3HHVvCSvHlETDnQDKpkleTHFj6LOz7P53LybqUzFCnCZWDu1H-mKul-5vs7xL0K_dwPrCJ05xFU6w64hGDthSjls1lzgvQWZOpjawM2bUY7jVQzWdhXmjmY8LUuNgAYeaYtmL0wFtNPXlWdnuXXJZMrlN0iAX3zfyBcNp45xMe3hah01VZdrAG7UqescH6s4Udk1zWO102ljn5PzfOrYT84VU1MvRsU-UL7-UzhiT7THUiJWjdA7-kt7u7vebPw-AvblQLOIZVVuiqht5Da3QRsRW-EvaBNziHdEV2ZNaV3NPsZfNt76lai6pZ76IrpBFIx1pzVOvYhUbGBdQP1EWsW4DduWLdCytBAXUe9PsoCzTDT1ubuIhWLZP3bSK6jpXcAY0PCm5RKPigmJ79zTU6BPGouv4weXOtVO8mfY71Qzhldat84wahXzBLfoPKtnwohm45n6bdHpRBWTRDlRD4tYKJ0MSgD82ILC4JeFboAi_-uUCxWBlLSRZg3uiyjrjE5qCPTW9sj1XeC5Uadi2Mq6pXFW-dEoGTwb3csBxb0h-hKvrGyuWCPyvVV-2CgmeUyqMIL0WabT9b45WUadeR-tWEg3gD0VTHJSaCEryRHQLPjZT-wOdZ5f-7UuH-aIT5-OHgUkr3cm4caCBOgqmldj22cYHZ0qCbu69BgMidlMOGCfehKEA-mQ-H5vmUvqwV5Tuf4FPC6HezcmxW9e8OmlzbzGKde4W97N5sPAHOzZ9GNfvTvsGggRVIoLtlJMx3Z9N_CmaQTsM05DsViskivpgN_AYRs5_rWiMy44ZGh7Shdz16Gs9C8QNDvZZbK5bcgCDp_DDSenJaQrgsSeMb86s9qSizMdImOx3jLMYrUPhdNqvVNwIq2kIM96aIGnA4NZpUQmSPl81VEdCXAZljubAEu4ReAX2eP7LOMmjKFLs4wTO9UURGWv5es6Tspzhb7JLxLGuXt0Edt_6YQ2jEPw5Sn9SJOPWqQJCrRwWbt3ymiBUpshODHHm-JJ8GCZCeCm51ABjjB18xvHY6CrHaHwqd4eP9PZv-ns30BzOibjyqDpnJWV9pQx0ECDBjxU0K1RyoXp2pERcuvjduZIX-JOpxAwe85aI6Fy1YO_Up3utRYPLaCyFGCuqAAMcOwau3oq0QQL-uQcaLXvYGTs3XT41hiYrQyHcqGJ8k2cVYos3TrJip9Vq8tQSag995eM8Rhv0cMZvkT-Vmxyk106PsWVeoHdXSpZvySsneWPtLg7JnFHJzg3MJmytYmSAF6MGrO9zwPU_Sok-gf_4-sLd7OJWWwCrAXaa0o4rZwS1ufYPtWYzn6HlKiCjTCMxaxpo6JBzyTBIRCDh6ATBuCnOVAabMDf3l1YFPyQarNMNTV7AebY-XUMrzKtl-uZjxlJy9sBRjRl4ftfElhVZ1Na_vqfaWdOyS4XGnZAJT_nKMOaNn7mGntCh5bA7uSgHNI9HbHAPlQuBxH-_hIhlZExwNtRFXLjBui3LQC2BGn_-8w9xkZLikzsqdEXsK2quRLM3ShuNVv_zPL-T5v-yVvZ2dXoYFNNgwFOKkDNny_5v69efDy93LBMEIIZvlV43mo1ULv3zpDW8mgVrmITMpYgpYnlAyg1hih2354DGxr1mPvDgDlwCcLQuhbOo6XtWO1xOrneYWXVWVRJwXy8s_-Cagnueey43NZ-nwe99SuiF5fW9XRSnvyKjDPLGczSB_6Z5MFeTDGKrtGkqMCa6ZDMJokdSnYShL8HiOvTJZc81co-fB9cudLxH_GduHFeUXYwj8Z1F1HieIO7TNAr2jdgBeoaQ26O0qQpMxNd8oUTqHFDdqjunS5jT6uC5Al6SvSiMg-Atpv3yfZjVjqTtHJQxL3Uqhu3nN_ReHnwsgtwAAJbQfhrcRRQbWQuxxdWHmXTqN5at13sRnEBQubVKCt9GVyuet9_zn8DH56d9uCfU3mf4uRS-wf58QBXw6JkeqRFBalaE9yV25U260_LgXqNOtExslnCHuMvXjeyWuwbD-VAO7k4_aqLzrb43KS1CAI7q4CN3QCGt-G_2MLSECrDOQLfpqfXfQRI_LJglUMsmntrwVXs5prFXVcypfYx3ch00wk876DTeHpgTGMFeMrATx3leRfd55a1SlGReBJN33CKmCgklGl92MKluTwETkWqAVXghWVwNhSRQaS1RhaCRKgrjLgOdj0onfpNoEz1axOU7xK79ifNAWb3gSWeKbLfGvIzD_mdR-8zCv6Ty1WbvR_7f1ZvmX0by2S06xnwRh1S8ZHGNtUTcTlas4wnI8VddJxW6iWvart2l5xTI4zzpdPM9KaDMBVkJxnsRDqCXb5C_Bh1NHWc8m75tcPRiGflIcRewdfXmyiv1jY7oAsvFJJ5PHgy6XG82KiHlpj5QjPGV_GYhZS2BZuRz9DabndIbtDgjZI5n7CT8tEP1mDcQPJLFiuF8uS3QbpdafW-czu326symrCaYnY0sh8_qscNr_62-Ve0QePo3aLIshKCe-6lGF_fCqS2MLchsjUx_atDQuERGWo_CKwPiM24Aa9DQPlnRHKG1Buh-pgm9GY7viVqtUQ9tdBggHveptelTyJ-ZlJ7kY99jB2RMYXqvW_4QUYf4f-qT63rqfj23TwYOFXD3Qp6sFzRSsfcuMQq8S2OtOnJxzNH90JyEILgvt_aVDZGnTtwCxWyNUSDKLcwslBL1t2a9RO9Te6UYZJN_9Bw6Z8RTiEBF_56N39irmpHBLHKPpCL9DXA4YJQunxUdDX-BzOBizE85_vk3efh4vgJk-xrB7pa3s4vfwI0D-VaBfhCJXTJG2fV8qJIU1meYtUbrQYpGHFFasT0IGx4Ty7nJOpsFFL7jbNsumJVg7N3u5uFqEPRd_cHf_-HO113G7lNBLpXeZOMIKjaadczKD_-bp1wZUfdCxpy4LEFoOsp4zveXEOGCYLGT3-gTZMlZT2JTPv0lSj6cvAvGDHe5LHFwTW4pxA3bZngSjz9b2dZLjue8p1jO0_9XogPZbGdtkIZbK1smxBbNdsB4JMAMjl_4FTHL9M0L1vFq-jIMmr9l3j5ainBpChNQLkyr42MCvz5TwgEb-NiYY1ClXssU2IEEyHvygOMcgIbe7oRjx5rMLeCPQJ5wP4wbF6g3ptao1lCy2fkhXIXSKdecidVPatxtV3X2YVU7hK1K4ENLe-QS2wfKNga5R2QjlsgGJOsgt9lEjrFLfAfn5auhiG-4yXUTofGeRbIoaMkaumfagE35mFsm5VWkNE8623OtpFSkmsmFCIiKz14NWOIKozmo68RFgwDehZzX6wq6EiKPretBHwhn2rZBVJa_HIXB93MpU-6DCy6aBqPt45WhbXHiTRGcfuFmlxDmxFik0JZSHdxH14s6ZlbO0oIl-XqZZtZ5cEip28gQXKjymPNmZtjd7J9Fems6F4B1WPxrOyKZz6GjCdGgA0zh_dthUVSgqs96FIJ-NyLyb1TYewytYPDBQOzp9gG6fpBqDgyMnMrNBZnzChtpGYJhO7CV7SnOuThlmcrPwoL10gycmAhbCcPNQQ7HQRA9CvsiDSlfDGW0py3A-jAaZ2hfHhST71rQtJslL4vPedaPyKdDPRVRj1paO25FdyncGTdtOOBvWmT7TSqSumJmEJiX96LMbqfwNUea18_Nncv0CARXirEjNzz-mmv07UHCZBAtcnZsvg2ut0FHyoiGaJaO-io-SrvYP0oeMH6LpFxSiigepH9YCP0KpbV47SLzl7vyQ04UVlDWmcRFsSJ1fksOjALu9cD22ZAQugOOhnYM5L9qx5EKWfIViZYo6m916QQrpTZmbbDXf6qd-xADGIILhHdH-Yrg4dbMy_pSS4zJciXCzhrXtpYhdZ632O2CaAylHFayjcc0RX1tJFqrvPRou7blnsG1AyAobLbSEGFYFEbLrirk6eFp3w7c7Of9LqAO5paCsWFry5-vfgbb5JbCW85QnsN6fCjkPugNm_a3M4pPCYXV2w9wwwSQihz-dGGbouB6R59PDQ1QkUJNzFj6BKap6LjyuqOeya-CTXBvdkgEkhqMY2mcEcUY_fEyntY6sFrERBoCFJ36kV-dxpqPF9zCuFkzzbmNQgt8T7f_PAB3Ef0aI4NHgaVlBc61c87Br4xrntkl2I8si6twg3DUst5P8D4s7Ymv7pzu-CmIpY2aMZKCxbugaJ3j-z6F_3bmFYa-TNWShceespmIX8z20nh4yKGr2j9AhmDmRCuPwX-XwFLBIAK_vlAHkNnnK_77GbFhIrLkmFqGfI75b_i0_dIfDp-fClsRhuQ5YDq1Yup8LGSLUEkG6lvJg8sERYSGkP9rx1LPGptf7D1sGcc0zaFHFFYbghMWS0bJvjBc6XnwRVfjifIBfaHCpWawOtdBb8LNckt3hpEWwUISxcyU_lyyXnesgmcfLcH-ClDTeCFYs9JvuFXe1qDmzmjzcWJOzsNO1tJOpD1Jrjr-dDoDADJPTumt9fAXi15c4KzH-39Xt-TDtxkUjKdlkoH5c--I_A3AQ3tZWNMjj4s9h7t-KBT9CaW2EXURHdM_BS4x4ybQqWIOgnhKRNPmu0IOW65QX6paOPp5bSQeZBU_2QRKjh2GNrH3TH8PROmy7sQu-K06VKdKGh0c71dIuP69eBdTTWU6YWW-LSRXOr-JoMT1hWsdwO1ngULrFLWPP6iTFyPip1bmZjCZZL1djHTXm_Gy_xdcINjSVfTih85p5x2AmFHQBeQ567ldpBkb-06jBVZOBvLrZmXtFdsyZLAvsN0gCm8FVvQvLnGpKmd_1B8lfOrf8R0H1mL0K8DDFpfYQUrfwPt7Z_JgYIiibJYpKhH0IuvXUdYdY6EMwNLTZevXF0YfMwo1bNDHZNiELqTI6MWWZ4S8SMiEdpI89eAv7Qr0AZojiVZ1o1odvU9AmyhTjsqPzy6LcxCQB9B9j0RKwVVULsYv-Lb5wTELDXeLxphUCVm5snnag31qQRAzgg3ugkEZCG-dzHvvwoMZOyDmfmn5oekTFslcPYLgY5s2aSE5DCwJGFRa6ye8tCsCm6WWM8INI0pPVoRmht-8FKnxLTQqYZuMHjy_TawN2qDNBLEKgWkp8IJB_t0MhxBKkvPvwmdiEBSRbz-YikYuY13Q331lT_pjilf9pE5LxFWpc6wPTrDcRwFBcWtEOhDK2vYHl8FfvXKL-bIqni7dx5dYmSsAYRaajWAG2vyvWKWsZN7EcZ3gZMUJLnNKUBcuaZ926yZaUfHMklP2rwzXY-1_hHRB4PWCFGfwN6DhRl9VNRrsAYy12vy3bOs2nsiBOqLVB7rM_ZT-Oe7XCKoAmG5tatAIGQv1Cw2mg3fHpGNtmy_Sg-USSF-DmNn-mdO1MgNBeglmzLzMDahxdsnWOphMmv9yoXpxKe3UtKJt3yhpvFUmi3wiGAUaY-WY5q2WjHSE-4gSaRNV5FvrENSs967LBGCBWFWWzSnWTKoswKH4W7akucI0houe6e7dtBAW2cP2QSw-4PZZs-R5EryZsHG18OHHXALx1oQ744tuWRNXmW1hnv6Xzh3zPzzymp0tJTLrhsJjFltH_z9qu1DZBcM2a-VcE7afbMJl-SQA3s77jyrqy0awSRiZYHfPIH-kxm_6w5C3m9wz6CMSyf2yt_MIr5-WXsnV33rGyba_RvkWaDHhA8FIoPRbd0gse7Bz66dzCBFOFRfQwwPxj3xt8I9AQTYoAgZvggPYA7sr-1XI60TJYexVzDfY19lVq_zxy0W3PQ0HyvDqb_RWzP6EJYiet2QeZroxYPwfBQhbl6G8IL01j-yF8cOaida2Zm0QE8IK_Qb3oCitssKwiip4K2Jghr_xeA-jZAmu5otcRITmae3lnblsp0lyuG1Qck7RBgd-n6QiMW1nCDAXvi5jL1dQ3YIfvGDdzZqXmCCw-WpI3RFyLc-2B5r-_eW6IZ5ugM7qCjUR6Ci4HE94AbPtv0q9RVW9wvMcJhtbJXYiBCoim1uaCKOp-qgzQNCbDqQWNGU4L8lBXc81UqNW7MgmcI6CqM0CUChoz-zrWGK5loeSsIbA_iX_JkKEfewnsHdp6Ym8NIAwvQTub724oX9SrZrBXjMpfU1KGED5doW_EhjNY9iviWbSqmwZ-Fh8To1FbDDAFjtwmss27kXjvG7J-vbSvcXMAYiLtHPzMR3bLwQWb4lpmruc73xz8B59sT54z3JrKTxxN6lg3RjqDmOJB84N33crCSWFJC5A5T2qlXt1RlLcTzqZdbiCoUIeZq6RSNlqO_3cDVURIz8QXLJMLs3HjtvUnkThpOS1hl8G7eIcEVDPeBhf_Ok8sLer1MDBZVYM2F7fYsFozaFeoS2aUYkg-AymMhJwVWnjz3Ya2LmZYTdPHNEnS5S3ZGBTXFvyTCDFHltW7snDAQS8snQ0niicWjvjWaM-E44pHmmbCCxQrHs2A9b775dP5PlyfV-0MYh3wndOwzBi_RfNAS95UtGMDdLiuNeyq4jQGzIe7t8MvwjVivnMdHFULequqPNHjwB7aQwHwJwiHxmFUgCvR0a32SXeKVcRltda4p-0SymYH2xA2cqVR_Elpp2Y0t6p4TTf3Wmn0y7lxWXnOrA3cQfZWZGIyEKKeSE5yzhltUipbKWIWCzsedphrxMv7ffqwykNzIliP3LH3bUYW_2hLbEZkwQNCSHH5Zcc9TQDRCnx8aKfkhA90QXix6T7g1iRtC1e4oSX7fIxb8pYuXnxyNv6ZxKdn3IofhPnronDnf0-stM4DYYoo2MY_9tdH6-W1lRhWZlv5sOk6aGYJchYJbVi4HrxOD799EURIYQXoi3Gh79bb536YUlCo-rOvnmgSdBJd6gt-MoTrUd2c1S0kXwnYD1wniVbNwTaI25SURx2j0ulTXirxelMbJrS_6G1DfURnvzggVptjR6nvszwyKczPD-YFvGRw-bZjbmGx_2__3uD2hJRxLGf9iShv77nKMCbE1mVUUjJAajKwAs1gvb30MKBVlk3QyU0YbzyWGM9xtao8pQKqgSEIuUfLrCQYxqu0w63aDFnOSfI_wveaL5LA459onrcib64k_hwNQ6vDh4lh4ixKtXzEE68LS9ZlG5jp1gGuQWAIIG6bR-EqEwWy2Ghe9yPHaXFx6-uX-XDF5Hqt6EXgNDYnr_z4V5O6ztYhJsE58Bml7SrJ-qWpqSWaRGL8r_U9EQTzyU_hx8i4_OQPxdspfhKQ7WW8Cysy4-fXIj61ZYyAymrxq6b0b7b7HubhLhDgyBRnf87rWSi_XckvONIIsJoKgmVIv0bJymJs_WxFaeqnmLhH1QsgIwoABkLiXWY4wzFtBKZEQqJ44fky2J8LZD4nNXveZyBsN65IeFuw0xqBm1kIaa52aDyKzpwd9nGkE1N6xQZaGVq0ropshbT5lp1HVUFdzSZ6OOemBh0SUCSiK1j11kOLLE08lgr1GvNDXiBqxGrSXYqBj_K3HNQK6M6QFRLoFsiCcVYlf8_EHX7ydDkU-NW-vsvxG7kzzLLulrKEdfpSZXqjBMlZWIXyxLqDepNVnJqm_yngQk92TNqzud-GhRQZUt_Xu7A==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC01LTIwMjUtMDgtMDd8b3BlbmFpL2RlZmF1bHQifQ",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0c8afda1ae0fa3db016b0709af7d7c87d1b858a5dd11978cf2",
+                  "index": 1
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABrBwm4otntHjhmKdvpai0NgC5kujS7ew-6dGa-v35-td3LakPSmuAw7oKBd_I5Eq_183g338YVhVRwZffFtv9WI9YpqND5nS9qh7zt4c_go71LYcQv4CHNyADv25oycdxobSHYj5I4lIa2ps4j6tjX7WM6LofNqndV87JLkwIFJ7hvKFQvBrsk4wD_gWFcFbsmB3YsDLviMdZW4XnsMdQonUde71vQMiesbOL6zJGvsgnAM5c7EBdAl22dnhQzoS0xQVLXq0AD98ugDrpbjS7JTZdpjR4Cj7hfBRp3o46OCRLXxPUNmer_KcSBdgsOe89mONwcbkCRLe_Ec4nydHvhq-kXxjsf0v4aeLyjy4Ry07WUyNCVfiA6g973y7LhiqLXNW534h8I7zNcL7PpbGUj3YTh1ptkL7VUxmK31ek4T8KPrqSiEomwv0mH4olkZFhcDfg0Qc4ip7a_-5C496nbavE0e3g1FMkPR6mpbFuASbgxndLqxxhj7J8GO1ycTzdI3h9CtCYKKjucog84bZgTpJ0ZUYmr95FFqqr6as1nUFvhtePY_UjpH5pnwN6ClgZVTrKZiVNH4GUwXg9GfPnv5rY7Onf4Isbu2D9tpE4XgvgliKS_fO6QOknL_CsLxoJWo3WXrREmVTSE8gQI7FmX80_MQR4qT0OhZfHb_O2ndDh8QmM12phwgASiJLO27hSLTkpqnKk_DoPsRfR4Luf2FazD9DxAChKwT_C_yQxYh36umewrjvLaYW-vC78PDEeuH1Au_RLbrwC5WpRTo5wWVZp3QxqrdxOIq6wYuGtjARqhLMATwxPDd0iAUwJ01cTEyw1fByGwSN8aVj2AHSXhoLqFwM09g5_LYLXPo9HScs-UGGJ9CPv0Y-fJyUFNGWokSfXUvHDOk4ZfPh7tzuWLYVK22a2oVoZCW7aurqYROOGbCS-zY35Tz17Btob_MKgs_w6eDA4vSAQik2vQMSd3c56IZD9yeedi7RGMgNn_53IMDsZUWpBawgXRSrPdCnYxaMSOgX69yNyyyqM6XMrBTeDBmPK5vbnaf3c3-4XXMZFuJNXueYXhICsnyxjjLgdoE88Cz65FccMo08cZtwhJm3R71ez8REqc9cjzj7g95y1LFg5g0diG9PZJ_ESL6OBFxcSTu8Qfs2Vyjz1O_kySOBruoBvAqH3Shq1KtPAzuo6nfXny0EnnOMwdawcDNRhko91dQKIGyQ44zsrjMTjv-iSPH98tmF0yjfMR8z83rNvDeRQWSCRkxggLpR0c4Dx_gpc0AzN9-QKOOW2uKVj9zTGthEs5bgdGoOyRasklXNpVCYn3q3JHqYCwiZ_3bpjJ5Pq7_VWWyeuKLFGkyG6n0vMXuE7JXQKsTGKYpMkSzZhm4oAdrRJG8119xEUSjOQHDicuJFfcystTuJIAf9vwcU1ZcbSD2kA5k7dq9MQukf-8P6uAraYeEP0mlcB0ThxofnY04lMhcDthEDc-XLMYcaRx-lxnykH099YaB0_AHhtYGd-nzVzZfzRticEaM7hWZrjsTmBC1clcOMjDbwJPqFxynLUb0m2i-OQ-rFRiim1S1h-Ehb1alRxUBpQJWfUMnOHlhBEuC138pLv0idxZ59aOFwYByTvRqRQ6WCmR-vCyeyGn4DaIAD5XZtmgermqo26kYEyLkEI0QKdRRg7Xjh8S1I2Bwlv5lybfI5PdsQQ10vUvVlRSjFPLdBDhjlz9Psv7fqxZrBa3_cpwM1OgeEWJHvAouhH-F8xcHwgKuAd7cSPTWATTAPeMIowIDn97XUsCWaQSMd41AfMwk-3z-7E4a7EJs4rnVfWLQbhUo8dR5UR6gmxLP7N-Uug0AbpaD8Ois4xAx4zXJBIgRSHxVcwpqJAsRQqcG0GsFSaz3v21vOUP35SZQ6z06wzZAIEURAnQvc5sAKTgBpG3fkP5sKCZNSflrwnEoPPYYfK2HHLwDa0hRoHwX-cZFLGTLLDWUfTJ0BfuEIEHA2ZLTskQeSvZZVhOX_TMJg1mqXCNMlWEp8cX_L3J97CUjhB0LytnKkpKVmkWVxFWgnxcLV9ovhgibBlycjh_61LlRWadgfSILgUIGtxYkA6-zk1sySGLwvhaontK4PTTeF6bFbf9JzRcxq30OBSVRyKY-tj8TmlsWSEuFY-F_FewscdbnFKh-6QVcjxJg3ElGvH0SaJkQRseM_Ipz-IZqpP9d--RW6wtxSDo7wDIMau8Gz9IK2XGC2qyW8Ig8B2AGiW1eif6Et_Lx034g32L5ib7DClOAkSYeOqCDi3W9Fy3K7oIuthfgUH4Y3y6JFSgGNN24yim2xdZwFIDmR3DY3RiW0P5ccOaVA4rpjla6Qi9KSY1Got28T7mVaOOiYvdVxBEhyGPUrKqiOvOjAEVMLAbbin-jsU-oOEsUV7UzZdSiON_VsFnd1OkV_FMuPBeKuB5xwrI30uIIhGknNcwxYXeTbRxCRXuFAl8Xsq9gZcSFBKKMrE4YwdMSr8bPGErocQ011eSYUnz3HF4kTmXR5YkuJjJFdCEoYJKWDiZkWu6y-rv1fh6RbNRf_IC3yBHTn7HwpPScq6z5PtaGfd3yUwDdfzPK8uSAtQPqsMXa1wLhkf1xmsOPWLvZJQDVIcVSPBLPWknJ32UtnjUG4jLPJ4_wBVvlh0VL6c4u04o4hQwepoSb_MwaTnVUlG01bU9Ao-5xH9l3geemaTxeyS16IGr801qLxvuJcBLptW3P4NpTU0szA1Ur33h5bv9Xb4C0fycG8XmDKU0Kg6MfOfW5loddq-eDe2H5oN6du4kJqjmlRYfbQ5NhutvaEPJjgtZXJvPZPOKfqE09YF-KD2wP4w4TxwDcXVMWZKGMvu5KRQuD5HysfJpzohG_nb-HBC4X2wVtf4EkqyRP6mmYbIm6mvPrYTf-zCcTfn4ntaii_cJTlX4xOr722xy1-7YDHvN9N_UwMCVG6DP0FHpCqdXOXt3-eSDZvRtjImju0cmv6JIxmBY68O_hKO0-DLEStfx4dI6xssWAWGqIVHg4PspjikE0WG4obexADkqzLfftGGqOgwec0teRw6TnjD5VcHGJQA4kAJgdGH2SKvYuhFT7GhFmdL8KM71HnjwqIzLxbyVmSXGd9u1RBNYxfTSLWeiQAyyt2jUy1gIVpnTdrL1t7d7BiEbO5jObXz2Hy605aj1cTKk3gRqeq3LGqOVyhSVzD2ASg-dxm1hZcl2K4z3nuEpjhNCdrPp-JcLNIcZm7jZY0i-9i0XongPctMrLa6iHgBHKTnueTWVz56CkqzqhKHnnXHRO00EBas1ZCHhzW5PuPXkr9CpHIFTh2olxYMVn26Iveiy9cO8zg30xmwTjsB_yIPGlKlTPIhmJEWY927Ul4cjrk32C5cAWOYcbKk7UAbL5BrR9y7xTVFfPHBUrcYprarAs65UbihTmLfz40dZne5D3FxG9NjimAeFKsPB3PhBWOEl86-I0Admn70kl8IwdjMssaCniWAoqDfyw6ffBStXSy-V-OzLDBlJ4ElujKjDmJNs-ARRWoOdYVUe58K-tIp36SIq1mWOCxH8ssjekietUT31ZQ7DcuDTVlixBqEzcLE-7bH8XP3myRifdTconoPNOFqDFYZJG5Ald1Mu4sUswhUFav4Dl4LDNjeGGQPhfvOVwDVyRTyD3KyVW0LoZc9FeNtNDdMlTB-YwXYnHHMrzeI6qhbg4LlV6B-dPuTA4s_XW-_uZgVbmkwzKPgnqEhyyG9Q_lETA2S-z9TbCWbn6lo1GmPtpVyV9G-xNZG_FFZKthyDQs-2q3oQbIDzFsiRub27zBHgEzG-tHJ6p6C3yf9eokzlWYxWO6HMksaI0gkWcfWqjWnLDZfXQtiO6U8a3Rmufe_QHzqPWLIRj1F69QIuTDIvsGMnqL1pbz1dEBiTE2eeYpskZ0i2evDr3Pa87wSxgLW-GAg6OeGEFzZQ9SVy5Mjt8h8LC_grzzte-JdJT-AbmkcMeMYTomllPi0e0l-MW4v9bQU0Nd747b5JhJDF8cvW_yoVdfNN02mUCsCM5l3X3ZEXGi5AtNWlYMFgg4ouHDQ=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC01LTIwMjUtMDgtMDd8b3BlbmFpL2RlZmF1bHQifQ",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0c8afda1ae0fa3db016b0709b8419887d1b87d095e539a7b82",
+                  "index": 2
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 5448,
+          "completion_tokens": 1211,
+          "total_tokens": 6659,
+          "cost": 0.0146,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 3840,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0146,
+            "upstream_inference_prompt_cost": 0.00249,
+            "upstream_inference_completions_cost": 0.01211
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 960,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "openrouter_metadata": {
+          "requested": "openai/gpt-5",
+          "strategy": "direct",
+          "region": "CMB",
+          "summary": "available=1, selected=OpenAI",
+          "attempt": 1,
+          "is_byok": false,
+          "endpoints": {
+            "total": 3,
+            "available": [
+              {
+                "provider": "OpenAI",
+                "model": "openai/gpt-5-2025-08-07",
+                "selected": true
+              }
+            ]
+          },
+          "generation_time": 12294
+        }
+      },
+      "verification": {
+        "revision": "native-cost-once-conservative-detail-bound-v1",
+        "resolved_endpoint": "openai/gpt-5-2025-08-07",
+        "reasoning_detail_conflict": false,
+        "reasoning_tokens": 960,
+        "conservative_output_count": 1211,
+        "native_completion_tokens": 1211,
+        "billing_basis": "native_completion_once",
+        "reported_cost_usd": "0.0146",
+        "expected_cost_usd": "0.01460"
+      }
+    }
+  ]
+}

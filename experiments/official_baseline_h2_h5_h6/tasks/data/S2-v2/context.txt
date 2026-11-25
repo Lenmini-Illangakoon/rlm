@@ -1,0 +1,658 @@
+=== Shipment Requests ===
+R-156 | SH-10156 requires shipment of 1222 units.
+R-159 | Request SH-10159: 2443 units requested.
+R-094 | SH-10094 requires shipment of 2998 units.
+R-102 | SH-10102 requires shipment of 5403 units.
+R-008 | SH-10008 requires shipment of 5810 units.
+R-072 | SH-10072 requires shipment of 1555 units.
+R-090 | SH-10090 requires shipment of 1703 units.
+R-155 | Request SH-10155: 2221 units requested.
+R-048 | SH-10048 requires shipment of 4663 units.
+R-045 | Request SH-10045: 3257 units requested.
+R-111 | Request SH-10111: 5292 units requested.
+R-052 | SH-10052 requires shipment of 1962 units.
+R-104 | SH-10104 requires shipment of 3627 units.
+R-110 | SH-10110 requires shipment of 5181 units.
+R-148 | SH-10148 requires shipment of 1481 units.
+R-149 | Request SH-10149: 4885 units requested.
+R-046 | SH-10046 requires shipment of 4256 units.
+R-063 | Request SH-10063: 2813 units requested.
+R-027 | Request SH-10027: 1777 units requested.
+R-134 | SH-10134 requires shipment of 4034 units.
+R-123 | Request SH-10123: 4552 units requested.
+R-036 | SH-10036 requires shipment of 3035 units.
+R-022 | SH-10022 requires shipment of 2332 units.
+R-117 | Request SH-10117: 3849 units requested.
+R-061 | Request SH-10061: 1814 units requested.
+R-057 | Request SH-10057: 4848 units requested.
+R-118 | SH-10118 requires shipment of 3923 units.
+R-099 | Request SH-10099: 2110 units requested.
+R-001 | Request SH-10001: 3664 units requested.
+R-109 | Request SH-10109: 1518 units requested.
+R-119 | Request SH-10119: 6661 units requested.
+R-039 | Request SH-10039: 1370 units requested.
+R-121 | Request SH-10121: 1296 units requested.
+R-050 | SH-10050 requires shipment of 2036 units.
+R-147 | Request SH-10147: 3109 units requested.
+R-029 | Request SH-10029: 5847 units requested.
+R-073 | Request SH-10073: 6402 units requested.
+R-028 | SH-10028 requires shipment of 1592 units.
+R-012 | SH-10012 requires shipment of 4774 units.
+R-071 | Request SH-10071: 6513 units requested.
+R-010 | SH-10010 requires shipment of 5662 units.
+R-067 | Request SH-10067: 5551 units requested.
+R-130 | SH-10130 requires shipment of 4922 units.
+R-042 | SH-10042 requires shipment of 1148 units.
+R-106 | SH-10106 requires shipment of 6883 units.
+R-069 | Request SH-10069: 5921 units requested.
+R-007 | Request SH-10007: 1851 units requested.
+R-077 | Request SH-10077: 3331 units requested.
+R-101 | Request SH-10101: 6254 units requested.
+R-053 | Request SH-10053: 1185 units requested.
+R-056 | SH-10056 requires shipment of 4145 units.
+R-151 | Request SH-10151: 3590 units requested.
+R-126 | SH-10126 requires shipment of 5440 units.
+R-100 | SH-10100 requires shipment of 3701 units.
+R-049 | Request SH-10049: 1407 units requested.
+R-019 | Request SH-10019: 5477 units requested.
+R-025 | Request SH-10025: 2480 units requested.
+R-125 | Request SH-10125: 5033 units requested.
+R-137 | Request SH-10137: 5514 units requested.
+R-092 | SH-10092 requires shipment of 5329 units.
+R-115 | Request SH-10115: 2850 units requested.
+R-066 | SH-10066 requires shipment of 2517 units.
+R-133 | Request SH-10133: 5995 units requested.
+R-058 | SH-10058 requires shipment of 2406 units.
+R-141 | Request SH-10141: 4367 units requested.
+R-054 | SH-10054 requires shipment of 5070 units.
+R-079 | Request SH-10079: 2924 units requested.
+R-064 | SH-10064 requires shipment of 4589 units.
+R-037 | Request SH-10037: 2073 units requested.
+R-116 | SH-10116 requires shipment of 5144 units.
+R-154 | SH-10154 requires shipment of 6217 units.
+R-051 | Request SH-10051: 1888 units requested.
+R-124 | SH-10124 requires shipment of 3146 units.
+R-144 | SH-10144 requires shipment of 3516 units.
+R-098 | SH-10098 requires shipment of 2147 units.
+R-153 | Request SH-10153: 4737 units requested.
+R-059 | Request SH-10059: 2628 units requested.
+R-040 | SH-10040 requires shipment of 4404 units.
+R-128 | SH-10128 requires shipment of 6920 units.
+R-011 | Request SH-10011: 2554 units requested.
+R-017 | Request SH-10017: 4071 units requested.
+R-084 | SH-10084 requires shipment of 3886 units.
+R-021 | Request SH-10021: 2591 units requested.
+R-044 | SH-10044 requires shipment of 4441 units.
+R-093 | Request SH-10093: 2887 units requested.
+R-138 | SH-10138 requires shipment of 6809 units.
+R-103 | Request SH-10103: 3072 units requested.
+R-157 | Request SH-10157: 3294 units requested.
+R-088 | SH-10088 requires shipment of 6180 units.
+R-096 | SH-10096 requires shipment of 4108 units.
+R-091 | Request SH-10091: 2961 units requested.
+R-129 | Request SH-10129: 4478 units requested.
+R-034 | SH-10034 requires shipment of 6735 units.
+R-032 | SH-10032 requires shipment of 3553 units.
+R-160 | SH-10160 requires shipment of 2184 units.
+R-107 | Request SH-10107: 5699 units requested.
+R-085 | Request SH-10085: 6624 units requested.
+R-018 | SH-10018 requires shipment of 6032 units.
+R-122 | SH-10122 requires shipment of 1999 units.
+R-026 | SH-10026 requires shipment of 3775 units.
+R-060 | SH-10060 requires shipment of 1925 units.
+R-105 | Request SH-10105: 3442 units requested.
+R-158 | SH-10158 requires shipment of 6291 units.
+R-114 | SH-10114 requires shipment of 1629 units.
+R-065 | Request SH-10065: 4996 units requested.
+R-035 | Request SH-10035: 4811 units requested.
+R-112 | SH-10112 requires shipment of 4219 units.
+R-068 | SH-10068 requires shipment of 6846 units.
+R-014 | SH-10014 requires shipment of 5736 units.
+R-047 | Request SH-10047: 5255 units requested.
+R-132 | SH-10132 requires shipment of 2776 units.
+R-062 | SH-10062 requires shipment of 3183 units.
+R-002 | SH-10002 requires shipment of 1444 units.
+R-113 | Request SH-10113: 6439 units requested.
+R-120 | SH-10120 requires shipment of 5958 units.
+R-087 | Request SH-10087: 2739 units requested.
+R-108 | SH-10108 requires shipment of 6365 units.
+R-143 | Request SH-10143: 2369 units requested.
+R-004 | SH-10004 requires shipment of 3960 units.
+R-003 | Request SH-10003: 4182 units requested.
+R-080 | SH-10080 requires shipment of 4959 units.
+R-015 | Request SH-10015: 6143 units requested.
+R-006 | SH-10006 requires shipment of 1074 units.
+R-135 | Request SH-10135: 4330 units requested.
+R-152 | SH-10152 requires shipment of 5625 units.
+R-009 | Request SH-10009: 3405 units requested.
+R-023 | Request SH-10023: 1666 units requested.
+R-030 | SH-10030 requires shipment of 2295 units.
+R-016 | SH-10016 requires shipment of 6106 units.
+R-074 | SH-10074 requires shipment of 5218 units.
+R-076 | SH-10076 requires shipment of 6587 units.
+R-013 | Request SH-10013: 4626 units requested.
+R-136 | SH-10136 requires shipment of 6476 units.
+R-131 | Request SH-10131: 3997 units requested.
+R-097 | Request SH-10097: 6809 units requested.
+R-142 | SH-10142 requires shipment of 5773 units.
+R-089 | Request SH-10089: 6069 units requested.
+R-150 | SH-10150 requires shipment of 6550 units.
+R-020 | SH-10020 requires shipment of 1740 units.
+R-140 | SH-10140 requires shipment of 3479 units.
+R-095 | Request SH-10095: 3220 units requested.
+R-070 | SH-10070 requires shipment of 6698 units.
+R-081 | Request SH-10081: 5588 units requested.
+R-083 | Request SH-10083: 1333 units requested.
+R-086 | SH-10086 requires shipment of 3738 units.
+R-075 | Request SH-10075: 2258 units requested.
+R-082 | SH-10082 requires shipment of 2702 units.
+R-055 | Request SH-10055: 2665 units requested.
+R-005 | Request SH-10005: 1259 units requested.
+R-043 | Request SH-10043: 4515 units requested.
+R-078 | SH-10078 requires shipment of 5366 units.
+R-031 | Request SH-10031: 4293 units requested.
+R-038 | SH-10038 requires shipment of 5107 units.
+R-139 | Request SH-10139: 6328 units requested.
+R-145 | Request SH-10145: 1111 units requested.
+R-127 | Request SH-10127: 4700 units requested.
+R-033 | Request SH-10033: 3812 units requested.
+R-024 | SH-10024 requires shipment of 1037 units.
+R-041 | Request SH-10041: 3368 units requested.
+R-146 | SH-10146 requires shipment of 5884 units.
+=== End Shipment Requests ===
+=== Warehouse Inventory ===
+W-067 | Warehouse stock for SH-10067: 5601 units available.
+W-032 | Available quantity for SH-10032 is 3603 units.
+W-106 | Available quantity for SH-10106 is 6933 units.
+W-056 | Available quantity for SH-10056 is 4144 units.
+W-115 | Warehouse stock for SH-10115: 2849 units available.
+W-006 | Available quantity for SH-10006 is 1124 units.
+W-048 | Available quantity for SH-10048 is 4713 units.
+W-033 | Warehouse stock for SH-10033: 3862 units available.
+W-074 | Available quantity for SH-10074 is 5268 units.
+W-148 | Available quantity for SH-10148 is 1531 units.
+W-149 | Warehouse stock for SH-10149: 4884 units available.
+W-075 | Warehouse stock for SH-10075: 2308 units available.
+W-091 | Warehouse stock for SH-10091: 3011 units available.
+W-082 | Available quantity for SH-10082 is 2752 units.
+W-073 | Warehouse stock for SH-10073: 6452 units available.
+W-024 | Available quantity for SH-10024 is 1087 units.
+W-009 | Warehouse stock for SH-10009: 3404 units available.
+W-151 | Warehouse stock for SH-10151: 3589 units available.
+W-087 | Warehouse stock for SH-10087: 2789 units available.
+W-109 | Warehouse stock for SH-10109: 1568 units available.
+W-005 | Warehouse stock for SH-10005: 1309 units available.
+W-018 | Available quantity for SH-10018 is 6082 units.
+W-152 | Available quantity for SH-10152 is 5624 units.
+W-128 | Available quantity for SH-10128 is 6919 units.
+W-122 | Available quantity for SH-10122 is 2049 units.
+W-054 | Available quantity for SH-10054 is 5069 units.
+W-137 | Warehouse stock for SH-10137: 5564 units available.
+W-147 | Warehouse stock for SH-10147: 3159 units available.
+W-034 | Available quantity for SH-10034 is 6734 units.
+W-049 | Warehouse stock for SH-10049: 1457 units available.
+W-093 | Warehouse stock for SH-10093: 2937 units available.
+W-127 | Warehouse stock for SH-10127: 4699 units available.
+W-069 | Warehouse stock for SH-10069: 5971 units available.
+W-116 | Available quantity for SH-10116 is 5194 units.
+W-126 | Available quantity for SH-10126 is 5439 units.
+W-061 | Warehouse stock for SH-10061: 1864 units available.
+W-051 | Warehouse stock for SH-10051: 1938 units available.
+W-014 | Available quantity for SH-10014 is 5786 units.
+W-035 | Warehouse stock for SH-10035: 4861 units available.
+W-160 | Available quantity for SH-10160 is 2234 units.
+W-135 | Warehouse stock for SH-10135: 4329 units available.
+W-120 | Available quantity for SH-10120 is 6008 units.
+W-064 | Available quantity for SH-10064 is 4639 units.
+W-155 | Warehouse stock for SH-10155: 2271 units available.
+W-055 | Warehouse stock for SH-10055: 2664 units available.
+W-141 | Warehouse stock for SH-10141: 4417 units available.
+W-145 | Warehouse stock for SH-10145: 1161 units available.
+W-013 | Warehouse stock for SH-10013: 4676 units available.
+W-062 | Available quantity for SH-10062 is 3233 units.
+W-105 | Warehouse stock for SH-10105: 3492 units available.
+W-016 | Available quantity for SH-10016 is 6156 units.
+W-104 | Available quantity for SH-10104 is 3677 units.
+W-037 | Warehouse stock for SH-10037: 2123 units available.
+W-038 | Available quantity for SH-10038 is 5157 units.
+W-057 | Warehouse stock for SH-10057: 4898 units available.
+W-083 | Warehouse stock for SH-10083: 1383 units available.
+W-077 | Warehouse stock for SH-10077: 3381 units available.
+W-112 | Available quantity for SH-10112 is 4269 units.
+W-099 | Warehouse stock for SH-10099: 2109 units available.
+W-096 | Available quantity for SH-10096 is 4158 units.
+W-081 | Warehouse stock for SH-10081: 5638 units available.
+W-123 | Warehouse stock for SH-10123: 4602 units available.
+W-110 | Available quantity for SH-10110 is 5231 units.
+W-017 | Warehouse stock for SH-10017: 4121 units available.
+W-080 | Available quantity for SH-10080 is 5009 units.
+W-021 | Warehouse stock for SH-10021: 2641 units available.
+W-022 | Available quantity for SH-10022 is 2382 units.
+W-078 | Available quantity for SH-10078 is 5416 units.
+W-058 | Available quantity for SH-10058 is 2456 units.
+W-053 | Warehouse stock for SH-10053: 1184 units available.
+W-146 | Available quantity for SH-10146 is 5934 units.
+W-089 | Warehouse stock for SH-10089: 6119 units available.
+W-026 | Available quantity for SH-10026 is 3774 units.
+W-132 | Available quantity for SH-10132 is 2826 units.
+W-107 | Warehouse stock for SH-10107: 5749 units available.
+W-140 | Available quantity for SH-10140 is 3529 units.
+W-010 | Available quantity for SH-10010 is 5712 units.
+W-131 | Warehouse stock for SH-10131: 4047 units available.
+W-084 | Available quantity for SH-10084 is 3936 units.
+W-130 | Available quantity for SH-10130 is 4972 units.
+W-068 | Available quantity for SH-10068 is 6896 units.
+W-124 | Available quantity for SH-10124 is 3196 units.
+W-070 | Available quantity for SH-10070 is 6748 units.
+W-125 | Warehouse stock for SH-10125: 5083 units available.
+W-072 | Available quantity for SH-10072 is 1554 units.
+W-079 | Warehouse stock for SH-10079: 2974 units available.
+W-158 | Available quantity for SH-10158 is 6341 units.
+W-066 | Available quantity for SH-10066 is 2567 units.
+W-020 | Available quantity for SH-10020 is 1739 units.
+W-029 | Warehouse stock for SH-10029: 5897 units available.
+W-052 | Available quantity for SH-10052 is 2012 units.
+W-119 | Warehouse stock for SH-10119: 6711 units available.
+W-065 | Warehouse stock for SH-10065: 5046 units available.
+W-059 | Warehouse stock for SH-10059: 2678 units available.
+W-090 | Available quantity for SH-10090 is 1753 units.
+W-144 | Available quantity for SH-10144 is 3566 units.
+W-044 | Available quantity for SH-10044 is 4491 units.
+W-063 | Warehouse stock for SH-10063: 2863 units available.
+W-023 | Warehouse stock for SH-10023: 1716 units available.
+W-015 | Warehouse stock for SH-10015: 6193 units available.
+W-092 | Available quantity for SH-10092 is 5379 units.
+W-159 | Warehouse stock for SH-10159: 2493 units available.
+W-043 | Warehouse stock for SH-10043: 4514 units available.
+W-117 | Warehouse stock for SH-10117: 3899 units available.
+W-156 | Available quantity for SH-10156 is 1272 units.
+W-046 | Available quantity for SH-10046 is 4306 units.
+W-133 | Warehouse stock for SH-10133: 5994 units available.
+W-076 | Available quantity for SH-10076 is 6637 units.
+W-025 | Warehouse stock for SH-10025: 2479 units available.
+W-136 | Available quantity for SH-10136 is 6526 units.
+W-031 | Warehouse stock for SH-10031: 4343 units available.
+W-088 | Available quantity for SH-10088 is 6179 units.
+W-154 | Available quantity for SH-10154 is 6267 units.
+W-011 | Warehouse stock for SH-10011: 2604 units available.
+W-097 | Warehouse stock for SH-10097: 6859 units available.
+W-111 | Warehouse stock for SH-10111: 5342 units available.
+W-004 | Available quantity for SH-10004 is 3959 units.
+W-150 | Available quantity for SH-10150 is 6549 units.
+W-042 | Available quantity for SH-10042 is 1198 units.
+W-098 | Available quantity for SH-10098 is 2197 units.
+W-134 | Available quantity for SH-10134 is 4084 units.
+W-040 | Available quantity for SH-10040 is 4454 units.
+W-142 | Available quantity for SH-10142 is 5823 units.
+W-100 | Available quantity for SH-10100 is 3751 units.
+W-002 | Available quantity for SH-10002 is 1494 units.
+W-007 | Warehouse stock for SH-10007: 1901 units available.
+W-157 | Warehouse stock for SH-10157: 3344 units available.
+W-103 | Warehouse stock for SH-10103: 3122 units available.
+W-118 | Available quantity for SH-10118 is 3973 units.
+W-071 | Warehouse stock for SH-10071: 6563 units available.
+W-001 | Warehouse stock for SH-10001: 3714 units available.
+W-012 | Available quantity for SH-10012 is 4824 units.
+W-019 | Warehouse stock for SH-10019: 5527 units available.
+W-008 | Available quantity for SH-10008 is 5809 units.
+W-094 | Available quantity for SH-10094 is 3048 units.
+W-108 | Available quantity for SH-10108 is 6364 units.
+W-102 | Available quantity for SH-10102 is 5453 units.
+W-139 | Warehouse stock for SH-10139: 6378 units available.
+W-050 | Available quantity for SH-10050 is 2086 units.
+W-085 | Warehouse stock for SH-10085: 6674 units available.
+W-114 | Available quantity for SH-10114 is 1679 units.
+W-039 | Warehouse stock for SH-10039: 1369 units available.
+W-101 | Warehouse stock for SH-10101: 6304 units available.
+W-003 | Warehouse stock for SH-10003: 4232 units available.
+W-121 | Warehouse stock for SH-10121: 1346 units available.
+W-143 | Warehouse stock for SH-10143: 2419 units available.
+W-095 | Warehouse stock for SH-10095: 3219 units available.
+W-045 | Warehouse stock for SH-10045: 3307 units available.
+W-047 | Warehouse stock for SH-10047: 5254 units available.
+W-138 | Available quantity for SH-10138 is 6859 units.
+W-129 | Warehouse stock for SH-10129: 4528 units available.
+W-030 | Available quantity for SH-10030 is 2294 units.
+W-027 | Warehouse stock for SH-10027: 1827 units available.
+W-113 | Warehouse stock for SH-10113: 6489 units available.
+W-060 | Available quantity for SH-10060 is 1924 units.
+W-153 | Warehouse stock for SH-10153: 4787 units available.
+W-086 | Available quantity for SH-10086 is 3788 units.
+W-041 | Warehouse stock for SH-10041: 3418 units available.
+W-036 | Available quantity for SH-10036 is 3034 units.
+W-028 | Available quantity for SH-10028 is 1642 units.
+=== End Warehouse Inventory ===
+=== Quality Release ===
+Q-018 | SH-10018 has quality status APPROVED.
+Q-133 | Quality decision for SH-10133: APPROVED.
+Q-150 | SH-10150 has quality status APPROVED.
+Q-050 | SH-10050 has quality status PENDING.
+Q-053 | Quality decision for SH-10053: APPROVED.
+Q-003 | Quality decision for SH-10003: APPROVED.
+Q-149 | Quality decision for SH-10149: PENDING.
+Q-083 | Quality decision for SH-10083: APPROVED.
+Q-152 | SH-10152 has quality status APPROVED.
+Q-100 | SH-10100 has quality status APPROVED.
+Q-013 | Quality decision for SH-10013: PENDING.
+Q-087 | Quality decision for SH-10087: APPROVED.
+Q-158 | SH-10158 has quality status APPROVED.
+Q-109 | Quality decision for SH-10109: PENDING.
+Q-023 | Quality decision for SH-10023: APPROVED.
+Q-120 | SH-10120 has quality status APPROVED.
+Q-033 | Quality decision for SH-10033: APPROVED.
+Q-028 | SH-10028 has quality status APPROVED.
+Q-139 | Quality decision for SH-10139: APPROVED.
+Q-042 | SH-10042 has quality status APPROVED.
+Q-142 | SH-10142 has quality status APPROVED.
+Q-092 | SH-10092 has quality status APPROVED.
+Q-024 | SH-10024 has quality status APPROVED.
+Q-126 | SH-10126 has quality status APPROVED.
+Q-041 | Quality decision for SH-10041: APPROVED.
+Q-132 | SH-10132 has quality status APPROVED.
+Q-140 | SH-10140 has quality status APPROVED.
+Q-151 | Quality decision for SH-10151: PENDING.
+Q-137 | Quality decision for SH-10137: APPROVED.
+Q-095 | Quality decision for SH-10095: APPROVED.
+Q-004 | SH-10004 has quality status APPROVED.
+Q-113 | Quality decision for SH-10113: PENDING.
+Q-054 | SH-10054 has quality status APPROVED.
+Q-068 | SH-10068 has quality status APPROVED.
+Q-047 | Quality decision for SH-10047: APPROVED.
+Q-117 | Quality decision for SH-10117: PENDING.
+Q-155 | Quality decision for SH-10155: APPROVED.
+Q-144 | SH-10144 has quality status APPROVED.
+Q-020 | SH-10020 has quality status APPROVED.
+Q-118 | SH-10118 has quality status APPROVED.
+Q-157 | Quality decision for SH-10157: APPROVED.
+Q-135 | Quality decision for SH-10135: APPROVED.
+Q-006 | SH-10006 has quality status APPROVED.
+Q-101 | Quality decision for SH-10101: APPROVED.
+Q-094 | SH-10094 has quality status APPROVED.
+Q-106 | SH-10106 has quality status APPROVED.
+Q-138 | SH-10138 has quality status APPROVED.
+Q-141 | Quality decision for SH-10141: PENDING.
+Q-052 | SH-10052 has quality status APPROVED.
+Q-051 | Quality decision for SH-10051: APPROVED.
+Q-112 | SH-10112 has quality status APPROVED.
+Q-044 | SH-10044 has quality status APPROVED.
+Q-022 | SH-10022 has quality status APPROVED.
+Q-062 | SH-10062 has quality status APPROVED.
+Q-008 | SH-10008 has quality status APPROVED.
+Q-077 | Quality decision for SH-10077: PENDING.
+Q-029 | Quality decision for SH-10029: APPROVED.
+Q-021 | Quality decision for SH-10021: APPROVED.
+Q-116 | SH-10116 has quality status PENDING.
+Q-148 | SH-10148 has quality status APPROVED.
+Q-129 | Quality decision for SH-10129: APPROVED.
+Q-049 | Quality decision for SH-10049: APPROVED.
+Q-011 | Quality decision for SH-10011: PENDING.
+Q-040 | SH-10040 has quality status APPROVED.
+Q-089 | Quality decision for SH-10089: APPROVED.
+Q-160 | SH-10160 has quality status APPROVED.
+Q-123 | Quality decision for SH-10123: APPROVED.
+Q-038 | SH-10038 has quality status APPROVED.
+Q-147 | Quality decision for SH-10147: APPROVED.
+Q-067 | Quality decision for SH-10067: APPROVED.
+Q-058 | SH-10058 has quality status APPROVED.
+Q-154 | SH-10154 has quality status APPROVED.
+Q-085 | Quality decision for SH-10085: APPROVED.
+Q-055 | Quality decision for SH-10055: APPROVED.
+Q-030 | SH-10030 has quality status PENDING.
+Q-102 | SH-10102 has quality status PENDING.
+Q-057 | Quality decision for SH-10057: APPROVED.
+Q-119 | Quality decision for SH-10119: APPROVED.
+Q-039 | Quality decision for SH-10039: APPROVED.
+Q-026 | SH-10026 has quality status APPROVED.
+Q-002 | SH-10002 has quality status APPROVED.
+Q-072 | SH-10072 has quality status APPROVED.
+Q-114 | SH-10114 has quality status APPROVED.
+Q-014 | SH-10014 has quality status APPROVED.
+Q-059 | Quality decision for SH-10059: APPROVED.
+Q-060 | SH-10060 has quality status APPROVED.
+Q-156 | SH-10156 has quality status APPROVED.
+Q-136 | SH-10136 has quality status APPROVED.
+Q-159 | Quality decision for SH-10159: APPROVED.
+Q-082 | SH-10082 has quality status APPROVED.
+Q-131 | Quality decision for SH-10131: APPROVED.
+Q-099 | Quality decision for SH-10099: APPROVED.
+Q-115 | Quality decision for SH-10115: APPROVED.
+Q-036 | SH-10036 has quality status APPROVED.
+Q-069 | Quality decision for SH-10069: PENDING.
+Q-084 | SH-10084 has quality status APPROVED.
+Q-070 | SH-10070 has quality status PENDING.
+Q-005 | Quality decision for SH-10005: PENDING.
+Q-128 | SH-10128 has quality status APPROVED.
+Q-012 | SH-10012 has quality status APPROVED.
+Q-105 | Quality decision for SH-10105: APPROVED.
+Q-045 | Quality decision for SH-10045: APPROVED.
+Q-056 | SH-10056 has quality status APPROVED.
+Q-103 | Quality decision for SH-10103: PENDING.
+Q-125 | Quality decision for SH-10125: APPROVED.
+Q-074 | SH-10074 has quality status APPROVED.
+Q-015 | Quality decision for SH-10015: APPROVED.
+Q-025 | Quality decision for SH-10025: APPROVED.
+Q-081 | Quality decision for SH-10081: APPROVED.
+Q-096 | SH-10096 has quality status PENDING.
+Q-080 | SH-10080 has quality status APPROVED.
+Q-046 | SH-10046 has quality status APPROVED.
+Q-098 | SH-10098 has quality status APPROVED.
+Q-043 | Quality decision for SH-10043: APPROVED.
+Q-035 | Quality decision for SH-10035: APPROVED.
+Q-122 | SH-10122 has quality status APPROVED.
+Q-009 | Quality decision for SH-10009: APPROVED.
+Q-063 | Quality decision for SH-10063: PENDING.
+Q-037 | Quality decision for SH-10037: APPROVED.
+Q-153 | Quality decision for SH-10153: APPROVED.
+Q-121 | Quality decision for SH-10121: APPROVED.
+Q-075 | Quality decision for SH-10075: APPROVED.
+Q-107 | Quality decision for SH-10107: APPROVED.
+Q-010 | SH-10010 has quality status PENDING.
+Q-031 | Quality decision for SH-10031: APPROVED.
+Q-073 | Quality decision for SH-10073: APPROVED.
+Q-146 | SH-10146 has quality status APPROVED.
+Q-091 | Quality decision for SH-10091: APPROVED.
+Q-145 | Quality decision for SH-10145: APPROVED.
+Q-065 | Quality decision for SH-10065: APPROVED.
+Q-097 | Quality decision for SH-10097: APPROVED.
+Q-127 | Quality decision for SH-10127: APPROVED.
+Q-124 | SH-10124 has quality status APPROVED.
+Q-017 | Quality decision for SH-10017: APPROVED.
+Q-079 | Quality decision for SH-10079: APPROVED.
+Q-034 | SH-10034 has quality status APPROVED.
+Q-061 | Quality decision for SH-10061: APPROVED.
+Q-032 | SH-10032 has quality status APPROVED.
+Q-104 | SH-10104 has quality status APPROVED.
+Q-007 | Quality decision for SH-10007: APPROVED.
+Q-108 | SH-10108 has quality status APPROVED.
+Q-143 | Quality decision for SH-10143: APPROVED.
+Q-016 | SH-10016 has quality status APPROVED.
+Q-048 | SH-10048 has quality status APPROVED.
+Q-066 | SH-10066 has quality status APPROVED.
+Q-071 | Quality decision for SH-10071: APPROVED.
+Q-019 | Quality decision for SH-10019: APPROVED.
+Q-001 | Quality decision for SH-10001: APPROVED.
+Q-064 | SH-10064 has quality status APPROVED.
+Q-086 | SH-10086 has quality status APPROVED.
+Q-088 | SH-10088 has quality status PENDING.
+Q-130 | SH-10130 has quality status APPROVED.
+Q-078 | SH-10078 has quality status APPROVED.
+Q-027 | Quality decision for SH-10027: PENDING.
+Q-090 | SH-10090 has quality status APPROVED.
+Q-111 | Quality decision for SH-10111: APPROVED.
+Q-110 | SH-10110 has quality status APPROVED.
+Q-076 | SH-10076 has quality status APPROVED.
+Q-093 | Quality decision for SH-10093: APPROVED.
+Q-134 | SH-10134 has quality status APPROVED.
+=== End Quality Release ===
+=== Dispatch Holds ===
+H-082 | SH-10082: dispatch status NONE.
+H-034 | SH-10034: dispatch status NONE.
+H-142 | SH-10142: dispatch status NONE.
+H-112 | SH-10112: dispatch status NONE.
+H-020 | SH-10020: dispatch status NONE.
+H-040 | SH-10040: dispatch status NONE.
+H-022 | SH-10022: dispatch status NONE.
+H-135 | Dispatch hold status for SH-10135: NONE.
+H-013 | Dispatch hold status for SH-10013: NONE.
+H-149 | Dispatch hold status for SH-10149: NONE.
+H-109 | Dispatch hold status for SH-10109: NONE.
+H-078 | SH-10078: dispatch status NONE.
+H-136 | SH-10136: dispatch status NONE.
+H-106 | SH-10106: dispatch status NONE.
+H-024 | SH-10024: dispatch status NONE.
+H-145 | Dispatch hold status for SH-10145: NONE.
+H-010 | SH-10010: dispatch status NONE.
+H-067 | Dispatch hold status for SH-10067: NONE.
+H-064 | SH-10064: dispatch status NONE.
+H-043 | Dispatch hold status for SH-10043: NONE.
+H-026 | SH-10026: dispatch status NONE.
+H-110 | SH-10110: dispatch status NONE.
+H-027 | Dispatch hold status for SH-10027: NONE.
+H-058 | SH-10058: dispatch status NONE.
+H-076 | SH-10076: dispatch status NONE.
+H-134 | SH-10134: dispatch status NONE.
+H-126 | SH-10126: dispatch status NONE.
+H-155 | Dispatch hold status for SH-10155: ACTIVE.
+H-081 | Dispatch hold status for SH-10081: NONE.
+H-017 | Dispatch hold status for SH-10017: NONE.
+H-103 | Dispatch hold status for SH-10103: NONE.
+H-060 | SH-10060: dispatch status NONE.
+H-008 | SH-10008: dispatch status NONE.
+H-159 | Dispatch hold status for SH-10159: NONE.
+H-074 | SH-10074: dispatch status NONE.
+H-012 | SH-10012: dispatch status NONE.
+H-044 | SH-10044: dispatch status NONE.
+H-120 | SH-10120: dispatch status NONE.
+H-094 | SH-10094: dispatch status NONE.
+H-030 | SH-10030: dispatch status NONE.
+H-157 | Dispatch hold status for SH-10157: NONE.
+H-104 | SH-10104: dispatch status NONE.
+H-035 | Dispatch hold status for SH-10035: NONE.
+H-133 | Dispatch hold status for SH-10133: NONE.
+H-139 | Dispatch hold status for SH-10139: NONE.
+H-140 | SH-10140: dispatch status NONE.
+H-070 | SH-10070: dispatch status ACTIVE.
+H-096 | SH-10096: dispatch status NONE.
+H-091 | Dispatch hold status for SH-10091: NONE.
+H-105 | Dispatch hold status for SH-10105: ACTIVE.
+H-095 | Dispatch hold status for SH-10095: NONE.
+H-093 | Dispatch hold status for SH-10093: NONE.
+H-037 | Dispatch hold status for SH-10037: NONE.
+H-080 | SH-10080: dispatch status NONE.
+H-071 | Dispatch hold status for SH-10071: NONE.
+H-023 | Dispatch hold status for SH-10023: NONE.
+H-041 | Dispatch hold status for SH-10041: NONE.
+H-113 | Dispatch hold status for SH-10113: NONE.
+H-090 | SH-10090: dispatch status NONE.
+H-141 | Dispatch hold status for SH-10141: NONE.
+H-121 | Dispatch hold status for SH-10121: NONE.
+H-001 | Dispatch hold status for SH-10001: NONE.
+H-014 | SH-10014: dispatch status NONE.
+H-098 | SH-10098: dispatch status NONE.
+H-063 | Dispatch hold status for SH-10063: NONE.
+H-128 | SH-10128: dispatch status NONE.
+H-127 | Dispatch hold status for SH-10127: NONE.
+H-029 | Dispatch hold status for SH-10029: NONE.
+H-006 | SH-10006: dispatch status NONE.
+H-130 | SH-10130: dispatch status NONE.
+H-009 | Dispatch hold status for SH-10009: NONE.
+H-018 | SH-10018: dispatch status NONE.
+H-144 | SH-10144: dispatch status NONE.
+H-065 | Dispatch hold status for SH-10065: NONE.
+H-117 | Dispatch hold status for SH-10117: ACTIVE.
+H-156 | SH-10156: dispatch status NONE.
+H-129 | Dispatch hold status for SH-10129: NONE.
+H-123 | Dispatch hold status for SH-10123: NONE.
+H-124 | SH-10124: dispatch status NONE.
+H-087 | Dispatch hold status for SH-10087: NONE.
+H-147 | Dispatch hold status for SH-10147: NONE.
+H-150 | SH-10150: dispatch status NONE.
+H-083 | Dispatch hold status for SH-10083: NONE.
+H-003 | Dispatch hold status for SH-10003: NONE.
+H-122 | SH-10122: dispatch status NONE.
+H-032 | SH-10032: dispatch status NONE.
+H-069 | Dispatch hold status for SH-10069: NONE.
+H-111 | Dispatch hold status for SH-10111: NONE.
+H-056 | SH-10056: dispatch status NONE.
+H-033 | Dispatch hold status for SH-10033: NONE.
+H-045 | Dispatch hold status for SH-10045: NONE.
+H-054 | SH-10054: dispatch status ACTIVE.
+H-062 | SH-10062: dispatch status NONE.
+H-039 | Dispatch hold status for SH-10039: NONE.
+H-051 | Dispatch hold status for SH-10051: NONE.
+H-052 | SH-10052: dispatch status NONE.
+H-119 | Dispatch hold status for SH-10119: NONE.
+H-151 | Dispatch hold status for SH-10151: NONE.
+H-158 | SH-10158: dispatch status ACTIVE.
+H-059 | Dispatch hold status for SH-10059: ACTIVE.
+H-088 | SH-10088: dispatch status NONE.
+H-042 | SH-10042: dispatch status NONE.
+H-072 | SH-10072: dispatch status NONE.
+H-154 | SH-10154: dispatch status NONE.
+H-116 | SH-10116: dispatch status NONE.
+H-016 | SH-10016: dispatch status NONE.
+H-002 | SH-10002: dispatch status NONE.
+H-005 | Dispatch hold status for SH-10005: NONE.
+H-107 | Dispatch hold status for SH-10107: NONE.
+H-132 | SH-10132: dispatch status NONE.
+H-131 | Dispatch hold status for SH-10131: NONE.
+H-007 | Dispatch hold status for SH-10007: NONE.
+H-038 | SH-10038: dispatch status NONE.
+H-160 | SH-10160: dispatch status NONE.
+H-102 | SH-10102: dispatch status NONE.
+H-153 | Dispatch hold status for SH-10153: NONE.
+H-125 | Dispatch hold status for SH-10125: NONE.
+H-011 | Dispatch hold status for SH-10011: NONE.
+H-097 | Dispatch hold status for SH-10097: NONE.
+H-047 | Dispatch hold status for SH-10047: NONE.
+H-068 | SH-10068: dispatch status NONE.
+H-118 | SH-10118: dispatch status NONE.
+H-031 | Dispatch hold status for SH-10031: NONE.
+H-138 | SH-10138: dispatch status NONE.
+H-019 | Dispatch hold status for SH-10019: ACTIVE.
+H-137 | Dispatch hold status for SH-10137: NONE.
+H-143 | Dispatch hold status for SH-10143: NONE.
+H-050 | SH-10050: dispatch status NONE.
+H-048 | SH-10048: dispatch status ACTIVE.
+H-114 | SH-10114: dispatch status NONE.
+H-053 | Dispatch hold status for SH-10053: NONE.
+H-100 | SH-10100: dispatch status NONE.
+H-021 | Dispatch hold status for SH-10021: NONE.
+H-089 | Dispatch hold status for SH-10089: NONE.
+H-092 | SH-10092: dispatch status NONE.
+H-066 | SH-10066: dispatch status NONE.
+H-057 | Dispatch hold status for SH-10057: NONE.
+H-036 | SH-10036: dispatch status ACTIVE.
+H-146 | SH-10146: dispatch status ACTIVE.
+H-099 | Dispatch hold status for SH-10099: NONE.
+H-085 | Dispatch hold status for SH-10085: NONE.
+H-084 | SH-10084: dispatch status NONE.
+H-073 | Dispatch hold status for SH-10073: NONE.
+H-108 | SH-10108: dispatch status NONE.
+H-061 | Dispatch hold status for SH-10061: ACTIVE.
+H-028 | SH-10028: dispatch status NONE.
+H-075 | Dispatch hold status for SH-10075: NONE.
+H-101 | Dispatch hold status for SH-10101: NONE.
+H-079 | Dispatch hold status for SH-10079: NONE.
+H-015 | Dispatch hold status for SH-10015: NONE.
+H-025 | Dispatch hold status for SH-10025: NONE.
+H-046 | SH-10046: dispatch status ACTIVE.
+H-004 | SH-10004: dispatch status NONE.
+H-148 | SH-10148: dispatch status NONE.
+H-086 | SH-10086: dispatch status NONE.
+H-152 | SH-10152: dispatch status NONE.
+H-115 | Dispatch hold status for SH-10115: NONE.
+H-077 | Dispatch hold status for SH-10077: NONE.
+H-049 | Dispatch hold status for SH-10049: ACTIVE.
+H-055 | Dispatch hold status for SH-10055: NONE.
+=== End Dispatch Holds ===
+=== Archived Shipments ===
+A-004 | Archived SH-90004: requested 20004 units; available 20054 units; quality APPROVED; hold NONE.
+A-002 | Archived SH-90002: requested 20002 units; available 20052 units; quality APPROVED; hold NONE.
+A-006 | Archived SH-90006: requested 20006 units; available 20056 units; quality APPROVED; hold NONE.
+A-001 | Archived SH-90001: requested 20001 units; available 20051 units; quality APPROVED; hold NONE.
+A-008 | Archived SH-90008: requested 20008 units; available 20058 units; quality APPROVED; hold NONE.
+A-007 | Archived SH-90007: requested 20007 units; available 20057 units; quality APPROVED; hold NONE.
+A-003 | Archived SH-90003: requested 20003 units; available 20053 units; quality APPROVED; hold NONE.
+A-005 | Archived SH-90005: requested 20005 units; available 20055 units; quality APPROVED; hold NONE.
+=== End Archived Shipments ===

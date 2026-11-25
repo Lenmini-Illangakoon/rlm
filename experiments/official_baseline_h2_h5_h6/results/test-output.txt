@@ -1,0 +1,35 @@
+test_h2_boundary_and_blinding (test_assessment.AssessmentTests.test_h2_boundary_and_blinding) ... ok
+test_h2_strata_and_origin_deduplication (test_assessment.AssessmentTests.test_h2_strata_and_origin_deduplication) ... ok
+test_h5_actual_return_and_missing_obligations (test_assessment.AssessmentTests.test_h5_actual_return_and_missing_obligations) ... ok
+test_h6_packet_contains_only_delivered_root_histories (test_assessment.AssessmentTests.test_h6_packet_contains_only_delivered_root_histories) ... ok
+test_h6_prefix_stability_and_purpose (test_assessment.AssessmentTests.test_h6_prefix_stability_and_purpose) ... ok
+test_prefix_packet_excludes_future_and_is_immutable (test_assessment.AssessmentTests.test_prefix_packet_excludes_future_and_is_immutable) ... ok
+test_serialized_review_examples (test_assessment.AssessmentTests.test_serialized_review_examples) ... ok
+test_explicit_output_cardinality_and_source_coverage (test_benchmarks.Benchmarks.test_explicit_output_cardinality_and_source_coverage) ... ok
+test_frozen_hashes_and_oracle_reconstruction (test_benchmarks.Benchmarks.test_frozen_hashes_and_oracle_reconstruction) ... ok
+test_missing_and_wrong_answers (test_benchmarks.Benchmarks.test_missing_and_wrong_answers) ... ok
+test_mutated_source_changes_oracle (test_benchmarks.Benchmarks.test_mutated_source_changes_oracle) ... ok
+test_parser_rejects_missing_duplicate_and_corrupt_notes (test_benchmarks.Benchmarks.test_parser_rejects_missing_duplicate_and_corrupt_notes) ... ok
+test_repeat_generation (test_benchmarks.Benchmarks.test_repeat_generation) ... ok
+test_s2_boundaries_and_provenance (test_benchmarks.Benchmarks.test_s2_boundaries_and_provenance) ... ok
+test_scope_end_marker_corruptions (test_benchmarks.Benchmarks.test_scope_end_marker_corruptions) ... ok
+test_wrong_selected_source_and_tie (test_benchmarks.Benchmarks.test_wrong_selected_source_and_tie) ... ok
+test_censor_rule_fail_closed_until_approved_value_restored (test_config.ConfigurationTests.test_censor_rule_fail_closed_until_approved_value_restored) ... ok
+test_confirmed_cumulative_round_end_rule (test_config.ConfigurationTests.test_confirmed_cumulative_round_end_rule) ... ok
+test_frozen_order_tasks_and_disabled_live (test_config.ConfigurationTests.test_frozen_order_tasks_and_disabled_live) ... ok
+test_round_one_checkpoint_retains_failed_runs (test_config.ConfigurationTests.test_round_one_checkpoint_retains_failed_runs) ... ok
+test_equivalence (test_instrumentation.InstrumentationTests.test_equivalence) ... ok
+test_atomic_concurrent_reservations (test_safety.BudgetTests.test_atomic_concurrent_reservations) ... ok
+test_attempt_cap_and_recursive_shared_ledger (test_safety.BudgetTests.test_attempt_cap_and_recursive_shared_ledger) ... ok
+test_campaign_ceiling (test_safety.BudgetTests.test_campaign_ceiling) ... ok
+test_reconciliation_unknown_and_overrun (test_safety.BudgetTests.test_reconciliation_unknown_and_overrun) ... ok
+test_token_caps_unpriced_timeout_cancel (test_safety.BudgetTests.test_token_caps_unpriced_timeout_cancel) ... ok
+test_actual_local_repl_isolation_probe (test_safety.OfflineBoundaryTests.test_actual_local_repl_isolation_probe) ... ok
+test_live_accident_guards (test_safety.OfflineBoundaryTests.test_live_accident_guards) ... ok
+test_external_timeout_and_cancel (test_safety.SupervisionTests.test_external_timeout_and_cancel) ... ok
+test_recursive_attempts_and_censor_equivalence (test_safety.SupervisionTests.test_recursive_attempts_and_censor_equivalence) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 30.431s
+
+OK

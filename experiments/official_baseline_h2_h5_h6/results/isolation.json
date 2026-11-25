@@ -1,0 +1,10 @@
+{
+  "canary_readable": true,
+  "isolation_pass": false,
+  "live_preflight": "BLOCKED",
+  "oracle_files_opened": false,
+  "required_next_step": "OS-enforced restricted worker identity or minimal mounted filesystem, followed by compatibility and adversarial read tests",
+  "stderr": "",
+  "stdout": "DUMMY RESEARCH CANARY -- NO ORACLE ANSWERS\n",
+  "tested_boundary": "current Windows account + unmodified LocalREPL"
+}

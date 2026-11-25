@@ -1,0 +1,124 @@
+{
+  "cleanup": {
+    "payload_grant_removed": true,
+    "profile_deleted": true,
+    "scratch_deleted": true
+  },
+  "ledger": {
+    "campaign_exposure_usd": "0",
+    "rates_kind": "synthetic_only",
+    "runs": {
+      "broker-659f137ed64b418985f03df3f21a9347": {
+        "attempts": 0,
+        "deadline": 52764.375,
+        "stop_reason": "run_budget"
+      }
+    },
+    "tickets": {}
+  },
+  "observed_prefix": [
+    {
+      "action": null,
+      "depth": 0,
+      "event_id": "mock-1e015b9167194eec9f70f409881d58e5:e00001",
+      "inputs": {
+        "args": [
+          "public broker context"
+        ],
+        "kwargs": {
+          "root_prompt": "broker integration root"
+        }
+      },
+      "kind": "node_start",
+      "monotonic_ns": 51897618005800,
+      "node": null,
+      "parent_node": null,
+      "run_id": "mock-1e015b9167194eec9f70f409881d58e5",
+      "seq": 1,
+      "slot": null
+    },
+    {
+      "action": null,
+      "code": "with open(r'D:\\iit\\4th Year\\FYP\\RLM\\rlm\\experiments\\official_baseline_h2_h5_h6\\isolation-staging\\c6ed1074140b457b818118023c0a94eb\\run-e1bc8f5f16bc4f0a8ebd49887ab31c32\\work\\repl_env_e28f431e-079b-4642-b1c4-7befb9d44794_wuj3fyle\\context_0.txt', 'r') as f:\n    context_0 = f.read()",
+      "event_id": "mock-1e015b9167194eec9f70f409881d58e5:e00002",
+      "kind": "python_start",
+      "monotonic_ns": 51897779560300,
+      "node": "mock-1e015b9167194eec9f70f409881d58e5:e00001",
+      "phase": "environment_setup",
+      "run_id": "mock-1e015b9167194eec9f70f409881d58e5",
+      "seq": 2,
+      "slot": null
+    },
+    {
+      "action": "mock-1e015b9167194eec9f70f409881d58e5:e00002",
+      "event_id": "mock-1e015b9167194eec9f70f409881d58e5:e00003",
+      "exception_detail": "stderr is observed; exception object is not exposed",
+      "final_answer": null,
+      "kind": "python_result",
+      "locals": {
+        "answer": {
+          "unobserved": "non-builtin value"
+        },
+        "context": "public broker context",
+        "context_0": "public broker context",
+        "f": {
+          "unobserved": "non-builtin value"
+        }
+      },
+      "monotonic_ns": 51899423675900,
+      "node": "mock-1e015b9167194eec9f70f409881d58e5:e00001",
+      "phase": "environment_setup",
+      "run_id": "mock-1e015b9167194eec9f70f409881d58e5",
+      "seq": 3,
+      "slot": null,
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "action": null,
+      "code": "context = context_0",
+      "event_id": "mock-1e015b9167194eec9f70f409881d58e5:e00004",
+      "kind": "python_start",
+      "monotonic_ns": 51899423982800,
+      "node": "mock-1e015b9167194eec9f70f409881d58e5:e00001",
+      "phase": "environment_setup",
+      "run_id": "mock-1e015b9167194eec9f70f409881d58e5",
+      "seq": 4,
+      "slot": null
+    },
+    {
+      "action": "mock-1e015b9167194eec9f70f409881d58e5:e00004",
+      "event_id": "mock-1e015b9167194eec9f70f409881d58e5:e00005",
+      "exception_detail": "stderr is observed; exception object is not exposed",
+      "final_answer": null,
+      "kind": "python_result",
+      "locals": {
+        "answer": {
+          "unobserved": "non-builtin value"
+        },
+        "context": "public broker context",
+        "context_0": "public broker context",
+        "f": {
+          "unobserved": "non-builtin value"
+        }
+      },
+      "monotonic_ns": 51899425230400,
+      "node": "mock-1e015b9167194eec9f70f409881d58e5:e00001",
+      "phase": "environment_setup",
+      "run_id": "mock-1e015b9167194eec9f70f409881d58e5",
+      "seq": 5,
+      "slot": null,
+      "stderr": "",
+      "stdout": ""
+    }
+  ],
+  "profile_name": "RootCheck.Pilot.run-e1bc8f5f16bc4f0a8ebd49887ab31c32",
+  "protocol_version": "broker-integration-1",
+  "provider_records": [],
+  "reason": "run_budget",
+  "result": null,
+  "run_id": "broker-659f137ed64b418985f03df3f21a9347",
+  "scratch_path": "D:\\iit\\4th Year\\FYP\\RLM\\rlm\\experiments\\official_baseline_h2_h5_h6\\isolation-staging\\c6ed1074140b457b818118023c0a94eb\\run-e1bc8f5f16bc4f0a8ebd49887ab31c32",
+  "status": "resource_censored",
+  "synthetic_only": true
+}

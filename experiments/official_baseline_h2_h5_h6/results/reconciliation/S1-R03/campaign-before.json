@@ -1,0 +1,802 @@
+{
+  "policy_hash": "42889b13f955bc304b39eee8535ae182bde422324c815b7945fb953eefd9e459",
+  "policy": {
+    "config": {
+      "version": "offline-preparation-1",
+      "default_mode": "mock",
+      "live_enabled": false,
+      "upstream_pin": "e11f1a8f8ee4490686e16dd6463233abe08a07eb",
+      "root_model": "openai/gpt-5",
+      "plain_depth_one_model": "openai/gpt-5-nano",
+      "provider": "openrouter",
+      "model_identifiers_are_provisional_until_live_preflight": true,
+      "environment": "local",
+      "experimental_spec_ptc": false,
+      "persistent": false,
+      "compaction": false,
+      "rootcheck": false,
+      "custom_system_prompt": null,
+      "max_depth": 2,
+      "max_iterations_per_instance": 10,
+      "recursive_concurrency": 4,
+      "plain_batch_concurrency": 16,
+      "per_run_usd": "2",
+      "campaign_usd": "20",
+      "reservation_margin": "1.10",
+      "provider_attempts_per_run": 24,
+      "input_tokens_per_request": 64000,
+      "completion_tokens_per_request": 32768,
+      "wall_clock_seconds": 900,
+      "sampling_parameters": null,
+      "live_prices": null,
+      "live_token_bound_method": null,
+      "pilot_order": [
+        "S1-R01",
+        "S2-R01",
+        "S3-R01",
+        "S2-R02",
+        "S3-R02",
+        "S1-R02",
+        "S3-R03",
+        "S1-R03",
+        "S2-R03"
+      ],
+      "engineering_checkpoint_after_runs": 3,
+      "engineering_checkpoint_criteria": [
+        "instrumentation",
+        "source_integrity",
+        "cost_controls"
+      ],
+      "excessive_censoring_stop_count": 2,
+      "censoring_rule": "At the end of any pilot round, stop if the cumulative number of resource-censored runs is 2 or more. Preserve all runs, review the protocol, never automatically increase budgets or replace runs. Version material changes and do not silently pool affected runs.",
+      "censoring_rule_confirmed_by_user": "2026-11-24",
+      "all_runs_assess": [
+        "H2",
+        "H5",
+        "H6"
+      ],
+      "retained_statuses": [
+        "completed",
+        "operational_failure",
+        "infrastructure_failed",
+        "cancelled",
+        "resource_censored"
+      ],
+      "assessment_labels": [
+        "observed",
+        "not_observed",
+        "non_applicable",
+        "inconclusive"
+      ]
+    },
+    "limits": {
+      "run_usd": "2",
+      "campaign_usd": "20",
+      "attempts": 24,
+      "input_tokens": 64000,
+      "output_tokens": 32768,
+      "seconds": 900,
+      "margin": "1.10"
+    },
+    "rates": {
+      "openai/gpt-5": {
+        "input_per_million": "1.25",
+        "output_per_million": "10"
+      },
+      "openai/gpt-5-nano": {
+        "input_per_million": "0.05",
+        "output_per_million": "0.40"
+      }
+    },
+    "synthetic": false,
+    "bound_revision": "ascii-json-bytes-plus-1024-and-128-per-message-v1",
+    "live_host": {
+      "revision": "official-baseline-live-host-v1",
+      "upstream_pin": "e11f1a8f8ee4490686e16dd6463233abe08a07eb",
+      "rootcheck": false,
+      "provider_policy_revision": "openai-preflight-policy-1",
+      "routing": {
+        "openai/gpt-5": {
+          "only": [
+            "openai"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true,
+          "max_price": {
+            "prompt": 1.25,
+            "completion": 10
+          }
+        },
+        "openai/gpt-5-nano": {
+          "only": [
+            "openai"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true,
+          "max_price": {
+            "prompt": 0.05,
+            "completion": 0.4
+          }
+        }
+      },
+      "approved_endpoints": {
+        "openai/gpt-5": [
+          "openai/gpt-5",
+          "openai/gpt-5-2025-08-07"
+        ],
+        "openai/gpt-5-nano": [
+          "openai/gpt-5-nano",
+          "openai/gpt-5-nano-2025-08-07"
+        ]
+      },
+      "input_bound_revision": "ascii-json-bytes-plus-1024-and-128-per-message-v1",
+      "telemetry_revision": "native-cost-once-conservative-detail-bound-v1",
+      "preflight_seed_sha256": "e63ef54608a31aec964af6fdab24423400a9b3b8e01a61ac028049c5e1003cb6",
+      "approved_carried_ticket": {
+        "run_id": "two-request-preflight",
+        "model": "openai/gpt-5",
+        "input_bound": 64000,
+        "output_bound": 32768,
+        "reserved": "0.4484480",
+        "spent": "0",
+        "state": "usage_unknown"
+      },
+      "source_hashes": {
+        "runners/broker.py": "440105b2b717afaf1fbba40325816752f6d633a0f2fc05d967e5b1cb9044ddd6",
+        "runners/budget.py": "dd23ba927526c697cb16a6cf30b99177b460587d2289549680f5b6fdba0fb585",
+        "runners/pilot_runner.py": "0263962fbfa1cbc62bd570447bd71e817de4c7135afb860fa605007a9036d32a",
+        "runners/pilot_policy.py": "8c27f763a0ca24973aa9aaba79749aae1666c366e0aaa22b68aaaf758a303576",
+        "runners/provider_preflight.py": "ae801332fff8c64e6ed4ee8bd0ee5e6fb21d5a95a503c21dfc871885dc9def39",
+        "runners/observe.py": "54828582c712c58c6b19fd78bfcef0248bf06860ba5226447f2644d7253fa41f",
+        "runners/broker_client.py": "4d70f1444cb2bb49231cd38458ede3450125f56560154c6fe45e90b77ec0ff35",
+        "runners/windows_boundary.py": "c734eef3927cd11d772e6352305518d9ef7fedc01f64723014319643fff1da68",
+        "live_baseline.py": "434d3f0b26dc38687b6f2d2db39a2c8015dfdb9ba070641d0d5f7e542bbc1407",
+        "preflight_attempt_two.py": "e2c8fc0165489fc329faf087ccafc6e7ab522f328061d4867d02ee54344a7d25",
+        "preflight_key_entry.py": "960c8224137edf6d87a2b29aac04a1ac29bfdfccc12cb2d1629ff3d268dcbfd3"
+      },
+      "protected_hashes": {
+        "pyproject.toml": "a8c7ec9740739e4cbb29b51a8c99d77a8cf15621053b9f5c4abbb4d73099bbb3",
+        "rlm/__init__.py": "bbcf03835c623c6b00c38bdf6692d43af164f1d6a2df00c8c1044c409cf95f52",
+        "rlm/clients/__init__.py": "8c3b4320ef3acd6c1069d52b51cf973d076143b61de53b799284ba30d31a6ca6",
+        "rlm/clients/anthropic.py": "87dc5f2c0726d9f2abd42c528087e831e0937c80f966a2b2feb2e7d5470ee0bc",
+        "rlm/clients/azure_openai.py": "9696433c582b9d38e87d5c93987a037ba9e8eaaa323234382c423e2ae26b37f5",
+        "rlm/clients/base_lm.py": "e79ba1d2e459619631a991b37d594660fd80025c34f8212409b44f6b7197aa05",
+        "rlm/clients/gemini.py": "c517bd9fa2b3a9de5bd56e2b594e3345ea2fb870f4557e93cbb58a6a6eb8cd42",
+        "rlm/clients/openai.py": "2763e4b427f3c154ec2cfd906da91832c416f84851c5d6dc1d9c868477aec7c2",
+        "rlm/clients/portkey.py": "f0738a52a5c4ac7efa4daebb7c5f467b3f9adcbe7d5d67072565fc89651e4dfd",
+        "rlm/core/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "rlm/core/comms_utils.py": "bfbe1bea99139dea4300ff0e6f3a3d210d2590af9a99b0346a45e24023fbcce5",
+        "rlm/core/lm_handler.py": "f1c973aaac6ea7c67f6c05962b713ead30729a9f0b605a9d0851f5336475bb8f",
+        "rlm/core/rlm.py": "1ccec592077d7d00a079c396d3382cd8d4bd84e5ce5bbc4674cca30cdf7cdd34",
+        "rlm/core/types.py": "123d47312d80d317f5bbc1e1002870683bb4592208889a1f47904ed3ce493fbf",
+        "rlm/environments/__init__.py": "9e38801a1428ef19856492bd9176f4938c57d3e206520905bfc314062c2b6cf9",
+        "rlm/environments/base_env.py": "1854046bf09eafe09d005ef4ab243a6e3953b032e1cbd6d6f59fc1078bceacff",
+        "rlm/environments/constants.py": "40131e4857a699b02d54b374e7ccf1c63c32d424d0203d5149e13a769838f9f4",
+        "rlm/environments/daytona_repl.py": "ec94e39d1fd9a440420bba013c929a00e93cc6ce9bbd1ca3218f25281f12bea9",
+        "rlm/environments/docker_repl.py": "8cc6a9ccb25f191b6d90a45d0e59b1132448091f5f717dffa93ba78a579fb76d",
+        "rlm/environments/e2b_repl.py": "ae7b168793f6265198cc833303151e45ffbe3d633a05b4110f217be0759c53a1",
+        "rlm/environments/ipython_repl.py": "e7db72a28d5b26fe976e73ea8ffc03c0230e4c7f5bfec20be98c479fd7c87343",
+        "rlm/environments/local_execution.py": "09e1a948d71ed7fd42ba580c0cfcd9c7a3936b6c6693a13aabdf46175e5608c5",
+        "rlm/environments/local_repl.py": "ec15a16e83e5913c430324eb648fb1b558ae8e5c2c3e36787e38743a0887d524",
+        "rlm/environments/modal_repl.py": "b5196ada65523153b6de8c9953e3b7ef6db64076cd19bc0ba0a89b5b383ab53a",
+        "rlm/environments/prime_repl.py": "644f0314f15e3fb104bb3a82be48924212768b4a3aa906f151c0f7abfaaf3ef9",
+        "rlm/environments/speculative_repl.py": "e82c475d5fc817b8a410ab1e9097118da6a764b28036731e366d52b91f1c78aa",
+        "rlm/logger/__init__.py": "b9976ec2bd77f5b0e2252afa80a7be4f992d25ac69eab832c3544a8799cc6f1f",
+        "rlm/logger/rlm_logger.py": "ab92f346766fc2e9b0c48c92fbc8a05d1b43dbd6535beb6ea0da70c31fe2c374",
+        "rlm/logger/verbose.py": "d7e155400d02ed5a73086a0b7d6982cb6eb7d06256d0e11cbfe24c566e06040d",
+        "rlm/utils/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "rlm/utils/exceptions.py": "1f38776b8ded958db854f8692902564b3f36b1b98a6e2f0f33e703efa18a7cde",
+        "rlm/utils/parsing.py": "16754fdc801d8d2fbf98246e1a8f489fd3622bc77dfc4779f58445414b3ea351",
+        "rlm/utils/prompts.py": "35729c0849f7f15d0279c7bfe50cd9d560e9ea3d576767fcfd063f40b4e45406",
+        "rlm/utils/rlm_utils.py": "fdacd27add192703d7ad86d2d0847b98abf59e81ca3b09738f4c7ff73e605ae9",
+        "rlm/utils/token_utils.py": "41ee6244b2dab737ed53a4143ff93a07f4e00db166eded92f16d33cfb7fb8628",
+        "rlm/utils/usage.py": "e683a359f170b7d92d44dfa7cadf0238f596ab9de79e77413d6b8259cf0f282b",
+        "tests/README.md": "a79466446a5ebb308be7e737949dc76d74897e7efa7eb79457f59d8df4d4041a",
+        "tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "tests/clients/portkey.py": "3bbd253ce60cf571d720de611d7d7bcdee70d587a91814351752cb1c341793a7",
+        "tests/clients/test_gemini.py": "12d789999ba1fd48eb745cbc6584af86107b482107c820b3e4e2b6af9f4ca3f3",
+        "tests/clients/test_timeout.py": "eae1f074acf448e1dc6cffeb38001aa4fc5d90ec305c5a3441bc9d62036c86aa",
+        "tests/mock_lm.py": "db1d03fc67f8ac9a1422602f62bf9f3fe115ff3263dfe54116cda97d9b221e91",
+        "tests/repl/test_custom_tools.py": "42985093063294ab9207dd61a1e0a6020a7946e739d844b26131b79b8add9010",
+        "tests/repl/test_local_repl.py": "37d0cc918df94b440d1d912e76642a57bbfdd0f0d99e2234eeb9c1c1b94d84da",
+        "tests/test_depth_metadata.py": "e2b3d670772fb286c568d389258fa0b604b7563957e5dd2912ccf1b5aad3bcd9",
+        "tests/test_docker_repl_persistent.py": "b4c6698eed0ccac8522d088319556938087e5ae6bceabee3938b7f89a5c2e5f9",
+        "tests/test_docker_repl_robustness.py": "2304aa3297739f688902a70d3cbd2d97f73b6a6c75a6f435e8b1bf79312f5a9b",
+        "tests/test_e2e_depth.py": "a24e1d226d6a3c8081d7e548c492c445434a4feafe82b10669fff7b4ae1c6b76",
+        "tests/test_imports.py": "abeea539916ff7d0c0707a151f1eb84f2ea7d7f3dbcc3d2434f1ced731e9a33f",
+        "tests/test_ipython_repl.py": "3adcf73504e09b3559e3095f97659bb6fa057a64a5636afe872cf0bbbb9e602f",
+        "tests/test_lm_handler.py": "d06a7df8719e9853d8b4a19cbc9f8d9a23f1fd3a6385a6ddc0f734b76bcd22a9",
+        "tests/test_local_execution.py": "e6f5a478f1a3eea3ff4d9c67d4fc846ef51786fb32c1edc9f6508249fd2aeef0",
+        "tests/test_local_repl.py": "7a6fab32b2da7a6d55ef84fa7c3ee0ff1f7b8f77ebd09576ea912f45537c8761",
+        "tests/test_local_repl_persistent.py": "a7c6088e8430671819a737d5b4142b47ff0e7e164610dc73a3c9703d511b1560",
+        "tests/test_multi_turn_integration.py": "c18adccd6ae984cc12f977e0eaee0ec812958fd414ff8b3d8183d99b88dca059",
+        "tests/test_parsing.py": "8456faa6ef8ffb67d97ab009cc7f05c33c8db0db2e85a4e97f07938c61259200",
+        "tests/test_recursive_depth.py": "cef27c1a4afce569ae63c667a2b4f3a938fcaf0a4067646c1f0bf7ca8ab0ffae",
+        "tests/test_rlm_query.py": "8a35a063932a4179222e76540acdcd2f1f91392671888beb991759c9cef8e485",
+        "tests/test_rlm_query_context.py": "53fc65fd3b6641e172a4f1a42a81feaa71c6c285ca20d7d1291978e24a4c9084",
+        "tests/test_spec_ptc.py": "0cb96be659f40fec729c5dd0fc2da4429201825742d0d2a6a28e27af7d1b544e",
+        "tests/test_streaming.py": "9297d1d63cf5405a9b79c028cfa370445f2142be7f699d97621da0b973be81e7",
+        "tests/test_subcall.py": "9c674f91b737c4e88e9aef2f68bd5e58a2034f02f5e8c83d556333df4dfba6b4",
+        "tests/test_types.py": "5a5b07c31a9b7323270be299a401ba4963343a740e0323e3195ee6ed2aba69d5",
+        "uv.lock": "e07d5b6bf4184381979af55c033b32bffa43b101b193b609cba1e184cdec1d82",
+        "research/rootcheck/m2/.gitignore": "3d91fef320442146bec26447dd6278e5e50c98502a7e0c1ef6c2aa6a9c5c2d37",
+        "research/rootcheck/m2/environment-current.json": "1297166ea54c4231f0affd348b019a1c3525fea7af7fe04d31cffcf3c04372d9",
+        "research/rootcheck/m2/evidence-manifest.json": "e7a669ad3e9831e3866fd66b490befd01b4350fefd19d051c2ea3841fa962193",
+        "research/rootcheck/m2/M2_CP_FEASIBILITY_MATRIX.md": "9921f876e13f83b627ba5b352c10b2b8a630a6a68be38dbe164ecc20cfa09f52",
+        "research/rootcheck/m2/M2_DECISION_RECORD.md": "2f1e29eac45c4ee2a7f788f24b4a26057b37e91c032a763dbfc89fded62f3b1e",
+        "research/rootcheck/m2/M2_PROBE_INVENTORY.md": "caf857ff8f7951b77162690bc1fc0d7f8155f8ef4ca80b9897137c4f92c65858",
+        "research/rootcheck/m2/M2_REPRODUCIBILITY.md": "d47999c66326d9ac42aeb782ba9d7143ac61c575e35a99965b2efaf3cfc3cdfc",
+        "research/rootcheck/m2/M2_REPRODUCTION_VERIFICATION.md": "3c190e284eb6d5e84df0b8f7f8f488f514ceeadb4533538237338eeedf531d61",
+        "research/rootcheck/m2/reproduce.ps1": "b6de5c1a45e956a72871119659d739e85e411e2a7132263cf797346197d4a054",
+        "research/rootcheck/m2/probes/accounting_extra.py": "3b8460483068b1874f397a8882a20f12018e521c65350ccb854c1bbb7c0dcf24",
+        "research/rootcheck/m2/probes/cp2.py": "25ebc1f8378b41f91e32051c1687f0cc90ef011d3510dc05c2ec75f904b2405b",
+        "research/rootcheck/m2/probes/cp4.py": "eb5edd6919f6cec80e5302101f330d532e6259baf41e1b54d23ed1dc5f4469c3",
+        "research/rootcheck/m2/probes/delivery_identity_accounting.py": "2cfa9a0812df13acd1211316070212d32e2eef6362abd2b2e9fa9e75b57f19ac",
+        "research/rootcheck/m2/probes/supplementary_repeated_readiness.py": "306ccf8e987d0a2f6b0039bd7a810bae470e60c2a60c4bb8e823ebd16f17fd41",
+        "research/rootcheck/m2/test-results/original-offline-runs.txt": "546bc2a2790154175496bcdd2cd99f5bb70c44d6a18d53e1a707ed5d4cf9fab5",
+        "research/rootcheck/m2/test-results/original-probe-runs.json": "3a10029a5163045dd6d0cf9e5d4bb1fc0f7328fb44dc138f14bf1b2cc54af3e1",
+        "research/rootcheck/m2/test-results/original-tool-inputs.txt": "324d8d25c3c10de2cb132247f8c8b9474eec1f70da82f8e1cc7610f550ac01ac",
+        "research/rootcheck/m2/test-results/reproduction-commands.txt": "2644d2e8ae7a9a0472692efb7bb8babf30f6bbcdab752669d500e6f1ecf440bf",
+        "research/rootcheck/m2/test-results/reproduction-verification-2026-11-23.json": "502e780837c8f226c6509f24ae1850d16e8f5a46c1020c6821213ffb678e00b0",
+        "research/rootcheck/m2/test-results/supplementary-repeated-readiness-2026-11-23.json": "6507619ae8b55520e579a814fbcc3c3622c185cd64a134e56a96a821917a73e2",
+        "research/rootcheck/m2/test-results/upstream-nodeids.txt": "ad4feaf615cd6969ae7e106755e5d76611e07313388366a09932c4b062aa0e25",
+        "research/rootcheck/m2/test-results/local/20261123T153154981Z-ba918778/accounting_extra.json": "23076658ad0280d2359a90d434039c8c2bf57afefe01d16555da95f3f16fbd00",
+        "research/rootcheck/m2/test-results/local/20261123T153154981Z-ba918778/cp2.json": "8fb04f830313c72df8a7e254df6460377e18565341e52e15c00f3704eacf7607",
+        "research/rootcheck/m2/test-results/local/20261123T153154981Z-ba918778/cp4.json": "c7687f49d866aed4cc1cb7492b8aef7737906f514c3143a7600ef7496f82b1d5",
+        "research/rootcheck/m2/test-results/local/20261123T153154981Z-ba918778/delivery_identity_accounting.json": "ef40352e6b7e568912a87b461f9956bb8b62697a04de7c301c5ca6cc64c878ef",
+        "experiments/m2/smoke_test.py": "1c96b9af4564c489bee8f97140ee6fc4f21bcbe4a1811c397c200c0ceeadf7e1"
+      },
+      "datasets_sha256": "4c84498e7f33d67d65a11437c707c54efe00a5c230e2047fa321ec817d9d5f3b"
+    }
+  },
+  "records": [
+    {
+      "pilot_id": "S1-R01",
+      "run_id": "broker-eaa4d3f974474c0e807569e72ddf4432",
+      "status": "completed",
+      "cleanup": {
+        "profile_deleted": true,
+        "scratch_deleted": true,
+        "payload_grant_removed": true
+      }
+    },
+    {
+      "pilot_id": "S2-R01",
+      "run_id": "broker-b3dd0f8ebee74e40a5d794cabbdcec4a",
+      "status": "completed",
+      "cleanup": {
+        "profile_deleted": true,
+        "scratch_deleted": true,
+        "payload_grant_removed": true
+      }
+    },
+    {
+      "pilot_id": "S3-R01",
+      "run_id": "broker-deb1b866c6344031816958a484472db8",
+      "status": "completed",
+      "cleanup": {
+        "profile_deleted": true,
+        "scratch_deleted": true,
+        "payload_grant_removed": true
+      }
+    },
+    {
+      "pilot_id": "S2-R02",
+      "run_id": "broker-0c0113ea621747e2ace2fa3de8d4bbcb",
+      "status": "completed",
+      "cleanup": {
+        "profile_deleted": true,
+        "scratch_deleted": true,
+        "payload_grant_removed": true
+      }
+    },
+    {
+      "pilot_id": "S3-R02",
+      "run_id": "broker-6f457d2d60914ee6b68d8366892facfb",
+      "status": "completed",
+      "cleanup": {
+        "profile_deleted": true,
+        "scratch_deleted": true,
+        "payload_grant_removed": true
+      }
+    },
+    {
+      "pilot_id": "S1-R02",
+      "run_id": "broker-4628dc30b5d64041842e5ae24ee1bfe5",
+      "status": "completed",
+      "cleanup": {
+        "profile_deleted": true,
+        "scratch_deleted": true,
+        "payload_grant_removed": true
+      }
+    },
+    {
+      "pilot_id": "S3-R03",
+      "run_id": "broker-76d885d665ce467080f1010c58532595",
+      "status": "completed",
+      "cleanup": {
+        "profile_deleted": true,
+        "scratch_deleted": true,
+        "payload_grant_removed": true
+      }
+    },
+    {
+      "pilot_id": "S1-R03",
+      "run_id": "broker-333c608172b94305888a87ea9adf6402",
+      "status": "operational_failure",
+      "cleanup": {
+        "profile_deleted": true,
+        "scratch_deleted": true,
+        "payload_grant_removed": true
+      }
+    }
+  ],
+  "ledger": {
+    "rates_kind": "openrouter-public-prices-2026-11-24",
+    "campaign_exposure_usd": "1.4286775250",
+    "runs": {
+      "two-request-preflight": {
+        "deadline": 91693.734,
+        "attempts": 1,
+        "stop_reason": "usage_unknown"
+      },
+      "two-request-preflight-attempt-two": {
+        "deadline": 106688.859,
+        "attempts": 1,
+        "stop_reason": "preflight_stopped"
+      },
+      "nano-followup-after-gpt5-review": {
+        "deadline": 107265.812,
+        "attempts": 1,
+        "stop_reason": "preflight_stopped"
+      },
+      "broker-eaa4d3f974474c0e807569e72ddf4432": {
+        "deadline": 109365.968,
+        "attempts": 4,
+        "stop_reason": null
+      },
+      "broker-b3dd0f8ebee74e40a5d794cabbdcec4a": {
+        "deadline": 125332.875,
+        "attempts": 10,
+        "stop_reason": null
+      },
+      "broker-deb1b866c6344031816958a484472db8": {
+        "deadline": 133287.14,
+        "attempts": 3,
+        "stop_reason": null
+      },
+      "broker-0c0113ea621747e2ace2fa3de8d4bbcb": {
+        "deadline": 134399.312,
+        "attempts": 5,
+        "stop_reason": null
+      },
+      "broker-6f457d2d60914ee6b68d8366892facfb": {
+        "deadline": 134619.828,
+        "attempts": 3,
+        "stop_reason": null
+      },
+      "broker-4628dc30b5d64041842e5ae24ee1bfe5": {
+        "deadline": 134735.421,
+        "attempts": 3,
+        "stop_reason": null
+      },
+      "broker-76d885d665ce467080f1010c58532595": {
+        "deadline": 141551.531,
+        "attempts": 4,
+        "stop_reason": null
+      },
+      "broker-333c608172b94305888a87ea9adf6402": {
+        "deadline": 141689.812,
+        "attempts": 2,
+        "stop_reason": "usage_unknown"
+      }
+    },
+    "tickets": {
+      "attempt-00001": {
+        "run_id": "two-request-preflight",
+        "model": "openai/gpt-5",
+        "input_bound": 64000,
+        "output_bound": 32768,
+        "reserved": "0.4484480",
+        "spent": "0",
+        "state": "usage_unknown"
+      },
+      "attempt-00002": {
+        "run_id": "two-request-preflight-attempt-two",
+        "model": "openai/gpt-5",
+        "input_bound": 64000,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.00034375",
+        "state": "reconciled",
+        "reported_cost_usd": "0.00034375",
+        "rate_cost_usd": "0.00034375"
+      },
+      "attempt-00003": {
+        "run_id": "nano-followup-after-gpt5-review",
+        "model": "openai/gpt-5-nano",
+        "input_bound": 64000,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.00003735",
+        "state": "reconciled",
+        "reported_cost_usd": "0.00003735",
+        "rate_cost_usd": "0.00003735"
+      },
+      "attempt-00004": {
+        "run_id": "broker-eaa4d3f974474c0e807569e72ddf4432",
+        "model": "openai/gpt-5",
+        "input_bound": 9546,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.0261175",
+        "state": "reconciled",
+        "reported_cost_usd": "0.0261175",
+        "rate_cost_usd": "0.0261175"
+      },
+      "attempt-00005": {
+        "run_id": "broker-eaa4d3f974474c0e807569e72ddf4432",
+        "model": "openai/gpt-5",
+        "input_bound": 22844,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.0331575",
+        "state": "reconciled",
+        "reported_cost_usd": "0.0312855",
+        "rate_cost_usd": "0.0331575"
+      },
+      "attempt-00006": {
+        "run_id": "broker-eaa4d3f974474c0e807569e72ddf4432",
+        "model": "openai/gpt-5",
+        "input_bound": 31452,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.01947125",
+        "state": "reconciled",
+        "reported_cost_usd": "0.01327925",
+        "rate_cost_usd": "0.01947125"
+      },
+      "attempt-00007": {
+        "run_id": "broker-eaa4d3f974474c0e807569e72ddf4432",
+        "model": "openai/gpt-5",
+        "input_bound": 35335,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.0202825",
+        "state": "reconciled",
+        "reported_cost_usd": "0.0117865",
+        "rate_cost_usd": "0.0202825"
+      },
+      "attempt-00008": {
+        "run_id": "broker-b3dd0f8ebee74e40a5d794cabbdcec4a",
+        "model": "openai/gpt-5",
+        "input_bound": 8823,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.01402375",
+        "state": "reconciled",
+        "reported_cost_usd": "0.01402375",
+        "rate_cost_usd": "0.01402375"
+      },
+      "attempt-00009": {
+        "run_id": "broker-b3dd0f8ebee74e40a5d794cabbdcec4a",
+        "model": "openai/gpt-5",
+        "input_bound": 11273,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.02433",
+        "state": "reconciled",
+        "reported_cost_usd": "0.02433",
+        "rate_cost_usd": "0.02433"
+      },
+      "attempt-00010": {
+        "run_id": "broker-b3dd0f8ebee74e40a5d794cabbdcec4a",
+        "model": "openai/gpt-5",
+        "input_bound": 15463,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.0228125",
+        "state": "reconciled",
+        "reported_cost_usd": "0.0205085",
+        "rate_cost_usd": "0.0228125"
+      },
+      "attempt-00011": {
+        "run_id": "broker-b3dd0f8ebee74e40a5d794cabbdcec4a",
+        "model": "openai/gpt-5-nano",
+        "input_bound": 37202,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.01169455",
+        "state": "reconciled",
+        "reported_cost_usd": "0.01169455",
+        "rate_cost_usd": "0.01169455"
+      },
+      "attempt-00012": {
+        "run_id": "broker-b3dd0f8ebee74e40a5d794cabbdcec4a",
+        "model": "openai/gpt-5",
+        "input_bound": 19765,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.01645375",
+        "state": "reconciled",
+        "reported_cost_usd": "0.01645375",
+        "rate_cost_usd": "0.01645375"
+      },
+      "attempt-00013": {
+        "run_id": "broker-b3dd0f8ebee74e40a5d794cabbdcec4a",
+        "model": "openai/gpt-5-nano",
+        "input_bound": 36898,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.013643",
+        "state": "reconciled",
+        "reported_cost_usd": "0.013643",
+        "rate_cost_usd": "0.013643"
+      },
+      "attempt-00014": {
+        "run_id": "broker-b3dd0f8ebee74e40a5d794cabbdcec4a",
+        "model": "openai/gpt-5",
+        "input_bound": 23769,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.0196975",
+        "state": "reconciled",
+        "reported_cost_usd": "0.0153775",
+        "rate_cost_usd": "0.0196975"
+      },
+      "attempt-00015": {
+        "run_id": "broker-b3dd0f8ebee74e40a5d794cabbdcec4a",
+        "model": "openai/gpt-5",
+        "input_bound": 28216,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.03318125",
+        "state": "reconciled",
+        "reported_cost_usd": "0.02785325",
+        "rate_cost_usd": "0.03318125"
+      },
+      "attempt-00016": {
+        "run_id": "broker-b3dd0f8ebee74e40a5d794cabbdcec4a",
+        "model": "openai/gpt-5",
+        "input_bound": 35733,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.02542625",
+        "state": "reconciled",
+        "reported_cost_usd": "0.01894625",
+        "rate_cost_usd": "0.02542625"
+      },
+      "attempt-00017": {
+        "run_id": "broker-b3dd0f8ebee74e40a5d794cabbdcec4a",
+        "model": "openai/gpt-5",
+        "input_bound": 36479,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.0200875",
+        "state": "reconciled",
+        "reported_cost_usd": "0.0114475",
+        "rate_cost_usd": "0.0200875"
+      },
+      "attempt-00018": {
+        "run_id": "broker-deb1b866c6344031816958a484472db8",
+        "model": "openai/gpt-5",
+        "input_bound": 8467,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.01892625",
+        "state": "reconciled",
+        "reported_cost_usd": "0.01892625",
+        "rate_cost_usd": "0.01892625"
+      },
+      "attempt-00019": {
+        "run_id": "broker-deb1b866c6344031816958a484472db8",
+        "model": "openai/gpt-5",
+        "input_bound": 13060,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.01062125",
+        "state": "reconciled",
+        "reported_cost_usd": "0.00903725",
+        "rate_cost_usd": "0.01062125"
+      },
+      "attempt-00020": {
+        "run_id": "broker-deb1b866c6344031816958a484472db8",
+        "model": "openai/gpt-5",
+        "input_bound": 15452,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.00919",
+        "state": "reconciled",
+        "reported_cost_usd": "0.00631",
+        "rate_cost_usd": "0.00919"
+      },
+      "attempt-00021": {
+        "run_id": "broker-0c0113ea621747e2ace2fa3de8d4bbcb",
+        "model": "openai/gpt-5",
+        "input_bound": 8823,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.02254375",
+        "state": "reconciled",
+        "reported_cost_usd": "0.02254375",
+        "rate_cost_usd": "0.02254375"
+      },
+      "attempt-00022": {
+        "run_id": "broker-0c0113ea621747e2ace2fa3de8d4bbcb",
+        "model": "openai/gpt-5",
+        "input_bound": 13436,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.02927",
+        "state": "reconciled",
+        "reported_cost_usd": "0.027542",
+        "rate_cost_usd": "0.02927"
+      },
+      "attempt-00023": {
+        "run_id": "broker-0c0113ea621747e2ace2fa3de8d4bbcb",
+        "model": "openai/gpt-5",
+        "input_bound": 20363,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.01346",
+        "state": "reconciled",
+        "reported_cost_usd": "0.010436",
+        "rate_cost_usd": "0.01346"
+      },
+      "attempt-00024": {
+        "run_id": "broker-0c0113ea621747e2ace2fa3de8d4bbcb",
+        "model": "openai/gpt-5",
+        "input_bound": 23971,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.0113825",
+        "state": "reconciled",
+        "reported_cost_usd": "0.0063425",
+        "rate_cost_usd": "0.0113825"
+      },
+      "attempt-00025": {
+        "run_id": "broker-0c0113ea621747e2ace2fa3de8d4bbcb",
+        "model": "openai/gpt-5",
+        "input_bound": 26297,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.01819875",
+        "state": "reconciled",
+        "reported_cost_usd": "0.01215075",
+        "rate_cost_usd": "0.01819875"
+      },
+      "attempt-00026": {
+        "run_id": "broker-6f457d2d60914ee6b68d8366892facfb",
+        "model": "openai/gpt-5",
+        "input_bound": 8467,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.01399625",
+        "state": "reconciled",
+        "reported_cost_usd": "0.01255625",
+        "rate_cost_usd": "0.01399625"
+      },
+      "attempt-00027": {
+        "run_id": "broker-6f457d2d60914ee6b68d8366892facfb",
+        "model": "openai/gpt-5",
+        "input_bound": 12809,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.01522125",
+        "state": "reconciled",
+        "reported_cost_usd": "0.01363725",
+        "rate_cost_usd": "0.01522125"
+      },
+      "attempt-00028": {
+        "run_id": "broker-6f457d2d60914ee6b68d8366892facfb",
+        "model": "openai/gpt-5",
+        "input_bound": 15839,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.0079125",
+        "state": "reconciled",
+        "reported_cost_usd": "0.0050325",
+        "rate_cost_usd": "0.0079125"
+      },
+      "attempt-00029": {
+        "run_id": "broker-4628dc30b5d64041842e5ae24ee1bfe5",
+        "model": "openai/gpt-5",
+        "input_bound": 9546,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.0166575",
+        "state": "reconciled",
+        "reported_cost_usd": "0.0152175",
+        "rate_cost_usd": "0.0166575"
+      },
+      "attempt-00030": {
+        "run_id": "broker-4628dc30b5d64041842e5ae24ee1bfe5",
+        "model": "openai/gpt-5",
+        "input_bound": 18959,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.0193625",
+        "state": "reconciled",
+        "reported_cost_usd": "0.0174905",
+        "rate_cost_usd": "0.0193625"
+      },
+      "attempt-00031": {
+        "run_id": "broker-4628dc30b5d64041842e5ae24ee1bfe5",
+        "model": "openai/gpt-5",
+        "input_bound": 24154,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.01745875",
+        "state": "reconciled",
+        "reported_cost_usd": "0.01256275",
+        "rate_cost_usd": "0.01745875"
+      },
+      "attempt-00032": {
+        "run_id": "broker-76d885d665ce467080f1010c58532595",
+        "model": "openai/gpt-5",
+        "input_bound": 8467,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.00808625",
+        "state": "reconciled",
+        "reported_cost_usd": "0.00808625",
+        "rate_cost_usd": "0.00808625"
+      },
+      "attempt-00033": {
+        "run_id": "broker-76d885d665ce467080f1010c58532595",
+        "model": "openai/gpt-5",
+        "input_bound": 9233,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.01320875",
+        "state": "reconciled",
+        "reported_cost_usd": "0.01162475",
+        "rate_cost_usd": "0.01320875"
+      },
+      "attempt-00034": {
+        "run_id": "broker-76d885d665ce467080f1010c58532595",
+        "model": "openai/gpt-5",
+        "input_bound": 12200,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.00967625",
+        "state": "reconciled",
+        "reported_cost_usd": "0.00967625",
+        "rate_cost_usd": "0.00967625"
+      },
+      "attempt-00035": {
+        "run_id": "broker-76d885d665ce467080f1010c58532595",
+        "model": "openai/gpt-5",
+        "input_bound": 14719,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.01206375",
+        "state": "reconciled",
+        "reported_cost_usd": "0.00961575",
+        "rate_cost_usd": "0.01206375"
+      },
+      "attempt-00036": {
+        "run_id": "broker-333c608172b94305888a87ea9adf6402",
+        "model": "openai/gpt-5",
+        "input_bound": 9546,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.0184375",
+        "state": "reconciled",
+        "reported_cost_usd": "0.0169975",
+        "rate_cost_usd": "0.0184375"
+      },
+      "attempt-00037": {
+        "run_id": "broker-333c608172b94305888a87ea9adf6402",
+        "model": "openai/gpt-5",
+        "input_bound": 24253,
+        "output_bound": 32768,
+        "reserved": "0.3937958750",
+        "spent": "0",
+        "state": "usage_unknown"
+      }
+    }
+  },
+  "active_run": null,
+  "synthetic_only": false
+}

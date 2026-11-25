@@ -1,0 +1,465 @@
+{
+  "run_id": "broker-fb94b0fa23ef456caa7097f34eadcbb3",
+  "finalized": true,
+  "ledger": {
+    "rates_kind": "synthetic_only",
+    "campaign_exposure_usd": "0.00018",
+    "runs": {
+      "broker-fb94b0fa23ef456caa7097f34eadcbb3": {
+        "deadline": 58763.093,
+        "attempts": 9,
+        "stop_reason": null
+      }
+    },
+    "tickets": {
+      "attempt-00001": {
+        "run_id": "broker-fb94b0fa23ef456caa7097f34eadcbb3",
+        "model": "openai/gpt-5",
+        "input_bound": 100,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.00002",
+        "state": "reconciled",
+        "reported_cost_usd": null,
+        "rate_cost_usd": "0.00002"
+      },
+      "attempt-00002": {
+        "run_id": "broker-fb94b0fa23ef456caa7097f34eadcbb3",
+        "model": "openai/gpt-5-nano",
+        "input_bound": 100,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.00002",
+        "state": "reconciled",
+        "reported_cost_usd": null,
+        "rate_cost_usd": "0.00002"
+      },
+      "attempt-00003": {
+        "run_id": "broker-fb94b0fa23ef456caa7097f34eadcbb3",
+        "model": "openai/gpt-5-nano",
+        "input_bound": 100,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.00002",
+        "state": "reconciled",
+        "reported_cost_usd": null,
+        "rate_cost_usd": "0.00002"
+      },
+      "attempt-00004": {
+        "run_id": "broker-fb94b0fa23ef456caa7097f34eadcbb3",
+        "model": "openai/gpt-5-nano",
+        "input_bound": 100,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.00002",
+        "state": "reconciled",
+        "reported_cost_usd": null,
+        "rate_cost_usd": "0.00002"
+      },
+      "attempt-00005": {
+        "run_id": "broker-fb94b0fa23ef456caa7097f34eadcbb3",
+        "model": "openai/gpt-5",
+        "input_bound": 100,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.00002",
+        "state": "reconciled",
+        "reported_cost_usd": null,
+        "rate_cost_usd": "0.00002"
+      },
+      "attempt-00006": {
+        "run_id": "broker-fb94b0fa23ef456caa7097f34eadcbb3",
+        "model": "openai/gpt-5-nano",
+        "input_bound": 100,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.00002",
+        "state": "reconciled",
+        "reported_cost_usd": null,
+        "rate_cost_usd": "0.00002"
+      },
+      "attempt-00007": {
+        "run_id": "broker-fb94b0fa23ef456caa7097f34eadcbb3",
+        "model": "openai/gpt-5",
+        "input_bound": 100,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.00002",
+        "state": "reconciled",
+        "reported_cost_usd": null,
+        "rate_cost_usd": "0.00002"
+      },
+      "attempt-00008": {
+        "run_id": "broker-fb94b0fa23ef456caa7097f34eadcbb3",
+        "model": "openai/gpt-5",
+        "input_bound": 100,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.00002",
+        "state": "reconciled",
+        "reported_cost_usd": null,
+        "rate_cost_usd": "0.00002"
+      },
+      "attempt-00009": {
+        "run_id": "broker-fb94b0fa23ef456caa7097f34eadcbb3",
+        "model": "openai/gpt-5",
+        "input_bound": 100,
+        "output_bound": 32768,
+        "reserved": "0",
+        "spent": "0.00002",
+        "state": "reconciled",
+        "reported_cost_usd": null,
+        "rate_cost_usd": "0.00002"
+      }
+    }
+  },
+  "provider_records": [
+    {
+      "request_id": "ec715cce139843c7bcbcc9b255e23e9a",
+      "ticket": "attempt-00001",
+      "body": {
+        "model": "openai/gpt-5",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a Recursive Language Model (RLM): a language model with a prompt, and a very important context stored in a Python REPL related to that prompt.\nYou can iteratively interact with the a Python REPL, which has access to LLM calls as a function. You will be queried turn-by-turn until you have an answer to the query.\n\nTo use the REPL, you need to write code in ```repl``` blocks; the REPL persists across turns. Available in the REPL:\n- `context`: the important, potentially very long information related to the prompt (typically `str` or `list[str]`).\n- `llm_query(prompt: str, model: str | None = None) -> str`: a single sub-LLM completion. Use for extraction, summarization, or Q&A over a chunk of text. Sub-LLM context window ≈ 500K chars.\n- `llm_query_batched(prompts: list[str], model=None) -> list[str]`: concurrently call several LLM calls in parallel over a list of prompts; same order out as in.\n- `rlm_query(instruction, context, model=None) -> str`: recursive RLM sub-call with its own REPL and iteration. The instruction goes directly into the child's model messages; context is stored in its REPL as `context`. Pass a focused instruction and the relevant data separately, e.g. `rlm_query(\"Identify the trend; return up, down, or stable\", context=data)`.\n- `rlm_query_batched(queries, model=None) -> list[str]`: `queries` is a list of `(instruction, context)` pairs, e.g. `[(\"Summarize\", doc_a), (\"Extract dates\", doc_b)]`. Run these concurrently, each with its own child REPL; results preserve input order. Both recursive helpers fall back to plain LM calls containing the instruction and context at the depth limit.\n- `SHOW_VARS() -> str`: list every variable currently in the REPL.\n- `answer`: dict initialized to `{\"content\": \"\", \"ready\": False}`. To submit, set `answer[\"content\"]` to the final answer and `answer[\"ready\"] = True` inside a ```repl``` block.\n\n\nREPL outputs over ~20K characters are truncated, so for longer payloads slice `context` and pass slices through `llm_query` rather than `print`-ing them whole. The REPL is NOT a Jupyter cell — only `print(...)` output (stdout) is shown back to you between turns; a bare expression on the last line is silently discarded. Always wrap inspections in `print(...)`.\n\nAs a general strategy, you should start by probing your context to understand it better (e.g. print a few lines, count them, etc.). Then, use the REPL to build up an answer to the query.\n\nPlan in prose, then execute one ```repl``` block every turn, get feedback from the output, then continue on the next turn. Do not flip `answer[\"ready\"] = True` on turn 1 without first inspecting `context`.\n\n\nAs an RLM, you should act as an orchestrator, not a solver.\n\nDirectly after you probe the `context` and understand your task, pause and plan: state explicitly how the task decomposes into sub-LLM / REPL steps, and sketch the concrete sequence of turns — what each turn computes and which sub-LLM call (if any) it issues — like a condensed trajectory, before you execute them. Then execute one turn at a time: after each step `print` a small sample of the result, verify it looks right, and only flip `answer[\"ready\"] = True` once you have actually printed the candidate answer. If you are running out of turns without a confirmed answer, submit your best inference rather than letting the rollout terminate unsubmitted.\n\nYour own context window is small. Push every long-context operation that would not fit comfortably in your own working window — reading, summarizing, classifying, verifying, answering sub-questions, even recapping your own progress — into `llm_query` / `llm_query_batched` calls instead of pulling that text into your own message stream. (Conversely: if a Python keyword / regex search over `context` would already pin the answer, or if a single visible passage already contains it, just read it directly — sub-LMs are for when the raw text won't fit or the question needs semantic interpretation.) Long REPL stdout pollutes history the same way raw `context` does: if you want a recap, ask `llm_query` for a 1–2 sentence summary and `print` only that. Aggregate the small results back in the REPL.\n\nPlain sub-LLMs called via `llm_query` have no REPL; they only see the prompt and the `context` slice you pass them. Hand them clean, focused inputs and ask for terse, structured outputs you can manipulate programmatically.\n\nSub-call budget is finite on two independent axes, and `llm_query_batched` only parallelizes — it does not relax either. (1) Per-prompt capacity: a single sub-call answers well only when its input stays modestly sized — a useful rough ceiling is ~100K characters per prompt, less when the text is dense. Pack each prompt close to that capacity (a chunk of many items, a whole document) so one call accomplishes a lot of work. (2) Per-batch fan-out: `llm_query_batched` concurrency is bounded too — a useful rough ceiling is ~20 prompts per batch. Tiny-prompt mega-batches (hundreds or thousands of single-item prompts) are the anti-pattern; fat-prompt small batches are correct. For many independent units, use several ~20-wide batches of full-capacity prompts in sequence, not one mega-batch of tiny prompts. When the work can be expressed either as a sequential loop of `llm_query`s or as one comparably-sized batched call, prefer batched — same total work, far fewer turns burned. After Python-side filtering has narrowed the candidate set, batch-extract the survivors rather than reading them by hand. If the raw workload exceeds both budgets at once (e.g. a context far larger than ~20 × 100K chars), don't brute-force it: filter aggressively in Python first to a tractable subset, or stage the task — a cheap coarse pass narrows candidates, then a targeted second pass extracts from the survivors.\n\nReserve your own tokens for high-level decisions: what to ask next, how to combine sub-LM outputs, when to finalize. Delegate everything else."
+          },
+          {
+            "role": "user",
+            "content": "Answer the following: broker integration root\n\nYour context is a str of 21 total characters. Each sub-LLM call can handle roughly ~100k tokens at once."
+          },
+          {
+            "role": "user",
+            "content": "You have not interacted with the REPL environment or seen your prompt / context yet. Look at the context first; do not provide a final answer yet.\n\nTurn 1/10:"
+          }
+        ],
+        "max_completion_tokens": 32768
+      },
+      "worker_correlation": {
+        "node": "mock-60a2104617b940fa9a4dfdbcea093964:e00001",
+        "action": null,
+        "slot": null
+      },
+      "delivered": true,
+      "dispatched_at": 1795537834.197428,
+      "received_at": 1795537834.451562,
+      "provider_response": {
+        "choices": [
+          {
+            "message": {
+              "content": "```repl\nimport os\nfrom pathlib import Path\noutbox = Path(os.environ['TEMP']).parent.parent / 'mailbox' / 'outbox'\ndenied = False\ntry:\n    with open(outbox / 'forged.json', 'w') as stream:\n        stream.write('{}')\nexcept OSError:\n    denied = True\np = llm_query('plain-seven')\nb = llm_query_batched(['plain-b', 'plain-b'])\nc = rlm_query('child-one', 'child context')\nr = rlm_query_batched([('child-simple', 'same'), ('child-simple', 'same')])\nanswer['content'] = str(denied) + '|' + p + '|' + ','.join(b) + '|' + c + '|' + ','.join(r)\nanswer['ready'] = True\n```"
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10,
+          "completion_tokens": 5
+        }
+      }
+    },
+    {
+      "request_id": "a0edede41d8e4a658ee495d2de4e7caf",
+      "ticket": "attempt-00002",
+      "body": {
+        "model": "openai/gpt-5-nano",
+        "messages": [
+          {
+            "role": "user",
+            "content": "plain-seven"
+          }
+        ],
+        "max_completion_tokens": 32768
+      },
+      "worker_correlation": {
+        "node": "mock-60a2104617b940fa9a4dfdbcea093964:e00001",
+        "action": "mock-60a2104617b940fa9a4dfdbcea093964:e00009",
+        "slot": null
+      },
+      "delivered": true,
+      "dispatched_at": 1795537834.6284955,
+      "received_at": 1795537834.9197073,
+      "provider_response": {
+        "choices": [
+          {
+            "message": {
+              "content": "7"
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10,
+          "completion_tokens": 5
+        }
+      }
+    },
+    {
+      "request_id": "29d631bc30b54df7a7a0d140bcf3a632",
+      "ticket": "attempt-00003",
+      "body": {
+        "model": "openai/gpt-5-nano",
+        "messages": [
+          {
+            "role": "user",
+            "content": "plain-b"
+          }
+        ],
+        "max_completion_tokens": 32768
+      },
+      "worker_correlation": {
+        "node": "mock-60a2104617b940fa9a4dfdbcea093964:e00001",
+        "action": "mock-60a2104617b940fa9a4dfdbcea093964:e00014",
+        "slot": 0
+      },
+      "delivered": true,
+      "dispatched_at": 1795537835.0876157,
+      "received_at": 1795537835.620821,
+      "provider_response": {
+        "choices": [
+          {
+            "message": {
+              "content": "B"
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10,
+          "completion_tokens": 5
+        }
+      }
+    },
+    {
+      "request_id": "69ec6b3f51884d4884bb0013d23fba78",
+      "ticket": "attempt-00004",
+      "body": {
+        "model": "openai/gpt-5-nano",
+        "messages": [
+          {
+            "role": "user",
+            "content": "plain-b"
+          }
+        ],
+        "max_completion_tokens": 32768
+      },
+      "worker_correlation": {
+        "node": "mock-60a2104617b940fa9a4dfdbcea093964:e00001",
+        "action": "mock-60a2104617b940fa9a4dfdbcea093964:e00014",
+        "slot": 1
+      },
+      "delivered": true,
+      "dispatched_at": 1795537835.3665285,
+      "received_at": 1795537835.728113,
+      "provider_response": {
+        "choices": [
+          {
+            "message": {
+              "content": "B"
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10,
+          "completion_tokens": 5
+        }
+      }
+    },
+    {
+      "request_id": "4625989f2bae48b99d24cf913e9631cc",
+      "ticket": "attempt-00005",
+      "body": {
+        "model": "openai/gpt-5",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a Recursive Language Model (RLM): a language model with a prompt, and a very important context stored in a Python REPL related to that prompt.\nYou can iteratively interact with the a Python REPL, which has access to LLM calls as a function. You will be queried turn-by-turn until you have an answer to the query.\n\nTo use the REPL, you need to write code in ```repl``` blocks; the REPL persists across turns. Available in the REPL:\n- `context`: the important, potentially very long information related to the prompt (typically `str` or `list[str]`).\n- `llm_query(prompt: str, model: str | None = None) -> str`: a single sub-LLM completion. Use for extraction, summarization, or Q&A over a chunk of text. Sub-LLM context window ≈ 500K chars.\n- `llm_query_batched(prompts: list[str], model=None) -> list[str]`: concurrently call several LLM calls in parallel over a list of prompts; same order out as in.\n- `rlm_query(instruction, context, model=None) -> str`: recursive RLM sub-call with its own REPL and iteration. The instruction goes directly into the child's model messages; context is stored in its REPL as `context`. Pass a focused instruction and the relevant data separately, e.g. `rlm_query(\"Identify the trend; return up, down, or stable\", context=data)`.\n- `rlm_query_batched(queries, model=None) -> list[str]`: `queries` is a list of `(instruction, context)` pairs, e.g. `[(\"Summarize\", doc_a), (\"Extract dates\", doc_b)]`. Run these concurrently, each with its own child REPL; results preserve input order. Both recursive helpers fall back to plain LM calls containing the instruction and context at the depth limit.\n- `SHOW_VARS() -> str`: list every variable currently in the REPL.\n- `answer`: dict initialized to `{\"content\": \"\", \"ready\": False}`. To submit, set `answer[\"content\"]` to the final answer and `answer[\"ready\"] = True` inside a ```repl``` block.\n\n\nREPL outputs over ~20K characters are truncated, so for longer payloads slice `context` and pass slices through `llm_query` rather than `print`-ing them whole. The REPL is NOT a Jupyter cell — only `print(...)` output (stdout) is shown back to you between turns; a bare expression on the last line is silently discarded. Always wrap inspections in `print(...)`.\n\nAs a general strategy, you should start by probing your context to understand it better (e.g. print a few lines, count them, etc.). Then, use the REPL to build up an answer to the query.\n\nPlan in prose, then execute one ```repl``` block every turn, get feedback from the output, then continue on the next turn. Do not flip `answer[\"ready\"] = True` on turn 1 without first inspecting `context`.\n\n\nAs an RLM, you should act as an orchestrator, not a solver.\n\nDirectly after you probe the `context` and understand your task, pause and plan: state explicitly how the task decomposes into sub-LLM / REPL steps, and sketch the concrete sequence of turns — what each turn computes and which sub-LLM call (if any) it issues — like a condensed trajectory, before you execute them. Then execute one turn at a time: after each step `print` a small sample of the result, verify it looks right, and only flip `answer[\"ready\"] = True` once you have actually printed the candidate answer. If you are running out of turns without a confirmed answer, submit your best inference rather than letting the rollout terminate unsubmitted.\n\nYour own context window is small. Push every long-context operation that would not fit comfortably in your own working window — reading, summarizing, classifying, verifying, answering sub-questions, even recapping your own progress — into `llm_query` / `llm_query_batched` calls instead of pulling that text into your own message stream. (Conversely: if a Python keyword / regex search over `context` would already pin the answer, or if a single visible passage already contains it, just read it directly — sub-LMs are for when the raw text won't fit or the question needs semantic interpretation.) Long REPL stdout pollutes history the same way raw `context` does: if you want a recap, ask `llm_query` for a 1–2 sentence summary and `print` only that. Aggregate the small results back in the REPL.\n\nPlain sub-LLMs called via `llm_query` have no REPL; they only see the prompt and the `context` slice you pass them. Hand them clean, focused inputs and ask for terse, structured outputs you can manipulate programmatically.\n\nSub-call budget is finite on two independent axes, and `llm_query_batched` only parallelizes — it does not relax either. (1) Per-prompt capacity: a single sub-call answers well only when its input stays modestly sized — a useful rough ceiling is ~100K characters per prompt, less when the text is dense. Pack each prompt close to that capacity (a chunk of many items, a whole document) so one call accomplishes a lot of work. (2) Per-batch fan-out: `llm_query_batched` concurrency is bounded too — a useful rough ceiling is ~20 prompts per batch. Tiny-prompt mega-batches (hundreds or thousands of single-item prompts) are the anti-pattern; fat-prompt small batches are correct. For many independent units, use several ~20-wide batches of full-capacity prompts in sequence, not one mega-batch of tiny prompts. When the work can be expressed either as a sequential loop of `llm_query`s or as one comparably-sized batched call, prefer batched — same total work, far fewer turns burned. After Python-side filtering has narrowed the candidate set, batch-extract the survivors rather than reading them by hand. If the raw workload exceeds both budgets at once (e.g. a context far larger than ~20 × 100K chars), don't brute-force it: filter aggressively in Python first to a tractable subset, or stage the task — a cheap coarse pass narrows candidates, then a targeted second pass extracts from the survivors.\n\nReserve your own tokens for high-level decisions: what to ask next, how to combine sub-LM outputs, when to finalize. Delegate everything else."
+          },
+          {
+            "role": "user",
+            "content": "Answer the following: child-one\n\nYour context is a str of 13 total characters. Each sub-LLM call can handle roughly ~100k tokens at once."
+          },
+          {
+            "role": "user",
+            "content": "You have not interacted with the REPL environment or seen your prompt / context yet. Look at the context first; do not provide a final answer yet.\n\nTurn 1/10:"
+          }
+        ],
+        "max_completion_tokens": 32768
+      },
+      "worker_correlation": {
+        "node": "mock-60a2104617b940fa9a4dfdbcea093964:e00023",
+        "action": "mock-60a2104617b940fa9a4dfdbcea093964:e00022",
+        "slot": null
+      },
+      "delivered": true,
+      "dispatched_at": 1795537835.9119768,
+      "received_at": 1795537836.1049957,
+      "provider_response": {
+        "choices": [
+          {
+            "message": {
+              "content": "```repl\na = rlm_query('leaf-instruction', 'leaf context')\nb = llm_query('deeper-plain')\nanswer['content'] = a + ':' + b\nanswer['ready'] = True\n```"
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10,
+          "completion_tokens": 5
+        }
+      }
+    },
+    {
+      "request_id": "604549e7b9aa4e4c90be501fae11d9ca",
+      "ticket": "attempt-00006",
+      "body": {
+        "model": "openai/gpt-5-nano",
+        "messages": [
+          {
+            "role": "user",
+            "content": "leaf-instruction\n\nContext:\nleaf context"
+          }
+        ],
+        "max_completion_tokens": 32768
+      },
+      "worker_correlation": {
+        "node": "mock-60a2104617b940fa9a4dfdbcea093964:e00023",
+        "action": "mock-60a2104617b940fa9a4dfdbcea093964:e00032",
+        "slot": null
+      },
+      "delivered": true,
+      "dispatched_at": 1795537836.2436843,
+      "received_at": 1795537836.504109,
+      "provider_response": {
+        "choices": [
+          {
+            "message": {
+              "content": "L"
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10,
+          "completion_tokens": 5
+        }
+      }
+    },
+    {
+      "request_id": "6d72e1dbc3f9446e85f2b36dc178b81b",
+      "ticket": "attempt-00007",
+      "body": {
+        "model": "openai/gpt-5",
+        "messages": [
+          {
+            "role": "user",
+            "content": "deeper-plain"
+          }
+        ],
+        "max_completion_tokens": 32768
+      },
+      "worker_correlation": {
+        "node": "mock-60a2104617b940fa9a4dfdbcea093964:e00023",
+        "action": "mock-60a2104617b940fa9a4dfdbcea093964:e00037",
+        "slot": null
+      },
+      "delivered": true,
+      "dispatched_at": 1795537836.6752012,
+      "received_at": 1795537837.0145035,
+      "provider_response": {
+        "choices": [
+          {
+            "message": {
+              "content": "D"
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10,
+          "completion_tokens": 5
+        }
+      }
+    },
+    {
+      "request_id": "3ec1fa47a96146bc8504f7e19ac462b6",
+      "ticket": "attempt-00008",
+      "body": {
+        "model": "openai/gpt-5",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a Recursive Language Model (RLM): a language model with a prompt, and a very important context stored in a Python REPL related to that prompt.\nYou can iteratively interact with the a Python REPL, which has access to LLM calls as a function. You will be queried turn-by-turn until you have an answer to the query.\n\nTo use the REPL, you need to write code in ```repl``` blocks; the REPL persists across turns. Available in the REPL:\n- `context`: the important, potentially very long information related to the prompt (typically `str` or `list[str]`).\n- `llm_query(prompt: str, model: str | None = None) -> str`: a single sub-LLM completion. Use for extraction, summarization, or Q&A over a chunk of text. Sub-LLM context window ≈ 500K chars.\n- `llm_query_batched(prompts: list[str], model=None) -> list[str]`: concurrently call several LLM calls in parallel over a list of prompts; same order out as in.\n- `rlm_query(instruction, context, model=None) -> str`: recursive RLM sub-call with its own REPL and iteration. The instruction goes directly into the child's model messages; context is stored in its REPL as `context`. Pass a focused instruction and the relevant data separately, e.g. `rlm_query(\"Identify the trend; return up, down, or stable\", context=data)`.\n- `rlm_query_batched(queries, model=None) -> list[str]`: `queries` is a list of `(instruction, context)` pairs, e.g. `[(\"Summarize\", doc_a), (\"Extract dates\", doc_b)]`. Run these concurrently, each with its own child REPL; results preserve input order. Both recursive helpers fall back to plain LM calls containing the instruction and context at the depth limit.\n- `SHOW_VARS() -> str`: list every variable currently in the REPL.\n- `answer`: dict initialized to `{\"content\": \"\", \"ready\": False}`. To submit, set `answer[\"content\"]` to the final answer and `answer[\"ready\"] = True` inside a ```repl``` block.\n\n\nREPL outputs over ~20K characters are truncated, so for longer payloads slice `context` and pass slices through `llm_query` rather than `print`-ing them whole. The REPL is NOT a Jupyter cell — only `print(...)` output (stdout) is shown back to you between turns; a bare expression on the last line is silently discarded. Always wrap inspections in `print(...)`.\n\nAs a general strategy, you should start by probing your context to understand it better (e.g. print a few lines, count them, etc.). Then, use the REPL to build up an answer to the query.\n\nPlan in prose, then execute one ```repl``` block every turn, get feedback from the output, then continue on the next turn. Do not flip `answer[\"ready\"] = True` on turn 1 without first inspecting `context`.\n\n\nAs an RLM, you should act as an orchestrator, not a solver.\n\nDirectly after you probe the `context` and understand your task, pause and plan: state explicitly how the task decomposes into sub-LLM / REPL steps, and sketch the concrete sequence of turns — what each turn computes and which sub-LLM call (if any) it issues — like a condensed trajectory, before you execute them. Then execute one turn at a time: after each step `print` a small sample of the result, verify it looks right, and only flip `answer[\"ready\"] = True` once you have actually printed the candidate answer. If you are running out of turns without a confirmed answer, submit your best inference rather than letting the rollout terminate unsubmitted.\n\nYour own context window is small. Push every long-context operation that would not fit comfortably in your own working window — reading, summarizing, classifying, verifying, answering sub-questions, even recapping your own progress — into `llm_query` / `llm_query_batched` calls instead of pulling that text into your own message stream. (Conversely: if a Python keyword / regex search over `context` would already pin the answer, or if a single visible passage already contains it, just read it directly — sub-LMs are for when the raw text won't fit or the question needs semantic interpretation.) Long REPL stdout pollutes history the same way raw `context` does: if you want a recap, ask `llm_query` for a 1–2 sentence summary and `print` only that. Aggregate the small results back in the REPL.\n\nPlain sub-LLMs called via `llm_query` have no REPL; they only see the prompt and the `context` slice you pass them. Hand them clean, focused inputs and ask for terse, structured outputs you can manipulate programmatically.\n\nSub-call budget is finite on two independent axes, and `llm_query_batched` only parallelizes — it does not relax either. (1) Per-prompt capacity: a single sub-call answers well only when its input stays modestly sized — a useful rough ceiling is ~100K characters per prompt, less when the text is dense. Pack each prompt close to that capacity (a chunk of many items, a whole document) so one call accomplishes a lot of work. (2) Per-batch fan-out: `llm_query_batched` concurrency is bounded too — a useful rough ceiling is ~20 prompts per batch. Tiny-prompt mega-batches (hundreds or thousands of single-item prompts) are the anti-pattern; fat-prompt small batches are correct. For many independent units, use several ~20-wide batches of full-capacity prompts in sequence, not one mega-batch of tiny prompts. When the work can be expressed either as a sequential loop of `llm_query`s or as one comparably-sized batched call, prefer batched — same total work, far fewer turns burned. After Python-side filtering has narrowed the candidate set, batch-extract the survivors rather than reading them by hand. If the raw workload exceeds both budgets at once (e.g. a context far larger than ~20 × 100K chars), don't brute-force it: filter aggressively in Python first to a tractable subset, or stage the task — a cheap coarse pass narrows candidates, then a targeted second pass extracts from the survivors.\n\nReserve your own tokens for high-level decisions: what to ask next, how to combine sub-LM outputs, when to finalize. Delegate everything else."
+          },
+          {
+            "role": "user",
+            "content": "Answer the following: child-simple\n\nYour context is a str of 4 total characters. Each sub-LLM call can handle roughly ~100k tokens at once."
+          },
+          {
+            "role": "user",
+            "content": "You have not interacted with the REPL environment or seen your prompt / context yet. Look at the context first; do not provide a final answer yet.\n\nTurn 1/10:"
+          }
+        ],
+        "max_completion_tokens": 32768
+      },
+      "worker_correlation": {
+        "node": "mock-60a2104617b940fa9a4dfdbcea093964:e00054",
+        "action": "mock-60a2104617b940fa9a4dfdbcea093964:e00053",
+        "slot": 1
+      },
+      "delivered": true,
+      "dispatched_at": 1795537837.144096,
+      "received_at": 1795537837.3383164,
+      "provider_response": {
+        "choices": [
+          {
+            "message": {
+              "content": "```repl\nanswer['content'] = 'C'\nanswer['ready'] = True\n```"
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10,
+          "completion_tokens": 5
+        }
+      }
+    },
+    {
+      "request_id": "f393267265cc4f769fd87a92a2a1fb9e",
+      "ticket": "attempt-00009",
+      "body": {
+        "model": "openai/gpt-5",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a Recursive Language Model (RLM): a language model with a prompt, and a very important context stored in a Python REPL related to that prompt.\nYou can iteratively interact with the a Python REPL, which has access to LLM calls as a function. You will be queried turn-by-turn until you have an answer to the query.\n\nTo use the REPL, you need to write code in ```repl``` blocks; the REPL persists across turns. Available in the REPL:\n- `context`: the important, potentially very long information related to the prompt (typically `str` or `list[str]`).\n- `llm_query(prompt: str, model: str | None = None) -> str`: a single sub-LLM completion. Use for extraction, summarization, or Q&A over a chunk of text. Sub-LLM context window ≈ 500K chars.\n- `llm_query_batched(prompts: list[str], model=None) -> list[str]`: concurrently call several LLM calls in parallel over a list of prompts; same order out as in.\n- `rlm_query(instruction, context, model=None) -> str`: recursive RLM sub-call with its own REPL and iteration. The instruction goes directly into the child's model messages; context is stored in its REPL as `context`. Pass a focused instruction and the relevant data separately, e.g. `rlm_query(\"Identify the trend; return up, down, or stable\", context=data)`.\n- `rlm_query_batched(queries, model=None) -> list[str]`: `queries` is a list of `(instruction, context)` pairs, e.g. `[(\"Summarize\", doc_a), (\"Extract dates\", doc_b)]`. Run these concurrently, each with its own child REPL; results preserve input order. Both recursive helpers fall back to plain LM calls containing the instruction and context at the depth limit.\n- `SHOW_VARS() -> str`: list every variable currently in the REPL.\n- `answer`: dict initialized to `{\"content\": \"\", \"ready\": False}`. To submit, set `answer[\"content\"]` to the final answer and `answer[\"ready\"] = True` inside a ```repl``` block.\n\n\nREPL outputs over ~20K characters are truncated, so for longer payloads slice `context` and pass slices through `llm_query` rather than `print`-ing them whole. The REPL is NOT a Jupyter cell — only `print(...)` output (stdout) is shown back to you between turns; a bare expression on the last line is silently discarded. Always wrap inspections in `print(...)`.\n\nAs a general strategy, you should start by probing your context to understand it better (e.g. print a few lines, count them, etc.). Then, use the REPL to build up an answer to the query.\n\nPlan in prose, then execute one ```repl``` block every turn, get feedback from the output, then continue on the next turn. Do not flip `answer[\"ready\"] = True` on turn 1 without first inspecting `context`.\n\n\nAs an RLM, you should act as an orchestrator, not a solver.\n\nDirectly after you probe the `context` and understand your task, pause and plan: state explicitly how the task decomposes into sub-LLM / REPL steps, and sketch the concrete sequence of turns — what each turn computes and which sub-LLM call (if any) it issues — like a condensed trajectory, before you execute them. Then execute one turn at a time: after each step `print` a small sample of the result, verify it looks right, and only flip `answer[\"ready\"] = True` once you have actually printed the candidate answer. If you are running out of turns without a confirmed answer, submit your best inference rather than letting the rollout terminate unsubmitted.\n\nYour own context window is small. Push every long-context operation that would not fit comfortably in your own working window — reading, summarizing, classifying, verifying, answering sub-questions, even recapping your own progress — into `llm_query` / `llm_query_batched` calls instead of pulling that text into your own message stream. (Conversely: if a Python keyword / regex search over `context` would already pin the answer, or if a single visible passage already contains it, just read it directly — sub-LMs are for when the raw text won't fit or the question needs semantic interpretation.) Long REPL stdout pollutes history the same way raw `context` does: if you want a recap, ask `llm_query` for a 1–2 sentence summary and `print` only that. Aggregate the small results back in the REPL.\n\nPlain sub-LLMs called via `llm_query` have no REPL; they only see the prompt and the `context` slice you pass them. Hand them clean, focused inputs and ask for terse, structured outputs you can manipulate programmatically.\n\nSub-call budget is finite on two independent axes, and `llm_query_batched` only parallelizes — it does not relax either. (1) Per-prompt capacity: a single sub-call answers well only when its input stays modestly sized — a useful rough ceiling is ~100K characters per prompt, less when the text is dense. Pack each prompt close to that capacity (a chunk of many items, a whole document) so one call accomplishes a lot of work. (2) Per-batch fan-out: `llm_query_batched` concurrency is bounded too — a useful rough ceiling is ~20 prompts per batch. Tiny-prompt mega-batches (hundreds or thousands of single-item prompts) are the anti-pattern; fat-prompt small batches are correct. For many independent units, use several ~20-wide batches of full-capacity prompts in sequence, not one mega-batch of tiny prompts. When the work can be expressed either as a sequential loop of `llm_query`s or as one comparably-sized batched call, prefer batched — same total work, far fewer turns burned. After Python-side filtering has narrowed the candidate set, batch-extract the survivors rather than reading them by hand. If the raw workload exceeds both budgets at once (e.g. a context far larger than ~20 × 100K chars), don't brute-force it: filter aggressively in Python first to a tractable subset, or stage the task — a cheap coarse pass narrows candidates, then a targeted second pass extracts from the survivors.\n\nReserve your own tokens for high-level decisions: what to ask next, how to combine sub-LM outputs, when to finalize. Delegate everything else."
+          },
+          {
+            "role": "user",
+            "content": "Answer the following: child-simple\n\nYour context is a str of 4 total characters. Each sub-LLM call can handle roughly ~100k tokens at once."
+          },
+          {
+            "role": "user",
+            "content": "You have not interacted with the REPL environment or seen your prompt / context yet. Look at the context first; do not provide a final answer yet.\n\nTurn 1/10:"
+          }
+        ],
+        "max_completion_tokens": 32768
+      },
+      "worker_correlation": {
+        "node": "mock-60a2104617b940fa9a4dfdbcea093964:e00052",
+        "action": "mock-60a2104617b940fa9a4dfdbcea093964:e00051",
+        "slot": 0
+      },
+      "delivered": true,
+      "dispatched_at": 1795537837.4534428,
+      "received_at": 1795537837.6406705,
+      "provider_response": {
+        "choices": [
+          {
+            "message": {
+              "content": "```repl\nanswer['content'] = 'C'\nanswer['ready'] = True\n```"
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10,
+          "completion_tokens": 5
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "changed_source_hashes": {
+    "preflight_key_entry.py": "960c8224137edf6d87a2b29aac04a1ac29bfdfccc12cb2d1629ff3d268dcbfd3",
+    "runners/broker.py": "611d609c78134a09577e61e1ea4c60f5c0861574497760b657aa77b7d768c97a",
+    "runners/provider_preflight.py": "6214658d872fe58e0e3c13ca71ef155209c8939f764f34f2600e5cd42ba4a56e"
+  },
+  "credential_access": false,
+  "live_gate_enabled": false,
+  "live_journal_sha256": "14617a6857166881072a2ebd0a23bd7d5689bf2f60dec256fc448a893f2e6053",
+  "original_live_evidence_unchanged": true,
+  "original_live_files_verified": 9,
+  "original_preflight_outcome": "INCONCLUSIVE",
+  "protected_files_verified": 90,
+  "provider_api_requests": 0,
+  "remaining_original_ceiling_usd": "0.051552",
+  "retry_execution_ready": false,
+  "targeted_tests_passed": 4,
+  "unresolved_reservation_usd": "0.448448",
+  "user_reported_account": {
+    "account_api_queried": false,
+    "activity_requests": 0,
+    "activity_spend_usd": "0.00",
+    "balance_usd": "2.92",
+    "matching_gpt5_log_found": false
+  }
+}

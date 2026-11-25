@@ -1,0 +1,362 @@
+{
+  "pilot_id": "S3-R03",
+  "run_id": "broker-76d885d665ce467080f1010c58532595",
+  "scenario": "S3",
+  "status": "completed",
+  "synthetic_only": false,
+  "campaign_policy_hash": "42889b13f955bc304b39eee8535ae182bde422324c815b7945fb953eefd9e459",
+  "upstream_pin": "e11f1a8f8ee4490686e16dd6463233abe08a07eb",
+  "rootcheck": false,
+  "runtime_identity": {
+    "run_id": "mock-272c4a01df884a74b4a100bdfc078270",
+    "event_id": "mock-272c4a01df884a74b4a100bdfc078270:e00001",
+    "seq": 1,
+    "monotonic_ns": 140674028852400,
+    "kind": "runtime_identity",
+    "node": null,
+    "action": null,
+    "slot": null,
+    "class_module": "rlm.core.rlm",
+    "class_name": "RLM",
+    "source_file": "D:\\iit\\4th Year\\FYP\\RLM\\rlm\\experiments\\official_baseline_h2_h5_h6\\isolation-staging\\c6ed1074140b457b818118023c0a94eb\\run-012bc66f940249e1ace981cc270fb7fe\\payload\\repo\\rlm\\core\\rlm.py",
+    "source_hashes": {
+      "rlm/__init__.py": "bbcf03835c623c6b00c38bdf6692d43af164f1d6a2df00c8c1044c409cf95f52",
+      "rlm/clients/__init__.py": "8c3b4320ef3acd6c1069d52b51cf973d076143b61de53b799284ba30d31a6ca6",
+      "rlm/clients/anthropic.py": "87dc5f2c0726d9f2abd42c528087e831e0937c80f966a2b2feb2e7d5470ee0bc",
+      "rlm/clients/azure_openai.py": "9696433c582b9d38e87d5c93987a037ba9e8eaaa323234382c423e2ae26b37f5",
+      "rlm/clients/base_lm.py": "e79ba1d2e459619631a991b37d594660fd80025c34f8212409b44f6b7197aa05",
+      "rlm/clients/gemini.py": "c517bd9fa2b3a9de5bd56e2b594e3345ea2fb870f4557e93cbb58a6a6eb8cd42",
+      "rlm/clients/openai.py": "2763e4b427f3c154ec2cfd906da91832c416f84851c5d6dc1d9c868477aec7c2",
+      "rlm/clients/portkey.py": "f0738a52a5c4ac7efa4daebb7c5f467b3f9adcbe7d5d67072565fc89651e4dfd",
+      "rlm/core/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rlm/core/comms_utils.py": "bfbe1bea99139dea4300ff0e6f3a3d210d2590af9a99b0346a45e24023fbcce5",
+      "rlm/core/lm_handler.py": "f1c973aaac6ea7c67f6c05962b713ead30729a9f0b605a9d0851f5336475bb8f",
+      "rlm/core/rlm.py": "1ccec592077d7d00a079c396d3382cd8d4bd84e5ce5bbc4674cca30cdf7cdd34",
+      "rlm/core/types.py": "123d47312d80d317f5bbc1e1002870683bb4592208889a1f47904ed3ce493fbf",
+      "rlm/environments/__init__.py": "9e38801a1428ef19856492bd9176f4938c57d3e206520905bfc314062c2b6cf9",
+      "rlm/environments/base_env.py": "1854046bf09eafe09d005ef4ab243a6e3953b032e1cbd6d6f59fc1078bceacff",
+      "rlm/environments/constants.py": "40131e4857a699b02d54b374e7ccf1c63c32d424d0203d5149e13a769838f9f4",
+      "rlm/environments/daytona_repl.py": "ec94e39d1fd9a440420bba013c929a00e93cc6ce9bbd1ca3218f25281f12bea9",
+      "rlm/environments/docker_repl.py": "8cc6a9ccb25f191b6d90a45d0e59b1132448091f5f717dffa93ba78a579fb76d",
+      "rlm/environments/e2b_repl.py": "ae7b168793f6265198cc833303151e45ffbe3d633a05b4110f217be0759c53a1",
+      "rlm/environments/ipython_repl.py": "e7db72a28d5b26fe976e73ea8ffc03c0230e4c7f5bfec20be98c479fd7c87343",
+      "rlm/environments/local_execution.py": "09e1a948d71ed7fd42ba580c0cfcd9c7a3936b6c6693a13aabdf46175e5608c5",
+      "rlm/environments/local_repl.py": "ec15a16e83e5913c430324eb648fb1b558ae8e5c2c3e36787e38743a0887d524",
+      "rlm/environments/modal_repl.py": "b5196ada65523153b6de8c9953e3b7ef6db64076cd19bc0ba0a89b5b383ab53a",
+      "rlm/environments/prime_repl.py": "644f0314f15e3fb104bb3a82be48924212768b4a3aa906f151c0f7abfaaf3ef9",
+      "rlm/environments/speculative_repl.py": "e82c475d5fc817b8a410ab1e9097118da6a764b28036731e366d52b91f1c78aa",
+      "rlm/logger/__init__.py": "b9976ec2bd77f5b0e2252afa80a7be4f992d25ac69eab832c3544a8799cc6f1f",
+      "rlm/logger/rlm_logger.py": "ab92f346766fc2e9b0c48c92fbc8a05d1b43dbd6535beb6ea0da70c31fe2c374",
+      "rlm/logger/verbose.py": "d7e155400d02ed5a73086a0b7d6982cb6eb7d06256d0e11cbfe24c566e06040d",
+      "rlm/utils/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rlm/utils/exceptions.py": "1f38776b8ded958db854f8692902564b3f36b1b98a6e2f0f33e703efa18a7cde",
+      "rlm/utils/parsing.py": "16754fdc801d8d2fbf98246e1a8f489fd3622bc77dfc4779f58445414b3ea351",
+      "rlm/utils/prompts.py": "35729c0849f7f15d0279c7bfe50cd9d560e9ea3d576767fcfd063f40b4e45406",
+      "rlm/utils/rlm_utils.py": "fdacd27add192703d7ad86d2d0847b98abf59e81ca3b09738f4c7ff73e605ae9",
+      "rlm/utils/token_utils.py": "41ee6244b2dab737ed53a4143ff93a07f4e00db166eded92f16d33cfb7fb8628",
+      "rlm/utils/usage.py": "e683a359f170b7d92d44dfa7cadf0238f596ab9de79e77413d6b8259cf0f282b"
+    },
+    "rootcheck": false,
+    "boundary": "appcontainer-job"
+  },
+  "cleanup": {
+    "profile_deleted": true,
+    "scratch_deleted": true,
+    "payload_grant_removed": true
+  },
+  "actual_return_event": "mock-272c4a01df884a74b4a100bdfc078270:e00031",
+  "actual_return": "3731, 4637, 17300647",
+  "answer_extraction": {
+    "method": "Full-response anchored three-integer comma-space format; first two values are the requested ascending IDs, third the product; no sorting, correction or inferred values.",
+    "extracted": {
+      "selected_ids": [
+        3731,
+        4637
+      ],
+      "product": 17300647
+    }
+  },
+  "correctness": {
+    "correctness": "correct",
+    "output_coverage": "complete",
+    "missing": [],
+    "field_matches": {
+      "selected_ids": true,
+      "product": true
+    },
+    "support": "human_review_required",
+    "visibility": "human_review_required",
+    "raw_return_reference_required": true
+  },
+  "latency_seconds": {
+    "official_completion": 41.66937869999674,
+    "appcontainer_job": 44.34299999999348
+  },
+  "root_iterations": 4,
+  "provider_calls": 4,
+  "provider_reported_cost_usd": "0.03900300",
+  "conservative_run_accounting_usd": "0.04303500",
+  "accounting_explanation": "Conservative ledger uses maximum of uncached-rate and reported cost; cache discounts reduce actual reported charge. Native reasoning is included in completion and billed once.",
+  "campaign_exposure_usd": "1.01644415",
+  "carried_preflight_exposure_usd": "0.44882910",
+  "unresolved_prior_reservation_usd": "0.4484480",
+  "new_unresolved_pilot_reservations": false,
+  "tokens": {
+    "prompt_tokens": 8452,
+    "completion_tokens": 3247,
+    "total_tokens": 11699
+  },
+  "reasoning_tokens_included_in_completion": 2176,
+  "cached_prompt_tokens": 3584,
+  "telemetry_conflicts": 0,
+  "delegation": {
+    "plain_sub_llm_calls": 0,
+    "recursive_child_nodes": 0,
+    "recursive_dispatch_events": 0,
+    "calls_by_model": {
+      "openai/gpt-5": 4
+    }
+  },
+  "python_execution_blocks": 3,
+  "python_stderr_nonempty_blocks": 0,
+  "event_counts": {
+    "runtime_identity": 1,
+    "node_start": 1,
+    "python_start": 5,
+    "python_result": 5,
+    "provider_dispatch": 4,
+    "provider_return": 4,
+    "iteration_selection": 4,
+    "formatted_results": 3,
+    "answer_write_attempt": 2,
+    "candidate_capture": 1,
+    "actual_return": 1
+  },
+  "provider_calls_detail": [
+    {
+      "ticket": "attempt-00032",
+      "generation_id": "gen-1795620618-mkhDsWroicrZfJEYbxzE",
+      "provider": "OpenAI",
+      "resolved_endpoint": "openai/gpt-5-2025-08-07",
+      "finish_reason": "stop",
+      "latency_seconds": 8.618614435195923,
+      "usage": {
+        "prompt_tokens": 1573,
+        "completion_tokens": 612,
+        "total_tokens": 2185,
+        "cost": 0.00808625,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00808625,
+          "upstream_inference_prompt_cost": 0.00196625,
+          "upstream_inference_completions_cost": 0.00612
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 448,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "verification": {
+        "revision": "native-cost-once-conservative-detail-bound-v1",
+        "resolved_endpoint": "openai/gpt-5-2025-08-07",
+        "reasoning_detail_conflict": false,
+        "reasoning_tokens": 448,
+        "conservative_output_count": 612,
+        "native_completion_tokens": 612,
+        "billing_basis": "native_completion_once",
+        "reported_cost_usd": "0.00808625",
+        "expected_cost_usd": "0.00808625"
+      }
+    },
+    {
+      "ticket": "attempt-00033",
+      "generation_id": "gen-1795620626-q5fSbaxFl8egFayYRvqS",
+      "provider": "OpenAI",
+      "resolved_endpoint": "openai/gpt-5-2025-08-07",
+      "finish_reason": "stop",
+      "latency_seconds": 12.64420199394226,
+      "usage": {
+        "prompt_tokens": 1679,
+        "completion_tokens": 1111,
+        "total_tokens": 2790,
+        "cost": 0.01162475,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1408,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.01162475,
+          "upstream_inference_prompt_cost": 0.00051475,
+          "upstream_inference_completions_cost": 0.01111
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 640,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "verification": {
+        "revision": "native-cost-once-conservative-detail-bound-v1",
+        "resolved_endpoint": "openai/gpt-5-2025-08-07",
+        "reasoning_detail_conflict": false,
+        "reasoning_tokens": 640,
+        "conservative_output_count": 1111,
+        "native_completion_tokens": 1111,
+        "billing_basis": "native_completion_once",
+        "reported_cost_usd": "0.01162475",
+        "expected_cost_usd": "0.01162475"
+      }
+    },
+    {
+      "ticket": "attempt-00034",
+      "generation_id": "gen-1795620639-sBvSFa2EBvFOTrsgs2kt",
+      "provider": "OpenAI",
+      "resolved_endpoint": "openai/gpt-5-2025-08-07",
+      "finish_reason": "stop",
+      "latency_seconds": 7.317333936691284,
+      "usage": {
+        "prompt_tokens": 2333,
+        "completion_tokens": 676,
+        "total_tokens": 3009,
+        "cost": 0.00967625,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00967625,
+          "upstream_inference_prompt_cost": 0.00291625,
+          "upstream_inference_completions_cost": 0.00676
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 320,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "verification": {
+        "revision": "native-cost-once-conservative-detail-bound-v1",
+        "resolved_endpoint": "openai/gpt-5-2025-08-07",
+        "reasoning_detail_conflict": false,
+        "reasoning_tokens": 320,
+        "conservative_output_count": 676,
+        "native_completion_tokens": 676,
+        "billing_basis": "native_completion_once",
+        "reported_cost_usd": "0.00967625",
+        "expected_cost_usd": "0.00967625"
+      }
+    },
+    {
+      "ticket": "attempt-00035",
+      "generation_id": "gen-1795620646-5yujMGXLMiuHNoJVuhXi",
+      "provider": "OpenAI",
+      "resolved_endpoint": "openai/gpt-5-2025-08-07",
+      "finish_reason": "stop",
+      "latency_seconds": 12.429160833358765,
+      "usage": {
+        "prompt_tokens": 2867,
+        "completion_tokens": 848,
+        "total_tokens": 3715,
+        "cost": 0.00961575,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 2176,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00961575,
+          "upstream_inference_prompt_cost": 0.00113575,
+          "upstream_inference_completions_cost": 0.00848
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 768,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "verification": {
+        "revision": "native-cost-once-conservative-detail-bound-v1",
+        "resolved_endpoint": "openai/gpt-5-2025-08-07",
+        "reasoning_detail_conflict": false,
+        "reasoning_tokens": 768,
+        "conservative_output_count": 848,
+        "native_completion_tokens": 848,
+        "billing_basis": "native_completion_once",
+        "reported_cost_usd": "0.00961575",
+        "expected_cost_usd": "0.00961575"
+      }
+    }
+  ],
+  "evidence": {
+    "results/broker/broker-76d885d665ce467080f1010c58532595.json": {
+      "sha256": "bfeaca9207352c756ff117f2819d846dd90d5fd56c9f4d9c5ae84d0dc4146711",
+      "bytes": 1087396
+    },
+    "results/broker/broker-76d885d665ce467080f1010c58532595.journal.json": {
+      "sha256": "bab7accffbb0166fa25927d7da2069bba8e33faa0523464a049676a7a0ed93f5",
+      "bytes": 117824
+    },
+    "results/broker/broker-76d885d665ce467080f1010c58532595.events.jsonl": {
+      "sha256": "827701bfdc7305d0605bae878da3735e0d74fd3ac757e3dbd132efdd08530784",
+      "bytes": 518379
+    },
+    "results/broker/broker-76d885d665ce467080f1010c58532595.worker-response.json": {
+      "sha256": "edaf7aefbfb504dbff36d6f607dc5de7ab685dffcfbdc3a719975fe61006dfa4",
+      "bytes": 351524
+    },
+    "results/campaigns/official-baseline-v1.json": {
+      "sha256": "a668a294d88ede3c90171f587353ccda35687c8301b2acfe757322bfe99c108f",
+      "bytes": 31709
+    },
+    "evaluators/oracle_results/S3.json": {
+      "sha256": "ada6c441ccaa69728ffbf0129284d88a5569c0517d1ab05671eba646897f41d8",
+      "bytes": 1428
+    },
+    "tasks/data/S3/context.txt": {
+      "sha256": "55075334b0f7080a790dda9a4b5582de41cd7a7ce38f424a9af39c52f4dd9009",
+      "bytes": 19942
+    },
+    "tasks/data/S3/query.txt": {
+      "sha256": "5303ebc516868daec4aaabc730cfbb04bbf28d478b38524d4403676d006ed36b",
+      "bytes": 617
+    }
+  },
+  "post_run_checks": {
+    "exact_oracle_agreement": true,
+    "raw_trace_matches_record": true,
+    "worker_response_and_journal_match": true,
+    "all_requests_reconciled": true,
+    "actual_runtime_and_frozen_hashes_match": true,
+    "protected_file_count": 90,
+    "runtime_hash_count": 35,
+    "cleanup_passed": true,
+    "input_output_and_cost_limits_pass": true
+  },
+  "hypotheses": {
+    "H2": "awaiting_evidence_review; see separate preliminary notes",
+    "H5": "awaiting_evidence_review; see separate preliminary notes",
+    "H6": "awaiting_evidence_review; see separate preliminary notes"
+  },
+  "authorization": {
+    "scope": "Round 3 in exact order S3-R03, S1-R03, S2-R03; stop after approved nine runs; no additional execution",
+    "transport_retries": false,
+    "run_ceiling_usd": "2",
+    "campaign_ceiling_usd": "20"
+  },
+  "next_progression_with_checkpoint_approved": "S1-R03"
+}

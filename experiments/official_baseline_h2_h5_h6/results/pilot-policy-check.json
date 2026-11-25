@@ -1,0 +1,9 @@
+{
+  "completed_suites_repeated": false,
+  "credential_access": false,
+  "failures": [],
+  "protected_files_unchanged": true,
+  "provider_api_requests": 0,
+  "success": true,
+  "tests_run": 4
+}

@@ -1,0 +1,292 @@
+{
+  "decision": "ROUND_2_COMPLETE_SIX_RUNS_CORRECT_ROUND_3_NOT_AUTHORIZED",
+  "campaign_policy_hash": "42889b13f955bc304b39eee8535ae182bde422324c815b7945fb953eefd9e459",
+  "upstream_pin": "e11f1a8f8ee4490686e16dd6463233abe08a07eb",
+  "rootcheck": false,
+  "runs": [
+    {
+      "pilot_id": "S1-R01",
+      "run_id": "broker-eaa4d3f974474c0e807569e72ddf4432",
+      "round": 1,
+      "status": "completed",
+      "correctness": "correct",
+      "root_iterations": 4,
+      "provider_calls": 4,
+      "plain_subcalls": 0,
+      "recursive_child_nodes": 0,
+      "official_seconds": 76.40380520001054,
+      "appcontainer_job_seconds": 79.57799999999406,
+      "provider_reported_cost_usd": "0.08246875",
+      "conservative_run_accounting_usd": "0.09902875",
+      "tokens": {
+        "prompt_tokens": 23719,
+        "completion_tokens": 6938,
+        "total_tokens": 30657
+      },
+      "events": 33,
+      "preliminary": {
+        "H2": "no material mismatch demonstrated; formal inconclusive",
+        "H5": "provisionally not observed; human confirmation pending",
+        "H6": "no redundant continuation demonstrated; formal inconclusive"
+      },
+      "evidence": {
+        "report": "S1_R01_EXECUTION_RESULT.md",
+        "summary": "results/S1-R01-summary.json",
+        "preliminary_notes": "evaluators/S1-R01-preliminary-observations.md",
+        "raw_record": "results/broker/broker-eaa4d3f974474c0e807569e72ddf4432.json",
+        "raw_events": "results/broker/broker-eaa4d3f974474c0e807569e72ddf4432.events.jsonl",
+        "record_sha256": "45af322a32a7e4e6e0aeb447730786abd3553e0be393a4382876e8aa16b226fb",
+        "events_sha256": "2bbac214ff6bb19781fdc21745b11465819ea4613e65c7a6d262fd77b3d2e40b",
+        "summary_sha256": "6f0f0906f92ef7ad8e342555bda349eb03b08b629c5dc4657a092f18e8e6e4a1",
+        "notes_sha256": "659a116124bac7422a26024ef3fbb11088d6d2c01e535edc11c395cdb1d5c9b7"
+      }
+    },
+    {
+      "pilot_id": "S2-R01",
+      "run_id": "broker-b3dd0f8ebee74e40a5d794cabbdcec4a",
+      "round": 1,
+      "status": "completed",
+      "correctness": "correct",
+      "root_iterations": 8,
+      "provider_calls": 10,
+      "plain_subcalls": 2,
+      "recursive_child_nodes": 0,
+      "official_seconds": 444.48062149999896,
+      "appcontainer_job_seconds": 447.1100000000006,
+      "provider_reported_cost_usd": "0.17427805",
+      "conservative_run_accounting_usd": "0.20135005",
+      "tokens": {
+        "prompt_tokens": 58697,
+        "completion_tokens": 73608,
+        "total_tokens": 132305
+      },
+      "events": 65,
+      "preliminary": {
+        "H2": "strong mismatch candidate; formal inconclusive",
+        "H5": "provisionally not observed; human confirmation pending",
+        "H6": "potential avoidable prose-only continuation; redundancy unestablished; formal inconclusive"
+      },
+      "evidence": {
+        "report": "S2_R01_EXECUTION_RESULT.md",
+        "summary": "results/S2-R01-summary.json",
+        "preliminary_notes": "evaluators/S2-R01-preliminary-observations.md",
+        "raw_record": "results/broker/broker-b3dd0f8ebee74e40a5d794cabbdcec4a.json",
+        "raw_events": "results/broker/broker-b3dd0f8ebee74e40a5d794cabbdcec4a.events.jsonl",
+        "record_sha256": "f3ab00fe23fcddaf60e24167bb1f84fe69b4f2f9278565b421628b5151482be5",
+        "events_sha256": "ee1e67a5f910b5b30b50ef2ee7709e42b31a43aef43ad852cf9ea509c7f2ad67",
+        "summary_sha256": "28d4e8a8a337e93a70bbfae5e0244e31ea749c0685f6923ab34567dd7842d75a",
+        "notes_sha256": "604c4cabccce8fba14e1e8ca7b814d17c6ca3c489a88e3861f478613928b7280"
+      }
+    },
+    {
+      "pilot_id": "S3-R01",
+      "run_id": "broker-deb1b866c6344031816958a484472db8",
+      "round": 1,
+      "status": "completed",
+      "correctness": "correct",
+      "root_iterations": 3,
+      "provider_calls": 3,
+      "plain_subcalls": 0,
+      "recursive_child_nodes": 0,
+      "official_seconds": 38.11165470001288,
+      "appcontainer_job_seconds": 40.54700000002049,
+      "provider_reported_cost_usd": "0.03427350",
+      "conservative_run_accounting_usd": "0.03873750",
+      "tokens": {
+        "prompt_tokens": 7342,
+        "completion_tokens": 2956,
+        "total_tokens": 10298
+      },
+      "events": 27,
+      "preliminary": {
+        "H2": "no material mismatch demonstrated; formal inconclusive",
+        "H5": "provisionally not observed; human confirmation pending",
+        "H6": "no redundant continuation demonstrated; formal inconclusive"
+      },
+      "evidence": {
+        "report": "S3_R01_EXECUTION_RESULT.md",
+        "summary": "results/S3-R01-summary.json",
+        "preliminary_notes": "evaluators/S3-R01-preliminary-observations.md",
+        "raw_record": "results/broker/broker-deb1b866c6344031816958a484472db8.json",
+        "raw_events": "results/broker/broker-deb1b866c6344031816958a484472db8.events.jsonl",
+        "record_sha256": "d276d5a872ce024765cc258d9149a7f2609a89a8497b429547b753ab48a9d4a6",
+        "events_sha256": "1c39a695bb0de291c29c31c7fe96ceb895c6a650e8efd148506a7a8921e1936e",
+        "summary_sha256": "63405bc7a2ced1e6f9ed4a6c6b81ad924c8bf0f84d154f1e8d1d8449ca361f05",
+        "notes_sha256": "fd9d2343489512046b4c9db66e2dc8b1a7305faae349d3a557eca3d436977e7f"
+      }
+    },
+    {
+      "pilot_id": "S2-R02",
+      "run_id": "broker-0c0113ea621747e2ace2fa3de8d4bbcb",
+      "round": 2,
+      "status": "completed",
+      "correctness": "correct",
+      "root_iterations": 5,
+      "provider_calls": 5,
+      "plain_subcalls": 0,
+      "recursive_child_nodes": 0,
+      "official_seconds": 75.12477579998085,
+      "appcontainer_job_seconds": 77.5,
+      "provider_reported_cost_usd": "0.07901500",
+      "conservative_run_accounting_usd": "0.09485500",
+      "tokens": {
+        "prompt_tokens": 20436,
+        "completion_tokens": 6931,
+        "total_tokens": 27367
+      },
+      "events": 39,
+      "preliminary": {
+        "H2": "no material mismatch demonstrated; formal inconclusive",
+        "H5": "provisionally not observed; human confirmation pending",
+        "H6": "no redundant continuation demonstrated; formal inconclusive"
+      },
+      "evidence": {
+        "report": "S2_R02_EXECUTION_RESULT.md",
+        "summary": "results/S2-R02-summary.json",
+        "preliminary_notes": "evaluators/S2-R02-preliminary-observations.md",
+        "raw_record": "results/broker/broker-0c0113ea621747e2ace2fa3de8d4bbcb.json",
+        "raw_events": "results/broker/broker-0c0113ea621747e2ace2fa3de8d4bbcb.events.jsonl",
+        "record_sha256": "ee4721afce45de585c486bb56df346aacbdd1b1f2af8b4b9e781f51a8716a8a9",
+        "events_sha256": "2ea62902609016e554dda219da8b3bb7dc93cc2a4212c12d1f7040f52884666d",
+        "summary_sha256": "43a5b9600fe894240d96b71bbe31c93a3f22829c4e206f91cf0c5427f383c42d",
+        "notes_sha256": "17a7f561f987c1ebedd593888ba7a34e14734d3a416e4cd61e4b426b61ef9442"
+      }
+    },
+    {
+      "pilot_id": "S3-R02",
+      "run_id": "broker-6f457d2d60914ee6b68d8366892facfb",
+      "round": 2,
+      "status": "completed",
+      "correctness": "correct",
+      "root_iterations": 3,
+      "provider_calls": 3,
+      "plain_subcalls": 0,
+      "recursive_child_nodes": 0,
+      "official_seconds": 32.86964320001425,
+      "appcontainer_job_seconds": 35.5,
+      "provider_reported_cost_usd": "0.03122600",
+      "conservative_run_accounting_usd": "0.03713000",
+      "tokens": {
+        "prompt_tokens": 7448,
+        "completion_tokens": 2782,
+        "total_tokens": 10230
+      },
+      "events": 27,
+      "preliminary": {
+        "H2": "no material mismatch demonstrated; formal inconclusive",
+        "H5": "provisionally not observed; human confirmation pending",
+        "H6": "no redundant continuation demonstrated; formal inconclusive"
+      },
+      "evidence": {
+        "report": "S3_R02_EXECUTION_RESULT.md",
+        "summary": "results/S3-R02-summary.json",
+        "preliminary_notes": "evaluators/S3-R02-preliminary-observations.md",
+        "raw_record": "results/broker/broker-6f457d2d60914ee6b68d8366892facfb.json",
+        "raw_events": "results/broker/broker-6f457d2d60914ee6b68d8366892facfb.events.jsonl",
+        "record_sha256": "a9910757ccc650ea1d8a9be898877c42d0fe6f396330fe33f332a9ef7a762779",
+        "events_sha256": "ea6566164ee5d941b03da353014465f454efb72dfa9272fcec727ad7caa7938e",
+        "summary_sha256": "ea5817a850d8a1b6178c526174534722ac4cdc56fb3baa6ae0a4e15b4bee7aaf",
+        "notes_sha256": "babbbf5d003595e43a0161feb52721f069a4b72e7620d899ced1cf21aa2fb9ac"
+      }
+    },
+    {
+      "pilot_id": "S1-R02",
+      "run_id": "broker-4628dc30b5d64041842e5ae24ee1bfe5",
+      "round": 2,
+      "status": "completed",
+      "correctness": "correct",
+      "root_iterations": 3,
+      "provider_calls": 3,
+      "plain_subcalls": 0,
+      "recursive_child_nodes": 0,
+      "official_seconds": 43.422575899981894,
+      "appcontainer_job_seconds": 45.76600000000326,
+      "provider_reported_cost_usd": "0.04527075",
+      "conservative_run_accounting_usd": "0.05347875",
+      "tokens": {
+        "prompt_tokens": 11847,
+        "completion_tokens": 3867,
+        "total_tokens": 15714
+      },
+      "events": 27,
+      "preliminary": {
+        "H2": "no material mismatch demonstrated; formal inconclusive",
+        "H5": "provisionally not observed; human confirmation pending",
+        "H6": "no redundant continuation demonstrated; formal inconclusive"
+      },
+      "evidence": {
+        "report": "S1_R02_EXECUTION_RESULT.md",
+        "summary": "results/S1-R02-summary.json",
+        "preliminary_notes": "evaluators/S1-R02-preliminary-observations.md",
+        "raw_record": "results/broker/broker-4628dc30b5d64041842e5ae24ee1bfe5.json",
+        "raw_events": "results/broker/broker-4628dc30b5d64041842e5ae24ee1bfe5.events.jsonl",
+        "record_sha256": "f11fcdca6c61995c7da727ec8eca473722e76c739c3199b19d527bfd7ac2d029",
+        "events_sha256": "cad381bf2622e1d17bfe9fd03a62699d34215cd83f49541b4c13120480cab7f8",
+        "summary_sha256": "5c5947cc6a4cb0ecbdc39ff729755ff5875aaacc2bad96bce09a51b647c835ed",
+        "notes_sha256": "b9c20ab1f0889ad726825ebda6160351a4fc03caf9fe5072850270b5bddf8031"
+      }
+    }
+  ],
+  "round_two_order": [
+    "S2-R02",
+    "S3-R02",
+    "S1-R02"
+  ],
+  "round_two_reported_cost_usd": "0.15551175",
+  "round_two_conservative_debit_usd": "0.18546375",
+  "six_run_reported_cost_usd": "0.44653205",
+  "six_run_conservative_debit_usd": "0.52458005",
+  "known_reported_cost_including_preflight_usd": "0.44691315",
+  "campaign_exposure_usd": "0.97340915",
+  "carried_preflight_exposure_usd": "0.44882910",
+  "old_unresolved_reservation_usd": "0.4484480",
+  "remaining_campaign_headroom_usd": "19.02659085",
+  "new_unresolved_pilot_requests": [],
+  "provider_calls": 28,
+  "provider_calls_by_model": {
+    "openai/gpt-5": 26,
+    "openai/gpt-5-nano": 2
+  },
+  "root_iterations": 26,
+  "plain_subcalls": 2,
+  "recursive_child_nodes": 0,
+  "raw_events": 218,
+  "tokens": {
+    "prompt_tokens": 129489,
+    "completion_tokens": 97082,
+    "total_tokens": 226571
+  },
+  "telemetry_conflicts": 0,
+  "censoring_rule": {
+    "evaluation_point": "end of Round 2, cumulative across all six retained runs",
+    "resource_censored_runs": 0,
+    "stop_threshold": 2,
+    "stop_triggered": false,
+    "length_limited_subcalls": [
+      "S2-R01 / attempt-00013"
+    ],
+    "explanation": "S2-R01 second nano subcall reached its request output cap; the run recovered and completed. This is not a run-level resource-censored record. No budgets increased and no runs replaced."
+  },
+  "integrity_and_capture": {
+    "prior_evidence_and_preliminary_notes_preserved": true,
+    "six_correct_actual_returns": true,
+    "all_journals_finalized_and_raw_archives_present": true,
+    "unique_request_and_generation_ids": true,
+    "frozen_source_policy_configuration_and_datasets_unchanged": true,
+    "all_cleanup_passed": true,
+    "all_pilot_tickets_reconciled": true,
+    "old_reservation_preserved": true,
+    "only_three_authorized_round_two_runs_executed": true,
+    "no_retries_replacements_or_preflight_requests": true,
+    "round_three_started": false
+  },
+  "assessment_limits": [
+    "Preliminary retrospective notes do not replace blinded human H2/H6 contracts/sufficiency commitments or human H5 confirmation.",
+    "Correct final answers do not establish hypothesis absence.",
+    "No natural recursive-child or batch execution in six runs; prior offline evidence retained, not repeated.",
+    "Private unreturned reasoning and arbitrary-object/transient Python dependencies are not fully observable."
+  ],
+  "next_permitted_id_if_separately_authorized": "S3-R03",
+  "authorization_stop": "User expressly prohibited Round 3. No further live command executed.",
+  "campaign_snapshot_sha256": "2c23b2e50a5b75ff498f65bbaeddb4069fbcee7ab2e8e0c264fb4d93d81a6a0f"
+}

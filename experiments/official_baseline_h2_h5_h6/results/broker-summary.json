@@ -1,0 +1,21 @@
+{
+  "api_requests": 0,
+  "datasets_or_old_equivalence_repeated": false,
+  "existing_suite_repeated": false,
+  "failures": [],
+  "protected_files_unchanged": true,
+  "run_ids": [
+    "broker-6b549c5faece4f5b979c2de2d57ea069",
+    "broker-b152de610f2e45b2ab40ee52963c4b4b",
+    "broker-659f137ed64b418985f03df3f21a9347",
+    "broker-cb82dbda14c842ffb4b3153bbea1b9cc",
+    "broker-9711ce39a9904260b0dcce7c3cc6a57e",
+    "broker-fd4e5437fa8d430d80ae58d071be6044",
+    "broker-b9e438ec2f1f4dd6927e37e38f9b8ddf",
+    "broker-1d2c1cbae6984f449e0fdaca744a43cf",
+    "broker-5abd6e2b0fee459eb88b6f65c766a463",
+    "broker-4216e1f2eee249d9bb7103bd5f0cc213"
+  ],
+  "success": true,
+  "test_methods": 6
+}

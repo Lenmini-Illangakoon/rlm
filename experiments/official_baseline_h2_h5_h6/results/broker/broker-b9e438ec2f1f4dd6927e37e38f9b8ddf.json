@@ -1,0 +1,29 @@
+{
+  "cleanup": {
+    "payload_grant_removed": true,
+    "profile_deleted": true,
+    "scratch_deleted": true
+  },
+  "ledger": {
+    "campaign_exposure_usd": "0",
+    "rates_kind": "synthetic_only",
+    "runs": {
+      "broker-b9e438ec2f1f4dd6927e37e38f9b8ddf": {
+        "attempts": 0,
+        "deadline": 52015.984,
+        "stop_reason": "wall_clock"
+      }
+    },
+    "tickets": {}
+  },
+  "observed_prefix": [],
+  "profile_name": "RootCheck.Pilot.run-afb866dde7044776b3321a17013cf39e",
+  "protocol_version": "broker-integration-1",
+  "provider_records": [],
+  "reason": "wall_clock",
+  "result": null,
+  "run_id": "broker-b9e438ec2f1f4dd6927e37e38f9b8ddf",
+  "scratch_path": "D:\\iit\\4th Year\\FYP\\RLM\\rlm\\experiments\\official_baseline_h2_h5_h6\\isolation-staging\\c6ed1074140b457b818118023c0a94eb\\run-afb866dde7044776b3321a17013cf39e",
+  "status": "resource_censored",
+  "synthetic_only": true
+}

@@ -1,0 +1,96 @@
+[
+  {
+    "forced_termination": null,
+    "hypothesis": "H2",
+    "infrastructure_failure": null,
+    "label": "observed",
+    "natural_baseline_evidence": false,
+    "operational_failure": null,
+    "resource_censoring": null,
+    "review": {
+      "containment": "unreviewed",
+      "contract": {
+        "action_id": "a1",
+        "evidence_refs": [
+          "event:3"
+        ],
+        "intended_outcome": "sum all input records",
+        "obligations": [
+          "total"
+        ],
+        "prefix_end": 3,
+        "prefix_sha256": "fixture-prefix-hash",
+        "result_event": 5,
+        "reviewer": "fixture-reviewer",
+        "stratum": "python"
+      },
+      "material_mismatch": true,
+      "normal_boundary": true,
+      "origin_id": "synthetic-origin",
+      "propagated_from": null,
+      "recovery": "unreviewed",
+      "result_refs": [
+        "synthetic-result"
+      ],
+      "secondary_h1_refs": []
+    },
+    "schema_version": "1.0"
+  },
+  {
+    "forced_termination": null,
+    "hypothesis": "H5",
+    "infrastructure_failure": null,
+    "label": "observed",
+    "natural_baseline_evidence": false,
+    "operational_failure": null,
+    "resource_censoring": null,
+    "review": {
+      "actual_return_ref": "synthetic-return",
+      "captures": [],
+      "correctness": "correct",
+      "evidence_refs": [
+        "synthetic-missing-total"
+      ],
+      "explanation": "",
+      "material_omission": true,
+      "material_support_gap": false,
+      "necessary_unobserved_unvalidated": false,
+      "path": "same_block",
+      "reviewer": "fixture-reviewer",
+      "selection_ref": null
+    },
+    "schema_version": "1.0"
+  },
+  {
+    "forced_termination": null,
+    "hypothesis": "H6",
+    "infrastructure_failure": null,
+    "label": "not_observed",
+    "natural_baseline_evidence": false,
+    "operational_failure": null,
+    "resource_censoring": null,
+    "review": {
+      "actions": [
+        {
+          "event": 5,
+          "evidence_refs": [
+            "synthetic-final"
+          ],
+          "purpose": "final_delivery"
+        }
+      ],
+      "all_obligations_covered": true,
+      "evidence_refs": [
+        "synthetic-request"
+      ],
+      "material_uncertainty_resolved": true,
+      "prefix_sha256": "synthetic-prefix-hash",
+      "reviewer": "fixture-reviewer",
+      "stable": true,
+      "sufficient": true,
+      "t_compute": 2,
+      "t_visible": 4
+    },
+    "schema_version": "1.0"
+  }
+]

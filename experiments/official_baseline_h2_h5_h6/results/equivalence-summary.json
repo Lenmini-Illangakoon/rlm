@@ -1,0 +1,170 @@
+[
+  {
+    "control_seconds": 0.5052942999991501,
+    "event_count": 14,
+    "fixture": "same_block",
+    "observed_seconds": 0.5145978000000468,
+    "overhead_seconds": 0.009303500000896747,
+    "pass": true
+  },
+  {
+    "control_seconds": 0.5136442000002717,
+    "event_count": 19,
+    "fixture": "plain_consumption",
+    "observed_seconds": 0.5148300000000745,
+    "overhead_seconds": 0.001185799999802839,
+    "pass": true
+  },
+  {
+    "control_seconds": 1.0162498000008782,
+    "event_count": 32,
+    "fixture": "recursive",
+    "observed_seconds": 1.025599799999327,
+    "overhead_seconds": 0.009349999998448766,
+    "pass": true
+  },
+  {
+    "control_seconds": 0.5225563000003604,
+    "event_count": 23,
+    "fixture": "plain_batch",
+    "observed_seconds": 0.5162708999996539,
+    "overhead_seconds": -0.0062854000007064315,
+    "pass": true
+  },
+  {
+    "control_seconds": 1.023579200000313,
+    "event_count": 48,
+    "fixture": "recursive_batch",
+    "observed_seconds": 1.0190028000015445,
+    "overhead_seconds": -0.004576399998768466,
+    "pass": true
+  },
+  {
+    "control_seconds": 0.5182789999998931,
+    "event_count": 19,
+    "fixture": "multiple_blocks",
+    "observed_seconds": 0.5126492999988841,
+    "overhead_seconds": -0.0056297000010090414,
+    "pass": true
+  },
+  {
+    "control_seconds": 0.5121419000006426,
+    "event_count": 17,
+    "fixture": "repeated_capture",
+    "observed_seconds": 0.514124700001048,
+    "overhead_seconds": 0.0019828000004054047,
+    "pass": true
+  },
+  {
+    "control_seconds": 0.5087562000007892,
+    "event_count": 14,
+    "fixture": "capture_then_error",
+    "observed_seconds": 0.512630100000024,
+    "overhead_seconds": 0.003873899999234709,
+    "pass": true
+  },
+  {
+    "control_seconds": 0.5042396000008011,
+    "event_count": 14,
+    "fixture": "caught_exception",
+    "observed_seconds": 0.51540550000027,
+    "overhead_seconds": 0.01116589999946882,
+    "pass": true
+  },
+  {
+    "control_seconds": 0.49488860000019486,
+    "event_count": 19,
+    "fixture": "uncaught_recovery",
+    "observed_seconds": 0.5158666999996058,
+    "overhead_seconds": 0.020978099999410915,
+    "pass": true
+  },
+  {
+    "control_seconds": 0.49944109999887587,
+    "event_count": 19,
+    "fixture": "mutable_snapshot",
+    "observed_seconds": 0.512693799999397,
+    "overhead_seconds": 0.013252700000521145,
+    "pass": true
+  },
+  {
+    "control_seconds": 0.5082719999991241,
+    "event_count": 19,
+    "fixture": "truncated_feedback",
+    "observed_seconds": 0.5128499999991618,
+    "overhead_seconds": 0.0045780000000377186,
+    "pass": true
+  },
+  {
+    "control_seconds": 0.49127860000044166,
+    "event_count": 15,
+    "fixture": "iteration_default",
+    "observed_seconds": 0.5137795999999071,
+    "overhead_seconds": 0.02250099999946542,
+    "pass": true
+  },
+  {
+    "control_seconds": 1.0093848999986221,
+    "event_count": 38,
+    "fixture": "depth_fallback",
+    "observed_seconds": 1.0312789999989036,
+    "overhead_seconds": 0.02189410000028147,
+    "pass": true
+  },
+  {
+    "control_seconds": 0.5121402000004309,
+    "event_count": 19,
+    "fixture": "provider_error",
+    "observed_seconds": 0.5136722999995982,
+    "overhead_seconds": 0.001532099999167258,
+    "pass": true
+  },
+  {
+    "control_seconds": 0.5099797000002582,
+    "event_count": 8,
+    "fixture": "cancel",
+    "observed_seconds": 0.5159196999993583,
+    "overhead_seconds": 0.0059399999991001096,
+    "pass": true
+  },
+  {
+    "control_seconds": 0.5123570999985532,
+    "event_count": 21,
+    "fixture": "duplicate_plain_slots",
+    "observed_seconds": 0.5161729000010382,
+    "overhead_seconds": 0.003815800002485048,
+    "pass": true
+  },
+  {
+    "control_seconds": 0.5258297000000312,
+    "event_count": 21,
+    "fixture": "reordered_plain_slots",
+    "observed_seconds": 0.5157239000000118,
+    "overhead_seconds": -0.010105800000019372,
+    "pass": true
+  },
+  {
+    "control_seconds": 1.0246222999994643,
+    "event_count": 48,
+    "fixture": "duplicate_recursive_slots",
+    "observed_seconds": 1.02974549999999,
+    "overhead_seconds": 0.005123200000525685,
+    "pass": true
+  },
+  {
+    "control_seconds": 0.4928055000000313,
+    "event_count": 14,
+    "fixture": "capture_then_mutate",
+    "observed_seconds": 0.514951099999962,
+    "overhead_seconds": 0.02214559999993071,
+    "pass": true
+  },
+  {
+    "control_seconds": 0.5115375999994285,
+    "event_count": 12,
+    "fixture": "rebound_answer",
+    "observed_seconds": 0.516067300000941,
+    "overhead_seconds": 0.004529700001512538,
+    "pass": true
+  }
+]

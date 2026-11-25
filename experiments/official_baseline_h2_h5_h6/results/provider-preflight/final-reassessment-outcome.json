@@ -1,0 +1,31 @@
+{
+  "authenticated_metadata_lookups_this_stage": 1,
+  "automatic_retries": 0,
+  "combined_exposure_usd": "0.44882910",
+  "evidence_hashes": {
+    "gpt5-generation-lookup.json": "c06eb9163437a29cc177adcf8e75fc98e0f5d1e1b3b7191a8ccac955d0703bee",
+    "gpt5-reassessment-v2.json": "269148df86b29b73a3c5e64ee8f71eeddc6d160b483d12dea752c0bc1e69b82a",
+    "live-nano-followup.json": "e63ef54608a31aec964af6fdab24423400a9b3b8e01a61ac028049c5e1003cb6",
+    "nano-reassessment-v3.json": "89c92cf0e016d685397cea4b22dc9164e7bff289783035f9a523948a9db23c32"
+  },
+  "gpt5_charge_usd": "0.00034375",
+  "inference_requests_this_stage": 1,
+  "known_charges_usd": "0.00038110",
+  "live_source_gate_disabled": true,
+  "nano_charge_usd": "0.00003735",
+  "new_offline_checks_passed": 10,
+  "original_and_attempt_two_live_evidence_unchanged": true,
+  "original_unresolved_reservation_usd": "0.448448",
+  "outcome": "PASSED_WITH_GPT5_REASONING_TELEMETRY_CAVEAT",
+  "pilot_executed": false,
+  "previous_manifest_entries_preserved_except_documented_source_and_report_changes": true,
+  "protected_files_verified": 90,
+  "reassessment_policy_revision": "preflight-snapshot-billing-review-3",
+  "remaining_preflight_ceiling_usd": "0.55117090",
+  "repeated_gpt5_inference": false,
+  "source_hashes": {
+    "preflight_generation_lookup.py": "5d9ddf0f68ef4fba3c5dff6897718c5d959a53bd89d9d9f46da4b6aa87352c0c",
+    "preflight_nano_followup.py": "35565b764c724c58d26f087d0d6782e14e1c57fdf3a0deb2ba79bd891adb9a89",
+    "runners/provider_preflight.py": "ae801332fff8c64e6ed4ee8bd0ee5e6fb21d5a95a503c21dfc871885dc9def39"
+  }
+}

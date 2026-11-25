@@ -1,0 +1,17 @@
+Using the current Shipment Requests, Warehouse Inventory, Quality Release,
+and Dispatch Holds sections, identify the three eligible shipments with the
+largest requested quantities.
+
+There are 160 current shipments, each with exactly one note in each of those
+four sections. Match notes only by exact Shipment ID. A shipment is eligible
+when its requested quantity is positive, its available quantity is at least
+its requested quantity, its quality status is APPROVED, and its dispatch
+hold status is NONE. Archived Shipments are out of scope.
+
+Rank eligible shipments by requested quantity descending, breaking ties by
+numeric Shipment ID ascending. Return exactly three Shipment IDs in that
+order, each requested quantity, and the combined requested quantity.
+
+For each selected shipment, also give the four source IDs identifying its
+request, inventory, quality, and hold notes. Formatting is flexible, but all
+requested values and source IDs must be present.

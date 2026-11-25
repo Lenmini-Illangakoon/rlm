@@ -1,0 +1,18 @@
+{
+  "api_requests": 0,
+  "branch": "experiment/official-rlm-h2-h5-h6-baseline",
+  "expected_live_block_exit_code": 2,
+  "full_suite_repeated": false,
+  "head": "fc6ba8bcaaf4a163a5afa9030d00e2103364b9ea",
+  "ignore_rules": {
+    "exit_code": 0,
+    "stderr": "warning: unable to access 'C:\\Users\\ASUS/.config/git/ignore': Permission denied",
+    "stdout": "experiments/official_baseline_h2_h5_h6/.gitignore:2:/isolation-staging/\texperiments/official_baseline_h2_h5_h6/isolation-staging/check\nexperiments/official_baseline_h2_h5_h6/.gitignore:4:!/isolation-private/.env\texperiments/official_baseline_h2_h5_h6/isolation-private/.env"
+  },
+  "official_source_diff_empty": true,
+  "offline_isolation_ready": true,
+  "preflight_exit_code": 2,
+  "protected_file_count": 90,
+  "protected_hashes_unchanged": true,
+  "staged_changes": []
+}

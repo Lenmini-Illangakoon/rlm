@@ -1,0 +1,1725 @@
+{
+  "excluded_from_self_hash": [
+    "artifact-manifest.json"
+  ],
+  "excluded_rebuildable_runtime": "isolation-staging/; payload hashes retained in results/windows-stage.json",
+  "files": [
+    {
+      "bytes": 200,
+      "path": ".gitignore",
+      "purpose": "Workspace documentation, bootstrap or integrity utility",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "3089a41d815c9275762c151eab8e502e7da49c6c32d271fd8817ac42d88a55f6"
+    },
+    {
+      "bytes": 24082,
+      "path": "IMPLEMENTATION_REPORT.md",
+      "purpose": "S1-R01 report finalization and separate retrospective preliminary observations; raw execution preserved",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "93a4236644f52dde2303cb51d0dd5fc74202491e1a85ed4681b09cb9428b67e5"
+    },
+    {
+      "bytes": 12594,
+      "path": "LIVE_PREFLIGHT.md",
+      "purpose": "Workspace documentation, bootstrap or integrity utility",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "a4f8f6169f27bf3bd5d9027189f5686d883d2d1240174d0a5b1a8fe5abb0b608"
+    },
+    {
+      "bytes": 4349,
+      "path": "LIVE_PREFLIGHT_ATTEMPT_TWO_RESULT.md",
+      "purpose": "Separately authorized second preflight attempt and preserved outcome",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "4138e060a9191fbcb4577f3bfd3571cb4f6271d292d60936ae3b08f2c84a23bf"
+    },
+    {
+      "bytes": 5734,
+      "path": "LIVE_PROVIDER_PREFLIGHT_RESULT.md",
+      "purpose": "Authorized one-shot provider preflight, credential-free handoff evidence or retained outcome",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "e8075dce832a186ccc37aa9b8727986d0d00d110435e9ad8afde964973f2bd4e"
+    },
+    {
+      "bytes": 3224,
+      "path": "PREFLIGHT_VERIFICATION_REVISION_2.md",
+      "purpose": "Authorized generation lookup, one nano followup, versioned saved-response reassessment and pilot handoff",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "15abe9014dcb3e142022a6c18ef641cc2058a354478e93dfd174dadd64afd206"
+    },
+    {
+      "bytes": 5577,
+      "path": "PROVIDER_FAILURE_INVESTIGATION.md",
+      "purpose": "Offline provider failure investigation and targeted diagnostic verification",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "efa14bc14d8d5ce61e924f3207584b3942e6b3de3342bf2f57a703f1c90bb187"
+    },
+    {
+      "bytes": 6656,
+      "path": "PROVIDER_PREFLIGHT_FINAL_RESULT.md",
+      "purpose": "Authorized generation lookup, one nano followup, versioned saved-response reassessment and pilot handoff",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "6d709073c0f727969c39bdea873a92b124fb66bf2a60f544b9550d9536c88348"
+    },
+    {
+      "bytes": 16228,
+      "path": "PROVIDER_PREFLIGHT_REVIEW.md",
+      "purpose": "Public-provider preflight review; inert proposal and offline validation",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "2c7fcb56b22921018be4583059c2861e876223cf39104dd3e154fb0c45143387"
+    },
+    {
+      "bytes": 6274,
+      "path": "README.md",
+      "purpose": "Workspace documentation, bootstrap or integrity utility",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "008d69f0b3bd7a519dc4d23eddc475de3792242ef9c2cb07e581b4e9fe9389ab"
+    },
+    {
+      "bytes": 9503,
+      "path": "S1_R01_EXECUTION_READINESS.md",
+      "purpose": "Minimum live pilot prerequisite implementation, targeted checks, authenticity and prepared campaign evidence",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "76aaaf9f00ecafb2a90737e0d75163b9a6b97d2d49b581a8341810fd7c5bc722"
+    },
+    {
+      "bytes": 5201,
+      "path": "S1_R01_EXECUTION_RESULT.md",
+      "purpose": "S1-R01 report finalization and separate retrospective preliminary observations; raw execution preserved",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "00337db7e24a1757e78d97b9749929653ec4d9ade02d7cd07bd04ee8d0a7578e"
+    },
+    {
+      "bytes": 8726,
+      "path": "TWO_REQUEST_PREFLIGHT_AUTHORIZATION.md",
+      "purpose": "Bounded provider preflight implementation, targeted offline checks or authorization handoff",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "f3b2b1eaf689057ba80d51f4f0c3ce45d28db72415a1b1cc3f56a9772421d4c4"
+    },
+    {
+      "bytes": 9058,
+      "path": "WINDOWS_ISOLATION.md",
+      "purpose": "Workspace documentation, bootstrap or integrity utility",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "fe7df951aa49bb92fdf41b7118e0a666712d441f17b21aa7e7612c52e7f307ba"
+    },
+    {
+      "bytes": 78,
+      "path": "__init__.py",
+      "purpose": "Workspace documentation, bootstrap or integrity utility",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "78631efbe48469ae647bfb6504bf0df4252337b2265cf3a7ad0725c793779519"
+    },
+    {
+      "bytes": 11636,
+      "path": "broker_check.py",
+      "purpose": "Workspace documentation, bootstrap or integrity utility",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "63c2db08c68d4bca98f4507d35f2507e5267881983cbc422e5acd2801f9630e7"
+    },
+    {
+      "bytes": 1154,
+      "path": "common.py",
+      "purpose": "Workspace documentation, bootstrap or integrity utility",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "9d716b6d44ed4f613eb63cd80b6e4be2bbe7395c9eacc8e23db6fed9b5815a41"
+    },
+    {
+      "bytes": 7798,
+      "path": "evaluators/RUBRIC.md",
+      "purpose": "Researcher-only independent oracle and hypothesis review schemas",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "5625cd3d7819687bc8fbcf4402a8f031aebb70d918f2efc290edfcda4c4dcb71"
+    },
+    {
+      "bytes": 6434,
+      "path": "evaluators/S1-R01-preliminary-observations.md",
+      "purpose": "S1-R01 report finalization and separate retrospective preliminary observations; raw execution preserved",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "659a116124bac7422a26024ef3fbb11088d6d2c01e535edc11c395cdb1d5c9b7"
+    },
+    {
+      "bytes": 82,
+      "path": "evaluators/__init__.py",
+      "purpose": "Researcher-only independent oracle and hypothesis review schemas",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "9c4b88d5f2594225b94120e24e0fd57f20dea93260a94fdb83db882b9aaba1ec"
+    },
+    {
+      "bytes": 7155,
+      "path": "evaluators/assessment.py",
+      "purpose": "Researcher-only independent oracle and hypothesis review schemas",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "c03a42003c73631a8c6d4e96959b1b0e90095b4cf53f1942178701bacc235163"
+    },
+    {
+      "bytes": 10929,
+      "path": "evaluators/oracle_results/S1.json",
+      "purpose": "Researcher-only independent oracle and hypothesis review schemas",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "c02c4e01e008ff68055c1891b944eebd83ccaf78d3594ddf4d6db4bf539d6dea"
+    },
+    {
+      "bytes": 54794,
+      "path": "evaluators/oracle_results/S2-v2.json",
+      "purpose": "Researcher-only independent oracle and hypothesis review schemas",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "7646638b5157739991b1a3594903b4f89e9a9fa19b1d3ccdd3c52a5ebfbfc5c4"
+    },
+    {
+      "bytes": 1428,
+      "path": "evaluators/oracle_results/S3.json",
+      "purpose": "Researcher-only independent oracle and hypothesis review schemas",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "ada6c441ccaa69728ffbf0129284d88a5569c0517d1ab05671eba646897f41d8"
+    },
+    {
+      "bytes": 10128,
+      "path": "evaluators/oracles.py",
+      "purpose": "Researcher-only independent oracle and hypothesis review schemas",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "2d0e27a90f972af4080cd36a5aa98c644b21fcfc30d3e7d06cb2b5fd65cd6877"
+    },
+    {
+      "bytes": 79,
+      "path": "fixtures/__init__.py",
+      "purpose": "Explicitly synthetic model responses for runtime behavior tests",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "2d8e6ecef38e86389a2a72d2beeeaa17ce863816792e38be06409df923586d5a"
+    },
+    {
+      "bytes": 3623,
+      "path": "fixtures/programs.py",
+      "purpose": "Explicitly synthetic model responses for runtime behavior tests",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "2c537c0cc4b3199f58c00e4e0eff4a2038f4bf7aeb3084b9cde2976498afcd64"
+    },
+    {
+      "bytes": 33,
+      "path": "isolation-private/.env",
+      "purpose": "Workspace documentation, bootstrap or integrity utility",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "a2201a6406917e40bf8388a5e8d7866344559f9dc030bee37d90a6517c76ef59"
+    },
+    {
+      "bytes": 33,
+      "path": "isolation-private/assessments/labels.json",
+      "purpose": "Workspace documentation, bootstrap or integrity utility",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "a2201a6406917e40bf8388a5e8d7866344559f9dc030bee37d90a6517c76ef59"
+    },
+    {
+      "bytes": 33,
+      "path": "isolation-private/credentials/keys.txt",
+      "purpose": "Workspace documentation, bootstrap or integrity utility",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "a2201a6406917e40bf8388a5e8d7866344559f9dc030bee37d90a6517c76ef59"
+    },
+    {
+      "bytes": 33,
+      "path": "isolation-private/oracles/answer.txt",
+      "purpose": "Workspace documentation, bootstrap or integrity utility",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "a2201a6406917e40bf8388a5e8d7866344559f9dc030bee37d90a6517c76ef59"
+    },
+    {
+      "bytes": 1843,
+      "path": "isolation_check.py",
+      "purpose": "Workspace documentation, bootstrap or integrity utility",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "211319fba5a91c4b6d8d4a1baee9438b226769eb4cb60912de79c2e6a601d4b3"
+    },
+    {
+      "bytes": 3416,
+      "path": "live_baseline.py",
+      "purpose": "Minimum live pilot prerequisite implementation, targeted checks, authenticity and prepared campaign evidence",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "434d3f0b26dc38687b6f2d2db39a2c8015dfdb9ba070641d0d5f7e542bbc1407"
+    },
+    {
+      "bytes": 3325,
+      "path": "offline.py",
+      "purpose": "Workspace documentation, bootstrap or integrity utility",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "b06c6380aca9f00a90dd62c9fabb79375b75fbfc129a13762775be6dc6d01a2a"
+    },
+    {
+      "bytes": 11536,
+      "path": "pilot_prerequisite_check.py",
+      "purpose": "Minimum live pilot prerequisite implementation, targeted checks, authenticity and prepared campaign evidence",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "556c363e0d97eb87f708816672cd3ba0e021426c0419ad76111fc01e22325bea"
+    },
+    {
+      "bytes": 3465,
+      "path": "preflight_attempt_two.py",
+      "purpose": "Separately authorized second preflight attempt and preserved outcome",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "e2c8fc0165489fc329faf087ccafc6e7ab522f328061d4867d02ee54344a7d25"
+    },
+    {
+      "bytes": 3473,
+      "path": "preflight_generation_lookup.py",
+      "purpose": "Authorized generation lookup, one nano followup, versioned saved-response reassessment and pilot handoff",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "5d9ddf0f68ef4fba3c5dff6897718c5d959a53bd89d9d9f46da4b6aa87352c0c"
+    },
+    {
+      "bytes": 4044,
+      "path": "preflight_key_entry.py",
+      "purpose": "Authorized one-shot provider preflight, credential-free handoff evidence or retained outcome",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "960c8224137edf6d87a2b29aac04a1ac29bfdfccc12cb2d1629ff3d268dcbfd3"
+    },
+    {
+      "bytes": 2542,
+      "path": "preflight_nano_followup.py",
+      "purpose": "Authorized generation lookup, one nano followup, versioned saved-response reassessment and pilot handoff",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "35565b764c724c58d26f087d0d6782e14e1c57fdf3a0deb2ba79bd891adb9a89"
+    },
+    {
+      "bytes": 6933,
+      "path": "protocol.md",
+      "purpose": "Workspace documentation, bootstrap or integrity utility",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "f62310de4372e3169edfb992c5e035bb79f6267c6e36d071a855a92b5835ed46"
+    },
+    {
+      "bytes": 1881,
+      "path": "provider-preflight-proposal.json",
+      "purpose": "Public-provider preflight review; inert proposal and offline validation",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "b44ae48f87dbf0b15c20718b6a3f08da3c246f5f22055b5d6012de2f704c8325"
+    },
+    {
+      "bytes": 8420,
+      "path": "provider_diagnostics_check.py",
+      "purpose": "Offline provider failure investigation and targeted diagnostic verification",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "1e6650c831a829e564259a2dd6e2e7c0736d7802a36c4e55cee56792a7221f5f"
+    },
+    {
+      "bytes": 13286,
+      "path": "provider_preflight_check.py",
+      "purpose": "Bounded provider preflight implementation, targeted offline checks or authorization handoff",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "c1f73f5918730731a1e4c79d844d7a97af563381224980056e88ada224ee2298"
+    },
+    {
+      "bytes": 81594,
+      "path": "results/S1-R01-before-report-finalization-manifest.json",
+      "purpose": "S1-R01 report finalization and separate retrospective preliminary observations; raw execution preserved",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "bbe0bf55414c740abdd2d1158c302441a7d08fce51b11dc11317db44fa5982c9"
+    },
+    {
+      "bytes": 77395,
+      "path": "results/S1-R01-prior-artifact-manifest.json",
+      "purpose": "Authorized live S1-R01 baseline evidence and accounting; prior manifest retained separately",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "7749d2dc80b6659af3b4f4025900eab3787b39972105634bd8a4a3a4962b6cb6"
+    },
+    {
+      "bytes": 17144,
+      "path": "results/S1-R01-summary.json",
+      "purpose": "Authorized live S1-R01 baseline evidence and accounting; prior manifest retained separately",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "6f0f0906f92ef7ad8e342555bda349eb03b08b629c5dc4657a092f18e8e6e4a1"
+    },
+    {
+      "bytes": 2442,
+      "path": "results/assessment-fixtures.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "c8ee81f21542700a626ae309c7a8d45bc5ce89201ca660f2b32ff40b44db94ce"
+    },
+    {
+      "bytes": 268,
+      "path": "results/attempt-two-delta-check.json",
+      "purpose": "Separately authorized second preflight attempt and preserved outcome",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "fda6e0fa2927e82b1e0d5960fc98b496817caaf1d4b76c074f0f03eb6879e8e5"
+    },
+    {
+      "bytes": 3627,
+      "path": "results/broker-final-verification.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "727399b95ea3212edb1e5d54e9f6980f8104d2c0789a3257664fd44cd9bd8168"
+    },
+    {
+      "bytes": 519,
+      "path": "results/broker-followup-summary.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "bd756b4027ce245e56765486b7029af06410ef49f3921d81fb02db18bb3ab1b6"
+    },
+    {
+      "bytes": 198,
+      "path": "results/broker-http-check.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "1e9b61ff1e11c3b9c69f8c584b345e77a545b6b7a00cf1de56c760a0395d9f1f"
+    },
+    {
+      "bytes": 693,
+      "path": "results/broker-summary.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "2aeecd377c3b2c798afcf721c17d6b1bb06f8233780764ebaab0e0fcf42f2ec6"
+    },
+    {
+      "bytes": 960,
+      "path": "results/broker/broker-101015ae94284e4a99b9f6089882493a.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "293e93b1bdb11c04e7841bc7b5f5fc3dc2a75a77e5481c11dcae15be9917e474"
+    },
+    {
+      "bytes": 960,
+      "path": "results/broker/broker-122cd1306b354851bc41bb4e1f964d06.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "bbcf8e4d3c43a2062a33ca6af962cc2293a014ef298a4d87aa026fbc3383dfff"
+    },
+    {
+      "bytes": 7909,
+      "path": "results/broker/broker-1d2c1cbae6984f449e0fdaca744a43cf.journal.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "95a866d90bb76e8b10bbc8437c452939e9af73f5ce2ea96a86b45eb12da41928"
+    },
+    {
+      "bytes": 11623,
+      "path": "results/broker/broker-1d2c1cbae6984f449e0fdaca744a43cf.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "5f63cf3594cc3c320db7bc0d051d5aca88765d4137fb3b74b264c2ad02569565"
+    },
+    {
+      "bytes": 151292,
+      "path": "results/broker/broker-2b785fe2b9794b758d1d8cde438e6ba0.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "d0f08bd82269b8db3adfa69e675a8849bb8c73cd2f62e385b46fafd4bce207f0"
+    },
+    {
+      "bytes": 960,
+      "path": "results/broker/broker-2cd880a35d3b48a28738db39cb88c2fc.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "0758a0a82686c46589845149c27b632a003b597f549da202fd4d7b37af8f3c65"
+    },
+    {
+      "bytes": 960,
+      "path": "results/broker/broker-2e927dc79f4a488288c1b1d57afe9944.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "44615119c58a5c197b05ee08124bf10d1147dd41be0e238432b91281c797847c"
+    },
+    {
+      "bytes": 8094,
+      "path": "results/broker/broker-4216e1f2eee249d9bb7103bd5f0cc213.journal.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "842b4193233b37fe09498fda115c3aedd5783ef9b324bafd6e0e38a90a2e44c0"
+    },
+    {
+      "bytes": 11820,
+      "path": "results/broker/broker-4216e1f2eee249d9bb7103bd5f0cc213.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "95498e751438f6c50616e914f2c7db1966f8df918534ce4465c01d2aefe300e1"
+    },
+    {
+      "bytes": 960,
+      "path": "results/broker/broker-467cf6303d9046d49d54d160a9f9cdd3.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "cf876372b096fd8bd73faaddfb56e43c61e1cabc992f48877d30b8aea04c1581"
+    },
+    {
+      "bytes": 14325,
+      "path": "results/broker/broker-481dd59b06af4195bf152dbcc4d2daac.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "d1f55710c5c94edffadd3612f7a64dbdc6c40c616cf814103cc5673d62fb64c1"
+    },
+    {
+      "bytes": 959,
+      "path": "results/broker/broker-4e206b352f8c4aaf996b38daaa5abe48.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "9058ae4f4864c5b58ddc9a22008118d67b8bc5bf259f48da28a3f890f42fc87a"
+    },
+    {
+      "bytes": 7722,
+      "path": "results/broker/broker-5abd6e2b0fee459eb88b6f65c766a463.journal.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "46a6ae04553fb9d62e4699a64f8dd707a16b527517b6558b567f084e791ed972"
+    },
+    {
+      "bytes": 11436,
+      "path": "results/broker/broker-5abd6e2b0fee459eb88b6f65c766a463.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "f92bde73fda6f00dd400370f9c100871a852259602e6c06bccae3cc9e32c7865"
+    },
+    {
+      "bytes": 382,
+      "path": "results/broker/broker-659f137ed64b418985f03df3f21a9347.journal.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "d884283436b6e9b2d648b6338cf09806624502bc2ee2a437e67df0a943bf3a80"
+    },
+    {
+      "bytes": 4093,
+      "path": "results/broker/broker-659f137ed64b418985f03df3f21a9347.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "5cc60fdb8e48a96ef1be211c436b25597bc0318abc3be7fb0bb02008c21603c0"
+    },
+    {
+      "bytes": 37661,
+      "path": "results/broker/broker-6b549c5faece4f5b979c2de2d57ea069.journal.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "48ed8eb8d832abb2f1824a75147a85642825a0a60d03c32481f32ab11599aef4"
+    },
+    {
+      "bytes": 151291,
+      "path": "results/broker/broker-6b549c5faece4f5b979c2de2d57ea069.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "752f5146b5fb70f7957f83f8eae4bcd6018004c06be3db0e9d6d2a7a67648d7c"
+    },
+    {
+      "bytes": 960,
+      "path": "results/broker/broker-969dc9a9b8a84a9990e26534f698f959.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "07551b13daf85a8c69476d1fb80253b9442857af3f3ed32166f79c982d3fbc29"
+    },
+    {
+      "bytes": 875,
+      "path": "results/broker/broker-9711ce39a9904260b0dcce7c3cc6a57e.journal.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "6e60ddb1233f42304f9b98c1cffa3c3db0eb5dd9d08e68b8a6df48838b226e9b"
+    },
+    {
+      "bytes": 4591,
+      "path": "results/broker/broker-9711ce39a9904260b0dcce7c3cc6a57e.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "5a90bc4c7c426c6bae55acd292da816407b3eff34c6629d19c49230013e8e1f0"
+    },
+    {
+      "bytes": 8154,
+      "path": "results/broker/broker-b152de610f2e45b2ab40ee52963c4b4b.journal.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "e9aa1c1dcd70ad8115acb91f3e8904ff5459cf9721a073f44f45886f3143940a"
+    },
+    {
+      "bytes": 13399,
+      "path": "results/broker/broker-b152de610f2e45b2ab40ee52963c4b4b.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "e3d59f2af4a00ccc2471df6cdc9f9d8ae17c3d69560cdd17691c3b81da4fad64"
+    },
+    {
+      "bytes": 156168,
+      "path": "results/broker/broker-b678dc3892994a43b2278d7b85387adb.events.jsonl",
+      "purpose": "Minimum live pilot prerequisite implementation, targeted checks, authenticity and prepared campaign evidence",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "8e9dab14834d9440b3ced16ec745f3e8841f361fa2175c18990d59f7f281f056"
+    },
+    {
+      "bytes": 45284,
+      "path": "results/broker/broker-b678dc3892994a43b2278d7b85387adb.journal.json",
+      "purpose": "Minimum live pilot prerequisite implementation, targeted checks, authenticity and prepared campaign evidence",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "fd916fc57616c0544da9186667d3831349fdfd652cb30728dd98a412cfc4d5a2"
+    },
+    {
+      "bytes": 303544,
+      "path": "results/broker/broker-b678dc3892994a43b2278d7b85387adb.json",
+      "purpose": "Minimum live pilot prerequisite implementation, targeted checks, authenticity and prepared campaign evidence",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "b4e4c64f5be7d6c9059be744f56731209e07ab313605bb89b863cb93bfa3ca5b"
+    },
+    {
+      "bytes": 88210,
+      "path": "results/broker/broker-b678dc3892994a43b2278d7b85387adb.worker-response.json",
+      "purpose": "Minimum live pilot prerequisite implementation, targeted checks, authenticity and prepared campaign evidence",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "8faecc5693bcf13ecf75a603bba8cdb2e608615f8a95f09c1f62b822bdccd4ec"
+    },
+    {
+      "bytes": 382,
+      "path": "results/broker/broker-b9e438ec2f1f4dd6927e37e38f9b8ddf.journal.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "63dfea122b2901d1bec250139c14757d85538284938d8ceaeada3f6094981062"
+    },
+    {
+      "bytes": 907,
+      "path": "results/broker/broker-b9e438ec2f1f4dd6927e37e38f9b8ddf.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "59d79c2d8584c5f21069b8eb06f2375e0d1d75f21c80f256abc6a8d25aec2e35"
+    },
+    {
+      "bytes": 8075,
+      "path": "results/broker/broker-cb82dbda14c842ffb4b3153bbea1b9cc.journal.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "82a46a91b46c60a33152e0e571eb196957faa1245a6c9d41334f6f0b767003f4"
+    },
+    {
+      "bytes": 30917,
+      "path": "results/broker/broker-cb82dbda14c842ffb4b3153bbea1b9cc.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "960ec1fd3e5b651af19aae0ae0a7cc34707ead2bec4046ab8a8ca5e8d73ec465"
+    },
+    {
+      "bytes": 8194,
+      "path": "results/broker/broker-dbe74f1c6bd0481991f9e7e0b388cecd.journal.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "657da760e48fc1dab46b43dfe9d3819cc9d423cbbdae9c99948b7f0a64c418e4"
+    },
+    {
+      "bytes": 21322,
+      "path": "results/broker/broker-dbe74f1c6bd0481991f9e7e0b388cecd.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "d0d4676212a278e1f2d67f70f7a32c5475165b3fa5d8df83c0e8465df1d26a56"
+    },
+    {
+      "bytes": 690221,
+      "path": "results/broker/broker-e12d13f66e344ab0b5d4584182a890cd.events.jsonl",
+      "purpose": "Minimum live pilot prerequisite implementation, targeted checks, authenticity and prepared campaign evidence",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "9bc3978b8f025c2c1cb4550c6f12be1ab5914d0fa022c46eceaa3a4dd13e17d9"
+    },
+    {
+      "bytes": 317927,
+      "path": "results/broker/broker-e12d13f66e344ab0b5d4584182a890cd.journal.json",
+      "purpose": "Minimum live pilot prerequisite implementation, targeted checks, authenticity and prepared campaign evidence",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "556dce424a758507d3557e589db8bb5958915d87ee8073eb7eea20afe5f1f3d1"
+    },
+    {
+      "bytes": 1435935,
+      "path": "results/broker/broker-e12d13f66e344ab0b5d4584182a890cd.json",
+      "purpose": "Minimum live pilot prerequisite implementation, targeted checks, authenticity and prepared campaign evidence",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "7c221b4452b2b6b1b5e1fba86959af52df07109cac6718399911f1b5289f552d"
+    },
+    {
+      "bytes": 364878,
+      "path": "results/broker/broker-e12d13f66e344ab0b5d4584182a890cd.worker-response.json",
+      "purpose": "Minimum live pilot prerequisite implementation, targeted checks, authenticity and prepared campaign evidence",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "3b0476a2f5531cbad662b2258a271347be9319d4402557805daa9679a6fd16f5"
+    },
+    {
+      "bytes": 1571362,
+      "path": "results/broker/broker-eaa4d3f974474c0e807569e72ddf4432.events.jsonl",
+      "purpose": "Authorized live S1-R01 baseline evidence and accounting; prior manifest retained separately",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "2bbac214ff6bb19781fdc21745b11465819ea4613e65c7a6d262fd77b3d2e40b"
+    },
+    {
+      "bytes": 199679,
+      "path": "results/broker/broker-eaa4d3f974474c0e807569e72ddf4432.journal.json",
+      "purpose": "Authorized live S1-R01 baseline evidence and accounting; prior manifest retained separately",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "6f13f44bf35f8ed6087653c949a49c7d0ac1a23fe89c2f4bd1337d15d55851e8"
+    },
+    {
+      "bytes": 3558577,
+      "path": "results/broker/broker-eaa4d3f974474c0e807569e72ddf4432.json",
+      "purpose": "Authorized live S1-R01 baseline evidence and accounting; prior manifest retained separately",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "45af322a32a7e4e6e0aeb447730786abd3553e0be393a4382876e8aa16b226fb"
+    },
+    {
+      "bytes": 1218191,
+      "path": "results/broker/broker-eaa4d3f974474c0e807569e72ddf4432.worker-response.json",
+      "purpose": "Authorized live S1-R01 baseline evidence and accounting; prior manifest retained separately",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "7d599cff8a0cec1b61ce15f883e60c9e20a61ece2939583f8660dd2681826775"
+    },
+    {
+      "bytes": 38022,
+      "path": "results/broker/broker-fb94b0fa23ef456caa7097f34eadcbb3.journal.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "ec70eab764f5576b34dd0404262b6163f807429e6e867a2b7d46dadbca01536b"
+    },
+    {
+      "bytes": 190402,
+      "path": "results/broker/broker-fb94b0fa23ef456caa7097f34eadcbb3.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "99f21558e7b4b2552417aafa2276d16ad77d1bcfaba800a865d7a60632de64fd"
+    },
+    {
+      "bytes": 8108,
+      "path": "results/broker/broker-fd4e5437fa8d430d80ae58d071be6044.journal.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "6cfd820706309bae294843f98a4feae97f925db79b0f2d21e0989ec86d9df62c"
+    },
+    {
+      "bytes": 16687,
+      "path": "results/broker/broker-fd4e5437fa8d430d80ae58d071be6044.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "94a4717bc713fae3024753be126f2fea72e340d99bb9333c2642df3732508db5"
+    },
+    {
+      "bytes": 19353,
+      "path": "results/campaigns/official-baseline-v1.json",
+      "purpose": "Authorized live S1-R01 baseline evidence and accounting; prior manifest retained separately",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "719039f9bf7a1eefccacf4482dfc8ae7d2f0e682cd92b37d9222dfa50daf50ad"
+    },
+    {
+      "bytes": 53,
+      "path": "results/campaigns/official-baseline-v1.seed.lock",
+      "purpose": "Minimum live pilot prerequisite implementation, targeted checks, authenticity and prepared campaign evidence",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "53a91abf907893a331b0c491954c55fe82389d15ae0836a6df49a19018c2d69d"
+    },
+    {
+      "bytes": 729,
+      "path": "results/campaigns/offline-resume-check-5fd1ee54e0e141c9a3ba5f7f687815bc.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "044f53221d74d467d8a68348b62757dde892c8a99b12c3164f6c50a3ed6a63e5"
+    },
+    {
+      "bytes": 23557,
+      "path": "results/cancellation.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "4ed745b4a9c3d5937ad41ea31c8b4a3acc102900b8c5d9c45b5eff687714a7df"
+    },
+    {
+      "bytes": 4549,
+      "path": "results/equivalence-summary.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "106a07d2de6da76bee7316e9c8e0ed001714770f2ef31b49b5bd3375a0288e59"
+    },
+    {
+      "bytes": 26247,
+      "path": "results/equivalence/cancel.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "c924b0fe2ce2f850c2c149d4de6200d39b799dbfbc54cef5f4cfe350d677afa3"
+    },
+    {
+      "bytes": 52121,
+      "path": "results/equivalence/capture_then_error.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "27172361a0aded94c7177c2acc43512c0ea5914033b744712d88583214e96a59"
+    },
+    {
+      "bytes": 52171,
+      "path": "results/equivalence/capture_then_mutate.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "192b1035bfab9e44295404c96950971dbd37092e3a6b09fd9c339c8de1ae9733"
+    },
+    {
+      "bytes": 52344,
+      "path": "results/equivalence/caught_exception.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "f97312c3e772b20774642d35e7c7685efd31e069b961fcde106561d31261cd76"
+    },
+    {
+      "bytes": 115609,
+      "path": "results/equivalence/depth_fallback.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "51999b5743e5e9118ce585fcc6c8557e04c6e86eab750a9f94ab43495d3447c6"
+    },
+    {
+      "bytes": 60144,
+      "path": "results/equivalence/duplicate_plain_slots.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "e876bd900a292ac61b32593288bd645e7fc890974b9bc1f55d2d07f258261109"
+    },
+    {
+      "bytes": 166467,
+      "path": "results/equivalence/duplicate_recursive_slots.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "cd53823aba7a577ff028e833aa2ade614c88153ae52d85fadacf19a67a05db73"
+    },
+    {
+      "bytes": 96242,
+      "path": "results/equivalence/iteration_default.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "cc46458180a49b35124f86905efdd66796d7f127daa1a362659d654ebfff0e15"
+    },
+    {
+      "bytes": 56119,
+      "path": "results/equivalence/multiple_blocks.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "bd1dcc2da193116ca746be1d0553f1a777708bd786f017402ae23bf17957233f"
+    },
+    {
+      "bytes": 100266,
+      "path": "results/equivalence/mutable_snapshot.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "4d3085864faac5e12028df9cbbb579749e2ddfe4d8b196e2d154aedd59ebd098"
+    },
+    {
+      "bytes": 63204,
+      "path": "results/equivalence/plain_batch.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "622e58bd8a03396d0f6611773fb572b6ab18364abc9bbe2b90813a4cfb04bc2b"
+    },
+    {
+      "bytes": 56547,
+      "path": "results/equivalence/plain_consumption.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "ccd271e8424b3ffaaccc097ee672e5012d07aa80b77e6898a91e778252fa5174"
+    },
+    {
+      "bytes": 55752,
+      "path": "results/equivalence/provider_error.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "0ac8a8aaecc2a01aa88451b5dc623666bbe6d157df22e5652efb17e894700e75"
+    },
+    {
+      "bytes": 50790,
+      "path": "results/equivalence/rebound_answer.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "bbb0adf994933446547f4b0c16fc9a8cbef3166a9c9f914ea46879675c85ef28"
+    },
+    {
+      "bytes": 109732,
+      "path": "results/equivalence/recursive.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "560c7bd12d33f5936ac95b648f0c55cc2830af31b1f0e01c0c957e6b3d3bd21c"
+    },
+    {
+      "bytes": 166308,
+      "path": "results/equivalence/recursive_batch.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "47099c077f5587a95065b34f37deb0a13306e52a3a6473717f2edfd0529188a0"
+    },
+    {
+      "bytes": 60066,
+      "path": "results/equivalence/reordered_plain_slots.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "00c2b4aa22cb8c9e0a8e66a92aae086fc7eca4507db8eba6d67be0099831e8bb"
+    },
+    {
+      "bytes": 53307,
+      "path": "results/equivalence/repeated_capture.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "c53f646f7eee20011acc96791af8d3dc2cc47a0ecbec3bcf8c41e8af8e85c7a2"
+    },
+    {
+      "bytes": 51717,
+      "path": "results/equivalence/same_block.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "ccd28bda89c8c7c2f065e4743ef66069399f34f926cfd4570fba39025e670019"
+    },
+    {
+      "bytes": 334867,
+      "path": "results/equivalence/truncated_feedback.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "2cdae17429828a7a76ee26a9501f466ba73222444ab9e26fb328d479ce547fca"
+    },
+    {
+      "bytes": 99979,
+      "path": "results/equivalence/uncaught_recovery.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "5fad5ae1ca6c37a820fd853b87e7db18c99d8fe7e130681c43ace230660bb27d"
+    },
+    {
+      "bytes": 663,
+      "path": "results/final-verification.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "87a901e0bb74b422da38722cf16b17f6cc195c3197cd17e8bf772cf478f81b01"
+    },
+    {
+      "bytes": 9696,
+      "path": "results/integrity-after.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "abe7f590849f454bfa33bb1ecaa953ffe83f32d8b0cb8d9d70b91a2579f32e6c"
+    },
+    {
+      "bytes": 9696,
+      "path": "results/integrity-before.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "abe7f590849f454bfa33bb1ecaa953ffe83f32d8b0cb8d9d70b91a2579f32e6c"
+    },
+    {
+      "bytes": 14672,
+      "path": "results/integrity-verification.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "155a64b2a14c84e8ece44919012256df232451db3268b6177a085d27b60cfcbb"
+    },
+    {
+      "bytes": 417,
+      "path": "results/isolation.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "bac17a57e00d344da4f9772299cac24b33f5d2569dafb80fd6d0237085686f00"
+    },
+    {
+      "bytes": 516970,
+      "path": "results/mock/isolated-mock-3ef2151b56c64e629377f83f3dd02025.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "c6468d138c52a2e413b58be4f8bd7c7b4b5df35f6b1a8b0d108bb2a9ea8e23d9"
+    },
+    {
+      "bytes": 344338,
+      "path": "results/mock/isolated-mock-b25de69d453c4d24a1bfca4702011e49.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "23de99421e22cac31cd0dbddc96f6d8a9e0b19f320def279860e0995443ef32d"
+    },
+    {
+      "bytes": 252897,
+      "path": "results/mock/isolated-mock-f082573d6ff6402293a360de4ac0a573.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "78e7979764b66aa6f58810ff499eb8eb58afefcb0f8cff676461ed956759ee4b"
+    },
+    {
+      "bytes": 908333,
+      "path": "results/mock/supervised-mock-3fffa8d34b9545ffb91255fe07f8d06f.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "ef021e144e9b0c903f39f4bbfda212b310b97e5ef184975bbab30225dca3cd76"
+    },
+    {
+      "bytes": 439831,
+      "path": "results/mock/supervised-mock-a39876f812bd492fa3be300901b4f994.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "401406cd4c0dd8bc5b92b6f528ec81a75d714b32e032dd8d32dfabdfa949dcb7"
+    },
+    {
+      "bytes": 602073,
+      "path": "results/mock/supervised-mock-ec3c1f2bc2424282b2ece58bfe23fd11.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "346312fc1a6ce9adf4c16bae4420db1addf4f8b6ede6b86d6f4d8439fe0cddb4"
+    },
+    {
+      "bytes": 5803,
+      "path": "results/offline-preflight-before-broker.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "c5ff0bf14227d1ae5d5b5ec85ae8747f6d06ae151fd23cc510aec59d5ca40dbe"
+    },
+    {
+      "bytes": 2211,
+      "path": "results/offline-preflight-before-windows.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "fb0ea36943f39d24cc4bdd7376aff552a659ea4f7555a9dacc44117cd1e9e76e"
+    },
+    {
+      "bytes": 8041,
+      "path": "results/offline-preflight.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "b3dfd806335053f0cd188dc9c34024f76e9c3f04515138b06e0f09f179393a1e"
+    },
+    {
+      "bytes": 193,
+      "path": "results/pilot-policy-check.json",
+      "purpose": "Minimum live pilot prerequisite implementation, targeted checks, authenticity and prepared campaign evidence",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "99ce2125f1b5a982a1b89be1d44428263145859610372c602c03ed68d95f8911"
+    },
+    {
+      "bytes": 329,
+      "path": "results/pilot-resume-check.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "bdb77e55c387bb86355c65568c2183a4236062a1889af54d4dc33a46f300f02b"
+    },
+    {
+      "bytes": 347,
+      "path": "results/pilot-runtime-evidence-check-first.json",
+      "purpose": "Minimum live pilot prerequisite implementation, targeted checks, authenticity and prepared campaign evidence",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "397eaee18ea7d98c716481e575d566ab19aabc4c5b4233d63113294d221c7bf2"
+    },
+    {
+      "bytes": 347,
+      "path": "results/pilot-runtime-evidence-check-second.json",
+      "purpose": "Minimum live pilot prerequisite implementation, targeted checks, authenticity and prepared campaign evidence",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "397eaee18ea7d98c716481e575d566ab19aabc4c5b4233d63113294d221c7bf2"
+    },
+    {
+      "bytes": 228,
+      "path": "results/pilot-runtime-evidence-check.json",
+      "purpose": "Minimum live pilot prerequisite implementation, targeted checks, authenticity and prepared campaign evidence",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "676a39e21e51d58d4b02d1a204634f096811446ad4175ef7c2b4529f2678b5b5"
+    },
+    {
+      "bytes": 83,
+      "path": "results/pilot-runtime-evidence-reference-first.json",
+      "purpose": "Minimum live pilot prerequisite implementation, targeted checks, authenticity and prepared campaign evidence",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "74c63577034c0dc8e9a5eba1a5bf11a04e2ed3ba7709a127487b08e993aa4aac"
+    },
+    {
+      "bytes": 83,
+      "path": "results/pilot-runtime-evidence-reference-second.json",
+      "purpose": "Minimum live pilot prerequisite implementation, targeted checks, authenticity and prepared campaign evidence",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "ee3a8d3aeac0c1fdc3a04e50fe8f5de9b7531f42eac38cb1943b69d00511dcad"
+    },
+    {
+      "bytes": 83,
+      "path": "results/pilot-runtime-evidence-reference.json",
+      "purpose": "Minimum live pilot prerequisite implementation, targeted checks, authenticity and prepared campaign evidence",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "ee3a8d3aeac0c1fdc3a04e50fe8f5de9b7531f42eac38cb1943b69d00511dcad"
+    },
+    {
+      "bytes": 1344,
+      "path": "results/preflight-investigation-preserved-hashes.json",
+      "purpose": "Offline provider failure investigation and targeted diagnostic verification",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "5cc354e4c5d1a4be3d520df10378c22b2324bb25be9259b95a3e9326ae5020aa"
+    },
+    {
+      "bytes": 271,
+      "path": "results/provider-diagnostics-check.json",
+      "purpose": "Offline provider failure investigation and targeted diagnostic verification",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "82f4743a46d6a78467013225847dc0d36bd162b0d241467fabfb03f37dcceb96"
+    },
+    {
+      "bytes": 1028,
+      "path": "results/provider-failure-investigation-final.json",
+      "purpose": "Offline provider failure investigation and targeted diagnostic verification",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "d9861dd3b11e651aee0c36bf997d83ffdfaee698413c2ff51b03a184f02a2794"
+    },
+    {
+      "bytes": 210,
+      "path": "results/provider-preflight-check-62d2747cb9294f4a8515d24b31c94d0b.json",
+      "purpose": "Bounded provider preflight implementation, targeted offline checks or authorization handoff",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "fc2bc47b3d51ce8f4a88054c394163327045b412f22af8ac67f8b7de2ffe2356"
+    },
+    {
+      "bytes": 190,
+      "path": "results/provider-preflight-http-regression.json",
+      "purpose": "Bounded provider preflight implementation, targeted offline checks or authorization handoff",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "6ad329b9004d910f0fa28afe62ea1ccc9e2cf308ec843b00aa6a39448cfe8f53"
+    },
+    {
+      "bytes": 5186,
+      "path": "results/provider-preflight-implementation-final.json",
+      "purpose": "Bounded provider preflight implementation, targeted offline checks or authorization handoff",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "424513556558ef7b218b16ce9a0d6b7b4fd3b05a5eceb6bf4e1910b38338b809"
+    },
+    {
+      "bytes": 1760,
+      "path": "results/provider-preflight-review-final.json",
+      "purpose": "Offline provider-response reproduction and final preflight review integrity",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "aa1970940699c633fa1eff70e2167157f76b2e51711434d6f92381cdb4b9a8cb"
+    },
+    {
+      "bytes": 1282,
+      "path": "results/provider-preflight-review-validation.json",
+      "purpose": "Public-provider preflight review; inert proposal and offline validation",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "a1fb5ea3cf0b57a7597b56a5d76a836ed817bc1d2ac62b6f84d525bcfa430089"
+    },
+    {
+      "bytes": 532,
+      "path": "results/provider-preflight/account-confirmation.json",
+      "purpose": "Authorized one-shot provider preflight, credential-free handoff evidence or retained outcome",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "558e8fc462e52adafdba65f0ca0a2dcdca942b70688445e92947b793d090a07c"
+    },
+    {
+      "bytes": 918,
+      "path": "results/provider-preflight/attempt-two-authorization.json",
+      "purpose": "Separately authorized second preflight attempt and preserved outcome",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "b8267ee89afd7c7e96f2cc4fe8d62c2730f2b207ba60f31ca1bc6423c88d1bf9"
+    },
+    {
+      "bytes": 64,
+      "path": "results/provider-preflight/attempt-two-entry.lock",
+      "purpose": "Separately authorized second preflight attempt and preserved outcome",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "1a488b7dce9540b85b4570d564b229e5dc69b6ce93ce4e15a025c12d4a93168d"
+    },
+    {
+      "bytes": 730,
+      "path": "results/provider-preflight/attempt-two-outcome.json",
+      "purpose": "Separately authorized second preflight attempt and preserved outcome",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "5dc53064a05d11fc9f2b1aee62a7c6e3eacace726be5c8880003f0953ae72b54"
+    },
+    {
+      "bytes": 790,
+      "path": "results/provider-preflight/authorization.json",
+      "purpose": "User-approved two-request activation; credential handoff pending",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "96e15cbe2063184e76eacc81c273d074825cac22a9de8b388c055f98fb24600f"
+    },
+    {
+      "bytes": 235,
+      "path": "results/provider-preflight/credential-entry-before-input-failure.json",
+      "purpose": "Authorized one-shot provider preflight, credential-free handoff evidence or retained outcome",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "f31623fd8f65ba61ee728c774ab2ee81ee5a82fca5bfd02ae8807db46fb7a65f"
+    },
+    {
+      "bytes": 65,
+      "path": "results/provider-preflight/credential-entry-before-input-failure.lock",
+      "purpose": "Authorized one-shot provider preflight, credential-free handoff evidence or retained outcome",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "9627f60d6c450deb55784f2928c96e15a11644b7ba18342a70bc16826d789d09"
+    },
+    {
+      "bytes": 65,
+      "path": "results/provider-preflight/credential-entry.lock",
+      "purpose": "Authorized one-shot provider preflight, credential-free handoff evidence or retained outcome",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "9627f60d6c450deb55784f2928c96e15a11644b7ba18342a70bc16826d789d09"
+    },
+    {
+      "bytes": 260,
+      "path": "results/provider-preflight/credential-handoff.json",
+      "purpose": "Authorized one-shot provider preflight, credential-free handoff evidence or retained outcome",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "786b4c997ac56e1de68d399704e43a6db53d25e9583f32b1964c68fba81732d7"
+    },
+    {
+      "bytes": 1591,
+      "path": "results/provider-preflight/final-reassessment-outcome.json",
+      "purpose": "Authorized generation lookup, one nano followup, versioned saved-response reassessment and pilot handoff",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "b1d136e9f8c80663deaa102fdfec795067f06bf68c6cfe7cdd021a9c89691ceb"
+    },
+    {
+      "bytes": 2355,
+      "path": "results/provider-preflight/gpt5-generation-lookup.json",
+      "purpose": "Authorized generation lookup, one nano followup, versioned saved-response reassessment and pilot handoff",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "c06eb9163437a29cc177adcf8e75fc98e0f5d1e1b3b7191a8ccac955d0703bee"
+    },
+    {
+      "bytes": 46,
+      "path": "results/provider-preflight/gpt5-generation-lookup.lock",
+      "purpose": "Authorized generation lookup, one nano followup, versioned saved-response reassessment and pilot handoff",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "1d054106a4f5681aead73c4baea873d94d38b606a3515be7987d6c627525580a"
+    },
+    {
+      "bytes": 636,
+      "path": "results/provider-preflight/gpt5-reassessment-v2.json",
+      "purpose": "Authorized generation lookup, one nano followup, versioned saved-response reassessment and pilot handoff",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "269148df86b29b73a3c5e64ee8f71eeddc6d160b483d12dea752c0bc1e69b82a"
+    },
+    {
+      "bytes": 305,
+      "path": "results/provider-preflight/handoff-offline-check.json",
+      "purpose": "Authorized one-shot provider preflight, credential-free handoff evidence or retained outcome",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "a1494bef98d416ee7cdeb81ff9d46551a8a2da83e4d48a04c90e5c7be1fe3e9e"
+    },
+    {
+      "bytes": 8107,
+      "path": "results/provider-preflight/live-attempt-two.json",
+      "purpose": "Separately authorized second preflight attempt and preserved outcome",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "fddc40d75c8dfd4f75ae745b5bbbb796acaf36e62ad642519572577aa33b3bd2"
+    },
+    {
+      "bytes": 9944,
+      "path": "results/provider-preflight/live-nano-followup.json",
+      "purpose": "Authorized generation lookup, one nano followup, versioned saved-response reassessment and pilot handoff",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "e63ef54608a31aec964af6fdab24423400a9b3b8e01a61ac028049c5e1003cb6"
+    },
+    {
+      "bytes": 1787,
+      "path": "results/provider-preflight/live-outcome.json",
+      "purpose": "Authorized one-shot provider preflight, credential-free handoff evidence or retained outcome",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "52abe73fcb7bdb379974d7e872240360bac7ca704b7f57e0bf1f4bcb03502f91"
+    },
+    {
+      "bytes": 1945,
+      "path": "results/provider-preflight/live.json",
+      "purpose": "Authorized one-shot provider preflight, credential-free handoff evidence or retained outcome",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "14617a6857166881072a2ebd0a23bd7d5689bf2f60dec256fc448a893f2e6053"
+    },
+    {
+      "bytes": 759,
+      "path": "results/provider-preflight/nano-followup-authorization.json",
+      "purpose": "Authorized generation lookup, one nano followup, versioned saved-response reassessment and pilot handoff",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "ff813b634676ca140f5f7d070c06feba00033c27dd166b45b379105de23c7626"
+    },
+    {
+      "bytes": 54,
+      "path": "results/provider-preflight/nano-followup-entry.lock",
+      "purpose": "Authorized generation lookup, one nano followup, versioned saved-response reassessment and pilot handoff",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "fccc56d35e0d2495b6f87259fe485269e9dad83600d0a0341eb3f8558d674944"
+    },
+    {
+      "bytes": 693,
+      "path": "results/provider-preflight/nano-reassessment-v3.json",
+      "purpose": "Authorized generation lookup, one nano followup, versioned saved-response reassessment and pilot handoff",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "89c92cf0e016d685397cea4b22dc9164e7bff289783035f9a523948a9db23c32"
+    },
+    {
+      "bytes": 6239,
+      "path": "results/provider-response-review.json",
+      "purpose": "Offline provider-response reproduction and final preflight review integrity",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "6ebb6fbde5a519258500cbf05ecf1e361f8a04a09c1e334d931177b51ec9c959"
+    },
+    {
+      "bytes": 42,
+      "path": "results/researcher-only-canary.txt",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "8eb0a85e170a4112f002070e0eaccc5898e1f87aa96c58fc7801b78d3a79f3b5"
+    },
+    {
+      "bytes": 975,
+      "path": "results/s1-r01-readiness.json",
+      "purpose": "Minimum live pilot prerequisite implementation, targeted checks, authenticity and prepared campaign evidence",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "6c3f50c792e8183a0253af3c3f9abe9c007a6fc6947d8779d34e25808476aacf"
+    },
+    {
+      "bytes": 152191,
+      "path": "results/supervision.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "0c12fb09760c9403c9ac7d62b1b4e6f2b93e764e1d03881e937d87960e30cf72"
+    },
+    {
+      "bytes": 3622,
+      "path": "results/test-output.txt",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "0604da929018ddcf91f3b24204cccba89c23fa020260a2f3676005958fb5b48a"
+    },
+    {
+      "bytes": 216,
+      "path": "results/test-summary.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "2fea8f2718b73a6078a3dbf0345291e44799db44e4cae0c32fd16b2764599456"
+    },
+    {
+      "bytes": 595,
+      "path": "results/verification-revision-2-check.json",
+      "purpose": "Authorized generation lookup, one nano followup, versioned saved-response reassessment and pilot handoff",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "4779944b713ea15e0e0f653731df454bb359c59c281377f342363425dc6629c4"
+    },
+    {
+      "bytes": 546,
+      "path": "results/verification-revision-3-check.json",
+      "purpose": "Authorized generation lookup, one nano followup, versioned saved-response reassessment and pilot handoff",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "4ac7906d549338d878630a85757bf3d8552002ce2c38488b75dfb5534c9cd1b7"
+    },
+    {
+      "bytes": 61,
+      "path": "results/windows-check-failure.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "1fe3ac86485d25efcad675ed5988896be60c9be1ca77cd3b1d51f82a5367096b"
+    },
+    {
+      "bytes": 108515,
+      "path": "results/windows-isolation/access-probe.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "cd3a169d0e8a57db83f7825c2521b1763f8ab12e1af4adda908e5229e2b2b25f"
+    },
+    {
+      "bytes": 19547,
+      "path": "results/windows-isolation/cancel.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "e739f8ce5882eb7cd2b68acacd93ca6ebe5af248d82fdfec82aa193abbc5da8e"
+    },
+    {
+      "bytes": 37847,
+      "path": "results/windows-isolation/capture_then_error.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "0f792d8083f868fcf24a4f68599b18f4783ebd53f3e66c8875049e8a874025a7"
+    },
+    {
+      "bytes": 37878,
+      "path": "results/windows-isolation/capture_then_mutate.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "cf6c238f9ac730b20c43c40d9c2dbc4d9d13e9065c82abf734c9975734d4633a"
+    },
+    {
+      "bytes": 37999,
+      "path": "results/windows-isolation/caught_exception.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "6c7521897ee1ff2142cbb4b4ff072c634942eaa4e1d4ab37477b4af76b0f784d"
+    },
+    {
+      "bytes": 84482,
+      "path": "results/windows-isolation/depth_fallback.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "636b722ade40c09e3f6cb16c3b65834ffc4d4b93a40dd74238b007bf0d720a72"
+    },
+    {
+      "bytes": 44591,
+      "path": "results/windows-isolation/duplicate_plain_slots.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "fbe9972f3fbdf40071d6227349a91990889deb6a71805bf6428abc6f4dfc22aa"
+    },
+    {
+      "bytes": 120358,
+      "path": "results/windows-isolation/duplicate_recursive_slots.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "403d964e8fb6961917ac261c9a3cefb353b87f6004376abd0cc8a22beb547cee"
+    },
+    {
+      "bytes": 3009,
+      "path": "results/windows-isolation/entrypoint-checks.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "5dc98834762d4adc29a278ab574cbb0640cbf85105a5e98f18bd0649bb63f71c"
+    },
+    {
+      "bytes": 835,
+      "path": "results/windows-isolation/final-verification.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "bc626fcb04e285531917f700dfd122fe17e7cdc14c2287eef7df22b531bb4765"
+    },
+    {
+      "bytes": 67507,
+      "path": "results/windows-isolation/iteration_default.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "6dd7ca7343056f77ba32653b675c3c0dee69c2ee1391614b518c300832641945"
+    },
+    {
+      "bytes": 41398,
+      "path": "results/windows-isolation/multiple_blocks.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "7ba9210df703fc7e79aa583ddee742218928886df4f1e5f7938ebc23ffd0f01a"
+    },
+    {
+      "bytes": 70909,
+      "path": "results/windows-isolation/mutable_snapshot.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "6f452df24a48795f1cd090e3d25e21c351bd96ce5d2dbb5bfdf1675f517e5e3a"
+    },
+    {
+      "bytes": 47186,
+      "path": "results/windows-isolation/plain_batch.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "59dddd2014429d1d7d2431f32481fc3fd86601caad5d061dce47b305a1635304"
+    },
+    {
+      "bytes": 41721,
+      "path": "results/windows-isolation/plain_consumption.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "b35d35a10955b7c547e4408e6a5c333b671a67c797316fef6bde2e729dfe13c5"
+    },
+    {
+      "bytes": 41357,
+      "path": "results/windows-isolation/provider_error.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "672aa8c584d2d45798452bc0abe138796c60486c44ac0b9a814c4507854c4a2c"
+    },
+    {
+      "bytes": 36637,
+      "path": "results/windows-isolation/rebound_answer.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "6f7c2da43ebaa1a9a386fad5d1c5c94f12cf748ace612d2803dd4c81c0cbabe1"
+    },
+    {
+      "bytes": 79558,
+      "path": "results/windows-isolation/recursive.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "3f3b20fbb45092a5e5d43683ceb6344a969308d589081aac9e5bca7c894f5b1c"
+    },
+    {
+      "bytes": 120238,
+      "path": "results/windows-isolation/recursive_batch.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "0a384f2aac4d954a64f3ec40bec9c64b4a9a322eb91a3ec9ea81a5dd8505fce5"
+    },
+    {
+      "bytes": 44538,
+      "path": "results/windows-isolation/reordered_plain_slots.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "fe280613147e24a4e13227df46b2f45e7a6d6bd95a26c683d1408702b1e15635"
+    },
+    {
+      "bytes": 39138,
+      "path": "results/windows-isolation/repeated_capture.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "f9655a1a747e0738c74a3cdc3f5badc4843da9d48aaeccad85bcf53451b2f7ba"
+    },
+    {
+      "bytes": 37581,
+      "path": "results/windows-isolation/same_block.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "241755e6350c396e098a15867d20a816613d7a8eac4b0b9ac10b771b125bdf10"
+    },
+    {
+      "bytes": 2991,
+      "path": "results/windows-isolation/summary.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "5989a6746227783c63ef5543c008263995d85436af16ff6b95ab4721c5bc2a25"
+    },
+    {
+      "bytes": 685,
+      "path": "results/windows-isolation/transport-summary.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "12949a9ba2696c8722669d5413251725874025b5ae429fb5c5bee1dadc37c02b"
+    },
+    {
+      "bytes": 220625,
+      "path": "results/windows-isolation/truncated_feedback.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "54d1b5af70a1bcecf9ecf431b8b6a167da64d200b0bead1a89ed6d0820c25f3f"
+    },
+    {
+      "bytes": 70707,
+      "path": "results/windows-isolation/uncaught_recovery.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "0055ecb7cdbe9e2c0b07486b5413e86db908c0129b4f1aed204ec27f3a4094e3"
+    },
+    {
+      "bytes": 70051,
+      "path": "results/windows-stage-before-broker.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "c4e7529ed4899317f144ad48997cf472432e34e098b8ddd5982cbbf02307501a"
+    },
+    {
+      "bytes": 70203,
+      "path": "results/windows-stage.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "492abf2d22b8ec2405c027f91638c14b9155dbf7db720c51f02714951ab89593"
+    },
+    {
+      "bytes": 84182,
+      "path": "results/windows-startup.json",
+      "purpose": "Offline validation evidence; no natural baseline observations",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "2525ed192444798632866eb2f2bf71db0dce0561a9a90ffc6065dc0de66d1da3"
+    },
+    {
+      "bytes": 72,
+      "path": "runners/__init__.py",
+      "purpose": "Offline execution, passive observation, resource supervision and pilot gates",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "ea14e602635815138a06c2ed00462e40087aa80ae249c5b07639163b89ce54f8"
+    },
+    {
+      "bytes": 21910,
+      "path": "runners/broker.py",
+      "purpose": "Offline execution, passive observation, resource supervision and pilot gates",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "440105b2b717afaf1fbba40325816752f6d633a0f2fc05d967e5b1cb9044ddd6"
+    },
+    {
+      "bytes": 6874,
+      "path": "runners/broker_client.py",
+      "purpose": "Offline execution, passive observation, resource supervision and pilot gates",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "4d70f1444cb2bb49231cd38458ede3450125f56560154c6fe45e90b77ec0ff35"
+    },
+    {
+      "bytes": 6786,
+      "path": "runners/budget.py",
+      "purpose": "Offline execution, passive observation, resource supervision and pilot gates",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "dd23ba927526c697cb16a6cf30b99177b460587d2289549680f5b6fdba0fb585"
+    },
+    {
+      "bytes": 1633,
+      "path": "runners/config.py",
+      "purpose": "Offline execution, passive observation, resource supervision and pilot gates",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "362f1f6b5a81a56cdd8b6415d0e734d85337bdffaffba3ebca7b34432cb366eb"
+    },
+    {
+      "bytes": 3035,
+      "path": "runners/isolation_worker.py",
+      "purpose": "Offline execution, passive observation, resource supervision and pilot gates",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "15aa15a9a7eeaacb69cbefb0477d633326fac569e068b561bda7666781c3cbff"
+    },
+    {
+      "bytes": 7251,
+      "path": "runners/mock.py",
+      "purpose": "Offline execution, passive observation, resource supervision and pilot gates",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "7e25499db9e36392f47128e9b7fa0e3370f941da25b154df5c30561abd0819ea"
+    },
+    {
+      "bytes": 11550,
+      "path": "runners/observe.py",
+      "purpose": "Offline execution, passive observation, resource supervision and pilot gates",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "54828582c712c58c6b19fd78bfcef0248bf06860ba5226447f2644d7253fa41f"
+    },
+    {
+      "bytes": 1931,
+      "path": "runners/offline_guard.py",
+      "purpose": "Offline execution, passive observation, resource supervision and pilot gates",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "d9e31777d0bfc7c5e7dffd25bc62bc1987b95929dcb4e38869ce31eba7854946"
+    },
+    {
+      "bytes": 1784,
+      "path": "runners/pilot.json",
+      "purpose": "Offline execution, passive observation, resource supervision and pilot gates",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "eee97bf52e26dfa2606e72698632a7d5ebd26a6c5a2f57214d8405f272bce521"
+    },
+    {
+      "bytes": 6256,
+      "path": "runners/pilot_policy.py",
+      "purpose": "Minimum live pilot prerequisite implementation, targeted checks, authenticity and prepared campaign evidence",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "8c27f763a0ca24973aa9aaba79749aae1666c366e0aaa22b68aaaf758a303576"
+    },
+    {
+      "bytes": 5589,
+      "path": "runners/pilot_runner.py",
+      "purpose": "Offline execution, passive observation, resource supervision and pilot gates",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "0263962fbfa1cbc62bd570447bd71e817de4c7135afb860fa605007a9036d32a"
+    },
+    {
+      "bytes": 9353,
+      "path": "runners/preflight.py",
+      "purpose": "Offline execution, passive observation, resource supervision and pilot gates",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "a8bbe0611d60d29f83fe40ebc90650d23e737192ddfa63d1ac5b528a4960f8fb"
+    },
+    {
+      "bytes": 12849,
+      "path": "runners/provider_preflight.py",
+      "purpose": "Bounded provider preflight implementation, targeted offline checks or authorization handoff",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "ae801332fff8c64e6ed4ee8bd0ee5e6fb21d5a95a503c21dfc871885dc9def39"
+    },
+    {
+      "bytes": 4349,
+      "path": "runners/supervisor.py",
+      "purpose": "Offline execution, passive observation, resource supervision and pilot gates",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "d2c0ed47f52f035e024d2a8e764b78b65a3c75efc91cb1af2a99ad04b6d957f0"
+    },
+    {
+      "bytes": 1497,
+      "path": "runners/temp_permissions.py",
+      "purpose": "Offline execution, passive observation, resource supervision and pilot gates",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "30f346b0fe104bbf136eeaf5f969e96b80b7607f8cc22a85e5cdccce697f357b"
+    },
+    {
+      "bytes": 18299,
+      "path": "runners/windows_boundary.py",
+      "purpose": "Offline execution, passive observation, resource supervision and pilot gates",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "c734eef3927cd11d772e6352305518d9ef7fedc01f64723014319643fff1da68"
+    },
+    {
+      "bytes": 79,
+      "path": "tasks/__init__.py",
+      "purpose": "Frozen public inputs, queries, renderer and dataset provenance",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "de3fabd25f9b395e74550a7f2d2bab678893967365e97f202605f50c8a553ed0"
+    },
+    {
+      "bytes": 44970,
+      "path": "tasks/data/S1/context.txt",
+      "purpose": "Frozen public inputs, queries, renderer and dataset provenance",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "c5118358cb1320e901483b37cbdef3577d1db8188a18f6b9bcd7b873a89ceaff"
+    },
+    {
+      "bytes": 1675,
+      "path": "tasks/data/S1/query.txt",
+      "purpose": "Frozen public inputs, queries, renderer and dataset provenance",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "2b2906e3bef0677692633e3f297321b87a5651230ff51dd38ff81d668ae10a65"
+    },
+    {
+      "bytes": 32858,
+      "path": "tasks/data/S2-v2/context.txt",
+      "purpose": "Frozen public inputs, queries, renderer and dataset provenance",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "2910a820abaa38032ab01ffd07eb603e06b53a3f683b3f8210808bdd58c44069"
+    },
+    {
+      "bytes": 962,
+      "path": "tasks/data/S2-v2/query.txt",
+      "purpose": "Frozen public inputs, queries, renderer and dataset provenance",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "bfcf433d53cbfa8e808d51140ad485b59d6f9392a968819ef2be74a3c1461627"
+    },
+    {
+      "bytes": 19942,
+      "path": "tasks/data/S3/context.txt",
+      "purpose": "Frozen public inputs, queries, renderer and dataset provenance",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "55075334b0f7080a790dda9a4b5582de41cd7a7ce38f424a9af39c52f4dd9009"
+    },
+    {
+      "bytes": 617,
+      "path": "tasks/data/S3/query.txt",
+      "purpose": "Frozen public inputs, queries, renderer and dataset provenance",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "5303ebc516868daec4aaabc730cfbb04bbf28d478b38524d4403676d006ed36b"
+    },
+    {
+      "bytes": 3176,
+      "path": "tasks/dataset_manifest.json",
+      "purpose": "Frozen public inputs, queries, renderer and dataset provenance",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "4c84498e7f33d67d65a11437c707c54efe00a5c230e2047fa321ec817d9d5f3b"
+    },
+    {
+      "bytes": 3410,
+      "path": "tasks/generate.py",
+      "purpose": "Frozen public inputs, queries, renderer and dataset provenance",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "7c148cbe84cb37238ac8271129cc7bd091f76379afe22932291ec9007bc3dccb"
+    },
+    {
+      "bytes": 5693,
+      "path": "tasks/prepare.py",
+      "purpose": "Frozen public inputs, queries, renderer and dataset provenance",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "1493b66d04c5c5299f9f371f741bdc30e928df04d206ad4de9ed8b63c00c2bd0"
+    },
+    {
+      "bytes": 9616,
+      "path": "tests/check_windows_isolation.py",
+      "purpose": "Deterministic benchmark, annotation, equivalence, safety and configuration tests",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "83eabda9c4fa94e3820a3a4bcb079af9f7d453c2b301c14d1a5abcbb15741bc7"
+    },
+    {
+      "bytes": 5061,
+      "path": "tests/test_assessment.py",
+      "purpose": "Deterministic benchmark, annotation, equivalence, safety and configuration tests",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "4d5df6780a732f283ed5144152c94dfcc7e6995e956cdccc471653d07a304043"
+    },
+    {
+      "bytes": 4841,
+      "path": "tests/test_benchmarks.py",
+      "purpose": "Deterministic benchmark, annotation, equivalence, safety and configuration tests",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "fe21e4119494258d8b289c729cc0fc8470adcf917e2655a6dfc15a1cd5f17ef0"
+    },
+    {
+      "bytes": 2229,
+      "path": "tests/test_config.py",
+      "purpose": "Deterministic benchmark, annotation, equivalence, safety and configuration tests",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "e23e1cd1149c83f4cb28f73c67584de5333504be8f7f42efeedea1add9d1b24f"
+    },
+    {
+      "bytes": 4245,
+      "path": "tests/test_instrumentation.py",
+      "purpose": "Deterministic benchmark, annotation, equivalence, safety and configuration tests",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "e0861466d0f262714ffe6466d5799abf8e51dd194743f84eeac1987fd186f9cb"
+    },
+    {
+      "bytes": 7582,
+      "path": "tests/test_safety.py",
+      "purpose": "Deterministic benchmark, annotation, equivalence, safety and configuration tests",
+      "retention": "reviewable_local_and_git_trackable",
+      "sha256": "4e5f6e4f533da7d7bb844ffe598d48b214b8b918f39960f618de4a1feccac188"
+    }
+  ],
+  "large_trace_policy": "No generated evidence is ignored. Archive raw traces with checksums before any future removal; retain a second durable copy before excluding any evidence.",
+  "version": 1
+}

@@ -1,0 +1,140 @@
+{
+  "scope": "Round 1 engineering checkpoint; offline review of saved S1-R01/S2-R01/S3-R01 only",
+  "decision": "PASS_WITH_DOCUMENTED_LIMITATIONS_ROUND_2_NOT_AUTHORIZED",
+  "campaign_policy_hash": "42889b13f955bc304b39eee8535ae182bde422324c815b7945fb953eefd9e459",
+  "upstream_pin": "e11f1a8f8ee4490686e16dd6463233abe08a07eb",
+  "rootcheck": false,
+  "runs": [
+    {
+      "pilot_id": "S1-R01",
+      "run_id": "broker-eaa4d3f974474c0e807569e72ddf4432",
+      "status": "completed",
+      "correctness": "correct",
+      "root_iterations": 4,
+      "provider_calls": 4,
+      "plain_subcalls": 0,
+      "recursive_child_nodes": 0,
+      "events": 33,
+      "official_completion_seconds": 76.40380520001054,
+      "appcontainer_job_seconds": 79.57799999999406,
+      "provider_reported_cost_usd": "0.08246875",
+      "conservative_run_accounting_usd": "0.09902875",
+      "record_sha256": "45af322a32a7e4e6e0aeb447730786abd3553e0be393a4382876e8aa16b226fb",
+      "events_sha256": "2bbac214ff6bb19781fdc21745b11465819ea4613e65c7a6d262fd77b3d2e40b",
+      "worker_response_sha256": "7d599cff8a0cec1b61ce15f883e60c9e20a61ece2939583f8660dd2681826775",
+      "journal_sha256": "6f13f44bf35f8ed6087653c949a49c7d0ac1a23fe89c2f4bd1337d15d55851e8",
+      "cleanup": {
+        "profile_deleted": true,
+        "scratch_deleted": true,
+        "payload_grant_removed": true
+      }
+    },
+    {
+      "pilot_id": "S2-R01",
+      "run_id": "broker-b3dd0f8ebee74e40a5d794cabbdcec4a",
+      "status": "completed",
+      "correctness": "correct",
+      "root_iterations": 8,
+      "provider_calls": 10,
+      "plain_subcalls": 2,
+      "recursive_child_nodes": 0,
+      "events": 65,
+      "official_completion_seconds": 444.48062149999896,
+      "appcontainer_job_seconds": 447.1100000000006,
+      "provider_reported_cost_usd": "0.17427805",
+      "conservative_run_accounting_usd": "0.20135005",
+      "record_sha256": "f3ab00fe23fcddaf60e24167bb1f84fe69b4f2f9278565b421628b5151482be5",
+      "events_sha256": "ee1e67a5f910b5b30b50ef2ee7709e42b31a43aef43ad852cf9ea509c7f2ad67",
+      "worker_response_sha256": "89a7aeb42744cbaf14f08a9e21bf6d17f274ec022f8476bd52655d6b2d34023d",
+      "journal_sha256": "c9661e19046511c305f699b3331baf9ac92dffb0a061742d95045cf443c1ef50",
+      "cleanup": {
+        "profile_deleted": true,
+        "scratch_deleted": true,
+        "payload_grant_removed": true
+      }
+    },
+    {
+      "pilot_id": "S3-R01",
+      "run_id": "broker-deb1b866c6344031816958a484472db8",
+      "status": "completed",
+      "correctness": "correct",
+      "root_iterations": 3,
+      "provider_calls": 3,
+      "plain_subcalls": 0,
+      "recursive_child_nodes": 0,
+      "events": 27,
+      "official_completion_seconds": 38.11165470001288,
+      "appcontainer_job_seconds": 40.54700000002049,
+      "provider_reported_cost_usd": "0.03427350",
+      "conservative_run_accounting_usd": "0.03873750",
+      "record_sha256": "d276d5a872ce024765cc258d9149a7f2609a89a8497b429547b753ab48a9d4a6",
+      "events_sha256": "1c39a695bb0de291c29c31c7fe96ceb895c6a650e8efd148506a7a8921e1936e",
+      "worker_response_sha256": "91dd462434e458a64fa8475bd58257f737c7ec536137c1757bc2329e4526bf4e",
+      "journal_sha256": "2444d704fbb5ea09b43d72a6b2e32acf581722bf7c2d95b8203a26f5b8def602",
+      "cleanup": {
+        "profile_deleted": true,
+        "scratch_deleted": true,
+        "payload_grant_removed": true
+      }
+    }
+  ],
+  "provider_calls": 17,
+  "provider_calls_by_model": {
+    "openai/gpt-5": 15,
+    "openai/gpt-5-nano": 2
+  },
+  "event_count": 125,
+  "tokens": {
+    "prompt_tokens": 89758,
+    "completion_tokens": 83502,
+    "total_tokens": 173260
+  },
+  "provider_reported_pilot_cost_usd": "0.29102030",
+  "conservative_pilot_accounting_usd": "0.33911630",
+  "preflight_known_charges_usd": "0.00038110",
+  "known_reported_inference_charges_including_preflight_usd": "0.29140140",
+  "campaign_exposure_usd": "0.78794540",
+  "remaining_campaign_headroom_usd": "19.21205460",
+  "unresolved_carried_reservation_usd": "0.4484480",
+  "unresolved_pilot_tickets": [],
+  "resource_censored_runs": 0,
+  "censoring_stop_threshold": 2,
+  "length_limited_subcalls": [
+    {
+      "run_id": "broker-b3dd0f8ebee74e40a5d794cabbdcec4a",
+      "ticket": "attempt-00013"
+    }
+  ],
+  "telemetry_conflicts": 0,
+  "checks": {
+    "three_expected_runs_once": true,
+    "actual_official_runtime_identity_and_35_hashes_each": true,
+    "protected_90_files_unchanged": true,
+    "frozen_implementation_and_policy_unchanged": true,
+    "all_dataset_query_oracle_hashes_match": true,
+    "raw_traces_contiguous_unique_and_equal_parsed": true,
+    "python_start_result_pairs_complete": true,
+    "all_provider_prompts_and_delivered_content_match_trace": true,
+    "generation_and_request_ids_unique_across_runs": true,
+    "all_17_calls_routing_price_usage_bounds_reverified_offline": true,
+    "all_provider_journals_finalized": true,
+    "worker_response_archives_match_record": true,
+    "final_answers_and_root_iterations_captured": true,
+    "all_cleanup_completed": true,
+    "all_pilot_requests_reconciled_once": true,
+    "no_new_unknown_exposure": true,
+    "old_unresolved_reservation_unchanged": true,
+    "per_run_attempt_time_cost_and_campaign_limits_respected": true,
+    "engineering_gate_still_blocks_unapproved_continuation": true
+  },
+  "evidence_limitations": [
+    "No genuine recursive child or batch occurred naturally in Round 1; existing offline coverage retained, not rerun.",
+    "Private model reasoning text, arbitrary-object state and every transient Python dependency are not fully observable.",
+    "Blinded human H2/H6 commitments and final hypothesis assessments remain pending.",
+    "S2 second nano call hit its per-request completion cap; run recovered, not run-level censoring.",
+    "Prior unresolved preflight reservation remains held; no new account/billing API lookup."
+  ],
+  "next_authorization_required": "S2-R02 only, retaining frozen policy and carried exposure, with explicit engineering checkpoint continuation approval. No Round 2 command executed.",
+  "new_API_requests_for_checkpoint": 0,
+  "test_suites_repeated": 0
+}

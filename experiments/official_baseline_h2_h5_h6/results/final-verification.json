@@ -1,0 +1,26 @@
+{
+  "artifact_hashes_verified": 75,
+  "artifact_mismatches": [],
+  "broken_documentation_links": [],
+  "protected_hashes_verified": 90,
+  "python_files_parsed": 24,
+  "scenario_transport_mocks": [
+    {
+      "run_id": "supervised-mock-3fffa8d34b9545ffb91255fe07f8d06f",
+      "scenario": "S1",
+      "status": "completed"
+    },
+    {
+      "run_id": "supervised-mock-a39876f812bd492fa3be300901b4f994",
+      "scenario": "S3",
+      "status": "completed"
+    },
+    {
+      "run_id": "supervised-mock-ec3c1f2bc2424282b2ece58bfe23fd11",
+      "scenario": "S2-v2",
+      "status": "completed"
+    }
+  ],
+  "staged_changes": false,
+  "test_suite_repeated": false
+}

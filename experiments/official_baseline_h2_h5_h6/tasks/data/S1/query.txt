@@ -1,0 +1,27 @@
+Reconcile the records in the sections labelled === Orders ===,
+=== Shipments ===, and === Refunds ===. Section end markers delimit their scope.
+Orders contains exactly 100 unique orders. Each record has a unique Record ID
+and an explicit Order ID; quantities are positive integer unit counts.
+
+Match records only on exact Order ID, never customer name, record position, or
+a nearby or similar-looking identifier. Ignore shipment/refund records whose
+Order ID is absent from Orders. Count each distinct Record ID once; repeated
+Order IDs in Shipments or Refunds represent separate records, not duplicate
+orders. All matching records count subject to the following status rules.
+
+Order Status is open or cancelled. Shipment Status is posted or void: sum only
+posted Shipped Quantity and exclude void shipments. Refund Status is approved
+or pending: sum only approved Refunded Quantity and exclude pending refunds.
+Refunded Quantity explicitly counts units, not money. Missing matching
+shipments or refunds contribute zero to their respective totals.
+
+For each open order, outstanding units = Ordered Quantity minus the sum of
+posted Shipped Quantity minus the sum of approved Refunded Quantity. Select
+all open orders whose outstanding units are strictly positive. Exclude every
+cancelled order even if its balance is positive, and exclude fully reconciled
+orders with zero outstanding units. Valid posted shipments plus approved
+refunds never exceed Ordered Quantity.
+
+Return the complete selected Order-ID set in ascending order and the total
+outstanding units across that set. Both exact membership and the total are
+required; harmless formatting differences do not matter.

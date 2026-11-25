@@ -1,0 +1,22 @@
+{
+  "campaign_ceiling_usd": "20",
+  "campaign_policy_hash": "42889b13f955bc304b39eee8535ae182bde422324c815b7945fb953eefd9e459",
+  "campaign_seed_exposure_usd": "0.44882910",
+  "command": ".\\.venv\\Scripts\\python.exe -I -B experiments/official_baseline_h2_h5_h6/live_baseline.py --authorize-run S1-R01",
+  "credential_access": false,
+  "decision": "READY_FOR_LIVE_S1_R01_BASELINE_EXECUTION_PENDING_AUTHORIZATION",
+  "existing_equivalence_cases_reused": 21,
+  "original_reserved_usd": "0.4484480",
+  "pilot_runs_executed": 0,
+  "prior_manifest_evidence_preserved": true,
+  "protected_files_verified": 90,
+  "provider_api_requests": 0,
+  "remaining_gate": "Separate explicit authorization for S1-R01 only",
+  "rootcheck": false,
+  "ruff_available": false,
+  "run_ceiling_usd": "2",
+  "runtime_class": "rlm.core.rlm.RLM",
+  "runtime_evidence_run_id": "broker-b678dc3892994a43b2278d7b85387adb",
+  "runtime_files_verified_inside_appcontainer": 35,
+  "targeted_tests_passed": 5
+}

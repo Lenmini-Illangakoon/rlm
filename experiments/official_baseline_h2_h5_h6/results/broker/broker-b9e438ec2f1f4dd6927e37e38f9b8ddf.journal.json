@@ -1,0 +1,17 @@
+{
+  "finalized": true,
+  "ledger": {
+    "campaign_exposure_usd": "0",
+    "rates_kind": "synthetic_only",
+    "runs": {
+      "broker-b9e438ec2f1f4dd6927e37e38f9b8ddf": {
+        "attempts": 0,
+        "deadline": 52015.984,
+        "stop_reason": "wall_clock"
+      }
+    },
+    "tickets": {}
+  },
+  "provider_records": [],
+  "run_id": "broker-b9e438ec2f1f4dd6927e37e38f9b8ddf"
+}
